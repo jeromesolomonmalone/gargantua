@@ -275,7 +275,7 @@
 }
 
 .button:focus {
-  box-shadow: 2px 2px 0px 0px currentColor;
+  box-shadow: 2px 2px 0px 0px var(--accent-color);
   outline: none;
 }
 
@@ -312,7 +312,9 @@
   display: grid;
   align-items: center;
   gap: 30px 20px;
+  border: 2px solid var(--accent-color);
   padding: 30px;
+  background-color: var(--background-color);
   inline-size: 353px;
   grid-template: repeat(2, auto) / repeat(2, auto);
 }
@@ -322,11 +324,16 @@
   background: #000;
 }
 
+.dialog[open]:focus {
+  outline: none;
+}
+
 .dialog__icon {
   inline-size: 39px;
 }
 
 .dialog__title {
+  color: var(--accent-color);
   font-family: var(--accent-font), sans-serif;
   font-size: 14px;
   line-height: 21px;
