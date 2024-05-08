@@ -15,6 +15,343 @@
 */
 
 .page {
+  color: var(--accent-color);
+  font-family: var(--main-font), sans-serif;
+  font-size: 18px;
+  background-image: repeating-linear-gradient(
+      to right,
+      var(--gradient-color),
+      var(--gradient-color) 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      var(--gradient-color),
+      var(--gradient-color) 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(var(--gradient-color-1), var(--gradient-color-2));
+  background-size: cover;
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-variation-settings: var(--main-font-weight);
+}
+
+.header {
+  display: grid;
+  place-items: center;
+  margin: 100px auto;
+  border: 2px solid var(--accent-color);
+  padding-block-start: clamp(7.5rem, 6.3462rem + 4.9231vw, 8.5rem);
+  padding-block-end: 23px;
+  overflow: hidden;
+  font-family: var(--accent-font), sans-serif;
+  text-transform: uppercase;
+  background-color: var(--background-color);
+}
+
+.width {
+  inline-size: var(--main-inline-size);
+}
+
+.header__title {
+  margin-block-end: 20px;
+  font-size: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
+  line-height: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
+}
+
+.header__subtitle {
+  margin-block-end: 25px;
+  font-size: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
+  line-height: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
+}
+
+.theme-menu__list,
+.theme-menu__item {
+  inline-size: max-content;
+}
+
+.theme-menu__item:not(:last-child) {
+  margin-block-end: 11px;
+}
+
+.theme-menu__button {
+  position: relative;
+  display: block;
+  border: none;
+  padding: 0;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.theme-menu__button:disabled::before {
+  content: "▶";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  margin-inline-end: 10px;
+  animation: arrow 0.5s infinite ease-in-out alternate;
+}
+
+.theme-menu__button::after {
+  content: "";
+  display: block;
+  margin-block-start: 1px;
+  border-bottom: 2px solid currentColor;
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+}
+
+.theme-menu__button:hover,
+.theme-menu__button:disabled {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.theme-menu__button:disabled {
+  pointer-events: none;
+}
+
+.theme-menu__button:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.theme-menu__button:focus {
+  outline: none;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.card {
+  margin: 0 auto 50px;
+  border: 2px solid var(--accent-color);
+  background-color: var(--background-color);
+}
+
+.card__title {
+  padding: 3px 10px;
+  font-weight: var(--title-font-weight);
+  font-size: 18px;
+  line-height: 21.78px;
+}
+
+.card__overlay {
+  position: relative;
+}
+
+.card__picture {
+  border-block-start: 2px solid var(--accent-color);
+  border-block-end: 2px solid var(--accent-color);
+  inline-size: 100%;
+  aspect-ratio: 1/1;
+}
+
+.contrast {
+  filter: contrast(1.3);
+}
+
+.invert {
+  filter: invert(0.25) saturate(1.7);
+}
+
+.saturate {
+  filter: saturate(2);
+}
+
+.grayscale {
+  filter: grayscale(1) contrast(1.1);
+}
+
+.hue-rotate {
+  filter: hue-rotate(300deg) contrast(1.25);
+}
+
+.brightness {
+  filter: brightness(1.3);
+}
+
+.lots-of-filters {
+  filter: sepia(0.3) saturate(2) hue-rotate(-40deg);
+}
+
+.card__label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  margin: 25px;
+  opacity: 0.5;
+  font-family: var(--accent-font), sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  text-shadow: -1px 0 var(--background-color), 0 1px var(--background-color),
+    1px 0 var(--background-color), 0 -1px var(--background-color);
+}
+
+@supports (
+  (text-stroke: 1px var(--background-color)) or
+    (-webkit-text-stroke: 1px var(--background-color))
+) {
+  .card__label {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--background-color);
+    text-stroke: 1px var(--background-color);
+  }
+}
+
+.card__text {
+  margin: 25px 25px 25px;
+  line-height: 21px;
+}
+
+.card__text:not(:last-child) {
+  margin-block-end: 27px;
+}
+
+.card__buttons {
+  display: flex;
+  justify-content: end;
+  gap: 12px;
+  margin: 0 25px 25px;
+}
+
+.card__icon-button {
+  border: 2px solid transparent;
+  padding: 0;
+  background-color: transparent;
+  transition: border 0.3s ease;
+  cursor: pointer;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border: 2px solid var(--accent-color);
+}
+
+.like-icon {
+  display: block;
+  inline-size: 100%;
+}
+
+.sparks {
+  opacity: 0;
+}
+
+.button {
+  position: relative;
+  border: 2px solid var(--accent-color);
+  padding: 10px 35px;
+  font-family: var(--accent-font), sans-serif;
+  font-size: 14px;
+  line-height: 12.6px;
+  background-color: transparent;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color);
+  transition: transform 0.5s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+}
+
+.button:hover::after {
+  transform: scaleX(1);
+}
+
+.button:focus {
+  box-shadow: 2px 2px 0px 0px currentColor;
+  outline: none;
+}
+
+.button__text {
+  position: relative;
+  z-index: 1;
+  color: var(--button-text);
+  mix-blend-mode: difference;
+}
+
+.footer {
+  margin: 0 auto 105px;
+  inline-size: max-content;
+}
+
+.footer__button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 15px 21px 15px 19px;
+  background-color: var(--background-color);
+}
+
+.footer__floppy {
+  position: relative;
+  z-index: 10;
+  display: block;
+  color: var(--button-text);
+  inline-size: clamp(1.3125rem, 2.2548rem + -2.1538vw, 1.75rem);
+  mix-blend-mode: difference;
+}
+
+.dialog[open] {
+  display: grid;
+  align-items: center;
+  gap: 30px 20px;
+  padding: 30px;
+  inline-size: 353px;
+  grid-template: repeat(2, auto) / repeat(2, auto);
+}
+
+.dialog[open]::backdrop {
+  opacity: 0.75;
+  background: #000;
+}
+
+.dialog__icon {
+  inline-size: 39px;
+}
+
+.dialog__title {
+  font-family: var(--accent-font), sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.dialog__button {
+  grid-column: span 2;
+  text-transform: uppercase;
+}
+
+@media (width <= 375px) {
+  :root {
+    --main-inline-size: 100%;
+  }
+
+  .card__label {
+    margin: 25px 13px;
+  }
+
+  .footer__button {
+    flex-direction: column;
+  }
+
+  .dialog[open] {
+    inline-size: 341px;
+  }
 }
