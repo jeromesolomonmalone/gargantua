@@ -316,7 +316,7 @@
 }
 
 .dialog[open] {
-  display: grid; 
+  display: grid;
   gap: 30px 20px;
   border: 2px solid var(--accent-color);
   padding: 30px;
@@ -352,6 +352,7 @@
 }
 
 .dialog__button {
+  position: relative;
   padding: 10.5px 0;
   text-transform: uppercase;
   inline-size: 100%;
