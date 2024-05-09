@@ -323,6 +323,7 @@
   padding: 30px;
   background-color: var(--background-color);
   inline-size: 353px;
+  block-size: 191px;
   grid-template: repeat(2, auto) / repeat(2, auto);
 }
 
