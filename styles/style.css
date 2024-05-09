@@ -345,10 +345,12 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  block-size: max-content;
 }
 
 .dialog form {
   grid-column: span 2;
+  block-size: max-content;
 }
 
 .dialog__button {
