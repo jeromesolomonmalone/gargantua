@@ -316,8 +316,7 @@
 }
 
 .dialog[open] {
-  display: grid;
-  align-items: center;
+  display: grid; 
   gap: 30px 20px;
   border: 2px solid var(--accent-color);
   padding: 30px;
@@ -337,6 +336,7 @@
 }
 
 .dialog__icon {
+  align-self: center;
   inline-size: 39px;
 }
 
