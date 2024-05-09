@@ -33,9 +33,10 @@
     ),
     linear-gradient(var(--gradient-color-1), var(--gradient-color-2));
   background-size: cover;
+  background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-variation-settings: var(--main-font-weight);
+  font-variation-settings: "wght" var(--main-font-weight);
 }
 
 .header {
@@ -45,8 +46,7 @@
   border: 2px solid var(--accent-color);
   padding-block-start: clamp(7.5rem, 6.3462rem + 4.9231vw, 8.5rem);
   padding-block-end: 23px;
-  overflow: hidden;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   text-transform: uppercase;
   background-color: var(--background-color);
 }
@@ -59,12 +59,17 @@
   margin-block-end: 20px;
   font-size: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
   line-height: clamp(3.0625rem, 1.9087rem + 4.9231vw, 4.0625rem);
+  cursor: pointer;
 }
 
 .header__subtitle {
   margin-block-end: 25px;
   font-size: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
   line-height: clamp(0.875rem, 0.226rem + 2.7692vw, 1.4375rem);
+}
+
+.theme-menu {
+  margin-inline-start: 18px;
 }
 
 .theme-menu__list,
@@ -135,9 +140,9 @@
 
 .card__title {
   padding: 3px 10px;
-  font-weight: var(--title-font-weight);
   font-size: 18px;
   line-height: 21.78px;
+  font-variation-settings: "wght" var(--title-font-weight);
 }
 
 .card__overlay {
@@ -186,7 +191,7 @@
   display: inline-block;
   margin: 25px;
   opacity: 0.5;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   line-height: 14px;
   text-shadow: -1px 0 var(--background-color), 0 1px var(--background-color),
@@ -216,7 +221,7 @@
 .card__buttons {
   display: flex;
   justify-content: end;
-  gap: 12px;
+  gap: 5px;
   margin: 0 25px 25px;
 }
 
@@ -248,13 +253,13 @@
 .button {
   position: relative;
   border: 2px solid var(--accent-color);
-  padding: 10px 35px;
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   line-height: 12.6px;
   background-color: transparent;
   transition: box-shadow 0.3s ease;
   cursor: pointer;
+  inline-size: 130px;
 }
 
 .button::after {
@@ -293,10 +298,12 @@
 
 .footer__button {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 8px;
-  padding: 15px 21px 15px 19px;
+  padding: 15px 0;
   background-color: var(--background-color);
+  inline-size: 335px;
 }
 
 .footer__floppy {
@@ -334,15 +341,20 @@
 
 .dialog__title {
   color: var(--accent-color);
-  font-family: var(--accent-font), sans-serif;
+  font-family: var(--accent-font), fantasy;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
 }
 
-.dialog__button {
+.dialog form {
   grid-column: span 2;
+}
+
+.dialog__button {
+  padding: 10.5px 0;
   text-transform: uppercase;
+  inline-size: 100%;
 }
 
 @media (width <= 375px) {
@@ -356,9 +368,10 @@
 
   .footer__button {
     flex-direction: column;
+    inline-size: 306px;
   }
 
   .dialog[open] {
-    inline-size: 341px;
+    inline-size: 337px;
   }
 }
