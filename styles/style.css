@@ -353,6 +353,7 @@
 }
 
 .dialog__button {
+  position: relative;
   padding: 10.5px 0;
   text-transform: uppercase;
   inline-size: 100%;
