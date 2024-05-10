@@ -317,6 +317,7 @@
 
 .dialog[open] {
   display: grid;
+  align-items: center;
   gap: 30px 20px;
   border: 2px solid var(--accent-color);
   padding: 30px;
@@ -335,7 +336,6 @@
 }
 
 .dialog__icon {
-  align-self: center;
   inline-size: 39px;
 }
 
@@ -345,16 +345,13 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  block-size: max-content;
 }
 
 .dialog form {
   grid-column: span 2;
-  block-size: max-content;
 }
 
 .dialog__button {
-  position: relative;
   padding: 10.5px 0;
   text-transform: uppercase;
   inline-size: 100%;
