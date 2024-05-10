@@ -323,7 +323,8 @@
   padding: 30px;
   background-color: var(--background-color);
   inline-size: 353px;
-  grid-template: auto, auto / auto, auto;
+  block-size: min-content;
+  grid-template: auto auto / auto auto;
 }
 
 .dialog[open]::backdrop {
@@ -345,14 +346,10 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  border: 1px solid tomato;
-  block-size: min-content;
 }
 
 .dialog form {
   grid-column: span 2;
-  border: 1px solid tomato;
-  block-size: min-content;
 }
 
 .dialog__button {
