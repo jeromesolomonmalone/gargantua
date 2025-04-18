@@ -530,7 +530,7 @@ body {
 .main {
   display: flex;
   flex-direction: column;
-  margin: 100px 0;
+  margin: 80px 0;
 }
 
 .main__logo {
@@ -550,6 +550,9 @@ body {
   display: grid;
   grid-template-columns: repeat(209, 1fr);
   grid-template-rows: repeat(31, 1fr);
+  -webkit-animation: scroll 60s linear infinite;
+  -moz-animation: scroll 60s linear infinite;
+  -o-animation: scroll 60s linear infinite;
   animation: scroll 60s linear infinite;
   counter-reset: section;
   min-inline-size: 186.6vw;
@@ -810,43 +813,69 @@ body {
   max-inline-size: 900px;
 }
 
-.main__navigation__subtitle {
-  display: none;
-  margin-block-end: 11px;
+.main__descriptions {
+  position: relative;
+  margin-block-end: 30px;
+  border-block-end: 1px solid var(--main-line);
+  padding: 30px 0 15px;
   color: var(--title);
   font-family: var(--font-Karnak);
-  font-size: 13px;
-  line-height: 13px;
-  letter-spacing: -0.05em;
-  text-transform: uppercase;
-}
-
-.main__navigation__title {
-  display: none;
-  color: var(--title);
-  font-family: var(--font-Karnak);
+  font-weight: 900;
   font-size: 44px;
   line-height: 44px;
   text-transform: capitalize;
 }
 
-.main__navigation__grade {
+.main__description__block {
   display: none;
 }
 
-.main__navigation__grade_img {
+.main__description__format {
+  display: none;
+}
+
+.main__description__elements {
+  display: none;
+  margin-block-start: 6px;
+}
+
+.main__description__title {
+  display: none;
+}
+
+.main__description__subtitle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 4px 0;
+  color: var(--title);
+  font-family: var(--font-Karnak);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.main__description__grade {
+  display: none;
   inline-size: 44px;
 }
 
-.main__navigation__element-is-opened {
+.main__description__names {
+  display: none;
+}
+
+.main__description_is-opened {
+  display: flex;
+}
+
+.main__description__element_is-opened {
   display: inline-block;
 }
 
-.main__line {
-  margin-bottom: 27px;
-  border-bottom: 1px solid var(--main-line);
-  padding-bottom: 20px;
-  inline-size: 100%;
+.main__description__format_is-marked::after {
+  content: "ы";
 }
 
 .main__list {
@@ -861,12 +890,13 @@ body {
   right: 0;
   bottom: 100%;
   display: none;
-  margin-block-end: 7px;
-  color: var(--search-title);
+  padding: 9px 0 7px;
+  color: var(--main-text);
   font-family: var(--font-Franklin);
-  font-size: 0.875rem;
-  line-height: 0.875rem;
-  text-align: right;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 11px;
+  text-transform: uppercase;
   cursor: pointer;
 }
 
@@ -904,7 +934,7 @@ body {
 }
 
 .card__grade {
-  inline-size: 22px;
+  inline-size: 24px;
   aspect-ratio: 1/1;
 }
 
@@ -1243,13 +1273,6 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 1149px) {
-  .main__line {
-    margin-bottom: 29px;
-    padding-bottom: 20px;
-  }
-}
-
 @media screen and (max-width: 1023px) {
   .header {
     padding: 8px 15px 3px;
@@ -1435,7 +1458,7 @@ body {
   }
 
   .main {
-    margin: 65px 0;
+    margin: 70px 0;
   }
 
   .main__image {
@@ -1447,21 +1470,21 @@ body {
     min-inline-size: 674.19355vw;
   }
 
-  .main__base {
-    padding-block-start: 80px;
-  }
-
-  .main__navigation__title {
+  .main__descriptions {
     font-size: 38px;
     line-height: 38px;
   }
 
-  .main__navigation__grade_img {
+  .main__description__elements {
+    margin-block-start: 5px;
+  }
+
+  .main__description__grade {
     inline-size: 38px;
   }
 
   .main__sort {
-    margin-block-end: 9px;
+    padding: 13px 0 9px;
   }
 
   .film__header {
@@ -1540,29 +1563,37 @@ body {
     block-size: 26px;
   }
 
-  .main__navigation__subtitle {
-    font-family: var(--font-Franklin);
-    font-weight: 300;
-    line-height: 16px;
-    letter-spacing: 0.05em;
-  }
-
-  .main__navigation__title {
+  .main__descriptions {
+    padding: 26px 0 15px;
     font-size: 32px;
     line-height: 32px;
   }
 
-  .main__line {
-    padding-bottom: 9px;
+  .main__description__elements {
+    margin-block-start: 11px;
   }
 
-  .main__navigation__grade_img {
-    inline-size: 32px;
+  .main__description__subtitle {
+    margin: 10px 0 0;
+    font-family: var(--font-Franklin);
+    line-height: 16px;
+  }
+
+  .main__description__grade {
+    inline-size: 40px;
+  }
+
+  .main__sort {
+    padding: 9px 0;
   }
 
   .main__list {
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+  }
+
+  .card__grade {
+    inline-size: 16px;
   }
 
   .card__under_poster,
