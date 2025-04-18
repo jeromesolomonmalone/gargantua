@@ -8225,22 +8225,22 @@ sortPublicationZA.addEventListener("click", function () {
 });
 
 mainSortTitle.addEventListener("click", function () {
-  if (mainSortTitle.textContent == "год выхода ▼") {
+  if (mainSortTitle.textContent == sortYearAZ.textContent) {
     sortAZ("card__year__original");
     mainSortTitle.textContent = sortYearZA.textContent;
-  } else if (mainSortTitle.textContent == "год выхода ▲") {
+  } else if (mainSortTitle.textContent == sortYearZA.textContent) {
     sortZA("card__year__original");
     mainSortTitle.textContent = sortYearAZ.textContent;
-  } else if (mainSortTitle.textContent == "Я-А ▲") {
+  } else if (mainSortTitle.textContent == sortNameZA.textContent) {
     sortNamingAZ("card__title");
     mainSortTitle.textContent = sortNameAZ.textContent;
-  } else if (mainSortTitle.textContent == "А-Я ▼") {
+  } else if (mainSortTitle.textContent == sortNameAZ.textContent) {
     sortNamingZA("card__title");
     mainSortTitle.textContent = sortNameZA.textContent;
-  } else if (mainSortTitle.textContent == "Z-A ▲") {
+  } else if (mainSortTitle.textContent == sortOriginalNameZA.textContent) {
     sortNamingAZ("card__title__original");
     mainSortTitle.textContent = sortOriginalNameAZ.textContent;
-  } else if (mainSortTitle.textContent == "A-Z ▼") {
+  } else if (mainSortTitle.textContent == sortOriginalNameAZ.textContent) {
     sortNamingZA("card__title__original");
     mainSortTitle.textContent = sortOriginalNameZA.textContent;
   } else {
