@@ -115,6 +115,7 @@ body {
   z-index: 1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  align-items: center;
   border-block-end: 1px solid var(--header-border-bottom);
   padding: 4px 15px 2px;
   background-color: var(--background);
@@ -250,15 +251,11 @@ body {
   padding: 0;
   background: transparent;
   cursor: pointer;
-  inline-size: min-content;
 }
 
 .header__logo {
-  margin-block: 6px;
-  object-fit: cover;
-  filter: invert(var(--title-grade));
-  block-size: 30px;
-  aspect-ratio: 1/0.57;
+  object-fit: contain;
+  block-size: 41px;
 }
 
 .popup__navigation {
@@ -896,7 +893,6 @@ body {
   font-weight: 400;
   font-size: 11px;
   line-height: 11px;
-  text-transform: uppercase;
   cursor: pointer;
 }
 
@@ -934,7 +930,7 @@ body {
 }
 
 .card__grade {
-  inline-size: 24px;
+  inline-size: 22px;
   aspect-ratio: 1/1;
 }
 
@@ -1158,11 +1154,26 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   padding-block-end: 100px;
+  counter-reset: section;
 }
 
 .film__screenshot {
+  position: relative;
   cursor: pointer;
+  counter-increment: section;
 }
+
+/*
+.film__screenshot::after {
+  content: counter(section);
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 2vw;
+  font-family: var(--font-Karnak);
+  color: white;
+}
+*/
 
 .film__screenshot__img {
   object-fit: cover;
@@ -1559,8 +1570,12 @@ body {
 }
 
 @media screen and (max-width: 739px) {
+  .header {
+    align-items: start;
+  }
+
   .header__logo {
-    block-size: 26px;
+    block-size: 36px;
   }
 
   .main__descriptions {
@@ -1590,10 +1605,6 @@ body {
   .main__list {
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-  }
-
-  .card__grade {
-    inline-size: 16px;
   }
 
   .card__under_poster,
