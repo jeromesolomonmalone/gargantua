@@ -2,6 +2,7 @@
   --font-Franklin: "Onest", sans-serif;
   --font-Karnak: "Montserrat", sans-serif;
   --font-Imperial-Cheltenham: "STIX Two Text", serif;
+  --font-Magslab-Cheltenham-Cond: "Noto Serif", serif;
   --background: white;
   --header-border-bottom: #e2e2e2;
   --button-header-hover: #f7f7f7;
@@ -992,7 +993,6 @@ body {
 .film__header {
   position: relative;
   display: flex;
-  align-items: center;
   overflow: hidden;
 }
 
@@ -1016,7 +1016,7 @@ body {
   object-fit: cover;
   opacity: 0;
   inline-size: 100%;
-  aspect-ratio: 0.6666667/1;
+  block-size: 100%;
 }
 
 .film__poster:nth-child(-1n + 6) {
@@ -1026,12 +1026,14 @@ body {
 .film__header__text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 55px auto;
   color: var(--title);
   font-family: var(--font-Imperial-Cheltenham);
   text-align: center;
-  inline-size: 40%;
+  max-inline-size: 600px;
+  inline-size: calc(50% - 40px);
 }
 
 .film__header__grade {
@@ -1041,9 +1043,25 @@ body {
 }
 
 .film__header__title {
-  font-weight: 200;
-  font-size: 3.375rem;
-  line-height: 3.625rem;
+  /*
+  font-family: var(--font-Magslab-Cheltenham-Cond);
+  font-size: 4.75rem;
+  line-height: 5.1875rem;
+  */
+  font-family: var(--font-Karnak);
+  font-weight: 900;
+  font-size: 5vw;
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
+
+.film__header__title_is-small {
+  /*
+  font-size: 4rem;
+  line-height: 4.375rem;
+  */
+  font-size: clamp(1rem, 5vw, 88px);
+  line-height: 0.95;
 }
 
 .film__header__title::before {
@@ -1070,11 +1088,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin: 40px auto;
-  border-block-end: 1px solid var(--popup-line);
-  padding-block-end: 40px;
-  inline-size: calc(100% - 50px);
-  max-inline-size: 600px;
+  margin-block-start: 50px;
 }
 
 .film__director,
@@ -1129,7 +1143,7 @@ body {
 }
 
 .film__link {
-  align-self: start;
+  align-self: center;
   border: 1px solid var(--link-border);
   border-radius: 30px;
   padding: 6px 10px;
@@ -1150,11 +1164,24 @@ body {
 }
 
 .film__screenshots {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  padding-block-end: 100px;
+  padding: 71px 0 100px;
   counter-reset: section;
+}
+
+.film__screenshots::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  margin-inline: auto;
+  border-block-end: 1px solid var(--popup-line);
+  padding-block-start: 30px;
+  inset-inline: 0;
+  inline-size: 100%;
+  max-inline-size: 600px;
 }
 
 .film__screenshot {
@@ -1500,11 +1527,17 @@ body {
 
   .film__header {
     flex-direction: column;
+    align-items: center;
   }
 
   .film__posters {
     grid-template-columns: repeat(6, 1fr);
     inline-size: 120%;
+  }
+
+  .film__poster {
+    block-size: auto;
+    aspect-ratio: 0.6666667/1;
   }
 
   .film__poster:nth-child(-1n + 6) {
@@ -1513,10 +1546,8 @@ body {
 
   .film__header__text {
     display: grid;
-    margin: 1rem auto;
-    padding: 0 20px;
-    max-inline-size: 600px;
-    inline-size: 100%;
+    margin: 40px 0 0;
+    inline-size: calc(100% - 40px);
   }
 
   .film__header__grade {
@@ -1541,15 +1572,18 @@ body {
   }
 
   .film__text {
-    margin: 25px auto;
-    padding-block-end: 25px;
-    inline-size: calc(100% - 40px);
+    grid-column: span 2;
+    text-align: start;
   }
 
   .film__director,
   .film__cast {
     font-size: 0.8125rem;
     line-height: 1.0625rem;
+  }
+
+  .film__link {
+    align-self: start;
   }
 
   .film__screenshots {
@@ -1617,14 +1651,26 @@ body {
     inline-size: 135%;
   }
 
+  .film__header__text {
+    margin: 24px 0 0;
+  }
+
   .film__header__title {
-    font-size: 2.25rem;
-    line-height: 2.625rem;
+    /*
+    font-size: 3.4375rem;
+    line-height: 3.75rem;
+    */
+    font-size: 44px;
+    line-height: 0.95;
   }
 
   .film__header__title_is-small {
-    font-size: 2.12rem;
-    line-height: 2.46rem;
+    /*
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    */
+    font-size: 36px;
+    line-height: 1;
   }
 
   .film__header__subtitle {
@@ -1634,7 +1680,6 @@ body {
 
   .film__text {
     gap: 12.5px;
-    padding-block-end: 20px;
   }
 
   .film__director__name,
@@ -1646,6 +1691,15 @@ body {
   .film__description {
     font-size: 1.125rem;
     line-height: 1.38;
+  }
+
+  .film__screenshots {
+    padding: 51px 0 100px;
+  }
+
+  .film__screenshots::before {
+    padding-block-start: 30px;
+    inline-size: calc(100% - 40px);
   }
 
   .film__screenshots_is-even .film__screenshot:nth-child(3n) {
