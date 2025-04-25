@@ -4124,7 +4124,7 @@ const films = [
     publication: new Date("2024-08-19"),
     format: "фильм",
     grade: "B",
-    poster: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/mYPY/RpV3tGAFE",
+    poster: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/sbca/GH6mFjejq",
     title: "Квартира",
     original: "The Apartment",
     kinopoisk: "https://www.kinopoisk.ru/film/404/",
@@ -8339,6 +8339,1371 @@ const films = [
       }, // 13
     ],
   }, // неудачницы
+  {
+    release: new Date("2023-05-04"),
+    publication: new Date("2023-08-24"),
+    format: "сериал",
+    season: "1",
+    grade: "B",
+    poster: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/iu6N/XAWHB1fw1",
+    title: "Ничегошеньки",
+    original: "Bupkis",
+    kinopoisk: "https://www.kinopoisk.ru/series/4967577/",
+    director: [
+      {
+        name: "Пит Дэвидсон",
+      },
+      {
+        name: "Джуда Миллер",
+      },
+      {
+        name: "Дэйв Сирус",
+      },
+    ],
+    cast: [
+      {
+        name: "Пит Дэвидсон",
+      },
+      {
+        name: "Иди Фалько",
+      },
+      {
+        name: "Джо Пеши",
+      },
+    ],
+    description:
+      "История жизни Пита Дэвидсона, сочетающая повествование с некоторыми абсурдными элементами мировоззрения героя.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: [
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/EyGr/4JCPjnU7E",
+      }, // 1
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/bQvt/F9inHNzyQ",
+      }, // 2
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/y6TW/wGbKRVKTF",
+      }, // 3
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/92t9/qYoieqzh3",
+      }, // 4
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/5ofM/uFD83TV3r",
+      }, // 5
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/XYpp/im7hy5Dwp",
+      }, // 6
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/xTNu/gEbxPktiL",
+      }, // 7
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/ckfV/nA1wXNSvo",
+      }, // 8
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/1fVy/y42TNy6h5",
+      }, // 9
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/4pgd/PVUkLzykn",
+      }, // 10
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/Qg24/LDkWDQQKE",
+      }, // 11
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/RWDA/9tqZ6J9T6",
+      }, // 12
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/LmAW/xCyopy5sf",
+      }, // 13
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/gorV/xY5t4ZQxN",
+      }, // 14
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/HwqX/JMtaeBek4",
+      }, // 15
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/Q8Dx/V1qThkmZV",
+      }, // 16
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/ckXh/p9zG2rZky",
+      }, // 17
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/jx7u/tqyqSHPXL",
+      }, // 18
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/oxKQ/UVMJH7Cnf",
+      }, // 19
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/2g7C/LjyCkuXjz",
+      }, // 20
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/FcQb/NfPboWwpK",
+      }, // 21
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/rvqb/M32DPWcyU",
+      }, // 22
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/dTCn/59PkfVb29",
+      }, // 23
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/BmVR/junJyqddQ",
+      }, // 24
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/4g9D/XqdRbF7oX",
+      }, // 25
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/AdG7/gq8i6qTLX",
+      }, // 26
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/GMBu/k958bn7Ec",
+      }, // 27
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/oUHo/K8ipU94ud",
+      }, // 28
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/jG4N/gMmxuTEWH",
+      }, // 29
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/iiRq/8sc3AcMxj",
+      }, // 30
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/X7HG/GYYwiC1nw",
+      }, // 31
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/DSqo/GbFvFyrFk",
+      }, // 32
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/D85M/dKExiVLxi",
+      }, // 33
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/qJ1X/VEfQ3cyYb",
+      }, // 34
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/ZZuF/Y3XMNAqNN",
+      }, // 35
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/3CAr/Yurhnn53r",
+      }, // 36
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/j6oF/VDZFpjHw1",
+      }, // 37
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/ukiP/gTWrDAQ2S",
+      }, // 38
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/ihST/uCahMPK4b",
+      }, // 39
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/hhFf/qrSc1wTjy",
+      }, // 40
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/tFTD/KZzDPq6w4",
+      }, // 41
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/MBnx/p1wCdsWog",
+      }, // 42
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/WBBL/DiBWs9f2N",
+      }, // 43
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/WsUf/ggqQpNiPv",
+      }, // 44
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/rKqz/cXG9cpyJC",
+      }, // 45
+    ],
+  }, // ничегошеньки
+  {
+    release: new Date("2000-05-13"),
+    publication: new Date("2024-08-14"),
+    format: "фильм",
+    grade: "B",
+    poster: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/8L3L/GS4nREbWE",
+    title: "О, где же ты, брат?",
+    original: "O Brother, Where Art Thou?",
+    kinopoisk: "https://www.kinopoisk.ru/film/546/",
+    director: [
+      {
+        name: "Джоэл Коэн",
+      },
+      {
+        name: "Итан Коэн",
+      },
+    ],
+    cast: [
+      {
+        name: "Джордж Клуни",
+      },
+      {
+        name: "Джон Туртурро",
+      },
+      {
+        name: "Тим Блейк Нельсон",
+      },
+    ],
+    description:
+      "Трио каторжников пускается в бега, чтобы сорвать крупный куш.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "музыка",
+      },
+    ],
+    screenshots: [
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/7KTx/jwm4bJFVh",
+      }, // 1
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/FmWX/QiCDwcBfw",
+      }, // 2
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/KQMX/fMtAUDEhh",
+      }, // 3
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/Lree/MfjLcBRu5",
+      }, // 4
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/JZSt/ygjYUzJ5r",
+      }, // 5
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/aVo4/5drwrVhQR",
+      }, // 6
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/oWKW/wc6ix2EYX",
+      }, // 7
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/EMp8/8f75YXmJv",
+      }, // 8
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/Y94r/kxEQbcz11",
+      }, // 9
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/3HiB/HSGbXWAT1",
+      }, // 10
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/SoqS/MLZpFRwh7",
+      }, // 11
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/zyuV/6536gKnfn",
+      }, // 12
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/KVZH/pi8frmvNu",
+      }, // 13
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/YrJk/S61FMvaeM",
+      }, // 14
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/U41n/GotN1tBJh",
+      }, // 15
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/W5eK/nEzUYEdpp",
+      }, // 16
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/yB39/4YtwFsV6j",
+      }, // 17
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/2FGB/x66LABtsg",
+      }, // 18
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/R83n/S9aoUQwfT",
+      }, // 19
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/Tydi/ofcHQQc4U",
+      }, // 20
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/hNmf/unkvaVKsV",
+      }, // 21
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/waPi/Ep1ive5J9",
+      }, // 22
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/7s2u/DqU4dmC6Q",
+      }, // 23
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/72Aj/Snf5BXNHX",
+      }, // 24
+    ],
+  }, // о где же ты брат
+  {
+    release: new Date("2009-09-18"),
+    publication: new Date("2023-07-14"),
+    format: "фильм",
+    grade: "B",
+    poster: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/xxqS/B7GVKmSak",
+    title: "Облачно, возможны осадки в виде фрикаделек",
+    original: "Cloudy with a Chance of Meatballs",
+    kinopoisk:
+      "https://www.kinopoisk.ru/film/276363/?utm_referrer=www.google.com",
+    director: [
+      {
+        name: "Фил Лорд",
+      },
+      {
+        name: "Кристофер Миллер",
+      },
+    ],
+    cast: [
+      {
+        name: "Билл Хейдер",
+      },
+      {
+        name: "Анна Фэрис",
+      },
+    ],
+    description:
+      "Ученый-неудачник изобретает машину, которая может заставлять еду падать с неба.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: [
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/cCeo/o9Us77ri5",
+      }, // 1
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/pJYm/UWtsbcuiF",
+      }, // 2
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/gc4H/de7SfS63n",
+      }, // 3
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/CixB/XfbLMNdJ5",
+      }, // 4
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/hEti/y26tWw3W9",
+      }, // 5
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/fBFr/wt7JyGF96",
+      }, // 6
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/3TE9/CKJxtFo1n",
+      }, // 7
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/4XYj/e1wxJBcQn",
+      }, // 8
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/67r5/TiKnd7zeQ",
+      }, // 9
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/DGdv/jcL9cShc8",
+      }, // 10
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/7Jpj/hWNQniLsH",
+      }, // 11
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/qn5q/Z523kvhxE",
+      }, // 12
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/uRJA/NmUbsGLcU",
+      }, // 13
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/SjbR/SKFKAvHBu",
+      }, // 14
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/pByU/zAuXsHNZ2",
+      }, // 15
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/EboD/pbCnKJETQ",
+      }, // 16
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/P4V4/TkysmTfXa",
+      }, // 17
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/Knso/Rp9MvvYWt",
+      }, // 18
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/svXb/HHUzZFb5b",
+      }, // 19
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/PBce/jmxRGZaPH",
+      }, // 20
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/Hqzh/pqM8Mi7vP",
+      }, // 21
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/EPrf/pNFgjVwgi",
+      }, // 22
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/CjhM/BdTGvNDMN",
+      }, // 23
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/JmRK/ZZF2MWnNV",
+      }, // 24
+    ],
+  }, // облачно возможны осадки в виде фрикаделек
+  {
+    release: new Date("2024-09-01"),
+    publication: new Date("2024-10-01"),
+    format: "фильм",
+    grade: "C",
+    poster: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/8htJ/pE6yvCohq",
+    title: "Одинокие волки",
+    original: "Wolfs",
+    kinopoisk: "https://www.kinopoisk.ru/film/4825582/",
+    director: [
+      {
+        name: "Джон Уоттс",
+      },
+    ],
+    cast: [
+      {
+        name: "Джордж Клуни",
+      },
+      {
+        name: "Брэд Питт",
+      },
+    ],
+    description:
+      "Пути двух чистильщиков пересекаются, когда обоих вызывают решить проблему нью-йоркского прокурора.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: [
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/fZHw/vDdjSZJ6X",
+      }, // 1
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/eyS2/bm5p832XA",
+      }, // 2
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/yZVD/YnLSzmZNm",
+      }, // 3
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/TSis/ez1SgDKoq",
+      }, // 4
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/8VQD/fPNgvkFPz",
+      }, // 5
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/HEEM/jKvPbyAKr",
+      }, // 6
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/QzmG/Xb1BQvUps",
+      }, // 7
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/fwdV/xVmiBVePS",
+      }, // 8
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/hqsC/r39FyqJbY",
+      }, // 9
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/Umt3/qHDxAmFyq",
+      }, // 10
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/JEWF/o69WWVeeu",
+      }, // 11
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/KArC/m6pK5tytP",
+      }, // 12
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/X2Fn/hNehid3vP",
+      }, // 13
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/mkCK/dAAdiDAuF",
+      }, // 14
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/tJXy/tm9SMxef1",
+      }, // 15
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/xLsZ/gFhvFLG1A",
+      }, // 16
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/dw8q/z1DgFvz7v",
+      }, // 17
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/cKKR/xdbQZ9kdp",
+      }, // 18
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/QgKL/NqybBRFNi",
+      }, // 19
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/gqoK/6fDzsUtB6",
+      }, // 20
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/cfrp/usx6KPMt6",
+      }, // 21
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/XM5j/8qNeeGZsE",
+      }, // 22
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/bVrJ/Z3UASyptX",
+      }, // 23
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/gpuG/CjESFLfHw",
+      }, // 24
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/9kHg/m9NMTLRbE",
+      }, // 25
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/SNMP/PX9yce4uN",
+      }, // 26
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/BJBN/4xdvxL2St",
+      }, // 27
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/F9dn/UTwce1xiF",
+      }, // 28
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/kyVa/PGj7T5EhG",
+      }, // 29
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/cVER/8r8xRPaJT",
+      }, // 30
+    ],
+  }, // одинокие волки
+  {
+    release: new Date("2023-07-14"),
+    publication: new Date("2023-07-28"),
+    format: "фильм",
+    grade: "C",
+    poster: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/QS4k/uZQ8n5GD5",
+    title: "Они клонировали Тайрона",
+    original: "They Cloned Tyrone",
+    kinopoisk:
+      "https://www.kinopoisk.ru/film/1405266/?utm_referrer=www.kinopoisk.ru",
+    director: [
+      {
+        name: "Джуэл Тейлор",
+      },
+    ],
+    cast: [
+      {
+        name: "Джон Бойега",
+      },
+      {
+        name: "Джейми Фокс",
+      },
+      {
+        name: "Тейона Паррис",
+      },
+    ],
+    description:
+      "Череда жутких событий выводит необычную троицу на след правительственного заговора.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: [
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/z6Q8/qxdb3k3Gf",
+      }, // 1
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/XNFf/kNUvb5Xna",
+      }, // 2
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/abjx/99aUvV9cE",
+      }, // 3
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/f9YZ/iaTJi5P8P",
+      }, // 4
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/pNbk/rDPXs4Enr",
+      }, // 5
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/Us9m/ZwFCu8MtG",
+      }, // 6
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/K3NM/ygMnw7ZSs",
+      }, // 7
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/h3U8/37oKaAE4P",
+      }, // 8
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/urEr/95hCr2nmV",
+      }, // 9
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/DLKn/uDASDrHSs",
+      }, // 10
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/8t8K/eN4ku7r9H",
+      }, // 11
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/5BNX/QDk4gdXLK",
+      }, // 12
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/8tF5/JFiPu9Pzc",
+      }, // 13
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/gtqe/3NaexFfkx",
+      }, // 14
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/Xovk/cp6rqTYB8",
+      }, // 15
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/XXtj/qUrxSip9h",
+      }, // 16
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/A6fv/mKCsrbyWC",
+      }, // 17
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/uHLB/JKgfiK6sA",
+      }, // 18
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/SVXi/MpMJU7tQo",
+      }, // 19
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/cJL9/mqyjKQRpj",
+      }, // 20
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/rhyv/m85UoFhGi",
+      }, // 21
+    ],
+  }, // они клонировали тайрона
+  {
+    release: new Date("2023-07-21"),
+    publication: new Date("2023-11-18"),
+    format: "фильм",
+    grade: "B",
+    poster: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/E4pm/jfTkYgYs2",
+    title: "Оппенгеймер",
+    original: "Oppenheimer",
+    kinopoisk: "https://www.kinopoisk.ru/film/4664634/",
+    director: [
+      {
+        name: "Кристофер Нолан",
+      },
+    ],
+    cast: [
+      {
+        name: "Киллиан Мерфи",
+      },
+      {
+        name: "Эмили Блант",
+      },
+      {
+        name: "Мэтт Дэймон",
+      },
+      {
+        name: "Роберт Дауни мл.",
+      },
+      {
+        name: "Флоренс Пью",
+      },
+    ],
+    description:
+      "История жизни американского физика Роберта Оппенгеймера, который стоял во главе первых разработок ядерного оружия.",
+    genres: [
+      {
+        genre: "биография",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: [
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/zxrS/kErCY6gXq",
+      }, // 1
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/yLp6/eXFzpHnha",
+      }, // 2
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/UMyh/SUbDayQBv",
+      }, // 3
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/hLuB/AZPVhE784",
+      }, // 4
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/pep5/HDuK9HSuF",
+      }, // 5
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/JQ5y/JSVRXRYtf",
+      }, // 6
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/RPox/Amk2wkMGk",
+      }, // 7
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/buAx/BoPYmJPka",
+      }, // 8
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/B1sc/hFdvn5sK6",
+      }, // 9
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/TXY5/SG8XzuqhG",
+      }, // 10
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/ge54/PoEeH2Eri",
+      }, // 11
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/3To5/kf7p51UDV",
+      }, // 12
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/bjB9/MXnnunuE8",
+      }, // 13
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/HeQb/jZYUp1hMN",
+      }, // 14
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/hZ5C/BjB9KSPJV",
+      }, // 15
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/pi1y/L1b29CYwM",
+      }, // 16
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/iJgU/ZpXkF8tCR",
+      }, // 17
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/wEvG/qhmej76wv",
+      }, // 18
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/xbpM/9GQ6hQW1u",
+      }, // 19
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/F1cx/Ro8zsdzbG",
+      }, // 20
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/LBBq/wiqfk2ffD",
+      }, // 21
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/U5Uf/jMoYcAiET",
+      }, // 22
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/4GTt/KN6MdUaPD",
+      }, // 23
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/mL9d/WsZdaidKF",
+      }, // 24
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/2bgL/LsuwY1phh",
+      }, // 25
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/7xcH/nKfgp1gZ4",
+      }, // 26
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/L6Ro/he4oxTEf4",
+      }, // 27
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/EvyP/vqYiCt5u7",
+      }, // 28
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/NNcA/LcVTL29ZE",
+      }, // 29
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/L7cM/LEeoVx1z8",
+      }, // 30
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/g6vP/CEPvoyWUn",
+      }, // 31
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/7hWL/kmkWhsuJm",
+      }, // 32
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/YTyu/iWYM36BJG",
+      }, // 33
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/iZFQ/g5oJpDjJm",
+      }, // 34
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/cnXv/m4ZMP3KS4",
+      }, // 35
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/jndN/CT1GQkFcb",
+      }, // 36
+    ],
+  }, // оппенгеймер
+  {
+    release: new Date("2024-02-02"),
+    publication: new Date("2024-02-06"),
+    format: "фильм",
+    grade: "A",
+    poster: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/vN6q/KcxePCXZa",
+    title: "Орион и Тьма",
+    original: "Orion and the Dark",
+    kinopoisk: "https://www.kinopoisk.ru/film/5326241/",
+    director: [
+      {
+        name: "Шон Чэрмэтц",
+      },
+    ],
+    cast: [
+      {
+        name: "Джейкоб Тремблей",
+      },
+      {
+        name: "Пол Уолтер Хаузер",
+      },
+    ],
+    description:
+      "Мальчик Орион панически боится высоты, домашних животных, но больше всего — темноты.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: [
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/xknb/NykFfLgY1",
+      }, // 1
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/iLou/rWv7cpDSv",
+      }, // 2
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/6svS/RyTHbAayo",
+      }, // 3
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/TZCR/HJPxsUDNb",
+      }, // 4
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/e2Z2/Evqu6GdHL",
+      }, // 5
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/YyQN/LztttVTQF",
+      }, // 6
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/X5Hh/g42JHYDhA",
+      }, // 7
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/vXAR/v9UUDsWwe",
+      }, // 8
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/LxQo/GaWMcRu2W",
+      }, // 9
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/41bH/KPsiWJopz",
+      }, // 10
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/J33c/MqmnwCXYt",
+      }, // 11
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/ASPz/Ez2y11Jdz",
+      }, // 12
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/Rpnj/Xvj27wkcV",
+      }, // 13
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/TPg8/nQ7e7JJ8Z",
+      }, // 14
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/8ygz/HhViSuKyT",
+      }, // 15
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/GYvV/HcPnJDXEv",
+      }, // 16
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/1U5Z/5GZZofCtS",
+      }, // 17
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/foYQ/JqLMEc245",
+      }, // 18
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/k5sS/oYGG9Aoe4",
+      }, // 19
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/d4wz/HPVVe5j2N",
+      }, // 20
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/vcAb/4x1VqdAKs",
+      }, // 21
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/TNZH/pWehrxRFe",
+      }, // 22
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/7wUa/mByT81ejK",
+      }, // 23
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/WTQf/iqxMRdvkf",
+      }, // 24
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/xCnd/io8TTGSpT",
+      }, // 25
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/NYB3/xHXLEitRi",
+      }, // 26
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/PawW/B79Dgmnwa",
+      }, // 27
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/Dg7K/n9Y2QQcx3",
+      }, // 28
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/6ynY/XtgTbajmM",
+      }, // 29
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/gYPY/7dQWwTC6f",
+      }, // 30
+    ],
+  }, // орион и тьма
+  {
+    release: new Date("2023-11-10"),
+    publication: new Date("2023-12-17"),
+    format: "фильм",
+    grade: "B",
+    poster: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/dbfo/mj9K9tAbg",
+    title: "Оставленные",
+    original: "The Holdovers",
+    kinopoisk: "https://www.kinopoisk.ru/film/4499386/",
+    director: [
+      {
+        name: "Александр Пэйн",
+      },
+    ],
+    cast: [
+      {
+        name: "Пол Джаматти",
+      },
+      {
+        name: "Доминик Сесса",
+      },
+      {
+        name: "Давайн Джой Рэндольф",
+      },
+    ],
+    description:
+      "Ученики престижной закрытой школы для мальчиков разъезжаются на каникулы. Несколько учеников остаются, и за ними присматривают учитель истории Ханэм и повариха Мэри.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "новогодний",
+      },
+    ],
+    screenshots: [
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/Arjw/2wCxzU2zx",
+      }, // 1
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/NAcE/PeGezuevV",
+      }, // 2
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/z4a9/C26x97qNn",
+      }, // 3
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/DWd8/W2JTQFPBh",
+      }, // 4
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/DYU9/9pWy7qa1t",
+      }, // 5
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/Wc7F/urwaTubN6",
+      }, // 6
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/QA4g/58vhWwDbv",
+      }, // 7
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/iAwF/e8kVZGMTh",
+      }, // 8
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/1rt3/hy6g3Q67x",
+      }, // 9
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/QfH3/geXS6P2p1",
+      }, // 10
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/4f7Y/BTWh7EmFm",
+      }, // 11
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/QcPT/TiW8pmeMf",
+      }, // 12
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/mtNj/o8VAtBEYh",
+      }, // 13
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/1B7X/jvC7H9cQL",
+      }, // 14
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/wJGT/rn3H1WcS6",
+      }, // 15
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/UKpt/ZeKV1tFJ2",
+      }, // 16
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/RM6K/12SDHo4wB",
+      }, // 17
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/Xu6D/TZG22JBce",
+      }, // 18
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/Tn6q/RHLzxAPLj",
+      }, // 19
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/Zv19/5QjyKMCAu",
+      }, // 20
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/stpr/szSMaRSY6",
+      }, // 21
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/6HAs/NsN7eEZsN",
+      }, // 22
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/oaMp/tcH2dziV5",
+      }, // 23
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/7siE/9UaSPRFxC",
+      }, // 24
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/Y4PQ/WWTxt5FBx",
+      }, // 25
+    ],
+  }, // оставленные
+  {
+    release: new Date("2023-11-22"),
+    publication: new Date("2023-12-13"),
+    format: "фильм",
+    grade: "B",
+    poster: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/zaTv/sQTUogJjc",
+    title: "Оставь мир позади",
+    original: "Leave the World Behind",
+    kinopoisk: "https://www.kinopoisk.ru/film/4511543/",
+    director: [
+      {
+        name: "Сэм Эсмейл",
+      },
+    ],
+    cast: [
+      {
+        name: "Джулия Робертс",
+      },
+      {
+        name: "Итан Хоук",
+      },
+      {
+        name: "Махершала Али",
+      },
+      {
+        name: "Майхала Херролд",
+      },
+    ],
+    description:
+      "Две семьи оказываются заперты в загородном доме, пока мир вокруг рушится.",
+    genres: [
+      {
+        genre: "триллер",
+      },
+    ],
+    screenshots: [
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/RVX9/PWdGtBrVt",
+      }, // 1
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/bfNM/rVMXNkBvS",
+      }, // 2
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/QwDX/DGhWdNhyJ",
+      }, // 3
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/tPrw/DqEhu9Ego",
+      }, // 4
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/kBCY/h4cgQi9gN",
+      }, // 5
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/J2Eh/FEm2KoUFP",
+      }, // 6
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/PHNM/SY1R8rEqb",
+      }, // 7
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/tKDn/RXCSxE2VH",
+      }, // 8
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/jtZo/RBrPk5j5a",
+      }, // 9
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/3rJo/tcyzL4SHA",
+      }, // 10
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/8kFP/kucfJNw3h",
+      }, // 11
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/9CUH/UQZ7Tv2cM",
+      }, // 12
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/rCX3/bDtwcsLL3",
+      }, // 13
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/T5FF/iBtXPFxak",
+      }, // 14
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/VCbc/82AMrbqtE",
+      }, // 15
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/vR6y/AEJLDFRfe",
+      }, // 16
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/28vC/abKDF3BQU",
+      }, // 17
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/vdZT/sguDgk6kR",
+      }, // 18
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/ofTR/cc5b1YusW",
+      }, // 19
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/6HQ9/TQyhQZvYe",
+      }, // 20
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/17sY/bgRxMewGm",
+      }, // 21
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/W4bC/pTKAYgR1w",
+      }, // 22
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/8DqQ/a3kvQzsvn",
+      }, // 23
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/j672/NZqxQCcFv",
+      }, // 24
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/8kZe/Jvo6AbU3R",
+      }, // 25
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/GJMt/wkgxBpC6n",
+      }, // 26
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/quUr/QvCy4CXan",
+      }, // 27
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/7Jmd/QPj6NYZtH",
+      }, // 28
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/sLuN/ThpisZcBo",
+      }, // 29
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/6qxz/aixG1YJ67",
+      }, // 30
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/7ntM/sZMXxGcGt",
+      }, // 31
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/tJ9z/1LKxSM98z",
+      }, // 32
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/LwoD/KFoitc4RK",
+      }, // 33
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/Decu/YnqErtriJ",
+      }, // 34
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/oTrf/qNUTzkWHa",
+      }, // 35
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/p1xv/f89bHm6uj",
+      }, // 36
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/XhMv/V1jz1RgbD",
+      }, // 37
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/XsaL/DZqNLMJYz",
+      }, // 38
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/cEJy/CPJWYTckK",
+      }, // 39
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/ZFE8/9o91rX99A",
+      }, // 40
+    ],
+  }, // оставь мир позади
+  {
+    release: new Date("2014-11-14"),
+    publication: new Date("2022-03-26"),
+    format: "фильм",
+    grade: "A",
+    poster: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/Nfdr/UBxR5n2v6",
+    title: "Охотник на лис",
+    original: "Foxcatcher",
+    kinopoisk:
+      "https://www.kinopoisk.ru/film/638053/?utm_referrer=www.kinopoisk.ru",
+    director: [
+      {
+        name: "Беннетт Миллер",
+      },
+    ],
+    cast: [
+      {
+        name: "Стив Карелл",
+      },
+      {
+        name: "Ченнинг Татум",
+      },
+      {
+        name: "Марк Руффало",
+      },
+    ],
+    description:
+      "Молодой борец попадает под влияние психически нестабильного миллионера.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "спорт",
+      },
+      {
+        genre: "биография",
+      },
+    ],
+    screenshots: [
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/cEQi/d9kYhGzj1",
+      }, // 1
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/zdgU/CGx73RL7N",
+      }, // 2
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/Jx1q/wUJ1wTJmi",
+      }, // 3
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/EVLp/heL8NHuzz",
+      }, // 4
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/YnuU/E1Z4LoJ9h",
+      }, // 5
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/TF3a/Z8Sp3U3J3",
+      }, // 6
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/DpC7/MBkq1EHY1",
+      }, // 7
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/smY5/gfv9urrDP",
+      }, // 8
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/ZVJi/WgGd1G6yS",
+      }, // 9
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/c2L4/aH9mAzN97",
+      }, // 10
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/d9zY/jTMMgyrgj",
+      }, // 11
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/z3YH/yVmS9FsPT",
+      }, // 12
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/7Kem/daszoA5r1",
+      }, // 13
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/jedt/7UPa1aG2R",
+      }, // 14
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/Bn99/xaPqH7BeE",
+      }, // 15
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/2NH1/cYjpiPnFt",
+      }, // 16
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/AoE8/u8Q4gx5kD",
+      }, // 17
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/1udL/sAPHyYWjZ",
+      }, // 18
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/XYJ2/2A8d3ba75",
+      }, // 19
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/Eo5V/yzrzXBdio",
+      }, // 20
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/AHDw/UQ5Nvf3ri",
+      }, // 21
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/1mXy/VuFJZVj4d",
+      }, // 22
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/CMMG/xtPpWkKnv",
+      }, // 23
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/JyMp/ucqKc7RGG",
+      }, // 24
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/GGqi/Fv2UbYGFk",
+      }, // 25
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/hTCx/Y4QKqpd32",
+      }, // 26
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/Yhvb/9W6LMv6pc",
+      }, // 27
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/UTmZ/rdeMu3RqL",
+      }, // 28
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/Q2de/VtQmuryee",
+      }, // 29
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/49RD/f4wbE8Sx2",
+      }, // 30
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/pxoF/yeuiuDp9V",
+      }, // 31
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/nsQZ/tBWMA3SWf",
+      }, // 32
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/rCrH/y3ogGohxH",
+      }, // 33
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/wXne/XxXqUMu5J",
+      }, // 34
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/jVaY/GKYQqvWf7",
+      }, // 35
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/ESjW/Zu5jgwVYd",
+      }, // 36
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/eikw/s9mCfWQkq",
+      }, // 37
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/nCaS/dVgeTSXtM",
+      }, // 38
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/8z7Y/5PmbHiP6k",
+      }, // 39
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/cCLP/CCjtByAmQ",
+      }, // 40
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/hwbN/ss1SXfaL8",
+      }, // 41
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/rjZj/bmPRqMnK4",
+      }, // 42
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/YVZ7/A3YYwj99t",
+      }, // 43
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/jUts/dVirp7Hxv",
+      }, // 44
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/RrSs/izTasY6U9",
+      }, // 45
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/UXcA/hHytnKaui",
+      }, // 46
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/k4M7/4dwUai6ca",
+      }, // 47
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/ioFc/g4ZoeMWE4",
+      }, // 48
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/fTe3/YZiYg69W3",
+      }, // 49
+      {
+        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/XsTs/qq5a75PXW",
+      }, // 50
+    ],
+  }, // охотник на лис
 ];
 
 // Сортировка films по дате публикации
@@ -9678,6 +11043,4 @@ mainSortTitle.addEventListener("click", function () {
   }
 });
 
-for (let i = 0; i < 4; i++) {
-  document.querySelectorAll(".card__poster")[i].setAttribute("loading", "auto");
-}
+console.log(document.querySelectorAll(".card").length);

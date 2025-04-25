@@ -3,6 +3,7 @@
   --font-Karnak: "Montserrat", sans-serif;
   --font-Imperial-Cheltenham: "STIX Two Text", serif;
   --font-Magslab-Cheltenham-Cond: "Noto Serif", serif;
+  --images-opacity: 300ms;
   --background: white;
   --header-border-bottom: #e2e2e2;
   --button-header-hover: #f7f7f7;
@@ -25,6 +26,7 @@
   --link-border: #dfdfdf;
   --link-hover: #ebebeb;
   --popup-screenshot: rgba(0, 0, 0, 0.4);
+  --background-image: #ebebeb;
 }
 
 body.dark-theme {
@@ -50,6 +52,7 @@ body.dark-theme {
   --link-border: #424242;
   --link-hover: #363636;
   --popup-screenshot: rgba(0, 0, 0, 0.85);
+  --background-image: #ccc;
 }
 
 *,
@@ -567,6 +570,7 @@ body {
 
 .top__images_block {
   position: relative;
+  background: var(--background-image);
   counter-increment: section;
 }
 
@@ -761,7 +765,7 @@ body {
 .top__images_image {
   object-fit: cover;
   opacity: 0;
-  transition: opacity 0.35s ease-in-out;
+  transition: opacity var(--images-opacity) ease-in-out;
   inline-size: 100%;
   block-size: 100%;
 }
@@ -915,12 +919,20 @@ body {
   display: block;
 }
 
-.card__poster {
+.card__poster__block {
   border-radius: 3px;
-  object-fit: cover;
-  opacity: 0;
+  overflow: hidden;
+  background: var(--background-image);
   inline-size: 100%;
   aspect-ratio: 0.6666667/1;
+}
+
+.card__poster {
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity var(--images-opacity) ease-in-out;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .card__under_poster {
@@ -972,7 +984,7 @@ body {
 .popup__film__close {
   position: fixed;
   top: 24px;
-  right: 24px;
+  left: 24px;
   z-index: 1;
   border: none;
   border-radius: 3px;
@@ -985,7 +997,7 @@ body {
 }
 
 .popup__film__close svg {
-  stroke: var(--dark-light);
+  fill: var(--title);
   inline-size: 16px;
   block-size: 16px;
 }
@@ -1008,6 +1020,7 @@ body {
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  background: var(--background-image);
   transition: all 0.5s;
   inline-size: 50%;
 }
@@ -1015,6 +1028,7 @@ body {
 .film__poster {
   object-fit: cover;
   opacity: 0;
+  transition: opacity var(--images-opacity) ease-in-out;
   inline-size: 100%;
   block-size: 100%;
 }
@@ -1186,6 +1200,7 @@ body {
 
 .film__screenshot {
   position: relative;
+  background: var(--background-image);
   cursor: pointer;
   counter-increment: section;
 }
@@ -1205,6 +1220,7 @@ body {
 .film__screenshot__img {
   object-fit: cover;
   opacity: 0;
+  transition: opacity var(--images-opacity) ease-in-out;
   inline-size: 100%;
   aspect-ratio: 1/0.561666;
 }

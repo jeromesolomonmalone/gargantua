@@ -225,16 +225,19 @@
     <div class="popup__film">
       <div class="popup__film__content">
         <button type="button" class="popup__film__close">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xml:space="preserve"
+            baseProfile="tiny"
+            viewBox="0 0 42 42"
+          >
             <path
-              fill="inherit"
-              stroke-width="4"
-              stroke-miterlimit="10"
-              d="m7.741 7.741 34.618 34.618M42.258 7.742l-34.64 34.64"
+              fill-rule="inherit"
+              d="M31 38.32 13.391 21 31 3.68 28.279 1 8 21.01 28.279 41z"
             />
           </svg>
         </button>
-        <div class="film__header film__header_is-row-reverse">
+        <div class="film__header film__header_is-row">
           <div class="film__posters"></div>
           <div class="film__header__text">
             <img class="film__header__grade" src="" alt="" />
@@ -346,7 +349,9 @@
     </template>
     <template id="main__list-template">
       <li class="main__list__item card">
-        <img class="card__poster" src="" alt="" loading="lazy" />
+        <div class="card__poster__block">
+          <img class="card__poster" src="" alt="" loading="lazy" />
+        </div>
         <div class="card__under_poster">
           <img class="card__grade" src="" alt="" />
           <p class="card__publication"></p>
