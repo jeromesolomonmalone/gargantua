@@ -982,24 +982,36 @@ body {
 }
 
 .popup__film__close {
-  position: fixed;
-  top: 24px;
-  left: 24px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
   z-index: 1;
   border: none;
-  border-radius: 3px;
-  padding: 8px 8px;
   background: transparent;
-  transition: 0.6s;
   cursor: pointer;
-  inline-size: 34px;
+}
+
+.popup__film__close:hover .popup__film__close__img {
+  background: var(--button-header-hover);
+}
+
+.popup__film__close:hover .popup__film__close__img_is-reverse {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.popup__film__close__img {
+  display: block;
+  border-radius: 3px;
+  padding: 8px;
+  object-fit: contain;
+  fill: var(--title);
+  transition: 0.6s;
+  inline-size: 32px;
   aspect-ratio: 1/1;
 }
 
-.popup__film__close svg {
-  fill: var(--title);
-  inline-size: 16px;
-  block-size: 16px;
+.popup__film__close__img_is-reverse {
+  fill: white;
 }
 
 .film__header {
@@ -1273,7 +1285,7 @@ body {
 .popup__screenshot__close {
   position: absolute;
   top: 24px;
-  left: 24px;
+  right: 24px;
   z-index: 1;
   border: none;
   border-radius: 3px;
@@ -1541,6 +1553,14 @@ body {
     padding: 13px 0 9px;
   }
 
+  .popup__film__close:hover .popup__film__close__img {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .popup__film__close__img {
+    fill: white;
+  }
+
   .film__header {
     flex-direction: column;
     align-items: center;
@@ -1624,6 +1644,10 @@ body {
     align-items: start;
   }
 
+  .header__button:hover {
+    background: transparent;
+  }
+
   .header__logo {
     block-size: 36px;
   }
@@ -1661,6 +1685,18 @@ body {
   .card__title,
   .card__subtitle {
     display: none;
+  }
+
+  .popup__film__close:hover .popup__film__close__img {
+    background: transparent;
+  }
+
+  .popup__film__close:hover .popup__film__close__img_is-reverse {
+    background: transparent;
+  }
+
+  .popup__film__close svg {
+    fill: white;
   }
 
   .film__posters {
