@@ -935,39 +935,7 @@ body {
   block-size: 100%;
 }
 
-.card__under_poster {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-block-start: 11px;
-}
-
-.card__grade {
-  inline-size: 22px;
-  aspect-ratio: 1/1;
-}
-
-.card__title {
-  margin: 4px 0 0;
-  color: var(--title);
-  font-family: var(--font-Imperial-Cheltenham);
-  font-weight: 700;
-  font-size: 0.9375rem;
-  line-height: 1;
-  letter-spacing: initial;
-}
-
-.card__subtitle {
-  line-height: 1.125rem;
-}
-
-.card__season {
-  text-transform: capitalize;
-}
-
-.card__title__original,
-.card__year__original,
-.card__publication__original {
+.card__hidden__information {
   color: transparent;
   font-size: 0;
   line-height: 0;
@@ -1042,7 +1010,7 @@ body {
   opacity: 0;
   transition: opacity var(--images-opacity) ease-in-out;
   inline-size: 100%;
-  block-size: 100%;
+  aspect-ratio: 0.666666667/1;
 }
 
 .film__poster:nth-child(-1n + 6) {
@@ -1571,11 +1539,6 @@ body {
     inline-size: 120%;
   }
 
-  .film__poster {
-    block-size: auto;
-    aspect-ratio: 0.6666667/1;
-  }
-
   .film__poster:nth-child(-1n + 6) {
     display: block;
   }
@@ -1679,12 +1642,6 @@ body {
   .main__list {
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-  }
-
-  .card__under_poster,
-  .card__title,
-  .card__subtitle {
-    display: none;
   }
 
   .popup__film__close:hover .popup__film__close__img {
