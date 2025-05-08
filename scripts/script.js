@@ -13114,16 +13114,11 @@ function addCard(item) {
     .querySelector(".main__list__item")
     .cloneNode(true);
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const elementPoster = mainListElement.querySelector(".card__poster");
-
-    const img = new Image();
-    img.src = item.miniposter;
-    img.onload = function () {
-      elementPoster.src = img.src;
-      elementPoster.alt = "Постер из «" + item.title + "»";
-      elementPoster.style.opacity = "1";
-    };
+  const elementPoster = mainListElement.querySelector(".card__poster");
+  elementPoster.src = item.miniposter;
+  elementPoster.alt = "Постер из «" + item.title + "»";
+  elementPoster.addEventListener("load", function () {
+    elementPoster.style.opacity = "1";
   });
 
   mainListElement.querySelector(".card__grade").textContent = item.grade;
