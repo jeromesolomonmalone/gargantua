@@ -4,8 +4,8 @@ const films = [
     publication: new Date("2023-05-13"),
     format: "фильм",
     grade: "B",
-    poster: "https://jeromesolomonmalone.github.io/gargantua/images/posters/air.jpg",
-    miniposter: "https://jeromesolomonmalone.github.io/gargantua/images/miniposters/air.jpg",
+    poster: "posters/air.jpg",
+    miniposter: "miniposters/air.jpg",
     title: "Air: Большой прыжок",
     original: "Air",
     kinopoisk:
@@ -47,61 +47,61 @@ const films = [
     ],
     screenshots: [
       {
-        link: "https://jeromesolomonmalone.github.io/gargantua/images/films/2024/air/1.jpg",
+        link: "films/2024/air/1.jpg",
       }, // 1
       {
-        link: "https://jeromesolomonmalone.github.io/gargantua/images/films/2024/air/2.jpg",
+        link: "films/2024/air/2.jpg",
       }, // 2
       {
-        link: "../images/films/2024/air/3.jpg",
+        link: "films/2024/air/3.jpg",
       }, // 3
       {
-        link: "/images/films/2024/air/4.jpg",
+        link: "films/2024/air/4.jpg",
       }, // 4
       {
-        link: "/images/films/2024/air/5.jpg",
+        link: "films/2024/air/5.jpg",
       }, // 5
       {
-        link: "/images/films/2024/air/6.jpg",
+        link: "films/2024/air/6.jpg",
       }, // 6
       {
-        link: "/images/films/2024/air/7.jpg",
+        link: "films/2024/air/7.jpg",
       }, // 7
       {
-        link: "/images/films/2024/air/8.jpg",
+        link: "films/2024/air/8.jpg",
       }, // 8
       {
-        link: "/images/films/2024/air/9.jpg",
+        link: "films/2024/air/9.jpg",
       }, // 9
       {
-        link: "/images/films/2024/air/10.jpg",
+        link: "films/2024/air/10.jpg",
       }, // 10
       {
-        link: "/images/films/2024/air/11.jpg",
+        link: "films/2024/air/11.jpg",
       }, // 11
       {
-        link: "/images/films/2024/air/12.jpg",
+        link: "films/2024/air/12.jpg",
       }, // 12
       {
-        link: "/images/films/2024/air/13.jpg",
+        link: "films/2024/air/13.jpg",
       }, // 13
       {
-        link: "/images/films/2024/air/14.jpg",
+        link: "films/2024/air/14.jpg",
       }, // 14
       {
-        link: "/images/films/2024/air/15.jpg",
+        link: "films/2024/air/15.jpg",
       }, // 15
       {
-        link: "/images/films/2024/air/16.jpg",
+        link: "films/2024/air/16.jpg",
       }, // 16
       {
-        link: "/images/films/2024/air/17.jpg",
+        link: "films/2024/air/17.jpg",
       }, // 17
       {
-        link: "/images/films/2024/air/18.jpg",
+        link: "films/2024/air/18.jpg",
       }, // 18
       {
-        link: "/images/films/2024/air/19.jpg",
+        link: "films/2024/air/19.jpg",
       }, // 19
     ],
   }, // air: большой прыжок
@@ -13034,11 +13034,10 @@ function BigImage() {
 
       const topImage = topImagesElement.querySelector(".top__images_image");
 
-      const img = new Image();
-      img.src = item;
-      img.decode().then(() => {
-        topImage.src = img.src;
-        topImage.alt = "Скриншот";
+      topImage.src =
+        "https://jeromesolomonmalone.github.io/gargantua/images/" + item;
+      topImage.alt = "Скриншот";
+      topImage.addEventListener("load", function () {
         topImage.style.opacity = "1";
       });
 
@@ -13114,7 +13113,8 @@ function addCard(item) {
     .cloneNode(true);
 
   const elementPoster = mainListElement.querySelector(".card__poster");
-  elementPoster.src = item.miniposter;
+  elementPoster.src =
+    "https://jeromesolomonmalone.github.io/gargantua/images/" + item.miniposter;
   elementPoster.alt = "Постер из «" + item.title + "»";
   elementPoster.addEventListener("load", function () {
     elementPoster.style.opacity = "1";
@@ -13563,6 +13563,14 @@ function showFilmCard(item) {
     popupFilmCloseImg.classList.add("popup__film__close__img_is-reverse");
   }
 
+  const filmHeaderTitle = popupFilm.querySelector(".film__header__title");
+  filmHeaderTitle.textContent = item.title;
+  if (filmHeaderTitle.textContent.length > 20) {
+    filmHeaderTitle.classList.add("film__header__title_is-small");
+  } else {
+    filmHeaderTitle.classList.remove("film__header__title_is-small");
+  }
+
   // ПОСТЕРЫ в попап
   const filmPosters = document.querySelector(".film__posters");
   const filmPostersTemplate = document.querySelector(
@@ -13576,11 +13584,10 @@ function showFilmCard(item) {
       .querySelector(".film__poster")
       .cloneNode(true);
 
-    const img = new Image();
-    img.src = item;
-    img.decode().then(() => {
-      element.src = img.src;
-      element.alt = "Постер из «" + filmHeaderTitle.textContent + "»";
+    element.src =
+      "https://jeromesolomonmalone.github.io/gargantua/images/" + item;
+    element.alt = "Постер из «" + filmHeaderTitle.textContent + "»";
+    element.addEventListener("load", function () {
       element.style.opacity = "1";
     });
 
@@ -13596,13 +13603,6 @@ function showFilmCard(item) {
   const filmGrade = popupFilm.querySelector(".film__header__grade");
   defineGradeWhite(item.grade, filmGrade);
 
-  const filmHeaderTitle = popupFilm.querySelector(".film__header__title");
-  filmHeaderTitle.textContent = item.title;
-  if (filmHeaderTitle.textContent.length > 20) {
-    filmHeaderTitle.classList.add("film__header__title_is-small");
-  } else {
-    filmHeaderTitle.classList.remove("film__header__title_is-small");
-  }
   if (item.season != null) {
     if (item.season == "мини–сериал") {
       popupFilm.querySelector(".film__header__season").textContent =
@@ -13649,14 +13649,15 @@ function showFilmCard(item) {
     function add(item) {
       const element = template.querySelector("." + className1).cloneNode(true);
 
-      const img = new Image();
-      img.src = item;
-      img.decode().then(() => {
-        element.querySelector("." + className2).src = img.src;
-        element.querySelector("." + className2).alt =
-          "Скриншот из «" + filmHeaderTitle.textContent + "»";
-        element.querySelector("." + className2).style.opacity = "1";
-      });
+      element.querySelector("." + className2).src =
+        "https://jeromesolomonmalone.github.io/gargantua/images/" + item;
+      element.querySelector("." + className2).alt =
+        "Скриншот из «" + filmHeaderTitle.textContent + "»";
+      element
+        .querySelector("." + className2)
+        .addEventListener("load", function () {
+          element.querySelector("." + className2).style.opacity = "1";
+        });
 
       return element;
     }
@@ -13722,14 +13723,16 @@ function showFilmCard(item) {
           .querySelector(".popup__screenshot__block")
           .cloneNode(true);
 
-        const img = new Image();
-        img.src = item.querySelector(".film__screenshot__img").src;
-        img.decode().then(() => {
-          element.querySelector(".popup__screenshot__img").src = img.src;
-          element.querySelector(".popup__screenshot__img").alt =
-            item.querySelector(".film__screenshot__img").alt;
-          element.querySelector(".popup__screenshot__img").style.opacity = "1";
-        });
+        element.querySelector(".popup__screenshot__img").src =
+          item.querySelector(".film__screenshot__img").src;
+        element.querySelector(".popup__screenshot__img").alt =
+          item.querySelector(".film__screenshot__img").alt;
+        element
+          .querySelector(".popup__screenshot__img")
+          .addEventListener("load", function () {
+            element.querySelector(".popup__screenshot__img").style.opacity =
+              "1";
+          });
 
         return element;
       }
