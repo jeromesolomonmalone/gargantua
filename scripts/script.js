@@ -47,10 +47,10 @@ const films = [
     ],
     screenshots: [
       {
-        link: "../images/films/2024/air/1.jpg"
+        link: "/images/films/2024/air/1.jpg"
       }, // 1
       {
-        link: "../images/films/2024/air/2.jpg"
+        link: "/images/films/2024/air/2.jpg"
       }, // 2
       {
         link: "../images/films/2024/air/3.jpg"
