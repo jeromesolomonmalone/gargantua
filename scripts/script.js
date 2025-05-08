@@ -13114,15 +13114,15 @@ function addCard(item) {
     .cloneNode(true);
   const elementPoster = mainListElement.querySelector(".card__poster");
 
-  const img = new Image();
-  img.src = item.miniposter;
-  img.decode().then(() => {
-    
-  });
+  
+  
 
   elementPoster.src = item.miniposter;
     elementPoster.alt = "Постер из «" + item.title + "»";
-    elementPoster.style.opacity = "1";
+    elementPoster.decode().then(() => {
+      elementPoster.style.opacity = "1";
+    });
+    
 
   mainListElement.querySelector(".card__grade").textContent = item.grade;
   mainListElement.querySelector(".card__title").textContent = item.title;
