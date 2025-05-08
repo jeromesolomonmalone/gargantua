@@ -4,8 +4,8 @@ const films = [
     publication: new Date("2023-05-13"),
     format: "фильм",
     grade: "B",
-    poster: "/images/posters/air.jpg",
-    miniposter: "/images/miniposters/air.jpg",
+    poster: "https://jeromesolomonmalone.github.io/gargantua/images/posters/air.jpg",
+    miniposter: "https://jeromesolomonmalone.github.io/gargantua/images/miniposters/air.jpg",
     title: "Air: Большой прыжок",
     original: "Air",
     kinopoisk:
@@ -47,13 +47,13 @@ const films = [
     ],
     screenshots: [
       {
-        link: "/images/films/2024/air/1.jpg",
+        link: "https://jeromesolomonmalone.github.io/gargantua/images/films/2024/air/1.jpg",
       }, // 1
       {
-        link: "/images/films/2024/air/2.jpg",
+        link: "https://jeromesolomonmalone.github.io/gargantua/images/films/2024/air/2.jpg",
       }, // 2
       {
-        link: "/images/films/2024/air/3.jpg",
+        link: "../images/films/2024/air/3.jpg",
       }, // 3
       {
         link: "/images/films/2024/air/4.jpg",
