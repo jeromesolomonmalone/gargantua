@@ -13117,10 +13117,12 @@ function addCard(item) {
   const img = new Image();
   img.src = item.miniposter;
   img.decode().then(() => {
-    elementPoster.src = img.src;
+    
+  });
+
+  elementPoster.src = item.miniposter;
     elementPoster.alt = "Постер из «" + item.title + "»";
     elementPoster.style.opacity = "1";
-  });
 
   mainListElement.querySelector(".card__grade").textContent = item.grade;
   mainListElement.querySelector(".card__title").textContent = item.title;
