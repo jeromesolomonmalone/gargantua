@@ -4,8 +4,8 @@ const films = [
     publication: new Date("2023-05-13"),
     format: "фильм",
     grade: "B",
-    poster: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/kKvP/64h1pXdTm",
-    miniposter: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/qL7U/7sWAzXZN3",
+    poster: "../images/posters/air.jpg",
+    miniposter: "../images/miniposters/air.jpg",
     title: "Air: Большой прыжок",
     original: "Air",
     kinopoisk:
@@ -47,61 +47,61 @@ const films = [
     ],
     screenshots: [
       {
-        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/LBPV/V74iY4rLP"
+        link: "../images/films/2024/air/1.jpg"
       }, // 1
       {
-        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/hnZY/iwaXTyVQK"
+        link: "../images/films/2024/air/2.jpg"
       }, // 2
       {
-        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/FhEC/aCBAm74B8"
+        link: "../images/films/2024/air/3.jpg"
       }, // 3
       {
-        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/E2aN/nSG63rjfs"
+        link: "../images/films/2024/air/4.jpg"
       }, // 4
       {
-        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/geUq/ntpT3zzrP"
+        link: "../images/films/2024/air/5.jpg"
       }, // 5
       {
-        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/ZSA5/xjNtUvKwE"
+        link: "../images/films/2024/air/6.jpg"
       }, // 6
       {
-        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/qkAP/hZxPDNegV"
+        link: "../images/films/2024/air/7.jpg"
       }, // 7
       {
-        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/bRPv/SfUDpPBn8"
+        link: "../images/films/2024/air/8.jpg"
       }, // 8
       {
-        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/ng9X/jHiLnjsCH"
+        link: "../images/films/2024/air/9.jpg"
       }, // 9
       {
-        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/9Nvn/CWxS65cT9"
+        link: "../images/films/2024/air/10.jpg"
       }, // 10
       {
-        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/ZbzE/7i1JevXsu"
+        link: "../images/films/2024/air/11.jpg"
       }, // 11
       {
-        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/XPgg/UqKoCeaK5"
+        link: "../images/films/2024/air/12.jpg"
       }, // 12
       {
-        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/Ea6B/s9D2erncR"
+        link: "../images/films/2024/air/13.jpg"
       }, // 13
       {
-        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/j3W2/NFZ1mBzWX"
+        link: "../images/films/2024/air/14.jpg"
       }, // 14
       {
-        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/6i9w/CHWP3dkgq"
+        link: "../images/films/2024/air/15.jpg"
       }, // 15
       {
-        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/goaY/xaxXxCpHs"
+        link: "../images/films/2024/air/16.jpg"
       }, // 16
       {
-        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/mZ2J/B5xHo3y8L"
+        link: "../images/films/2024/air/17.jpg"
       }, // 17
       {
-        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/E2vG/bL1yuuqGJ"
+        link: "../images/films/2024/air/18.jpg"
       }, // 18
       {
-        link: "https://thumb.cloud.mail.ru/weblink/thumb/xw1/LsnZ/q1vLnZvMf"
+        link: "../images/films/2024/air/19.jpg"
       } // 19
     ]
   }, // air: большой прыжок
