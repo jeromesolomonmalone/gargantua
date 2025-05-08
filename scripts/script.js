@@ -4,8 +4,8 @@ const films = [
     publication: new Date("2023-05-13"),
     format: "фильм",
     grade: "B",
-    poster: "../images/posters/air.jpg",
-    miniposter: "../images/miniposters/air.jpg",
+    poster: "/images/posters/air.jpg",
+    miniposter: "/images/miniposters/air.jpg",
     title: "Air: Большой прыжок",
     original: "Air",
     kinopoisk:
@@ -53,55 +53,55 @@ const films = [
         link: "/images/films/2024/air/2.jpg"
       }, // 2
       {
-        link: "../images/films/2024/air/3.jpg"
+        link: "/images/films/2024/air/3.jpg"
       }, // 3
       {
-        link: "../images/films/2024/air/4.jpg"
+        link: "/images/films/2024/air/4.jpg"
       }, // 4
       {
-        link: "../images/films/2024/air/5.jpg"
+        link: "/images/films/2024/air/5.jpg"
       }, // 5
       {
-        link: "../images/films/2024/air/6.jpg"
+        link: "/images/films/2024/air/6.jpg"
       }, // 6
       {
-        link: "../images/films/2024/air/7.jpg"
+        link: "/images/films/2024/air/7.jpg"
       }, // 7
       {
-        link: "../images/films/2024/air/8.jpg"
+        link: "/images/films/2024/air/8.jpg"
       }, // 8
       {
-        link: "../images/films/2024/air/9.jpg"
+        link: "/images/films/2024/air/9.jpg"
       }, // 9
       {
-        link: "../images/films/2024/air/10.jpg"
+        link: "/images/films/2024/air/10.jpg"
       }, // 10
       {
-        link: "../images/films/2024/air/11.jpg"
+        link: "/images/films/2024/air/11.jpg"
       }, // 11
       {
-        link: "../images/films/2024/air/12.jpg"
+        link: "/images/films/2024/air/12.jpg"
       }, // 12
       {
-        link: "../images/films/2024/air/13.jpg"
+        link: "/images/films/2024/air/13.jpg"
       }, // 13
       {
-        link: "../images/films/2024/air/14.jpg"
+        link: "/images/films/2024/air/14.jpg"
       }, // 14
       {
-        link: "../images/films/2024/air/15.jpg"
+        link: "/images/films/2024/air/15.jpg"
       }, // 15
       {
-        link: "../images/films/2024/air/16.jpg"
+        link: "/images/films/2024/air/16.jpg"
       }, // 16
       {
-        link: "../images/films/2024/air/17.jpg"
+        link: "/images/films/2024/air/17.jpg"
       }, // 17
       {
-        link: "../images/films/2024/air/18.jpg"
+        link: "/images/films/2024/air/18.jpg"
       }, // 18
       {
-        link: "../images/films/2024/air/19.jpg"
+        link: "/images/films/2024/air/19.jpg"
       } // 19
     ]
   }, // air: большой прыжок
