@@ -5,7 +5,7 @@ const films = [
     format: "фильм",
     grade: "B",
     poster: "/images/posters/air.jpg",
-    miniposter: "/images/miniposters/air.jpg",
+    miniposter: "https://jeromesolomonmalone.github.io/gargantua/images/miniposters/air.jpg",
     title: "Air: Большой прыжок",
     original: "Air",
     kinopoisk:
