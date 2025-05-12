@@ -385,8 +385,7 @@ body {
 .navigation__item::after {
   content: "";
   display: inline-block;
-  background: url(https://img.icons8.com/ios-filled/50/1A1A1A/forward--v1.png)
-    no-repeat center / contain;
+  background: url(https://img.icons8.com/ios-filled/50/1A1A1A/forward--v1.png) no-repeat center / contain;
   inline-size: 12px;
   block-size: 21px;
 }
@@ -563,6 +562,7 @@ body {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-100%);
   }
@@ -1010,7 +1010,7 @@ body {
   opacity: 0;
   transition: opacity var(--images-opacity) ease-in-out;
   inline-size: 100%;
-  aspect-ratio: 0.666666667/1;
+  block-size: 100%;
 }
 
 .film__poster:nth-child(-1n + 6) {
@@ -1537,6 +1537,10 @@ body {
   .film__posters {
     grid-template-columns: repeat(6, 1fr);
     inline-size: 120%;
+  }
+
+  .film__poster {
+    aspect-ratio: 0.6666667/1;
   }
 
   .film__poster:nth-child(-1n + 6) {
