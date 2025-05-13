@@ -4655,8 +4655,7 @@ function BigImage() {
 
       const topImage = topImagesElement.querySelector(".top__images_image");
 
-      topImage.src =
-        "https://jeromesolomonmalone.github.io/gargantua/images/" + item;
+      topImage.src = item;
       topImage.alt = "Скриншот";
       topImage.addEventListener("load", function () {
         topImage.style.opacity = "1";
