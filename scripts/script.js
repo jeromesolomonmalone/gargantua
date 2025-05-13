@@ -4235,6 +4235,16 @@ films.sort((dateA, dateB) => dateA.publication - dateB.publication).reverse();
 const location_of_the_images =
   "https://jeromesolomonmalone.github.io/gargantua/images/";
 
+function name_for_link(element) {
+  const names = element
+    .toLowerCase()
+    .split(" /")[0]
+    .replace(/[^\p{L}\d\s]/gu, "")
+    .replace(/\s+/g, "_")
+    .trim();
+  return names;
+}
+
 // константа ПОПАПА ФИЛЬМА
 const popupFilm = document.querySelector(".popup__film");
 const popupScreenshot = document.querySelector(".popup__screenshot");
@@ -4571,20 +4581,13 @@ clonedArray.forEach(function (item) {
     (element, index) => {
       var plus = index + 1;
 
-      const name_for_link = item.original
-        .toLowerCase()
-        .split(" /")[0]
-        .replace(/[^\p{L}\d\s]/gu, "")
-        .replace(/\s+/g, "_")
-        .trim();
-
       if (item.format == "фильм") {
         element =
           location_of_the_images +
           "films/" +
           item.release.getFullYear() +
           "/" +
-          name_for_link +
+          name_for_link(item.original) +
           "/" +
           plus +
           ".jpg";
@@ -4592,7 +4595,7 @@ clonedArray.forEach(function (item) {
         element =
           location_of_the_images +
           "serials/" +
-          name_for_link +
+          name_for_link(item.original) +
           "/" +
           plus +
           ".jpg";
@@ -4600,7 +4603,7 @@ clonedArray.forEach(function (item) {
         element =
           location_of_the_images +
           "serials/" +
-          name_for_link +
+          name_for_link(item.original) +
           "/" +
           "season__" +
           item.season +
@@ -4735,23 +4738,20 @@ function addCard(item) {
   const originalName = mainListElement.querySelector(".card__title__original");
   originalName.textContent = item.original;
 
-  const name_for_link = originalName.textContent
-    .toLowerCase()
-    .split(" /")[0]
-    .replace(/[^\p{L}\d\s]/gu, "")
-    .replace(/\s+/g, "_")
-    .trim();
   const year_for_link = item.release.getFullYear();
 
   const elementPoster = mainListElement.querySelector(".card__poster");
   if (item.format == "фильм" || item.season == "мини–сериал") {
     elementPoster.src =
-      location_of_the_images + "miniposters/" + name_for_link + ".jpg";
+      location_of_the_images +
+      "miniposters/" +
+      name_for_link(originalName.textContent) +
+      ".jpg";
   } else {
     elementPoster.src =
       location_of_the_images +
       "miniposters/" +
-      name_for_link +
+      name_for_link(originalName.textContent) +
       "_" +
       item.season +
       ".jpg";
@@ -5213,12 +5213,7 @@ function showFilmCard(item) {
   }
 
   const format_for_link = item.format;
-  const name_for_link = item.original
-    .toLowerCase()
-    .split(" /")[0]
-    .replace(/[^\p{L}\d\s]/gu, "")
-    .replace(/\s+/g, "_")
-    .trim();
+  const name = name_for_link(item.original);
   const year_for_link = item.release.getFullYear();
   const season_for_link = item.season;
 
@@ -5236,13 +5231,12 @@ function showFilmCard(item) {
       .cloneNode(true);
 
     if (format_for_link == "фильм" || season_for_link == "мини–сериал") {
-      element.src =
-        location_of_the_images + "posters/" + name_for_link + ".jpg";
+      element.src = location_of_the_images + "posters/" + name + ".jpg";
     } else {
       element.src =
         location_of_the_images +
         "posters/" +
-        name_for_link +
+        name +
         "_" +
         season_for_link +
         ".jpg";
@@ -5317,23 +5311,18 @@ function showFilmCard(item) {
           "films/" +
           year_for_link +
           "/" +
-          name_for_link +
+          name +
           "/" +
           item +
           ".jpg";
       } else if (season_for_link == "мини–сериал") {
         element.querySelector("." + className2).src =
-          location_of_the_images +
-          "serials/" +
-          name_for_link +
-          "/" +
-          item +
-          ".jpg";
+          location_of_the_images + "serials/" + name + "/" + item + ".jpg";
       } else {
         element.querySelector("." + className2).src =
           location_of_the_images +
           "serials/" +
-          name_for_link +
+          name +
           "/" +
           "season__" +
           season_for_link +
@@ -5669,3 +5658,23 @@ mainSortTitle.addEventListener("click", function () {
     deleteSortTitle();
   }
 });
+
+function find_the_right_word() {
+  clonedArray.sort((a, b) => {
+    if (a.title.toLowerCase() < b.title.toLowerCase()) {
+      return 1;
+    }
+    if (a.title.toLowerCase() > b.title.toLowerCase()) {
+      return -1;
+    }
+    return 0;
+  });
+
+  for (let i = 0; i < 10; i++) {
+    console.log(name_for_link(clonedArray[i].original));
+  }
+}
+
+// find_the_right_word()
+
+// console.log(document.querySelectorAll(".card").length);
