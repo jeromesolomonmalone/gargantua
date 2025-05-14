@@ -4033,6 +4033,262 @@ const films = [
     screenshots: 23,
   }, // рами 3
   {
+    release: new Date("2023-08-06"),
+    publication: new Date("2024-01-17"),
+    format: "сериал",
+    season: "2",
+    grade: "A",
+    title: "Время побеждать: Расцвет династии Лейкерс",
+    original: "Winning Time: The Rise of the Lakers Dynasty",
+    kinopoisk: "https://www.kinopoisk.ru/series/1272097/",
+    director: [
+      {
+        name: "Макс Боренштейн",
+      },
+      {
+        name: "Джим Хехт",
+      },
+    ],
+    cast: [
+      {
+        name: "Джон Си Райли",
+      },
+      {
+        name: "Куинси Исайя",
+      },
+      {
+        name: "Эдриан Броуди",
+      },
+      {
+        name: "Джейсон Сигел",
+      },
+      {
+        name: "Хэдли Робинсон",
+      },
+      {
+        name: "Джейсон Кларк",
+      },
+    ],
+    description: "История восхождения «Лейкерс» к вершинам спортивного олимпа.",
+    genres: [
+      {
+        genre: "спорт",
+      },
+      {
+        genre: "биография",
+      },
+    ],
+    screenshots: 38,
+  }, // расцвет династии лейкерс 2
+  {
+    release: new Date("2022-03-06"),
+    publication: new Date("2022-08-11"),
+    format: "сериал",
+    season: "1",
+    grade: "A",
+    title: "Время побеждать: Расцвет династии Лейкерс",
+    original: "Winning Time: The Rise of the Lakers Dynasty",
+    kinopoisk: "https://www.kinopoisk.ru/series/1272097/",
+    director: [
+      {
+        name: "Макс Боренштейн",
+      },
+      {
+        name: "Джим Хехт",
+      },
+    ],
+    cast: [
+      {
+        name: "Джон Си Райли",
+      },
+      {
+        name: "Куинси Исайя",
+      },
+      {
+        name: "Эдриан Броуди",
+      },
+      {
+        name: "Джейсон Сигел",
+      },
+      {
+        name: "Хэдли Робинсон",
+      },
+      {
+        name: "Джейсон Кларк",
+      },
+    ],
+    description: "История восхождения «Лейкерс» к вершинам спортивного олимпа.",
+    genres: [
+      {
+        genre: "спорт",
+      },
+      {
+        genre: "биография",
+      },
+    ],
+    screenshots: 19,
+  }, // расцвет династии лейкерс 1
+  {
+    release: new Date("2023-10-15"),
+    publication: new Date("2023-12-28"),
+    format: "сериал",
+    season: "7",
+    grade: "A",
+    title: "Рик и Морти",
+    original: "Rick and Morty",
+    kinopoisk: "https://www.kinopoisk.ru/series/685246/",
+    director: [
+      {
+        name: "Дэн Хармон",
+      },
+      {
+        name: "Джастин Ройланд",
+      },
+    ],
+    cast: [
+      {
+        name: "Джастин Ройланд",
+      },
+      {
+        name: "Крис Парнелл",
+      },
+      {
+        name: "Спенсер Грэммер",
+      },
+      {
+        name: "Сара Чок",
+      },
+    ],
+    description:
+      "Приключения циничного безумного учёного Рика Санчеса и его наивного, капризного и неуверенного в себе внука Морти.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 30,
+  }, // рик и морти 7
+  {
+    release: new Date("2022-09-04"),
+    publication: new Date("2023-01-03"),
+    format: "сериал",
+    season: "6",
+    grade: "A",
+    title: "Рик и Морти",
+    original: "Rick and Morty",
+    kinopoisk: "https://www.kinopoisk.ru/series/685246/",
+    director: [
+      {
+        name: "Дэн Хармон",
+      },
+      {
+        name: "Джастин Ройланд",
+      },
+    ],
+    cast: [
+      {
+        name: "Джастин Ройланд",
+      },
+      {
+        name: "Крис Парнелл",
+      },
+      {
+        name: "Спенсер Грэммер",
+      },
+      {
+        name: "Сара Чок",
+      },
+    ],
+    description:
+      "Приключения циничного безумного учёного Рика Санчеса и его наивного, капризного и неуверенного в себе внука Морти.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 18,
+  }, // рик и морти 6
+  {
+    release: new Date("2021-06-20"),
+    publication: new Date("2021-09-16"),
+    format: "сериал",
+    season: "5",
+    grade: "A",
+    title: "Рик и Морти",
+    original: "Rick and Morty",
+    kinopoisk: "https://www.kinopoisk.ru/series/685246/",
+    director: [
+      {
+        name: "Дэн Хармон",
+      },
+      {
+        name: "Джастин Ройланд",
+      },
+    ],
+    cast: [
+      {
+        name: "Джастин Ройланд",
+      },
+      {
+        name: "Крис Парнелл",
+      },
+      {
+        name: "Спенсер Грэммер",
+      },
+      {
+        name: "Сара Чок",
+      },
+    ],
+    description:
+      "Приключения циничного безумного учёного Рика Санчеса и его наивного, капризного и неуверенного в себе внука Морти.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 18,
+  }, // рик и морти 5
+  {
+    release: new Date("2024-04-04"),
+    publication: new Date("2024-05-05"),
+    format: "сериал",
+    season: "мини–сериал",
+    grade: "A+",
+    title: "Рипли",
+    original: "Ripley",
+    kinopoisk: "https://www.kinopoisk.ru/series/1311083/",
+    director: [
+      {
+        name: "Стивен Зеллиан",
+      },
+    ],
+    cast: [
+      {
+        name: "Эндрю Скотт",
+      },
+      {
+        name: "Дакота Фаннинг",
+      },
+      {
+        name: "Джонни Флинн",
+      },
+    ],
+    description:
+      "Богатый бизнесмен нанимает Тома Рипли, чтобы тот помог ему вернуть сына из Италии обратно в Соединенные Штаты.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "чёрно-белое",
+      },
+    ],
+    screenshots: 310,
+  }, // рипли
+  {
     release: new Date("2024-02-23"),
     publication: new Date("2024-07-21"),
     format: "сериал",
