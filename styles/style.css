@@ -385,7 +385,8 @@ body {
 .navigation__item::after {
   content: "";
   display: inline-block;
-  background: url(https://img.icons8.com/ios-filled/50/1A1A1A/forward--v1.png) no-repeat center / contain;
+  background: url(https://img.icons8.com/ios-filled/50/1A1A1A/forward--v1.png)
+    no-repeat center / contain;
   inline-size: 12px;
   block-size: 21px;
 }

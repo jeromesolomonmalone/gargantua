@@ -4010,6 +4010,15 @@ const films = [
       {
         name: "Рами Юссеф",
       },
+      {
+        name: "Амр Вакед",
+      },
+      {
+        name: "Хиам Аббасс",
+      },
+      {
+        name: "Мэй Каламави",
+      },
     ],
     description:
       "Рами Хассан — американец египетского происхождения из Нью-Джерси, разрывающийся между культурой миллениалов и традициями своей веры.",
@@ -4239,9 +4248,11 @@ function name_for_link(element) {
   const names = element
     .toLowerCase()
     .split(" /")[0]
-    .replace(/[^\p{L}\d\s]/gu, "")
-    .replace(/\s+/g, "_")
-    .trim();
+    .trim()
+    .replace(/[^a-z0-9\-\s]/g, "")
+    .replace(/[-\s]/g, "_")
+    .replace(/__+/g, "_")
+    .substring(0, 250);
   return names;
 }
 
