@@ -4126,7 +4126,7 @@ const films = [
         genre: "биография",
       },
     ],
-    screenshots: 19,
+    screenshots: 17,
   }, // расцвет династии лейкерс 1
   {
     release: new Date("2023-10-15"),
@@ -4288,6 +4288,878 @@ const films = [
     ],
     screenshots: 310,
   }, // рипли
+  {
+    release: new Date("2003-06-22"),
+    publication: new Date("2023-08-25"),
+    format: "сериал",
+    season: "6",
+    grade: "A+",
+    title: "Секс в большом городе",
+    original: "Sex and the City",
+    kinopoisk: "https://www.kinopoisk.ru/series/77042/",
+    director: [
+      {
+        name: "Даррен Стар",
+      },
+    ],
+    cast: [
+      {
+        name: "Сара Джессика Паркер",
+      },
+      {
+        name: "Ким Кэтролл",
+      },
+      {
+        name: "Кристин Дэвис",
+      },
+      {
+        name: "Синтия Никсон",
+      },
+    ],
+    description:
+      "Четыре подруги из Нью-Йорка открыто обсуждают отношения между полами.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 25,
+  }, // секс в большом городе 6
+  {
+    release: new Date("2001-06-03"),
+    publication: new Date("2023-04-07"),
+    format: "сериал",
+    season: "4",
+    grade: "A+",
+    title: "Секс в большом городе",
+    original: "Sex and the City",
+    kinopoisk: "https://www.kinopoisk.ru/series/77042/",
+    director: [
+      {
+        name: "Даррен Стар",
+      },
+    ],
+    cast: [
+      {
+        name: "Сара Джессика Паркер",
+      },
+      {
+        name: "Ким Кэтролл",
+      },
+      {
+        name: "Кристин Дэвис",
+      },
+      {
+        name: "Синтия Никсон",
+      },
+    ],
+    description:
+      "Четыре подруги из Нью-Йорка открыто обсуждают отношения между полами.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 14,
+  }, // секс в большом городе 4
+  {
+    release: new Date("2000-06-04"),
+    publication: new Date("2023-03-11"),
+    format: "сериал",
+    season: "3",
+    grade: "A+",
+    title: "Секс в большом городе",
+    original: "Sex and the City",
+    kinopoisk: "https://www.kinopoisk.ru/series/77042/",
+    director: [
+      {
+        name: "Даррен Стар",
+      },
+    ],
+    cast: [
+      {
+        name: "Сара Джессика Паркер",
+      },
+      {
+        name: "Ким Кэтролл",
+      },
+      {
+        name: "Кристин Дэвис",
+      },
+      {
+        name: "Синтия Никсон",
+      },
+    ],
+    description:
+      "Четыре подруги из Нью-Йорка открыто обсуждают отношения между полами.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 30,
+  }, // секс в большом городе 3
+  {
+    release: new Date("1999-06-06"),
+    publication: new Date("2023-01-21"),
+    format: "сериал",
+    season: "2",
+    grade: "A+",
+    title: "Секс в большом городе",
+    original: "Sex and the City",
+    kinopoisk: "https://www.kinopoisk.ru/series/77042/",
+    director: [
+      {
+        name: "Даррен Стар",
+      },
+    ],
+    cast: [
+      {
+        name: "Сара Джессика Паркер",
+      },
+      {
+        name: "Ким Кэтролл",
+      },
+      {
+        name: "Кристин Дэвис",
+      },
+      {
+        name: "Синтия Никсон",
+      },
+    ],
+    description:
+      "Четыре подруги из Нью-Йорка открыто обсуждают отношения между полами.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 14,
+  }, // секс в большом городе 2
+  {
+    release: new Date("1998-06-07"),
+    publication: new Date("2022-11-14"),
+    format: "сериал",
+    season: "1",
+    grade: "A+",
+    title: "Секс в большом городе",
+    original: "Sex and the City",
+    kinopoisk: "https://www.kinopoisk.ru/series/77042/",
+    director: [
+      {
+        name: "Даррен Стар",
+      },
+    ],
+    cast: [
+      {
+        name: "Сара Джессика Паркер",
+      },
+      {
+        name: "Ким Кэтролл",
+      },
+      {
+        name: "Кристин Дэвис",
+      },
+      {
+        name: "Синтия Никсон",
+      },
+    ],
+    description:
+      "Четыре подруги из Нью-Йорка открыто обсуждают отношения между полами.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 11,
+  }, // секс в большом городе 1
+  {
+    release: new Date("2023-09-21"),
+    publication: new Date("2023-10-03"),
+    format: "сериал",
+    season: "4",
+    grade: "B",
+    title: "Сексуальное просвещение",
+    original: "Sex Education / Половое воспитание",
+    kinopoisk: "https://www.kinopoisk.ru/series/1147693/",
+    director: [
+      {
+        name: "Лори Нанн",
+      },
+    ],
+    cast: [
+      {
+        name: "Эйса Баттерфилд",
+      },
+      {
+        name: "Джиллиан Андерсон",
+      },
+      {
+        name: "Шути Гатва",
+      },
+      {
+        name: "Эмма Маки",
+      },
+      {
+        name: "Коннор Суинделлс",
+      },
+      {
+        name: "Эйми Лу Вуд",
+      },
+    ],
+    description:
+      "Застенчивый подросток, живущий с матерью-сексологом, начинает помогать одноклассникам, давая советы сексуального характера.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 19,
+  }, // сексуальное просвещение 4
+  {
+    release: new Date("2023-10-01"),
+    publication: new Date("2024-08-23"),
+    format: "сериал",
+    season: "35",
+    grade: "B",
+    title: "Симпсоны",
+    original: "The Simpsons",
+    kinopoisk:
+      "https://www.kinopoisk.ru/series/77164/?utm_referrer=www.kinopoisk.ru",
+    director: [
+      {
+        name: "Мэтт Грейнинг",
+      },
+    ],
+    cast: [
+      {
+        name: "Дэн Кастелланета",
+      },
+      {
+        name: "Джули Кавнер",
+      },
+      {
+        name: "Нэнси Картрайт",
+      },
+    ],
+    description:
+      "Приключения семьи из рабочего класса в неблагополучном городе Спрингфилд.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 17,
+  }, // симпсоны 35
+  {
+    release: new Date("2022-09-25"),
+    publication: new Date("2023-08-13"),
+    format: "сериал",
+    season: "34",
+    grade: "B",
+    title: "Симпсоны",
+    original: "The Simpsons",
+    kinopoisk:
+      "https://www.kinopoisk.ru/series/77164/?utm_referrer=www.kinopoisk.ru",
+    director: [
+      {
+        name: "Мэтт Грейнинг",
+      },
+    ],
+    cast: [
+      {
+        name: "Дэн Кастелланета",
+      },
+      {
+        name: "Джули Кавнер",
+      },
+      {
+        name: "Нэнси Картрайт",
+      },
+    ],
+    description:
+      "Приключения семьи из рабочего класса в неблагополучном городе Спрингфилд.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 18,
+  }, // симпсоны 34
+  {
+    release: new Date("2021-09-26"),
+    publication: new Date("2022-09-06"),
+    format: "сериал",
+    season: "33",
+    grade: "B",
+    title: "Симпсоны",
+    original: "The Simpsons",
+    kinopoisk:
+      "https://www.kinopoisk.ru/series/77164/?utm_referrer=www.kinopoisk.ru",
+    director: [
+      {
+        name: "Мэтт Грейнинг",
+      },
+    ],
+    cast: [
+      {
+        name: "Дэн Кастелланета",
+      },
+      {
+        name: "Джули Кавнер",
+      },
+      {
+        name: "Нэнси Картрайт",
+      },
+    ],
+    description:
+      "Приключения семьи из рабочего класса в неблагополучном городе Спрингфилд.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 23,
+  }, // симпсоны 33
+  {
+    release: new Date("2023-08-18"),
+    publication: new Date("2023-09-29"),
+    format: "фильм",
+    grade: "C",
+    title: "Синий Жук",
+    original: "Blue Beetle",
+    kinopoisk: "https://www.kinopoisk.ru/film/1219153/",
+    director: [
+      {
+        name: "Анхель Мануэль Сото",
+      },
+    ],
+    cast: [
+      {
+        name: "Шоло Маридуэнья",
+      },
+      {
+        name: "Бруна Маркезини",
+      },
+      {
+        name: "Дамиан Алькасар",
+      },
+    ],
+    description:
+      "Мексиканский подросток Хайме Рейес получает инопланетный костюм, который даёт ему суперсилы.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 16,
+  }, // синий жук
+  {
+    release: new Date("2023-07-27"),
+    publication: new Date("2023-11-07"),
+    format: "сериал",
+    season: "1",
+    grade: "C",
+    title: "Скрежет металла",
+    original: "Twisted Metal",
+    kinopoisk: "https://www.kinopoisk.ru/series/4397762/",
+    director: [
+      {
+        name: "Ретт Риз",
+      },
+      {
+        name: "Майкл Джонатан Смит",
+      },
+      {
+        name: "Пол Верник",
+      },
+    ],
+    cast: [
+      {
+        name: "Энтони Маки",
+      },
+      {
+        name: "Стефани Беатрис",
+      },
+    ],
+    description:
+      "Джон Доу должен доставить таинственную посылку через постапокалиптическую пустошь в обмен на лучшую жизнь.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "боевик",
+      },
+    ],
+    screenshots: 18,
+  }, // скрежет металла 1
+  {
+    release: new Date("2023-11-17"),
+    publication: new Date("2024-01-28"),
+    format: "фильм",
+    grade: "C",
+    title: "Следующий гол – победный",
+    original: "Next Goal Wins",
+    kinopoisk: "https://www.kinopoisk.ru/film/1318952/",
+    director: [
+      {
+        name: "Тайка Вайтити",
+      },
+    ],
+    cast: [
+      {
+        name: "Майкл Фассбендер",
+      },
+    ],
+    description:
+      "Футбольный тренер Томас Ронген приезжает в Американское Самоа, чтобы подготовить местную команду к отборочному циклу чемпионата мира.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "спорт",
+      },
+    ],
+    screenshots: 20,
+  }, // следующий гол победный
+  {
+    release: new Date("2010-04-16"),
+    publication: new Date("2024-01-13"),
+    format: "фильм",
+    grade: "B",
+    title: "Смерть на похоронах",
+    original: "Death at a Funeral",
+    kinopoisk: "https://www.kinopoisk.ru/film/450725/",
+    director: [
+      {
+        name: "Нил Лабут",
+      },
+    ],
+    cast: [
+      {
+        name: "Крис Рок",
+      },
+      {
+        name: "Мартин Лоуренс",
+      },
+      {
+        name: "Реджина Холл",
+      },
+      {
+        name: "Зои Салдана",
+      },
+      {
+        name: "Джеймс Марсден",
+      },
+      {
+        name: "Питер Динклэйдж",
+      },
+    ],
+    description:
+      "Похоронная церемония превращается в настоящий хаос из-за раскрытых семейных тайн.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 23,
+  }, // смерть на похоронах
+  {
+    release: new Date("2024-07-08"),
+    publication: new Date("2024-08-18"),
+    format: "фильм",
+    grade: "C",
+    title: "Смерч 2",
+    original: "Twisters",
+    kinopoisk: "https://www.kinopoisk.ru/film/5388362/",
+    director: [
+      {
+        name: "Ли Айзек Чун",
+      },
+    ],
+    cast: [
+      {
+        name: "Дейзи Эдгар-Джонс",
+      },
+      {
+        name: "Глен Пауэлл",
+      },
+      {
+        name: "Энтони Рамос",
+      },
+    ],
+    description:
+      "Команда ученых исследуют смерчи. Оказавшись в эпицентре опасных штормов, им приходится бороться за свою жизнь.",
+    genres: [
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 15,
+  }, // смерч 2
+  {
+    release: new Date("2015-03-17"),
+    publication: new Date("2023-12-03"),
+    format: "сериал",
+    season: "6",
+    grade: "A",
+    title: "Сообщество",
+    original: "Community",
+    kinopoisk: "https://www.kinopoisk.ru/series/471825/",
+    director: [
+      {
+        name: "Дэн Хармон",
+      },
+    ],
+    cast: [
+      {
+        name: "Джоэл Макхэйл",
+      },
+      {
+        name: "Гиллиан Джейкобс",
+      },
+      {
+        name: "Элисон Бри",
+      },
+      {
+        name: "Дэнни Пуди",
+      },
+      {
+        name: "Кен Жонг",
+      },
+    ],
+    description:
+      "Сериал рассказывает о студенческом сообществе, которое состоит из школьных лузеров, старающихся сохранить трезвый ум.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 14,
+  }, // сообщетсво 6
+  {
+    release: new Date("2014-01-02"),
+    publication: new Date("2023-03-27"),
+    format: "сериал",
+    season: "5",
+    grade: "A",
+    title: "Сообщество",
+    original: "Community",
+    kinopoisk: "https://www.kinopoisk.ru/series/471825/",
+    director: [
+      {
+        name: "Дэн Хармон",
+      },
+    ],
+    cast: [
+      {
+        name: "Джоэл Макхэйл",
+      },
+      {
+        name: "Дональд Гловер",
+      },
+      {
+        name: "Гиллиан Джейкобс",
+      },
+      {
+        name: "Элисон Бри",
+      },
+      {
+        name: "Дэнни Пуди",
+      },
+      {
+        name: "Иветт Николь Браун",
+      },
+      {
+        name: "Кен Жонг",
+      },
+      {
+        name: "Джонатан Бэнкс",
+      },
+    ],
+    description:
+      "Сериал рассказывает о студенческом сообществе, которое состоит из школьных лузеров, старающихся сохранить трезвый ум.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 13,
+  }, // сообщетсво 5
+  {
+    release: new Date("2013-02-07"),
+    publication: new Date("2023-03-20"),
+    format: "сериал",
+    season: "4",
+    grade: "A",
+    title: "Сообщество",
+    original: "Community",
+    kinopoisk: "https://www.kinopoisk.ru/series/471825/",
+    director: [
+      {
+        name: "Дэвид Гарасио",
+      },
+      {
+        name: "Моусес Порт",
+      },
+    ],
+    cast: [
+      {
+        name: "Джоэл Макхэйл",
+      },
+      {
+        name: "Дональд Гловер",
+      },
+      {
+        name: "Гиллиан Джейкобс",
+      },
+      {
+        name: "Элисон Бри",
+      },
+      {
+        name: "Дэнни Пуди",
+      },
+      {
+        name: "Иветт Николь Браун",
+      },
+      {
+        name: "Чеви Чейз",
+      },
+      {
+        name: "Кен Жонг",
+      },
+    ],
+    description:
+      "Сериал рассказывает о студенческом сообществе, которое состоит из школьных лузеров, старающихся сохранить трезвый ум.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 20,
+  }, // сообщетсво 4
+  {
+    release: new Date("2011-09-22"),
+    publication: new Date("2023-03-12"),
+    format: "сериал",
+    season: "3",
+    grade: "A",
+    title: "Сообщество",
+    original: "Community",
+    kinopoisk: "https://www.kinopoisk.ru/series/471825/",
+    director: [
+      {
+        name: "Дэн Хармон",
+      },
+    ],
+    cast: [
+      {
+        name: "Джоэл Макхэйл",
+      },
+      {
+        name: "Дональд Гловер",
+      },
+      {
+        name: "Гиллиан Джейкобс",
+      },
+      {
+        name: "Элисон Бри",
+      },
+      {
+        name: "Дэнни Пуди",
+      },
+      {
+        name: "Иветт Николь Браун",
+      },
+      {
+        name: "Чеви Чейз",
+      },
+      {
+        name: "Кен Жонг",
+      },
+    ],
+    description:
+      "Сериал рассказывает о студенческом сообществе, которое состоит из школьных лузеров, старающихся сохранить трезвый ум.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 34,
+  }, // сообщетсво 3
+  {
+    release: new Date("2010-09-23"),
+    publication: new Date("2022-10-19"),
+    format: "сериал",
+    season: "2",
+    grade: "A",
+    title: "Сообщество",
+    original: "Community",
+    kinopoisk: "https://www.kinopoisk.ru/series/471825/",
+    director: [
+      {
+        name: "Дэн Хармон",
+      },
+    ],
+    cast: [
+      {
+        name: "Джоэл Макхэйл",
+      },
+      {
+        name: "Дональд Гловер",
+      },
+      {
+        name: "Гиллиан Джейкобс",
+      },
+      {
+        name: "Элисон Бри",
+      },
+      {
+        name: "Дэнни Пуди",
+      },
+      {
+        name: "Иветт Николь Браун",
+      },
+      {
+        name: "Чеви Чейз",
+      },
+      {
+        name: "Кен Жонг",
+      },
+    ],
+    description:
+      "Сериал рассказывает о студенческом сообществе, которое состоит из школьных лузеров, старающихся сохранить трезвый ум.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 48,
+  }, // сообщетсво 2
+  {
+    release: new Date("2009-09-17"),
+    publication: new Date("2022-10-11"),
+    format: "сериал",
+    season: "1",
+    grade: "A",
+    title: "Сообщество",
+    original: "Community",
+    kinopoisk: "https://www.kinopoisk.ru/series/471825/",
+    director: [
+      {
+        name: "Дэн Хармон",
+      },
+    ],
+    cast: [
+      {
+        name: "Джоэл Макхэйл",
+      },
+      {
+        name: "Дональд Гловер",
+      },
+      {
+        name: "Гиллиан Джейкобс",
+      },
+      {
+        name: "Элисон Бри",
+      },
+      {
+        name: "Дэнни Пуди",
+      },
+      {
+        name: "Иветт Николь Браун",
+      },
+      {
+        name: "Чеви Чейз",
+      },
+      {
+        name: "Кен Жонг",
+      },
+    ],
+    description:
+      "Сериал рассказывает о студенческом сообществе, которое состоит из школьных лузеров, старающихся сохранить трезвый ум.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 19,
+  }, // сообщетсво 1
+  {
+    release: new Date("2025-03-07"),
+    publication: new Date("2025-05-03"),
+    format: "сериал",
+    season: "7",
+    grade: "A",
+    title: "Формула 1. Драйв выживания",
+    original: "Formula 1: Drive to Survive",
+    kinopoisk: "https://www.kinopoisk.ru/series/1240162/",
+    director: [
+      {
+        name: "Джеймс Гэй-Рис",
+      },
+      {
+        name: "Пол Мартин",
+      },
+    ],
+    cast: [
+      {
+        name: "",
+      },
+    ],
+    description:
+      "Документальный сериал, дающий возможность заглянуть в закулисье «Формулы-1».",
+    genres: [
+      {
+        genre: "документальный",
+      },
+      {
+        genre: "спорт",
+      },
+    ],
+    screenshots: 47,
+  }, // формула 1. драйв выживания 7
   {
     release: new Date("2024-02-23"),
     publication: new Date("2024-07-21"),
@@ -4882,7 +5754,15 @@ clonedArray.forEach(function (item) {
       return element;
     }
   );
+
+  const random = Math.floor(Math.random() * item.screenshots.length);
+  const qwerty = item.screenshots[random];
+
+  item.screenshots = Array.from({ length: 1 }, (element, index) => {
+    return (element = qwerty);
+  });
 });
+
 const ScreenshotsAll = Array.from(
   clonedArray,
   ({ screenshots }) => screenshots
