@@ -1690,6 +1690,9 @@ const films = [
       {
         name: "Фамке Янссен",
       },
+      {
+        name: "Джеймс Марсден",
+      },
     ],
     description:
       "Люди Икс под руководством профессора Ксавьера сражаются с эволюцией в лице воскресшей Джин Грэй, превратившейся в Тёмного Феникса. Её сила угрожает всем: мутантам и людям.",
@@ -6006,14 +6009,14 @@ function addCard(item) {
           for (let i = 0; i < item.genres.length; i++) {
             if (
               item.genres[i].genre ==
-                descriptionTitle.textContent.toLowerCase() &&
+              descriptionTitle.textContent.toLowerCase() &&
               element.textContent.toLowerCase() == item.format
             ) {
               openCard();
               break;
             } else if (
               descriptionTitle.textContent ==
-                item.release.toString().slice(11, 15) &&
+              item.release.toString().slice(11, 15) &&
               element.textContent.toLowerCase() == item.format
             ) {
               openCard();
