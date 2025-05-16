@@ -3231,6 +3231,64 @@ const films = [
     screenshots: 22,
   }, // пацаны 3
   {
+    release: new Date("2020-09-04"),
+    publication: new Date("2020-10-10"),
+    format: "сериал",
+    season: "2",
+    grade: "B",
+    title: "Пацаны",
+    original: "The Boys",
+    kinopoisk: "https://www.kinopoisk.ru/series/460586/",
+    director: [
+      {
+        name: "Эрик Крипке",
+      },
+    ],
+    cast: [
+      {
+        name: "Карл Урбан",
+      },
+      {
+        name: "Джек Куэйд",
+      },
+      {
+        name: "Энтони Старр",
+      },
+      {
+        name: "Эрин Мориарти",
+      },
+      {
+        name: "Лас Алонсо",
+      },
+      {
+        name: "Томер Капон",
+      },
+      {
+        name: "Карен Фукухара",
+      },
+      {
+        name: "Чейс Кроуфорд",
+      },
+      {
+        name: "Джесси Ашер",
+      },
+    ],
+    description:
+      "В мире, где супергерои — популярные звёзды, за идеальным фасадом скрывается мрачный мир наркотиков и разврата. Противостоит им отряд «Пацаны».",
+    genres: [
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "фантастика",
+      },
+    ],
+    screenshots: 12,
+  }, // пацаны 2
+  {
     release: new Date("2019-10-07"),
     publication: new Date("2023-05-06"),
     format: "сериал",
@@ -5130,6 +5188,719 @@ const films = [
     screenshots: 19,
   }, // сообщетсво 1
   {
+    release: new Date("2016-03-18"),
+    publication: new Date("2025-02-02"),
+    format: "сериал",
+    season: "2",
+    grade: "A",
+    title: "Сорвиголова",
+    original: "Daredevil",
+    kinopoisk: "https://www.kinopoisk.ru/series/817509/",
+    director: [
+      {
+        name: "Дрю Годдард",
+      },
+    ],
+    cast: [
+      {
+        name: "Чарли Кокс",
+      },
+      {
+        name: "Дебора Энн Уолл",
+      },
+      {
+        name: "Элден Хенсон",
+      },
+      {
+        name: "Джон Бернтал",
+      },
+      {
+        name: "Элоди Юнг",
+      },
+    ],
+    description:
+      "Днем он — успешный адвокат, а ночью — мститель в маске по прозвищу Сорвиголова.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 46,
+  }, // сорвиголова 2
+  {
+    release: new Date("2015-04-10"),
+    publication: new Date("2024-03-02"),
+    format: "сериал",
+    season: "1",
+    grade: "A",
+    title: "Сорвиголова",
+    original: "Daredevil",
+    kinopoisk: "https://www.kinopoisk.ru/series/817509/",
+    director: [
+      {
+        name: "Дрю Годдард",
+      },
+    ],
+    cast: [
+      {
+        name: "Чарли Кокс",
+      },
+      {
+        name: "Дебора Энн Уолл",
+      },
+      {
+        name: "Элден Хенсон",
+      },
+      {
+        name: "Винсент Д’Онофрио",
+      },
+    ],
+    description:
+      "Днем он — успешный адвокат, а ночью — мститель в маске по прозвищу Сорвиголова.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 29,
+  }, // сорвиголова 1
+  {
+    release: new Date("2007-11-21"),
+    publication: new Date("2023-05-30"),
+    format: "фильм",
+    grade: "A",
+    title: "Старикам тут не место",
+    original: "No Country for Old Men",
+    kinopoisk: "https://www.kinopoisk.ru/film/195434/",
+    director: [
+      {
+        name: "Итан Коэн",
+      },
+      {
+        name: "Джоэл Коэн",
+      },
+    ],
+    cast: [
+      {
+        name: "Хавьер Бардем",
+      },
+      {
+        name: "Джош Бролин",
+      },
+      {
+        name: "Томми Ли Джонс",
+      },
+    ],
+    description:
+      "Обычный работяга обнаруживает в пустыне последствия неудачной сделки с наркотиками и сумму в два миллиона долларов наличными. Он решает взять деньги себе.",
+    genres: [
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "вестерн",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 34,
+  }, // старикам тут не место
+  {
+    release: new Date("2023-05-05"),
+    publication: new Date("2023-07-09"),
+    format: "фильм",
+    grade: "A+",
+    title: "Стражи Галактики. Часть 3",
+    original: "Guardians of the Galaxy Vol. 3",
+    kinopoisk:
+      "https://www.kinopoisk.ru/film/1044280/?utm_referrer=www.google.com",
+    director: [
+      {
+        name: "Джеймс Ганн",
+      },
+    ],
+    cast: [
+      {
+        name: "Брэдли Купер",
+      },
+      {
+        name: "Крис Пратт",
+      },
+      {
+        name: "Карен Гиллан",
+      },
+      {
+        name: "Пом Клементьефф",
+      },
+      {
+        name: "Дэйв Батиста",
+      },
+      {
+        name: "Зои Салдана",
+      },
+      {
+        name: "Чукуди Ивуджи",
+      },
+    ],
+    description:
+      "Питер Квилл со Стражами Галактики отправляется на новую миссию.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 35,
+  }, // стражи галактики 3
+  {
+    release: new Date("2023-02-03"),
+    publication: new Date("2023-02-26"),
+    format: "фильм",
+    grade: "B",
+    title: "Стук в хижине",
+    original: "Knock at the Cabin",
+    kinopoisk: "https://www.kinopoisk.ru/film/4675164/",
+    director: [
+      {
+        name: "М. Найт Шьямалан",
+      },
+    ],
+    cast: [
+      {
+        name: "Дэйв Батиста",
+      },
+      {
+        name: "Джонатан Грофф",
+      },
+      {
+        name: "Бен Элдридж",
+      },
+    ],
+    description:
+      "Счастливая пара с семилетней дочерью отдыхает в лесном коттедже у озера. Внезапно у них на пороге возникают четыре незнакомца.",
+    genres: [
+      {
+        genre: "триллер",
+      },
+    ],
+    screenshots: 17,
+  }, // стук в хижине
+  {
+    release: new Date("2023-03-15"),
+    publication: new Date("2023-06-11"),
+    format: "сериал",
+    season: "3",
+    grade: "A",
+    title: "Тед Лассо",
+    original: "Ted Lasso",
+    kinopoisk: "https://www.kinopoisk.ru/series/1309707/",
+    director: [
+      {
+        name: "Брендан Хант",
+      },
+      {
+        name: "Джо Келли",
+      },
+      {
+        name: "Билл Лоуренс",
+      },
+    ],
+    cast: [
+      {
+        name: "Джейсон Судейкис",
+      },
+      {
+        name: "Ханна Уоддингэм",
+      },
+      {
+        name: "Фил Данстер",
+      },
+      {
+        name: "Бретт Голдстин",
+      },
+      {
+        name: "Джуно Темпл",
+      },
+    ],
+    description:
+      "Тренер американского футбола Тед Лассо отправляется в Лондон, чтобы возглавить футбольный клуб “Ричмонд”, не имея опыта работы с европейским футболом.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "спорт",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 29,
+  }, // тед лассо 3
+  {
+    release: new Date("2021-07-23"),
+    publication: new Date("2021-12-29"),
+    format: "сериал",
+    season: "2",
+    grade: "A",
+    title: "Тед Лассо",
+    original: "Ted Lasso",
+    kinopoisk: "https://www.kinopoisk.ru/series/1309707/",
+    director: [
+      {
+        name: "Брендан Хант",
+      },
+      {
+        name: "Джо Келли",
+      },
+      {
+        name: "Билл Лоуренс",
+      },
+    ],
+    cast: [
+      {
+        name: "Джейсон Судейкис",
+      },
+      {
+        name: "Ханна Уоддингэм",
+      },
+      {
+        name: "Фил Данстер",
+      },
+      {
+        name: "Бретт Голдстин",
+      },
+      {
+        name: "Джуно Темпл",
+      },
+    ],
+    description:
+      "Тренер американского футбола Тед Лассо отправляется в Лондон, чтобы возглавить футбольный клуб “Ричмонд”, не имея опыта работы с европейским футболом.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "спорт",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 19,
+  }, // тед лассо 2
+  {
+    release: new Date("2020-08-14"),
+    publication: new Date("2020-10-11"),
+    format: "сериал",
+    season: "1",
+    grade: "A",
+    title: "Тед Лассо",
+    original: "Ted Lasso",
+    kinopoisk: "https://www.kinopoisk.ru/series/1309707/",
+    director: [
+      {
+        name: "Брендан Хант",
+      },
+      {
+        name: "Джо Келли",
+      },
+      {
+        name: "Билл Лоуренс",
+      },
+    ],
+    cast: [
+      {
+        name: "Джейсон Судейкис",
+      },
+      {
+        name: "Ханна Уоддингэм",
+      },
+      {
+        name: "Фил Данстер",
+      },
+      {
+        name: "Бретт Голдстин",
+      },
+      {
+        name: "Джуно Темпл",
+      },
+    ],
+    description:
+      "Тренер американского футбола Тед Лассо отправляется в Лондон, чтобы возглавить футбольный клуб “Ричмонд”, не имея опыта работы с европейским футболом.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "спорт",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 11,
+  }, // тед лассо 1
+  {
+    release: new Date("2024-05-07"),
+    publication: new Date("2024-08-07"),
+    format: "сериал",
+    season: "1",
+    grade: "A",
+    title: "Тёмная материя",
+    original: "Dark Matter",
+    kinopoisk: "https://www.kinopoisk.ru/series/5024113/",
+    director: [
+      {
+        name: "Блейк Крауч",
+      },
+    ],
+    cast: [
+      {
+        name: "Джоэл Эдгертон",
+      },
+      {
+        name: "Дженнифер Коннелли",
+      },
+      {
+        name: "Алиси Брага",
+      },
+      {
+        name: "Джимми Симпсон",
+      },
+      {
+        name: "Дайо Окенийи",
+      },
+    ],
+    description:
+      "Мужчина попадает в альтернативную реальность и отправляется в мучительное путешествие, чтобы спасти свою семью от самого страшного врага - себя.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "триллер",
+      },
+    ],
+    screenshots: 35,
+  }, // темная материя
+  {
+    release: new Date("2022-05-21"),
+    publication: new Date("2024-08-18"),
+    format: "фильм",
+    grade: "A",
+    poster: "https://disk.yandex.ru/i/vj0n42BQR4Hobw",
+    title: "Треугольник печали",
+    original: "Triangle of Sadness",
+    kinopoisk: "https://www.kinopoisk.ru/film/1348487/",
+    director: [
+      {
+        name: "Рубен Эстлунд",
+      },
+    ],
+    cast: [
+      {
+        name: "Харрис Дикинсон",
+      },
+      {
+        name: "Шарлби Дин",
+      },
+    ],
+    description:
+      "Пара фотомоделей отправляется в насыщенный событиями круиз для сверхбогатых.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 36,
+  }, // треугольник печали
+  {
+    release: new Date("2025-04-24"),
+    publication: new Date("2025-05-02"),
+    format: "сериал",
+    season: "5",
+    grade: "A",
+    title: "Ты",
+    original: "You",
+    kinopoisk: "https://www.kinopoisk.ru/series/1115630/",
+    director: [
+      {
+        name: "Грег Берланти",
+      },
+      {
+        name: "Сера Гэмбл",
+      },
+    ],
+    cast: [
+      {
+        name: "Пенн Бэджли",
+      },
+      {
+        name: "Шарлотта Ричи",
+      },
+      {
+        name: "Мадлен Брюэр",
+      },
+    ],
+    description: "Обаятельный молодой человек готов на всё ради любви.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "мелодрама",
+      },
+    ],
+    screenshots: 18,
+  }, // ты 5
+  {
+    release: new Date("2023-02-09"),
+    publication: new Date("2023-04-14"),
+    format: "сериал",
+    season: "4",
+    grade: "A",
+    title: "Ты",
+    original: "You",
+    kinopoisk: "https://www.kinopoisk.ru/series/1115630/",
+    director: [
+      {
+        name: "Грег Берланти",
+      },
+      {
+        name: "Сера Гэмбл",
+      },
+    ],
+    cast: [
+      {
+        name: "Пенн Бэджли",
+      },
+      {
+        name: "Тати Габриэль",
+      },
+      {
+        name: "Шарлотта Ричи",
+      },
+      {
+        name: "Эд Спелирс",
+      },
+    ],
+    description: "Обаятельный молодой человек готов на всё ради любви.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "мелодрама",
+      },
+    ],
+    screenshots: 26,
+  }, // ты 4
+  {
+    release: new Date("2021-10-15"),
+    publication: new Date("2022-01-14"),
+    format: "сериал",
+    season: "3",
+    grade: "A",
+    title: "Ты",
+    original: "You",
+    kinopoisk: "https://www.kinopoisk.ru/series/1115630/",
+    director: [
+      {
+        name: "Грег Берланти",
+      },
+      {
+        name: "Сера Гэмбл",
+      },
+    ],
+    cast: [
+      {
+        name: "Пенн Бэджли",
+      },
+      {
+        name: "Виктория Педретти",
+      },
+      {
+        name: "Тати Габриэль",
+      },
+    ],
+    description: "Обаятельный молодой человек готов на всё ради любви.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "мелодрама",
+      },
+    ],
+    screenshots: 16,
+  }, // ты 3
+  {
+    release: new Date("2019-12-26"),
+    publication: new Date("2020-02-09"),
+    format: "сериал",
+    season: "2",
+    grade: "A",
+    title: "Ты",
+    original: "You",
+    kinopoisk: "https://www.kinopoisk.ru/series/1115630/",
+    director: [
+      {
+        name: "Грег Берланти",
+      },
+      {
+        name: "Сера Гэмбл",
+      },
+    ],
+    cast: [
+      {
+        name: "Пенн Бэджли",
+      },
+      {
+        name: "Виктория Педретти",
+      },
+      {
+        name: "Джеймс Скалли",
+      },
+      {
+        name: "Эмбир Чилдерс",
+      },
+    ],
+    description: "Обаятельный молодой человек готов на всё ради любви.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "мелодрама",
+      },
+    ],
+    screenshots: 13,
+  }, // ты 2
+  {
+    release: new Date("2018-09-09"),
+    publication: new Date("2020-01-20"),
+    format: "сериал",
+    season: "1",
+    grade: "A",
+    title: "Ты",
+    original: "You",
+    kinopoisk: "https://www.kinopoisk.ru/series/1115630/",
+    director: [
+      {
+        name: "Грег Берланти",
+      },
+      {
+        name: "Сера Гэмбл",
+      },
+    ],
+    cast: [
+      {
+        name: "Пенн Бэджли",
+      },
+      {
+        name: "Элизабет Лэил",
+      },
+    ],
+    description: "Обаятельный молодой человек готов на всё ради любви.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "мелодрама",
+      },
+    ],
+    screenshots: 12,
+  }, // ты 1
+  {
+    release: new Date("2023-03-31"),
+    publication: new Date("2024-03-18"),
+    format: "фильм",
+    grade: "A",
+    title: "Тысяча и один",
+    original: "A Thousand and One",
+    kinopoisk: "https://www.kinopoisk.ru/film/1431429/",
+    director: [
+      {
+        name: "А.В. Рокуэлл",
+      },
+    ],
+    cast: [
+      {
+        name: "Тейяна Тейлор",
+      },
+      {
+        name: "Джозиа Кросс",
+      },
+      {
+        name: "Уильям Кэтлетт",
+      },
+    ],
+    description:
+      "Инес похищает своего сына из приёмной семьи и пытается обеспечить ему лучшую жизнь.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 50,
+  }, // тысяча и один
+  {
     release: new Date("2025-03-07"),
     publication: new Date("2025-05-03"),
     format: "сериал",
@@ -6009,14 +6780,14 @@ function addCard(item) {
           for (let i = 0; i < item.genres.length; i++) {
             if (
               item.genres[i].genre ==
-              descriptionTitle.textContent.toLowerCase() &&
+                descriptionTitle.textContent.toLowerCase() &&
               element.textContent.toLowerCase() == item.format
             ) {
               openCard();
               break;
             } else if (
               descriptionTitle.textContent ==
-              item.release.toString().slice(11, 15) &&
+                item.release.toString().slice(11, 15) &&
               element.textContent.toLowerCase() == item.format
             ) {
               openCard();
