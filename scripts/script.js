@@ -6935,9 +6935,11 @@ function addCard(item) {
           descriptionGrade.classList.add(
             "main__description__element_is-opened"
           );
-          descriptionGrade.src = elementImg.src;
-          descriptionGrade.alt = elementImg.alt;
-          descriptionGrade.title = elementImg.title;
+          if (document.body.classList.contains("dark-theme")) {
+            defineGradeWhite(item.grade, descriptionGrade);
+          } else {
+            defineGradeBlack(item.grade, descriptionGrade);
+          }
           if (descriptionFormat.textContent.toLowerCase() == item.format) {
             openCard();
           }
@@ -6952,9 +6954,12 @@ function addCard(item) {
           descriptionGrade.classList.add(
             "main__description__element_is-opened"
           );
-          descriptionGrade.src = elementImg.src;
-          descriptionGrade.alt = elementImg.alt;
-          descriptionGrade.title = elementImg.title;
+
+          if (document.body.classList.contains("dark-theme")) {
+            defineGradeWhite(item.grade, descriptionGrade);
+          } else {
+            defineGradeBlack(item.grade, descriptionGrade);
+          }
 
           openCard();
         }
