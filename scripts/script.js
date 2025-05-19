@@ -4050,6 +4050,9 @@ const films = [
       {
         genre: "фантастика",
       },
+      {
+        genre: "мокьюментари",
+      },
     ],
     screenshots: 11,
   }, // район № 9
@@ -5682,7 +5685,7 @@ const films = [
         genre: "мелодрама",
       },
     ],
-    screenshots: 18,
+    screenshots: 17,
   }, // ты 5
   {
     release: new Date("2023-02-09"),
