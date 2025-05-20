@@ -5904,6 +5904,191 @@ const films = [
     screenshots: 50,
   }, // тысяча и один
   {
+    release: new Date("2023-10-27"),
+    publication: new Date("2023-11-11"),
+    format: "фильм",
+    grade: "A",
+    title: "Убийца",
+    original: "The Killer",
+    kinopoisk: "https://www.kinopoisk.ru/film/462656/",
+    director: [
+      {
+        name: "Дэвид Финчер",
+      },
+    ],
+    cast: [
+      {
+        name: "Майкл Фассбендер",
+      },
+      {
+        name: "Тильда Суинтон",
+      },
+    ],
+    description:
+      "Киллер охотится за жертвой в Париже, но промах превращает его самого в мишень, вынуждая идти против своих заказчиков.",
+    genres: [
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 21,
+  }, // убийца
+  {
+    release: new Date("2023-10-13"),
+    publication: new Date("2023-11-27"),
+    format: "сериал",
+    season: "мини–сериал",
+    grade: "B",
+    title: "Уроки химии",
+    original: "Lessons in Chemistry",
+    kinopoisk: "https://www.kinopoisk.ru/series/4367624/",
+    director: [
+      {
+        name: "Ли Айзенберг",
+      },
+    ],
+    cast: [
+      {
+        name: "Бри Ларсон",
+      },
+      {
+        name: "Льюис Пуллман",
+      },
+      {
+        name: "Эйджа Наоми Кинг",
+      },
+    ],
+    description:
+      "В 1950-х годах женщина-учёная, столкнувшись с предрассудками о месте женщины только на кухне, получает работу в кулинарном шоу, где планирует просвещать домохозяек основам науки через приготовление пищи.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 19,
+  }, // уроки химии
+  {
+    release: new Date("2023-11-21"),
+    publication: new Date("2024-01-28"),
+    format: "сериал",
+    season: "5",
+    grade: "A",
+    title: "Фарго",
+    original: "Fargo",
+    kinopoisk: "https://www.kinopoisk.ru/series/767379/",
+    director: [
+      {
+        name: "Ной Хоули",
+      },
+    ],
+    cast: [
+      {
+        name: "Джуно Темпл",
+      },
+      {
+        name: "Джон Хэмм",
+      },
+      {
+        name: "Дженнифер Джейсон Ли",
+      },
+      {
+        name: "Джо Кири",
+      },
+      {
+        name: "Рича Мурджани",
+      },
+    ],
+    description:
+      "2019 год, Миннесота, штат Северная Дакота. Домохозяйку Дот Лайонс похищают средь бела дня неизвестные.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "триллер",
+      },
+    ],
+    screenshots: 24,
+  }, // фарго 5
+  {
+    release: new Date("2020-09-18"),
+    publication: new Date("2023-09-19"),
+    format: "фильм",
+    grade: "C",
+    title: "Фестиваль Рифкина",
+    original: "Rifkin's Festival",
+    kinopoisk: "https://www.kinopoisk.ru/film/1169702/",
+    director: [
+      {
+        name: "Вуди Аллен",
+      },
+    ],
+    cast: [
+      {
+        name: "Уоллес Шоун",
+      },
+      {
+        name: "Джина Гершон",
+      },
+      {
+        name: "Елена Анайя",
+      },
+      {
+        name: "Луи Гаррель",
+      },
+    ],
+    description:
+      "Супружеская пара из Сша отправляется на фестиваль в Сан-Себастьян и попадает под влияние магии кино.",
+    genres: [
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 24,
+  }, // фестиваль рифкина
+  {
+    release: new Date("2021-11-05"),
+    publication: new Date("2023-07-29"),
+    format: "фильм",
+    grade: "B",
+    title: "Финч",
+    original: "Finch",
+    kinopoisk: "https://www.kinopoisk.ru/film/823616/",
+    director: [
+      {
+        name: "Мигель Сапочник",
+      },
+    ],
+    cast: [
+      {
+        name: "Том Хэнкс",
+      },
+      {
+        name: "Калеб Лэндри Джонс",
+      },
+    ],
+    description:
+      "В постапокалиптическом мире робот, созданный для защиты собаки своего создателя, познаёт человеческие чувства.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 23,
+  }, // финч
+  {
     release: new Date("2025-03-07"),
     publication: new Date("2025-05-03"),
     format: "сериал",
@@ -6141,6 +6326,586 @@ const films = [
     ],
     screenshots: 18,
   }, // формула 1. драйв выживания 1
+  {
+    release: new Date("2023-07-24"),
+    publication: new Date("2023-10-15"),
+    format: "сериал",
+    season: "11",
+    grade: "B",
+    title: "Футурама",
+    original: "Futurama",
+    kinopoisk: "https://www.kinopoisk.ru/series/79920/",
+    director: [
+      {
+        name: "Мэтт Грейнинг",
+      },
+      {
+        name: "Дэвид И. Коэн",
+      },
+    ],
+    cast: [
+      {
+        name: "Билли Уэст",
+      },
+      {
+        name: "Джон Ди Маджио",
+      },
+      {
+        name: "Кэти Сагал",
+      },
+    ],
+    description:
+      "Филип Джей Фрай, разносчик пиццы, был случайно заморожен в 1999 году и оттаял в канун Нового 2999 года.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 20,
+  }, // футурама 11
+  {
+    release: new Date("2023-07-27"),
+    publication: new Date("2023-10-07"),
+    format: "сериал",
+    season: "1-4",
+    grade: "A",
+    title: "Харли Квинн",
+    original: "Harley Quinn",
+    kinopoisk: "https://www.kinopoisk.ru/series/1112514/",
+    director: [
+      {
+        name: "Дин Лори",
+      },
+      {
+        name: "Джастин Халперн",
+      },
+      {
+        name: "Патрик Шумакер",
+      },
+    ],
+    cast: [
+      {
+        name: "Кейли Куоко",
+      },
+      {
+        name: "Лейк Белл",
+      },
+      {
+        name: "Алан Тьюдик",
+      },
+    ],
+    description:
+      "Безумные приключения бывшей девушки Джокера, суперзлодейки Харлин Фрэнсис Квинзель.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 22,
+  }, // харли квинн 1-4
+  {
+    release: new Date("2023-03-24"),
+    publication: new Date("2023-06-02"),
+    format: "фильм",
+    grade: "B",
+    title: "Хороший человек",
+    original: "A Good Person",
+    kinopoisk: "https://www.kinopoisk.ru/film/4510366/",
+    director: [
+      {
+        name: "Зак Брафф",
+      },
+    ],
+    cast: [
+      {
+        name: "Флоренс Пью",
+      },
+      {
+        name: "Морган Фриман",
+      },
+    ],
+    description:
+      "Чудом выжив в аварии, Эллисон узнает, что по ее вине погиб человек.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 11,
+  }, // хороший человек
+  {
+    release: new Date("2001-05-13"),
+    publication: new Date("2024-08-11"),
+    format: "фильм",
+    grade: "C",
+    title: "Человек, которого не было",
+    original: "The Man Who Wasn't There",
+    kinopoisk: "https://www.kinopoisk.ru/film/554/",
+    director: [
+      {
+        name: "Джоэл Коэн",
+      },
+      {
+        name: "Итан Коэн",
+      },
+    ],
+    cast: [
+      {
+        name: "Билли Боб Торнтон",
+      },
+      {
+        name: "Фрэнсис Макдорманд",
+      },
+      {
+        name: "Джеймс Гандольфини",
+      },
+    ],
+    description:
+      "Молчаливый парикмахер Эд ведет размеренную жизнь, пока не замечает, что его жена не верна ему.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "чёрно-белое",
+      },
+    ],
+    screenshots: 47,
+  }, // человек, которого не было
+  {
+    release: new Date("2011-09-23"),
+    publication: new Date("2023-02-02"),
+    format: "фильм",
+    grade: "A",
+    title: "Человек, который изменил всё",
+    original: "Moneyball",
+    kinopoisk: "https://www.kinopoisk.ru/film/432791/",
+    director: [
+      {
+        name: "Беннетт Миллер",
+      },
+    ],
+    cast: [
+      {
+        name: "Брэд Питт",
+      },
+      {
+        name: "Джона Хилл",
+      },
+      {
+        name: "Филип Сеймур Хоффман",
+      },
+      {
+        name: "Крис Пратт",
+      },
+    ],
+    description:
+      "Билли Бин меняет подход к подбору игроков в бейсбольном клубе Oakland Athletics с помощью математического анализа.",
+    genres: [
+      {
+        genre: "биография",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "спорт",
+      },
+    ],
+    screenshots: 24,
+  }, // человек, который изменил всё
+  {
+    release: new Date("2021-12-17"),
+    publication: new Date("2023-07-24"),
+    format: "фильм",
+    grade: "A",
+    title: "Человек-паук: Нет пути домой",
+    original: "Spider-Man: No Way Home",
+    kinopoisk: "https://www.kinopoisk.ru/film/1309570/",
+    director: [
+      {
+        name: "Джон Уоттс",
+      },
+    ],
+    cast: [
+      {
+        name: "Том Холланд",
+      },
+      {
+        name: "Зендея",
+      },
+      {
+        name: "Бенедикт Камбербэтч",
+      },
+      {
+        name: "Мариса Томей",
+      },
+      {
+        name: "Уиллем Дефо",
+      },
+      {
+        name: "Джейми Фокс",
+      },
+      {
+        name: "Эндрю Гарфилд",
+      },
+      {
+        name: "Тоби Магуайр",
+      },
+    ],
+    description:
+      "Когда личность Человека-паука раскрыта, Питер обращается к Доктору Стрэнджу за помощью.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 22,
+  }, // человек-паук: нет пути домой (3)
+  {
+    release: new Date("2019-07-02"),
+    publication: new Date("2023-07-21"),
+    format: "фильм",
+    grade: "A",
+    title: "Человек-паук: Вдали от дома",
+    original: "Spider-Man: Far from Home",
+    kinopoisk: "https://www.kinopoisk.ru/film/1008445/",
+    director: [
+      {
+        name: "Джон Уоттс",
+      },
+    ],
+    cast: [
+      {
+        name: "Том Холланд",
+      },
+      {
+        name: "Сэмюэл Л. Джексон",
+      },
+      {
+        name: "Джейк Джилленхол",
+      },
+      {
+        name: "Зендея",
+      },
+      {
+        name: "Мариса Томей",
+      },
+      {
+        name: "Джон Фавро",
+      },
+    ],
+    description:
+      "Питер Паркер проводит супергеройские каникулы, спасая Европу.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 26,
+  }, // человек-паук: вдали от дома (2)
+  {
+    release: new Date("2017-07-07"),
+    publication: new Date("2023-07-19"),
+    format: "фильм",
+    grade: "A+",
+    title: "Человек-паук: Возвращение домой",
+    original: "Spider-Man: Homecoming",
+    kinopoisk:
+      "https://www.kinopoisk.ru/film/690593/?utm_referrer=www.google.com",
+    director: [
+      {
+        name: "Джон Уоттс",
+      },
+    ],
+    cast: [
+      {
+        name: "Том Холланд",
+      },
+      {
+        name: "Роберт Дауни мл.",
+      },
+      {
+        name: "Майкл Китон",
+      },
+      {
+        name: "Зендея",
+      },
+    ],
+    description:
+      "После встречи с Мстителями Питер Паркер возвращается домой и пытается жить обычной, но когда появляется новый злодей, юному супергерою приходится доказать свою силу.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 27,
+  }, // человек-паук: возвращение домой (1)
+  {
+    release: new Date("2023-06-02"),
+    publication: new Date("2023-08-10"),
+    format: "фильм",
+    grade: "A+",
+    title: "Человек-паук: Паутина вселенных",
+    original: "Spider-Man: Across the Spider-Verse",
+    kinopoisk: "https://www.kinopoisk.ru/film/1219177/",
+    director: [
+      {
+        name: "Жуакин Душ Сантуш",
+      },
+      {
+        name: "Кемп Пауэрс",
+      },
+      {
+        name: "Джастин Томпсон",
+      },
+    ],
+    cast: [
+      {
+        name: "Шамеик Мур",
+      },
+      {
+        name: "Хейли Стайнфелд",
+      },
+      {
+        name: "Оскар Айзек",
+      },
+      {
+        name: "Брайан Тайри Генри",
+      },
+      {
+        name: "Джейсон Шварцман",
+      },
+    ],
+    description:
+      "Человек-Паук попадает в Мультивселенную, где знакомится с командой Паучков.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 66,
+  }, // человек-паук: паутина вселенных
+  {
+    release: new Date("2018-12-14"),
+    publication: new Date("2023-07-29"),
+    format: "фильм",
+    grade: "A+",
+    title: "Человек-паук: Через вселенные",
+    original: "Spider-Man: Into the Spider-Verse",
+    kinopoisk:
+      "https://www.kinopoisk.ru/film/920265/?utm_referrer=www.google.ru",
+    director: [
+      {
+        name: "Боб Персичетти",
+      },
+      {
+        name: "Питер Рэмзи",
+      },
+      {
+        name: "Родни Ротман",
+      },
+    ],
+    cast: [
+      {
+        name: "Шамеик Мур",
+      },
+      {
+        name: "Джейк Джонсон",
+      },
+      {
+        name: "Хейли Стайнфелд",
+      },
+      {
+        name: "Махершала Али",
+      },
+      {
+        name: "Брайан Тайри Генри",
+      },
+      {
+        name: "Лив Шрайбер",
+      },
+    ],
+    description:
+      "Майлз Моралес, укушенный радиоактивным пауком, становится Человеком-пауком и вместе с другими Пауками из параллельных миров спасает Мультивселенную от угрозы.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 69,
+  }, // человек-паук: через вселенные
+  {
+    release: new Date("2023-08-02"),
+    publication: new Date("2023-09-07"),
+    format: "фильм",
+    grade: "A",
+    title: "Черепашки-ниндзя: Погром мутантов",
+    original: "Teenage Mutant Ninja Turtles: Mutant Mayhem",
+    kinopoisk: "https://www.kinopoisk.ru/film/1178862/",
+    director: [
+      {
+        name: "Джефф Роу",
+      },
+      {
+        name: "Кайлер Спирс",
+      },
+    ],
+    cast: [
+      {
+        name: "Мика Эбби",
+      },
+      {
+        name: "Шэймон Браун мл.",
+      },
+      {
+        name: "Николас Канту",
+      },
+      {
+        name: "Брэйди Нун",
+      },
+      {
+        name: "Айо Эдебири",
+      },
+      {
+        name: "Джеки Чан",
+      },
+      {
+        name: "Айс Кьюб",
+      },
+    ],
+    description:
+      "Братья черепашки работают над тем, чтобы заслужить любовь жителей Нью-Йорка, сражаясь лицом к лицу с армией мутантов.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 30,
+  }, // черепашки-ниндзя: погром мутантов
+  {
+    release: new Date("2023-09-20"),
+    publication: new Date("2023-09-29"),
+    format: "фильм",
+    grade: "C",
+    title: "Чудесная история Генри Шугара",
+    original: "The Wonderful Story of Henry Sugar",
+    kinopoisk: "https://www.kinopoisk.ru/film/4830353/",
+    director: [
+      {
+        name: "Уэс Андерсон",
+      },
+    ],
+    cast: [
+      {
+        name: "Рэйф Файнс",
+      },
+      {
+        name: "Бенедикт Камбербэтч",
+      },
+      {
+        name: "Дев Патель",
+      },
+      {
+        name: "Бен Кингсли",
+      },
+    ],
+    description:
+      "История Генри Шугара, который способен видеть сквозь предметы и предсказывать будущее с помощью украденной им книги.",
+    genres: [
+      {
+        genre: "короткометражка",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 21,
+  }, // чудесная история генри шугара
+  {
+    release: new Date("2012-05-23"),
+    publication: new Date("2024-03-20"),
+    format: "фильм",
+    grade: "B",
+    title: "Эрнест и Селестина: Приключения мышки и медведя",
+    original: "Ernest & Celestine / Ernest et Célestine",
+    kinopoisk: "https://www.kinopoisk.ru/film/592260/",
+    director: [
+      {
+        name: "Стефани Обье",
+      },
+      {
+        name: "Венсан Патар",
+      },
+      {
+        name: "Бенжамин Реннер",
+      },
+    ],
+    cast: [
+      {
+        name: "Ламбер Вильсон",
+      },
+      {
+        name: "Полин Брюннер",
+      },
+    ],
+    description:
+      "Бесстрашную мышку и голодного медведя связала необычная дружба.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 17,
+  }, // эрнест и селестина
+  {
+    release: new Date("2024-05-24"),
+    publication: new Date("2024-07-13"),
+    format: "фильм",
+    grade: "A",
+    title: "Я не киллер",
+    original: "Hit Man",
+    kinopoisk: "https://www.kinopoisk.ru/film/5051126/?utm_referrer=yandex.ru",
+    director: [
+      {
+        name: "Ричард Линклейтер",
+      },
+    ],
+    cast: [
+      {
+        name: "Глен Пауэлл",
+      },
+      {
+        name: "Адриа Архона",
+      },
+    ],
+    description:
+      "Гэри Джонсон выдает  себя за наемного убийцу, чтобы поймать настоящих преступников. Все шло по плану, пока в этой истории не появилась женщина.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 42,
+  }, // я не киллер
 ];
 
 // Сортировка films по дате публикации
@@ -6250,19 +7015,34 @@ addAnything(
 
 addAnything(filmCastTemplate, "film__cast__name", filmsCastSet, filmCast);
 
-const GradeAPlus = "https://img.icons8.com/ios/100/grades.png";
-const GradeA = "https://img.icons8.com/ios/100/circled-a.png";
-const GradeB = "https://img.icons8.com/ios/100/circled-b.png";
-const GradeC = "https://img.icons8.com/ios/100/circled-c.png";
+const GradeAPlus =
+  "https://img.icons8.com/external-icongeek26-outline-icongeek26/64/external-goat-animal-head-icongeek26-outline-icongeek26.png";
+const GradeA = "https://img.icons8.com/ios/100/good-quality--v1.png";
+const GradeB = "https://img.icons8.com/ios/100/ok-hand--v1.png";
+const GradeC = "https://img.icons8.com/ios/100/poor-quality.png";
 
 const WhiteGradeAPlus =
-  "https://img.icons8.com/ios-filled/100/FFFFFF/grades.png";
+  "https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-goat-animal-head-icongeek26-glyph-icongeek26.png";
 const WhiteGradeA =
-  "https://img.icons8.com/ios-filled/100/FFFFFF/circled-a.png";
+  "https://img.icons8.com/ios-filled/100/FFFFFF/good-quality--v1.png";
 const WhiteGradeB =
-  "https://img.icons8.com/ios-filled/100/FFFFFF/circled-b.png";
+  "https://img.icons8.com/ios-filled/100/FFFFFF/ok-hand--v1.png";
 const WhiteGradeC =
-  "https://img.icons8.com/ios-filled/100/FFFFFF/circled-c.png";
+  "https://img.icons8.com/ios-filled/100/FFFFFF/poor-quality.png";
+
+// const GradeAPlus = "https://img.icons8.com/ios/100/grades.png";
+// const GradeA = "https://img.icons8.com/ios/100/circled-a.png";
+// const GradeB = "https://img.icons8.com/ios/100/circled-b.png";
+// const GradeC = "https://img.icons8.com/ios/100/circled-c.png";
+
+// const WhiteGradeAPlus =
+//   "https://img.icons8.com/ios-filled/100/FFFFFF/grades.png";
+// const WhiteGradeA =
+//   "https://img.icons8.com/ios-filled/100/FFFFFF/circled-a.png";
+// const WhiteGradeB =
+//   "https://img.icons8.com/ios-filled/100/FFFFFF/circled-b.png";
+// const WhiteGradeC =
+//   "https://img.icons8.com/ios-filled/100/FFFFFF/circled-c.png";
 
 function defineGradeBlack(item, element) {
   if (item === "A+") {
@@ -6540,12 +7320,6 @@ clonedArray.forEach(function (item) {
   });
 });
 
-const ScreenshotsAll = Array.from(
-  clonedArray,
-  ({ screenshots }) => screenshots
-);
-const Screenshots = ScreenshotsAll.flat();
-
 // функция СОЗДАНИЯ в шапке сайта КАРТИНКИ с сеткой
 function BigImage() {
   function efficientRandomElements(arr, count) {
@@ -6566,7 +7340,21 @@ function BigImage() {
   // !!! если что, менять количество изображений в картинке ЗДЕСЬ !!!
   const Number = 25;
   // !!!
-  const ScreenshotsN = efficientRandomElements(Screenshots, Number);
+  const Screenshots = efficientRandomElements(clonedArray, Number);
+  const ScreenshotsN = Array.from(
+    Screenshots,
+    ({ screenshots }) => screenshots
+  );
+
+  function films_titles_in_running_picture() {
+    const titles_only = Array.from(Screenshots, ({ title }) => title);
+    const titles = Array.from(new Set(titles_only));
+    console.log(
+      "В бегущей строке используются кадры из следующих фильмов: " + titles
+    );
+  }
+
+  // films_titles_in_running_picture()
 
   function imagesHeader() {
     const topImagesTemplate = document.querySelector(
@@ -7192,6 +7980,9 @@ function showFilmCard(item) {
     if (item.season == "мини–сериал") {
       popupFilm.querySelector(".film__header__season").textContent =
         item.season + ", ";
+    } else if (item.season.length > 1) {
+      popupFilm.querySelector(".film__header__season").textContent =
+        "Сезоны " + item.season + ",";
     } else {
       popupFilm.querySelector(".film__header__season").textContent =
         "Сезон " + item.season + ",";
@@ -7599,11 +8390,35 @@ function find_the_right_word() {
     return 0;
   });
 
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 1; i++) {
     console.log(name_for_link(clonedArray[i].original));
   }
 }
 
 // find_the_right_word()
 
-// console.log(document.querySelectorAll(".card").length);
+function total_number_of_films_and_serials() {
+  let films_only = clonedArray.filter((elem) => {
+    return elem.format == "фильм";
+  });
+  const films_titles = Array.from(films_only, ({ title }) => title);
+  const number_of_films = Array.from(films_titles);
+
+  let serials_only = clonedArray.filter((elem) => {
+    return elem.format == "сериал";
+  });
+  const serials_titles = Array.from(serials_only, ({ title }) => title);
+  const number_of_serials = Array.from(new Set(serials_titles.sort()));
+
+  console.log(
+    "Публикаций всего: " +
+      clonedArray.length +
+      ", из которых: фильмов — " +
+      number_of_films.length +
+      ", сериалов — " +
+      number_of_serials.length +
+      "."
+  );
+}
+
+// total_number_of_films_and_serials();
