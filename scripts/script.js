@@ -86,37 +86,6 @@ const films = [
     screenshots: 33,
   }, // fallout 1
   {
-    release: new Date("2024-01-11"),
-    publication: new Date("2024-03-28"),
-    format: "сериал",
-    season: "1",
-    grade: "A",
-    title: "Третий лишний",
-    original: "Ted",
-    kinopoisk: "https://www.kinopoisk.ru/series/4475348/",
-    director: [
-      {
-        name: "Сет Макфарлейн",
-      },
-    ],
-    cast: [
-      {
-        name: "Сет Макфарлейн",
-      },
-      {
-        name: "Макс Буркхолдер",
-      },
-    ],
-    description:
-      "На дворе 1993 год, и момент славы медвежонка Теда миновал. Он живет дома со своим лучшим другом Джоном Беннеттом и его семьей.",
-    genres: [
-      {
-        genre: "комедия",
-      },
-    ],
-    screenshots: 12,
-  }, // ted 1
-  {
     release: new Date("2024-02-15"),
     publication: new Date("2024-10-07"),
     format: "сериал",
@@ -207,6 +176,15 @@ const films = [
       {
         name: "Джеффри Райт",
       },
+      {
+        name: "Эрика Александр",
+      },
+      {
+        name: "Стерлинг К. Браун",
+      },
+      {
+        name: "Джон Ортис",
+      },
     ],
     description:
       "Интеллектуал пишет роман, целиком состоящий из стереотипов об афроамериканцах. Вскоре он просыпается суперзвездой.",
@@ -220,6 +198,45 @@ const films = [
     ],
     screenshots: 23,
   }, // американское чтиво
+  {
+    release: new Date("2022-11-04"),
+    publication: new Date("2022-12-16"),
+    format: "фильм",
+    grade: "A",
+    title: "Банши Инишерина",
+    original: "The Banshees of Inisherin",
+    kinopoisk: "https://www.kinopoisk.ru/film/1354524/",
+    director: [
+      {
+        name: "Мартин Макдона",
+      },
+    ],
+    cast: [
+      {
+        name: "Колин Фаррелл",
+      },
+      {
+        name: "Брендан Глисон",
+      },
+      {
+        name: "Керри Кондон",
+      },
+      {
+        name: "Барри Кеоган",
+      },
+    ],
+    description:
+      "Двое товарищей оказываются в разногласиях на уединенном ирландском острове.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 39,
+  }, // банши инишерина
   {
     release: new Date("2023-04-16"),
     publication: new Date("2024-09-10"),
@@ -410,6 +427,42 @@ const films = [
     ],
     screenshots: 42,
   }, // бедные несчастные
+  {
+    release: new Date("1992-03-27"),
+    publication: new Date("2023-01-29"),
+    format: "фильм",
+    grade: "C",
+    title: "Белые люди не умеют прыгать",
+    original: "White Men Can't Jump",
+    kinopoisk: "https://www.kinopoisk.ru/film/4347/",
+    director: [
+      {
+        name: "Рон Шелтон",
+      },
+    ],
+    cast: [
+      {
+        name: "Уэсли Снайпс",
+      },
+      {
+        name: "Вуди Харрельсон",
+      },
+      {
+        name: "Рози Перес",
+      },
+      {
+        name: "Тайра Феррелл",
+      },
+    ],
+    description:
+      "Сидни Дин и Билли Хойл — два баскетболиста, которые объединяются для участия в уличных соревнованиях ради заработка.",
+    genres: [
+      {
+        genre: "спорт",
+      },
+    ],
+    screenshots: 13,
+  }, // белые люди не умеют прыгать
   {
     release: new Date("2009-11-25"),
     publication: new Date("2023-05-01"),
@@ -1037,6 +1090,60 @@ const films = [
     screenshots: 25,
   }, // дикий робот
   {
+    release: new Date("2022-11-23"),
+    publication: new Date("2022-12-24"),
+    format: "фильм",
+    grade: "A+",
+    title: "Достать ножи: Стеклянная луковица",
+    original: "Glass Onion / A Knives Out Mystery",
+    kinopoisk: "https://www.kinopoisk.ru/film/1343908/?utm_referrer=yandex.ru",
+    director: [
+      {
+        name: "Райан Джонсон",
+      },
+    ],
+    cast: [
+      {
+        name: "Дэниэл Крэйг",
+      },
+      {
+        name: "Эдвард Нортон",
+      },
+      {
+        name: "Жанель Моне",
+      },
+      {
+        name: "Кэтрин Хан",
+      },
+      {
+        name: "Дэйв Батиста",
+      },
+      {
+        name: "Кейт Хадсон",
+      },
+      {
+        name: "Лесли Одом мл.",
+      },
+      {
+        name: "Мэдлин Клайн",
+      },
+      {
+        name: "Джессика Хенвик",
+      },
+    ],
+    description:
+      "Детектив Бенуа Бланк направляется в Грецию с целью разгадать загадку, связанную с богатым миллиардером и его необычным окружением.",
+    genres: [
+      {
+        genre: "детектив",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 45,
+  }, // достать ножи: стеклянная луковица (2)
+  {
     release: new Date("2000-08-11"),
     publication: new Date("2023-02-10"),
     format: "фильм",
@@ -1438,6 +1545,54 @@ const films = [
     ],
     screenshots: 17,
   }, // король талсы 1
+  {
+    release: new Date("2021-10-22"),
+    continuation: new Date("2022-11-18"),
+    publication: new Date("2023-01-13"),
+    format: "сериал",
+    season: "1-2",
+    grade: "A",
+    title: "Корпорация «Заговор»",
+    original: "Inside Job",
+    kinopoisk:
+      "https://www.kinopoisk.ru/series/1263653/?utm_referrer=www.kinopoisk.ru",
+    director: [
+      {
+        name: "Сион Такэути",
+      },
+    ],
+    cast: [
+      {
+        name: "Лиззи Каплан",
+      },
+      {
+        name: "Кристиан Слэйтер",
+      },
+      {
+        name: "Кларк Дьюк",
+      },
+      {
+        name: "Тиша Кэмпбелл",
+      },
+      {
+        name: "Джон Ди Маджио",
+      },
+      {
+        name: "Бобби Ли",
+      },
+      {
+        name: "Бретт Гельман",
+      },
+    ],
+    description:
+      "Для работников этого секретного отдела теории заговора — не глупости, а реальные факты. И их работа — держать это в тайне.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 18,
+  }, // корпорация «заговор» 1-2
   {
     release: new Date("2016-01-29"),
     publication: new Date("2023-12-26"),
@@ -2341,6 +2496,42 @@ const films = [
     ],
     screenshots: 19,
   }, // мы
+  {
+    release: new Date("1997-09-26"),
+    publication: new Date("2023-01-27"),
+    format: "фильм",
+    grade: "B",
+    title: "На грани",
+    original: "The Edge",
+    kinopoisk: "https://www.kinopoisk.ru/film/3775/",
+    director: [
+      {
+        name: "Ли Тамахори",
+      },
+    ],
+    cast: [
+      {
+        name: "Энтони Хопкинс",
+      },
+      {
+        name: "Алек Болдуин",
+      },
+    ],
+    description:
+      "Трое мужчин борются за выживание в дикой местности Аляски, где их преследует опасный медведь-людоед.",
+    genres: [
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "триллер",
+      },
+    ],
+    screenshots: 11,
+  }, // на грани
   {
     release: new Date("2024-02-07"),
     publication: new Date("2024-09-01"),
@@ -4828,6 +5019,45 @@ const films = [
     screenshots: 20,
   }, // следующий гол победный
   {
+    release: new Date("1998-03-06"),
+    publication: new Date("2023-02-01"),
+    format: "фильм",
+    grade: "B",
+    title: "Служители закона",
+    original: "U.S. Marshals",
+    kinopoisk: "https://www.kinopoisk.ru/film/3901/?utm_referrer=yandex.ru",
+    director: [
+      {
+        name: "Стюарт Бейрд",
+      },
+    ],
+    cast: [
+      {
+        name: "Томми Ли Джонс",
+      },
+      {
+        name: "Уэсли Снайпс",
+      },
+      {
+        name: "Роберт Дауни мл.",
+      },
+    ],
+    description:
+      "Федеральному маршалу США и его команде поручено найти Шеридана, обвиняемого в двойном убийстве.",
+    genres: [
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 19,
+  }, // служители закона
+  {
     release: new Date("2010-04-16"),
     publication: new Date("2024-01-13"),
     format: "фильм",
@@ -5612,6 +5842,37 @@ const films = [
     screenshots: 35,
   }, // темная материя
   {
+    release: new Date("2024-01-11"),
+    publication: new Date("2024-03-28"),
+    format: "сериал",
+    season: "1",
+    grade: "A",
+    title: "Третий лишний",
+    original: "Ted",
+    kinopoisk: "https://www.kinopoisk.ru/series/4475348/",
+    director: [
+      {
+        name: "Сет Макфарлейн",
+      },
+    ],
+    cast: [
+      {
+        name: "Сет Макфарлейн",
+      },
+      {
+        name: "Макс Буркхолдер",
+      },
+    ],
+    description:
+      "На дворе 1993 год, и момент славы медвежонка Теда миновал. Он живет дома со своим лучшим другом Джоном Беннеттом и его семьей.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 12,
+  }, // третий лишний 1
+  {
     release: new Date("2022-05-21"),
     publication: new Date("2024-08-18"),
     format: "фильм",
@@ -6364,7 +6625,8 @@ const films = [
     screenshots: 20,
   }, // футурама 11
   {
-    release: new Date("2023-07-27"),
+    release: new Date("2019-11-29"),
+    continuation: new Date("2023-07-27"),
     publication: new Date("2023-10-07"),
     format: "сериал",
     season: "1-4",
@@ -6796,6 +7058,51 @@ const films = [
     screenshots: 30,
   }, // черепашки-ниндзя: погром мутантов
   {
+    release: new Date("2023-01-20"),
+    publication: new Date("2023-01-28"),
+    format: "фильм",
+    grade: "B",
+    title: "Что за люди",
+    original: "You People",
+    kinopoisk: "https://www.kinopoisk.ru/film/4479402/",
+    director: [
+      {
+        name: "Кенья Беррис",
+      },
+    ],
+    cast: [
+      {
+        name: "Джона Хилл",
+      },
+      {
+        name: "Лорен Лондон",
+      },
+      {
+        name: "Эдди Мерфи",
+      },
+      {
+        name: "Джулия Луи-Дрейфус",
+      },
+      {
+        name: "Ниа Лонг",
+      },
+      {
+        name: "Дэвид Духовны",
+      },
+    ],
+    description:
+      "История о молодой паре и их семьях, которые учатся принимать современную любовь через призму культурных различий и поколенческих противоречий.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "мелодрама",
+      },
+    ],
+    screenshots: 22,
+  }, // что за люди
+  {
     release: new Date("2023-09-20"),
     publication: new Date("2023-09-29"),
     format: "фильм",
@@ -6834,6 +7141,40 @@ const films = [
     ],
     screenshots: 21,
   }, // чудесная история генри шугара
+  {
+    release: new Date("2022-02-18"),
+    publication: new Date("2022-12-19"),
+    format: "сериал",
+    season: "1-3",
+    grade: "B",
+    title: "Шоу Чашека!",
+    original: "The Cuphead Show!",
+    kinopoisk: "https://www.kinopoisk.ru/series/1283374/",
+    director: [
+      {
+        name: "Чад Молденхауэр",
+      },
+      {
+        name: "Джаред Молденхауэр",
+      },
+    ],
+    cast: [
+      {
+        name: "Тру Валентино",
+      },
+      {
+        name: "Фрэнк Тодаро",
+      },
+    ],
+    description:
+      "Приключения импульсивного Чашека и его осторожного брата Кружека.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 50,
+  }, // шоу чашека 1-3
   {
     release: new Date("2012-05-23"),
     publication: new Date("2024-03-20"),
@@ -7015,34 +7356,30 @@ addAnything(
 
 addAnything(filmCastTemplate, "film__cast__name", filmsCastSet, filmCast);
 
-const GradeAPlus =
-  "https://img.icons8.com/external-icongeek26-outline-icongeek26/64/external-goat-animal-head-icongeek26-outline-icongeek26.png";
-const GradeA = "https://img.icons8.com/ios/100/good-quality--v1.png";
-const GradeB = "https://img.icons8.com/ios/100/ok-hand--v1.png";
-const GradeC = "https://img.icons8.com/ios/100/poor-quality.png";
-
-const WhiteGradeAPlus =
-  "https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/FFFFFF/external-goat-animal-head-icongeek26-glyph-icongeek26.png";
-const WhiteGradeA =
-  "https://img.icons8.com/ios-filled/100/FFFFFF/good-quality--v1.png";
-const WhiteGradeB =
-  "https://img.icons8.com/ios-filled/100/FFFFFF/ok-hand--v1.png";
-const WhiteGradeC =
-  "https://img.icons8.com/ios-filled/100/FFFFFF/poor-quality.png";
-
-// const GradeAPlus = "https://img.icons8.com/ios/100/grades.png";
-// const GradeA = "https://img.icons8.com/ios/100/circled-a.png";
-// const GradeB = "https://img.icons8.com/ios/100/circled-b.png";
-// const GradeC = "https://img.icons8.com/ios/100/circled-c.png";
+// const GradeAPlus = "https://img.icons8.com/ios/100/increase-font.png";
+// const GradeA = "https://img.icons8.com/ios/100/a.png";
+// const GradeB = "https://img.icons8.com/ios/100/b.png";
+// const GradeC = "https://img.icons8.com/ios/100/c.png";
 
 // const WhiteGradeAPlus =
-//   "https://img.icons8.com/ios-filled/100/FFFFFF/grades.png";
-// const WhiteGradeA =
-//   "https://img.icons8.com/ios-filled/100/FFFFFF/circled-a.png";
-// const WhiteGradeB =
-//   "https://img.icons8.com/ios-filled/100/FFFFFF/circled-b.png";
-// const WhiteGradeC =
-//   "https://img.icons8.com/ios-filled/100/FFFFFF/circled-c.png";
+//   "https://img.icons8.com/ios-filled/100/FFFFFF/increase-font.png";
+// const WhiteGradeA = "https://img.icons8.com/ios-filled/100/FFFFFF/a.png";
+// const WhiteGradeB = "https://img.icons8.com/ios-filled/100/FFFFFF/b.png";
+// const WhiteGradeC = "https://img.icons8.com/ios-filled/100/FFFFFF/c.png";
+
+const GradeAPlus = "https://img.icons8.com/ios/100/grades.png";
+const GradeA = "https://img.icons8.com/ios/100/circled-a.png";
+const GradeB = "https://img.icons8.com/ios/100/circled-b.png";
+const GradeC = "https://img.icons8.com/ios/100/circled-c.png";
+
+const WhiteGradeAPlus =
+  "https://img.icons8.com/ios-filled/100/FFFFFF/grades.png";
+const WhiteGradeA =
+  "https://img.icons8.com/ios-filled/100/FFFFFF/circled-a.png";
+const WhiteGradeB =
+  "https://img.icons8.com/ios-filled/100/FFFFFF/circled-b.png";
+const WhiteGradeC =
+  "https://img.icons8.com/ios-filled/100/FFFFFF/circled-c.png";
 
 function defineGradeBlack(item, element) {
   if (item === "A+") {
@@ -7976,13 +8313,18 @@ function showFilmCard(item) {
   const filmGrade = popupFilm.querySelector(".film__header__grade");
   defineGradeWhite(item.grade, filmGrade);
 
+  popupFilm.querySelector(".film__header__year").textContent =
+    item.release.getFullYear();
+
   if (item.season != null) {
     if (item.season == "мини–сериал") {
       popupFilm.querySelector(".film__header__season").textContent =
         item.season + ", ";
-    } else if (item.season.length > 1) {
+    } else if (item.season.length > 1 && item.continuation != null) {
       popupFilm.querySelector(".film__header__season").textContent =
         "Сезоны " + item.season + ",";
+      popupFilm.querySelector(".film__header__year").textContent =
+        item.release.getFullYear() + "-" + item.continuation.getFullYear();
     } else {
       popupFilm.querySelector(".film__header__season").textContent =
         "Сезон " + item.season + ",";
@@ -7990,8 +8332,6 @@ function showFilmCard(item) {
   } else {
     popupFilm.querySelector(".film__header__season").textContent = "";
   }
-  popupFilm.querySelector(".film__header__year").textContent =
-    item.release.getFullYear();
 
   const filmDirectorTitle = popupFilm.querySelector(".film__director__title");
 
@@ -8382,19 +8722,20 @@ mainSortTitle.addEventListener("click", function () {
 function find_the_right_word() {
   clonedArray.sort((a, b) => {
     if (a.title.toLowerCase() < b.title.toLowerCase()) {
-      return 1;
+      return -1;
     }
     if (a.title.toLowerCase() > b.title.toLowerCase()) {
-      return -1;
+      return 1;
     }
     return 0;
   });
 
   for (let i = 0; i < 1; i++) {
-    console.log(name_for_link(clonedArray[i].original));
+    console.log(name_for_link(clonedArray[serial_number_of_the_film].original));
   }
 }
 
+// const serial_number_of_the_film = 5
 // find_the_right_word()
 
 function total_number_of_films_and_serials() {
