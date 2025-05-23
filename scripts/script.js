@@ -199,6 +199,166 @@ const films = [
     screenshots: 23,
   }, // американское чтиво
   {
+    release: new Date("2022-11-16"),
+    publication: new Date("2022-05-27"),
+    format: "сериал",
+    season: "4",
+    grade: "love",
+    title: "Атланта",
+    original: "Atlanta",
+    kinopoisk: "https://www.kinopoisk.ru/series/882408/?utm_referrer=yandex.ru",
+    director: [
+      {
+        name: "Дональд Гловер",
+      },
+    ],
+    cast: [
+      {
+        name: "Дональд Гловер",
+      },
+      {
+        name: "Брайан Тайри Генри",
+      },
+      {
+        name: "Лакит Стэнфилд",
+      },
+      {
+        name: "Зази Битц",
+      },
+    ],
+    description:
+      "История рассказывает о нескольких афроамериканцах из Атланты, каждый из которых стремится обеспечить себе достойную жизнь.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 72,
+  }, // атланта 4
+  {
+    release: new Date("2022-03-24"),
+    publication: new Date("2022-05-27"),
+    format: "сериал",
+    season: "3",
+    grade: "love",
+    title: "Атланта",
+    original: "Atlanta",
+    kinopoisk: "https://www.kinopoisk.ru/series/882408/?utm_referrer=yandex.ru",
+    director: [
+      {
+        name: "Дональд Гловер",
+      },
+    ],
+    cast: [
+      {
+        name: "Дональд Гловер",
+      },
+      {
+        name: "Брайан Тайри Генри",
+      },
+      {
+        name: "Лакит Стэнфилд",
+      },
+      {
+        name: "Зази Битц",
+      },
+    ],
+    description:
+      "История рассказывает о нескольких афроамериканцах из Атланты, каждый из которых стремится обеспечить себе достойную жизнь.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 35,
+  }, // атланта 3
+  {
+    release: new Date("2018-03-01"),
+    publication: new Date("2021-11-21"),
+    format: "сериал",
+    season: "2",
+    grade: "love",
+    title: "Атланта",
+    original: "Atlanta",
+    kinopoisk: "https://www.kinopoisk.ru/series/882408/?utm_referrer=yandex.ru",
+    director: [
+      {
+        name: "Дональд Гловер",
+      },
+    ],
+    cast: [
+      {
+        name: "Дональд Гловер",
+      },
+      {
+        name: "Брайан Тайри Генри",
+      },
+      {
+        name: "Лакит Стэнфилд",
+      },
+      {
+        name: "Зази Битц",
+      },
+    ],
+    description:
+      "История рассказывает о нескольких афроамериканцах из Атланты, каждый из которых стремится обеспечить себе достойную жизнь.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 34,
+  }, // атланта 2
+  {
+    release: new Date("2016-09-06"),
+    publication: new Date("2021-11-17"),
+    format: "сериал",
+    season: "1",
+    grade: "love",
+    title: "Атланта",
+    original: "Atlanta",
+    kinopoisk: "https://www.kinopoisk.ru/series/882408/?utm_referrer=yandex.ru",
+    director: [
+      {
+        name: "Дональд Гловер",
+      },
+    ],
+    cast: [
+      {
+        name: "Дональд Гловер",
+      },
+      {
+        name: "Брайан Тайри Генри",
+      },
+      {
+        name: "Лакит Стэнфилд",
+      },
+      {
+        name: "Зази Битц",
+      },
+    ],
+    description:
+      "История рассказывает о нескольких афроамериканцах из Атланты, каждый из которых стремится обеспечить себе достойную жизнь.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 44,
+  }, // атланта 1
+  {
     release: new Date("2022-11-04"),
     publication: new Date("2022-12-16"),
     format: "фильм",
@@ -620,7 +780,7 @@ const films = [
     publication: new Date("2023-11-26"),
     format: "сериал",
     season: "мини–сериал",
-    grade: "A",
+    grade: "A+",
     title: "Быть присяжным",
     original: "Jury Duty",
     kinopoisk: "https://www.kinopoisk.ru/series/5106451/",
@@ -652,6 +812,57 @@ const films = [
     ],
     screenshots: 21,
   }, // быть присяжным
+  {
+    release: new Date("2022-03-04"),
+    publication: new Date("2022-04-18"),
+    format: "фильм",
+    grade: "A",
+    title: "Бэтмен",
+    original: "Babylon",
+    kinopoisk: "https://www.kinopoisk.ru/film/590286/",
+    director: [
+      {
+        name: "Мэтт Ривз",
+      },
+    ],
+    cast: [
+      {
+        name: "Роберт Паттинсон",
+      },
+      {
+        name: "Зои Кравиц",
+      },
+      {
+        name: "Пол Дано",
+      },
+      {
+        name: "Джеффри Райт",
+      },
+      {
+        name: "Джон Туртурро",
+      },
+      {
+        name: "Колин Фаррелл",
+      },
+    ],
+    description:
+      "Серийный убийца устраняет ключевых политиков Готэма, втягивая Бэтмена в расследование коррупции. Ему предстоит не только разоблачить преступные схемы, но и усомниться в причастности своей семьи.",
+    genres: [
+      {
+        genre: "детектив",
+      },
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "боевик",
+      },
+    ],
+    screenshots: 23,
+  }, // бэтмен
   {
     release: new Date("2022-12-23"),
     publication: new Date("2023-02-05"),
@@ -1090,6 +1301,102 @@ const films = [
     screenshots: 25,
   }, // дикий робот
   {
+    release: new Date("2008-12-26"),
+    publication: new Date("2022-09-18"),
+    format: "фильм",
+    grade: "A",
+    title: "Дорога перемен",
+    original: "Revolutionary Road",
+    kinopoisk: "https://www.kinopoisk.ru/film/280932/",
+    director: [
+      {
+        name: "Сэм Мендес",
+      },
+    ],
+    cast: [
+      {
+        name: "Кейт Уинслет",
+      },
+      {
+        name: "Леонардо ДиКаприо",
+      },
+      {
+        name: "Майкл Шеннон",
+      },
+      {
+        name: "Дэвид Харбор",
+      },
+      {
+        name: "Кэтрин Хан",
+      },
+      {
+        name: "Кэти Бейтс",
+      },
+    ],
+    description:
+      "В 50-х годах семья Уиллер мечтает переехать в Париж, но судьба готовит им сюрпризы.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 33,
+  }, // дорога перемен
+  {
+    release: new Date("2019-11-27"),
+    publication: new Date("2020-02-21"),
+    format: "фильм",
+    grade: "A+",
+    title: "Достать ножи",
+    original: "Knives Out",
+    kinopoisk: "https://www.kinopoisk.ru/film/1188529/?utm_referrer=yandex.ru",
+    director: [
+      {
+        name: "Райан Джонсон",
+      },
+    ],
+    cast: [
+      {
+        name: "Дэниэл Крэйг",
+      },
+      {
+        name: "Ана де Армас",
+      },
+      {
+        name: "Крис Эванс",
+      },
+      {
+        name: "Джейми Ли Кёртис",
+      },
+      {
+        name: "Майкл Шеннон",
+      },
+      {
+        name: "Дон Джонсон",
+      },
+      {
+        name: "Тони Коллетт",
+      },
+      {
+        name: "Лакит Стэнфилд",
+      },
+      {
+        name: "Кристофер Пламмер",
+      },
+    ],
+    description:
+      "Частный детектив ведет запутанное дело о смерти известного писателя.",
+    genres: [
+      {
+        genre: "детектив",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 22,
+  }, // достать ножи (1)
+  {
     release: new Date("2022-11-23"),
     publication: new Date("2022-12-24"),
     format: "фильм",
@@ -1183,7 +1490,7 @@ const films = [
     release: new Date("2024-03-01"),
     publication: new Date("2024-05-11"),
     format: "фильм",
-    grade: "A+",
+    grade: "love",
     title: "Дюна: Часть вторая",
     original: "Dune: Part Two",
     kinopoisk:
@@ -1223,7 +1530,7 @@ const films = [
     release: new Date("2021-09-03"),
     publication: new Date("2022-10-28"),
     format: "фильм",
-    grade: "A+",
+    grade: "love",
     title: "Дюна",
     original: "Dune",
     kinopoisk: "https://www.kinopoisk.ru/film/409424/",
@@ -1261,6 +1568,49 @@ const films = [
     ],
     screenshots: 47,
   }, // дюна
+  {
+    release: new Date("2022-08-18"),
+    publication: new Date("2022-10-15"),
+    format: "сериал",
+    season: "мини–сериал",
+    grade: "D",
+    title: "Женщина-Халк: Адвокат",
+    original: "She-Hulk: Attorney at Law",
+    kinopoisk: "https://www.kinopoisk.ru/series/1301509/",
+    director: [
+      {
+        name: "Джессика Гао",
+      },
+    ],
+    cast: [
+      {
+        name: "Татьяна Маслани",
+      },
+      {
+        name: "Марк Руффало",
+      },
+      {
+        name: "Джош Сегарра",
+      },
+      {
+        name: "Тим Рот",
+      },
+      {
+        name: "Чарли Кокс",
+      },
+    ],
+    description:
+      "Дженнифер Уолтерс ведет сложную жизнь одинокого адвоката в возрасте 30 лет, которая к тому же обладает способностью превращаться в зеленого суперсильного Халка ростом 6 футов 7 дюймов.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 14,
+  }, // женщина-халк: адвокат
   {
     release: new Date("2022-12-23"),
     publication: new Date("2023-04-30"),
@@ -1597,7 +1947,7 @@ const films = [
     release: new Date("2016-01-29"),
     publication: new Date("2023-12-26"),
     format: "фильм",
-    grade: "A+",
+    grade: "love",
     title: "Кунг-фу Панда 3",
     original: "Kung Fu Panda 3",
     kinopoisk: "https://www.kinopoisk.ru/film/692865/",
@@ -1639,7 +1989,7 @@ const films = [
     release: new Date("2011-05-26"),
     publication: new Date("2023-12-21"),
     format: "фильм",
-    grade: "A+",
+    grade: "love",
     title: "Кунг-фу Панда 2",
     original: "Kung Fu Panda 2",
     kinopoisk: "https://www.kinopoisk.ru/film/427878/",
@@ -1675,7 +2025,7 @@ const films = [
     release: new Date("2008-06-06"),
     publication: new Date("2023-12-18"),
     format: "фильм",
-    grade: "A+",
+    grade: "love",
     title: "Кунг-фу Панда",
     original: "Kung Fu Panda",
     kinopoisk: "https://www.kinopoisk.ru/film/103734/",
@@ -2464,10 +2814,40 @@ const films = [
     screenshots: 89,
   }, // мистер и миссис смит
   {
+    release: new Date("2022-11-04"),
+    publication: new Date("2022-11-08"),
+    format: "фильм",
+    grade: "A",
+    title: "Мост через озеро",
+    original: "Causeway",
+    kinopoisk: "https://www.kinopoisk.ru/film/1271993/",
+    director: [
+      {
+        name: "Лайла Нойгебауэр",
+      },
+    ],
+    cast: [
+      {
+        name: "Дженнифер Лоуренс",
+      },
+      {
+        name: "Брайан Тайри Генри",
+      },
+    ],
+    description:
+      "Линси получила черепно-мозговую травму во время боевых действий в Афганистане и изо всех сил пытается приспособиться к жизни на родине.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 26,
+  }, // мост через озеро
+  {
     release: new Date("2019-03-28"),
     publication: new Date("2024-08-18"),
     format: "фильм",
-    grade: "A",
+    grade: "A+",
     title: "Мы",
     original: "Us",
     kinopoisk: "https://www.kinopoisk.ru/film/1122138/",
@@ -2673,6 +3053,45 @@ const films = [
     ],
     screenshots: 16,
   }, // начальная школа эбботт 1
+  {
+    release: new Date("2022-09-23"),
+    publication: new Date("2022-11-04"),
+    format: "фильм",
+    grade: "B",
+    title: "Не беспокойся, дорогая",
+    original: "Don't Worry, Darling",
+    kinopoisk: "https://www.kinopoisk.ru/film/1379512/",
+    director: [
+      {
+        name: "Оливия Уайлд",
+      },
+    ],
+    cast: [
+      {
+        name: "Флоренс Пью",
+      },
+      {
+        name: "Гарри Стайлс",
+      },
+      {
+        name: "Крис Пайн",
+      },
+      {
+        name: "Оливия Уайлд",
+      },
+      {
+        name: "Джемма Чан",
+      },
+    ],
+    description:
+      "Домохозяйка Элис подозревает, что муж Джек и соседи скрывают опасные тайны, способные перевернуть её жизнь.",
+    genres: [
+      {
+        genre: "триллер",
+      },
+    ],
+    screenshots: 20,
+  }, // не беспокойся, дорогая
   {
     release: new Date("2006-03-20"),
     publication: new Date("2025-01-19"),
@@ -3269,7 +3688,7 @@ const films = [
     release: new Date("2001-06-08"),
     publication: new Date("2023-09-30"),
     format: "фильм",
-    grade: "C",
+    grade: "D",
     title: "Пароль «Рыба-меч»",
     original: "Swordfish",
     kinopoisk:
@@ -3748,7 +4167,7 @@ const films = [
     release: new Date("2024-04-26"),
     publication: new Date("2024-06-15"),
     format: "фильм",
-    grade: "A+",
+    grade: "love",
     title: "Претенденты",
     original: "Challengers",
     kinopoisk: "https://www.kinopoisk.ru/film/4860116/",
@@ -5904,56 +6323,11 @@ const films = [
     screenshots: 36,
   }, // треугольник печали
   {
-    release: new Date("2025-04-24"),
-    publication: new Date("2025-05-02"),
-    format: "сериал",
-    season: "5",
-    grade: "A",
-    title: "Ты",
-    original: "You",
-    kinopoisk: "https://www.kinopoisk.ru/series/1115630/",
-    director: [
-      {
-        name: "Грег Берланти",
-      },
-      {
-        name: "Сера Гэмбл",
-      },
-    ],
-    cast: [
-      {
-        name: "Пенн Бэджли",
-      },
-      {
-        name: "Шарлотта Ричи",
-      },
-      {
-        name: "Мадлен Брюэр",
-      },
-    ],
-    description: "Обаятельный молодой человек готов на всё ради любви.",
-    genres: [
-      {
-        genre: "криминал",
-      },
-      {
-        genre: "триллер",
-      },
-      {
-        genre: "драма",
-      },
-      {
-        genre: "мелодрама",
-      },
-    ],
-    screenshots: 17,
-  }, // ты 5
-  {
     release: new Date("2023-02-09"),
     publication: new Date("2023-04-14"),
     format: "сериал",
     season: "4",
-    grade: "A",
+    grade: "B",
     title: "Ты",
     original: "You",
     kinopoisk: "https://www.kinopoisk.ru/series/1115630/",
@@ -6001,7 +6375,7 @@ const films = [
     publication: new Date("2022-01-14"),
     format: "сериал",
     season: "3",
-    grade: "A",
+    grade: "B",
     title: "Ты",
     original: "You",
     kinopoisk: "https://www.kinopoisk.ru/series/1115630/",
@@ -6046,7 +6420,7 @@ const films = [
     publication: new Date("2020-02-09"),
     format: "сериал",
     season: "2",
-    grade: "A",
+    grade: "B",
     title: "Ты",
     original: "You",
     kinopoisk: "https://www.kinopoisk.ru/series/1115630/",
@@ -6094,7 +6468,7 @@ const films = [
     publication: new Date("2020-01-20"),
     format: "сериал",
     season: "1",
-    grade: "A",
+    grade: "B",
     title: "Ты",
     original: "You",
     kinopoisk: "https://www.kinopoisk.ru/series/1115630/",
@@ -6236,7 +6610,7 @@ const films = [
     publication: new Date("2024-01-28"),
     format: "сериал",
     season: "5",
-    grade: "A",
+    grade: "B",
     title: "Фарго",
     original: "Fargo",
     kinopoisk: "https://www.kinopoisk.ru/series/767379/",
@@ -6630,7 +7004,7 @@ const films = [
     publication: new Date("2023-10-07"),
     format: "сериал",
     season: "1-4",
-    grade: "A",
+    grade: "B",
     title: "Харли Квинн",
     original: "Harley Quinn",
     kinopoisk: "https://www.kinopoisk.ru/series/1112514/",
@@ -6834,7 +7208,7 @@ const films = [
     release: new Date("2019-07-02"),
     publication: new Date("2023-07-21"),
     format: "фильм",
-    grade: "A",
+    grade: "A+",
     title: "Человек-паук: Вдали от дома",
     original: "Spider-Man: Far from Home",
     kinopoisk: "https://www.kinopoisk.ru/film/1008445/",
@@ -7356,33 +7730,21 @@ addAnything(
 
 addAnything(filmCastTemplate, "film__cast__name", filmsCastSet, filmCast);
 
-// const GradeAPlus = "https://img.icons8.com/ios/100/increase-font.png";
-// const GradeA = "https://img.icons8.com/ios/100/a.png";
-// const GradeB = "https://img.icons8.com/ios/100/b.png";
-// const GradeC = "https://img.icons8.com/ios/100/c.png";
-
-// const WhiteGradeAPlus =
-//   "https://img.icons8.com/ios-filled/100/FFFFFF/increase-font.png";
-// const WhiteGradeA = "https://img.icons8.com/ios-filled/100/FFFFFF/a.png";
-// const WhiteGradeB = "https://img.icons8.com/ios-filled/100/FFFFFF/b.png";
-// const WhiteGradeC = "https://img.icons8.com/ios-filled/100/FFFFFF/c.png";
-
-const GradeAPlus = "https://img.icons8.com/ios/100/grades.png";
-const GradeA = "https://img.icons8.com/ios/100/circled-a.png";
-const GradeB = "https://img.icons8.com/ios/100/circled-b.png";
-const GradeC = "https://img.icons8.com/ios/100/circled-c.png";
-
-const WhiteGradeAPlus =
-  "https://img.icons8.com/ios-filled/100/FFFFFF/grades.png";
-const WhiteGradeA =
-  "https://img.icons8.com/ios-filled/100/FFFFFF/circled-a.png";
-const WhiteGradeB =
-  "https://img.icons8.com/ios-filled/100/FFFFFF/circled-b.png";
-const WhiteGradeC =
-  "https://img.icons8.com/ios-filled/100/FFFFFF/circled-c.png";
+const GradeLove =
+  "https://img.icons8.com/ios-filled/100/FF0000/filled-like.png";
+const GradeAPlus =
+  "https://img.icons8.com/fluency-systems-filled/96/increase-font.png";
+const GradeA = "https://img.icons8.com/fluency-systems-filled/96/a.png";
+const GradeB = "https://img.icons8.com/fluency-systems-filled/96/b.png";
+const GradeC = "https://img.icons8.com/fluency-systems-filled/96/c.png";
+const GradeD = "https://img.icons8.com/fluency-systems-filled/96/d.png";
 
 function defineGradeBlack(item, element) {
-  if (item === "A+") {
+  if (item === "love") {
+    element.src = GradeLove;
+    element.alt = "Иконка Оценки Love";
+    element.title = item;
+  } else if (item === "A+") {
     element.src = GradeAPlus;
     element.alt = "Иконка Оценки A+";
     element.title = item;
@@ -7398,32 +7760,18 @@ function defineGradeBlack(item, element) {
     element.src = GradeC;
     element.alt = "Иконка Оценки C";
     element.title = item;
-  }
-}
-
-function defineGradeWhite(item, element) {
-  if (item === "A+") {
-    element.src = WhiteGradeAPlus;
-    element.alt = "Иконка Оценки A+";
-    element.title = item;
-  } else if (item === "A") {
-    element.src = WhiteGradeA;
-    element.alt = "Иконка Оценки A";
-    element.title = item;
-  } else if (item === "B") {
-    element.src = WhiteGradeB;
-    element.alt = "Иконка Оценки B";
-    element.title = item;
-  } else if (item === "C") {
-    element.src = WhiteGradeC;
-    element.alt = "Иконка Оценки C";
+  } else if (item === "D") {
+    element.src = GradeD;
+    element.alt = "Иконка Оценки D";
     element.title = item;
   }
 }
 
 function Grades() {
   const filmsGrades = Array.from(films, ({ grade }) => grade);
-  const filmsGradesSet = new Set(filmsGrades.sort());
+  const filmsGradesSet = Array.from(new Set(filmsGrades.sort()));
+  filmsGradesSet.splice(0, 0, filmsGradesSet.splice(5, 1)[0]);
+  filmsGradesSet.splice(1, 0, filmsGradesSet.splice(2, 1)[0]);
 
   const navigationGradesTemplate = document.querySelector(
     "#navigation__grades-template"
@@ -7731,19 +8079,6 @@ const buttonThemeLight = document.querySelector(".theme__light");
 const buttonThemeDark = document.querySelector(".theme__dark");
 buttonThemeLight.addEventListener("click", function () {
   document.body.classList.remove("dark-theme");
-  function changeGrades(element) {
-    if (element.src == WhiteGradeAPlus) {
-      element.src = GradeAPlus;
-    } else if (element.src == WhiteGradeA) {
-      element.src = GradeA;
-    } else if (element.src == WhiteGradeB) {
-      element.src = GradeB;
-    } else if (element.src == WhiteGradeC) {
-      element.src = GradeC;
-    }
-  }
-  const mainGrade = document.querySelector(".main__description__grade");
-  changeGrades(mainGrade);
   buttonThemeLight.classList.toggle("theme__button_is-active");
   buttonThemeDark.classList.toggle("theme__button_is-active");
   buttonThemeLight.disabled = true;
@@ -7752,19 +8087,6 @@ buttonThemeLight.addEventListener("click", function () {
 });
 buttonThemeDark.addEventListener("click", function () {
   document.body.classList.add("dark-theme");
-  function changeGrades(element) {
-    if (element.src == GradeAPlus) {
-      element.src = WhiteGradeAPlus;
-    } else if (element.src == GradeA) {
-      element.src = WhiteGradeA;
-    } else if (element.src == GradeB) {
-      element.src = WhiteGradeB;
-    } else if (element.src == GradeC) {
-      element.src = WhiteGradeC;
-    }
-  }
-  const mainGrade = document.querySelector(".main__description__grade");
-  changeGrades(mainGrade);
   buttonThemeLight.classList.toggle("theme__button_is-active");
   buttonThemeDark.classList.toggle("theme__button_is-active");
   buttonThemeLight.disabled = false;
@@ -8063,11 +8385,16 @@ function addCard(item) {
           descriptionGrade.classList.add(
             "main__description__element_is-opened"
           );
-          if (document.body.classList.contains("dark-theme")) {
-            defineGradeWhite(item.grade, descriptionGrade);
+
+          defineGradeBlack(item.grade, descriptionGrade);
+          if (item.grade == "love") {
+            descriptionGrade.classList.add("main__description__grade_is-loved");
           } else {
-            defineGradeBlack(item.grade, descriptionGrade);
+            descriptionGrade.classList.remove(
+              "main__description__grade_is-loved"
+            );
           }
+
           if (descriptionFormat.textContent.toLowerCase() == item.format) {
             openCard();
           }
@@ -8083,10 +8410,13 @@ function addCard(item) {
             "main__description__element_is-opened"
           );
 
-          if (document.body.classList.contains("dark-theme")) {
-            defineGradeWhite(item.grade, descriptionGrade);
+          defineGradeBlack(item.grade, descriptionGrade);
+          if (item.grade == "love") {
+            descriptionGrade.classList.add("main__description__grade_is-loved");
           } else {
-            defineGradeBlack(item.grade, descriptionGrade);
+            descriptionGrade.classList.remove(
+              "main__description__grade_is-loved"
+            );
           }
 
           openCard();
@@ -8311,7 +8641,12 @@ function showFilmCard(item) {
   const filmPoster = popupFilm.querySelectorAll(".film__poster");
 
   const filmGrade = popupFilm.querySelector(".film__header__grade");
-  defineGradeWhite(item.grade, filmGrade);
+  defineGradeBlack(item.grade, filmGrade);
+  if (item.grade == "love") {
+    filmGrade.classList.add("film__header__grade_is-loved");
+  } else {
+    filmGrade.classList.remove("film__header__grade_is-loved");
+  }
 
   popupFilm.querySelector(".film__header__year").textContent =
     item.release.getFullYear();
@@ -8510,9 +8845,9 @@ function showFilmCard(item) {
       function updateSlider() {
         popupScreen.forEach((slide, index) => {
           if (index === currentSlide) {
-            slide.style.transform = `translateX(-${currentSlide * 100}%)`;
+            slide.style.display = "block";
           } else {
-            slide.style.transform = `translateX(-${currentSlide * 100}%)`;
+            slide.style.display = "none";
           }
         });
 
@@ -8735,7 +9070,7 @@ function find_the_right_word() {
   }
 }
 
-// const serial_number_of_the_film = 5
+// const serial_number_of_the_film = 40
 // find_the_right_word()
 
 function total_number_of_films_and_serials() {
