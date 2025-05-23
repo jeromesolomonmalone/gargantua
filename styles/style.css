@@ -876,8 +876,6 @@ body {
 }
 
 .main__description__grade_is-loved {
-  border: none;
-  border-radius: none;
   padding: 0;
   background: transparent;
 }
@@ -1057,9 +1055,9 @@ body {
 }
 
 .film__header__grade_is-loved {
-  border: none;
-  border-radius: none;
   padding: 0;
+  background: transparent;
+  filter: none;
 }
 
 .film__header__title {
