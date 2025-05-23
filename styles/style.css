@@ -1544,6 +1544,10 @@ body {
     inline-size: 38px;
   }
 
+  .main__description__grade_is-loved {
+    padding: 0;
+  }
+
   .main__sort {
     padding: 13px 0 9px;
   }
@@ -1665,6 +1669,10 @@ body {
   .main__description__grade {
     padding: 10px;
     inline-size: 40px;
+  }
+
+  .main__description__grade_is-loved {
+    padding: 0;
   }
 
   .main__sort {
