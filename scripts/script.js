@@ -1,5 +1,86 @@
 const films = [
   {
+    release: new Date("2012-11-09"),
+    publication: new Date("2022-09-21"),
+    format: "фильм",
+    grade: "love",
+    title: "007: Координаты «Скайфолл»",
+    original: "Skyfall",
+    kinopoisk: "https://www.kinopoisk.ru/film/408871/",
+    director: [
+      {
+        name: "Сэм Мендес",
+      },
+    ],
+    cast: [
+      {
+        name: "Дэниэл Крэйг",
+      },
+      {
+        name: "Хавьер Бардем",
+      },
+      {
+        name: "Джуди Денч",
+      },
+      {
+        name: "Рэйф Файнс",
+      },
+      {
+        name: "Наоми Харрис",
+      },
+    ],
+    description:
+      "Преданность Бонда своей начальнице М оказывается под угрозой, когда всплывают неприятные тайны её прошлого.",
+    genres: [
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 51,
+  }, // 007: координаты «скайфолл»
+  {
+    release: new Date("2015-11-06"),
+    publication: new Date("2022-09-21"),
+    format: "фильм",
+    grade: "A+",
+    title: "007: СПЕКТР",
+    original: "Spectre",
+    kinopoisk: "https://www.kinopoisk.ru/film/678552/",
+    director: [
+      {
+        name: "Сэм Мендес",
+      },
+    ],
+    cast: [
+      {
+        name: "Дэниэл Крэйг",
+      },
+      {
+        name: "Кристоф Вальц",
+      },
+      {
+        name: "Леа Сейду",
+      },
+      {
+        name: "Рэйф Файнс",
+      },
+    ],
+    description:
+      "Таинственное сообщение ведет Джеймса Бонда к организации СПЕКТР. Появление этой новой угрозы показывает агенту истинный источник всех его прошлых неудач.",
+    genres: [
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 32,
+  }, // 007: спектр
+  {
     release: new Date("2023-04-05"),
     publication: new Date("2023-05-13"),
     format: "фильм",
@@ -736,6 +817,42 @@ const films = [
     screenshots: 15,
   }, // битва полов
   {
+    release: new Date("2022-09-16"),
+    publication: new Date("2022-10-03"),
+    format: "фильм",
+    grade: "C",
+    title: "Блондинка",
+    original: "Blonde",
+    kinopoisk: "https://www.kinopoisk.ru/film/525530/",
+    director: [
+      {
+        name: "Эндрю Доминик",
+      },
+    ],
+    cast: [
+      {
+        name: "Ана де Армас",
+      },
+      {
+        name: "Эдриан Броуди",
+      },
+      {
+        name: "Бобби Каннавале",
+      },
+    ],
+    description:
+      "Трагическая история жизни культовой красавицы и звезды Голливуда Мэрилин Монро.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "биография",
+      },
+    ],
+    screenshots: 63,
+  }, // блондинка
+  {
     release: new Date("2017-06-15"),
     publication: new Date("2024-03-04"),
     format: "фильм",
@@ -775,6 +892,60 @@ const films = [
     ],
     screenshots: 43,
   }, // большой злой лис и другие сказки
+  {
+    release: new Date("2022-08-05"),
+    publication: new Date("2022-10-02"),
+    format: "фильм",
+    grade: "A",
+    title: "Быстрее пули",
+    original: "Bullet Train",
+    kinopoisk: "https://www.kinopoisk.ru/film/1392550/",
+    director: [
+      {
+        name: "Дэвид Литч",
+      },
+    ],
+    cast: [
+      {
+        name: "Брэд Питт",
+      },
+      {
+        name: "Джои Кинг",
+      },
+      {
+        name: "Аарон Тейлор-Джонсон",
+      },
+      {
+        name: "Брайан Тайри Генри",
+      },
+      {
+        name: "Эндрю Кодзи",
+      },
+      {
+        name: "Хироюки Санада",
+      },
+      {
+        name: "Бэд Банни",
+      },
+      {
+        name: "Зази Битц",
+      },
+      {
+        name: "Майкл Шеннон",
+      },
+    ],
+    description:
+      "Киллер-пацифист должен вынести чемодан из поезда, набитого наемными убийцами.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "боевик",
+      },
+    ],
+    screenshots: 29,
+  }, // быстрее пули
   {
     release: new Date("2023-04-07"),
     publication: new Date("2023-11-26"),
@@ -1568,49 +1739,6 @@ const films = [
     ],
     screenshots: 47,
   }, // дюна
-  {
-    release: new Date("2022-08-18"),
-    publication: new Date("2022-10-15"),
-    format: "сериал",
-    season: "мини–сериал",
-    grade: "D",
-    title: "Женщина-Халк: Адвокат",
-    original: "She-Hulk: Attorney at Law",
-    kinopoisk: "https://www.kinopoisk.ru/series/1301509/",
-    director: [
-      {
-        name: "Джессика Гао",
-      },
-    ],
-    cast: [
-      {
-        name: "Татьяна Маслани",
-      },
-      {
-        name: "Марк Руффало",
-      },
-      {
-        name: "Джош Сегарра",
-      },
-      {
-        name: "Тим Рот",
-      },
-      {
-        name: "Чарли Кокс",
-      },
-    ],
-    description:
-      "Дженнифер Уолтерс ведет сложную жизнь одинокого адвоката в возрасте 30 лет, которая к тому же обладает способностью превращаться в зеленого суперсильного Халка ростом 6 футов 7 дюймов.",
-    genres: [
-      {
-        genre: "фантастика",
-      },
-      {
-        genre: "комедия",
-      },
-    ],
-    screenshots: 14,
-  }, // женщина-халк: адвокат
   {
     release: new Date("2022-12-23"),
     publication: new Date("2023-04-30"),
@@ -2607,7 +2735,7 @@ const films = [
     release: new Date("2018-07-27"),
     publication: new Date("2023-05-25"),
     format: "фильм",
-    grade: "A+",
+    grade: "love",
     title: "Миссия невыполнима: Последствия",
     original: "Mission: Impossible - Fallout",
     kinopoisk: "https://www.kinopoisk.ru/film/926540/",
@@ -3093,6 +3221,45 @@ const films = [
     screenshots: 20,
   }, // не беспокойся, дорогая
   {
+    release: new Date("2021-11-09"),
+    publication: new Date("2022-09-23"),
+    format: "фильм",
+    grade: "A+",
+    title: "Не время умирать",
+    original: "No Time to Die",
+    kinopoisk: "https://www.kinopoisk.ru/film/706019/",
+    director: [
+      {
+        name: "Кэри Дзёдзи Фукунага",
+      },
+    ],
+    cast: [
+      {
+        name: "Дэниэл Крэйг",
+      },
+      {
+        name: "Рами Малек",
+      },
+      {
+        name: "Леа Сейду",
+      },
+      {
+        name: "Рэйф Файнс",
+      },
+    ],
+    description:
+      "Агент 007 возвращается на службу ради своей последней миссии.",
+    genres: [
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "боевик",
+      },
+    ],
+    screenshots: 24,
+  }, // не время умирать
+  {
     release: new Date("2006-03-20"),
     publication: new Date("2025-01-19"),
     format: "фильм",
@@ -3389,9 +3556,6 @@ const films = [
       },
       {
         genre: "криминал",
-      },
-      {
-        genre: "музыка",
       },
     ],
     screenshots: 24,
@@ -7040,36 +7204,6 @@ const films = [
     screenshots: 22,
   }, // харли квинн 1-4
   {
-    release: new Date("2023-03-24"),
-    publication: new Date("2023-06-02"),
-    format: "фильм",
-    grade: "B",
-    title: "Хороший человек",
-    original: "A Good Person",
-    kinopoisk: "https://www.kinopoisk.ru/film/4510366/",
-    director: [
-      {
-        name: "Зак Брафф",
-      },
-    ],
-    cast: [
-      {
-        name: "Флоренс Пью",
-      },
-      {
-        name: "Морган Фриман",
-      },
-    ],
-    description:
-      "Чудом выжив в аварии, Эллисон узнает, что по ее вине погиб человек.",
-    genres: [
-      {
-        genre: "драма",
-      },
-    ],
-    screenshots: 11,
-  }, // хороший человек
-  {
     release: new Date("2001-05-13"),
     publication: new Date("2024-08-11"),
     format: "фильм",
@@ -7275,6 +7409,9 @@ const films = [
       },
       {
         name: "Зендея",
+      },
+      {
+        name: "Лора Хэрриер",
       },
     ],
     description:
@@ -7549,6 +7686,45 @@ const films = [
     ],
     screenshots: 50,
   }, // шоу чашека 1-3
+  {
+    release: new Date("2022-09-30"),
+    publication: new Date("2022-10-08"),
+    format: "фильм",
+    grade: "B",
+    title: "Энтергалактик",
+    original: "Entergalactic",
+    kinopoisk: "https://www.kinopoisk.ru/film/4477687/",
+    director: [
+      {
+        name: "Флетчер Мулс",
+      },
+    ],
+    cast: [
+      {
+        name: "Кид Кади",
+      },
+      {
+        name: "Джессика Уильямс",
+      },
+      {
+        name: "Лора Хэрриер",
+      },
+      {
+        name: "Ty Dolla $ign",
+      },
+      {
+        name: "Тимоти Шаламе",
+      },
+    ],
+    description:
+      "Молодой артист Джабари пытается найти любовь в современном Нью-Йорке.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 23,
+  }, // энтергалактик
   {
     release: new Date("2012-05-23"),
     publication: new Date("2024-03-20"),
