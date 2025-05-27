@@ -280,6 +280,50 @@ const films = [
     screenshots: 23,
   }, // американское чтиво
   {
+    release: new Date("2011-12-23"),
+    publication: new Date("2021-02-05"),
+    format: "фильм",
+    grade: "love",
+    title: "Артист",
+    original: "The Artist",
+    kinopoisk: "https://www.kinopoisk.ru/film/539550/",
+    director: [
+      {
+        name: "Мишель Хазанавичус",
+      },
+    ],
+    cast: [
+      {
+        name: "Жан Дюжарден",
+      },
+      {
+        name: "Беренис Бежо",
+      },
+      {
+        name: "Джон Гудман",
+      },
+      {
+        name: "Джеймс Кромуэлл",
+      },
+    ],
+    description: "В жизнь звезды немого кино врывается прекрасная статистка.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "чёрно-белое",
+      },
+    ],
+    screenshots: 21,
+  }, // артист
+  {
     release: new Date("2022-11-16"),
     publication: new Date("2022-05-27"),
     format: "сериал",
@@ -989,7 +1033,7 @@ const films = [
     format: "фильм",
     grade: "A",
     title: "Бэтмен",
-    original: "Babylon",
+    original: "The Batman",
     kinopoisk: "https://www.kinopoisk.ru/film/590286/",
     director: [
       {
@@ -1800,6 +1844,51 @@ const films = [
     screenshots: 21,
   }, // зачинщики
   {
+    release: new Date("2006-11-17"),
+    publication: new Date("2022-09-20"),
+    format: "фильм",
+    grade: "A+",
+    title: "Казино Рояль",
+    original: "Casino Royale",
+    kinopoisk: "https://www.kinopoisk.ru/film/49844/",
+    director: [
+      {
+        name: "Мартин Кэмпбелл",
+      },
+    ],
+    cast: [
+      {
+        name: "Дэниэл Крэйг",
+      },
+      {
+        name: "Ева Грин",
+      },
+      {
+        name: "Мадс Миккельсен",
+      },
+      {
+        name: "Джуди Денч",
+      },
+      {
+        name: "Джеффри Райт",
+      },
+      {
+        name: "Джанкарло Джаннини",
+      },
+    ],
+    description:
+      "Получив лицензию на убийство, секретный агент Джеймс Бонд отправляется на свое первое задание в качестве агента 007.",
+    genres: [
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 52,
+  }, // казино рояль
+  {
     release: new Date("1942-11-26"),
     publication: new Date("2024-08-10"),
     format: "фильм",
@@ -1868,6 +1957,48 @@ const films = [
     ],
     screenshots: 14,
   }, // каскадеры
+  {
+    release: new Date("2008-11-14"),
+    publication: new Date("2022-09-20"),
+    format: "фильм",
+    grade: "B",
+    title: "Квант милосердия",
+    original: "Quantum of Solace",
+    kinopoisk: "https://www.kinopoisk.ru/film/258475/",
+    director: [
+      {
+        name: "Марк Форстер",
+      },
+    ],
+    cast: [
+      {
+        name: "Дэниэл Крэйг",
+      },
+      {
+        name: "Ольга Куриленко",
+      },
+      {
+        name: "Матьё Амальрик",
+      },
+      {
+        name: "Джуди Денч",
+      },
+      {
+        name: "Джанкарло Джаннини",
+      },
+    ],
+    description:
+      "Джеймс Бонд пытается помешать организации уничтожить самый ценный ресурс страны.",
+    genres: [
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 16,
+  }, // квант милосердия
   {
     release: new Date("1960-06-15"),
     publication: new Date("2024-08-19"),
@@ -2602,6 +2733,51 @@ const films = [
     screenshots: 35,
   }, // мексиканец
   {
+    release: new Date("2013-03-29"),
+    publication: new Date("2019-03-26"),
+    format: "фильм",
+    grade: "A+",
+    title: "Место под соснами",
+    original: "The Place Beyond the Pines",
+    kinopoisk: "https://www.kinopoisk.ru/film/577673/",
+    director: [
+      {
+        name: "Дерек Сиенфрэнс",
+      },
+    ],
+    cast: [
+      {
+        name: "Райан Гослинг",
+      },
+      {
+        name: "Брэдли Купер",
+      },
+      {
+        name: "Ева Мендес",
+      },
+      {
+        name: "Дэйн ДеХаан",
+      },
+      {
+        name: "Эмори Коэн",
+      },
+      {
+        name: "Бен Мендельсон",
+      },
+    ],
+    description:
+      "Каскадер-мотоциклист становится грабителем банков, чтобы обеспечить сына.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 23,
+  }, // место под соснами
+  {
     release: new Date("2023-12-22"),
     publication: new Date("2024-02-25"),
     format: "фильм",
@@ -2634,6 +2810,90 @@ const films = [
     ],
     screenshots: 22,
   }, // миграция
+  {
+    release: new Date("2015-07-10"),
+    publication: new Date("2022-07-10"),
+    format: "фильм",
+    grade: "B",
+    title: "Миньоны",
+    original: "Minions",
+    kinopoisk: "https://www.kinopoisk.ru/film/694051/",
+    director: [
+      {
+        name: "Кайл Балда",
+      },
+      {
+        name: "Пьер Коффан",
+      },
+    ],
+    cast: [
+      {
+        name: "Сандра Буллок",
+      },
+      {
+        name: "Джон Хэмм",
+      },
+      {
+        name: "Майкл Китон",
+      },
+      {
+        name: "Эллисон Дженни",
+      },
+      {
+        name: "Джеффри Раш",
+      },
+    ],
+    description:
+      "Миньоны живут на планете гораздо дольше нас. У них одна навязчивая идея – служить самой Гадкой личности из имеющихся в наличии.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 14,
+  }, // миньоны
+  {
+    release: new Date("2022-07-01"),
+    publication: new Date("2022-08-17"),
+    format: "фильм",
+    grade: "B",
+    title: "Миньоны: Грювитация",
+    original: "Minions: The Rise of Gru",
+    kinopoisk: "https://www.kinopoisk.ru/film/1009513/",
+    director: [
+      {
+        name: "Кайл Балда",
+      },
+      {
+        name: "Брэд Эблесон",
+      },
+      {
+        name: "Джонатан дель Валь",
+      },
+    ],
+    cast: [
+      {
+        name: "Стив Карелл",
+      },
+      {
+        name: "Алан Аркин",
+      },
+      {
+        name: "Тараджи П. Хенсон",
+      },
+      {
+        name: "Мишель Йео",
+      },
+    ],
+    description:
+      "История знакомства забавных жёлтых существ с будущем злодеем Грю.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 14,
+  }, // миньоны: грювитация
   {
     release: new Date("2022-01-13"),
     publication: new Date("2022-04-17"),
@@ -4798,6 +5058,45 @@ const films = [
     screenshots: 11,
   }, // псы резервации 1
   {
+    release: new Date("1995-04-26"),
+    publication: new Date("2022-08-15"),
+    format: "фильм",
+    grade: "B",
+    title: "Пятница",
+    original: "Friday",
+    kinopoisk: "https://www.kinopoisk.ru/film/4809/",
+    director: [
+      {
+        name: "Ф. Гэри Грей",
+      },
+    ],
+    cast: [
+      {
+        name: "Айс Кьюб",
+      },
+      {
+        name: "Крис Такер",
+      },
+      {
+        name: "Ниа Лонг",
+      },
+      {
+        name: "Том Листер мл.",
+      },
+      {
+        name: "Джон Уизерспун",
+      },
+    ],
+    description:
+      "Крейг и Смоки должны вернуть 200 долларов местному бандиту до субботы.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 36,
+  }, // пятница
+  {
     release: new Date("2009-08-13"),
     publication: new Date("2024-10-02"),
     format: "фильм",
@@ -5571,6 +5870,45 @@ const films = [
     ],
     screenshots: 18,
   }, // скрежет металла 1
+  {
+    release: new Date("2000-01-12"),
+    publication: new Date("2022-09-15"),
+    format: "фильм",
+    grade: "D",
+    title: "Следующая пятница",
+    original: "Next Friday",
+    kinopoisk: "https://www.kinopoisk.ru/film/6106/",
+    director: [
+      {
+        name: "Ф. Гэри Грей",
+      },
+    ],
+    cast: [
+      {
+        name: "Айс Кьюб",
+      },
+      {
+        name: "Майк Эппс",
+      },
+      {
+        name: "Дон «Д.С.» Керри",
+      },
+      {
+        name: "Том Листер мл.",
+      },
+      {
+        name: "Джон Уизерспун",
+      },
+    ],
+    description:
+      "Отец отправляет Крейга Джонса пожить за городом у родни. На первый взгляд спокойный спальный район с приездом Крейга становится местом веселья.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 18,
+  }, // следующая пятница
   {
     release: new Date("2023-11-17"),
     publication: new Date("2024-01-28"),
@@ -6425,6 +6763,48 @@ const films = [
     screenshots: 35,
   }, // темная материя
   {
+    release: new Date("2022-07-08"),
+    publication: new Date("2022-09-14"),
+    format: "фильм",
+    grade: "C",
+    title: "Тор: Любовь и гром",
+    original: "Thor: Love and Thunder",
+    kinopoisk: "https://www.kinopoisk.ru/film/1282688/",
+    director: [
+      {
+        name: "Тайка Вайтити",
+      },
+    ],
+    cast: [
+      {
+        name: "Крис Хемсворт",
+      },
+      {
+        name: "Натали Портман",
+      },
+      {
+        name: "Кристиан Бэйл",
+      },
+      {
+        name: "Тесса Томпсон",
+      },
+    ],
+    description:
+      "Тор воссоединяется с Валькирией и своей бывшей девушкой Джейн Фостер, чтобы противостоять убийце богов Горру.",
+    genres: [
+      {
+        genre: "фэнтези",
+      },
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 15,
+  }, // тор: любовь и гром
+  {
     release: new Date("2024-01-11"),
     publication: new Date("2024-03-28"),
     format: "сериал",
@@ -6460,7 +6840,6 @@ const films = [
     publication: new Date("2024-08-18"),
     format: "фильм",
     grade: "A",
-    poster: "https://disk.yandex.ru/i/vj0n42BQR4Hobw",
     title: "Треугольник печали",
     original: "Triangle of Sadness",
     kinopoisk: "https://www.kinopoisk.ru/film/1348487/",
@@ -7801,6 +8180,7 @@ const films = [
 
 // Сортировка films по дате публикации
 films.sort((dateA, dateB) => dateA.publication - dateB.publication).reverse();
+// films.sort((dateA, dateB) => dateA.screenshots - dateB.screenshots);
 
 const location_of_the_images =
   "https://jeromesolomonmalone.github.io/gargantua/images/";
@@ -8497,7 +8877,13 @@ function addCard(item) {
   const yearButtons = document.querySelectorAll(".navigation__releases__item");
   yearButtons.forEach(function (element) {
     element.addEventListener("click", function () {
-      if (element.textContent == item.release.toString().slice(11, 15)) {
+      const if_there_is_a_continuation_and_it_matches =
+        item.continuation != null &&
+        element.textContent == item.continuation.toString().slice(11, 15);
+      if (
+        element.textContent == item.release.toString().slice(11, 15) ||
+        if_there_is_a_continuation_and_it_matches == true
+      ) {
         if (
           descriptionFormat.classList.contains(
             "main__description__element_is-opened"
@@ -8608,6 +8994,93 @@ function addCard(item) {
       popupFilm.scrollTo(0, 0);
     }, 0);
     showFilmCard(item);
+  });
+
+  function sorting_by_year(element) {
+    descriptionNames.classList.remove("main__description_is-opened");
+    descriptionBlock.classList.add("main__description_is-opened");
+    descriptionElements.classList.add("main__description_is-opened");
+    descriptionFormat.classList.remove("main__description__element_is-opened");
+    descriptionTitle.classList.add("main__description__element_is-opened");
+    descriptionTitle.textContent = element.textContent;
+    descriptionGrade.classList.remove("main__description__element_is-opened");
+    descriptionGrade.title = undefined;
+
+    openCard();
+    closePopup(popupFilm);
+    REMOVE(popupFilm.querySelectorAll(".film__screenshot"));
+    REMOVE(popupFilm.querySelectorAll(".film__poster"));
+  }
+
+  const year_in_film_page = popupFilm.querySelector(".film__header__year");
+  year_in_film_page.addEventListener("click", function () {
+    const if_there_is_a_continuation_and_it_matches =
+      item.continuation != null &&
+      year_in_film_page.textContent ==
+        item.continuation.toString().slice(11, 15);
+
+    if (
+      year_in_film_page.textContent == item.release.toString().slice(11, 15) ||
+      if_there_is_a_continuation_and_it_matches == true
+    ) {
+      sorting_by_year(year_in_film_page);
+    } else {
+      mainListElement.classList.remove("main__list__item_is-opened");
+    }
+  });
+
+  const continuation_year_in_film_page = popupFilm.querySelector(
+    ".film__header__continuation_year"
+  );
+  continuation_year_in_film_page.addEventListener("click", function () {
+    const if_there_is_a_continuation_and_it_matches =
+      item.continuation != null &&
+      continuation_year_in_film_page.textContent ==
+        item.continuation.toString().slice(11, 15);
+
+    if (
+      continuation_year_in_film_page.textContent ==
+        item.release.toString().slice(11, 15) ||
+      if_there_is_a_continuation_and_it_matches == true
+    ) {
+      sorting_by_year(continuation_year_in_film_page);
+    } else {
+      mainListElement.classList.remove("main__list__item_is-opened");
+    }
+  });
+
+  const garde_wrapper_in_film_page = popupFilm.querySelector(
+    ".film__header__grade__wrapper"
+  );
+  garde_wrapper_in_film_page.addEventListener("click", function () {
+    const garde_in_film_page = garde_wrapper_in_film_page.querySelector(
+      ".film__header__grade"
+    );
+    if (garde_in_film_page.title == item.grade) {
+      descriptionNames.classList.remove("main__description_is-opened");
+      descriptionBlock.classList.add("main__description_is-opened");
+      descriptionElements.classList.add("main__description_is-opened");
+      descriptionFormat.classList.remove(
+        "main__description__element_is-opened"
+      );
+      descriptionTitle.classList.remove("main__description__element_is-opened");
+      descriptionTitle.textContent = undefined;
+      descriptionGrade.classList.add("main__description__element_is-opened");
+
+      defineGradeBlack(item.grade, descriptionGrade);
+      if (item.grade == "love") {
+        descriptionGrade.classList.add("main__description__grade_is-loved");
+      } else {
+        descriptionGrade.classList.remove("main__description__grade_is-loved");
+      }
+
+      openCard();
+      closePopup(popupFilm);
+      REMOVE(popupFilm.querySelectorAll(".film__screenshot"));
+      REMOVE(popupFilm.querySelectorAll(".film__poster"));
+    } else {
+      mainListElement.classList.remove("main__list__item_is-opened");
+    }
   });
 
   const castButtons = document.querySelectorAll(".film__cast__name");
@@ -8826,6 +9299,10 @@ function showFilmCard(item) {
 
   popupFilm.querySelector(".film__header__year").textContent =
     item.release.getFullYear();
+  popupFilm.querySelector(".film__header__subtitle__dash").style.display =
+    "none";
+  popupFilm.querySelector(".film__header__continuation_year").style.display =
+    "none";
 
   if (item.season != null) {
     if (item.season == "мини–сериал") {
@@ -8834,8 +9311,13 @@ function showFilmCard(item) {
     } else if (item.season.length > 1 && item.continuation != null) {
       popupFilm.querySelector(".film__header__season").textContent =
         "Сезоны " + item.season + ",";
-      popupFilm.querySelector(".film__header__year").textContent =
-        item.release.getFullYear() + "-" + item.continuation.getFullYear();
+      popupFilm.querySelector(".film__header__subtitle__dash").style.display =
+        "inline-block";
+      popupFilm.querySelector(
+        ".film__header__continuation_year"
+      ).style.display = "inline-block";
+      popupFilm.querySelector(".film__header__continuation_year").textContent =
+        item.continuation.getFullYear();
     } else {
       popupFilm.querySelector(".film__header__season").textContent =
         "Сезон " + item.season + ",";
@@ -9246,7 +9728,7 @@ function find_the_right_word() {
   }
 }
 
-// const serial_number_of_the_film = 40
+// const serial_number_of_the_film = 74
 // find_the_right_word()
 
 function total_number_of_films_and_serials() {

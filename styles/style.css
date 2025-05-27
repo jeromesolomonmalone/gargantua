@@ -485,7 +485,10 @@ body {
   background: var(--circle) no-repeat center / cover;
 }
 
-.navigation__hidden__item:hover .navigation__grades__image {
+.navigation__hidden__item:hover .navigation__grades__image,
+.film__header__grade__wrapper:hover .film__header__grade,
+.film__header__year:hover,
+.film__header__continuation_year:hover {
   opacity: 0.8;
 }
 
@@ -1046,6 +1049,12 @@ body {
   inline-size: calc(50% - 40px);
 }
 
+.film__header__grade__wrapper,
+.film__header__year,
+.film__header__continuation_year {
+  cursor: pointer;
+}
+
 .film__header__grade {
   padding: 8px;
   background: var(--filled-circle) no-repeat center / cover;
@@ -1584,7 +1593,7 @@ body {
     inline-size: calc(100% - 40px);
   }
 
-  .film__header__grade {
+  .film__header__grade__wrapper {
     grid-row-start: 2;
     justify-self: end;
     margin-inline-end: 10px;
