@@ -484,6 +484,36 @@ const films = [
     screenshots: 44,
   }, // атланта 1
   {
+    release: new Date("2022-06-17"),
+    publication: new Date("2022-07-21"),
+    format: "фильм",
+    grade: "B",
+    title: "Базз Лайтер",
+    original: "Lightyear",
+    kinopoisk: "https://www.kinopoisk.ru/film/4291715/",
+    director: [
+      {
+        name: "Энгус МакЛэйн",
+      },
+    ],
+    cast: [
+      {
+        name: "Крис Эванс",
+      },
+      {
+        name: "Кеке Палмер",
+      },
+    ],
+    description:
+      "История приключений легендарного космического рейнджера Базза Лайтера.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 29,
+  }, // базз лайтер
+  {
     release: new Date("2022-11-04"),
     publication: new Date("2022-12-16"),
     format: "фильм",
@@ -821,45 +851,6 @@ const films = [
     ],
     screenshots: 30,
   }, // бешеный бык
-  {
-    release: new Date("2017-09-29"),
-    publication: new Date("2023-05-05"),
-    format: "фильм",
-    grade: "C",
-    title: "Битва полов",
-    original: "Battle of the Sexes",
-    kinopoisk: "https://www.kinopoisk.ru/film/928805/",
-    director: [
-      {
-        name: "Джонатан Дэйтон",
-      },
-      {
-        name: "Валери Фэрис",
-      },
-    ],
-    cast: [
-      {
-        name: "Эмма Стоун",
-      },
-      {
-        name: "Стив Карелл",
-      },
-    ],
-    description:
-      "Правдивая история теннисного матча 1973 года между первой ракеткой мира Билли Джин Кинг и экс-чемпионом Бобби Риггсом.",
-    genres: [
-      {
-        genre: "драма",
-      },
-      {
-        genre: "биография",
-      },
-      {
-        genre: "спорт",
-      },
-    ],
-    screenshots: 15,
-  }, // битва полов
   {
     release: new Date("2022-09-16"),
     publication: new Date("2022-10-03"),
@@ -2203,6 +2194,128 @@ const films = [
     screenshots: 18,
   }, // корпорация «заговор» 1-2
   {
+    release: new Date("1990-12-25"),
+    publication: new Date("2022-06-29"),
+    format: "фильм",
+    grade: "B",
+    title: "Крестный отец 3",
+    original: "The Godfather: Part III",
+    kinopoisk: "https://www.kinopoisk.ru/film/4500/",
+    director: [
+      {
+        name: "Фрэнсис Форд Коппола",
+      },
+    ],
+    cast: [
+      {
+        name: "Аль Пачино",
+      },
+      {
+        name: "Энди Гарсиа",
+      },
+      {
+        name: "Дайан Китон",
+      },
+    ],
+    description:
+      "Через 20 лет Майкл Корлеоне переходит к легальному бизнесу, но сопротивление в клане вынуждает его прибегнуть к прежним жестоким методам.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 0,
+  }, // крестный отец 3
+  {
+    release: new Date("1974-12-12"),
+    publication: new Date("2022-06-28"),
+    format: "фильм",
+    grade: "B",
+    title: "Крестный отец 2",
+    original: "The Godfather: Part II",
+    kinopoisk: "https://www.kinopoisk.ru/film/327/",
+    director: [
+      {
+        name: "Фрэнсис Форд Коппола",
+      },
+    ],
+    cast: [
+      {
+        name: "Аль Пачино",
+      },
+      {
+        name: "Роберт Де Ниро",
+      },
+      {
+        name: "Дайан Китон",
+      },
+      {
+        name: "Роберт Дювалл",
+      },
+      {
+        name: "Джон Казале",
+      },
+    ],
+    description:
+      "История показывает становление Вито Корлеоне в Нью-Йорке 1920-х и усиление власти его сына Майкла над семейным синдикатом.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 12,
+  }, // крестный отец 2
+  {
+    release: new Date("1972-03-15"),
+    publication: new Date("2022-06-27"),
+    format: "фильм",
+    grade: "B",
+    title: "Крестный отец",
+    original: "The Godfather",
+    kinopoisk: "https://www.kinopoisk.ru/film/325/",
+    director: [
+      {
+        name: "Фрэнсис Форд Коппола",
+      },
+    ],
+    cast: [
+      {
+        name: "Марлон Брандо",
+      },
+      {
+        name: "Аль Пачино",
+      },
+      {
+        name: "Джеймс Каан",
+      },
+      {
+        name: "Дайан Китон",
+      },
+      {
+        name: "Роберт Дювалл",
+      },
+      {
+        name: "Джон Казале",
+      },
+    ],
+    description: "История о семье сицилийской мафии Корлеоне в Нью-Йорке.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 29,
+  }, // крестный отец
+  {
     release: new Date("2016-01-29"),
     publication: new Date("2023-12-26"),
     format: "фильм",
@@ -2320,6 +2433,41 @@ const films = [
     screenshots: 36,
   }, // кунг-фу панда
   {
+    release: new Date("2016-12-25"),
+    publication: new Date("2022-08-02"),
+    format: "фильм",
+    grade: "love",
+    title: "Ла-Ла Ленд",
+    original: "La La Land",
+    kinopoisk: "https://www.kinopoisk.ru/film/841081/",
+    director: [
+      {
+        name: "Дэмьен Шазелл",
+      },
+    ],
+    cast: [
+      {
+        name: "Райан Гослинг",
+      },
+      {
+        name: "Эмма Стоун",
+      },
+    ],
+    description: "Миа и Себастьян выбирают между личным счастьем и амбициями.",
+    genres: [
+      {
+        genre: "мюзикл",
+      },
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 114,
+  }, // ла-ла ленд
+  {
     release: new Date("2023-11-17"),
     publication: new Date("2023-11-26"),
     format: "фильм",
@@ -2428,6 +2576,282 @@ const films = [
     ],
     screenshots: 20,
   }, // лунный свет
+  {
+    release: new Date("2022-04-18"),
+    publication: new Date("2022-08-17"),
+    format: "сериал",
+    season: "6",
+    grade: "love",
+    title: "Лучше звоните Солу",
+    original: "Better Call Saul",
+    kinopoisk: "https://www.kinopoisk.ru/series/796660/",
+    director: [
+      {
+        name: "Винс Гиллиган",
+      },
+      {
+        name: "Питер Гулд",
+      },
+    ],
+    cast: [
+      {
+        name: "Боб Оденкёрк",
+      },
+      {
+        name: "Рэй Сихорн",
+      },
+      {
+        name: "Джонатан Бэнкс",
+      },
+      {
+        name: "Майкл Мэндо",
+      },
+      {
+        name: "Джанкарло Эспозито",
+      },
+      {
+        name: "Тони Далтон",
+      },
+    ],
+    description:
+      "Об испытаниях и невзгодах адвоката по уголовным делам Джимми Макгилла в годы, предшествовавшие его судьбоносной стычке с Уолтером Уайтом и Джесси Пинкманом.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 52,
+  }, // лучше звоните солу 6
+  {
+    release: new Date("2020-02-23"),
+    publication: new Date("2022-07-25"),
+    format: "сериал",
+    season: "5",
+    grade: "love",
+    title: "Лучше звоните Солу",
+    original: "Better Call Saul",
+    kinopoisk: "https://www.kinopoisk.ru/series/796660/",
+    director: [
+      {
+        name: "Винс Гиллиган",
+      },
+      {
+        name: "Питер Гулд",
+      },
+    ],
+    cast: [
+      {
+        name: "Боб Оденкёрк",
+      },
+      {
+        name: "Рэй Сихорн",
+      },
+      {
+        name: "Джонатан Бэнкс",
+      },
+      {
+        name: "Майкл Мэндо",
+      },
+      {
+        name: "Джанкарло Эспозито",
+      },
+      {
+        name: "Тони Далтон",
+      },
+    ],
+    description:
+      "Об испытаниях и невзгодах адвоката по уголовным делам Джимми Макгилла в годы, предшествовавшие его судьбоносной стычке с Уолтером Уайтом и Джесси Пинкманом.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 26,
+  }, // лучше звоните солу 5
+  {
+    release: new Date("2018-08-06"),
+    publication: new Date("2022-07-22"),
+    format: "сериал",
+    season: "4",
+    grade: "love",
+    title: "Лучше звоните Солу",
+    original: "Better Call Saul",
+    kinopoisk: "https://www.kinopoisk.ru/series/796660/",
+    director: [
+      {
+        name: "Винс Гиллиган",
+      },
+      {
+        name: "Питер Гулд",
+      },
+    ],
+    cast: [
+      {
+        name: "Боб Оденкёрк",
+      },
+      {
+        name: "Рэй Сихорн",
+      },
+      {
+        name: "Джонатан Бэнкс",
+      },
+      {
+        name: "Майкл Мэндо",
+      },
+      {
+        name: "Джанкарло Эспозито",
+      },
+    ],
+    description:
+      "Об испытаниях и невзгодах адвоката по уголовным делам Джимми Макгилла в годы, предшествовавшие его судьбоносной стычке с Уолтером Уайтом и Джесси Пинкманом.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 11,
+  }, // лучше звоните солу 4
+  {
+    release: new Date("2017-04-10"),
+    publication: new Date("2022-07-19"),
+    format: "сериал",
+    season: "3",
+    grade: "love",
+    title: "Лучше звоните Солу",
+    original: "Better Call Saul",
+    kinopoisk: "https://www.kinopoisk.ru/series/796660/",
+    director: [
+      {
+        name: "Винс Гиллиган",
+      },
+      {
+        name: "Питер Гулд",
+      },
+    ],
+    cast: [
+      {
+        name: "Боб Оденкёрк",
+      },
+      {
+        name: "Рэй Сихорн",
+      },
+      {
+        name: "Джонатан Бэнкс",
+      },
+      {
+        name: "Майкл Мэндо",
+      },
+      {
+        name: "Джанкарло Эспозито",
+      },
+    ],
+    description:
+      "Об испытаниях и невзгодах адвоката по уголовным делам Джимми Макгилла в годы, предшествовавшие его судьбоносной стычке с Уолтером Уайтом и Джесси Пинкманом.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 41,
+  }, // лучше звоните солу 3
+  {
+    release: new Date("2016-02-15"),
+    publication: new Date("2022-07-15"),
+    format: "сериал",
+    season: "2",
+    grade: "love",
+    title: "Лучше звоните Солу",
+    original: "Better Call Saul",
+    kinopoisk: "https://www.kinopoisk.ru/series/796660/",
+    director: [
+      {
+        name: "Винс Гиллиган",
+      },
+      {
+        name: "Питер Гулд",
+      },
+    ],
+    cast: [
+      {
+        name: "Боб Оденкёрк",
+      },
+      {
+        name: "Рэй Сихорн",
+      },
+      {
+        name: "Джонатан Бэнкс",
+      },
+      {
+        name: "Майкл Мэндо",
+      },
+    ],
+    description:
+      "Об испытаниях и невзгодах адвоката по уголовным делам Джимми Макгилла в годы, предшествовавшие его судьбоносной стычке с Уолтером Уайтом и Джесси Пинкманом.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 43,
+  }, // лучше звоните солу 2
+  {
+    release: new Date("2015-02-08"),
+    publication: new Date("2022-07-13"),
+    format: "сериал",
+    season: "1",
+    grade: "love",
+    title: "Лучше звоните Солу",
+    original: "Better Call Saul",
+    kinopoisk: "https://www.kinopoisk.ru/series/796660/",
+    director: [
+      {
+        name: "Винс Гиллиган",
+      },
+      {
+        name: "Питер Гулд",
+      },
+    ],
+    cast: [
+      {
+        name: "Боб Оденкёрк",
+      },
+      {
+        name: "Рэй Сихорн",
+      },
+      {
+        name: "Джонатан Бэнкс",
+      },
+      {
+        name: "Майкл Мэндо",
+      },
+    ],
+    description:
+      "Об испытаниях и невзгодах адвоката по уголовным делам Джимми Макгилла в годы, предшествовавшие его судьбоносной стычке с Уолтером Уайтом и Джесси Пинкманом.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 42,
+  }, // лучше звоните солу 1
   {
     release: new Date("2006-05-26"),
     publication: new Date("2023-09-15"),
@@ -2810,48 +3234,6 @@ const films = [
     ],
     screenshots: 22,
   }, // миграция
-  {
-    release: new Date("2015-07-10"),
-    publication: new Date("2022-07-10"),
-    format: "фильм",
-    grade: "B",
-    title: "Миньоны",
-    original: "Minions",
-    kinopoisk: "https://www.kinopoisk.ru/film/694051/",
-    director: [
-      {
-        name: "Кайл Балда",
-      },
-      {
-        name: "Пьер Коффан",
-      },
-    ],
-    cast: [
-      {
-        name: "Сандра Буллок",
-      },
-      {
-        name: "Джон Хэмм",
-      },
-      {
-        name: "Майкл Китон",
-      },
-      {
-        name: "Эллисон Дженни",
-      },
-      {
-        name: "Джеффри Раш",
-      },
-    ],
-    description:
-      "Миньоны живут на планете гораздо дольше нас. У них одна навязчивая идея – служить самой Гадкой личности из имеющихся в наличии.",
-    genres: [
-      {
-        genre: "мультфильм",
-      },
-    ],
-    screenshots: 14,
-  }, // миньоны
   {
     release: new Date("2022-07-01"),
     publication: new Date("2022-08-17"),
@@ -4069,6 +4451,56 @@ const films = [
     screenshots: 40,
   }, // оставь мир позади
   {
+    release: new Date("2019-09-13"),
+    continuation: new Date("2022-04-29"),
+    publication: new Date("2022-07-05"),
+    format: "сериал",
+    season: "1-2",
+    grade: "B",
+    title: "Отмена",
+    original: "Undone",
+    kinopoisk: "https://www.kinopoisk.ru/series/1134447/",
+    director: [
+      {
+        name: "Рафаэль Боб-Ваксберг",
+      },
+      {
+        name: "Кейт Парди",
+      },
+    ],
+    cast: [
+      {
+        name: "Роза Салазар",
+      },
+      {
+        name: "Анжелика Кебрал",
+      },
+      {
+        name: "Констанс Мари",
+      },
+      {
+        name: "Боб Оденкёрк",
+      },
+    ],
+    description:
+      "После автокатастрофы девушка Альма обретает способность перемещаться во времени и пространстве и решает спасти своего погибшего отца.",
+    genres: [
+      {
+        genre: "анимация",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "детектив",
+      },
+      {
+        genre: "фантастика",
+      },
+    ],
+    screenshots: 18,
+  }, // отмена 1-2
+  {
     release: new Date("2014-11-14"),
     publication: new Date("2022-03-26"),
     format: "фильм",
@@ -4108,6 +4540,88 @@ const films = [
     ],
     screenshots: 50,
   }, // охотник на лис
+  {
+    release: new Date("2022-05-27"),
+    publication: new Date("2022-07-03"),
+    format: "сериал",
+    season: "4",
+    grade: "A+",
+    title: "Очень странные дела",
+    original: "Stranger Things",
+    kinopoisk: "https://www.kinopoisk.ru/series/915196/",
+    director: [
+      {
+        name: "Мэтт Даффер",
+      },
+      {
+        name: "Росс Даффер",
+      },
+    ],
+    cast: [
+      {
+        name: "Милли Бобби Браун",
+      },
+      {
+        name: "Вайнона Райдер",
+      },
+      {
+        name: "Дэвид Харбор",
+      },
+      {
+        name: "Финн Вулфхард",
+      },
+      {
+        name: "Гейтен Матараццо",
+      },
+      {
+        name: "Калеб Маклафлин",
+      },
+      {
+        name: "Наталия Дайер",
+      },
+      {
+        name: "Чарли Хитон",
+      },
+      {
+        name: "Джо Кири",
+      },
+      {
+        name: "Ноа Шнапп",
+      },
+      {
+        name: "Сэди Синк",
+      },
+      {
+        name: "Майя Хоук",
+      },
+      {
+        name: "Джейми Кэмпбелл Бауэр",
+      },
+      {
+        name: "Джозеф Куинн",
+      },
+    ],
+    description:
+      "В маленьком городке пропадает мальчик, и жители подозревают связь с таинственными сверхъестественными явлениями.",
+    genres: [
+      {
+        genre: "ужасы",
+      },
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "детектив",
+      },
+    ],
+    screenshots: 96,
+  }, // очень странные дела 4
   {
     release: new Date("2001-06-08"),
     publication: new Date("2023-09-30"),
@@ -4587,6 +5101,45 @@ const films = [
     ],
     screenshots: 29,
   }, // полиция токио 1
+  {
+    release: new Date("2022-04-28"),
+    publication: new Date("2022-06-25"),
+    format: "сериал",
+    season: "мини–сериал",
+    grade: "A",
+    title: "Предложение",
+    original: "The Offer",
+    kinopoisk: "https://www.kinopoisk.ru/series/1407744/",
+    director: [
+      {
+        name: "Майкл Толкин",
+      },
+    ],
+    cast: [
+      {
+        name: "Майлз Теллер",
+      },
+      {
+        name: "Мэттью Гуд",
+      },
+      {
+        name: "Дэн Фоглер",
+      },
+      {
+        name: "Джованни Рибизи",
+      },
+      {
+        name: "Джуно Темпл",
+      },
+    ],
+    description: "История создания культового фильма «Крестный отец».",
+    genres: [
+      {
+        genre: "биография",
+      },
+    ],
+    screenshots: 35,
+  }, // предложение
   {
     release: new Date("2024-04-26"),
     publication: new Date("2024-06-15"),
@@ -5156,6 +5709,9 @@ const films = [
       {
         name: "Мэй Каламави",
       },
+      {
+        name: "Мохаммед Амер",
+      },
     ],
     description:
       "Рами Хассан — американец египетского происхождения из Нью-Джерси, разрывающийся между культурой миллениалов и традициями своей веры.",
@@ -5169,6 +5725,53 @@ const films = [
     ],
     screenshots: 23,
   }, // рами 3
+  {
+    release: new Date("2019-04-19"),
+    continuation: new Date("2020-05-29"),
+    publication: new Date("2020-09-01"),
+    format: "сериал",
+    season: "1-2",
+    grade: "A",
+    title: "Рами",
+    original: "Ramy",
+    kinopoisk: "https://www.kinopoisk.ru/series/1108755/",
+    director: [
+      {
+        name: "Рами Юссеф",
+      },
+    ],
+    cast: [
+      {
+        name: "Рами Юссеф",
+      },
+      {
+        name: "Амр Вакед",
+      },
+      {
+        name: "Хиам Аббасс",
+      },
+      {
+        name: "Мэй Каламави",
+      },
+      {
+        name: "Мохаммед Амер",
+      },
+      {
+        name: "Махершала Али",
+      },
+    ],
+    description:
+      "Рами Хассан — американец египетского происхождения из Нью-Джерси, разрывающийся между культурой миллениалов и традициями своей веры.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 17,
+  }, // рами 1-2
   {
     release: new Date("2023-08-06"),
     publication: new Date("2024-01-17"),
@@ -5870,6 +6473,51 @@ const films = [
     ],
     screenshots: 18,
   }, // скрежет металла 1
+  {
+    release: new Date("2016-05-20"),
+    publication: new Date("2022-07-27"),
+    format: "фильм",
+    grade: "A+",
+    title: "Славные парни",
+    original: "The Nice Guys",
+    kinopoisk: "https://www.kinopoisk.ru/film/841152/",
+    director: [
+      {
+        name: "Шейн Блэк",
+      },
+    ],
+    cast: [
+      {
+        name: "Райан Гослинг",
+      },
+      {
+        name: "Рассел Кроу",
+      },
+      {
+        name: "Ким Бейсингер",
+      },
+      {
+        name: "Энгаури Райс",
+      },
+      {
+        name: "Маргарет Куолли",
+      },
+    ],
+    description:
+      "Бандит и детектив расследуют смерть порнозвезды в Лос-Анджелесе 1970-х.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "детектив",
+      },
+    ],
+    screenshots: 27,
+  }, // славные парни
   {
     release: new Date("2000-01-12"),
     publication: new Date("2022-09-15"),
@@ -9308,16 +9956,19 @@ function showFilmCard(item) {
     if (item.season == "мини–сериал") {
       popupFilm.querySelector(".film__header__season").textContent =
         item.season + ", ";
-    } else if (item.season.length > 1 && item.continuation != null) {
+    } else if (item.season.length == 3) {
       popupFilm.querySelector(".film__header__season").textContent =
         "Сезоны " + item.season + ",";
-      popupFilm.querySelector(".film__header__subtitle__dash").style.display =
-        "inline-block";
-      popupFilm.querySelector(
-        ".film__header__continuation_year"
-      ).style.display = "inline-block";
-      popupFilm.querySelector(".film__header__continuation_year").textContent =
-        item.continuation.getFullYear();
+      if (item.continuation != null) {
+        popupFilm.querySelector(".film__header__subtitle__dash").style.display =
+          "inline-block";
+        popupFilm.querySelector(
+          ".film__header__continuation_year"
+        ).style.display = "inline-block";
+        popupFilm.querySelector(
+          ".film__header__continuation_year"
+        ).textContent = item.continuation.getFullYear();
+      }
     } else {
       popupFilm.querySelector(".film__header__season").textContent =
         "Сезон " + item.season + ",";
@@ -9728,7 +10379,7 @@ function find_the_right_word() {
   }
 }
 
-// const serial_number_of_the_film = 74
+// const serial_number_of_the_film = 59
 // find_the_right_word()
 
 function total_number_of_films_and_serials() {
