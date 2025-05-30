@@ -432,7 +432,7 @@ body {
 .navigation__hidden__list {
   display: grid;
   grid-template-columns: repeat(auto-fill, 20%);
-  grid-template-rows: repeat(7, auto);
+  grid-template-rows: repeat(8, auto);
   grid-auto-flow: column;
 }
 

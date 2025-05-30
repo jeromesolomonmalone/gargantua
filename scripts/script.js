@@ -280,6 +280,48 @@ const films = [
     screenshots: 23,
   }, // американское чтиво
   {
+    release: new Date("2022-04-01"),
+    publication: new Date("2022-06-23"),
+    format: "фильм",
+    grade: "B",
+    title: "Аполлон-10½: Приключение космического века",
+    original: "Apollo 10½: A Space Age Childhood",
+    kinopoisk: "https://www.kinopoisk.ru/film/1114648/",
+    director: [
+      {
+        name: "Ричард Линклейтер",
+      },
+    ],
+    cast: [
+      {
+        name: "Майло Кой",
+      },
+      {
+        name: "Джек Блэк",
+      },
+      {
+        name: "Закари Ливай",
+      },
+      {
+        name: "Глен Пауэлл",
+      },
+    ],
+    description:
+      "История взросления подростка в пригороде Хьюстона летом 1969 года на фоне исторической высадки «Аполлона-11» на Луну.",
+    genres: [
+      {
+        genre: "анимация",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 13,
+  }, // аполлон-10½
+  {
     release: new Date("2011-12-23"),
     publication: new Date("2021-02-05"),
     format: "фильм",
@@ -1507,6 +1549,51 @@ const films = [
     screenshots: 25,
   }, // дикий робот
   {
+    release: new Date("2022-05-06"),
+    publication: new Date("2022-06-23"),
+    format: "фильм",
+    grade: "C",
+    title: "Доктор Стрэндж: В мультивселенной безумия",
+    original: "Doctor Strange in the Multiverse of Madness",
+    kinopoisk: "https://www.kinopoisk.ru/film/1219909/",
+    director: [
+      {
+        name: "Сэм Рэйми",
+      },
+    ],
+    cast: [
+      {
+        name: "Бенедикт Камбербэтч",
+      },
+      {
+        name: "Элизабет Олсен",
+      },
+      {
+        name: "Чиветель Эджиофор",
+      },
+      {
+        name: "Бенедикт Вонг",
+      },
+      {
+        name: "Сочил Гомес",
+      },
+      {
+        name: "Рэйчел Макадамс",
+      },
+    ],
+    description:
+      "Доктор Стрэндж вместе с юной путешественницей по мультивселенным сражается против опасных версий самого себя.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 15,
+  }, // доктор стрэндж 2
+  {
     release: new Date("2008-12-26"),
     publication: new Date("2022-09-18"),
     format: "фильм",
@@ -2194,6 +2281,41 @@ const films = [
     screenshots: 18,
   }, // корпорация «заговор» 1-2
   {
+    release: new Date("2018-11-02"),
+    publication: new Date("2019-03-22"),
+    format: "фильм",
+    grade: "A",
+    title: "Красивый мальчик",
+    original: "Beautiful Boy",
+    kinopoisk: "https://www.kinopoisk.ru/film/462654/",
+    director: [
+      {
+        name: "Феликс ван Гронинген",
+      },
+    ],
+    cast: [
+      {
+        name: "Стив Карелл",
+      },
+      {
+        name: "Тимоти Шаламе",
+      },
+      {
+        name: "Мора Тирни",
+      },
+    ],
+    description: "Отец спасает сына от наркозависимости.",
+    genres: [
+      {
+        genre: "биография",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 10,
+  }, // красивый мальчик
+  {
     release: new Date("1990-12-25"),
     publication: new Date("2022-06-29"),
     format: "фильм",
@@ -2227,7 +2349,7 @@ const films = [
         genre: "драма",
       },
     ],
-    screenshots: 22,
+    screenshots: 0,
   }, // крестный отец 3
   {
     release: new Date("1974-12-12"),
@@ -2853,6 +2975,54 @@ const films = [
     screenshots: 42,
   }, // лучше звоните солу 1
   {
+    release: new Date("2022-05-20"),
+    publication: new Date("2022-05-25"),
+    format: "сериал",
+    season: "3",
+    grade: "B",
+    title: "Любовь. Смерть. Роботы",
+    original: "Love, Death & Robots",
+    kinopoisk: "https://www.kinopoisk.ru/series/1228254/",
+    director: [
+      {
+        name: "Тим Миллер",
+      },
+    ],
+    cast: [{ name: "" }],
+    description:
+      "Анимационная антология, объединяющая истории в жанрах научной фантастики, фэнтези, ужасов и комедии.",
+    genres: [
+      {
+        genre: "анимация",
+      },
+    ],
+    screenshots: 18,
+  }, // любовь, смерть и роботы 3
+  {
+    release: new Date("2021-05-14"),
+    publication: new Date("2021-05-16"),
+    format: "сериал",
+    season: "2",
+    grade: "B",
+    title: "Любовь. Смерть. Роботы",
+    original: "Love, Death & Robots",
+    kinopoisk: "https://www.kinopoisk.ru/series/1228254/",
+    director: [
+      {
+        name: "Тим Миллер",
+      },
+    ],
+    cast: [{ name: "" }],
+    description:
+      "Анимационная антология, объединяющая истории в жанрах научной фантастики, фэнтези, ужасов и комедии.",
+    genres: [
+      {
+        genre: "анимация",
+      },
+    ],
+    screenshots: 24,
+  }, // любовь, смерть и роботы 2
+  {
     release: new Date("2006-05-26"),
     publication: new Date("2023-09-15"),
     format: "фильм",
@@ -3018,6 +3188,42 @@ const films = [
     ],
     screenshots: 30,
   }, // май декабрь
+  {
+    release: new Date("2021-02-05"),
+    publication: new Date("2021-06-06"),
+    format: "фильм",
+    grade: "A",
+    title: "Маленькая рыбка",
+    original: "Little Fish",
+    kinopoisk: "https://www.kinopoisk.ru/film/1245545/",
+    director: [
+      {
+        name: "Чед Хартиган",
+      },
+    ],
+    cast: [
+      {
+        name: "Оливия Кук",
+      },
+      {
+        name: "Джек О’Коннелл",
+      },
+    ],
+    description:
+      "Пара пытается сохранить свои отношения, в то время как вирус потери памяти распространяется и угрожает стереть историю их любви.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "фантастика",
+      },
+    ],
+    screenshots: 14,
+  }, // маленькая рыбка
   {
     release: new Date("2024-06-26"),
     publication: new Date("2024-08-28"),
@@ -3683,6 +3889,39 @@ const films = [
     screenshots: 11,
   }, // на грани
   {
+    release: new Date("2022-05-13"),
+    publication: new Date("2022-05-24"),
+    format: "фильм",
+    grade: "A",
+    title: "На счёт три",
+    original: "On the Count of Three",
+    kinopoisk: "https://www.kinopoisk.ru/film/1320812/",
+    director: [
+      {
+        name: "Джеррод Кармайкл",
+      },
+    ],
+    cast: [
+      {
+        name: "Джеррод Кармайкл",
+      },
+      {
+        name: "Кристофер Эбботт",
+      },
+    ],
+    description:
+      "Вэл и Кевин — два лучших друга, желающих покончить с собой. Но им не хватает смелости сделать это самим, поэтому они выезжают за город и наставляют друг на друга пистолеты.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 12,
+  }, // на счёт три
+  {
     release: new Date("2024-02-07"),
     publication: new Date("2024-09-01"),
     format: "сериал",
@@ -3923,6 +4162,9 @@ const films = [
       },
       {
         name: "Джоди Фостер",
+      },
+      {
+        name: "Чиветель Эджиофор",
       },
     ],
     description:
@@ -4938,6 +5180,48 @@ const films = [
     screenshots: 33,
   }, // пингвин
   {
+    release: new Date("2022-04-22"),
+    publication: new Date("2022-05-17"),
+    format: "фильм",
+    grade: "A",
+    title: "Плохие парни",
+    original: "The Bad Guys",
+    kinopoisk: "https://www.kinopoisk.ru/film/1311146/",
+    director: [
+      {
+        name: "Пьер Перифел",
+      },
+    ],
+    cast: [
+      {
+        name: "Сэм Рокуэлл",
+      },
+      {
+        name: "Аквафина",
+      },
+      {
+        name: "Крэйг Робинсон",
+      },
+      {
+        name: "Энтони Рамос",
+      },
+      {
+        name: "Ричард Айоади",
+      },
+      {
+        name: "Зази Битц",
+      },
+    ],
+    description:
+      "Чтобы избежать тюрьмы, банда отъявленных преступников делает вид, что меняются в лучшую сторону.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 15,
+  }, // плохие парни
+  {
     release: new Date("2024-08-21"),
     publication: new Date("2024-10-01"),
     format: "фильм",
@@ -5225,6 +5509,41 @@ const films = [
     ],
     screenshots: 44,
   }, // программисты
+  {
+    release: new Date("2022-06-03"),
+    publication: new Date("2022-06-10"),
+    format: "фильм",
+    grade: "B",
+    title: "Прорваться в НБА",
+    original: "Hustle",
+    kinopoisk: "https://www.kinopoisk.ru/film/1437989/",
+    director: [
+      {
+        name: "Джеремайя Сагар",
+      },
+    ],
+    cast: [
+      {
+        name: "Адам Сэндлер",
+      },
+      {
+        name: "Хуанчо Эрнангомес",
+      },
+      {
+        name: "Энтони Эдвардс",
+      },
+    ],
+    description: "Баскетбольный скаут натыкается на молодое дарование.",
+    genres: [
+      {
+        genre: "спорт",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 15,
+  }, // прорваться в нба
   {
     release: new Date("2008-01-06"),
     publication: new Date("2024-11-20"),
@@ -5610,6 +5929,51 @@ const films = [
     ],
     screenshots: 11,
   }, // псы резервации 1
+  {
+    release: new Date("2022-02-02"),
+    publication: new Date("2022-06-24"),
+    format: "сериал",
+    season: "мини–сериал",
+    grade: "A",
+    title: "Пэм и Томми",
+    original: "Pam & Tommy",
+    kinopoisk: "https://www.kinopoisk.ru/series/4294378/",
+    director: [
+      {
+        name: "Роберт Сигел",
+      },
+    ],
+    cast: [
+      {
+        name: "Лили Джеймс",
+      },
+      {
+        name: "Себастиан Стэн",
+      },
+      {
+        name: "Сет Роген",
+      },
+      {
+        name: "Ник Офферман",
+      },
+    ],
+    description: "История отношений Памелы Андерсон и Томми Ли.",
+    genres: [
+      {
+        genre: "биография",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 29,
+  }, // пэм и томми
   {
     release: new Date("1995-04-26"),
     publication: new Date("2022-08-15"),
@@ -7730,6 +8094,42 @@ const films = [
     screenshots: 50,
   }, // тысяча и один
   {
+    release: new Date("2020-06-19"),
+    publication: new Date("2022-05-27"),
+    format: "фильм",
+    grade: "B",
+    title: "Убийственная внешность",
+    original: "Looks That Kill",
+    kinopoisk: "https://www.kinopoisk.ru/film/1141950/",
+    director: [
+      {
+        name: "Келлен Мур",
+      },
+    ],
+    cast: [
+      {
+        name: "Брэндон Флинн",
+      },
+      {
+        name: "Джулия Голден Теллес",
+      },
+    ],
+    description:
+      "Из-за своей смертельно опасной красоты Макс вынужден жить затворником, пока однажды не встречает Алекс.",
+    genres: [
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 22,
+  }, // убийственная внешность
+  {
     release: new Date("2023-10-27"),
     publication: new Date("2023-11-11"),
     format: "фильм",
@@ -8665,6 +9065,9 @@ const films = [
       },
       {
         name: "Бен Кингсли",
+      },
+      {
+        name: "Ричард Айоади",
       },
     ],
     description:
