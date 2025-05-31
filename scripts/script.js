@@ -2349,7 +2349,7 @@ const films = [
         genre: "драма",
       },
     ],
-    screenshots: 0,
+    screenshots: 22,
   }, // крестный отец 3
   {
     release: new Date("1974-12-12"),
