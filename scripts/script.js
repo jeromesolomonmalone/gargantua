@@ -970,6 +970,88 @@ const films = [
     screenshots: 43,
   }, // большой злой лис и другие сказки
   {
+    release: new Date("2021-08-12"),
+    publication: new Date("2022-04-25"),
+    format: "сериал",
+    season: "8",
+    grade: "love",
+    title: "Бруклин 9-9",
+    original: "Brooklyn Nine-Nine",
+    kinopoisk: "https://www.kinopoisk.ru/series/714102/",
+    director: [
+      {
+        name: "Дэн Гур",
+      },
+      {
+        name: "Майкл Шур",
+      },
+    ],
+    cast: [
+      {
+        name: "Энди Сэмберг",
+      },
+      {
+        name: "Андре Брауэр",
+      },
+      {
+        name: "Терри Крюс",
+      },
+      {
+        name: "Мелисса Фумеро",
+      },
+      {
+        name: "Джо Ло Трульо",
+      },
+      {
+        name: "Стефани Беатрис",
+      },
+    ],
+    description:
+      "Сериал рассказывает о жизни полицейского участка в вымышленном 99 округе в Бруклине.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 18,
+  }, // бруклин 9-9 8
+  {
+    release: new Date("2003-05-23"),
+    publication: new Date("2022-04-09"),
+    format: "фильм",
+    grade: "A+",
+    title: "Брюс Всемогущий",
+    original: "Bruce Almighty",
+    kinopoisk: "https://www.kinopoisk.ru/film/39577/",
+    director: [
+      {
+        name: "Том Шэдьяк",
+      },
+    ],
+    cast: [
+      {
+        name: "Джим Керри",
+      },
+      {
+        name: "Морган Фриман",
+      },
+      {
+        name: "Дженнифер Энистон",
+      },
+    ],
+    description:
+      "Ведущему новостей выпадает уникальная возможность побывать на месте Всемогущего.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "фэнтези",
+      },
+    ],
+    screenshots: 24,
+  }, // брюс всемогущий
+  {
     release: new Date("2022-08-05"),
     publication: new Date("2022-10-02"),
     format: "фильм",
@@ -1180,6 +1262,56 @@ const films = [
     ],
     screenshots: 17,
   }, // великая ирония
+  {
+    release: new Date("2008-01-20"),
+    continuation: new Date("2012-07-15"),
+    publication: new Date("2019-11-22"),
+    format: "сериал",
+    season: "1-5",
+    grade: "love",
+    title: "Во все тяжкие",
+    original: "Breaking Bad",
+    kinopoisk: "https://www.kinopoisk.ru/series/404900/",
+    director: [
+      {
+        name: "Винс Гиллиган",
+      },
+    ],
+    cast: [
+      {
+        name: "Брайан Крэнстон",
+      },
+      {
+        name: "Анна Ганн",
+      },
+      {
+        name: "Аарон Пол",
+      },
+      {
+        name: "Дин Норрис",
+      },
+      {
+        name: "Боб Оденкёрк",
+      },
+      {
+        name: "Джанкарло Эспозито",
+      },
+      {
+        name: "Джонатан Бэнкс",
+      },
+    ],
+    description:
+      "Уолтер Уайт, преподаватель химии в школе, узнает, что он болен раком лёгких, и решает стать наркодилером, чтобы обеспечить будущее своей семьи.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 43,
+  }, // во все тяжкие 1-5
   {
     release: new Date("2023-11-03"),
     publication: new Date("2023-12-09"),
@@ -1585,7 +1717,7 @@ const films = [
       "Доктор Стрэндж вместе с юной путешественницей по мультивселенным сражается против опасных версий самого себя.",
     genres: [
       {
-        genre: "фантастика",
+        genre: "фэнтези",
       },
       {
         genre: "приключения",
@@ -2626,6 +2758,37 @@ const films = [
     screenshots: 13,
   }, // лео
   {
+    release: new Date("2021-10-28"),
+    publication: new Date("2022-04-20"),
+    format: "сериал",
+    season: "2",
+    grade: "A+",
+    title: "Личная жизнь",
+    original: "Love Life",
+    kinopoisk: "https://www.kinopoisk.ru/series/1271262/",
+    director: [
+      {
+        name: "Сэм Бойд",
+      },
+    ],
+    cast: [
+      {
+        name: "Уильям Джексон Харпер",
+      },
+      {
+        name: "Джессика Уильямс",
+      },
+    ],
+    description:
+      "Главный герой — Маркус Уоткинс, переживший разрыв длительных отношений со своей бывшей второй половинкой. Теперь он открыт для новых романтических приключений.",
+    genres: [
+      {
+        genre: "мелодрама",
+      },
+    ],
+    screenshots: 45,
+  }, // личная жизнь 2
+  {
     release: new Date("2023-10-05"),
     publication: new Date("2023-11-13"),
     format: "сериал",
@@ -2665,6 +2828,52 @@ const films = [
     ],
     screenshots: 35,
   }, // локи 2
+  {
+    release: new Date("2022-03-30"),
+    publication: new Date("2022-05-06"),
+    format: "сериал",
+    season: "мини–сериал",
+    grade: "A+",
+    title: "Лунный рыцарь",
+    original: "Moon Knight",
+    kinopoisk: "https://www.kinopoisk.ru/series/1320559/",
+    director: [
+      {
+        name: "Джереми Слейтер",
+      },
+    ],
+    cast: [
+      {
+        name: "Оскар Айзек",
+      },
+      {
+        name: "Итан Хоук",
+      },
+      {
+        name: "Мэй Каламави",
+      },
+      {
+        name: "Ф. Мюррэй Абрахам",
+      },
+    ],
+    description:
+      "Бывший военный, который борется с диссоциативным расстройством, неожиданно обретает могущество и энергию египетского Бога Луны.",
+    genres: [
+      {
+        genre: "фэнтези",
+      },
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "триллер",
+      },
+    ],
+    screenshots: 62,
+  }, // лунный рыцарь
   {
     release: new Date("2016-11-18"),
     publication: new Date("2022-03-19"),
@@ -4297,6 +4506,102 @@ const films = [
     screenshots: 21,
   }, // непобедимый 1
   {
+    release: new Date("2014-11-26"),
+    publication: new Date("2022-04-11"),
+    format: "фильм",
+    grade: "B",
+    title: "Несносные боссы 2",
+    original: "Horrible Bosses 2",
+    kinopoisk: "https://www.kinopoisk.ru/film/662337/",
+    director: [
+      {
+        name: "Шон Андерс",
+      },
+    ],
+    cast: [
+      {
+        name: "Джейсон Бейтман",
+      },
+      {
+        name: "Джейсон Судейкис",
+      },
+      {
+        name: "Чарли Дэй",
+      },
+      {
+        name: "Крис Пайн",
+      },
+      {
+        name: "Дженнифер Энистон",
+      },
+      {
+        name: "Кристоф Вальц",
+      },
+      {
+        name: "Джейми Фокс",
+      },
+    ],
+    description:
+      "Трое друзей открывают автомойку, но их обманывает инвестор. Чтобы вернуть деньги, они планируют похитить его сына ради выкупа.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 13,
+  }, // несносные боссы 2
+  {
+    release: new Date("2011-07-08"),
+    publication: new Date("2022-04-09"),
+    format: "фильм",
+    grade: "A",
+    title: "Несносные боссы",
+    original: "Horrible Bosses",
+    kinopoisk: "https://www.kinopoisk.ru/film/471628/",
+    director: [
+      {
+        name: "Сет Гордон",
+      },
+    ],
+    cast: [
+      {
+        name: "Джейсон Бейтман",
+      },
+      {
+        name: "Джейсон Судейкис",
+      },
+      {
+        name: "Чарли Дэй",
+      },
+      {
+        name: "Кевин Спейси",
+      },
+      {
+        name: "Дженнифер Энистон",
+      },
+      {
+        name: "Колин Фаррелл",
+      },
+      {
+        name: "Джейми Фокс",
+      },
+    ],
+    description:
+      "Трое друзей решают убить своих боссов, которые мешают им жить.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 22,
+  }, // несносные боссы
+  {
     release: new Date("2022-07-22"),
     publication: new Date("2023-05-26"),
     format: "фильм",
@@ -4508,6 +4813,113 @@ const films = [
     ],
     screenshots: 30,
   }, // одинокие волки
+  {
+    release: new Date("2022-01-21"),
+    publication: new Date("2022-05-02"),
+    format: "сериал",
+    season: "4",
+    grade: "A+",
+    title: "Озарк",
+    original: "Ozark",
+    kinopoisk: "https://www.kinopoisk.ru/series/1045553/",
+    director: [
+      {
+        name: "Билл Дюбюк",
+      },
+      {
+        name: "Марк Уильямс",
+      },
+    ],
+    cast: [
+      {
+        name: "Джейсон Бейтман",
+      },
+      {
+        name: "Лора Линни",
+      },
+      {
+        name: "София Хьюблиц",
+      },
+      {
+        name: "Скайлар Гертнер",
+      },
+      {
+        name: "Джулия Гарнер",
+      },
+      {
+        name: "Феликс Солис",
+      },
+    ],
+    description:
+      "Финансовый советник вынужден работать на мексиканский картель.",
+    genres: [
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 21,
+  }, // озарк 4
+  {
+    release: new Date("2020-03-27"),
+    publication: new Date("2020-04-02"),
+    format: "сериал",
+    season: "3",
+    grade: "A+",
+    title: "Озарк",
+    original: "Ozark",
+    kinopoisk: "https://www.kinopoisk.ru/series/1045553/",
+    director: [
+      {
+        name: "Билл Дюбюк",
+      },
+      {
+        name: "Марк Уильямс",
+      },
+    ],
+    cast: [
+      {
+        name: "Джейсон Бейтман",
+      },
+      {
+        name: "Лора Линни",
+      },
+      {
+        name: "София Хьюблиц",
+      },
+      {
+        name: "Скайлар Гертнер",
+      },
+      {
+        name: "Джулия Гарнер",
+      },
+      {
+        name: "Феликс Солис",
+      },
+      {
+        name: "Джанет Мактир",
+      },
+    ],
+    description:
+      "Финансовый советник вынужден работать на мексиканский картель.",
+    genres: [
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 26,
+  }, // озарк 3
   {
     release: new Date("2023-07-14"),
     publication: new Date("2023-07-28"),
@@ -6013,6 +6425,122 @@ const films = [
     ],
     screenshots: 36,
   }, // пятница
+  {
+    release: new Date("2025-01-17"),
+    publication: new Date("2025-04-04"),
+    format: "сериал",
+    season: "2",
+    grade: "love",
+    title: "Разделение",
+    original: "Severance",
+    kinopoisk: "https://www.kinopoisk.ru/series/1343318/",
+    director: [
+      {
+        name: "Бен Стиллер",
+      },
+      {
+        name: "Дэн Эриксон",
+      },
+    ],
+    cast: [
+      {
+        name: "Адам Скотт",
+      },
+      {
+        name: "Бритт Лауэр",
+      },
+      {
+        name: "Зак Черри",
+      },
+      {
+        name: "Джон Туртурро",
+      },
+      {
+        name: "Трэмелл Тиллман",
+      },
+      {
+        name: "Дичен Лакмэн",
+      },
+      {
+        name: "Патриша Аркетт",
+      },
+      {
+        name: "Кристофер Уокен",
+      },
+    ],
+    description:
+      "Марк возглавляет команду офисных работников, чьи воспоминания четко разграничены на рабочие и личные.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 237,
+  }, // разделение 2
+  {
+    release: new Date("2022-02-18"),
+    publication: new Date("2022-04-27"),
+    format: "сериал",
+    season: "1",
+    grade: "love",
+    title: "Разделение",
+    original: "Severance",
+    kinopoisk: "https://www.kinopoisk.ru/series/1343318/",
+    director: [
+      {
+        name: "Бен Стиллер",
+      },
+      {
+        name: "Дэн Эриксон",
+      },
+    ],
+    cast: [
+      {
+        name: "Адам Скотт",
+      },
+      {
+        name: "Бритт Лауэр",
+      },
+      {
+        name: "Зак Черри",
+      },
+      {
+        name: "Джон Туртурро",
+      },
+      {
+        name: "Трэмелл Тиллман",
+      },
+      {
+        name: "Дичен Лакмэн",
+      },
+      {
+        name: "Патриша Аркетт",
+      },
+      {
+        name: "Кристофер Уокен",
+      },
+    ],
+    description:
+      "Марк возглавляет команду офисных работников, чьи воспоминания четко разграничены на рабочие и личные.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 74,
+  }, // разделение 1
   {
     release: new Date("2009-08-13"),
     publication: new Date("2024-10-02"),
