@@ -2103,6 +2103,120 @@ const films = [
     screenshots: 21,
   }, // зачинщики
   {
+    release: new Date("2016-12-21"),
+    publication: new Date("2021-07-22"),
+    format: "фильм",
+    grade: "A",
+    title: "Зверопой",
+    original: "Sing",
+    kinopoisk: "https://www.kinopoisk.ru/film/821008/",
+    director: [
+      {
+        name: "Гарт Дженнингс",
+      },
+      {
+        name: "Кристоф Лурделе",
+      },
+    ],
+    cast: [
+      {
+        name: "Мэттью Макконахи",
+      },
+      {
+        name: "Риз Уизерспун",
+      },
+      {
+        name: "Сет Макфарлейн",
+      },
+      {
+        name: "Тэрон Эджертон",
+      },
+      {
+        name: "Скарлетт Йоханссон",
+      },
+      {
+        name: "Ник Кролл",
+      },
+      {
+        name: "Тори Келли",
+      },
+    ],
+    description:
+      "Коала Бастер Мун пытается спасти свой театр от закрытия и организует городской конкурс певцов.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+      {
+        genre: "мюзикл",
+      },
+    ],
+    screenshots: 13,
+  }, // зверопой
+  {
+    release: new Date("2021-12-22"),
+    publication: new Date("2022-03-22"),
+    format: "фильм",
+    grade: "B",
+    title: "Зверопой 2",
+    original: "Sing 2",
+    kinopoisk: "https://www.kinopoisk.ru/film/1009142/",
+    director: [
+      {
+        name: "Гарт Дженнингс",
+      },
+      {
+        name: "Кристоф Лурделе",
+      },
+    ],
+    cast: [
+      {
+        name: "Мэттью Макконахи",
+      },
+      {
+        name: "Риз Уизерспун",
+      },
+      {
+        name: "Тэрон Эджертон",
+      },
+      {
+        name: "Скарлетт Йоханссон",
+      },
+      {
+        name: "Ник Кролл",
+      },
+      {
+        name: "Тори Келли",
+      },
+      {
+        name: "Боно",
+      },
+      {
+        name: "Холзи",
+      },
+      {
+        name: "Фаррелл Уильямс",
+      },
+      {
+        name: "Эрик Андре",
+      },
+      {
+        name: "Летиша Райт",
+      },
+    ],
+    description:
+      "Бастер Мун и его друзья должны убедить рок-звезду-затворника Клэя Кэллоуэя присоединиться к ним на открытии нового шоу.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+      {
+        genre: "мюзикл",
+      },
+    ],
+    screenshots: 13,
+  }, // зверопой 2
+  {
     release: new Date("2006-11-17"),
     publication: new Date("2022-09-20"),
     format: "фильм",
@@ -2774,6 +2888,35 @@ const films = [
     ],
     screenshots: 10,
   }, // красивый мальчик
+  {
+    release: new Date("2021-12-03"),
+    publication: new Date("2022-03-12"),
+    format: "фильм",
+    grade: "B",
+    title: "Красная ракета",
+    original: "Red Rocket",
+    kinopoisk: "https://www.kinopoisk.ru/film/4422444/",
+    director: [
+      {
+        name: "Шон Бэйкер",
+      },
+    ],
+    cast: [
+      {
+        name: "Саймон Рекс",
+      },
+    ],
+    description: "Порноактер в отставке хочет выбиться в люди в родном Техасе.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 17,
+  }, // красная ракета
   {
     release: new Date("1990-12-25"),
     publication: new Date("2022-06-29"),
@@ -3766,6 +3909,46 @@ const films = [
     screenshots: 14,
   }, // маленькая рыбка
   {
+    release: new Date("2021-05-23"),
+    publication: new Date("2022-03-12"),
+    format: "сериал",
+    season: "3",
+    grade: "A",
+    title: "Мастер не на все руки",
+    original: "Master of None",
+    kinopoisk: "https://www.kinopoisk.ru/series/938852/",
+    director: [
+      {
+        name: "Азиз Ансари",
+      },
+      {
+        name: "Алан Янг",
+      },
+    ],
+    cast: [
+      {
+        name: "Лина Уэйте",
+      },
+      {
+        name: "Наоми Аки",
+      },
+      {
+        name: "Азиз Ансари",
+      },
+    ],
+    description:
+      "Дениз становится знаменитой писательницей и спокойно живет со своей женой Алисией в пригороде Нью-Йорка, но ужин с другой парой заставляет их задуматься о будущем.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "мелодрама",
+      },
+    ],
+    screenshots: 51,
+  }, // мастер не на все руки 3
+  {
     release: new Date("2024-06-26"),
     publication: new Date("2024-08-28"),
     format: "сериал",
@@ -3981,6 +4164,42 @@ const films = [
     ],
     screenshots: 22,
   }, // миграция
+  {
+    release: new Date("2012-09-01"),
+    publication: new Date("2022-03-13"),
+    format: "фильм",
+    grade: "D",
+    title: "Милая Фрэнсис",
+    original: "Frances Ha",
+    kinopoisk: "https://www.kinopoisk.ru/film/677442/",
+    director: [
+      {
+        name: "Ноа Баумбак",
+      },
+    ],
+    cast: [
+      {
+        name: "Грета Гервиг",
+      },
+      {
+        name: "Адам Драйвер",
+      },
+      {
+        name: "Майкл Зеген",
+      },
+    ],
+    description:
+      "Танцовщица из Нью-Йорка присоединяется к труппе и преследует свои мечты, хотя шансы на их исполнение уменьшаются.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "чёрно-белое",
+      },
+    ],
+    screenshots: 11,
+  }, // милая фрэнсис
   {
     release: new Date("2022-07-01"),
     publication: new Date("2022-08-17"),
@@ -4367,6 +4586,141 @@ const films = [
     ],
     screenshots: 26,
   }, // мост через озеро
+  {
+    release: new Date("2013-01-25"),
+    publication: new Date("2022-03-11"),
+    format: "фильм",
+    grade: "C",
+    title: "Муви 43",
+    original: "Movie 43",
+    kinopoisk: "https://www.kinopoisk.ru/film/432725/",
+    director: [
+      {
+        name: "Стивен Брилл",
+      },
+      {
+        name: "Питер Фаррелли",
+      },
+      {
+        name: "Элизабет Бэнкс",
+      },
+      {
+        name: "Стив Карр",
+      },
+      {
+        name: "Расти Кандифф",
+      },
+      {
+        name: "Джеймс Даффи",
+      },
+      {
+        name: "Гриффин Данн",
+      },
+      {
+        name: "Патрик Форсберг",
+      },
+      {
+        name: "Уильям Грэм",
+      },
+      {
+        name: "Джеймс Ганн",
+      },
+      {
+        name: "Бретт Рэтнер",
+      },
+      {
+        name: "Джонатан ван Тюллекен",
+      },
+      {
+        name: "Боб Оденкёрк",
+      },
+    ],
+    cast: [
+      {
+        name: "Хью Джекман",
+      },
+      {
+        name: "Кейт Уинслет",
+      },
+      {
+        name: "Наоми Уоттс",
+      },
+      {
+        name: "Лив Шрайбер",
+      },
+      {
+        name: "Джереми Аллен Уайт",
+      },
+      {
+        name: "Анна Фэрис",
+      },
+      {
+        name: "Крис Пратт",
+      },
+      {
+        name: "Эмма Стоун",
+      },
+      {
+        name: "Киран Калкин",
+      },
+      {
+        name: "Ричард Гир",
+      },
+      {
+        name: "Джейсон Судейкис",
+      },
+      {
+        name: "Джастин Лонг",
+      },
+      {
+        name: "Кристен Белл",
+      },
+      {
+        name: "Лесли Бибб",
+      },
+      {
+        name: "Ума Турман",
+      },
+      {
+        name: "Хлоя Грейс Морец",
+      },
+      {
+        name: "Кристофер Минц-Плассе",
+      },
+      {
+        name: "Джонни Ноксвил",
+      },
+      {
+        name: "Шонн Уильям Скотт",
+      },
+      {
+        name: "Джерард Батлер",
+      },
+      {
+        name: "Холли Берри",
+      },
+      {
+        name: "Стивен Мерчант",
+      },
+      {
+        name: "Терренс Ховард",
+      },
+      {
+        name: "Элизабет Бэнкс",
+      },
+      {
+        name: "Джош Дюамель",
+      },
+    ],
+    description:
+      "Скандальная комедия-альманах с множеством голливудских звезд, где 13 режиссеров создали серию шокирующих новелл с черным юмором.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 16,
+  }, // муви 43
   {
     release: new Date("2019-03-28"),
     publication: new Date("2024-08-18"),
@@ -6023,6 +6377,47 @@ const films = [
     ],
     screenshots: 15,
   }, // плохие парни
+  {
+    release: new Date("2016-12-09"),
+    publication: new Date("2022-03-16"),
+    format: "фильм",
+    grade: "love",
+    title: "Под покровом ночи",
+    original: "Nocturnal Animals",
+    kinopoisk: "https://www.kinopoisk.ru/film/909898/",
+    director: [
+      {
+        name: "Том Форд",
+      },
+    ],
+    cast: [
+      {
+        name: "Эми Адамс",
+      },
+      {
+        name: "Джейк Джилленхол",
+      },
+      {
+        name: "Майкл Шеннон",
+      },
+      {
+        name: "Аарон Тейлор-Джонсон",
+      },
+      {
+        name: "Айла Фишер",
+      },
+    ],
+    description: "Сьюзан получает мрачную рукопись от бывшего мужа писателя.",
+    genres: [
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 36,
+  }, // под покровом ночи
   {
     release: new Date("2024-08-21"),
     publication: new Date("2024-10-01"),
@@ -8628,6 +9023,42 @@ const films = [
     screenshots: 17,
   }, // стук в хижине
   {
+    release: new Date("2021-11-24"),
+    publication: new Date("2022-03-08"),
+    format: "фильм",
+    grade: "B",
+    title: "Сядь за руль моей машины",
+    original: "Drive My Car / Doraibu mai ka",
+    kinopoisk: "https://www.kinopoisk.ru/film/4382259/",
+    director: [
+      {
+        name: "Рюсукэ Хамагути",
+      },
+    ],
+    cast: [
+      {
+        name: "Хидэтоси Нисидзима",
+      },
+      {
+        name: "Токо Миура",
+      },
+      {
+        name: "Масаки Окада",
+      },
+      {
+        name: "Пак Ю-рим",
+      },
+    ],
+    description:
+      "Театральный режиссер Юсукэ, переживающий личную трагедию, получает приглашение поставить «Дядю Ваню» в Хиросиме.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 26,
+  }, // сядь за руль моей машины
+  {
     release: new Date("2023-03-15"),
     publication: new Date("2023-06-11"),
     format: "сериал",
@@ -10221,6 +10652,125 @@ const films = [
     screenshots: 50,
   }, // шоу чашека 1-3
   {
+    release: new Date("2022-01-09"),
+    publication: new Date("2022-03-03"),
+    format: "сериал",
+    season: "2",
+    grade: "A",
+    title: "Эйфория",
+    original: "Euphoria",
+    kinopoisk: "https://www.kinopoisk.ru/series/1178445/",
+    director: [
+      {
+        name: "Сэм Левинсон",
+      },
+    ],
+    cast: [
+      {
+        name: "Зендея",
+      },
+      {
+        name: "Хантер Шафер",
+      },
+      {
+        name: "Джейкоб Элорди",
+      },
+      {
+        name: "Барби Феррейра",
+      },
+      {
+        name: "Алекса Деми",
+      },
+      {
+        name: "Элджи Смит",
+      },
+      {
+        name: "Сидни Суини",
+      },
+      {
+        name: "Мод Апатоу",
+      },
+      {
+        name: "Ангус Клауд",
+      },
+      {
+        name: "Остин Абрамс",
+      },
+      {
+        name: "Доминик Файк",
+      },
+    ],
+    description:
+      "История о группе старшеклассников, которые заблудились среди тусовок, наркотиков и собственных желаний.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 0,
+  }, // эйфория 2
+  {
+    release: new Date("2019-06-16"),
+    publication: new Date("2022-02-27"),
+    format: "сериал",
+    season: "1",
+    grade: "A",
+    title: "Эйфория",
+    original: "Euphoria",
+    kinopoisk: "https://www.kinopoisk.ru/series/1178445/",
+    director: [
+      {
+        name: "Сэм Левинсон",
+      },
+    ],
+    cast: [
+      {
+        name: "Зендея",
+      },
+      {
+        name: "Хантер Шафер",
+      },
+      {
+        name: "Джейкоб Элорди",
+      },
+      {
+        name: "Барби Феррейра",
+      },
+      {
+        name: "Алекса Деми",
+      },
+      {
+        name: "Элджи Смит",
+      },
+      {
+        name: "Сидни Суини",
+      },
+      {
+        name: "Мод Апатоу",
+      },
+      {
+        name: "Ангус Клауд",
+      },
+      {
+        name: "Эрик Дэйн",
+      },
+      {
+        name: "Колман Доминго",
+      },
+      {
+        name: "Сторм Рид",
+      },
+    ],
+    description:
+      "История о группе старшеклассников, которые заблудились среди тусовок, наркотиков и собственных желаний.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 0,
+  }, // эйфория 1
+  {
     release: new Date("2022-09-30"),
     publication: new Date("2022-10-08"),
     format: "фильм",
@@ -10295,6 +10845,35 @@ const films = [
     ],
     screenshots: 17,
   }, // эрнест и селестина
+  {
+    release: new Date("2022-03-01"),
+    publication: new Date("2022-03-13"),
+    format: "фильм",
+    grade: "C",
+    title: "Я краснею",
+    original: "Turning Red",
+    kinopoisk: "https://www.kinopoisk.ru/film/1238292/",
+    director: [
+      {
+        name: "Доми Ши",
+      },
+    ],
+    cast: [
+      {
+        name: "Розали Чян",
+      },
+      {
+        name: "Сандра О",
+      },
+    ],
+    description: "Подросток Мэй Ли при волнении становится красной пандой.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 14,
+  }, // я краснею
   {
     release: new Date("2024-05-24"),
     publication: new Date("2024-07-13"),
