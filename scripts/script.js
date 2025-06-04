@@ -38,6 +38,9 @@ const films = [
       {
         genre: "приключения",
       },
+      {
+        genre: "шпионаж",
+      },
     ],
     screenshots: 51,
   }, // 007: координаты «скайфолл»
@@ -77,6 +80,7 @@ const films = [
       {
         genre: "приключения",
       },
+      { genre: "шпионаж" },
     ],
     screenshots: 32,
   }, // 007: спектр
@@ -974,7 +978,7 @@ const films = [
     publication: new Date("2022-04-25"),
     format: "сериал",
     season: "8",
-    grade: "love",
+    grade: "A+",
     title: "Бруклин 9-9",
     original: "Brooklyn Nine-Nine",
     kinopoisk: "https://www.kinopoisk.ru/series/714102/",
@@ -1012,6 +1016,7 @@ const films = [
       {
         genre: "комедия",
       },
+      { genre: "ситком" },
     ],
     screenshots: 18,
   }, // бруклин 9-9 8
@@ -1019,7 +1024,7 @@ const films = [
     release: new Date("2003-05-23"),
     publication: new Date("2022-04-09"),
     format: "фильм",
-    grade: "A+",
+    grade: "A",
     title: "Брюс Всемогущий",
     original: "Bruce Almighty",
     kinopoisk: "https://www.kinopoisk.ru/film/39577/",
@@ -1190,6 +1195,7 @@ const films = [
       {
         genre: "боевик",
       },
+      { genre: "супергероика" },
     ],
     screenshots: 23,
   }, // бэтмен
@@ -1262,6 +1268,48 @@ const films = [
     ],
     screenshots: 17,
   }, // великая ирония
+  {
+    release: new Date("2021-12-10"),
+    publication: new Date("2022-03-27"),
+    format: "фильм",
+    grade: "B",
+    title: "Вестсайдская история",
+    original: "West Side Story",
+    kinopoisk: "https://www.kinopoisk.ru/film/839653/",
+    director: [
+      {
+        name: "Стивен Спилберг",
+      },
+    ],
+    cast: [
+      {
+        name: "Рэйчел Зеглер",
+      },
+      {
+        name: "Энсел Элгорт",
+      },
+      {
+        name: "Майк Фейст",
+      },
+      {
+        name: "Ариана Дебоуз",
+      },
+      {
+        name: "Дэвид Альварес",
+      },
+    ],
+    description:
+      "История невозможной любви юноши и девушки из враждующих группировок.",
+    genres: [
+      {
+        genre: "мюзикл",
+      },
+      {
+        genre: "мелодрама",
+      },
+    ],
+    screenshots: 21,
+  }, // вестсайдская история
   {
     release: new Date("2008-01-20"),
     continuation: new Date("2012-07-15"),
@@ -1722,6 +1770,7 @@ const films = [
       {
         genre: "приключения",
       },
+      { genre: "супергероика" },
     ],
     screenshots: 15,
   }, // доктор стрэндж 2
@@ -2095,6 +2144,7 @@ const films = [
       {
         genre: "приключения",
       },
+      { genre: "шпионаж" },
     ],
     screenshots: 52,
   }, // казино рояль
@@ -2206,6 +2256,7 @@ const films = [
       {
         genre: "приключения",
       },
+      { genre: "шпионаж" },
     ],
     screenshots: 16,
   }, // квант милосердия
@@ -2249,6 +2300,42 @@ const films = [
     screenshots: 16,
   }, // квартира
   {
+    release: new Date("2019-11-27"),
+    publication: new Date("2022-03-24"),
+    format: "фильм",
+    grade: "A+",
+    title: "Квин и Слим",
+    original: "Queen & Slim",
+    kinopoisk: "https://www.kinopoisk.ru/film/1186158/",
+    director: [
+      {
+        name: "Мелина Матсукас",
+      },
+    ],
+    cast: [
+      {
+        name: "Дэниэл Калуя",
+      },
+      {
+        name: "Джоди Тёрнер-Смит",
+      },
+    ],
+    description:
+      "Первое свидание пары принимает неожиданный оборот, когда их останавливает полицейский.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "мелодрама",
+      },
+    ],
+    screenshots: 63,
+  }, // квин и слим
+  {
     release: new Date("2023-02-24"),
     publication: new Date("2023-03-16"),
     format: "фильм",
@@ -2287,6 +2374,246 @@ const films = [
     ],
     screenshots: 13,
   }, // кокаиновый медведь
+  {
+    release: new Date("2019-10-25"),
+    publication: new Date("2020-11-13"),
+    format: "сериал",
+    season: "6",
+    grade: "love",
+    title: "Конь БоДжек",
+    original: "BoJack Horseman",
+    kinopoisk: "https://www.kinopoisk.ru/series/818185/",
+    director: [
+      {
+        name: "Рафаэль Боб-Ваксберг",
+      },
+    ],
+    cast: [
+      {
+        name: "Уилл Арнетт",
+      },
+      {
+        name: "Эми Седарис",
+      },
+      {
+        name: "Элисон Бри",
+      },
+      {
+        name: "Аарон Пол",
+      },
+      {
+        name: "Пол Ф. Томпкинс",
+      },
+    ],
+    description:
+      "Экс-звезда ситкома конь-актер БоДжек переживает кризис среднего возраста.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 36,
+  }, // конь боджек 6
+  {
+    release: new Date("2018-09-14"),
+    publication: new Date("2020-11-08"),
+    format: "сериал",
+    season: "5",
+    grade: "love",
+    title: "Конь БоДжек",
+    original: "BoJack Horseman",
+    kinopoisk: "https://www.kinopoisk.ru/series/818185/",
+    director: [
+      {
+        name: "Рафаэль Боб-Ваксберг",
+      },
+    ],
+    cast: [
+      {
+        name: "Уилл Арнетт",
+      },
+      {
+        name: "Эми Седарис",
+      },
+      {
+        name: "Элисон Бри",
+      },
+      {
+        name: "Аарон Пол",
+      },
+      {
+        name: "Пол Ф. Томпкинс",
+      },
+    ],
+    description:
+      "Экс-звезда ситкома конь-актер БоДжек переживает кризис среднего возраста.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 28,
+  }, // конь боджек 5
+  {
+    release: new Date("2017-09-08"),
+    publication: new Date("2020-11-07"),
+    format: "сериал",
+    season: "4",
+    grade: "love",
+    title: "Конь БоДжек",
+    original: "BoJack Horseman",
+    kinopoisk: "https://www.kinopoisk.ru/series/818185/",
+    director: [
+      {
+        name: "Рафаэль Боб-Ваксберг",
+      },
+    ],
+    cast: [
+      {
+        name: "Уилл Арнетт",
+      },
+      {
+        name: "Эми Седарис",
+      },
+      {
+        name: "Элисон Бри",
+      },
+      {
+        name: "Аарон Пол",
+      },
+      {
+        name: "Пол Ф. Томпкинс",
+      },
+    ],
+    description:
+      "Экс-звезда ситкома конь-актер БоДжек переживает кризис среднего возраста.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 16,
+  }, // конь боджек 4
+  {
+    release: new Date("2016-07-22"),
+    publication: new Date("2020-11-04"),
+    format: "сериал",
+    season: "3",
+    grade: "love",
+    title: "Конь БоДжек",
+    original: "BoJack Horseman",
+    kinopoisk: "https://www.kinopoisk.ru/series/818185/",
+    director: [
+      {
+        name: "Рафаэль Боб-Ваксберг",
+      },
+    ],
+    cast: [
+      {
+        name: "Уилл Арнетт",
+      },
+      {
+        name: "Эми Седарис",
+      },
+      {
+        name: "Элисон Бри",
+      },
+      {
+        name: "Аарон Пол",
+      },
+      {
+        name: "Пол Ф. Томпкинс",
+      },
+    ],
+    description:
+      "Экс-звезда ситкома конь-актер БоДжек переживает кризис среднего возраста.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 18,
+  }, // конь боджек 3
+  {
+    release: new Date("2015-07-17"),
+    publication: new Date("2020-11-01"),
+    format: "сериал",
+    season: "2",
+    grade: "love",
+    title: "Конь БоДжек",
+    original: "BoJack Horseman",
+    kinopoisk: "https://www.kinopoisk.ru/series/818185/",
+    director: [
+      {
+        name: "Рафаэль Боб-Ваксберг",
+      },
+    ],
+    cast: [
+      {
+        name: "Уилл Арнетт",
+      },
+      {
+        name: "Эми Седарис",
+      },
+      {
+        name: "Элисон Бри",
+      },
+      {
+        name: "Аарон Пол",
+      },
+      {
+        name: "Пол Ф. Томпкинс",
+      },
+    ],
+    description:
+      "Экс-звезда ситкома конь-актер БоДжек переживает кризис среднего возраста.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 20,
+  }, // конь боджек 2
+  {
+    release: new Date("2014-08-22"),
+    publication: new Date("2020-02-20"),
+    format: "сериал",
+    season: "1",
+    grade: "love",
+    title: "Конь БоДжек",
+    original: "BoJack Horseman",
+    kinopoisk: "https://www.kinopoisk.ru/series/818185/",
+    director: [
+      {
+        name: "Рафаэль Боб-Ваксберг",
+      },
+    ],
+    cast: [
+      {
+        name: "Уилл Арнетт",
+      },
+      {
+        name: "Эми Седарис",
+      },
+      {
+        name: "Элисон Бри",
+      },
+      {
+        name: "Аарон Пол",
+      },
+      {
+        name: "Пол Ф. Томпкинс",
+      },
+    ],
+    description:
+      "Экс-звезда ситкома конь-актер БоДжек переживает кризис среднего возраста.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 19,
+  }, // конь боджек 1
   {
     release: new Date("2012-06-29"),
     publication: new Date("2023-05-02"),
@@ -2825,6 +3152,7 @@ const films = [
       {
         genre: "фэнтези",
       },
+      { genre: "супергероика" },
     ],
     screenshots: 35,
   }, // локи 2
@@ -2871,6 +3199,7 @@ const films = [
       {
         genre: "триллер",
       },
+      { genre: "супергероика" },
     ],
     screenshots: 62,
   }, // лунный рыцарь
@@ -3270,6 +3599,7 @@ const films = [
       {
         genre: "приключения",
       },
+      { genre: "супергероика" },
     ],
     screenshots: 31,
   }, // люди икс 3
@@ -3316,6 +3646,7 @@ const films = [
       {
         genre: "приключения",
       },
+      { genre: "супергероика" },
     ],
     screenshots: 14,
   }, // люди икс 2
@@ -3361,6 +3692,7 @@ const films = [
       {
         genre: "приключения",
       },
+      { genre: "супергероика" },
     ],
     screenshots: 16,
   }, // люди икс
@@ -3740,6 +4072,7 @@ const films = [
       {
         genre: "приключения",
       },
+      { genre: "супергероика" },
     ],
     screenshots: 21,
   }, // миротворец 1
@@ -3785,6 +4118,7 @@ const films = [
       {
         genre: "приключения",
       },
+      { genre: "шпионаж" },
     ],
     screenshots: 26,
   }, // миссия невыполнима: смертельная расплата. часть первая (7)
@@ -3826,6 +4160,7 @@ const films = [
       {
         genre: "приключения",
       },
+      { genre: "шпионаж" },
     ],
     screenshots: 35,
   }, // миссия невыполнима: последствия (6)
@@ -3868,6 +4203,7 @@ const films = [
       {
         genre: "приключения",
       },
+      { genre: "шпионаж" },
     ],
     screenshots: 19,
   }, // миссия невыполнима: племя изгоев (5)
@@ -3907,6 +4243,7 @@ const films = [
       {
         genre: "приключения",
       },
+      { genre: "шпионаж" },
     ],
     screenshots: 19,
   }, // миссия невыполнима: протокол фантом (4)
@@ -3952,6 +4289,7 @@ const films = [
       {
         genre: "приключения",
       },
+      { genre: "шпионаж" },
     ],
     screenshots: 26,
   }, // миссия: невыполнима 3
@@ -3995,6 +4333,7 @@ const films = [
       {
         genre: "приключения",
       },
+      { genre: "шпионаж" },
     ],
     screenshots: 89,
   }, // мистер и миссис смит
@@ -4174,6 +4513,7 @@ const films = [
       {
         genre: "мокьюментари",
       },
+      { genre: "ситком" },
     ],
     screenshots: 26,
   }, // начальная школа эбботт 3
@@ -4221,6 +4561,7 @@ const films = [
       {
         genre: "мокьюментари",
       },
+      { genre: "ситком" },
     ],
     screenshots: 25,
   }, // начальная школа эбботт 2
@@ -4268,6 +4609,7 @@ const films = [
       {
         genre: "мокьюментари",
       },
+      { genre: "ситком" },
     ],
     screenshots: 16,
   }, // начальная школа эбботт 1
@@ -4346,6 +4688,7 @@ const films = [
       {
         genre: "боевик",
       },
+      { genre: "шпионаж" },
     ],
     screenshots: 24,
   }, // не время умирать
@@ -4462,6 +4805,7 @@ const films = [
       {
         genre: "мультфильм",
       },
+      { genre: "супергероика" },
     ],
     screenshots: 29,
   }, // непобедимый 2
@@ -4502,6 +4846,7 @@ const films = [
       {
         genre: "мультфильм",
       },
+      { genre: "супергероика" },
     ],
     screenshots: 21,
   }, // непобедимый 1
@@ -5277,6 +5622,48 @@ const films = [
     screenshots: 96,
   }, // очень странные дела 4
   {
+    release: new Date("2016-08-19"),
+    publication: new Date("2022-03-30"),
+    format: "фильм",
+    grade: "A",
+    title: "Парни со стволами",
+    original: "War Dogs",
+    kinopoisk: "https://www.kinopoisk.ru/film/602749/",
+    director: [
+      {
+        name: "Тодд Филлипс",
+      },
+    ],
+    cast: [
+      {
+        name: "Майлз Теллер",
+      },
+      {
+        name: "Джона Хилл",
+      },
+      {
+        name: "Ана де Армас",
+      },
+      {
+        name: "Брэдли Купер",
+      },
+    ],
+    description:
+      "История о друзьях из Майами, которым удалось получить контракт на поставку оружия на сумму в 300 миллионов долларов от Пентагона.",
+    genres: [
+      {
+        genre: "биография",
+      },
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 47,
+  }, // парни со стволами
+  {
     release: new Date("2001-06-08"),
     publication: new Date("2023-09-30"),
     format: "фильм",
@@ -5371,6 +5758,7 @@ const films = [
       {
         genre: "фантастика",
       },
+      { genre: "супергероика" },
     ],
     screenshots: 25,
   }, // пацаны 4
@@ -5429,6 +5817,7 @@ const films = [
       {
         genre: "фантастика",
       },
+      { genre: "супергероика" },
     ],
     screenshots: 22,
   }, // пацаны 3
@@ -5487,6 +5876,7 @@ const films = [
       {
         genre: "фантастика",
       },
+      { genre: "супергероика" },
     ],
     screenshots: 12,
   }, // пацаны 2
@@ -6921,6 +7311,90 @@ const films = [
     screenshots: 310,
   }, // рипли
   {
+    release: new Date("2021-12-03"),
+    publication: new Date("2022-03-28"),
+    format: "фильм",
+    grade: "C",
+    title: "Рука бога",
+    original: "The Hand of God / È stata la mano di Dio",
+    kinopoisk: "https://www.kinopoisk.ru/film/1395871/",
+    director: [
+      {
+        name: "Паоло Соррентино",
+      },
+    ],
+    cast: [
+      {
+        name: "Филиппо Скотти",
+      },
+      {
+        name: "Тони Сервилло",
+      },
+      {
+        name: "Тереза Сапонанджело",
+      },
+      {
+        name: "Марлон Жубер",
+      },
+      {
+        name: "Луиза Раньери",
+      },
+    ],
+    description:
+      "В 1980-х в Неаполе Фабьетто, увлеченный футболом, переживает семейную трагедию, которая определяет его путь к режиссуре.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 35,
+  }, // рука бога
+  {
+    release: new Date("2009-12-08"),
+    publication: new Date("2022-03-24"),
+    format: "фильм",
+    grade: "A",
+    title: "Сезон ураганов",
+    original: "Hurricane Season",
+    kinopoisk: "https://www.kinopoisk.ru/film/403431/",
+    director: [
+      {
+        name: "Тим Стори",
+      },
+    ],
+    cast: [
+      {
+        name: "Форест Уитакер",
+      },
+      {
+        name: "Тараджи П. Хенсон",
+      },
+      {
+        name: "Исайя Вашингтон",
+      },
+      {
+        name: "Робби Джонс",
+      },
+      {
+        name: "Шэд Мосс",
+      },
+      {
+        name: "Эрик Д. Хилл мл.",
+      },
+    ],
+    description:
+      "После урагана «Катрина» тренер Коллинз собрал команду из игроков пяти разрушенных школ Луизианы и повел их к победе в чемпионате штата.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "спорт",
+      },
+    ],
+    screenshots: 18,
+  }, // сезон ураганов
+  {
     release: new Date("2003-06-22"),
     publication: new Date("2023-08-25"),
     format: "сериал",
@@ -7136,6 +7610,48 @@ const films = [
     screenshots: 11,
   }, // секс в большом городе 1
   {
+    release: new Date("2018-04-06"),
+    publication: new Date("2022-03-28"),
+    format: "фильм",
+    grade: "B",
+    title: "Секса не будет!!!",
+    original: "Blockers",
+    kinopoisk: "https://www.kinopoisk.ru/film/719155/",
+    director: [
+      {
+        name: "Кэй Кэннон",
+      },
+    ],
+    cast: [
+      {
+        name: "Джон Сина",
+      },
+      {
+        name: "Лесли Манн",
+      },
+      {
+        name: "Айк Баринхолц",
+      },
+      {
+        name: "Кэтрин Ньютон",
+      },
+      {
+        name: "Джеральдин Висванатан",
+      },
+      {
+        name: "Гидеон Адлон",
+      },
+    ],
+    description:
+      "Трое родителей пытаются помешать своим дочерям потерять девственность на выпускном вечере.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 16,
+  }, // секса не будет
+  {
     release: new Date("2023-09-21"),
     publication: new Date("2023-10-03"),
     format: "сериал",
@@ -7322,6 +7838,7 @@ const films = [
       {
         genre: "приключения",
       },
+      { genre: "супергероика" },
     ],
     screenshots: 16,
   }, // синий жук
@@ -7515,6 +8032,7 @@ const films = [
       {
         genre: "криминал",
       },
+      { genre: "шпионаж" },
     ],
     screenshots: 19,
   }, // служители закона
@@ -7630,6 +8148,7 @@ const films = [
       {
         genre: "комедия",
       },
+      { genre: "ситком" },
     ],
     screenshots: 14,
   }, // сообщетсво 6
@@ -7679,6 +8198,7 @@ const films = [
       {
         genre: "комедия",
       },
+      { genre: "ситком" },
     ],
     screenshots: 13,
   }, // сообщетсво 5
@@ -7731,6 +8251,7 @@ const films = [
       {
         genre: "комедия",
       },
+      { genre: "ситком" },
     ],
     screenshots: 20,
   }, // сообщетсво 4
@@ -7780,6 +8301,7 @@ const films = [
       {
         genre: "комедия",
       },
+      { genre: "ситком" },
     ],
     screenshots: 34,
   }, // сообщетсво 3
@@ -7829,6 +8351,7 @@ const films = [
       {
         genre: "комедия",
       },
+      { genre: "ситком" },
     ],
     screenshots: 48,
   }, // сообщетсво 2
@@ -7878,6 +8401,7 @@ const films = [
       {
         genre: "комедия",
       },
+      { genre: "ситком" },
     ],
     screenshots: 19,
   }, // сообщетсво 1
@@ -7924,6 +8448,7 @@ const films = [
       {
         genre: "криминал",
       },
+      { genre: "супергероика" },
     ],
     screenshots: 46,
   }, // сорвиголова 2
@@ -7967,6 +8492,7 @@ const films = [
       {
         genre: "криминал",
       },
+      { genre: "супергероика" },
     ],
     screenshots: 29,
   }, // сорвиголова 1
@@ -8064,6 +8590,7 @@ const films = [
       {
         genre: "драма",
       },
+      { genre: "супергероика" },
     ],
     screenshots: 35,
   }, // стражи галактики 3
@@ -8341,6 +8868,7 @@ const films = [
       {
         genre: "комедия",
       },
+      { genre: "супергероика" },
     ],
     screenshots: 15,
   }, // тор: любовь и гром
@@ -8372,6 +8900,7 @@ const films = [
       {
         genre: "комедия",
       },
+      { genre: "ситком" },
     ],
     screenshots: 12,
   }, // третий лишний 1
@@ -9290,6 +9819,7 @@ const films = [
       {
         genre: "приключения",
       },
+      { genre: "супергероика" },
     ],
     screenshots: 22,
   }, // человек-паук: нет пути домой (3)
@@ -9335,6 +9865,7 @@ const films = [
       {
         genre: "приключения",
       },
+      { genre: "супергероика" },
     ],
     screenshots: 26,
   }, // человек-паук: вдали от дома (2)
@@ -9378,6 +9909,7 @@ const films = [
       {
         genre: "приключения",
       },
+      { genre: "супергероика" },
     ],
     screenshots: 27,
   }, // человек-паук: возвращение домой (1)
@@ -9423,6 +9955,7 @@ const films = [
       {
         genre: "мультфильм",
       },
+      { genre: "супергероика" },
     ],
     screenshots: 66,
   }, // человек-паук: паутина вселенных
@@ -9472,6 +10005,7 @@ const films = [
       {
         genre: "мультфильм",
       },
+      { genre: "супергероика" },
     ],
     screenshots: 69,
   }, // человек-паук: через вселенные
@@ -9568,6 +10102,48 @@ const films = [
     ],
     screenshots: 22,
   }, // что за люди
+  {
+    release: new Date("2022-02-04"),
+    publication: new Date("2022-03-26"),
+    format: "фильм",
+    grade: "A",
+    title: "Чудаки навсегда",
+    original: "Jackass Forever",
+    kinopoisk: "https://www.kinopoisk.ru/film/1359074/",
+    director: [
+      {
+        name: "Джефф Треймейн",
+      },
+    ],
+    cast: [
+      {
+        name: "Джонни Ноксвил",
+      },
+      {
+        name: "Стив-О",
+      },
+      {
+        name: "Крис Понтиус",
+      },
+      {
+        name: "Дэвон Уилсон",
+      },
+      {
+        name: "Рэйчел Вульфсон",
+      },
+    ],
+    description:
+      "Команда «Чудаков» вернулась с новыми комедийными трюками, в которых участвуют звёздные новички.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "документальный",
+      },
+    ],
+    screenshots: 17,
+  }, // чудаки навсегда
   {
     release: new Date("2023-09-20"),
     publication: new Date("2023-09-29"),
