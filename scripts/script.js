@@ -171,6 +171,57 @@ const films = [
     screenshots: 33,
   }, // fallout 1
   {
+    release: new Date("2019-11-15"),
+    publication: new Date("2022-02-21"),
+    format: "фильм",
+    grade: "A",
+    title: "Ford против Ferrari",
+    original: "Ford v Ferrari",
+    kinopoisk: "https://www.kinopoisk.ru/film/835086/",
+    director: [
+      {
+        name: "Джеймс Мэнголд",
+      },
+    ],
+    cast: [
+      {
+        name: "Кристиан Бэйл",
+      },
+      {
+        name: "Мэтт Дэймон",
+      },
+      {
+        name: "Катрина Балф",
+      },
+      {
+        name: "Трэйси Леттс",
+      },
+      {
+        name: "Ноа Джуп",
+      },
+      {
+        name: "Джон Бернтал",
+      },
+      {
+        name: "Джош Лукас",
+      },
+    ],
+    description:
+      "Кэрролл Шелби и Кен Майлз разрабатывают для Ford инновационный гоночный автомобиль, чтобы победить Ferrari в гонке «24 часа Ле-Мана» 1966 года.",
+    genres: [
+      {
+        genre: "биография",
+      },
+      {
+        genre: "спорт",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 18,
+  }, // ford против ferrari
+  {
     release: new Date("2024-02-15"),
     publication: new Date("2024-10-07"),
     format: "сериал",
@@ -1200,6 +1251,48 @@ const films = [
     screenshots: 23,
   }, // бэтмен
   {
+    release: new Date("2007-09-21"),
+    publication: new Date("2020-01-14"),
+    format: "фильм",
+    grade: "A",
+    title: "В диких условиях",
+    original: "Into the Wild",
+    kinopoisk: "https://www.kinopoisk.ru/film/252626/",
+    director: [
+      {
+        name: "Шон Пенн",
+      },
+    ],
+    cast: [
+      {
+        name: "Эмиль Хирш",
+      },
+      {
+        name: "Кэтрин Кинер",
+      },
+      {
+        name: "Винс Вон",
+      },
+      {
+        name: "Кристен Стюарт",
+      },
+    ],
+    description:
+      "Кристофер МакКэндлесс, сын богатых родителей и выпускник колледжа Эмори, жертвует деньги на благотворительность и отправляется на Аляску.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "биография",
+      },
+    ],
+    screenshots: 11,
+  }, // в диких условиях
+  {
     release: new Date("2022-12-23"),
     publication: new Date("2023-02-05"),
     format: "фильм",
@@ -1311,6 +1404,81 @@ const films = [
     screenshots: 21,
   }, // вестсайдская история
   {
+    release: new Date("2019-01-28"),
+    publication: new Date("2020-10-15"),
+    format: "фильм",
+    grade: "B",
+    title: "Взрослеть на полную",
+    original: "Big Time Adolescence",
+    kinopoisk: "https://www.kinopoisk.ru/film/1166942/",
+    director: [
+      {
+        name: "Джейсон Орли",
+      },
+    ],
+    cast: [
+      {
+        name: "Гриффин Глюк",
+      },
+      {
+        name: "Пит Дэвидсон",
+      },
+    ],
+    description:
+      "Подросток из пригорода взрослеет, находясь под разрушительным влиянием друга, бросившего колледж.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 11,
+  }, // взрослеть на полную
+  {
+    release: new Date("2007-10-26"),
+    publication: new Date("2020-04-06"),
+    format: "фильм",
+    grade: "B",
+    title: "Влюбиться в невесту брата",
+    original: "Dan in Real Life",
+    kinopoisk: "https://www.kinopoisk.ru/film/196661/",
+    director: [
+      {
+        name: "Питер Хеджес",
+      },
+    ],
+    cast: [
+      {
+        name: "Стив Карелл",
+      },
+      {
+        name: "Жюльет Бинош",
+      },
+      {
+        name: "Дейн Кук",
+      },
+      {
+        name: "Элисон Пилл",
+      },
+      {
+        name: "Бритт Робертсон",
+      },
+      {
+        name: "Эмили Блант",
+      },
+    ],
+    description:
+      "Вдовец узнает, что женщина, в которую он влюбился, — подружка его брата.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "мелодрама",
+      },
+    ],
+    screenshots: 14,
+  }, // влюбиться в невесту брата
+  {
     release: new Date("2008-01-20"),
     continuation: new Date("2012-07-15"),
     publication: new Date("2019-11-22"),
@@ -1360,6 +1528,48 @@ const films = [
     ],
     screenshots: 43,
   }, // во все тяжкие 1-5
+  {
+    release: new Date("2013-12-25"),
+    publication: new Date("2022-02-25"),
+    format: "фильм",
+    grade: "A+",
+    title: "Волк с Уолл-стрит",
+    original: "The Wolf of Wall Street",
+    kinopoisk: "https://www.kinopoisk.ru/film/462682/",
+    director: [
+      {
+        name: "Мартин Скорсезе",
+      },
+    ],
+    cast: [
+      {
+        name: "Леонардо ДиКаприо",
+      },
+      {
+        name: "Джона Хилл",
+      },
+      {
+        name: "Марго Робби",
+      },
+      {
+        name: "Кайл Чендлер",
+      },
+      {
+        name: "Джон Бернтал",
+      },
+    ],
+    description:
+      "История брокера Джордана Белфорта, которому удалось сказочно разбогатеть на биржевых махинациях.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "биография",
+      },
+    ],
+    screenshots: 45,
+  }, // волк с уолл-стрит
   {
     release: new Date("2023-11-03"),
     publication: new Date("2023-12-09"),
@@ -2853,6 +3063,329 @@ const films = [
     ],
     screenshots: 18,
   }, // корпорация «заговор» 1-2
+  {
+    release: new Date("2011-07-24"),
+    publication: new Date("2021-01-30"),
+    format: "сериал",
+    season: "8",
+    grade: "love",
+    title: "Красавцы",
+    original: "Entourage / Антураж",
+    kinopoisk: "https://www.kinopoisk.ru/series/277548/",
+    director: [
+      {
+        name: "Даг Эллин",
+      },
+      {
+        name: "Марк Уолберг",
+      },
+    ],
+    cast: [
+      {
+        name: "Эдриан Гренье",
+      },
+      {
+        name: "Кевин Коннолли",
+      },
+      {
+        name: "Джереми Пивен",
+      },
+      {
+        name: "Кевин Диллон",
+      },
+      {
+        name: "Джерри Феррара",
+      },
+    ],
+    description:
+      "Молодой актер и его друзья покоряют Голливуд. Сериал о восхождении молодого актера, основанный на биографии Марка Уолберга.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 14,
+  }, // красавцы 8
+  {
+    release: new Date("2010-06-27"),
+    publication: new Date("2021-01-29"),
+    format: "сериал",
+    season: "7",
+    grade: "love",
+    title: "Красавцы",
+    original: "Entourage / Антураж",
+    kinopoisk: "https://www.kinopoisk.ru/series/277548/",
+    director: [
+      {
+        name: "Даг Эллин",
+      },
+      {
+        name: "Марк Уолберг",
+      },
+    ],
+    cast: [
+      {
+        name: "Эдриан Гренье",
+      },
+      {
+        name: "Кевин Коннолли",
+      },
+      {
+        name: "Джереми Пивен",
+      },
+      {
+        name: "Кевин Диллон",
+      },
+      {
+        name: "Джерри Феррара",
+      },
+    ],
+    description:
+      "Молодой актер и его друзья покоряют Голливуд. Сериал о восхождении молодого актера, основанный на биографии Марка Уолберга.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 11,
+  }, // красавцы 7
+  {
+    release: new Date("2009-07-12"),
+    publication: new Date("2021-01-25"),
+    format: "сериал",
+    season: "6",
+    grade: "love",
+    title: "Красавцы",
+    original: "Entourage / Антураж",
+    kinopoisk: "https://www.kinopoisk.ru/series/277548/",
+    director: [
+      {
+        name: "Даг Эллин",
+      },
+      {
+        name: "Марк Уолберг",
+      },
+    ],
+    cast: [
+      {
+        name: "Эдриан Гренье",
+      },
+      {
+        name: "Кевин Коннолли",
+      },
+      {
+        name: "Джереми Пивен",
+      },
+      {
+        name: "Кевин Диллон",
+      },
+      {
+        name: "Джерри Феррара",
+      },
+    ],
+    description:
+      "Молодой актер и его друзья покоряют Голливуд. Сериал о восхождении молодого актера, основанный на биографии Марка Уолберга.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 16,
+  }, // красавцы 6
+  {
+    release: new Date("2007-06-17"),
+    continuation: new Date("2008-09-07"),
+    publication: new Date("2023-01-22"),
+    format: "сериал",
+    season: "4-5",
+    grade: "love",
+    title: "Красавцы",
+    original: "Entourage / Антураж",
+    kinopoisk: "https://www.kinopoisk.ru/series/277548/",
+    director: [
+      {
+        name: "Даг Эллин",
+      },
+      {
+        name: "Марк Уолберг",
+      },
+    ],
+    cast: [
+      {
+        name: "Эдриан Гренье",
+      },
+      {
+        name: "Кевин Коннолли",
+      },
+      {
+        name: "Джереми Пивен",
+      },
+      {
+        name: "Кевин Диллон",
+      },
+      {
+        name: "Джерри Феррара",
+      },
+    ],
+    description:
+      "Молодой актер и его друзья покоряют Голливуд. Сериал о восхождении молодого актера, основанный на биографии Марка Уолберга.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 16,
+  }, // красавцы 4-5
+  {
+    release: new Date("2006-06-11"),
+    publication: new Date("2021-01-17"),
+    format: "сериал",
+    season: "3",
+    grade: "love",
+    title: "Красавцы",
+    original: "Entourage / Антураж",
+    kinopoisk: "https://www.kinopoisk.ru/series/277548/",
+    director: [
+      {
+        name: "Даг Эллин",
+      },
+      {
+        name: "Марк Уолберг",
+      },
+    ],
+    cast: [
+      {
+        name: "Эдриан Гренье",
+      },
+      {
+        name: "Кевин Коннолли",
+      },
+      {
+        name: "Джереми Пивен",
+      },
+      {
+        name: "Кевин Диллон",
+      },
+      {
+        name: "Джерри Феррара",
+      },
+    ],
+    description:
+      "Молодой актер и его друзья покоряют Голливуд. Сериал о восхождении молодого актера, основанный на биографии Марка Уолберга.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 16,
+  }, // красавцы 3
+  {
+    release: new Date("2005-06-05"),
+    publication: new Date("2021-01-11"),
+    format: "сериал",
+    season: "2",
+    grade: "love",
+    title: "Красавцы",
+    original: "Entourage / Антураж",
+    kinopoisk: "https://www.kinopoisk.ru/series/277548/",
+    director: [
+      {
+        name: "Даг Эллин",
+      },
+      {
+        name: "Марк Уолберг",
+      },
+    ],
+    cast: [
+      {
+        name: "Эдриан Гренье",
+      },
+      {
+        name: "Кевин Коннолли",
+      },
+      {
+        name: "Джереми Пивен",
+      },
+      {
+        name: "Кевин Диллон",
+      },
+      {
+        name: "Джерри Феррара",
+      },
+    ],
+    description:
+      "Молодой актер и его друзья покоряют Голливуд. Сериал о восхождении молодого актера, основанный на биографии Марка Уолберга.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 16,
+  }, // красавцы 2
+  {
+    release: new Date("2004-07-18"),
+    publication: new Date("2021-01-10"),
+    format: "сериал",
+    season: "1",
+    grade: "love",
+    title: "Красавцы",
+    original: "Entourage / Антураж",
+    kinopoisk: "https://www.kinopoisk.ru/series/277548/",
+    director: [
+      {
+        name: "Даг Эллин",
+      },
+      {
+        name: "Марк Уолберг",
+      },
+    ],
+    cast: [
+      {
+        name: "Эдриан Гренье",
+      },
+      {
+        name: "Кевин Коннолли",
+      },
+      {
+        name: "Джереми Пивен",
+      },
+      {
+        name: "Кевин Диллон",
+      },
+      {
+        name: "Джерри Феррара",
+      },
+    ],
+    description:
+      "Молодой актер и его друзья покоряют Голливуд. Сериал о восхождении молодого актера, основанный на биографии Марка Уолберга.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 11,
+  }, // красавцы 1
   {
     release: new Date("2018-11-02"),
     publication: new Date("2019-03-22"),
@@ -5512,6 +6045,45 @@ const films = [
     ],
     screenshots: 30,
   }, // одинокие волки
+  {
+    release: new Date("2011-07-29"),
+    publication: new Date("2020-08-01"),
+    format: "фильм",
+    grade: "A+",
+    title: "Однажды в Ирландии",
+    original: "The Guard",
+    kinopoisk: "https://www.kinopoisk.ru/film/484474/",
+    director: [
+      {
+        name: "Джон Майкл Макдона",
+      },
+    ],
+    cast: [
+      {
+        name: "Брендан Глисон",
+      },
+      {
+        name: "Дон Чидл",
+      },
+      {
+        name: "Марк Стронг",
+      },
+    ],
+    description:
+      "Грубый ирландский полицейский объединяется с агентом ФБР для борьбы с контрабандистами наркотиков.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "детектив",
+      },
+    ],
+    screenshots: 12,
+  }, // однажды в ирландии
   {
     release: new Date("2022-01-21"),
     publication: new Date("2022-05-02"),
@@ -8238,6 +8810,51 @@ const films = [
     screenshots: 16,
   }, // синий жук
   {
+    release: new Date("2009-04-26"),
+    publication: new Date("2020-02-16"),
+    format: "фильм",
+    grade: "love",
+    title: "Сити-Айленд",
+    original: "City Island",
+    kinopoisk: "https://www.kinopoisk.ru/film/418802/",
+    director: [
+      {
+        name: "Рэймонд Де Фелитта",
+      },
+    ],
+    cast: [
+      {
+        name: "Энди Гарсиа",
+      },
+      {
+        name: "Джулианна Маргулис",
+      },
+      {
+        name: "Стивен Стрейт",
+      },
+      {
+        name: "Эмили Мортимер",
+      },
+      {
+        name: "Эзра Миллер",
+      },
+      {
+        name: "Доминик Гарсиа-Лоридо",
+      },
+      {
+        name: "Алан Аркин",
+      },
+    ],
+    description:
+      "История о необычной семье из Бронкса, где у каждого члена семьи есть свои секреты.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 12,
+  }, // сити-айленд
+  {
     release: new Date("2023-07-27"),
     publication: new Date("2023-11-07"),
     format: "сериал",
@@ -10041,6 +10658,48 @@ const films = [
     screenshots: 18,
   }, // формула 1. драйв выживания 1
   {
+    release: new Date("2001-06-22"),
+    publication: new Date("2022-02-22"),
+    format: "фильм",
+    grade: "A",
+    title: "Форсаж",
+    original: "The Fast and the Furious",
+    kinopoisk: "https://www.kinopoisk.ru/film/666/",
+    director: [
+      {
+        name: "Роб Коэн",
+      },
+    ],
+    cast: [
+      {
+        name: "Пол Уокер",
+      },
+      {
+        name: "Вин Дизель",
+      },
+      {
+        name: "Мишель Родригес",
+      },
+      {
+        name: "Джордана Брюстер",
+      },
+      {
+        name: "Рик Юн",
+      },
+    ],
+    description:
+      "Офицер полиции Лос-Анджелеса Брайан О'Коннер должен втереться в доверие к Доминику Торетто, главарю автобанды, подозреваемому в причастности к грабежам грузовиков.",
+    genres: [
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 15,
+  }, // форсаж
+  {
     release: new Date("2023-07-24"),
     publication: new Date("2023-10-15"),
     format: "сериал",
@@ -10707,7 +11366,7 @@ const films = [
         genre: "драма",
       },
     ],
-    screenshots: 0,
+    screenshots: 46,
   }, // эйфория 2
   {
     release: new Date("2019-06-16"),
@@ -10768,7 +11427,7 @@ const films = [
         genre: "драма",
       },
     ],
-    screenshots: 0,
+    screenshots: 57,
   }, // эйфория 1
   {
     release: new Date("2022-09-30"),
@@ -11520,14 +12179,14 @@ function addCard(item) {
           for (let i = 0; i < item.genres.length; i++) {
             if (
               item.genres[i].genre ==
-                descriptionTitle.textContent.toLowerCase() &&
+              descriptionTitle.textContent.toLowerCase() &&
               element.textContent.toLowerCase() == item.format
             ) {
               openCard();
               break;
             } else if (
               descriptionTitle.textContent ==
-                item.release.toString().slice(11, 15) &&
+              item.release.toString().slice(11, 15) &&
               element.textContent.toLowerCase() == item.format
             ) {
               openCard();
@@ -11751,7 +12410,7 @@ function addCard(item) {
     const if_there_is_a_continuation_and_it_matches =
       item.continuation != null &&
       year_in_film_page.textContent ==
-        item.continuation.toString().slice(11, 15);
+      item.continuation.toString().slice(11, 15);
 
     if (
       year_in_film_page.textContent == item.release.toString().slice(11, 15) ||
@@ -11770,11 +12429,11 @@ function addCard(item) {
     const if_there_is_a_continuation_and_it_matches =
       item.continuation != null &&
       continuation_year_in_film_page.textContent ==
-        item.continuation.toString().slice(11, 15);
+      item.continuation.toString().slice(11, 15);
 
     if (
       continuation_year_in_film_page.textContent ==
-        item.release.toString().slice(11, 15) ||
+      item.release.toString().slice(11, 15) ||
       if_there_is_a_continuation_and_it_matches == true
     ) {
       sorting_by_year(continuation_year_in_film_page);
@@ -12483,12 +13142,12 @@ function total_number_of_films_and_serials() {
 
   console.log(
     "Публикаций всего: " +
-      clonedArray.length +
-      ", из которых: фильмов — " +
-      number_of_films.length +
-      ", сериалов — " +
-      number_of_serials.length +
-      "."
+    clonedArray.length +
+    ", из которых: фильмов — " +
+    number_of_films.length +
+    ", сериалов — " +
+    number_of_serials.length +
+    "."
   );
 }
 
