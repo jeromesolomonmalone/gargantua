@@ -3107,7 +3107,7 @@ const films = [
         genre: "драма",
       },
     ],
-    screenshots: 14,
+    screenshots: 13,
   }, // красавцы 8
   {
     release: new Date("2010-06-27"),
@@ -3153,7 +3153,7 @@ const films = [
         genre: "драма",
       },
     ],
-    screenshots: 11,
+    screenshots: 10,
   }, // красавцы 7
   {
     release: new Date("2009-07-12"),
@@ -3199,12 +3199,12 @@ const films = [
         genre: "драма",
       },
     ],
-    screenshots: 16,
+    screenshots: 15,
   }, // красавцы 6
   {
     release: new Date("2007-06-17"),
     continuation: new Date("2008-09-07"),
-    publication: new Date("2023-01-22"),
+    publication: new Date("2021-01-22"),
     format: "сериал",
     season: "4-5",
     grade: "love",
@@ -3292,7 +3292,7 @@ const films = [
         genre: "драма",
       },
     ],
-    screenshots: 16,
+    screenshots: 15,
   }, // красавцы 3
   {
     release: new Date("2005-06-05"),
