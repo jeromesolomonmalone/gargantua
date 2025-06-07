@@ -260,6 +260,63 @@ const films = [
     screenshots: 19,
   }, // vince staples show
   {
+    release: new Date("2007-01-12"),
+    publication: new Date("2022-01-24"),
+    format: "фильм",
+    grade: "A",
+    title: "Альфа Дог",
+    original: "Alpha Dog",
+    kinopoisk: "https://www.kinopoisk.ru/film/84451/",
+    director: [
+      {
+        name: "Ник Кассаветис",
+      },
+    ],
+    cast: [
+      {
+        name: "Эмиль Хирш",
+      },
+      {
+        name: "Антон Ельчин",
+      },
+      {
+        name: "Джастин Тимберлейк",
+      },
+      {
+        name: "Бен Фостер",
+      },
+      {
+        name: "Шон Хэтоси",
+      },
+      {
+        name: "Брюс Уиллис",
+      },
+      {
+        name: "Шэрон Стоун",
+      },
+      {
+        name: "Оливия Уайлд",
+      },
+      {
+        name: "Аманда Сайфред",
+      },
+    ],
+    description:
+      "Дилеры похищают брата должника своего босса, но это больше похоже на веселую игру, от которой жертва в восторге.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "биография",
+      },
+    ],
+    screenshots: 18,
+  }, // альфа дог
+  {
     release: new Date("2021-12-25"),
     publication: new Date("2023-10-28"),
     format: "фильм",
@@ -949,6 +1006,48 @@ const films = [
     screenshots: 30,
   }, // бешеный бык
   {
+    release: new Date("2017-09-29"),
+    publication: new Date("2023-05-05"),
+    format: "фильм",
+    grade: "C",
+    title: "Битва полов",
+    original: "Battle of the Sexes",
+    kinopoisk: "https://www.kinopoisk.ru/film/928805/",
+    director: [
+      {
+        name: "Джонатан Дэйтон",
+      },
+      {
+        name: "Валери Фэрис",
+      },
+    ],
+    cast: [
+      {
+        name: "Эмма Стоун",
+      },
+      {
+        name: "Стив Карелл",
+      },
+      {
+        name: "Андреа Райзборо",
+      },
+    ],
+    description:
+      "История теннисного матча 1973 года между первой ракеткой мира Билли Джин Кинг и экс-чемпионом Бобби Риггсом.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "биография",
+      },
+      {
+        genre: "спорт",
+      },
+    ],
+    screenshots: 17,
+  }, // битва полов
+  {
     release: new Date("2022-09-16"),
     publication: new Date("2022-10-03"),
     format: "фильм",
@@ -1437,7 +1536,7 @@ const films = [
     release: new Date("2007-10-26"),
     publication: new Date("2020-04-06"),
     format: "фильм",
-    grade: "B",
+    grade: "C",
     title: "Влюбиться в невесту брата",
     original: "Dan in Real Life",
     kinopoisk: "https://www.kinopoisk.ru/film/196661/",
@@ -1905,6 +2004,45 @@ const films = [
     ],
     screenshots: 14,
   }, // дело коллини
+  {
+    release: new Date("1996-12-11"),
+    publication: new Date("2022-01-27"),
+    format: "фильм",
+    grade: "C",
+    title: "Джерри Магуайер",
+    original: "Jerry Maguire",
+    kinopoisk: "https://www.kinopoisk.ru/film/4561/",
+    director: [
+      {
+        name: "Кэмерон Кроу",
+      },
+    ],
+    cast: [
+      {
+        name: "Том Круз",
+      },
+      {
+        name: "Рене Зеллвегер",
+      },
+      {
+        name: "Кьюба Гудинг мл.",
+      },
+      {
+        name: "Келли Престон",
+      },
+    ],
+    description:
+      "После увольнения за критику начальства Джерри Магуайер решает создать собственную фирму.",
+    genres: [
+      {
+        genre: "спорт",
+      },
+      {
+        genre: "мелодрама",
+      },
+    ],
+    screenshots: 15,
+  }, // джерри магуайер
   {
     release: new Date("2024-09-27"),
     publication: new Date("2024-10-27"),
@@ -2472,6 +2610,49 @@ const films = [
     ],
     screenshots: 52,
   }, // казино рояль
+  {
+    release: new Date("2023-11-10"),
+    publication: new Date("2024-01-29"),
+    format: "фильм",
+    grade: "D",
+    title: "Капитан Марвел 2",
+    original: "The Marvels",
+    kinopoisk: "https://www.kinopoisk.ru/film/1287544/",
+    director: [
+      {
+        name: "Ниа ДаКоста",
+      },
+    ],
+    cast: [
+      {
+        name: "Бри Ларсон",
+      },
+      {
+        name: "Тейона Паррис",
+      },
+      {
+        name: "Иман Веллани",
+      },
+      {
+        name: "Сэмюэл Л. Джексон",
+      },
+      {
+        name: "Зави Эштон",
+      },
+    ],
+    description:
+      "Кэрол Дэнверс объединила свои силы с Камалой Хан и Моникой Рамбо для спасения вселенной.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "приключения",
+      },
+      { genre: "супергероика" },
+    ],
+    screenshots: 13,
+  }, // капитан марвел 2
   {
     release: new Date("1942-11-26"),
     publication: new Date("2024-08-10"),
@@ -5090,6 +5271,48 @@ const films = [
     screenshots: 89,
   }, // мистер и миссис смит
   {
+    release: new Date("2021-04-23"),
+    publication: new Date("2022-01-23"),
+    format: "фильм",
+    grade: "A",
+    title: "Митчеллы против машин",
+    original: "The Mitchells vs the Machines",
+    kinopoisk: "https://www.kinopoisk.ru/film/1146303/",
+    director: [
+      {
+        name: "Майкл Рианда",
+      },
+      {
+        name: "Джефф Роу",
+      },
+    ],
+    cast: [
+      {
+        name: "Эбби Джейкобсон",
+      },
+      {
+        name: "Дэнни Макбрайд",
+      },
+      {
+        name: "Майя Рудольф",
+      },
+      {
+        name: "Эрик Андре",
+      },
+      {
+        name: "Оливия Колман",
+      },
+    ],
+    description:
+      "Семья попадает в апокалипсис роботов и становится последней надеждой человечества.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 45,
+  }, // митчеллы против машин
+  {
     release: new Date("2022-11-04"),
     publication: new Date("2022-11-08"),
     format: "фильм",
@@ -5942,6 +6165,45 @@ const films = [
     ],
     screenshots: 45,
   }, // ничегошеньки
+  {
+    release: new Date("2007-04-04"),
+    publication: new Date("2023-12-24"),
+    format: "фильм",
+    grade: "D",
+    title: "Ну что, приехали: Ремонт",
+    original: "Are We Done Yet?",
+    kinopoisk: "https://www.kinopoisk.ru/film/102247/",
+    director: [
+      {
+        name: "Стив Карр",
+      },
+    ],
+    cast: [
+      {
+        name: "Айс Кьюб",
+      },
+      {
+        name: "Ниа Лонг",
+      },
+      {
+        name: "Джон К. Макгинли",
+      },
+      {
+        name: "Алейша Аллен",
+      },
+      {
+        name: "Филип Болден",
+      },
+    ],
+    description:
+      "Супруги Ник и Сюзанна с детьми переезжают в пригород за лучшей жизнью, но их планы на дом мечты рушит эксцентричный подрядчик.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 15,
+  }, // ну что, приехали: ремонт
   {
     release: new Date("2000-05-13"),
     publication: new Date("2024-08-14"),
@@ -8317,6 +8579,49 @@ const films = [
     screenshots: 35,
   }, // рука бога
   {
+    release: new Date("2021-07-15"),
+    publication: new Date("2022-01-31"),
+    format: "сериал",
+    season: "мини–сериал",
+    grade: "C",
+    title: "Северные воды",
+    original: "The North Water",
+    kinopoisk: "https://www.kinopoisk.ru/series/1263067/",
+    director: [
+      {
+        name: "Эндрю Хэй",
+      },
+    ],
+    cast: [
+      {
+        name: "Джек О’Коннелл",
+      },
+      {
+        name: "Колин Фаррелл",
+      },
+      {
+        name: "Сэм Спруэлл",
+      },
+      {
+        name: "Роланд Мёллер",
+      },
+    ],
+    description:
+      "Бывший военный врач находит работу на китобойном судне, где его стремление к искуплению оборачивается борьбой за выживание.",
+    genres: [
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "детектив",
+      },
+    ],
+    screenshots: 23,
+  }, // северные воды
+  {
     release: new Date("2009-12-08"),
     publication: new Date("2022-03-24"),
     format: "фильм",
@@ -9509,6 +9814,45 @@ const films = [
     screenshots: 29,
   }, // сорвиголова 1
   {
+    release: new Date("2010-10-01"),
+    publication: new Date("2022-01-26"),
+    format: "фильм",
+    grade: "A+",
+    title: "Социальная сеть",
+    original: "The Social Network",
+    kinopoisk: "https://www.kinopoisk.ru/film/427198/",
+    director: [
+      {
+        name: "Дэвид Финчер",
+      },
+    ],
+    cast: [
+      {
+        name: "Джесси Айзенберг",
+      },
+      {
+        name: "Эндрю Гарфилд",
+      },
+      {
+        name: "Джастин Тимберлейк",
+      },
+      {
+        name: "Арми Хаммер",
+      },
+    ],
+    description:
+      "Как нелюдимый зануда из Гарварда создал самую популярную социальную сеть.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "биография",
+      },
+    ],
+    screenshots: 27,
+  }, // социальная сеть
+  {
     release: new Date("2007-11-21"),
     publication: new Date("2023-05-30"),
     format: "фильм",
@@ -9639,6 +9983,47 @@ const films = [
     ],
     screenshots: 17,
   }, // стук в хижине
+  {
+    release: new Date("2006-04-07"),
+    publication: new Date("2022-01-26"),
+    format: "фильм",
+    grade: "A+",
+    title: "Счастливое число Слевина",
+    original: "Lucky Number Slevin",
+    kinopoisk: "https://www.kinopoisk.ru/film/86326/",
+    director: [
+      {
+        name: "Пол Макгиган",
+      },
+    ],
+    cast: [
+      {
+        name: "Джош Хартнетт",
+      },
+      {
+        name: "Люси Лью",
+      },
+      {
+        name: "Брюс Уиллис",
+      },
+      {
+        name: "Морган Фриман",
+      },
+      {
+        name: "Бен Кингсли",
+      },
+      {
+        name: "Стэнли Туччи",
+      },
+    ],
+    description: "Гангстеры втягивают обычного парня в войну кланов.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 22,
+  }, // счастливое число слевина
   {
     release: new Date("2021-11-24"),
     publication: new Date("2022-03-08"),
@@ -10330,6 +10715,9 @@ const films = [
       },
       {
         name: "Рича Мурджани",
+      },
+      {
+        name: "Сэм Спруэлл",
       },
     ],
     description:
@@ -12179,14 +12567,14 @@ function addCard(item) {
           for (let i = 0; i < item.genres.length; i++) {
             if (
               item.genres[i].genre ==
-              descriptionTitle.textContent.toLowerCase() &&
+                descriptionTitle.textContent.toLowerCase() &&
               element.textContent.toLowerCase() == item.format
             ) {
               openCard();
               break;
             } else if (
               descriptionTitle.textContent ==
-              item.release.toString().slice(11, 15) &&
+                item.release.toString().slice(11, 15) &&
               element.textContent.toLowerCase() == item.format
             ) {
               openCard();
@@ -12410,7 +12798,7 @@ function addCard(item) {
     const if_there_is_a_continuation_and_it_matches =
       item.continuation != null &&
       year_in_film_page.textContent ==
-      item.continuation.toString().slice(11, 15);
+        item.continuation.toString().slice(11, 15);
 
     if (
       year_in_film_page.textContent == item.release.toString().slice(11, 15) ||
@@ -12429,11 +12817,11 @@ function addCard(item) {
     const if_there_is_a_continuation_and_it_matches =
       item.continuation != null &&
       continuation_year_in_film_page.textContent ==
-      item.continuation.toString().slice(11, 15);
+        item.continuation.toString().slice(11, 15);
 
     if (
       continuation_year_in_film_page.textContent ==
-      item.release.toString().slice(11, 15) ||
+        item.release.toString().slice(11, 15) ||
       if_there_is_a_continuation_and_it_matches == true
     ) {
       sorting_by_year(continuation_year_in_film_page);
@@ -13142,12 +13530,12 @@ function total_number_of_films_and_serials() {
 
   console.log(
     "Публикаций всего: " +
-    clonedArray.length +
-    ", из которых: фильмов — " +
-    number_of_films.length +
-    ", сериалов — " +
-    number_of_serials.length +
-    "."
+      clonedArray.length +
+      ", из которых: фильмов — " +
+      number_of_films.length +
+      ", сериалов — " +
+      number_of_serials.length +
+      "."
   );
 }
 
