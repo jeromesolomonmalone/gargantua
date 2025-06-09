@@ -91,8 +91,7 @@ const films = [
     grade: "B",
     title: "Air: Большой прыжок",
     original: "Air",
-    kinopoisk:
-      "https://www.kinopoisk.ru/film/5000997/?utm_referrer=www.kinopoisk.ru",
+    kinopoisk: "https://www.kinopoisk.ru/",
     director: [
       {
         name: "Бен Аффлек",
@@ -130,6 +129,48 @@ const films = [
     ],
     screenshots: 19,
   }, // air: большой прыжок
+  {
+    release: new Date("2021-08-13"),
+    publication: new Date("2022-01-18"),
+    format: "фильм",
+    grade: "A",
+    title: "CODA: Ребенок глухих родителей",
+    original: "CODA",
+    kinopoisk: "https://www.kinopoisk.ru/film/1311466/",
+    director: [
+      {
+        name: "Шан Хейдер",
+      },
+    ],
+    cast: [
+      {
+        name: "Эмилия Джонс",
+      },
+      {
+        name: "Эухенио Дербес",
+      },
+      {
+        name: "Фердия Уолш-Пило",
+      },
+      {
+        name: "Трой Коцур",
+      },
+      {
+        name: "Марли Мэтлин",
+      },
+      {
+        name: "Дэниэл Дюран",
+      },
+    ],
+    description:
+      "Руби - единственный слышащий член семьи. Девушка хочет стать певицей. Она стоит перед выбором: семейный долг или мечта всей жизни.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 17,
+  }, // coda
   {
     release: new Date("2024-04-10"),
     publication: new Date("2024-04-29"),
@@ -896,6 +937,42 @@ const films = [
     ],
     screenshots: 42,
   }, // бедные несчастные
+  {
+    release: new Date("1998-02-20"),
+    publication: new Date("2022-01-19"),
+    format: "фильм",
+    grade: "C",
+    title: "Без чувств",
+    original: "Senseless",
+    kinopoisk: "https://www.kinopoisk.ru/film/5084/",
+    director: [
+      {
+        name: "Пенелопа Сфирис",
+      },
+    ],
+    cast: [
+      {
+        name: "Марлон Уайанс",
+      },
+      {
+        name: "Дэвид Спейд",
+      },
+      {
+        name: "Мэттью Лиллард",
+      },
+      {
+        name: "Тамара Тейлор",
+      },
+    ],
+    description:
+      "Бедный студент участвует в научном эксперименте, чтобы подзаработать, но получает неожиданные побочные эффекты.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 27,
+  }, // без чувств
   {
     release: new Date("1992-03-27"),
     publication: new Date("2023-01-29"),
@@ -1670,6 +1747,39 @@ const films = [
     screenshots: 45,
   }, // волк с уолл-стрит
   {
+    release: new Date("2010-11-05"),
+    publication: new Date("2022-01-16"),
+    format: "фильм",
+    grade: "love",
+    title: "Впритык",
+    original: "Due Date",
+    kinopoisk: "https://www.kinopoisk.ru/film/464282/",
+    director: [
+      {
+        name: "Тодд Филлипс",
+      },
+    ],
+    cast: [
+      {
+        name: "Роберт Дауни мл.",
+      },
+      {
+        name: "Зак Галифианакис",
+      },
+      {
+        name: "Мишель Монахэн",
+      },
+    ],
+    description:
+      "Питер Хайман, вынужден ехать автостопом вместе с начинающим актером Итаном Трамбле, чтобы прибыть ко времени рождения своего ребенка.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 27,
+  }, // впритык
+  {
     release: new Date("2023-11-03"),
     publication: new Date("2023-12-09"),
     format: "сериал",
@@ -2004,6 +2114,53 @@ const films = [
     ],
     screenshots: 14,
   }, // дело коллини
+  {
+    release: new Date("2017-10-20"),
+    publication: new Date("2019-09-18"),
+    format: "фильм",
+    grade: "A+",
+    title: "Дело храбрых",
+    original: "Only the Brave",
+    kinopoisk: "https://www.kinopoisk.ru/film/965754/",
+    director: [
+      {
+        name: "Джозеф Косински",
+      },
+    ],
+    cast: [
+      {
+        name: "Джош Бролин",
+      },
+      {
+        name: "Майлз Теллер",
+      },
+      {
+        name: "Джефф Бриджес",
+      },
+      {
+        name: "Дженнифер Коннелли",
+      },
+      {
+        name: "Джеймс Бэдж Дейл",
+      },
+      {
+        name: "Тейлор Китч",
+      },
+      {
+        name: "Алекс Расселл",
+      },
+    ],
+    description: "Пожарные пытаются остановить стихию в лесах Аризоны.",
+    genres: [
+      {
+        genre: "биография",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 17,
+  }, // дело храбрых
   {
     release: new Date("1996-12-11"),
     publication: new Date("2022-01-27"),
@@ -4623,6 +4780,48 @@ const films = [
     screenshots: 14,
   }, // маленькая рыбка
   {
+    release: new Date("2013-05-23"),
+    publication: new Date("2022-01-15"),
+    format: "фильм",
+    grade: "B",
+    title: "Мальчишник: Часть III",
+    original: "The Hangover Part III",
+    kinopoisk: "https://www.kinopoisk.ru/film/600847/",
+    director: [
+      {
+        name: "Тодд Филлипс",
+      },
+    ],
+    cast: [
+      {
+        name: "Брэдли Купер",
+      },
+      {
+        name: "Эд Хелмс",
+      },
+      {
+        name: "Зак Галифианакис",
+      },
+      {
+        name: "Кен Жонг",
+      },
+      {
+        name: "Джон Гудман",
+      },
+      {
+        name: "Джастин Барта",
+      },
+    ],
+    description:
+      "Гангстер похищает члена Волчьей стаи и требует найти сбежавшего из тюрьмы мистера Чоу.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 0,
+  }, // мальчишник 3
+  {
     release: new Date("2021-05-23"),
     publication: new Date("2022-03-12"),
     format: "сериал",
@@ -4764,6 +4963,36 @@ const films = [
     ],
     screenshots: 22,
   }, // медведь 1
+  {
+    release: new Date("2019-09-20"),
+    publication: new Date("2022-01-21"),
+    format: "фильм",
+    grade: "C",
+    title: "Между двумя папоротниками",
+    original: "Between Two Ferns: The Movie",
+    kinopoisk: "https://www.kinopoisk.ru/film/1220126/",
+    director: [
+      {
+        name: "Скотт Окерман",
+      },
+    ],
+    cast: [
+      {
+        name: "Зак Галифианакис",
+      },
+      {
+        name: "Уилл Феррелл",
+      },
+    ],
+    description:
+      "Заку Галифианакису придется отправиться со своей съемочной командой в путешествие, чтобы взять серию интервью у знаменитостей первой величины.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 45,
+  }, // между двумя папоротниками
   {
     release: new Date("2001-03-02"),
     publication: new Date("2023-07-30"),
@@ -10305,6 +10534,51 @@ const films = [
     ],
     screenshots: 15,
   }, // тор: любовь и гром
+  {
+    release: new Date("2021-12-25"),
+    publication: new Date("2022-01-16"),
+    format: "фильм",
+    grade: "B",
+    title: "Трагедия Макбета",
+    original: "The Tragedy of Macbeth",
+    kinopoisk: "https://www.kinopoisk.ru/film/1253387/",
+    director: [
+      {
+        name: "Джоэл Коэн",
+      },
+    ],
+    cast: [
+      {
+        name: "Дензел Вашингтон",
+      },
+      {
+        name: "Фрэнсис Макдорманд",
+      },
+      {
+        name: "Алекс Хэсселл",
+      },
+      {
+        name: "Брендан Глисон",
+      },
+      {
+        name: "Кори Хокинс",
+      },
+    ],
+    description:
+      "Ведьмы предсказывают шотландскому лорду королевский престол, а его жена одобряет планы захвата власти.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "чёрно-белое",
+      },
+    ],
+    screenshots: 54,
+  }, // трагедия макбета
   {
     release: new Date("2024-01-11"),
     publication: new Date("2024-03-28"),
