@@ -7489,7 +7489,7 @@ const films = [
         genre: "спорт",
       },
     ],
-    screenshots: 66,
+    screenshots: 67,
   }, // претенденты
   {
     release: new Date("2020-03-05"),
