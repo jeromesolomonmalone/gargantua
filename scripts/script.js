@@ -5050,7 +5050,7 @@ const films = [
         genre: "комедия",
       },
     ],
-    screenshots: 31,
+    screenshots: 18,
   }, // мальчишник
   {
     release: new Date("2021-05-23"),
