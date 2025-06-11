@@ -1469,6 +1469,42 @@ const films = [
     screenshots: 11,
   }, // в диких условиях
   {
+    release: new Date("2006-12-15"),
+    publication: new Date("2020-01-27"),
+    format: "фильм",
+    grade: "A",
+    title: "В погоне за счастьем",
+    original: "The Pursuit of Happyness",
+    kinopoisk: "https://www.kinopoisk.ru/film/104938/",
+    director: [
+      {
+        name: "Габриэле Муччино",
+      },
+    ],
+    cast: [
+      {
+        name: "Уилл Смит",
+      },
+      {
+        name: "Джейден Смит",
+      },
+      {
+        name: "Тандиве Ньютон",
+      },
+    ],
+    description:
+      "Отец-одиночка Крис Гарднер приложил максимум усилий, чтобы обеспечить счастливое детство своему пятилетнему сыну.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "биография",
+      },
+    ],
+    screenshots: 19,
+  }, // в погоне за счастьем
+  {
     release: new Date("2022-12-23"),
     publication: new Date("2023-02-05"),
     format: "фильм",
@@ -2084,6 +2120,78 @@ const films = [
     ],
     screenshots: 31,
   }, // грызня 1
+  {
+    release: new Date("2004-12-10"),
+    publication: new Date("2020-01-08"),
+    format: "фильм",
+    grade: "love",
+    title: "Двенадцать друзей Оушена",
+    original: "Ocean's Twelve",
+    kinopoisk: "https://www.kinopoisk.ru/film/18294/",
+    director: [
+      {
+        name: "Стивен Содерберг",
+      },
+    ],
+    cast: [
+      {
+        name: "Джордж Клуни",
+      },
+      {
+        name: "Брэд Питт",
+      },
+      {
+        name: "Мэтт Дэймон",
+      },
+      {
+        name: "Кэтрин Зета-Джонс",
+      },
+      {
+        name: "Джулия Робертс",
+      },
+      {
+        name: "Дон Чидл",
+      },
+      {
+        name: "Венсан Кассель",
+      },
+      {
+        name: "Карл Райнер",
+      },
+      {
+        name: "Эллиотт Гулд",
+      },
+      {
+        name: "Скотт Каан",
+      },
+      {
+        name: "Кейси Аффлек",
+      },
+      {
+        name: "Берни Мак",
+      },
+      {
+        name: "Эдди Джемисон",
+      },
+      {
+        name: "Цинь Шаобо",
+      },
+      {
+        name: "Энди Гарсиа",
+      },
+    ],
+    description:
+      "Денни Оушен с новой бандой планирует ограбления в Европе. За ними охотится владелец казино Терри Бенедикт, которого Оушен ранее ограбил в Лас-Вегасе.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 29,
+  }, // двенадцать друзей оушена
   {
     release: new Date("2019-04-18"),
     publication: new Date("2024-03-04"),
@@ -2721,6 +2829,48 @@ const films = [
     ],
     screenshots: 13,
   }, // зверопой 2
+  {
+    release: new Date("2007-12-07"),
+    publication: new Date("2019-09-10"),
+    format: "фильм",
+    grade: "B",
+    title: "Искупление",
+    original: "Atonement",
+    kinopoisk: "https://www.kinopoisk.ru/film/255611/",
+    director: [
+      {
+        name: "Джо Райт",
+      },
+    ],
+    cast: [
+      {
+        name: "Кира Найтли",
+      },
+      {
+        name: "Джеймс Макэвой",
+      },
+      {
+        name: "Сирша Ронан",
+      },
+      {
+        name: "Бенедикт Камбербэтч",
+      },
+      {
+        name: "Джуно Темпл",
+      },
+    ],
+    description:
+      "13-летняя писательница Брайони Таллис рушит судьбы, ложно обвинив любовника сестры в преступлении.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "мелодрама",
+      },
+    ],
+    screenshots: 18,
+  }, // искупление
   {
     release: new Date("2006-11-17"),
     publication: new Date("2022-09-20"),
@@ -4819,8 +4969,89 @@ const films = [
         genre: "комедия",
       },
     ],
-    screenshots: 0,
+    screenshots: 23,
   }, // мальчишник 3
+  {
+    release: new Date("2011-05-26"),
+    publication: new Date("2022-01-13"),
+    format: "фильм",
+    grade: "A",
+    title: "Мальчишник 2: Из Вегаса в Бангкок",
+    original: "The Hangover Part II",
+    kinopoisk: "https://www.kinopoisk.ru/film/455338/",
+    director: [
+      {
+        name: "Тодд Филлипс",
+      },
+    ],
+    cast: [
+      {
+        name: "Брэдли Купер",
+      },
+      {
+        name: "Эд Хелмс",
+      },
+      {
+        name: "Зак Галифианакис",
+      },
+      {
+        name: "Кен Жонг",
+      },
+      {
+        name: "Джастин Барта",
+      },
+    ],
+    description:
+      "После мальчишника в Лас-Вегасе друзья летят в Таиланд на свадьбу Стью, но его идея скромного предсвадебного бранча заканчивается провалом.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 18,
+  }, // мальчишник 2
+  {
+    release: new Date("2009-06-05"),
+    publication: new Date("2021-12-27"),
+    format: "фильм",
+    grade: "love",
+    title: "Мальчишник в Вегасе",
+    original: "The Hangover",
+    kinopoisk: "https://www.kinopoisk.ru/film/426004/",
+    director: [
+      {
+        name: "Тодд Филлипс",
+      },
+    ],
+    cast: [
+      {
+        name: "Брэдли Купер",
+      },
+      {
+        name: "Эд Хелмс",
+      },
+      {
+        name: "Зак Галифианакис",
+      },
+      {
+        name: "Джастин Барта",
+      },
+      {
+        name: "Кен Жонг",
+      },
+      {
+        name: "Майк Тайсон",
+      },
+    ],
+    description:
+      "После мальчишника в Лас-Вегасе друзья не помнят ничего, жениха нет, нужно найти его к свадьбе.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 31,
+  }, // мальчишник
   {
     release: new Date("2021-05-23"),
     publication: new Date("2022-03-12"),
@@ -6506,6 +6737,72 @@ const films = [
     ],
     screenshots: 24,
   }, // облачно возможны осадки в виде фрикаделек
+  {
+    release: new Date("2001-12-07"),
+    publication: new Date("2020-01-07"),
+    format: "фильм",
+    grade: "love",
+    title: "Одиннадцать друзей Оушена",
+    original: "Ocean's Eleven",
+    kinopoisk: "https://www.kinopoisk.ru/film/770/",
+    director: [
+      {
+        name: "Стивен Содерберг",
+      },
+    ],
+    cast: [
+      {
+        name: "Джордж Клуни",
+      },
+      {
+        name: "Брэд Питт",
+      },
+      {
+        name: "Мэтт Дэймон",
+      },
+      {
+        name: "Джулия Робертс",
+      },
+      {
+        name: "Энди Гарсиа",
+      },
+      {
+        name: "Дон Чидл",
+      },
+      {
+        name: "Карл Райнер",
+      },
+      {
+        name: "Эллиотт Гулд",
+      },
+      {
+        name: "Скотт Каан",
+      },
+      {
+        name: "Кейси Аффлек",
+      },
+      {
+        name: "Берни Мак",
+      },
+      {
+        name: "Эдди Джемисон",
+      },
+      {
+        name: "Цинь Шаобо",
+      },
+    ],
+    description:
+      "После выхода из тюрьмы, опытный преступник Дэнни Оушен решается на новое смелое ограбление, собирая команду из своих друзей.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 15,
+  }, // одиннадцать друзей оушена
   {
     release: new Date("2024-09-01"),
     publication: new Date("2024-10-01"),
@@ -9658,6 +9955,64 @@ const films = [
     screenshots: 15,
   }, // смерч 2
   {
+    release: new Date("2021-11-24"),
+    publication: new Date("2022-01-03"),
+    format: "сериал",
+    season: "мини–сериал",
+    grade: "A",
+    title: "Соколиный глаз",
+    original: "Hawkeye",
+    kinopoisk: "https://www.kinopoisk.ru/series/1254069/",
+    director: [
+      {
+        name: "Джонатан Игла",
+      },
+      {
+        name: "Риз Томас",
+      },
+    ],
+    cast: [
+      {
+        name: "Джереми Реннер",
+      },
+      {
+        name: "Хейли Стайнфелд",
+      },
+      {
+        name: "Тони Далтон",
+      },
+      {
+        name: "Вера Фармига",
+      },
+      {
+        name: "Линда Карделлини",
+      },
+      {
+        name: "Флоренс Пью",
+      },
+    ],
+    description:
+      "Клинт Бартон с Кейт Бишоп расследуют заговор из его прошлого, чтобы успеть домой на Рождество.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "супергероика",
+      },
+      {
+        genre: "новогодний",
+      },
+    ],
+    screenshots: 27,
+  }, // соколиный глаз
+  {
     release: new Date("2015-03-17"),
     publication: new Date("2023-12-03"),
     format: "сериал",
@@ -10042,6 +10397,45 @@ const films = [
     ],
     screenshots: 29,
   }, // сорвиголова 1
+  {
+    release: new Date("2004-02-18"),
+    publication: new Date("2021-03-23"),
+    format: "фильм",
+    grade: "A+",
+    title: "Соседка",
+    original: "The Girl Next Door",
+    kinopoisk: "https://www.kinopoisk.ru/film/6293/",
+    director: [
+      {
+        name: "Люк Гринфилд",
+      },
+    ],
+    cast: [
+      {
+        name: "Эмиль Хирш",
+      },
+      {
+        name: "Элиша Катберт",
+      },
+      {
+        name: "Тимоти Олифант",
+      },
+      {
+        name: "Пол Дано",
+      },
+    ],
+    description:
+      "Мечты молодого человека сбываются, когда бывшая порноактриса переезжает в соседний дом.",
+    genres: [
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 30,
+  }, // соседка
   {
     release: new Date("2010-10-01"),
     publication: new Date("2022-01-26"),
@@ -10641,6 +11035,75 @@ const films = [
     ],
     screenshots: 36,
   }, // треугольник печали
+  {
+    release: new Date("2007-06-08"),
+    publication: new Date("2020-01-08"),
+    format: "фильм",
+    grade: "love",
+    title: "Тринадцать друзей Оушена",
+    original: "Ocean's Thirteen",
+    kinopoisk: "https://www.kinopoisk.ru/film/251879/",
+    director: [
+      {
+        name: "Стивен Содерберг",
+      },
+    ],
+    cast: [
+      {
+        name: "Джордж Клуни",
+      },
+      {
+        name: "Брэд Питт",
+      },
+      {
+        name: "Мэтт Дэймон",
+      },
+      {
+        name: "Аль Пачино",
+      },
+      {
+        name: "Дон Чидл",
+      },
+      {
+        name: "Эллен Баркин",
+      },
+      {
+        name: "Карл Райнер",
+      },
+      {
+        name: "Эллиотт Гулд",
+      },
+      {
+        name: "Скотт Каан",
+      },
+      {
+        name: "Кейси Аффлек",
+      },
+      {
+        name: "Берни Мак",
+      },
+      {
+        name: "Эдди Джемисон",
+      },
+      {
+        name: "Цинь Шаобо",
+      },
+      {
+        name: "Энди Гарсиа",
+      },
+    ],
+    description:
+      "Дэнни Оушен собирает команду для ограбления после того, как владелец казино Уилли Бэнк подставил его друга Рубена.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 11,
+  }, // тринадцать друзей оушена
   {
     release: new Date("2023-02-09"),
     publication: new Date("2023-04-14"),
@@ -11361,6 +11824,67 @@ const films = [
     ],
     screenshots: 15,
   }, // форсаж
+  {
+    release: new Date("2021-10-29"),
+    publication: new Date("2022-01-04"),
+    format: "фильм",
+    grade: "A",
+    title:
+      "Французский вестник. Приложение к газете «Либерти. Канзас ивнинг сан»",
+    original: "The French Dispatch of the Liberty, Kansas Evening Sun",
+    kinopoisk: "https://www.kinopoisk.ru/film/1211076/",
+    director: [
+      {
+        name: "Уэс Андерсон",
+      },
+    ],
+    cast: [
+      {
+        name: "Билл Мюррей",
+      },
+      {
+        name: "Бенисио Дель Торо",
+      },
+      {
+        name: "Леа Сейду",
+      },
+      {
+        name: "Эдриан Броуди",
+      },
+      {
+        name: "Фрэнсис Макдорманд",
+      },
+      {
+        name: "Тимоти Шаламе",
+      },
+      {
+        name: "Джеффри Райт",
+      },
+      {
+        name: "Оуэн Уилсон",
+      },
+      {
+        name: "Матьё Амальрик",
+      },
+      {
+        name: "Эдвард Нортон",
+      },
+      {
+        name: "Сирша Ронан",
+      },
+    ],
+    description:
+      "Собрание историй, опубликованных на страницах последнего выпуска американского журнала, который выходил в свет в вымышленном французском городе в середине XX века.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 78,
+  }, // французский вестник
   {
     release: new Date("2023-07-24"),
     publication: new Date("2023-10-15"),
