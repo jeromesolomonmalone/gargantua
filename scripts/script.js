@@ -2278,7 +2278,7 @@ const films = [
         genre: "криминал",
       },
     ],
-    screenshots: 15,
+    screenshots: 11,
   }, // девушка с татуировкой дракона
   {
     release: new Date("2019-04-18"),
@@ -3010,7 +3010,7 @@ const films = [
         genre: "драма",
       },
     ],
-    screenshots: 15,
+    screenshots: 14,
   }, // знакомьтесь, джо блэк
   {
     release: new Date("2007-12-07"),
@@ -7431,7 +7431,7 @@ const films = [
         genre: "комедия",
       },
     ],
-    screenshots: 15,
+    screenshots: 13,
   }, // одиннадцать друзей оушена
   {
     release: new Date("2024-09-01"),
@@ -7874,7 +7874,7 @@ const films = [
         genre: "приключения",
       },
     ],
-    screenshots: 17,
+    screenshots: 15,
   }, // охота на дикарей
   {
     release: new Date("2014-11-14"),
@@ -9420,7 +9420,7 @@ const films = [
         genre: "драма",
       },
     ],
-    screenshots: 15,
+    screenshots: 13,
   }, // разрушение
   {
     release: new Date("2009-08-13"),
@@ -11877,7 +11877,7 @@ const films = [
         genre: "криминал",
       },
     ],
-    screenshots: 11,
+    screenshots: 10,
   }, // тринадцать друзей оушена
   {
     release: new Date("2023-02-09"),
