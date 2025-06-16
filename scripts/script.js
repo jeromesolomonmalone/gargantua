@@ -1538,6 +1538,52 @@ const films = [
     screenshots: 40,
   }, // вавилон
   {
+    release: new Date("2021-01-15"),
+    publication: new Date("2021-03-11"),
+    format: "сериал",
+    season: "мини–сериал",
+    grade: "A",
+    title: "Ванда/Вижн",
+    original: "WandaVision",
+    kinopoisk: "https://www.kinopoisk.ru/series/1203040/",
+    director: [
+      {
+        name: "Жаклин Шеффер",
+      },
+    ],
+    cast: [
+      {
+        name: "Элизабет Олсен",
+      },
+      {
+        name: "Пол Беттани",
+      },
+      {
+        name: "Кэтрин Хан",
+      },
+      {
+        name: "Тейона Паррис",
+      },
+      {
+        name: "Рэндалл Пак",
+      },
+    ],
+    description:
+      "Ванда и Вижн — молодожены в городке Вествью. Их идеальная жизнь постепенно начинает рушиться.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "фэнтези",
+      },
+    ],
+    screenshots: 21,
+  }, // ванда вижн
+  {
     release: new Date("2023-09-04"),
     publication: new Date("2024-08-19"),
     format: "фильм",
@@ -1986,7 +2032,7 @@ const films = [
       },
     ],
     description:
-      "Джереми, Ричард и Джеймс путешествуют по всему миру, создавая искрометные обзоры новых интересных автомобилей от разных производителей",
+      "Джереми, Ричард и Джеймс путешествуют по всему миру, создавая искрометные обзоры новых интересных автомобилей от разных производителей.",
     genres: [
       {
         genre: "комедия",
@@ -2026,7 +2072,7 @@ const films = [
       },
     ],
     description:
-      "Джереми, Ричард и Джеймс путешествуют по всему миру, создавая искрометные обзоры новых интересных автомобилей от разных производителей",
+      "Джереми, Ричард и Джеймс путешествуют по всему миру, создавая искрометные обзоры новых интересных автомобилей от разных производителей.",
     genres: [
       {
         genre: "комедия",
@@ -2066,7 +2112,7 @@ const films = [
       },
     ],
     description:
-      "Джереми, Ричард и Джеймс путешествуют по всему миру, создавая искрометные обзоры новых интересных автомобилей от разных производителей",
+      "Джереми, Ричард и Джеймс путешествуют по всему миру, создавая искрометные обзоры новых интересных автомобилей от разных производителей.",
     genres: [
       {
         genre: "комедия",
@@ -2192,6 +2238,48 @@ const films = [
     ],
     screenshots: 29,
   }, // двенадцать друзей оушена
+  {
+    release: new Date("2011-12-20"),
+    publication: new Date("2019-07-15"),
+    format: "фильм",
+    grade: "A+",
+    title: "Девушка с татуировкой дракона",
+    original: "The Girl with the Dragon Tattoo",
+    kinopoisk: "https://www.kinopoisk.ru/film/491724/",
+    director: [
+      {
+        name: "Дэвид Финчер",
+      },
+    ],
+    cast: [
+      {
+        name: "Дэниэл Крэйг",
+      },
+      {
+        name: "Руни Мара",
+      },
+      {
+        name: "Кристофер Пламмер",
+      },
+      {
+        name: "Стеллан Скарсгард",
+      },
+    ],
+    description:
+      "Журналист и молодая хакерша занимаются расследованием убийства, которое произошло сорок лет назад.",
+    genres: [
+      {
+        genre: "детектив",
+      },
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 15,
+  }, // девушка с татуировкой дракона
   {
     release: new Date("2019-04-18"),
     publication: new Date("2024-03-04"),
@@ -2580,8 +2668,7 @@ const films = [
     grade: "love",
     title: "Дюна: Часть вторая",
     original: "Dune: Part Two",
-    kinopoisk:
-      "https://www.kinopoisk.ru/film/4540126/?utm_referrer=www.kinopoisk.ru",
+    kinopoisk: "https://www.kinopoisk.ru/film/4540126/",
     director: [
       {
         name: "Дени Вильнёв",
@@ -2655,6 +2742,63 @@ const films = [
     ],
     screenshots: 47,
   }, // дюна
+  {
+    release: new Date("2017-07-21"),
+    publication: new Date("2019-07-27"),
+    format: "фильм",
+    grade: "A",
+    title: "Дюнкерк",
+    original: "Dunkirk",
+    kinopoisk: "https://www.kinopoisk.ru/film/931677/",
+    director: [
+      {
+        name: "Кристофер Нолан",
+      },
+    ],
+    cast: [
+      {
+        name: "Финн Уайтхед",
+      },
+      {
+        name: "Том Глинн-Карни",
+      },
+      {
+        name: "Джек Лауден",
+      },
+      {
+        name: "Гарри Стайлс",
+      },
+      {
+        name: "Анайрин Барнард",
+      },
+      {
+        name: "Барри Кеоган",
+      },
+      {
+        name: "Кеннет Брана",
+      },
+      {
+        name: "Киллиан Мерфи",
+      },
+      {
+        name: "Марк Райлэнс",
+      },
+      {
+        name: "Том Харди",
+      },
+    ],
+    description:
+      "Фильм расскажет историю чудесного спасения более трехсот тысяч солдат в ходе Дюнкеркской операции, имевшей место в начале Второй мировой войны.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "военный",
+      },
+    ],
+    screenshots: 18,
+  }, // дюнкерк
   {
     release: new Date("2022-12-23"),
     publication: new Date("2023-04-30"),
@@ -2830,6 +2974,45 @@ const films = [
     screenshots: 13,
   }, // зверопой 2
   {
+    release: new Date("1998-03-18"),
+    publication: new Date("2019-01-20"),
+    format: "фильм",
+    grade: "B",
+    title: "Знакомьтесь, Джо Блэк",
+    original: "Meet Joe Black",
+    kinopoisk: "https://www.kinopoisk.ru/film/5059/",
+    director: [
+      {
+        name: "Мартин Брест",
+      },
+    ],
+    cast: [
+      {
+        name: "Брэд Питт",
+      },
+      {
+        name: "Энтони Хопкинс",
+      },
+      {
+        name: "Клэр Форлани",
+      },
+    ],
+    description:
+      "Смерть в облике юноши просит магната показать ему жизнь людей.",
+    genres: [
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "фэнтези",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 15,
+  }, // знакомьтесь, джо блэк
+  {
     release: new Date("2007-12-07"),
     publication: new Date("2019-09-10"),
     format: "фильм",
@@ -2871,6 +3054,45 @@ const films = [
     ],
     screenshots: 18,
   }, // искупление
+  {
+    release: new Date("2012-06-22"),
+    publication: new Date("2020-04-01"),
+    format: "фильм",
+    grade: "B",
+    title: "Ищу друга на конец света",
+    original: "Seeking a Friend for the End of the World",
+    kinopoisk: "https://www.kinopoisk.ru/film/464573/",
+    director: [
+      {
+        name: "Лорин Скафария",
+      },
+    ],
+    cast: [
+      {
+        name: "Стив Карелл",
+      },
+      {
+        name: "Кира Найтли",
+      },
+    ],
+    description:
+      "К Земле несется астероид, а одинокий страховой агент разыскивает свою первую любовь.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 12,
+  }, // ищу друга на конец света
   {
     release: new Date("2006-11-17"),
     publication: new Date("2022-09-20"),
@@ -2917,6 +3139,288 @@ const films = [
     ],
     screenshots: 52,
   }, // казино рояль
+  {
+    release: new Date("2013-09-23"),
+    publication: new Date("2021-05-08"),
+    format: "сериал",
+    season: "9",
+    grade: "A",
+    title: "Как я встретил вашу маму",
+    original: "How I Met Your Mother",
+    kinopoisk: "https://www.kinopoisk.ru/series/401522/",
+    director: [
+      {
+        name: "Картер Бэйс",
+      },
+      {
+        name: "Крейг Томас",
+      },
+    ],
+    cast: [
+      {
+        name: "Джош Рэднор",
+      },
+      {
+        name: "Нил Патрик Харрис",
+      },
+      {
+        name: "Коби Смолдерс",
+      },
+      {
+        name: "Джейсон Сигел",
+      },
+      {
+        name: "Элисон Хэннигэн",
+      },
+      {
+        name: "Кристин Милиоти",
+      },
+    ],
+    description:
+      "Главный герой решает поделиться со своими детьми историей, как он познакомился с их мамой.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "ситком",
+      },
+    ],
+    screenshots: 17,
+  }, // как я встретил вашу маму 9
+  {
+    release: new Date("2012-09-24"),
+    publication: new Date("2021-04-28"),
+    format: "сериал",
+    season: "8",
+    grade: "A",
+    title: "Как я встретил вашу маму",
+    original: "How I Met Your Mother",
+    kinopoisk: "https://www.kinopoisk.ru/series/401522/",
+    director: [
+      {
+        name: "Картер Бэйс",
+      },
+      {
+        name: "Крейг Томас",
+      },
+    ],
+    cast: [
+      {
+        name: "Джош Рэднор",
+      },
+      {
+        name: "Нил Патрик Харрис",
+      },
+      {
+        name: "Коби Смолдерс",
+      },
+      {
+        name: "Джейсон Сигел",
+      },
+      {
+        name: "Элисон Хэннигэн",
+      },
+    ],
+    description:
+      "Главный герой решает поделиться со своими детьми историей, как он познакомился с их мамой.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "ситком",
+      },
+    ],
+    screenshots: 16,
+  }, // как я встретил вашу маму 8
+  {
+    release: new Date("2010-09-20"),
+    continuation: new Date("2011-09-19"),
+    publication: new Date("2021-04-26"),
+    format: "сериал",
+    season: "6-7",
+    grade: "A",
+    title: "Как я встретил вашу маму",
+    original: "How I Met Your Mother",
+    kinopoisk: "https://www.kinopoisk.ru/series/401522/",
+    director: [
+      {
+        name: "Картер Бэйс",
+      },
+      {
+        name: "Крейг Томас",
+      },
+    ],
+    cast: [
+      {
+        name: "Джош Рэднор",
+      },
+      {
+        name: "Нил Патрик Харрис",
+      },
+      {
+        name: "Коби Смолдерс",
+      },
+      {
+        name: "Джейсон Сигел",
+      },
+      {
+        name: "Элисон Хэннигэн",
+      },
+    ],
+    description:
+      "Главный герой решает поделиться со своими детьми историей, как он познакомился с их мамой.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "ситком",
+      },
+    ],
+    screenshots: 19,
+  }, // как я встретил вашу маму 6-7
+  {
+    release: new Date("2008-09-22"),
+    continuation: new Date("2009-09-21"),
+    publication: new Date("2021-04-15"),
+    format: "сериал",
+    season: "4-5",
+    grade: "A",
+    title: "Как я встретил вашу маму",
+    original: "How I Met Your Mother",
+    kinopoisk: "https://www.kinopoisk.ru/series/401522/",
+    director: [
+      {
+        name: "Картер Бэйс",
+      },
+      {
+        name: "Крейг Томас",
+      },
+    ],
+    cast: [
+      {
+        name: "Джош Рэднор",
+      },
+      {
+        name: "Нил Патрик Харрис",
+      },
+      {
+        name: "Коби Смолдерс",
+      },
+      {
+        name: "Джейсон Сигел",
+      },
+      {
+        name: "Элисон Хэннигэн",
+      },
+    ],
+    description:
+      "Главный герой решает поделиться со своими детьми историей, как он познакомился с их мамой.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "ситком",
+      },
+    ],
+    screenshots: 23,
+  }, // как я встретил вашу маму 4-5
+  {
+    release: new Date("2007-09-24"),
+    publication: new Date("2021-04-05"),
+    format: "сериал",
+    season: "3",
+    grade: "A",
+    title: "Как я встретил вашу маму",
+    original: "How I Met Your Mother",
+    kinopoisk: "https://www.kinopoisk.ru/series/401522/",
+    director: [
+      {
+        name: "Картер Бэйс",
+      },
+      {
+        name: "Крейг Томас",
+      },
+    ],
+    cast: [
+      {
+        name: "Джош Рэднор",
+      },
+      {
+        name: "Нил Патрик Харрис",
+      },
+      {
+        name: "Коби Смолдерс",
+      },
+      {
+        name: "Джейсон Сигел",
+      },
+      {
+        name: "Элисон Хэннигэн",
+      },
+    ],
+    description:
+      "Главный герой решает поделиться со своими детьми историей, как он познакомился с их мамой.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "ситком",
+      },
+    ],
+    screenshots: 16,
+  }, // как я встретил вашу маму 3
+  {
+    release: new Date("2005-09-19"),
+    continuation: new Date("2006-09-18"),
+    publication: new Date("2021-04-01"),
+    format: "сериал",
+    season: "1-2",
+    grade: "A",
+    title: "Как я встретил вашу маму",
+    original: "How I Met Your Mother",
+    kinopoisk: "https://www.kinopoisk.ru/series/401522/",
+    director: [
+      {
+        name: "Картер Бэйс",
+      },
+      {
+        name: "Крейг Томас",
+      },
+    ],
+    cast: [
+      {
+        name: "Джош Рэднор",
+      },
+      {
+        name: "Нил Патрик Харрис",
+      },
+      {
+        name: "Коби Смолдерс",
+      },
+      {
+        name: "Джейсон Сигел",
+      },
+      {
+        name: "Элисон Хэннигэн",
+      },
+    ],
+    description:
+      "Главный герой решает поделиться со своими детьми историей, как он познакомился с их мамой.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "ситком",
+      },
+    ],
+    screenshots: 16,
+  }, // как я встретил вашу маму 1-2
   {
     release: new Date("2023-11-10"),
     publication: new Date("2024-01-29"),
@@ -3147,6 +3651,45 @@ const films = [
     ],
     screenshots: 63,
   }, // квин и слим
+  {
+    release: new Date("2019-11-08"),
+    publication: new Date("2019-12-29"),
+    format: "фильм",
+    grade: "A+",
+    title: "Клаус",
+    original: "Klaus",
+    kinopoisk: "https://www.kinopoisk.ru/film/957887/",
+    director: [
+      {
+        name: "Серхио Паблос",
+      },
+      {
+        name: "Карлос Мартинес Лопес",
+      },
+    ],
+    cast: [
+      {
+        name: "Джейсон Шварцман",
+      },
+      {
+        name: "Дж.К. Симмонс",
+      },
+      {
+        name: "Рашида Джонс",
+      },
+    ],
+    description:
+      "Эгоист-почтальон и нелюдимый мастер игрушек подружились и принесли радость в холодный город.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+      {
+        genre: "новогодний",
+      },
+    ],
+    screenshots: 17,
+  }, // клаус
   {
     release: new Date("2023-02-24"),
     publication: new Date("2023-03-16"),
@@ -6263,6 +6806,48 @@ const films = [
     screenshots: 24,
   }, // не время умирать
   {
+    release: new Date("2016-08-26"),
+    publication: new Date("2020-03-17"),
+    format: "фильм",
+    grade: "A+",
+    title: "Не дыши",
+    original: "Don't Breathe",
+    kinopoisk: "https://www.kinopoisk.ru/film/910327/",
+    director: [
+      {
+        name: "Феде Альварес",
+      },
+    ],
+    cast: [
+      {
+        name: "Стивен Лэнг",
+      },
+      {
+        name: "Джейн Леви",
+      },
+      {
+        name: "Дилан Миннетт",
+      },
+      {
+        name: "Дэниэл Дзоватто",
+      },
+    ],
+    description:
+      "Трое преступников проникают в дом ветерана, потерявшего зрение в бою, и хотят украсть его деньги.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "ужасы",
+      },
+    ],
+    screenshots: 20,
+  }, // не дыши
+  {
     release: new Date("2006-03-20"),
     publication: new Date("2025-01-19"),
     format: "фильм",
@@ -6301,6 +6886,51 @@ const films = [
     ],
     screenshots: 16,
   }, // не пойман не вор
+  {
+    release: new Date("2021-12-24"),
+    publication: new Date("2021-12-25"),
+    format: "фильм",
+    grade: "B",
+    title: "Не смотрите наверх",
+    original: "Don't Look Up",
+    kinopoisk: "https://www.kinopoisk.ru/film/1338480/",
+    director: [
+      {
+        name: "Адам Маккей",
+      },
+    ],
+    cast: [
+      {
+        name: "Леонардо ДиКаприо",
+      },
+      {
+        name: "Дженнифер Лоуренс",
+      },
+      {
+        name: "Мэрил Стрип",
+      },
+      {
+        name: "Джона Хилл",
+      },
+      {
+        name: "Кейт Бланшетт",
+      },
+      {
+        name: "Тимоти Шаламе",
+      },
+    ],
+    description:
+      "Два астронома отправляются в медиа-тур, чтобы предупредить человечество об угрожающей Земле комете.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 19,
+  }, // не смотрите наверх
   {
     release: new Date("2003-09-02"),
     publication: new Date("2024-08-11"),
@@ -7214,14 +7844,46 @@ const films = [
     screenshots: 18,
   }, // отмена 1-2
   {
+    release: new Date("2016-06-24"),
+    publication: new Date("2021-02-06"),
+    format: "фильм",
+    grade: "B",
+    title: "Охота на дикарей",
+    original: "Hunt for the Wilderpeople",
+    kinopoisk: "https://www.kinopoisk.ru/film/913703/",
+    director: [
+      {
+        name: "Тайка Вайтити",
+      },
+    ],
+    cast: [
+      {
+        name: "Сэм Нил",
+      },
+      {
+        name: "Джулиан Деннисон",
+      },
+    ],
+    description:
+      "Подросток Рикки сбегает в лес от социальных служб после смерти приемной матери, за ним следует опекун Гек, и начинается их общенациональная погоня.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 17,
+  }, // охота на дикарей
+  {
     release: new Date("2014-11-14"),
     publication: new Date("2022-03-26"),
     format: "фильм",
     grade: "A",
     title: "Охотник на лис",
     original: "Foxcatcher",
-    kinopoisk:
-      "https://www.kinopoisk.ru/film/638053/?utm_referrer=www.kinopoisk.ru",
+    kinopoisk: "https://www.kinopoisk.ru/film/638053/",
     director: [
       {
         name: "Беннетт Миллер",
@@ -7335,6 +7997,48 @@ const films = [
     ],
     screenshots: 96,
   }, // очень странные дела 4
+  {
+    release: new Date("2016-11-18"),
+    publication: new Date("2020-03-26"),
+    format: "фильм",
+    grade: "A",
+    title: "Пазманский дьявол",
+    original: "Bleed for This",
+    kinopoisk: "https://www.kinopoisk.ru/film/502723/",
+    director: [
+      {
+        name: "Бен Янгер",
+      },
+    ],
+    cast: [
+      {
+        name: "Майлз Теллер",
+      },
+      {
+        name: "Аарон Экхарт",
+      },
+      {
+        name: "Киран Хайндс",
+      },
+      {
+        name: "Кэти Сагал",
+      },
+    ],
+    description:
+      "История Винни Пациенца — чемпиона мира по боксу, который после серьёзной автокатастрофы с переломом шеи и угрозой паралича сумел вернуться в спорт.",
+    genres: [
+      {
+        genre: "биография",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "спорт",
+      },
+    ],
+    screenshots: 24,
+  }, // пазманский дьявол
   {
     release: new Date("2016-08-19"),
     publication: new Date("2022-03-30"),
@@ -8686,6 +9390,38 @@ const films = [
     ],
     screenshots: 74,
   }, // разделение 1
+  {
+    release: new Date("2016-04-08"),
+    publication: new Date("2019-03-28"),
+    format: "фильм",
+    grade: "A",
+    title: "Разрушение",
+    original: "Demolition",
+    kinopoisk: "https://www.kinopoisk.ru/film/842493/",
+    director: [
+      {
+        name: "Жан-Марк Валле",
+      },
+    ],
+    cast: [
+      {
+        name: "Джейк Джилленхол",
+      },
+      {
+        name: "Наоми Уоттс",
+      },
+      {
+        name: "Крис Купер",
+      },
+    ],
+    description: "Дэвис переживает утрату супруги, круша всё вокруг.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 15,
+  }, // разрушение
   {
     release: new Date("2009-08-13"),
     publication: new Date("2024-10-02"),
@@ -11006,6 +11742,45 @@ const films = [
     screenshots: 12,
   }, // третий лишний 1
   {
+    release: new Date("2015-06-26"),
+    publication: new Date("2020-03-28"),
+    format: "фильм",
+    grade: "A",
+    title: "Третий лишний 2",
+    original: "Ted 2",
+    kinopoisk: "https://www.kinopoisk.ru/film/731691/",
+    director: [
+      {
+        name: "Сет Макфарлейн",
+      },
+    ],
+    cast: [
+      {
+        name: "Марк Уолберг",
+      },
+      {
+        name: "Сет Макфарлейн",
+      },
+      {
+        name: "Аманда Сайфред",
+      },
+      {
+        name: "Джованни Рибизи",
+      },
+      {
+        name: "Морган Фриман",
+      },
+    ],
+    description:
+      "Плюшевый медведь борется за свои права и пытается завести детей.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 18,
+  }, // третий лишний 2
+  {
     release: new Date("2022-05-21"),
     publication: new Date("2024-08-18"),
     format: "фильм",
@@ -11373,9 +12148,6 @@ const films = [
       {
         name: "Майкл Фассбендер",
       },
-      {
-        name: "Тильда Суинтон",
-      },
     ],
     description:
       "Киллер охотится за жертвой в Париже, но промах превращает его самого в мишень, вынуждая идти против своих заказчиков.",
@@ -11423,6 +12195,45 @@ const films = [
     ],
     screenshots: 19,
   }, // уроки химии
+  {
+    release: new Date("2011-08-12"),
+    publication: new Date("2020-04-17"),
+    format: "фильм",
+    grade: "B",
+    title: "Успеть за 30 минут",
+    original: "30 Minutes or Less",
+    kinopoisk: "https://www.kinopoisk.ru/film/506133/",
+    director: [
+      {
+        name: "Рубен Фляйшер",
+      },
+    ],
+    cast: [
+      {
+        name: "Джесси Айзенберг",
+      },
+      {
+        name: "Азиз Ансари",
+      },
+      {
+        name: "Дэнни Макбрайд",
+      },
+      {
+        name: "Майкл Пенья",
+      },
+    ],
+    description:
+      "Преступники похищают разносчика пиццы и приковывают к нему бомбу, требуя ограбить банк за 10 часов.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 12,
+  }, // успеть за 30 минут
   {
     release: new Date("2023-11-21"),
     publication: new Date("2024-01-28"),
@@ -11963,6 +12774,48 @@ const films = [
     ],
     screenshots: 22,
   }, // харли квинн 1-4
+  {
+    release: new Date("2014-08-01"),
+    publication: new Date("2020-04-26"),
+    format: "фильм",
+    grade: "A+",
+    title: "Хотел бы я быть здесь",
+    original: "Wish I Was Here",
+    kinopoisk: "https://www.kinopoisk.ru/film/760376/",
+    director: [
+      {
+        name: "Зак Брафф",
+      },
+    ],
+    cast: [
+      {
+        name: "Зак Брафф",
+      },
+      {
+        name: "Кейт Хадсон",
+      },
+      {
+        name: "Джои Кинг",
+      },
+      {
+        name: "Пирс Гэнон",
+      },
+      {
+        name: "Джош Гэд",
+      },
+    ],
+    description:
+      "Актер-неудачник учится быть взрослым с помощью собственных детей.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 15,
+  }, // хотел бы я быть здесь
   {
     release: new Date("2001-05-13"),
     publication: new Date("2024-08-11"),
