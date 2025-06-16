@@ -8119,7 +8119,7 @@ const films = [
         genre: "криминал",
       },
     ],
-    screenshots: 19,
+    screenshots: 20,
   }, // пароль «рыба-меч»
   {
     release: new Date("2024-06-13"),
