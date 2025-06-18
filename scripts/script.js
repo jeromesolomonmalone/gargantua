@@ -301,6 +301,48 @@ const films = [
     screenshots: 19,
   }, // vince staples show
   {
+    release: new Date("2006-09-01"),
+    publication: new Date("2021-06-07"),
+    format: "фильм",
+    grade: "A",
+    title: "Адреналин",
+    original: "Crank",
+    kinopoisk: "https://www.kinopoisk.ru/film/180609/",
+    director: [
+      {
+        name: "Марк Невелдайн",
+      },
+      {
+        name: "Брайан Тейлор",
+      },
+    ],
+    cast: [
+      {
+        name: "Джейсон Стэйтем",
+      },
+      {
+        name: "Эми Смарт",
+      },
+      {
+        name: "Хосе Пабло Кантильо",
+      },
+      {
+        name: "Дуайт Йоакам",
+      },
+    ],
+    description:
+      "Чев Челиос отравлен ядом, который активируется при снижении пульса.",
+    genres: [
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 20,
+  }, // адреналин
+  {
     release: new Date("2007-01-12"),
     publication: new Date("2022-01-24"),
     format: "фильм",
@@ -2430,6 +2472,51 @@ const films = [
     screenshots: 25,
   }, // дикий робот
   {
+    release: new Date("2019-10-10"),
+    publication: new Date("2020-02-23"),
+    format: "фильм",
+    grade: "A",
+    title: "Дождливый день в Нью-Йорке",
+    original: "A Rainy Day in New York",
+    kinopoisk: "https://www.kinopoisk.ru/film/1047626/",
+    director: [
+      {
+        name: "Вуди Аллен",
+      },
+    ],
+    cast: [
+      {
+        name: "Тимоти Шаламе",
+      },
+      {
+        name: "Эль Фаннинг",
+      },
+      {
+        name: "Селена Гомес",
+      },
+      {
+        name: "Джуд Лоу",
+      },
+      {
+        name: "Диего Луна",
+      },
+      {
+        name: "Лив Шрайбер",
+      },
+    ],
+    description:
+      "Гэтсби и Эшли приезжают в Нью-Йорк на романтический уикенд, но город готовит им неожиданные сюрпризы.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "мелодрама",
+      },
+    ],
+    screenshots: 19,
+  }, // дождливый день в нью-йорке
+  {
     release: new Date("2022-05-06"),
     publication: new Date("2022-06-23"),
     format: "фильм",
@@ -2975,6 +3062,39 @@ const films = [
   }, // зверопой 2
   {
     release: new Date("1998-03-18"),
+    publication: new Date("2020-09-11"),
+    format: "фильм",
+    grade: "A",
+    title: "Земля кочевников",
+    original: "Nomadland",
+    kinopoisk: "https://www.kinopoisk.ru/film/1238506/",
+    director: [
+      {
+        name: "Хлоя Чжао",
+      },
+    ],
+    cast: [
+      {
+        name: "Фрэнсис Макдорманд",
+      },
+      {
+        name: "Дэвид Стрэтэйрн",
+      },
+    ],
+    description:
+      "Пожилая американка стала кочевником в фургоне после потери всего в кризис.",
+    genres: [
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 14,
+  }, // земля кочевников
+  {
+    release: new Date("1998-03-18"),
     publication: new Date("2019-01-20"),
     format: "фильм",
     grade: "B",
@@ -3093,6 +3213,49 @@ const films = [
     ],
     screenshots: 12,
   }, // ищу друга на конец света
+  {
+    release: new Date("2019-09-20"),
+    publication: new Date("2019-12-08"),
+    format: "фильм",
+    grade: "A",
+    title: "К звёздам",
+    original: "Ad Astra",
+    kinopoisk: "https://www.kinopoisk.ru/film/768561/",
+    director: [
+      {
+        name: "Джеймс Грэй",
+      },
+    ],
+    cast: [
+      {
+        name: "Брэд Питт",
+      },
+      {
+        name: "Томми Ли Джонс",
+      },
+      {
+        name: "Рут Негга",
+      },
+      {
+        name: "Лив Тайлер",
+      },
+    ],
+    description:
+      "Астронавт Рой Макбрайд отправляется в опасное путешествие по Солнечной системе, чтобы узнать правду о своём пропавшем отце и его экспедиции.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "приключения",
+      },
+      { genre: "драма" },
+      {
+        genre: "детектив",
+      },
+    ],
+    screenshots: 18,
+  }, // к звёздам
   {
     release: new Date("2006-11-17"),
     publication: new Date("2022-09-20"),
@@ -3691,6 +3854,39 @@ const films = [
     screenshots: 17,
   }, // клаус
   {
+    release: new Date("2018-04-20"),
+    publication: new Date("2020-10-14"),
+    format: "фильм",
+    grade: "A",
+    title: "Кодахром",
+    original: "Kodachrome",
+    kinopoisk: "https://www.kinopoisk.ru/film/835100/",
+    director: [
+      {
+        name: "Марк Расо",
+      },
+    ],
+    cast: [
+      {
+        name: "Эд Харрис",
+      },
+      {
+        name: "Джейсон Судейкис",
+      },
+      {
+        name: "Элизабет Олсен",
+      },
+    ],
+    description:
+      "Сын едет проявить отцовскую плёнку «Кодахром» в последней лаборатории «Кодак».",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 15,
+  }, // кодахром
+  {
     release: new Date("2023-02-24"),
     publication: new Date("2023-03-16"),
     format: "фильм",
@@ -4017,6 +4213,51 @@ const films = [
     ],
     screenshots: 15,
   }, // королевство полной луны
+  {
+    release: new Date("2020-05-28"),
+    publication: new Date("2020-10-13"),
+    format: "фильм",
+    grade: "A",
+    title: "Король Стейтен-Айленда",
+    original: "The King of Staten Island",
+    kinopoisk: "https://www.kinopoisk.ru/film/1236644/",
+    director: [
+      {
+        name: "Джадд Апатоу",
+      },
+    ],
+    cast: [
+      {
+        name: "Пит Дэвидсон",
+      },
+      {
+        name: "Мариса Томей",
+      },
+      {
+        name: "Билл Бёрр",
+      },
+      {
+        name: "Бел Паули",
+      },
+      {
+        name: "Мод Апатоу",
+      },
+      {
+        name: "Стив Бушеми",
+      },
+    ],
+    description:
+      "После смерти отца Скотт курит травку и мечтает о татуировках, но жизнь заставляет его повзрослеть.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 13,
+  }, // король стейтен-айленда
   {
     release: new Date("2022-11-13"),
     publication: new Date("2023-05-13"),
@@ -4823,6 +5064,60 @@ const films = [
     screenshots: 45,
   }, // личная жизнь 2
   {
+    release: new Date("2017-05-16"),
+    publication: new Date("2025-03-20"),
+    format: "фильм",
+    grade: "A+",
+    title: "Логан: Нуар",
+    original: "Logan: Noir",
+    kinopoisk: "https://www.kinopoisk.ru/film/807682/",
+    director: [
+      {
+        name: "Джеймс Мэнголд",
+      },
+    ],
+    cast: [
+      {
+        name: "Хью Джекман",
+      },
+      {
+        name: "Патрик Стюарт",
+      },
+      {
+        name: "Дафни Кин",
+      },
+      {
+        name: "Бойд Холбрук",
+      },
+      {
+        name: "Стивен Мерчант",
+      },
+      {
+        name: "Ричард Э. Грант",
+      },
+    ],
+    description:
+      "Черно-белая версия фильма «Логан», где уставший Логан в мире без мутантов спасает от учёных девочку-мутанта Лору.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "супергероика",
+      },
+      {
+        genre: "чёрно-белое",
+      },
+    ],
+    screenshots: 90,
+  }, // логан: нуар
+  {
     release: new Date("2023-10-05"),
     publication: new Date("2023-11-13"),
     format: "сериал",
@@ -5220,6 +5515,30 @@ const films = [
     screenshots: 42,
   }, // лучше звоните солу 1
   {
+    release: new Date("2025-05-15"),
+    publication: new Date("2025-06-01"),
+    format: "сериал",
+    season: "4",
+    grade: "B",
+    title: "Любовь. Смерть. Роботы",
+    original: "Love, Death & Robots",
+    kinopoisk: "https://www.kinopoisk.ru/series/1228254/",
+    director: [
+      {
+        name: "Тим Миллер",
+      },
+    ],
+    cast: [{ name: "" }],
+    description:
+      "Анимационная антология, объединяющая истории в жанрах научной фантастики, фэнтези, ужасов и комедии.",
+    genres: [
+      {
+        genre: "анимация",
+      },
+    ],
+    screenshots: 20,
+  }, // любовь, смерть и роботы 4
+  {
     release: new Date("2022-05-20"),
     publication: new Date("2022-05-25"),
     format: "сериал",
@@ -5473,6 +5792,104 @@ const films = [
     screenshots: 14,
   }, // маленькая рыбка
   {
+    release: new Date("2019-12-25"),
+    publication: new Date("2021-11-28"),
+    format: "фильм",
+    grade: "B",
+    title: "Маленькие женщины",
+    original: "Little Women",
+    kinopoisk: "https://www.kinopoisk.ru/film/807339/",
+    director: [
+      {
+        name: "Грета Гервиг",
+      },
+    ],
+    cast: [
+      {
+        name: "Сирша Ронан",
+      },
+      {
+        name: "Эмма Уотсон",
+      },
+      {
+        name: "Флоренс Пью",
+      },
+      {
+        name: "Элайза Сканлен",
+      },
+      {
+        name: "Лора Дерн",
+      },
+      {
+        name: "Тимоти Шаламе",
+      },
+      {
+        name: "Джеймс Нортон",
+      },
+      {
+        name: "Луи Гаррель",
+      },
+    ],
+    description: "История взросления четырёх непохожих друг на друга сестер.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "мелодрама",
+      },
+    ],
+    screenshots: 24,
+  }, // маленькие женщины
+  {
+    release: new Date("2017-06-28"),
+    publication: new Date("2019-01-27"),
+    format: "фильм",
+    grade: "love",
+    title: "Малыш на драйве",
+    original: "Baby Driver",
+    kinopoisk: "https://www.kinopoisk.ru/film/902939/",
+    director: [
+      {
+        name: "Эдгар Райт",
+      },
+    ],
+    cast: [
+      {
+        name: "Энсел Элгорт",
+      },
+      {
+        name: "Кевин Спейси",
+      },
+      {
+        name: "Лили Джеймс",
+      },
+      {
+        name: "Джон Хэмм",
+      },
+      {
+        name: "Джейми Фокс",
+      },
+      {
+        name: "Эйса Гонсалес",
+      },
+      {
+        name: "Джон Бернтал",
+      },
+    ],
+    description:
+      "Молодой водитель вынужден работать на криминального босса. Его жизнь, любовь и свобода под угрозой из-за обреченного на провал ограбления.",
+    genres: [
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 15,
+  }, // малыш на драйве
+  {
     release: new Date("2013-05-23"),
     publication: new Date("2022-01-15"),
     format: "фильм",
@@ -5595,6 +6012,89 @@ const films = [
     ],
     screenshots: 18,
   }, // мальчишник
+  {
+    release: new Date("1979-03-14"),
+    publication: new Date("2021-11-14"),
+    format: "фильм",
+    grade: "B",
+    title: "Манхэттен",
+    original: "Manhattan",
+    kinopoisk: "https://www.kinopoisk.ru/film/420/",
+    director: [
+      {
+        name: "Вуди Аллен",
+      },
+    ],
+    cast: [
+      {
+        name: "Вуди Аллен",
+      },
+      {
+        name: "Дайан Китон",
+      },
+      {
+        name: "Майкл Мерфи",
+      },
+      {
+        name: "Мэриэл Хемингуэй",
+      },
+      {
+        name: "Мэрил Стрип",
+      },
+    ],
+    description: "Разведенный сценарист влюбляется в любовницу лучшего друга.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "чёрно-белое",
+      },
+    ],
+    screenshots: 13,
+  }, // манхэттен
+  {
+    release: new Date("2016-12-16"),
+    publication: new Date("2019-03-04"),
+    format: "фильм",
+    grade: "A+",
+    title: "Манчестер у моря",
+    original: "Manchester by the Sea",
+    kinopoisk: "https://www.kinopoisk.ru/film/884376/",
+    director: [
+      {
+        name: "Кеннет Лонерган",
+      },
+    ],
+    cast: [
+      {
+        name: "Кейси Аффлек",
+      },
+      {
+        name: "Мишель Уильямс",
+      },
+      {
+        name: "Кайл Чендлер",
+      },
+      {
+        name: "Лукас Хеджес",
+      },
+    ],
+    description:
+      "Нелюдимый Ли, слесарь в многоквартирном доме, узнает о смерти брата и назначении опекуном его 16-летнего племянника.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 13,
+  }, // манчестер у моря
   {
     release: new Date("2021-05-23"),
     publication: new Date("2022-03-12"),
@@ -6932,14 +7432,103 @@ const films = [
     screenshots: 19,
   }, // не смотрите наверх
   {
+    release: new Date("2013-11-15"),
+    publication: new Date("2020-02-01"),
+    format: "фильм",
+    grade: "A",
+    title: "Небраска",
+    original: "Nebraska",
+    kinopoisk: "https://www.kinopoisk.ru/film/582391/",
+    director: [
+      {
+        name: "Александр Пэйн",
+      },
+    ],
+    cast: [
+      {
+        name: "Брюс Дерн",
+      },
+      {
+        name: "Уилл Форте",
+      },
+      {
+        name: "Джун Скуибб",
+      },
+      {
+        name: "Боб Оденкёрк",
+      },
+    ],
+    description:
+      "Пожилой отец-алкоголик вместе с сыном едет из Монтаны в Небраску за выигрышем в миллион долларов.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "чёрно-белое",
+      },
+    ],
+    screenshots: 17,
+  }, // небраска
+  {
+    release: new Date("2013-12-25"),
+    publication: new Date("2020-02-02"),
+    format: "фильм",
+    grade: "A+",
+    title: "Невероятная жизнь Уолтера Митти",
+    original: "The Secret Life of Walter Mitty",
+    kinopoisk: "https://www.kinopoisk.ru/film/6034/",
+    director: [
+      {
+        name: "Бен Стиллер",
+      },
+    ],
+    cast: [
+      {
+        name: "Бен Стиллер",
+      },
+      {
+        name: "Кристен Уиг",
+      },
+      {
+        name: "Адам Скотт",
+      },
+      {
+        name: "Шон Пенн",
+      },
+    ],
+    description:
+      "Редактор журнала Life Уолтер Митти покидает офис в поисках фотографа Шона О'Коннелла для последней бумажной обложки.",
+    genres: [
+      {
+        genre: "фэнтези",
+      },
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 19,
+  }, // невероятная жизнь уолтера митти
+  {
     release: new Date("2003-09-02"),
     publication: new Date("2024-08-11"),
     format: "фильм",
     grade: "A",
     title: "Невыносимая жестокость",
     original: "Intolerable Cruelty",
-    kinopoisk:
-      "https://www.kinopoisk.ru/film/2886/?utm_referrer=www.kinopoisk.ru",
+    kinopoisk: "https://www.kinopoisk.ru/film/2886/",
     director: [
       {
         name: "Джоэл Коэн",
@@ -6969,6 +7558,101 @@ const films = [
     screenshots: 35,
   }, // невыносимая жестокость
   {
+    release: new Date("2019-12-25"),
+    publication: new Date("2020-02-10"),
+    format: "фильм",
+    grade: "A",
+    title: "Неогранённые алмазы",
+    original: "Uncut Gems",
+    kinopoisk: "https://www.kinopoisk.ru/film/1076152/",
+    director: [
+      {
+        name: "Бенни Сэфди",
+      },
+      {
+        name: "Джош Сэфди",
+      },
+    ],
+    cast: [
+      {
+        name: "Адам Сэндлер",
+      },
+      {
+        name: "Джулия Фокс",
+      },
+      {
+        name: "Идина Мензел",
+      },
+      {
+        name: "Лакит Стэнфилд",
+      },
+      {
+        name: "Кевин Гарнетт",
+      },
+    ],
+    description:
+      "Ювелир из Нью-Йорка рискует всем, чтобы спастись от кредиторов.",
+    genres: [
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 31,
+  }, // неогранённые алмазы
+  {
+    release: new Date("2025-02-06"),
+    publication: new Date("2025-03-18"),
+    format: "сериал",
+    season: "3",
+    grade: "A",
+    title: "Непобедимый",
+    original: "Invincible",
+    kinopoisk: "https://www.kinopoisk.ru/series/1171895/",
+    director: [
+      {
+        name: "Роберт Киркман",
+      },
+      {
+        name: "Кори Уокер",
+      },
+      {
+        name: "Райан Оттли",
+      },
+    ],
+    cast: [
+      {
+        name: "Стивен Ян",
+      },
+      {
+        name: "Дж.К. Симмонс",
+      },
+      {
+        name: "Сандра О",
+      },
+      {
+        name: "Гиллиан Джейкобс",
+      },
+      {
+        name: "Уолтон Гоггинс",
+      },
+    ],
+    description:
+      "17-летний Марк Грэйсон — сын самого могучего супергероя на Земле.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+      { genre: "супергероика" },
+    ],
+    screenshots: 57,
+  }, // непобедимый 3
+  {
     release: new Date("2023-11-03"),
     publication: new Date("2024-04-16"),
     format: "сериал",
@@ -6997,6 +7681,12 @@ const films = [
       },
       {
         name: "Сандра О",
+      },
+      {
+        name: "Гиллиан Джейкобс",
+      },
+      {
+        name: "Уолтон Гоггинс",
       },
     ],
     description:
@@ -7038,6 +7728,12 @@ const films = [
       },
       {
         name: "Сандра О",
+      },
+      {
+        name: "Гиллиан Джейкобс",
+      },
+      {
+        name: "Уолтон Гоггинс",
       },
     ],
     description:
@@ -7502,6 +8198,39 @@ const films = [
     ],
     screenshots: 12,
   }, // однажды в ирландии
+  {
+    release: new Date("2019-07-26"),
+    publication: new Date("2019-11-30"),
+    format: "фильм",
+    grade: "A+",
+    title: "Однажды в… Голливуде",
+    original: "Once Upon a Time in... Hollywood",
+    kinopoisk: "https://www.kinopoisk.ru/film/1047883/",
+    director: [
+      {
+        name: "Квентин Тарантино",
+      },
+    ],
+    cast: [
+      {
+        name: "Леонардо ДиКаприо",
+      },
+      {
+        name: "Брэд Питт",
+      },
+      {
+        name: "Марго Робби",
+      },
+    ],
+    description:
+      "Актёр и его дублёр стремятся к успеху в Голливуде конца 1960-х в Лос-Анджелесе.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 21,
+  }, // однажды в голливуде
   {
     release: new Date("2022-01-21"),
     publication: new Date("2022-05-02"),
@@ -8555,6 +9284,54 @@ const films = [
     screenshots: 18,
   }, // подстава
   {
+    release: new Date("2012-10-26"),
+    publication: new Date("2019-06-03"),
+    format: "фильм",
+    grade: "love",
+    title: "Покорители волн",
+    original: "Chasing Mavericks",
+    kinopoisk: "https://www.kinopoisk.ru/film/546244/",
+    director: [
+      {
+        name: "Майкл Аптед",
+      },
+      {
+        name: "Кёртис Хэнсон",
+      },
+    ],
+    cast: [
+      {
+        name: "Джонни Уэстон",
+      },
+      {
+        name: "Джерард Батлер",
+      },
+      {
+        name: "Эбигейл Спенсер",
+      },
+      {
+        name: "Элизабет Шу",
+      },
+      {
+        name: "Ливен Рамбин",
+      },
+    ],
+    description:
+      "Узнав о надвигающейся гигантской волне, юный сёрфер Джей Мориарти обращается за тренировками к знаменитому Фрости Хессону.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "биография",
+      },
+      {
+        genre: "спорт",
+      },
+    ],
+    screenshots: 13,
+  }, // покорители волн
+  {
     release: new Date("2024-02-08"),
     publication: new Date("2024-05-04"),
     format: "сериал",
@@ -8646,6 +9423,42 @@ const films = [
     ],
     screenshots: 29,
   }, // полиция токио 1
+  {
+    release: new Date("2019-06-07"),
+    publication: new Date("2019-11-24"),
+    format: "фильм",
+    grade: "A",
+    title: "Последний черный в Сан-Франциско",
+    original: "The Last Black Man in San Francisco",
+    kinopoisk: "https://www.kinopoisk.ru/film/1115907/",
+    director: [
+      {
+        name: "Джо Талбот",
+      },
+    ],
+    cast: [
+      {
+        name: "Джимми Фэйлс",
+      },
+      {
+        name: "Джонатан Мейджорс",
+      },
+      {
+        name: "Роб Морган",
+      },
+      {
+        name: "Дэнни Гловер",
+      },
+    ],
+    description:
+      "Молодой человек ищет дом в меняющемся городе, который, кажется, оставил его позади.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 34,
+  }, // последний черный в сан-франциско
   {
     release: new Date("2022-04-28"),
     publication: new Date("2022-06-25"),
@@ -8770,6 +9583,45 @@ const films = [
     ],
     screenshots: 44,
   }, // программисты
+  {
+    release: new Date("2012-03-02"),
+    publication: new Date("2019-08-13"),
+    format: "фильм",
+    grade: "love",
+    title: "Проект X: Дорвались",
+    original: "Project X",
+    kinopoisk: "https://www.kinopoisk.ru/film/507440/",
+    director: [
+      {
+        name: "Нима Нуризаде",
+      },
+    ],
+    cast: [
+      {
+        name: "Томас Манн",
+      },
+      {
+        name: "Оливер Купер",
+      },
+      {
+        name: "Джонатан Даниэль Браун",
+      },
+      {
+        name: "Кирби Блисс Блэнтон",
+      },
+      {
+        name: "Майлз Теллер",
+      },
+    ],
+    description:
+      "Три старшеклассника устраивают вечеринку дома у одного из них, но на неё заявляется слишком много народу.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 21,
+  }, // проект х
   {
     release: new Date("2022-06-03"),
     publication: new Date("2022-06-10"),
@@ -9642,6 +10494,48 @@ const films = [
     screenshots: 17,
   }, // расцвет династии лейкерс 1
   {
+    release: new Date("2007-06-29"),
+    publication: new Date("2021-11-15"),
+    format: "фильм",
+    grade: "love",
+    title: "Рататуй",
+    original: "Ratatouille",
+    kinopoisk: "https://www.kinopoisk.ru/film/89514/",
+    director: [
+      {
+        name: "Брэд Бёрд",
+      },
+      {
+        name: "Ян Пинкава",
+      },
+    ],
+    cast: [
+      {
+        name: "Пэттон Освальт",
+      },
+      {
+        name: "Лу Романо",
+      },
+      {
+        name: "Иэн Холм",
+      },
+      {
+        name: "Брэд Гэррет",
+      },
+      {
+        name: "Джанин Гарофало",
+      },
+    ],
+    description:
+      "Крыса-повар заключает необычный союз с молодым работником кухни в знаменитом парижском ресторане.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 42,
+  }, // рататуй
+  {
     release: new Date("2023-10-15"),
     publication: new Date("2023-12-28"),
     format: "сериал",
@@ -10234,6 +11128,98 @@ const films = [
     ],
     screenshots: 19,
   }, // сексуальное просвещение 4
+  {
+    release: new Date("1995-09-22"),
+    publication: new Date("2019-06-14"),
+    format: "фильм",
+    grade: "love",
+    title: "Семь",
+    original: "Se7en / Seven",
+    kinopoisk: "https://www.kinopoisk.ru/film/377/",
+    director: [
+      {
+        name: "Дэвид Финчер",
+      },
+    ],
+    cast: [
+      {
+        name: "Брэд Питт",
+      },
+      {
+        name: "Морган Фриман",
+      },
+      {
+        name: "Гвинет Пэлтроу",
+      },
+      {
+        name: "Кевин Спейси",
+      },
+    ],
+    description:
+      "Два детектива — новичок и ветеран — расследуют дело серийного убийцы, чьи преступления вдохновлены семью смертными грехами.",
+    genres: [
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "детектив",
+      },
+    ],
+    screenshots: 25,
+  }, // семь
+  {
+    release: new Date("2018-10-26"),
+    publication: new Date("2019-05-26"),
+    format: "фильм",
+    grade: "love",
+    title: "Середина 90-х",
+    original: "Mid90s",
+    kinopoisk: "https://www.kinopoisk.ru/film/1040690/",
+    director: [
+      {
+        name: "Джона Хилл",
+      },
+    ],
+    cast: [
+      {
+        name: "Санни Сулджик",
+      },
+      {
+        name: "Кэтрин Уотерстон",
+      },
+      {
+        name: "Лукас Хеджес",
+      },
+      {
+        name: "На-кел Смит",
+      },
+      {
+        name: "Олэн Пренатт",
+      },
+      {
+        name: "Джио Галисия",
+      },
+      {
+        name: "Алекса Деми",
+      },
+    ],
+    description: "Подросток ищет признания в компании уличных скейтбордистов.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 30,
+  }, // середина 90-х
   {
     release: new Date("2023-10-01"),
     publication: new Date("2024-08-23"),
@@ -11622,6 +12608,106 @@ const films = [
     screenshots: 35,
   }, // темная материя
   {
+    release: new Date("2021-11-12"),
+    publication: new Date("2021-11-24"),
+    format: "фильм",
+    grade: "B",
+    title: "Тик-так... БУМ!",
+    original: "tick, tick...BOOM!",
+    kinopoisk: "https://www.kinopoisk.ru/film/1174293/",
+    director: [
+      {
+        name: "Лин-Мануэль Миранда",
+      },
+    ],
+    cast: [
+      {
+        name: "Эндрю Гарфилд",
+      },
+      {
+        name: "Александра Шипп",
+      },
+      {
+        name: "Робин де Хесус",
+      },
+      {
+        name: "Ванесса Энн Хадженс",
+      },
+    ],
+    description:
+      "Композитор в 30 лет пытается создать великий мюзикл, пока не истекло время.",
+    genres: [
+      {
+        genre: "мюзикл",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "биография",
+      },
+    ],
+    screenshots: 16,
+  }, // тик-так... бум
+  {
+    release: new Date("2017-11-03"),
+    publication: new Date("2021-07-24"),
+    format: "фильм",
+    grade: "love",
+    title: "Тор: Рагнарёк",
+    original: "Thor: Ragnarok",
+    kinopoisk: "https://www.kinopoisk.ru/film/822709/",
+    director: [
+      {
+        name: "Тайка Вайтити",
+      },
+    ],
+    cast: [
+      {
+        name: "Крис Хемсворт",
+      },
+      {
+        name: "Том Хиддлстон",
+      },
+      {
+        name: "Кейт Бланшетт",
+      },
+      {
+        name: "Тесса Томпсон",
+      },
+      {
+        name: "Идрис Эльба",
+      },
+      {
+        name: "Джефф Голдблюм",
+      },
+      {
+        name: "Марк Руффало",
+      },
+      {
+        name: "Карл Урбан",
+      },
+      {
+        name: "Энтони Хопкинс",
+      },
+    ],
+    description:
+      "Тор, попав в плен на планете Сакаар, должен спасти Асгард от уничтожения Хелой.",
+    genres: [
+      {
+        genre: "фэнтези",
+      },
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "комедия",
+      },
+      { genre: "супергероика" },
+    ],
+    screenshots: 30,
+  }, // тор рагнарёк
+  {
     release: new Date("2022-07-08"),
     publication: new Date("2022-09-14"),
     format: "фильм",
@@ -11663,7 +12749,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 15,
-  }, // тор: любовь и гром
+  }, // тор любовь и гром
   {
     release: new Date("2021-12-25"),
     publication: new Date("2022-01-16"),
@@ -12705,6 +13791,36 @@ const films = [
     ],
     screenshots: 22,
   }, // харли квинн 1-4
+  {
+    release: new Date("2023-03-24"),
+    publication: new Date("2023-06-02"),
+    format: "фильм",
+    grade: "B",
+    title: "Хороший человек",
+    original: "A Good Person",
+    kinopoisk: "https://www.kinopoisk.ru/film/4510366/",
+    director: [
+      {
+        name: "Зак Брафф",
+      },
+    ],
+    cast: [
+      {
+        name: "Флоренс Пью",
+      },
+      {
+        name: "Морган Фриман",
+      },
+    ],
+    description:
+      "История Эллисон, чья жизнь разрушена после аварии со смертельным исходом.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 14,
+  }, // хороший человек
   {
     release: new Date("2014-08-01"),
     publication: new Date("2020-04-26"),
