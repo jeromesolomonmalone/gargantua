@@ -3061,8 +3061,8 @@ const films = [
     screenshots: 13,
   }, // зверопой 2
   {
-    release: new Date("1998-03-18"),
-    publication: new Date("2020-09-11"),
+    release: new Date("2020-09-11"),
+    publication: new Date("2021-12-01"),
     format: "фильм",
     grade: "A",
     title: "Земля кочевников",
@@ -12647,7 +12647,7 @@ const films = [
         genre: "биография",
       },
     ],
-    screenshots: 16,
+    screenshots: 15,
   }, // тик-так... бум
   {
     release: new Date("2017-11-03"),
