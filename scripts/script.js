@@ -842,7 +842,7 @@ const films = [
       }
     ],
     screenshots: 28,
-    posters: 1
+    posters: 2
   }, // барри 4
   {
     release: new Date("2022-04-24"),
@@ -916,7 +916,7 @@ const films = [
       }
     ],
     screenshots: 25,
-    posters: 1
+    posters: 2
   }, // барри 2
   {
     release: new Date("2018-03-25"),
@@ -1145,7 +1145,7 @@ const films = [
       }
     ],
     screenshots: 30,
-    posters: 1
+    posters: 4
   }, // бешеный бык
   {
     release: new Date("2017-09-29"),
@@ -2525,7 +2525,7 @@ const films = [
       }
     ],
     screenshots: 25,
-    posters: 1
+    posters: 5
   }, // дикий робот
   {
     release: new Date("2019-10-10"),
@@ -3011,7 +3011,7 @@ const films = [
       }
     ],
     screenshots: 21,
-    posters: 1
+    posters: 2
   }, // зачинщики
   {
     release: new Date("2016-12-21"),
@@ -3744,7 +3744,7 @@ const films = [
       }
     ],
     screenshots: 21,
-    posters: 1
+    posters: 3
   }, // касабланка
   {
     release: new Date("2024-05-03"),
@@ -6310,7 +6310,7 @@ const films = [
       }
     ],
     screenshots: 30,
-    posters: 1
+    posters: 2
   }, // медведь 3
   {
     release: new Date("2023-06-22"),
@@ -6345,7 +6345,7 @@ const films = [
       }
     ],
     screenshots: 33,
-    posters: 1
+    posters: 2
   }, // медведь 2
   {
     release: new Date("2022-06-23"),
@@ -6380,7 +6380,7 @@ const films = [
       }
     ],
     screenshots: 22,
-    posters: 1
+    posters: 2
   }, // медведь 1
   {
     release: new Date("2019-09-20"),
@@ -7220,7 +7220,7 @@ const films = [
       }
     ],
     screenshots: 19,
-    posters: 1
+    posters: 7
   }, // мы
   {
     release: new Date("1997-09-26"),
@@ -7435,7 +7435,7 @@ const films = [
       { genre: "ситком" }
     ],
     screenshots: 16,
-    posters: 1
+    posters: 2
   }, // начальная школа эбботт 1
   {
     release: new Date("2022-09-23"),
@@ -7599,7 +7599,7 @@ const films = [
       }
     ],
     screenshots: 16,
-    posters: 1
+    posters: 2
   }, // не пойман не вор
   {
     release: new Date("2021-12-24"),
@@ -8257,7 +8257,7 @@ const films = [
       }
     ],
     screenshots: 24,
-    posters: 1
+    posters: 2
   }, // о где же ты брат
   {
     release: new Date("2009-09-18"),
@@ -8390,7 +8390,7 @@ const films = [
       }
     ],
     screenshots: 30,
-    posters: 1
+    posters: 3
   }, // одинокие волки
   {
     release: new Date("2011-07-29"),
@@ -9156,7 +9156,7 @@ const films = [
       { genre: "супергероика" }
     ],
     screenshots: 25,
-    posters: 1
+    posters: 5
   }, // пацаны 4
   {
     release: new Date("2022-06-03"),
@@ -9216,7 +9216,7 @@ const films = [
       { genre: "супергероика" }
     ],
     screenshots: 22,
-    posters: 1
+    posters: 3
   }, // пацаны 3
   {
     release: new Date("2020-09-04"),
@@ -9276,7 +9276,7 @@ const films = [
       { genre: "супергероика" }
     ],
     screenshots: 12,
-    posters: 1
+    posters: 3
   }, // пацаны 2
   {
     release: new Date("2019-10-07"),
@@ -9499,7 +9499,7 @@ const films = [
       }
     ],
     screenshots: 33,
-    posters: 1
+    posters: 2
   }, // подай знак
   {
     release: new Date("2018-06-12"),
@@ -13011,7 +13011,7 @@ const films = [
       }
     ],
     screenshots: 35,
-    posters: 1
+    posters: 2
   }, // темная материя
   {
     release: new Date("2021-11-12"),
@@ -13307,7 +13307,7 @@ const films = [
       }
     ],
     screenshots: 36,
-    posters: 1
+    posters: 3
   }, // треугольник печали
   {
     release: new Date("2023-02-09"),
@@ -14385,7 +14385,7 @@ const films = [
       }
     ],
     screenshots: 47,
-    posters: 1
+    posters: 2
   }, // человек, которого не было
   {
     release: new Date("2011-09-23"),
@@ -15150,7 +15150,7 @@ const films = [
       }
     ],
     screenshots: 42,
-    posters: 1
+    posters: 10
   } // я не киллер
 ];
 
