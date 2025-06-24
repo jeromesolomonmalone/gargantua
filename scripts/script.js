@@ -1977,7 +1977,7 @@ const films = [
       },
     ],
     screenshots: 40,
-    posters: 4,
+    posters: 3,
   }, // голубоглазый самурай 1
   {
     release: new Date("2023-06-23"),
@@ -2136,7 +2136,7 @@ const films = [
       },
     ],
     screenshots: 28,
-    posters: 2,
+    posters: 1,
   }, // гранд тур 5
   {
     release: new Date("2019-12-13"),
@@ -2406,7 +2406,7 @@ const films = [
       },
     ],
     screenshots: 14,
-    posters: 2,
+    posters: 1,
   }, // дело коллини
   {
     release: new Date("2017-10-20"),
@@ -5115,7 +5115,7 @@ const films = [
       },
     ],
     screenshots: 36,
-    posters: 10,
+    posters: 9,
   }, // кунг-фу панда
   {
     release: new Date("2016-12-25"),
@@ -5928,7 +5928,7 @@ const films = [
       },
     ],
     screenshots: 30,
-    posters: 8,
+    posters: 5,
   }, // май декабрь
   {
     release: new Date("2021-02-05"),
@@ -9258,7 +9258,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 22,
-    posters: 3,
+    posters: 2,
   }, // пацаны 3
   {
     release: new Date("2020-09-04"),
@@ -9972,7 +9972,7 @@ const films = [
       },
     ],
     screenshots: 44,
-    posters: 2,
+    posters: 1,
   }, // программисты
   {
     release: new Date("2012-03-02"),
