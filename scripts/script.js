@@ -13650,7 +13650,7 @@ const films = [
       },
     ],
     screenshots: 21,
-    posters: 4,
+    posters: 3,
   }, // убийца
   {
     release: new Date("2023-10-13"),
@@ -14907,7 +14907,7 @@ const films = [
       },
     ],
     screenshots: 21,
-    posters: 1,
+    posters: 4,
   }, // чудесная история генри шугара
   {
     release: new Date("2022-02-18"),
