@@ -11553,7 +11553,7 @@ const films = [
       },
     ],
     screenshots: 19,
-    posters: 3,
+    posters: 2,
   }, // сексуальное просвещение 4
   {
     release: new Date("1995-09-22"),
@@ -13650,7 +13650,7 @@ const films = [
       },
     ],
     screenshots: 21,
-    posters: 3,
+    posters: 2,
   }, // убийца
   {
     release: new Date("2023-10-13"),
