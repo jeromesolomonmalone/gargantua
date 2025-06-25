@@ -442,7 +442,7 @@ const films = [
       },
     ],
     screenshots: 13,
-    posters: 1,
+    posters: 4,
   }, // американский неудачник
   {
     release: new Date("2023-12-22"),
@@ -2054,7 +2054,7 @@ const films = [
       },
     ],
     screenshots: 16,
-    posters: 1,
+    posters: 4,
   }, // гран туризмо
   {
     release: new Date("2024-09-13"),
@@ -2872,7 +2872,7 @@ const films = [
       },
     ],
     screenshots: 78,
-    posters: 4,
+    posters: 3,
   }, // дюна 2
   {
     release: new Date("2021-09-03"),
@@ -5317,7 +5317,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 35,
-    posters: 1,
+    posters: 4,
   }, // локи 2
   {
     release: new Date("2022-03-30"),
@@ -5800,7 +5800,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 31,
-    posters: 1,
+    posters: 8,
   }, // люди икс 3
   {
     release: new Date("2003-05-02"),
@@ -5847,7 +5847,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 14,
-    posters: 1,
+    posters: 4,
   }, // люди икс 2
   {
     release: new Date("2000-07-14"),
@@ -6798,7 +6798,7 @@ const films = [
       { genre: "шпионаж" },
     ],
     screenshots: 26,
-    posters: 1,
+    posters: 5,
   }, // миссия невыполнима: смертельная расплата. часть первая (7)
   {
     release: new Date("2018-07-27"),
@@ -8432,7 +8432,7 @@ const films = [
       },
     ],
     screenshots: 30,
-    posters: 3,
+    posters: 2,
   }, // одинокие волки
   {
     release: new Date("2011-07-29"),
@@ -10354,7 +10354,7 @@ const films = [
       },
     ],
     screenshots: 41,
-    posters: 1,
+    posters: 2,
   }, // псы резервации 3
   {
     release: new Date("2022-08-03"),
@@ -10587,7 +10587,7 @@ const films = [
       },
     ],
     screenshots: 237,
-    posters: 4,
+    posters: 5,
   }, // разделение 2
   {
     release: new Date("2022-02-18"),
@@ -10646,7 +10646,7 @@ const films = [
       },
     ],
     screenshots: 74,
-    posters: 2,
+    posters: 3,
   }, // разделение 1
   {
     release: new Date("2016-04-08"),
@@ -11553,7 +11553,7 @@ const films = [
       },
     ],
     screenshots: 19,
-    posters: 1,
+    posters: 3,
   }, // сексуальное просвещение 4
   {
     release: new Date("1995-09-22"),
@@ -11790,7 +11790,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 16,
-    posters: 1,
+    posters: 9,
   }, // синий жук
   {
     release: new Date("2009-04-26"),
@@ -11877,7 +11877,7 @@ const films = [
       },
     ],
     screenshots: 18,
-    posters: 1,
+    posters: 2,
   }, // скрежет металла 1
   {
     release: new Date("2016-05-20"),
@@ -13650,7 +13650,7 @@ const films = [
       },
     ],
     screenshots: 21,
-    posters: 1,
+    posters: 4,
   }, // убийца
   {
     release: new Date("2023-10-13"),
