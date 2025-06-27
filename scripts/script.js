@@ -5800,7 +5800,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 31,
-    posters: 8,
+    posters: 9,
   }, // люди икс 3
   {
     release: new Date("2003-05-02"),
@@ -5894,7 +5894,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 16,
-    posters: 1,
+    posters: 6,
   }, // люди икс
   {
     release: new Date("2023-11-17"),
@@ -8210,6 +8210,12 @@ const films = [
       {
         name: "Джо Пеши",
       },
+      {
+        name: "Чейз Суи Уондерс",
+      },
+      {
+        name: "Бобби Каннавале",
+      },
     ],
     description:
       "История жизни Пита Дэвидсона, сочетающая повествование с некоторыми абсурдными элементами мировоззрения героя.",
@@ -8219,7 +8225,7 @@ const films = [
       },
     ],
     screenshots: 45,
-    posters: 1,
+    posters: 2,
   }, // ничегошеньки
   {
     release: new Date("2007-04-04"),
@@ -8653,7 +8659,7 @@ const films = [
       },
     ],
     screenshots: 21,
-    posters: 1,
+    posters: 4,
   }, // они клонировали тайрона
   {
     release: new Date("2023-07-21"),
@@ -13892,7 +13898,7 @@ const films = [
       },
     ],
     screenshots: 23,
-    posters: 1,
+    posters: 2,
   }, // финч
   {
     release: new Date("2025-03-07"),
@@ -14538,7 +14544,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 22,
-    posters: 1,
+    posters: 8,
   }, // человек-паук: нет пути домой (3)
   {
     release: new Date("2019-07-02"),
@@ -14585,7 +14591,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 26,
-    posters: 1,
+    posters: 9,
   }, // человек-паук: вдали от дома (2)
   {
     release: new Date("2017-07-07"),
@@ -14676,7 +14682,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 66,
-    posters: 1,
+    posters: 11,
   }, // человек-паук: паутина вселенных
   {
     release: new Date("2018-12-14"),
@@ -14726,7 +14732,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 69,
-    posters: 1,
+    posters: 6,
   }, // человек-паук: через вселенные
   {
     release: new Date("2023-08-02"),
@@ -14766,6 +14772,15 @@ const films = [
       {
         name: "Айс Кьюб",
       },
+      {
+        name: "Майя Рудольф",
+      },
+      {
+        name: "Джон Сина",
+      },
+      {
+        name: "Сет Роген",
+      },
     ],
     description:
       "Братья черепашки работают над тем, чтобы заслужить любовь жителей Нью-Йорка, сражаясь лицом к лицу с армией мутантов.",
@@ -14775,7 +14790,7 @@ const films = [
       },
     ],
     screenshots: 30,
-    posters: 1,
+    posters: 12,
   }, // черепашки-ниндзя: погром мутантов
   {
     release: new Date("2023-01-20"),
