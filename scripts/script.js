@@ -11582,7 +11582,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 16,
-    posters: 9,
+    posters: 1,
   }, // синий жук
   {
     release: new Date("2009-04-26"),
