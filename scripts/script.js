@@ -214,7 +214,7 @@ const films = [
       },
     ],
     screenshots: 33,
-    posters: 5,
+    posters: 1,
   }, // fallout 1
   {
     release: new Date("2019-11-15"),
@@ -266,7 +266,7 @@ const films = [
       },
     ],
     screenshots: 18,
-    posters: 1,
+    posters: 2,
   }, // ford против ferrari
   {
     release: new Date("2024-02-15"),
@@ -482,7 +482,7 @@ const films = [
       },
     ],
     screenshots: 23,
-    posters: 1,
+    posters: 2,
   }, // американское чтиво
   {
     release: new Date("2022-04-01"),
@@ -765,7 +765,7 @@ const films = [
       },
     ],
     screenshots: 29,
-    posters: 1,
+    posters: 2,
   }, // базз лайтер
   {
     release: new Date("2022-11-04"),
@@ -916,7 +916,7 @@ const films = [
       },
     ],
     screenshots: 25,
-    posters: 2,
+    posters: 1,
   }, // барри 2
   {
     release: new Date("2018-03-25"),
@@ -999,7 +999,7 @@ const films = [
       },
     ],
     screenshots: 42,
-    posters: 4,
+    posters: 1,
   }, // бедные несчастные
   {
     release: new Date("1998-02-20"),
@@ -1098,6 +1098,9 @@ const films = [
       {
         name: "Джейсон Шварцман",
       },
+      {
+        name: "Билл Мюррей",
+      },
     ],
     description:
       "Разъяренные фермеры, уставшие от постоянных нападок хитрого лиса на их курятники, готовятся уничтожить своего врага и его «хитрое» семейство.",
@@ -1107,7 +1110,7 @@ const films = [
       },
     ],
     screenshots: 24,
-    posters: 1,
+    posters: 2,
   }, // бесподобный мистер фокс
   {
     release: new Date("1980-11-13"),
@@ -1148,7 +1151,7 @@ const films = [
       },
     ],
     screenshots: 30,
-    posters: 4,
+    posters: 1,
   }, // бешеный бык
   {
     release: new Date("2017-09-29"),
@@ -1191,7 +1194,7 @@ const films = [
       },
     ],
     screenshots: 17,
-    posters: 1,
+    posters: 2,
   }, // битва полов
   {
     release: new Date("2022-09-16"),
@@ -1269,7 +1272,7 @@ const films = [
       },
     ],
     screenshots: 43,
-    posters: 5,
+    posters: 2,
   }, // большой злой лис и другие сказки
   {
     release: new Date("2021-08-12"),
@@ -1409,7 +1412,7 @@ const films = [
       },
     ],
     screenshots: 29,
-    posters: 1,
+    posters: 2,
   }, // быстрее пули
   {
     release: new Date("2023-04-07"),
@@ -1500,7 +1503,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 23,
-    posters: 1,
+    posters: 2,
   }, // бэтмен
   {
     release: new Date("2007-09-21"),
@@ -1614,7 +1617,7 @@ const films = [
       },
     ],
     screenshots: 40,
-    posters: 1,
+    posters: 2,
   }, // вавилон
   {
     release: new Date("2021-01-15"),
@@ -1661,7 +1664,7 @@ const films = [
       },
     ],
     screenshots: 21,
-    posters: 1,
+    posters: 2,
   }, // ванда вижн
   {
     release: new Date("2023-09-04"),
@@ -1741,7 +1744,7 @@ const films = [
       },
     ],
     screenshots: 21,
-    posters: 1,
+    posters: 3,
   }, // вестсайдская история
   {
     release: new Date("2019-01-28"),
@@ -1869,7 +1872,7 @@ const films = [
       },
     ],
     screenshots: 43,
-    posters: 1,
+    posters: 6,
   }, // во все тяжкие 1-5
   {
     release: new Date("2013-12-25"),
@@ -1946,7 +1949,7 @@ const films = [
       },
     ],
     screenshots: 27,
-    posters: 1,
+    posters: 2,
   }, // впритык
   {
     release: new Date("2023-11-03"),
@@ -1977,7 +1980,7 @@ const films = [
       },
     ],
     screenshots: 40,
-    posters: 3,
+    posters: 2,
   }, // голубоглазый самурай 1
   {
     release: new Date("2023-06-23"),
@@ -2001,6 +2004,18 @@ const films = [
       },
       {
         name: "Том Хэнкс",
+      },
+      {
+        name: "Джеффри Райт",
+      },
+      {
+        name: "Эдриан Броуди",
+      },
+      {
+        name: "Майя Хоук",
+      },
+      {
+        name: "Брайан Крэнстон",
       },
     ],
     description:
@@ -2054,7 +2069,7 @@ const films = [
       },
     ],
     screenshots: 16,
-    posters: 4,
+    posters: 1,
   }, // гран туризмо
   {
     release: new Date("2024-09-13"),
@@ -2177,7 +2192,7 @@ const films = [
       },
     ],
     screenshots: 19,
-    posters: 3,
+    posters: 2,
   }, // гранд тур 4
   {
     release: new Date("2019-01-18"),
@@ -2331,52 +2346,9 @@ const films = [
         genre: "комедия",
       },
     ],
-    screenshots: 26,
-    posters: 1,
+    screenshots: 16,
+    posters: 3,
   }, // двенадцать друзей оушена
-  {
-    release: new Date("2011-12-20"),
-    publication: new Date("2019-07-15"),
-    format: "фильм",
-    grade: "A+",
-    title: "Девушка с татуировкой дракона",
-    original: "The Girl with the Dragon Tattoo",
-    kinopoisk: "https://www.kinopoisk.ru/film/491724/",
-    director: [
-      {
-        name: "Дэвид Финчер",
-      },
-    ],
-    cast: [
-      {
-        name: "Дэниэл Крэйг",
-      },
-      {
-        name: "Руни Мара",
-      },
-      {
-        name: "Кристофер Пламмер",
-      },
-      {
-        name: "Стеллан Скарсгард",
-      },
-    ],
-    description:
-      "Журналист и молодая хакерша занимаются расследованием убийства, которое произошло сорок лет назад.",
-    genres: [
-      {
-        genre: "детектив",
-      },
-      {
-        genre: "триллер",
-      },
-      {
-        genre: "криминал",
-      },
-    ],
-    screenshots: 11,
-    posters: 1,
-  }, // девушка с татуировкой дракона
   {
     release: new Date("2019-04-18"),
     publication: new Date("2024-03-04"),
@@ -2394,6 +2366,9 @@ const films = [
       {
         name: "Элиас М’Барек",
       },
+      {
+        name: "Франко Неро",
+      },
     ],
     description:
       "Молодой юрист обнаруживает темные тайны прошлого, расследуя дело о жестоком убийстве.",
@@ -2406,7 +2381,7 @@ const films = [
       },
     ],
     screenshots: 14,
-    posters: 1,
+    posters: 2,
   }, // дело коллини
   {
     release: new Date("2017-10-20"),
@@ -2453,8 +2428,8 @@ const films = [
         genre: "драма",
       },
     ],
-    screenshots: 17,
-    posters: 1,
+    screenshots: 12,
+    posters: 3,
   }, // дело храбрых
   {
     release: new Date("1996-12-11"),
@@ -2528,7 +2503,7 @@ const films = [
       },
     ],
     screenshots: 25,
-    posters: 5,
+    posters: 1,
   }, // дикий робот
   {
     release: new Date("2019-10-10"),
@@ -2573,7 +2548,7 @@ const films = [
         genre: "мелодрама",
       },
     ],
-    screenshots: 19,
+    screenshots: 17,
     posters: 1,
   }, // дождливый день в нью-йорке
   {
@@ -2621,7 +2596,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 15,
-    posters: 1,
+    posters: 2,
   }, // доктор стрэндж 2
   {
     release: new Date("2008-12-26"),
@@ -2799,6 +2774,15 @@ const films = [
       {
         name: "Брук Лэнгтон",
       },
+      {
+        name: "Орландо Джонс",
+      },
+      {
+        name: "Фэйзон Лав",
+      },
+      {
+        name: "Джон Фавро",
+      },
     ],
     description:
       "Во время забастовки профессиональных футболистов владельцы нанимают простых работяг.",
@@ -2872,7 +2856,7 @@ const films = [
       },
     ],
     screenshots: 78,
-    posters: 3,
+    posters: 2,
   }, // дюна 2
   {
     release: new Date("2021-09-03"),
@@ -2924,7 +2908,7 @@ const films = [
       },
     ],
     screenshots: 47,
-    posters: 2,
+    posters: 1,
   }, // дюна
   {
     release: new Date("2017-07-21"),
@@ -2982,7 +2966,7 @@ const films = [
       },
     ],
     screenshots: 18,
-    posters: 1,
+    posters: 2,
   }, // дюнкерк
   {
     release: new Date("2022-12-23"),
@@ -3013,7 +2997,7 @@ const films = [
       },
     ],
     screenshots: 14,
-    posters: 1,
+    posters: 2,
   }, // жить
   {
     release: new Date("2024-08-09"),
@@ -3159,9 +3143,45 @@ const films = [
         genre: "мюзикл",
       },
     ],
-    screenshots: 13,
+    screenshots: 16,
     posters: 1,
   }, // зверопой 2
+  {
+    release: new Date("2020-11-20"),
+    publication: new Date("2021-02-04"),
+    format: "фильм",
+    grade: "A",
+    title: "Звук металла",
+    original: "Sound of Metal",
+    kinopoisk: "https://www.kinopoisk.ru/film/957883/",
+    director: [
+      {
+        name: "Дариус Мардер",
+      },
+    ],
+    cast: [
+      {
+        name: "Риз Ахмед",
+      },
+      {
+        name: "Оливия Кук",
+      },
+      {
+        name: "Пол Рейси",
+      },
+      {
+        name: "Лорен Ридлофф",
+      },
+    ],
+    description: "У барабанщика метал группы Рубена ухудшается слух.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 16,
+    posters: 2,
+  }, // звук металла
   {
     release: new Date("2020-09-11"),
     publication: new Date("2021-12-01"),
@@ -3194,7 +3214,7 @@ const films = [
       },
     ],
     screenshots: 14,
-    posters: 1,
+    posters: 2,
   }, // земля кочевников
   {
     release: new Date("1998-03-18"),
@@ -3234,7 +3254,7 @@ const films = [
       },
     ],
     screenshots: 14,
-    posters: 1,
+    posters: 3,
   }, // знакомьтесь, джо блэк
   {
     release: new Date("2007-12-07"),
@@ -3277,8 +3297,44 @@ const films = [
       },
     ],
     screenshots: 18,
-    posters: 1,
+    posters: 3,
   }, // искупление
+  {
+    release: new Date("2019-11-06"),
+    publication: new Date("2020-02-25"),
+    format: "фильм",
+    grade: "A",
+    title: "История о супружестве",
+    original: "Marriage Story / Брачная история",
+    kinopoisk: "https://www.kinopoisk.ru/film/1115486/",
+    director: [
+      {
+        name: "Ноа Баумбак",
+      },
+    ],
+    cast: [
+      {
+        name: "Скарлетт Йоханссон",
+      },
+      {
+        name: "Адам Драйвер",
+      },
+      {
+        name: "Лора Дерн",
+      },
+      {
+        name: "Эжи Робертсон",
+      },
+    ],
+    description: "Режиссёр и его жена-актриса переживают мучительный развод.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 32,
+    posters: 2,
+  }, // история о супружестве
   {
     release: new Date("2012-06-22"),
     publication: new Date("2020-04-01"),
@@ -3361,7 +3417,7 @@ const films = [
       },
     ],
     screenshots: 18,
-    posters: 1,
+    posters: 3,
   }, // к звёздам
   {
     release: new Date("2006-11-17"),
@@ -3411,60 +3467,11 @@ const films = [
     posters: 1,
   }, // казино рояль
   {
-    release: new Date("2013-09-23"),
+    release: new Date("2005-09-19"),
+    continuation: new Date("2013-09-23"),
     publication: new Date("2021-05-08"),
     format: "сериал",
-    season: "9",
-    grade: "A",
-    title: "Как я встретил вашу маму",
-    original: "How I Met Your Mother",
-    kinopoisk: "https://www.kinopoisk.ru/series/401522/",
-    director: [
-      {
-        name: "Картер Бэйс",
-      },
-      {
-        name: "Крейг Томас",
-      },
-    ],
-    cast: [
-      {
-        name: "Джош Рэднор",
-      },
-      {
-        name: "Нил Патрик Харрис",
-      },
-      {
-        name: "Коби Смолдерс",
-      },
-      {
-        name: "Джейсон Сигел",
-      },
-      {
-        name: "Элисон Хэннигэн",
-      },
-      {
-        name: "Кристин Милиоти",
-      },
-    ],
-    description:
-      "Главный герой решает поделиться со своими детьми историей, как он познакомился с их мамой.",
-    genres: [
-      {
-        genre: "комедия",
-      },
-      {
-        genre: "ситком",
-      },
-    ],
-    screenshots: 17,
-    posters: 1,
-  }, // как я встретил вашу маму 9
-  {
-    release: new Date("2012-09-24"),
-    publication: new Date("2021-04-28"),
-    format: "сериал",
-    season: "8",
+    season: "1-9",
     grade: "A",
     title: "Как я встретил вашу маму",
     original: "How I Met Your Mother",
@@ -3504,200 +3511,9 @@ const films = [
         genre: "ситком",
       },
     ],
-    screenshots: 16,
-    posters: 1,
-  }, // как я встретил вашу маму 8
-  {
-    release: new Date("2010-09-20"),
-    continuation: new Date("2011-09-19"),
-    publication: new Date("2021-04-26"),
-    format: "сериал",
-    season: "6-7",
-    grade: "A",
-    title: "Как я встретил вашу маму",
-    original: "How I Met Your Mother",
-    kinopoisk: "https://www.kinopoisk.ru/series/401522/",
-    director: [
-      {
-        name: "Картер Бэйс",
-      },
-      {
-        name: "Крейг Томас",
-      },
-    ],
-    cast: [
-      {
-        name: "Джош Рэднор",
-      },
-      {
-        name: "Нил Патрик Харрис",
-      },
-      {
-        name: "Коби Смолдерс",
-      },
-      {
-        name: "Джейсон Сигел",
-      },
-      {
-        name: "Элисон Хэннигэн",
-      },
-    ],
-    description:
-      "Главный герой решает поделиться со своими детьми историей, как он познакомился с их мамой.",
-    genres: [
-      {
-        genre: "комедия",
-      },
-      {
-        genre: "ситком",
-      },
-    ],
-    screenshots: 19,
-    posters: 1,
-  }, // как я встретил вашу маму 6-7
-  {
-    release: new Date("2008-09-22"),
-    continuation: new Date("2009-09-21"),
-    publication: new Date("2021-04-15"),
-    format: "сериал",
-    season: "4-5",
-    grade: "A",
-    title: "Как я встретил вашу маму",
-    original: "How I Met Your Mother",
-    kinopoisk: "https://www.kinopoisk.ru/series/401522/",
-    director: [
-      {
-        name: "Картер Бэйс",
-      },
-      {
-        name: "Крейг Томас",
-      },
-    ],
-    cast: [
-      {
-        name: "Джош Рэднор",
-      },
-      {
-        name: "Нил Патрик Харрис",
-      },
-      {
-        name: "Коби Смолдерс",
-      },
-      {
-        name: "Джейсон Сигел",
-      },
-      {
-        name: "Элисон Хэннигэн",
-      },
-    ],
-    description:
-      "Главный герой решает поделиться со своими детьми историей, как он познакомился с их мамой.",
-    genres: [
-      {
-        genre: "комедия",
-      },
-      {
-        genre: "ситком",
-      },
-    ],
-    screenshots: 23,
-    posters: 1,
-  }, // как я встретил вашу маму 4-5
-  {
-    release: new Date("2007-09-24"),
-    publication: new Date("2021-04-05"),
-    format: "сериал",
-    season: "3",
-    grade: "A",
-    title: "Как я встретил вашу маму",
-    original: "How I Met Your Mother",
-    kinopoisk: "https://www.kinopoisk.ru/series/401522/",
-    director: [
-      {
-        name: "Картер Бэйс",
-      },
-      {
-        name: "Крейг Томас",
-      },
-    ],
-    cast: [
-      {
-        name: "Джош Рэднор",
-      },
-      {
-        name: "Нил Патрик Харрис",
-      },
-      {
-        name: "Коби Смолдерс",
-      },
-      {
-        name: "Джейсон Сигел",
-      },
-      {
-        name: "Элисон Хэннигэн",
-      },
-    ],
-    description:
-      "Главный герой решает поделиться со своими детьми историей, как он познакомился с их мамой.",
-    genres: [
-      {
-        genre: "комедия",
-      },
-      {
-        genre: "ситком",
-      },
-    ],
-    screenshots: 16,
-    posters: 1,
-  }, // как я встретил вашу маму 3
-  {
-    release: new Date("2005-09-19"),
-    continuation: new Date("2006-09-18"),
-    publication: new Date("2021-04-01"),
-    format: "сериал",
-    season: "1-2",
-    grade: "A",
-    title: "Как я встретил вашу маму",
-    original: "How I Met Your Mother",
-    kinopoisk: "https://www.kinopoisk.ru/series/401522/",
-    director: [
-      {
-        name: "Картер Бэйс",
-      },
-      {
-        name: "Крейг Томас",
-      },
-    ],
-    cast: [
-      {
-        name: "Джош Рэднор",
-      },
-      {
-        name: "Нил Патрик Харрис",
-      },
-      {
-        name: "Коби Смолдерс",
-      },
-      {
-        name: "Джейсон Сигел",
-      },
-      {
-        name: "Элисон Хэннигэн",
-      },
-    ],
-    description:
-      "Главный герой решает поделиться со своими детьми историей, как он познакомился с их мамой.",
-    genres: [
-      {
-        genre: "комедия",
-      },
-      {
-        genre: "ситком",
-      },
-    ],
-    screenshots: 16,
-    posters: 1,
-  }, // как я встретил вашу маму 1-2
+    screenshots: 107,
+    posters: 12,
+  }, // как я встретил вашу маму 1-9
   {
     release: new Date("2023-11-10"),
     publication: new Date("2024-01-29"),
@@ -3740,7 +3556,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 12,
-    posters: 4,
+    posters: 1,
   }, // капитан марвел 2
   {
     release: new Date("1942-11-26"),
@@ -3777,7 +3593,7 @@ const films = [
       },
     ],
     screenshots: 21,
-    posters: 2,
+    posters: 1,
   }, // касабланка
   {
     release: new Date("2024-05-03"),
@@ -3820,7 +3636,7 @@ const films = [
       },
     ],
     screenshots: 14,
-    posters: 5,
+    posters: 2,
   }, // каскадеры
   {
     release: new Date("2008-11-14"),
@@ -3902,6 +3718,9 @@ const films = [
       {
         genre: "чёрно-белое",
       },
+      {
+        genre: "новогодний",
+      },
     ],
     screenshots: 16,
     posters: 1,
@@ -3941,7 +3760,7 @@ const films = [
       },
     ],
     screenshots: 63,
-    posters: 1,
+    posters: 2,
   }, // квин и слим
   {
     release: new Date("2019-11-08"),
@@ -3980,7 +3799,7 @@ const films = [
         genre: "новогодний",
       },
     ],
-    screenshots: 17,
+    screenshots: 16,
     posters: 1,
   }, // клаус
   {
@@ -4474,7 +4293,7 @@ const films = [
       },
     ],
     screenshots: 18,
-    posters: 1,
+    posters: 2,
   }, // корпорация «заговор» 1-2
   {
     release: new Date("2011-07-24"),
@@ -4663,7 +4482,7 @@ const films = [
       },
     ],
     screenshots: 16,
-    posters: 1,
+    posters: 2,
   }, // красавцы 4-5
   {
     release: new Date("2006-06-11"),
@@ -4840,7 +4659,7 @@ const films = [
       },
     ],
     screenshots: 10,
-    posters: 1,
+    posters: 3,
   }, // красивый мальчик
   {
     release: new Date("2021-12-03"),
@@ -5038,7 +4857,7 @@ const films = [
       },
     ],
     screenshots: 20,
-    posters: 8,
+    posters: 1,
   }, // кунг-фу панда 3
   {
     release: new Date("2011-05-26"),
@@ -5075,7 +4894,7 @@ const films = [
       },
     ],
     screenshots: 23,
-    posters: 7,
+    posters: 2,
   }, // кунг-фу панда 2
   {
     release: new Date("2008-06-06"),
@@ -5115,7 +4934,7 @@ const films = [
       },
     ],
     screenshots: 36,
-    posters: 9,
+    posters: 1,
   }, // кунг-фу панда
   {
     release: new Date("2016-12-25"),
@@ -5188,7 +5007,7 @@ const films = [
       },
     ],
     screenshots: 13,
-    posters: 2,
+    posters: 1,
   }, // лео
   {
     release: new Date("2021-10-28"),
@@ -5275,7 +5094,7 @@ const films = [
       },
     ],
     screenshots: 90,
-    posters: 3,
+    posters: 2,
   }, // логан: нуар
   {
     release: new Date("2023-10-05"),
@@ -5317,7 +5136,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 35,
-    posters: 4,
+    posters: 1,
   }, // локи 2
   {
     release: new Date("2022-03-30"),
@@ -5365,7 +5184,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 62,
-    posters: 1,
+    posters: 2,
   }, // лунный рыцарь
   {
     release: new Date("2016-11-18"),
@@ -5389,6 +5208,21 @@ const films = [
       },
       {
         name: "Треванте Роудс",
+      },
+      {
+        name: "Наоми Харрис",
+      },
+      {
+        name: "Жанель Моне",
+      },
+      {
+        name: "Махершала Али",
+      },
+      {
+        name: "Джаррель Джером",
+      },
+      {
+        name: "Андре Холланд",
       },
     ],
     description:
@@ -5800,7 +5634,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 31,
-    posters: 9,
+    posters: 2,
   }, // люди икс 3
   {
     release: new Date("2003-05-02"),
@@ -5847,7 +5681,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 14,
-    posters: 4,
+    posters: 2,
   }, // люди икс 2
   {
     release: new Date("2000-07-14"),
@@ -5894,7 +5728,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 16,
-    posters: 6,
+    posters: 1,
   }, // люди икс
   {
     release: new Date("2023-11-17"),
@@ -5928,7 +5762,7 @@ const films = [
       },
     ],
     screenshots: 30,
-    posters: 5,
+    posters: 1,
   }, // май декабрь
   {
     release: new Date("2021-02-05"),
@@ -6016,7 +5850,7 @@ const films = [
       },
     ],
     screenshots: 24,
-    posters: 1,
+    posters: 2,
   }, // маленькие женщины
   {
     release: new Date("2017-06-28"),
@@ -6064,7 +5898,7 @@ const films = [
         genre: "криминал",
       },
     ],
-    screenshots: 15,
+    screenshots: 12,
     posters: 1,
   }, // малыш на драйве
   {
@@ -6190,57 +6024,9 @@ const films = [
         genre: "комедия",
       },
     ],
-    screenshots: 18,
+    screenshots: 17,
     posters: 1,
   }, // мальчишник
-  {
-    release: new Date("1979-03-14"),
-    publication: new Date("2021-11-14"),
-    format: "фильм",
-    grade: "B",
-    title: "Манхэттен",
-    original: "Manhattan",
-    kinopoisk: "https://www.kinopoisk.ru/film/420/",
-    director: [
-      {
-        name: "Вуди Аллен",
-      },
-    ],
-    cast: [
-      {
-        name: "Вуди Аллен",
-      },
-      {
-        name: "Дайан Китон",
-      },
-      {
-        name: "Майкл Мерфи",
-      },
-      {
-        name: "Мэриэл Хемингуэй",
-      },
-      {
-        name: "Мэрил Стрип",
-      },
-    ],
-    description: "Разведенный сценарист влюбляется в любовницу лучшего друга.",
-    genres: [
-      {
-        genre: "драма",
-      },
-      {
-        genre: "мелодрама",
-      },
-      {
-        genre: "комедия",
-      },
-      {
-        genre: "чёрно-белое",
-      },
-    ],
-    screenshots: 13,
-    posters: 1,
-  }, // манхэттен
   {
     release: new Date("2016-12-16"),
     publication: new Date("2019-03-04"),
@@ -6583,7 +6369,7 @@ const films = [
       },
     ],
     screenshots: 23,
-    posters: 1,
+    posters: 2,
   }, // место под соснами
   {
     release: new Date("2023-12-22"),
@@ -6696,8 +6482,8 @@ const films = [
         genre: "мультфильм",
       },
     ],
-    screenshots: 14,
-    posters: 1,
+    screenshots: 13,
+    posters: 2,
   }, // миньоны: грювитация
   {
     release: new Date("2022-01-13"),
@@ -6751,7 +6537,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 21,
-    posters: 1,
+    posters: 2,
   }, // миротворец 1
   {
     release: new Date("2023-07-12"),
@@ -6798,7 +6584,7 @@ const films = [
       { genre: "шпионаж" },
     ],
     screenshots: 26,
-    posters: 5,
+    posters: 1,
   }, // миссия невыполнима: смертельная расплата. часть первая (7)
   {
     release: new Date("2018-07-27"),
@@ -6926,7 +6712,7 @@ const films = [
       { genre: "шпионаж" },
     ],
     screenshots: 19,
-    posters: 1,
+    posters: 2,
   }, // миссия невыполнима: протокол фантом (4)
   {
     release: new Date("2006-05-05"),
@@ -6973,7 +6759,7 @@ const films = [
       { genre: "шпионаж" },
     ],
     screenshots: 26,
-    posters: 1,
+    posters: 2,
   }, // миссия: невыполнима 3
   {
     release: new Date("2024-02-02"),
@@ -7018,7 +6804,7 @@ const films = [
       { genre: "шпионаж" },
     ],
     screenshots: 89,
-    posters: 4,
+    posters: 2,
   }, // мистер и миссис смит 1
   {
     release: new Date("2021-04-23"),
@@ -7092,7 +6878,7 @@ const films = [
       },
     ],
     screenshots: 26,
-    posters: 1,
+    posters: 2,
   }, // мост через озеро
   {
     release: new Date("2013-01-25"),
@@ -7228,7 +7014,7 @@ const films = [
       },
     ],
     screenshots: 16,
-    posters: 1,
+    posters: 2,
   }, // муви 43
   {
     release: new Date("2019-03-28"),
@@ -7262,7 +7048,7 @@ const films = [
       },
     ],
     screenshots: 19,
-    posters: 6,
+    posters: 1,
   }, // мы
   {
     release: new Date("1997-09-26"),
@@ -7477,7 +7263,7 @@ const films = [
       { genre: "ситком" },
     ],
     screenshots: 16,
-    posters: 2,
+    posters: 1,
   }, // начальная школа эбботт 1
   {
     release: new Date("2022-09-23"),
@@ -7558,7 +7344,7 @@ const films = [
       { genre: "шпионаж" },
     ],
     screenshots: 24,
-    posters: 1,
+    posters: 2,
   }, // не время умирать
   {
     release: new Date("2016-08-26"),
@@ -7600,7 +7386,7 @@ const films = [
         genre: "ужасы",
       },
     ],
-    screenshots: 20,
+    screenshots: 18,
     posters: 1,
   }, // не дыши
   {
@@ -7686,7 +7472,7 @@ const films = [
         genre: "комедия",
       },
     ],
-    screenshots: 19,
+    screenshots: 18,
     posters: 1,
   }, // не смотрите наверх
   {
@@ -7732,7 +7518,7 @@ const films = [
         genre: "чёрно-белое",
       },
     ],
-    screenshots: 17,
+    screenshots: 16,
     posters: 1,
   }, // небраска
   {
@@ -7779,7 +7565,7 @@ const films = [
       },
     ],
     screenshots: 19,
-    posters: 1,
+    posters: 2,
   }, // невероятная жизнь уолтера митти
   {
     release: new Date("2003-09-02"),
@@ -7824,7 +7610,7 @@ const films = [
     format: "фильм",
     grade: "A",
     title: "Неогранённые алмазы",
-    original: "Uncut Gems",
+    original: "Uncut Gems / Неогранённые драгоценности",
     kinopoisk: "https://www.kinopoisk.ru/film/1076152/",
     director: [
       {
@@ -7864,7 +7650,7 @@ const films = [
         genre: "криминал",
       },
     ],
-    screenshots: 31,
+    screenshots: 28,
     posters: 1,
   }, // неогранённые алмазы
   {
@@ -8009,7 +7795,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 21,
-    posters: 3,
+    posters: 1,
   }, // непобедимый 1
   {
     release: new Date("2014-11-26"),
@@ -8107,7 +7893,7 @@ const films = [
       },
     ],
     screenshots: 22,
-    posters: 1,
+    posters: 2,
   }, // несносные боссы
   {
     release: new Date("2022-07-22"),
@@ -8225,7 +8011,7 @@ const films = [
       },
     ],
     screenshots: 45,
-    posters: 2,
+    posters: 1,
   }, // ничегошеньки
   {
     release: new Date("2007-04-04"),
@@ -8407,7 +8193,7 @@ const films = [
       },
     ],
     screenshots: 13,
-    posters: 1,
+    posters: 2,
   }, // одиннадцать друзей оушена
   {
     release: new Date("2024-09-01"),
@@ -8438,7 +8224,7 @@ const films = [
       },
     ],
     screenshots: 30,
-    posters: 2,
+    posters: 1,
   }, // одинокие волки
   {
     release: new Date("2011-07-29"),
@@ -8477,7 +8263,7 @@ const films = [
         genre: "детектив",
       },
     ],
-    screenshots: 12,
+    screenshots: 11,
     posters: 1,
   }, // однажды в ирландии
   {
@@ -8512,7 +8298,7 @@ const films = [
       },
     ],
     screenshots: 21,
-    posters: 1,
+    posters: 2,
   }, // однажды в голливуде
   {
     release: new Date("2022-01-21"),
@@ -8565,7 +8351,7 @@ const films = [
       },
     ],
     screenshots: 21,
-    posters: 1,
+    posters: 2,
   }, // озарк 4
   {
     release: new Date("2020-03-27"),
@@ -8659,7 +8445,7 @@ const films = [
       },
     ],
     screenshots: 21,
-    posters: 4,
+    posters: 1,
   }, // они клонировали тайрона
   {
     release: new Date("2023-07-21"),
@@ -8702,7 +8488,7 @@ const films = [
       },
     ],
     screenshots: 36,
-    posters: 5,
+    posters: 1,
   }, // оппенгеймер
   {
     release: new Date("2024-02-02"),
@@ -8810,7 +8596,7 @@ const films = [
       },
     ],
     screenshots: 40,
-    posters: 7,
+    posters: 1,
   }, // оставь мир позади
   {
     release: new Date("2019-09-13"),
@@ -8861,7 +8647,7 @@ const films = [
       },
     ],
     screenshots: 18,
-    posters: 1,
+    posters: 3,
   }, // отмена 1-2
   {
     release: new Date("2016-06-24"),
@@ -8895,7 +8681,7 @@ const films = [
       },
     ],
     screenshots: 15,
-    posters: 1,
+    posters: 2,
   }, // охота на дикарей
   {
     release: new Date("2014-11-14"),
@@ -8935,7 +8721,7 @@ const films = [
       },
     ],
     screenshots: 50,
-    posters: 1,
+    posters: 2,
   }, // охотник на лис
   {
     release: new Date("2022-05-27"),
@@ -9018,7 +8804,7 @@ const films = [
       },
     ],
     screenshots: 96,
-    posters: 1,
+    posters: 2,
   }, // очень странные дела 4
   {
     release: new Date("2016-11-18"),
@@ -9104,7 +8890,7 @@ const films = [
       },
     ],
     screenshots: 47,
-    posters: 1,
+    posters: 2,
   }, // парни со стволами
   {
     release: new Date("2001-06-08"),
@@ -9204,7 +8990,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 25,
-    posters: 5,
+    posters: 1,
   }, // пацаны 4
   {
     release: new Date("2022-06-03"),
@@ -9324,7 +9110,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 12,
-    posters: 3,
+    posters: 1,
   }, // пацаны 2
   {
     release: new Date("2019-10-07"),
@@ -9428,7 +9214,7 @@ const films = [
       },
     ],
     screenshots: 33,
-    posters: 6,
+    posters: 2,
   }, // пингвин
   {
     release: new Date("2022-04-22"),
@@ -9471,7 +9257,7 @@ const films = [
       },
     ],
     screenshots: 15,
-    posters: 1,
+    posters: 2,
   }, // плохие парни
   {
     release: new Date("2016-12-09"),
@@ -9556,7 +9342,7 @@ const films = [
       },
     ],
     screenshots: 33,
-    posters: 2,
+    posters: 1,
   }, // подай знак
   {
     release: new Date("2018-06-12"),
@@ -9739,7 +9525,7 @@ const films = [
       },
     ],
     screenshots: 29,
-    posters: 2,
+    posters: 1,
   }, // полиция токио 1
   {
     release: new Date("2020-04-19"),
@@ -9774,7 +9560,7 @@ const films = [
       },
     ],
     screenshots: 17,
-    posters: 5,
+    posters: 2,
   }, // последний танец
   {
     release: new Date("2019-06-07"),
@@ -9810,7 +9596,7 @@ const films = [
         genre: "драма",
       },
     ],
-    screenshots: 34,
+    screenshots: 28,
     posters: 2,
   }, // последний черный в сан-франциско
   {
@@ -9851,7 +9637,7 @@ const films = [
       },
     ],
     screenshots: 22,
-    posters: 2,
+    posters: 1,
   }, // последняя капля
   {
     release: new Date("2022-04-28"),
@@ -9928,7 +9714,7 @@ const films = [
       },
     ],
     screenshots: 67,
-    posters: 2,
+    posters: 1,
   }, // претенденты
   {
     release: new Date("2020-03-05"),
@@ -10017,7 +9803,7 @@ const films = [
         genre: "комедия",
       },
     ],
-    screenshots: 21,
+    screenshots: 18,
     posters: 1,
   }, // проект х
   {
@@ -10189,7 +9975,7 @@ const films = [
       },
     ],
     screenshots: 59,
-    posters: 1,
+    posters: 2,
   }, // прослушка 3
   {
     release: new Date("2003-06-01"),
@@ -10316,7 +10102,7 @@ const films = [
       },
     ],
     screenshots: 37,
-    posters: 10,
+    posters: 3,
   }, // прошлые жизни
   {
     release: new Date("2023-08-02"),
@@ -10534,7 +10320,7 @@ const films = [
       },
     ],
     screenshots: 36,
-    posters: 1,
+    posters: 3,
   }, // пятница
   {
     release: new Date("2025-01-17"),
@@ -10593,7 +10379,7 @@ const films = [
       },
     ],
     screenshots: 237,
-    posters: 5,
+    posters: 2,
   }, // разделение 2
   {
     release: new Date("2022-02-18"),
@@ -10652,7 +10438,7 @@ const films = [
       },
     ],
     screenshots: 74,
-    posters: 3,
+    posters: 2,
   }, // разделение 1
   {
     release: new Date("2016-04-08"),
@@ -10685,7 +10471,7 @@ const films = [
       },
     ],
     screenshots: 13,
-    posters: 1,
+    posters: 2,
   }, // разрушение
   {
     release: new Date("2009-08-13"),
@@ -10719,7 +10505,7 @@ const films = [
       },
     ],
     screenshots: 11,
-    posters: 1,
+    posters: 2,
   }, // район № 9
   {
     release: new Date("2022-09-30"),
@@ -10860,7 +10646,7 @@ const films = [
       },
     ],
     screenshots: 38,
-    posters: 3,
+    posters: 1,
   }, // расцвет династии лейкерс 2
   {
     release: new Date("2022-03-06"),
@@ -10909,7 +10695,7 @@ const films = [
       },
     ],
     screenshots: 17,
-    posters: 4,
+    posters: 1,
   }, // расцвет династии лейкерс 1
   {
     release: new Date("2007-06-29"),
@@ -10951,8 +10737,8 @@ const films = [
         genre: "мультфильм",
       },
     ],
-    screenshots: 42,
-    posters: 1,
+    screenshots: 41,
+    posters: 2,
   }, // рататуй
   {
     release: new Date("2023-10-15"),
@@ -11116,7 +10902,7 @@ const films = [
       },
     ],
     screenshots: 310,
-    posters: 5,
+    posters: 1,
   }, // рипли
   {
     release: new Date("2021-12-03"),
@@ -11156,7 +10942,7 @@ const films = [
       },
     ],
     screenshots: 35,
-    posters: 1,
+    posters: 2,
   }, // рука бога
   {
     release: new Date("2021-07-15"),
@@ -11559,7 +11345,7 @@ const films = [
       },
     ],
     screenshots: 19,
-    posters: 2,
+    posters: 1,
   }, // сексуальное просвещение 4
   {
     release: new Date("1995-09-22"),
@@ -11605,7 +11391,7 @@ const films = [
       },
     ],
     screenshots: 25,
-    posters: 1,
+    posters: 2,
   }, // семь
   {
     release: new Date("2018-10-26"),
@@ -11842,7 +11628,7 @@ const films = [
       },
     ],
     screenshots: 12,
-    posters: 1,
+    posters: 2,
   }, // сити-айленд
   {
     release: new Date("2023-07-27"),
@@ -11883,7 +11669,7 @@ const films = [
       },
     ],
     screenshots: 18,
-    posters: 2,
+    posters: 1,
   }, // скрежет металла 1
   {
     release: new Date("2016-05-20"),
@@ -12118,7 +11904,7 @@ const films = [
       },
     ],
     screenshots: 15,
-    posters: 2,
+    posters: 1,
   }, // смерч 2
   {
     release: new Date("2021-11-24"),
@@ -12177,7 +11963,7 @@ const films = [
       },
     ],
     screenshots: 27,
-    posters: 1,
+    posters: 2,
   }, // соколиный глаз
   {
     release: new Date("2015-03-17"),
@@ -12426,7 +12212,7 @@ const films = [
       { genre: "ситком" },
     ],
     screenshots: 48,
-    posters: 1,
+    posters: 2,
   }, // сообщетсво 2
   {
     release: new Date("2009-09-17"),
@@ -12477,7 +12263,7 @@ const films = [
       { genre: "ситком" },
     ],
     screenshots: 19,
-    posters: 1,
+    posters: 2,
   }, // сообщетсво 1
   {
     release: new Date("2016-03-18"),
@@ -12525,7 +12311,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 46,
-    posters: 2,
+    posters: 1,
   }, // сорвиголова 2
   {
     release: new Date("2015-04-10"),
@@ -12570,7 +12356,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 29,
-    posters: 5,
+    posters: 1,
   }, // сорвиголова 1
   {
     release: new Date("2004-02-18"),
@@ -12774,6 +12560,9 @@ const films = [
       {
         name: "Бен Элдридж",
       },
+      {
+        name: "Руперт Гринт",
+      },
     ],
     description:
       "Счастливая пара с семилетней дочерью отдыхает в лесном коттедже у озера. Внезапно у них на пороге возникают четыре незнакомца.",
@@ -12862,7 +12651,7 @@ const films = [
       },
     ],
     screenshots: 26,
-    posters: 1,
+    posters: 2,
   }, // сядь за руль моей машины
   {
     release: new Date("2023-03-15"),
@@ -13068,51 +12857,8 @@ const films = [
       },
     ],
     screenshots: 35,
-    posters: 2,
-  }, // темная материя
-  {
-    release: new Date("2021-11-12"),
-    publication: new Date("2021-11-24"),
-    format: "фильм",
-    grade: "B",
-    title: "Тик-так... БУМ!",
-    original: "tick, tick...BOOM!",
-    kinopoisk: "https://www.kinopoisk.ru/film/1174293/",
-    director: [
-      {
-        name: "Лин-Мануэль Миранда",
-      },
-    ],
-    cast: [
-      {
-        name: "Эндрю Гарфилд",
-      },
-      {
-        name: "Александра Шипп",
-      },
-      {
-        name: "Робин де Хесус",
-      },
-      {
-        name: "Ванесса Энн Хадженс",
-      },
-    ],
-    description:
-      "Композитор в 30 лет пытается создать великий мюзикл, пока не истекло время.",
-    genres: [
-      {
-        genre: "мюзикл",
-      },
-      {
-        genre: "драма",
-      },
-      {
-        genre: "биография",
-      },
-    ],
-    screenshots: 15,
     posters: 1,
-  }, // тик-так... бум
+  }, // темная материя
   {
     release: new Date("2017-11-03"),
     publication: new Date("2021-07-24"),
@@ -13214,7 +12960,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 15,
-    posters: 1,
+    posters: 2,
   }, // тор любовь и гром
   {
     release: new Date("2021-12-25"),
@@ -13260,7 +13006,7 @@ const films = [
       },
     ],
     screenshots: 54,
-    posters: 1,
+    posters: 2,
   }, // трагедия макбета
   {
     release: new Date("2024-01-11"),
@@ -13293,7 +13039,7 @@ const films = [
       { genre: "ситком" },
     ],
     screenshots: 12,
-    posters: 2,
+    posters: 1,
   }, // третий лишний 1
   {
     release: new Date("2015-06-26"),
@@ -13333,7 +13079,7 @@ const films = [
       },
     ],
     screenshots: 18,
-    posters: 1,
+    posters: 2,
   }, // третий лишний 2
   {
     release: new Date("2022-05-21"),
@@ -13367,7 +13113,7 @@ const films = [
       },
     ],
     screenshots: 36,
-    posters: 2,
+    posters: 1,
   }, // треугольник печали
   {
     release: new Date("2023-02-09"),
@@ -13554,7 +13300,7 @@ const films = [
       },
     ],
     screenshots: 12,
-    posters: 1,
+    posters: 2,
   }, // ты 1
   {
     release: new Date("2023-03-31"),
@@ -13656,7 +13402,7 @@ const films = [
       },
     ],
     screenshots: 21,
-    posters: 2,
+    posters: 1,
   }, // убийца
   {
     release: new Date("2023-10-13"),
@@ -13691,7 +13437,7 @@ const films = [
       },
     ],
     screenshots: 19,
-    posters: 1,
+    posters: 2,
   }, // уроки химии
   {
     release: new Date("2011-08-12"),
@@ -13730,8 +13476,8 @@ const films = [
         genre: "криминал",
       },
     ],
-    screenshots: 12,
-    posters: 1,
+    screenshots: 11,
+    posters: 3,
   }, // успеть за 30 минут
   {
     release: new Date("2000-03-31"),
@@ -13898,7 +13644,7 @@ const films = [
       },
     ],
     screenshots: 23,
-    posters: 2,
+    posters: 1,
   }, // финч
   {
     release: new Date("2025-03-07"),
@@ -14248,7 +13994,7 @@ const films = [
       },
     ],
     screenshots: 78,
-    posters: 1,
+    posters: 3,
   }, // французский вестник
   {
     release: new Date("2023-07-24"),
@@ -14328,7 +14074,7 @@ const films = [
       },
     ],
     screenshots: 22,
-    posters: 1,
+    posters: 4,
   }, // харли квинн 1-4
   {
     release: new Date("2023-03-24"),
@@ -14448,7 +14194,7 @@ const films = [
       },
     ],
     screenshots: 47,
-    posters: 2,
+    posters: 1,
   }, // человек, которого не было
   {
     release: new Date("2011-09-23"),
@@ -14544,7 +14290,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 22,
-    posters: 8,
+    posters: 2,
   }, // человек-паук: нет пути домой (3)
   {
     release: new Date("2019-07-02"),
@@ -14591,7 +14337,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 26,
-    posters: 9,
+    posters: 2,
   }, // человек-паук: вдали от дома (2)
   {
     release: new Date("2017-07-07"),
@@ -14635,7 +14381,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 27,
-    posters: 1,
+    posters: 2,
   }, // человек-паук: возвращение домой (1)
   {
     release: new Date("2023-06-02"),
@@ -14682,7 +14428,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 66,
-    posters: 11,
+    posters: 2,
   }, // человек-паук: паутина вселенных
   {
     release: new Date("2018-12-14"),
@@ -14732,7 +14478,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 69,
-    posters: 6,
+    posters: 3,
   }, // человек-паук: через вселенные
   {
     release: new Date("2023-08-02"),
@@ -14790,7 +14536,7 @@ const films = [
       },
     ],
     screenshots: 30,
-    posters: 12,
+    posters: 2,
   }, // черепашки-ниндзя: погром мутантов
   {
     release: new Date("2023-01-20"),
@@ -14922,7 +14668,7 @@ const films = [
       },
     ],
     screenshots: 21,
-    posters: 4,
+    posters: 1,
   }, // чудесная история генри шугара
   {
     release: new Date("2022-02-18"),
@@ -15185,7 +14931,7 @@ const films = [
       },
     ],
     screenshots: 14,
-    posters: 1,
+    posters: 2,
   }, // я краснею
   {
     release: new Date("2024-05-24"),
@@ -15222,7 +14968,7 @@ const films = [
       },
     ],
     screenshots: 42,
-    posters: 10,
+    posters: 2,
   }, // я не киллер
 ];
 
