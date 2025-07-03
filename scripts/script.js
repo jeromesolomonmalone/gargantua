@@ -442,7 +442,7 @@ const films = [
       },
     ],
     screenshots: 13,
-    posters: 4,
+    posters: 2,
   }, // американский неудачник
   {
     release: new Date("2023-12-22"),
@@ -8091,7 +8091,7 @@ const films = [
       },
     ],
     screenshots: 24,
-    posters: 2,
+    posters: 1,
   }, // о где же ты брат
   {
     release: new Date("2009-09-18"),
@@ -9050,7 +9050,7 @@ const films = [
       { genre: "супергероика" },
     ],
     screenshots: 22,
-    posters: 2,
+    posters: 1,
   }, // пацаны 3
   {
     release: new Date("2020-09-04"),
