@@ -1918,6 +1918,49 @@ const films = [
     posters: 1,
   }, // волк с уолл-стрит
   {
+    release: new Date("2019-11-15"),
+    publication: new Date("2021-08-15"),
+    format: "фильм",
+    grade: "A+",
+    title: "Волны",
+    original: "Waves",
+    kinopoisk: "https://www.kinopoisk.ru/film/1172136/",
+    director: [
+      {
+        name: "Трей Эдвард Шульц",
+      },
+    ],
+    cast: [
+      {
+        name: "Тейлор Расселл",
+      },
+      {
+        name: "Келвин Харрисон мл.",
+      },
+      {
+        name: "Алекса Деми",
+      },
+      {
+        name: "Рене Голдсберри",
+      },
+      {
+        name: "Стерлинг К. Браун",
+      },
+      {
+        name: "Лукас Хеджес",
+      },
+    ],
+    description:
+      "Борца Тайлера из богатой семьи подстерегает двойной удар: угроза карьеры из-за операции и беременность девушки Алексис.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 25,
+    posters: 1,
+  }, // волны
+  {
     release: new Date("2010-11-05"),
     publication: new Date("2022-01-16"),
     format: "фильм",
@@ -2349,6 +2392,55 @@ const films = [
     screenshots: 16,
     posters: 3,
   }, // двенадцать друзей оушена
+  {
+    release: new Date("2011-12-20"),
+    publication: new Date("2019-07-15"),
+    format: "фильм",
+    grade: "A+",
+    title: "Девушка с татуировкой дракона",
+    original: "The Girl with the Dragon Tattoo",
+    kinopoisk: "https://www.kinopoisk.ru/film/491724/",
+    director: [
+      {
+        name: "Дэвид Финчер",
+      },
+    ],
+    cast: [
+      {
+        name: "Дэниэл Крэйг",
+      },
+      {
+        name: "Руни Мара",
+      },
+      {
+        name: "Кристофер Пламмер",
+      },
+      {
+        name: "Стеллан Скарсгард",
+      },
+      {
+        name: "Робин Райт",
+      },
+    ],
+    description:
+      "Журналист и молодая хакерша занимаются расследованием убийства, которое произошло сорок лет назад.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "детектив",
+      },
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 12,
+    posters: 2,
+  }, // девушка с татуировкой дракона
   {
     release: new Date("2019-04-18"),
     publication: new Date("2024-03-04"),
@@ -3299,6 +3391,52 @@ const films = [
     screenshots: 18,
     posters: 3,
   }, // искупление
+  {
+    release: new Date("2017-10-13"),
+    publication: new Date("2021-08-21"),
+    format: "фильм",
+    grade: "A",
+    title: "Истории семьи Майровиц",
+    original: "The Meyerowitz Stories (New and Selected)",
+    kinopoisk: "https://www.kinopoisk.ru/film/968307/",
+    director: [
+      {
+        name: "Ноа Баумбак",
+      },
+    ],
+    cast: [
+      {
+        name: "Адам Сэндлер",
+      },
+      {
+        name: "Бен Стиллер",
+      },
+      {
+        name: "Дастин Хоффман",
+      },
+      {
+        name: "Элизабет Марвел",
+      },
+      {
+        name: "Эмма Томпсон",
+      },
+      {
+        name: "Грэйс Ван Паттен",
+      },
+    ],
+    description:
+      "Рассорившаяся семья воссоединяется в Нью-Йорке на выставке работ отца.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 17,
+    posters: 2,
+  }, // истории семьи майровиц
   {
     release: new Date("2019-11-06"),
     publication: new Date("2020-02-25"),
@@ -4817,6 +4955,58 @@ const films = [
     posters: 1,
   }, // крестный отец
   {
+    release: new Date("1994-10-14"),
+    publication: new Date("2020-08-02"),
+    format: "фильм",
+    grade: "A+",
+    title: "Криминальное чтиво",
+    original: "Pulp Fiction",
+    kinopoisk: "https://www.kinopoisk.ru/film/342/",
+    director: [
+      {
+        name: "Квентин Тарантино",
+      },
+    ],
+    cast: [
+      {
+        name: "Джон Траволта",
+      },
+      {
+        name: "Сэмюэл Л. Джексон",
+      },
+      {
+        name: "Брюс Уиллис",
+      },
+      {
+        name: "Ума Турман",
+      },
+      {
+        name: "Винг Реймз",
+      },
+      {
+        name: "Тим Рот",
+      },
+      {
+        name: "Харви Кейтель",
+      },
+      {
+        name: "Квентин Тарантино",
+      },
+    ],
+    description:
+      "Судьбы двух киллеров, боксёра, гангстера с женой и грабителей ресторана переплетаются в истории о насилии и искуплении.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 33,
+    posters: 1,
+  }, // криминальное чтиво
+  {
     release: new Date("2016-01-29"),
     publication: new Date("2023-12-26"),
     format: "фильм",
@@ -5853,6 +6043,43 @@ const films = [
     posters: 2,
   }, // маленькие женщины
   {
+    release: new Date("2021-01-29"),
+    publication: new Date("2021-02-15"),
+    format: "фильм",
+    grade: "A",
+    title: "Малкольм и Мари",
+    original: "Malcolm & Marie",
+    kinopoisk: "https://www.kinopoisk.ru/film/1394181/",
+    director: [
+      {
+        name: "Сэм Левинсон",
+      },
+    ],
+    cast: [
+      {
+        name: "Зендея",
+      },
+      {
+        name: "Джон Дэвид Вашингтон",
+      },
+    ],
+    description:
+      "Отношения режиссёра и его девушки проходят испытание в одну долгую ночь после премьеры фильма.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "чёрно-белое",
+      },
+    ],
+    screenshots: 51,
+    posters: 1,
+  }, // малкольм и мари
+  {
     release: new Date("2017-06-28"),
     publication: new Date("2019-01-27"),
     format: "фильм",
@@ -6443,6 +6670,84 @@ const films = [
     posters: 1,
   }, // милая фрэнсис
   {
+    release: new Date("1977-07-01"),
+    publication: new Date("2021-06-05"),
+    format: "фильм",
+    grade: "A",
+    title: "Мимино",
+    original: "Mimino",
+    kinopoisk: "https://www.kinopoisk.ru/film/46638/",
+    director: [
+      {
+        name: "Георгий Данелия",
+      },
+    ],
+    cast: [
+      {
+        name: "Вахтанг Кикабидзе",
+      },
+      {
+        name: "Фрунзик Мкртчян",
+      },
+      {
+        name: "Елена Проклова",
+      },
+      {
+        name: "Евгений Леонов",
+      },
+    ],
+    description: "Путь грузина-пилота в большую авиацию.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 16,
+    posters: 1,
+  }, // мимино
+  {
+    release: new Date("2020-01-26"),
+    publication: new Date("2021-10-25"),
+    format: "фильм",
+    grade: "B",
+    title: "Минари",
+    original: "Minari",
+    kinopoisk: "https://www.kinopoisk.ru/film/1286541/",
+    director: [
+      {
+        name: "Ли Айзек Чун",
+      },
+    ],
+    cast: [
+      {
+        name: "Стивен Ян",
+      },
+      {
+        name: "Хан Е-ри",
+      },
+      {
+        name: "Юн Ё-джон",
+      },
+      {
+        name: "Алан С. Ким",
+      },
+      {
+        name: "Ноэль Чо",
+      },
+    ],
+    description: "Семья корейских мигрантов осваивает Америку 1980-х.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 30,
+    posters: 1,
+  }, // минари
+  {
     release: new Date("2022-07-01"),
     publication: new Date("2022-08-17"),
     format: "фильм",
@@ -6671,7 +6976,7 @@ const films = [
       { genre: "шпионаж" },
     ],
     screenshots: 19,
-    posters: 1,
+    posters: 2,
   }, // миссия невыполнима: племя изгоев (5)
   {
     release: new Date("2011-12-21"),
@@ -7519,7 +7824,7 @@ const films = [
       },
     ],
     screenshots: 16,
-    posters: 1,
+    posters: 2,
   }, // небраска
   {
     release: new Date("2013-12-25"),
@@ -8491,6 +8796,46 @@ const films = [
     posters: 1,
   }, // оппенгеймер
   {
+    release: new Date("2007-03-23"),
+    publication: new Date("2021-08-18"),
+    format: "фильм",
+    grade: "C",
+    title: "Опустевший город",
+    original: "Reign Over Me",
+    kinopoisk: "https://www.kinopoisk.ru/film/251735/",
+    director: [
+      {
+        name: "Майк Байндер",
+      },
+    ],
+    cast: [
+      {
+        name: "Адам Сэндлер",
+      },
+      {
+        name: "Дон Чидл",
+      },
+      {
+        name: "Джада Пинкетт Смит",
+      },
+      {
+        name: "Лив Тайлер",
+      },
+      {
+        name: "Саффрон Берроуз",
+      },
+    ],
+    description:
+      "Мужчина, потерявший семью при теракте 11 сентября, находит утешение в дружбе со старым однокурсником.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 13,
+    posters: 1,
+  }, // опустевший город
+  {
     release: new Date("2024-02-02"),
     publication: new Date("2024-02-06"),
     format: "фильм",
@@ -9260,6 +9605,89 @@ const films = [
     posters: 2,
   }, // плохие парни
   {
+    release: new Date("2003-07-18"),
+    publication: new Date("2020-01-23"),
+    format: "фильм",
+    grade: "love",
+    title: "Плохие парни 2",
+    original: "Bad Boys II",
+    kinopoisk: "https://www.kinopoisk.ru/film/2928/",
+    director: [
+      {
+        name: "Майкл Бэй",
+      },
+    ],
+    cast: [
+      {
+        name: "Уилл Смит",
+      },
+      {
+        name: "Мартин Лоуренс",
+      },
+      {
+        name: "Гэбриэл Юнион",
+      },
+      {
+        name: "Хорди Молья",
+      },
+      {
+        name: "Мартин Лоуренс",
+      },
+    ],
+    description:
+      "Полицейские расследуют поставки экстази во Флориду от кубинской наркогруппировки.",
+    genres: [
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 20,
+    posters: 3,
+  }, // плохие парни 2
+  {
+    release: new Date("1995-04-07"),
+    publication: new Date("2020-01-22"),
+    format: "фильм",
+    grade: "A+",
+    title: "Плохие парни",
+    original: "Bad Boys",
+    kinopoisk: "https://www.kinopoisk.ru/film/3908/",
+    director: [
+      {
+        name: "Майкл Бэй",
+      },
+    ],
+    cast: [
+      {
+        name: "Уилл Смит",
+      },
+      {
+        name: "Мартин Лоуренс",
+      },
+    ],
+    description:
+      "Детективы охраняют свидетеля убийства и расследуют кражу героина из полицейского хранилища.",
+    genres: [
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 16,
+    posters: 2,
+  }, // плохие парни
+  {
     release: new Date("2016-12-09"),
     publication: new Date("2022-03-16"),
     format: "фильм",
@@ -9639,6 +10067,46 @@ const films = [
     screenshots: 22,
     posters: 1,
   }, // последняя капля
+  {
+    release: new Date("2005-11-11"),
+    publication: new Date("2020-03-11"),
+    format: "фильм",
+    grade: "A",
+    title: "Поцелуй навылет",
+    original: "Kiss Kiss Bang Bang",
+    kinopoisk: "https://www.kinopoisk.ru/film/51439/",
+    director: [
+      {
+        name: "Шейн Блэк",
+      },
+    ],
+    cast: [
+      {
+        name: "Роберт Дауни мл.",
+      },
+      {
+        name: "Вэл Килмер",
+      },
+      {
+        name: "Мишель Монахэн",
+      },
+    ],
+    description:
+      "Вора, принятого за актёра, отправляют в Голливуд тренироваться у детектива для съёмок в кино, но вместе с неудачливой актрисой они попадают в расследование убийства.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "детектив",
+      },
+    ],
+    screenshots: 15,
+    posters: 1,
+  }, // поцелуй навылет
   {
     release: new Date("2022-04-28"),
     publication: new Date("2022-06-25"),
@@ -12266,6 +12734,315 @@ const films = [
     posters: 2,
   }, // сообщетсво 1
   {
+    release: new Date("2006-03-12"),
+    publication: new Date("2021-01-09"),
+    format: "сериал",
+    season: "6",
+    grade: "love",
+    title: "Сопрано",
+    original: "The Sopranos / Клан Сопрано",
+    kinopoisk: "https://www.kinopoisk.ru/series/79848/",
+    director: [
+      {
+        name: "Дэвид Чейз",
+      },
+    ],
+    cast: [
+      {
+        name: "Джеймс Гандольфини",
+      },
+      {
+        name: "Иди Фалько",
+      },
+      {
+        name: "Лоррейн Бракко",
+      },
+      {
+        name: "Майкл Империоли",
+      },
+      {
+        name: "Роберт Айлер",
+      },
+      {
+        name: "Джэми-Линн Сиглер",
+      },
+      {
+        name: "Стив Ван Зандт",
+      },
+      {
+        name: "Тони Сирико",
+      },
+    ],
+    description:
+      "Тони Сопрано, глава мафии из Нью-Джерси, страдает от проблем в семье и бизнесе, из-за чего начинает посещать психиатра.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      { genre: "драма" },
+    ],
+    screenshots: 17,
+    posters: 2,
+  }, // сопрано 6
+  {
+    release: new Date("2004-03-07"),
+    publication: new Date("2020-12-31"),
+    format: "сериал",
+    season: "5",
+    grade: "love",
+    title: "Сопрано",
+    original: "The Sopranos / Клан Сопрано",
+    kinopoisk: "https://www.kinopoisk.ru/series/79848/",
+    director: [
+      {
+        name: "Дэвид Чейз",
+      },
+    ],
+    cast: [
+      {
+        name: "Джеймс Гандольфини",
+      },
+      {
+        name: "Иди Фалько",
+      },
+      {
+        name: "Лоррейн Бракко",
+      },
+      {
+        name: "Майкл Империоли",
+      },
+      {
+        name: "Роберт Айлер",
+      },
+      {
+        name: "Джэми-Линн Сиглер",
+      },
+      {
+        name: "Стив Ван Зандт",
+      },
+      {
+        name: "Тони Сирико",
+      },
+      {
+        name: "Стив Бушеми",
+      },
+    ],
+    description:
+      "Тони Сопрано, глава мафии из Нью-Джерси, страдает от проблем в семье и бизнесе, из-за чего начинает посещать психиатра.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      { genre: "драма" },
+    ],
+    screenshots: 24,
+    posters: 1,
+  }, // сопрано 5
+  {
+    release: new Date("2002-09-15"),
+    publication: new Date("2020-12-22"),
+    format: "сериал",
+    season: "4",
+    grade: "love",
+    title: "Сопрано",
+    original: "The Sopranos / Клан Сопрано",
+    kinopoisk: "https://www.kinopoisk.ru/series/79848/",
+    director: [
+      {
+        name: "Дэвид Чейз",
+      },
+    ],
+    cast: [
+      {
+        name: "Джеймс Гандольфини",
+      },
+      {
+        name: "Иди Фалько",
+      },
+      {
+        name: "Лоррейн Бракко",
+      },
+      {
+        name: "Майкл Империоли",
+      },
+      {
+        name: "Роберт Айлер",
+      },
+      {
+        name: "Джэми-Линн Сиглер",
+      },
+      {
+        name: "Стив Ван Зандт",
+      },
+      {
+        name: "Тони Сирико",
+      },
+    ],
+    description:
+      "Тони Сопрано, глава мафии из Нью-Джерси, страдает от проблем в семье и бизнесе, из-за чего начинает посещать психиатра.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      { genre: "драма" },
+    ],
+    screenshots: 24,
+    posters: 1,
+  }, // сопрано 4
+  {
+    release: new Date("2001-03-04"),
+    publication: new Date("2020-11-30"),
+    format: "сериал",
+    season: "3",
+    grade: "love",
+    title: "Сопрано",
+    original: "The Sopranos / Клан Сопрано",
+    kinopoisk: "https://www.kinopoisk.ru/series/79848/",
+    director: [
+      {
+        name: "Дэвид Чейз",
+      },
+    ],
+    cast: [
+      {
+        name: "Джеймс Гандольфини",
+      },
+      {
+        name: "Иди Фалько",
+      },
+      {
+        name: "Лоррейн Бракко",
+      },
+      {
+        name: "Майкл Империоли",
+      },
+      {
+        name: "Роберт Айлер",
+      },
+      {
+        name: "Джэми-Линн Сиглер",
+      },
+      {
+        name: "Стив Ван Зандт",
+      },
+      {
+        name: "Тони Сирико",
+      },
+    ],
+    description:
+      "Тони Сопрано, глава мафии из Нью-Джерси, страдает от проблем в семье и бизнесе, из-за чего начинает посещать психиатра.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      { genre: "драма" },
+    ],
+    screenshots: 21,
+    posters: 1,
+  }, // сопрано 3
+  {
+    release: new Date("2000-01-16"),
+    publication: new Date("2020-11-23"),
+    format: "сериал",
+    season: "2",
+    grade: "love",
+    title: "Сопрано",
+    original: "The Sopranos / Клан Сопрано",
+    kinopoisk: "https://www.kinopoisk.ru/series/79848/",
+    director: [
+      {
+        name: "Дэвид Чейз",
+      },
+    ],
+    cast: [
+      {
+        name: "Джеймс Гандольфини",
+      },
+      {
+        name: "Иди Фалько",
+      },
+      {
+        name: "Лоррейн Бракко",
+      },
+      {
+        name: "Майкл Империоли",
+      },
+      {
+        name: "Роберт Айлер",
+      },
+      {
+        name: "Джэми-Линн Сиглер",
+      },
+      {
+        name: "Стив Ван Зандт",
+      },
+      {
+        name: "Тони Сирико",
+      },
+    ],
+    description:
+      "Тони Сопрано, глава мафии из Нью-Джерси, страдает от проблем в семье и бизнесе, из-за чего начинает посещать психиатра.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      { genre: "драма" },
+    ],
+    screenshots: 29,
+    posters: 1,
+  }, // сопрано 2
+  {
+    release: new Date("1999-01-10"),
+    publication: new Date("2020-11-18"),
+    format: "сериал",
+    season: "1",
+    grade: "love",
+    title: "Сопрано",
+    original: "The Sopranos / Клан Сопрано",
+    kinopoisk: "https://www.kinopoisk.ru/series/79848/",
+    director: [
+      {
+        name: "Дэвид Чейз",
+      },
+    ],
+    cast: [
+      {
+        name: "Джеймс Гандольфини",
+      },
+      {
+        name: "Иди Фалько",
+      },
+      {
+        name: "Лоррейн Бракко",
+      },
+      {
+        name: "Майкл Империоли",
+      },
+      {
+        name: "Роберт Айлер",
+      },
+      {
+        name: "Джэми-Линн Сиглер",
+      },
+      {
+        name: "Стив Ван Зандт",
+      },
+      {
+        name: "Тони Сирико",
+      },
+    ],
+    description:
+      "Тони Сопрано, глава мафии из Нью-Джерси, страдает от проблем в семье и бизнесе, из-за чего начинает посещать психиатра.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      { genre: "драма" },
+    ],
+    screenshots: 37,
+    posters: 1,
+  }, // сопрано 1
+  {
     release: new Date("2016-03-18"),
     publication: new Date("2025-02-02"),
     format: "сериал",
@@ -12538,6 +13315,42 @@ const films = [
     posters: 1,
   }, // стражи галактики 3
   {
+    release: new Date("2020-11-06"),
+    publication: new Date("2021-06-05"),
+    format: "фильм",
+    grade: "B",
+    title: "Страна джунглей",
+    original: "Jungleland",
+    kinopoisk: "https://www.kinopoisk.ru/film/1174218/",
+    director: [
+      {
+        name: "Макс Уинклер",
+      },
+    ],
+    cast: [
+      {
+        name: "Чарли Ханнэм",
+      },
+      {
+        name: "Джек О’Коннелл",
+      },
+      {
+        name: "Джонатан Мейджорс",
+      },
+      {
+        name: "Джессика Барден",
+      },
+    ],
+    description: "Братья должны вернуть долг, выиграв в подпольных боях.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 20,
+    posters: 1,
+  }, // страна джунглей
+  {
     release: new Date("2023-02-03"),
     publication: new Date("2023-02-26"),
     format: "фильм",
@@ -12574,6 +13387,38 @@ const films = [
     screenshots: 17,
     posters: 1,
   }, // стук в хижине
+  {
+    release: new Date("2021-09-12"),
+    publication: new Date("2021-10-20"),
+    format: "сериал",
+    season: "мини–сериал",
+    grade: "A+",
+    title: "Сцены из супружеской жизни",
+    original: "Scenes from a Marriage",
+    kinopoisk: "https://www.kinopoisk.ru/series/1394680/",
+    director: [
+      {
+        name: "Хагай Леви",
+      },
+    ],
+    cast: [
+      {
+        name: "Джессика Честейн",
+      },
+      {
+        name: "Оскар Айзек",
+      },
+    ],
+    description:
+      "Супруги переживают болезненный разрыв, хотя их чувства все еще живы.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 36,
+    posters: 1,
+  }, // сцены из супружеской жизни
   {
     release: new Date("2006-04-07"),
     publication: new Date("2022-01-26"),
@@ -13115,6 +13960,40 @@ const films = [
     screenshots: 36,
     posters: 1,
   }, // треугольник печали
+  {
+    release: new Date("1996-10-18"),
+    publication: new Date("2021-02-16"),
+    format: "фильм",
+    grade: "C",
+    title: "Тусовщики",
+    original: "Swingers",
+    kinopoisk: "https://www.kinopoisk.ru/film/4449/",
+    director: [
+      {
+        name: "Даг Лайман",
+      },
+    ],
+    cast: [
+      {
+        name: "Джон Фавро",
+      },
+      {
+        name: "Винс Вон",
+      },
+      {
+        name: "Рон Ливингстон",
+      },
+    ],
+    description:
+      "Начинающий актёр не может забыть расставание, но друзья его поддерживают.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 16,
+    posters: 2,
+  }, // тусовщики
   {
     release: new Date("2023-02-09"),
     publication: new Date("2023-04-14"),
