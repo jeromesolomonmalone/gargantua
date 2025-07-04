@@ -5730,7 +5730,7 @@ const films = [
       },
     ],
     screenshots: 20,
-    posters: 1,
+    posters: 2,
   }, // любовь, смерть и роботы 4
   {
     release: new Date("2022-05-20"),
@@ -10272,7 +10272,7 @@ const films = [
       },
     ],
     screenshots: 18,
-    posters: 1,
+    posters: 2,
   }, // проект х
   {
     release: new Date("2022-06-03"),
@@ -15504,7 +15504,7 @@ const films = [
       },
     ],
     screenshots: 17,
-    posters: 1,
+    posters: 2,
   }, // чудаки навсегда
   {
     release: new Date("2023-09-20"),
