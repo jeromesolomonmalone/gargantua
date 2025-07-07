@@ -1113,6 +1113,53 @@ const films = [
     posters: 2,
   }, // бесподобный мистер фокс
   {
+    release: new Date("2020-05-01"),
+    publication: new Date("2021-05-18"),
+    format: "сериал",
+    season: "1",
+    grade: "B",
+    title: "Бетти",
+    original: "Betty",
+    kinopoisk: "https://www.kinopoisk.ru/series/1309955/",
+    director: [
+      {
+        name: "Кристал Мозелл",
+      },
+    ],
+    cast: [
+      {
+        name: "Деде Лавлэйс",
+      },
+      {
+        name: "Кабрина Адамс",
+      },
+      {
+        name: "Нина Моран",
+      },
+      {
+        name: "Аджани Расселл",
+      },
+      {
+        name: "Рейчел Винберг",
+      },
+    ],
+    description:
+      "Группа девушек преодолевает личные трудности, пробиваясь в мужской мир скейтбординга.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "спорт",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 16,
+    posters: 2,
+  }, // бетти 1
+  {
     release: new Date("1980-11-13"),
     publication: new Date("2024-08-11"),
     format: "фильм",
@@ -3092,6 +3139,50 @@ const films = [
     posters: 2,
   }, // жить
   {
+    release: new Date("2011-01-09"),
+    publication: new Date("2020-06-05"),
+    format: "сериал",
+    season: "1",
+    grade: "C",
+    title: "Закусочная Боба",
+    original: "Bob's Burgers",
+    kinopoisk: "https://www.kinopoisk.ru/series/569787/",
+    director: [
+      {
+        name: "Лорен Бушар",
+      },
+      {
+        name: "Джим Дотерайв",
+      },
+    ],
+    cast: [
+      {
+        name: "Х. Джон Бенжамин",
+      },
+      {
+        name: "Дэн Минтц",
+      },
+      {
+        name: "Юджин Мирман",
+      },
+      {
+        name: "Джон Робертс",
+      },
+      {
+        name: "Кристен Шаал",
+      },
+    ],
+    description:
+      "Боб Белчер с женой и тремя детьми управляет убыточной закусочной бургеров.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 12,
+    posters: 1,
+  }, // закусочная боба 1
+  {
     release: new Date("2024-08-09"),
     publication: new Date("2024-08-11"),
     format: "фильм",
@@ -3605,6 +3696,50 @@ const films = [
     posters: 1,
   }, // казино рояль
   {
+    release: new Date("2010-02-14"),
+    continuation: new Date("2011-10-02"),
+    publication: new Date("2019-11-11"),
+    format: "сериал",
+    season: "1-2",
+    grade: "B",
+    title: "Как это делается в Америке",
+    original: "How to Make It in America / Как преуспеть в Америке",
+    kinopoisk: "https://www.kinopoisk.ru/series/427452/",
+    director: [
+      {
+        name: "Йен Эдельман",
+      },
+    ],
+    cast: [
+      {
+        name: "Брайан Гринберг",
+      },
+      {
+        name: "Виктор Расук",
+      },
+      {
+        name: "Лейк Белл",
+      },
+      {
+        name: "Эдди Кэй Томас",
+      },
+      {
+        name: "Кид Кади",
+      },
+      {
+        name: "Луис Гусман",
+      },
+    ],
+    description: "Двое друзей строят фешен-бизнес в Нью-Йорке.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 15,
+    posters: 2,
+  }, // как это делается в америке 1-2
+  {
     release: new Date("2005-09-19"),
     continuation: new Date("2013-09-23"),
     publication: new Date("2021-05-08"),
@@ -3940,6 +4075,57 @@ const films = [
     screenshots: 16,
     posters: 1,
   }, // клаус
+  {
+    release: new Date("2018-05-02"),
+    continuation: new Date("2021-01-01"),
+    publication: new Date("2021-05-05"),
+    format: "сериал",
+    season: "1-3",
+    grade: "B",
+    title: "Кобра Кай",
+    original: "Cobra Kai",
+    kinopoisk: "https://www.kinopoisk.ru/series/1047617/",
+    director: [
+      {
+        name: "Джош Хилд",
+      },
+      {
+        name: "Джон Харвитц",
+      },
+      {
+        name: "Хейден Шлоссберг",
+      },
+    ],
+    cast: [
+      {
+        name: "Уильям Забка",
+      },
+      {
+        name: "Ральф Маччио",
+      },
+      {
+        name: "Шоло Маридуэнья",
+      },
+      {
+        name: "Тэннер Бьюкэнэн",
+      },
+      {
+        name: "Мэри Мэтилин Маусер",
+      },
+    ],
+    description:
+      "Спустя годы после турнира 1984 года по карате, Даниэль ЛаРуссо и Джонни Лоуренс вновь становятся соперниками в боевых искусствах.",
+    genres: [
+      {
+        genre: "спорт",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 18,
+    posters: 2,
+  }, // кобра кай 1-3
   {
     release: new Date("2018-04-20"),
     publication: new Date("2020-10-14"),
@@ -5163,6 +5349,59 @@ const films = [
     posters: 1,
   }, // ла-ла ленд
   {
+    release: new Date("2017-02-08"),
+    publication: new Date("2022-05-10"),
+    format: "сериал",
+    season: "1",
+    grade: "B",
+    title: "Легион",
+    original: "Legion",
+    kinopoisk: "https://www.kinopoisk.ru/series/939002/",
+    director: [
+      {
+        name: "Ной Хоули",
+      },
+    ],
+    cast: [
+      {
+        name: "Дэн Стивенс",
+      },
+      {
+        name: "Рэйчел Келлер",
+      },
+      {
+        name: "Обри Плаза",
+      },
+      {
+        name: "Джереми Харрис",
+      },
+      {
+        name: "Эмбер Мидфандер",
+      },
+      {
+        name: "Джин Смарт",
+      },
+    ],
+    description:
+      "Дэвиду Хэллеру диагностировали шизофрению. После странной встречи он открывает в себе особые способности, изменившие его жизнь.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "супергероика",
+      },
+    ],
+    screenshots: 25,
+    posters: 1,
+  }, // легион 1
+  {
     release: new Date("2023-11-17"),
     publication: new Date("2023-11-26"),
     format: "фильм",
@@ -5707,6 +5946,56 @@ const films = [
     screenshots: 42,
     posters: 1,
   }, // лучше звоните солу 1
+  {
+    release: new Date("2024-11-17"),
+    publication: new Date("2025-01-19"),
+    format: "сериал",
+    season: "1",
+    grade: "B",
+    title: "Лэндмен",
+    original: "Landman / Землевладелец",
+    kinopoisk: "https://www.kinopoisk.ru/series/4909559/",
+    director: [
+      {
+        name: "Тейлор Шеридан",
+      },
+      {
+        name: "Кристиан Уоллес",
+      },
+    ],
+    cast: [
+      {
+        name: "Билли Боб Торнтон",
+      },
+      {
+        name: "Эли Лартер",
+      },
+      {
+        name: "Джейкоб Лофленд",
+      },
+      {
+        name: "Мишель Рэндольф",
+      },
+      {
+        name: "Джон Хэмм",
+      },
+      {
+        name: "Кейла Уоллес",
+      },
+      {
+        name: "Паулина Чавес",
+      },
+    ],
+    description:
+      "Лэндмен Томми Норрис решает проблемы нефтяной компании, улаживая конфликты с мексиканскими картелями, полицией и федеральными агентами.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 36,
+    posters: 2,
+  }, // лэндмен 1
   {
     release: new Date("2025-05-15"),
     publication: new Date("2025-06-01"),
@@ -6255,6 +6544,38 @@ const films = [
     posters: 1,
   }, // мальчишник
   {
+    release: new Date("2019-11-12"),
+    publication: new Date("2020-01-12"),
+    format: "сериал",
+    season: "1",
+    grade: "B",
+    title: "Мандалорец",
+    original: "The Mandalorian",
+    kinopoisk: "https://www.kinopoisk.ru/series/1118138/",
+    director: [
+      {
+        name: "Джон Фавро",
+      },
+    ],
+    cast: [
+      {
+        name: "Педро Паскаль",
+      },
+    ],
+    description:
+      "Отважный мандалорец Дин Джарин живет на задворках галактики, но его ждет большое приключение.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 12,
+    posters: 1,
+  }, // мандалорец 1
+  {
     release: new Date("2016-12-16"),
     publication: new Date("2019-03-04"),
     format: "фильм",
@@ -6790,6 +7111,124 @@ const films = [
     screenshots: 13,
     posters: 2,
   }, // миньоны: грювитация
+  {
+    release: new Date("2022-06-26"),
+    publication: new Date("2022-08-15"),
+    format: "сериал",
+    season: "4",
+    grade: "A",
+    title: "Мир Дикого Запада",
+    original: "Westworld",
+    kinopoisk: "https://www.kinopoisk.ru/series/195523/",
+    director: [
+      {
+        name: "Джонатан Нолан",
+      },
+      {
+        name: "Лиза Джой",
+      },
+    ],
+    cast: [
+      {
+        name: "Эван Рэйчел Вуд",
+      },
+      {
+        name: "Джеффри Райт",
+      },
+      {
+        name: "Эд Харрис",
+      },
+      {
+        name: "Тандиве Ньютон",
+      },
+      {
+        name: "Тесса Томпсон",
+      },
+      {
+        name: "Аарон Пол",
+      },
+      {
+        name: "Люк Хемсворт",
+      },
+      {
+        name: "Джеймс Марсден",
+      },
+    ],
+    description:
+      "В парке будущего богатые посетители эксплуатируют андроидов, которым стирают память. Выясняется, что некоторые роботы помнят всё.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "детектив",
+      },
+    ],
+    screenshots: 39,
+    posters: 1,
+  }, // мир дикого запада 4
+  {
+    release: new Date("2020-03-15"),
+    publication: new Date("2020-05-13"),
+    format: "сериал",
+    season: "3",
+    grade: "A",
+    title: "Мир Дикого Запада",
+    original: "Westworld",
+    kinopoisk: "https://www.kinopoisk.ru/series/195523/",
+    director: [
+      {
+        name: "Джонатан Нолан",
+      },
+      {
+        name: "Лиза Джой",
+      },
+    ],
+    cast: [
+      {
+        name: "Эван Рэйчел Вуд",
+      },
+      {
+        name: "Джеффри Райт",
+      },
+      {
+        name: "Эд Харрис",
+      },
+      {
+        name: "Тандиве Ньютон",
+      },
+      {
+        name: "Тесса Томпсон",
+      },
+      {
+        name: "Аарон Пол",
+      },
+      {
+        name: "Люк Хемсворт",
+      },
+      {
+        name: "Венсан Кассель",
+      },
+    ],
+    description:
+      "В парке будущего богатые посетители эксплуатируют андроидов, которым стирают память. Выясняется, что некоторые роботы помнят всё.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "детектив",
+      },
+    ],
+    screenshots: 15,
+    posters: 1,
+  }, // мир дикого запада 3
   {
     release: new Date("2022-01-13"),
     publication: new Date("2022-04-17"),
@@ -10902,6 +11341,48 @@ const films = [
     screenshots: 74,
     posters: 2,
   }, // разделение 1
+  {
+    release: new Date("2018-08-17"),
+    continuation: new Date("2021-01-15"),
+    publication: new Date("2021-09-26"),
+    format: "сериал",
+    season: "1-2",
+    grade: "C",
+    title: "Разочарование",
+    original: "Disenchantment",
+    kinopoisk: "https://www.kinopoisk.ru/series/1112702/",
+    director: [
+      {
+        name: "Мэтт Грейнинг",
+      },
+      {
+        name: "Джош Вайнштейн",
+      },
+    ],
+    cast: [
+      {
+        name: "Эбби Джейкобсон",
+      },
+      {
+        name: "Нат Факсон",
+      },
+      {
+        name: "Эрик Андре",
+      },
+      {
+        name: "Джон Ди Маджио",
+      },
+    ],
+    description:
+      "Принцесса Бин недовольна предстоящим браком с принцем. Но всё меняется, когда она знакомится с демоном и эльфом, и события становятся увлекательными и опасными.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 15,
+    posters: 3,
+  }, // разочарование 1-2
   {
     release: new Date("2016-04-08"),
     publication: new Date("2019-03-28"),
