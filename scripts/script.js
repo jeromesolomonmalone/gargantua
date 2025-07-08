@@ -171,6 +171,9 @@ const films = [
       {
         genre: "драма",
       },
+      {
+        genre: "музыка",
+      },
     ],
     screenshots: 17,
     posters: 1,
@@ -306,6 +309,53 @@ const films = [
     screenshots: 19,
     posters: 1,
   }, // vince staples show
+  {
+    release: new Date("2019-09-04"),
+    publication: new Date("2021-05-15"),
+    format: "сериал",
+    season: "1",
+    grade: "C",
+    title: "Wu-Tang: Американская сага",
+    original: "Wu-Tang: An American Saga",
+    kinopoisk: "https://www.kinopoisk.ru/series/1200696/",
+    director: [
+      {
+        name: "Алекс Цэ",
+      },
+      {
+        name: "RZA",
+      },
+    ],
+    cast: [
+      {
+        name: "Эштон Сандерс",
+      },
+      {
+        name: "Шамеик Мур",
+      },
+      {
+        name: "Сиддик Сондерсон",
+      },
+      {
+        name: "Джулиан Элайджа Мартинес",
+      },
+    ],
+    description:
+      "В 90-х Бобби Диггс собирает группу Wu-Tang Clan из молодых рэперов Нью-Йорка.",
+    genres: [
+      {
+        genre: "музыка",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "биография",
+      },
+    ],
+    screenshots: 15,
+    posters: 1,
+  }, // wu-tang: американская сага 1
   {
     release: new Date("2006-09-01"),
     publication: new Date("2021-06-07"),
@@ -1112,6 +1162,48 @@ const films = [
     screenshots: 24,
     posters: 2,
   }, // бесподобный мистер фокс
+  {
+    release: new Date("2011-01-09"),
+    continuation: new Date("2013-01-13"),
+    publication: new Date("2022-04-03"),
+    format: "сериал",
+    season: "1-3",
+    grade: "C",
+    title: "Бесстыжие",
+    original: "Shameless",
+    kinopoisk: "https://www.kinopoisk.ru/series/571335/",
+    director: [
+      {
+        name: "Пол Эбботт",
+      },
+    ],
+    cast: [
+      {
+        name: "Уильям Х. Мэйси",
+      },
+      {
+        name: "Джереми Аллен Уайт",
+      },
+      {
+        name: "Эмми Россам",
+      },
+      {
+        name: "Джастин Чатвин",
+      },
+    ],
+    description:
+      "В Чикаго живёт многодетная семья Галлагеров: пьющий отец и старшая дочь Фиона, которая заботится о младших и ищет работу.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 38,
+    posters: 3,
+  }, // бесстыжие 1-3
   {
     release: new Date("2020-05-01"),
     publication: new Date("2021-05-18"),
@@ -2738,6 +2830,53 @@ const films = [
     posters: 2,
   }, // доктор стрэндж 2
   {
+    release: new Date("2022-03-25"),
+    publication: new Date("2022-10-24"),
+    format: "сериал",
+    season: "1",
+    grade: "C",
+    title: "Дорога в тысячу ли",
+    original: "Pachinko",
+    kinopoisk: "https://www.kinopoisk.ru/series/1440534/",
+    director: [
+      {
+        name: "Су Хью",
+      },
+    ],
+    cast: [
+      {
+        name: "Ким Мин-ха",
+      },
+      {
+        name: "Ли Мин-хо",
+      },
+      {
+        name: "Чин Ха",
+      },
+      {
+        name: "Юн Ё-джон",
+      },
+      {
+        name: "Содзи Араи",
+      },
+      {
+        name: "Стив Но",
+      },
+      {
+        name: "Анна Саваи",
+      },
+    ],
+    description:
+      "Семейная сага о четырёх поколениях корейских иммигрантов, мечтающих достичь успеха в новой стране.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 19,
+    posters: 1,
+  }, // дорога в тысячу ли 1
+  {
     release: new Date("2008-12-26"),
     publication: new Date("2022-09-18"),
     format: "фильм",
@@ -4127,6 +4266,74 @@ const films = [
     posters: 2,
   }, // кобра кай 1-3
   {
+    release: new Date("2019-05-31"),
+    publication: new Date("2019-06-24"),
+    format: "сериал",
+    season: "мини–сериал",
+    grade: "A+",
+    title: "Когда они нас увидят",
+    original: "When They See Us",
+    kinopoisk: "https://www.kinopoisk.ru/series/1174230/",
+    director: [
+      {
+        name: "Ава ДюВерней",
+      },
+    ],
+    cast: [
+      {
+        name: "Джаррель Джером",
+      },
+      {
+        name: "Асанте Блэк",
+      },
+      {
+        name: "Калил Харрис",
+      },
+      {
+        name: "Итан Херисс",
+      },
+      {
+        name: "Маркиз Родригез",
+      },
+      {
+        name: "Марша Стефани Блейк",
+      },
+      {
+        name: "Кайли Банбери",
+      },
+      {
+        name: "Джон Легуизамо",
+      },
+      {
+        name: "Ниси Нэш",
+      },
+      {
+        name: "Майкл Кеннет Уильямс",
+      },
+      {
+        name: "Фелисити Хаффман",
+      },
+      {
+        name: "Вера Фармига",
+      },
+    ],
+    description:
+      "Пятеро подростков из Гарлема, были приговорены к тюремным срокам за жестокое изнасилование белой девушки, которого они не совершали.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "биография",
+      },
+    ],
+    screenshots: 19,
+    posters: 1,
+  }, // когда они нас увидят
+  {
     release: new Date("2018-04-20"),
     publication: new Date("2020-10-14"),
     format: "фильм",
@@ -5313,6 +5520,47 @@ const films = [
     posters: 1,
   }, // кунг-фу панда
   {
+    release: new Date("2022-07-28"),
+    publication: new Date("2022-09-27"),
+    format: "сериал",
+    season: "1",
+    grade: "C",
+    title: "Курорт",
+    original: "The Resort",
+    kinopoisk: "https://www.kinopoisk.ru/series/4889608/",
+    director: [
+      {
+        name: "Энди Сьяра",
+      },
+    ],
+    cast: [
+      {
+        name: "Кристин Милиоти",
+      },
+      {
+        name: "Уильям Джексон Харпер",
+      },
+      {
+        name: "Луис Херардо Мендес",
+      },
+      {
+        name: "Скайлер Гизондо",
+      },
+    ],
+    description:
+      "Эмма и Ной отдыхают в отпуске на годовщину брака и находят телефон пропавшего 15 лет назад парня.",
+    genres: [
+      {
+        genre: "детектив",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 30,
+    posters: 1,
+  }, // курорт 1
+  {
     release: new Date("2016-12-25"),
     publication: new Date("2022-08-02"),
     format: "фильм",
@@ -5438,6 +5686,50 @@ const films = [
     screenshots: 13,
     posters: 1,
   }, // лео
+  {
+    release: new Date("2022-05-13"),
+    publication: new Date("2022-06-18"),
+    format: "сериал",
+    season: "1",
+    grade: "B",
+    title: "Линкольн для адвоката",
+    original: "The Lincoln Lawyer",
+    kinopoisk: "https://www.kinopoisk.ru/series/4471789/",
+    director: [
+      {
+        name: "Дэвид Э. Келли",
+      },
+    ],
+    cast: [
+      {
+        name: "Мануэль Рульфо",
+      },
+      {
+        name: "Нив Кэмпбелл",
+      },
+      {
+        name: "Беки Ньютон",
+      },
+      {
+        name: "Энгус Сэмпсон",
+      },
+      {
+        name: "Джаз Рэйкол",
+      },
+    ],
+    description:
+      "Адвокат Холлер вынужден взяться за резонансное дело и сталкивается с серьезным давлением.",
+    genres: [
+      {
+        genre: "детектив",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 14,
+    posters: 1,
+  }, // линкольн для адвоката 1
   {
     release: new Date("2021-10-28"),
     publication: new Date("2022-04-20"),
@@ -6413,6 +6705,9 @@ const films = [
       {
         genre: "криминал",
       },
+      {
+        genre: "музыка",
+      },
     ],
     screenshots: 12,
     posters: 1,
@@ -6784,6 +7079,9 @@ const films = [
     genres: [
       {
         genre: "комедия",
+      },
+      {
+        genre: "мокьюментари",
       },
     ],
     screenshots: 45,
@@ -7761,6 +8059,35 @@ const films = [
     posters: 2,
   }, // муви 43
   {
+    release: new Date("2021-01-22"),
+    publication: new Date("2021-01-25"),
+    format: "сериал",
+    season: "мини–сериал",
+    grade: "A",
+    title: "Мультяшки Pixar",
+    original: "Pixar Popcorn",
+    kinopoisk: "https://www.kinopoisk.ru/series/4294193/",
+    director: [
+      {
+        name: "Пит Доктер",
+      },
+    ],
+    cast: [
+      {
+        name: "",
+      },
+    ],
+    description:
+      "Сборник короткометражек с участием известных персонажей из мультфильмов Pixar.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 18,
+    posters: 1,
+  }, // мультяшки pixar
+  {
     release: new Date("2019-03-28"),
     publication: new Date("2024-08-18"),
     format: "фильм",
@@ -7865,6 +8192,50 @@ const films = [
     screenshots: 12,
     posters: 1,
   }, // на счёт три
+  {
+    release: new Date("2020-02-13"),
+    publication: new Date("2020-02-28"),
+    format: "сериал",
+    season: "2",
+    grade: "B",
+    title: "Нарко: Мексика",
+    original: "Narcos: Mexico / Narcos: México",
+    kinopoisk: "https://www.kinopoisk.ru/series/1173983/",
+    director: [
+      {
+        name: "Карло Бернард",
+      },
+      {
+        name: "Крис Бренкето",
+      },
+      {
+        name: "Даг Миро",
+      },
+    ],
+    cast: [
+      {
+        name: "Скут Макнэри",
+      },
+      {
+        name: "Диего Луна",
+      },
+      {
+        name: "Тереса Руис",
+      },
+    ],
+    description:
+      "История о том, как зародился могущественный картель Гвадалахара.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 14,
+    posters: 1,
+  }, // нарко: мексика 2
   {
     release: new Date("2024-02-07"),
     publication: new Date("2024-09-01"),
@@ -8833,6 +9204,9 @@ const films = [
       {
         genre: "криминал",
       },
+      {
+        genre: "музыка",
+      },
     ],
     screenshots: 24,
     posters: 1,
@@ -8872,6 +9246,44 @@ const films = [
     screenshots: 24,
     posters: 1,
   }, // облачно возможны осадки в виде фрикаделек
+  {
+    release: new Date("2020-05-08"),
+    continuation: new Date("2021-03-26"),
+    publication: new Date("2021-05-28"),
+    format: "сериал",
+    season: "1-2",
+    grade: "B",
+    title: "Обратная сторона Земли",
+    original: "Solar Opposites",
+    kinopoisk: "https://www.kinopoisk.ru/series/1190304/",
+    director: [
+      {
+        name: "Джастин Ройланд",
+      },
+      {
+        name: "Майк МакМэхан",
+      },
+    ],
+    cast: [
+      {
+        name: "Томас Миддлдитч",
+      },
+      {
+        name: "Шон Джамброун",
+      },
+      {
+        name: "Мэри Мак",
+      },
+    ],
+    description: "Семья пришельцев вынуждена поселиться на Земле.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 13,
+    posters: 2,
+  }, // обратная сторона земли 1-2
   {
     release: new Date("2001-12-07"),
     publication: new Date("2020-01-07"),
@@ -9633,6 +10045,63 @@ const films = [
     screenshots: 24,
     posters: 1,
   }, // пазманский дьявол
+  {
+    release: new Date("2013-09-26"),
+    continuation: new Date("2015-01-13"),
+    publication: new Date("2020-04-30"),
+    format: "сериал",
+    season: "6-7",
+    grade: "love",
+    title: "Парки и зоны отдыха",
+    original: "Parks and Recreation",
+    kinopoisk: "https://www.kinopoisk.ru/series/455368/",
+    director: [
+      {
+        name: "Грег Дэниелс",
+      },
+      {
+        name: "Майкл Шур",
+      },
+    ],
+    cast: [
+      {
+        name: "Эми Полер",
+      },
+      {
+        name: "Обри Плаза",
+      },
+      {
+        name: "Ник Офферман",
+      },
+      {
+        name: "Азиз Ансари",
+      },
+      {
+        name: "Ретта",
+      },
+      {
+        name: "Крис Пратт",
+      },
+      {
+        name: "Адам Скотт",
+      },
+    ],
+    description:
+      "Государственные чиновники из города Индиана реализуют различные проекты, чтобы сделать свой город лучше.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "ситком",
+      },
+      {
+        genre: "мокьюментари",
+      },
+    ],
+    screenshots: 22,
+    posters: 3,
+  }, // парки и зоны отдыха 6-7
   {
     release: new Date("2016-08-19"),
     publication: new Date("2022-03-30"),
@@ -11347,7 +11816,7 @@ const films = [
     publication: new Date("2021-09-26"),
     format: "сериал",
     season: "1-2",
-    grade: "C",
+    grade: "D",
     title: "Разочарование",
     original: "Disenchantment",
     kinopoisk: "https://www.kinopoisk.ru/series/1112702/",
@@ -11931,6 +12400,53 @@ const films = [
     screenshots: 23,
     posters: 1,
   }, // северные воды
+  {
+    release: new Date("2024-02-27"),
+    publication: new Date("2024-12-14"),
+    format: "сериал",
+    season: "1",
+    grade: "C",
+    title: "Сёгун",
+    original: "Shogun / Shôgun",
+    kinopoisk: "https://www.kinopoisk.ru/series/749562/",
+    director: [
+      {
+        name: "Рейчел Кондо",
+      },
+      {
+        name: "Джастин Маркс",
+      },
+    ],
+    cast: [
+      {
+        name: "Космо Джарвис",
+      },
+      {
+        name: "Анна Саваи",
+      },
+      {
+        name: "Хироюки Санада",
+      },
+      {
+        name: "Таданобу Асано",
+      },
+    ],
+    description:
+      "В начале 17 века английский штурман Джон Блэкторн потерпел кораблекрушение у берегов Японии.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "военный",
+      },
+    ],
+    screenshots: 45,
+    posters: 1,
+  }, // сёгун 1
   {
     release: new Date("2009-12-08"),
     publication: new Date("2022-03-24"),
@@ -12849,6 +13365,56 @@ const films = [
     screenshots: 15,
     posters: 1,
   }, // смерч 2
+  {
+    release: new Date("2021-03-19"),
+    publication: new Date("2021-04-24"),
+    format: "сериал",
+    season: "мини–сериал",
+    grade: "C",
+    title: "Сокол и Зимний Солдат",
+    original: "The Falcon and the Winter Soldier",
+    kinopoisk: "https://www.kinopoisk.ru/series/1209203/",
+    director: [
+      {
+        name: "Малкольм Спэллман",
+      },
+    ],
+    cast: [
+      {
+        name: "Энтони Маки",
+      },
+      {
+        name: "Себастиан Стэн",
+      },
+      {
+        name: "Уайатт Рассел",
+      },
+      {
+        name: "Даниэль Брюль",
+      },
+      {
+        name: "Эмили ВанКэмп",
+      },
+    ],
+    description:
+      "Сэм Уилсон становится новым Капитаном Америка и выполняет миссию Стива Роджерса.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "супергероика",
+      },
+    ],
+    screenshots: 17,
+    posters: 2,
+  }, // сокол и зимний солдат
   {
     release: new Date("2021-11-24"),
     publication: new Date("2022-01-03"),
@@ -14872,6 +15438,9 @@ const films = [
       {
         genre: "мелодрама",
       },
+      {
+        genre: "музыка",
+      },
     ],
     screenshots: 13,
     posters: 1,
@@ -16214,7 +16783,10 @@ const films = [
       "Молодой артист Джабари пытается найти любовь в современном Нью-Йорке.",
     genres: [
       {
-        genre: "мультфильм",
+        genre: "анимация",
+      },
+      {
+        genre: "музыка",
       },
     ],
     screenshots: 23,
@@ -16257,6 +16829,56 @@ const films = [
     screenshots: 17,
     posters: 2,
   }, // эрнест и селестина
+  {
+    release: new Date("2024-09-18"),
+    publication: new Date("2024-11-03"),
+    format: "сериал",
+    season: "мини–сериал",
+    grade: "B",
+    title: "Это всё Агата",
+    original: "Agatha All Along",
+    kinopoisk: "https://www.kinopoisk.ru/series/4707066/",
+    director: [
+      {
+        name: "Жаклин Шеффер",
+      },
+    ],
+    cast: [
+      {
+        name: "Кэтрин Хан",
+      },
+      {
+        name: "Джо Лок",
+      },
+      {
+        name: "Сашир Замата",
+      },
+      {
+        name: "Али Ан",
+      },
+      {
+        name: "Обри Плаза",
+      },
+    ],
+    description:
+      "После освобождения из аномалии Уэствью ослабленная Агата Харкнесс ищет союзников, чтобы вернуть свою силу.",
+    genres: [
+      {
+        genre: "фэнтези",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 21,
+    posters: 2,
+  }, // это всё агата
   {
     release: new Date("2022-03-01"),
     publication: new Date("2022-03-13"),
