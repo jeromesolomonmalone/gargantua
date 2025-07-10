@@ -578,6 +578,94 @@ const films = [
     posters: 1,
   }, // аполлон-10½
   {
+    release: new Date("2024-11-09"),
+    publication: new Date("2024-11-23"),
+    format: "сериал",
+    season: "2",
+    grade: "A",
+    title: "Аркейн",
+    original: "Arcane: League of Legends",
+    kinopoisk: "https://www.kinopoisk.ru/series/4445150/",
+    director: [
+      {
+        name: "Алекс Йи",
+      },
+      {
+        name: "Кристиан Линке",
+      },
+    ],
+    cast: [
+      {
+        name: "Хейли Стайнфелд",
+      },
+      {
+        name: "Кевин Алехандро",
+      },
+      {
+        name: "Элла Пернелл",
+      },
+      {
+        name: "Кэти Льюнг",
+      },
+      {
+        name: "Гарри Ллойд",
+      },
+    ],
+    description:
+      "Две сестры противостоят друг другу в конфликте между технологичным Пилтовером и нищим Зауном.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 59,
+    posters: 1,
+  }, // aркейн 2
+  {
+    release: new Date("2021-11-06"),
+    publication: new Date("2024-11-21"),
+    format: "сериал",
+    season: "1",
+    grade: "A",
+    title: "Аркейн",
+    original: "Arcane: League of Legends",
+    kinopoisk: "https://www.kinopoisk.ru/series/4445150/",
+    director: [
+      {
+        name: "Алекс Йи",
+      },
+      {
+        name: "Кристиан Линке",
+      },
+    ],
+    cast: [
+      {
+        name: "Хейли Стайнфелд",
+      },
+      {
+        name: "Кевин Алехандро",
+      },
+      {
+        name: "Элла Пернелл",
+      },
+      {
+        name: "Кэти Льюнг",
+      },
+      {
+        name: "Гарри Ллойд",
+      },
+    ],
+    description:
+      "Две сестры противостоят друг другу в конфликте между технологичным Пилтовером и нищим Зауном.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 54,
+    posters: 1,
+  }, // aркейн 1
+  {
     release: new Date("2011-12-23"),
     publication: new Date("2021-02-05"),
     format: "фильм",
@@ -2830,6 +2918,48 @@ const films = [
     posters: 2,
   }, // доктор стрэндж 2
   {
+    release: new Date("1997-02-28"),
+    publication: new Date("2021-02-22"),
+    format: "фильм",
+    grade: "B",
+    title: "Донни Браско",
+    original: "Donnie Brasco",
+    kinopoisk: "https://www.kinopoisk.ru/film/3984/",
+    director: [
+      {
+        name: "Майк Ньюэлл",
+      },
+    ],
+    cast: [
+      {
+        name: "Аль Пачино",
+      },
+      {
+        name: "Джонни Депп",
+      },
+      {
+        name: "Майкл Мэдсен",
+      },
+    ],
+    description: "Агент ФБР сливается с мафией и теряет себя.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "биография",
+      },
+      {
+        genre: "шпионаж",
+      },
+    ],
+    screenshots: 30,
+    posters: 3,
+  }, // донни браско
+  {
     release: new Date("2022-03-25"),
     publication: new Date("2022-10-24"),
     format: "сериал",
@@ -4767,6 +4897,12 @@ const films = [
       {
         name: "Сильвестр Сталлоне",
       },
+      {
+        name: "Мартин Старр",
+      },
+      {
+        name: "Гаррет Хедлунд",
+      },
     ],
     description:
       "Дуайт «Генерал» Манфреди, капо Нью-Йоркской мафии, после 25 лет тюрьмы отправляется в Талсу.",
@@ -5560,6 +5696,44 @@ const films = [
     screenshots: 30,
     posters: 1,
   }, // курорт 1
+  {
+    release: new Date("2023-12-15"),
+    publication: new Date("2024-03-24"),
+    format: "сериал",
+    season: "мини–сериал",
+    grade: "C",
+    title: "Кэрол и конец света",
+    original: "Carol & The End of the World",
+    kinopoisk: "https://www.kinopoisk.ru/series/5405539/",
+    director: [
+      {
+        name: "Дэн Гутерман",
+      },
+    ],
+    cast: [
+      {
+        name: "Марта Келли",
+      },
+      {
+        name: "Кимберли Хеберт Грегори",
+      },
+      {
+        name: "Мэл Родригес",
+      },
+      {
+        name: "Тим Хайдекер",
+      },
+    ],
+    description:
+      "Кэрол ищет смысл жизни в последние месяцы перед концом света.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 27,
+    posters: 1,
+  }, // кэрол и конец света
   {
     release: new Date("2016-12-25"),
     publication: new Date("2022-08-02"),
@@ -6501,6 +6675,48 @@ const films = [
     screenshots: 16,
     posters: 1,
   }, // люди икс
+  {
+    release: new Date("2024-03-20"),
+    publication: new Date("2024-05-19"),
+    format: "сериал",
+    season: "1",
+    grade: "B",
+    title: "Люди Икс ’97",
+    original: "X-Men '97",
+    kinopoisk: "https://www.kinopoisk.ru/series/4711940/",
+    director: [
+      {
+        name: "Бо ДеМайо",
+      },
+    ],
+    cast: [
+      {
+        name: "Рэй Чейз",
+      },
+      {
+        name: "Кэл Додд",
+      },
+      {
+        name: "Холли Чоу",
+      },
+      {
+        name: "Дженнифер Хейл",
+      },
+      {
+        name: "Росс Маркванд",
+      },
+    ],
+    description:
+      "Люди Икс справляются с потерей Ксавье и внутренними конфликтами.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+      { genre: "супергероика" },
+    ],
+    screenshots: 43,
+    posters: 3,
+  }, // люди икс ’97 1
   {
     release: new Date("2023-11-17"),
     publication: new Date("2023-12-10"),
@@ -7891,6 +8107,59 @@ const films = [
     screenshots: 45,
     posters: 1,
   }, // митчеллы против машин
+  {
+    release: new Date("2024-12-05"),
+    publication: new Date("2025-01-12"),
+    format: "сериал",
+    season: "1",
+    grade: "A",
+    title: "Монстры-коммандос",
+    original: "Creature Commandos",
+    kinopoisk: "https://www.kinopoisk.ru/series/5253831/",
+    director: [
+      {
+        name: "Джеймс Ганн",
+      },
+    ],
+    cast: [
+      {
+        name: "Индира Варма",
+      },
+      {
+        name: "Фрэнк Грилло",
+      },
+      {
+        name: "Шон Ганн",
+      },
+      {
+        name: "Алан Тьюдик",
+      },
+      {
+        name: "Зои Чао",
+      },
+      {
+        name: "Дэвид Харбор",
+      },
+      {
+        name: "Мария Бакалова",
+      },
+      {
+        name: "Виола Дэвис",
+      },
+    ],
+    description:
+      "Правительство США формирует отряд монстров для секретных миссий.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+      {
+        genre: "супергероика",
+      },
+    ],
+    screenshots: 33,
+    posters: 2,
+  }, // монстры-коммандос 1
   {
     release: new Date("2022-11-04"),
     publication: new Date("2022-11-08"),
@@ -10190,7 +10459,7 @@ const films = [
     publication: new Date("2024-08-02"),
     format: "сериал",
     season: "4",
-    grade: "B",
+    grade: "A",
     title: "Пацаны",
     original: "The Boys",
     kinopoisk: "https://www.kinopoisk.ru/series/460586/",
@@ -10250,7 +10519,7 @@ const films = [
     publication: new Date("2022-07-09"),
     format: "сериал",
     season: "3",
-    grade: "B",
+    grade: "A",
     title: "Пацаны",
     original: "The Boys",
     kinopoisk: "https://www.kinopoisk.ru/series/460586/",
@@ -10310,7 +10579,7 @@ const films = [
     publication: new Date("2020-10-10"),
     format: "сериал",
     season: "2",
-    grade: "B",
+    grade: "A",
     title: "Пацаны",
     original: "The Boys",
     kinopoisk: "https://www.kinopoisk.ru/series/460586/",
@@ -10516,7 +10785,7 @@ const films = [
     release: new Date("2003-07-18"),
     publication: new Date("2020-01-23"),
     format: "фильм",
-    grade: "love",
+    grade: "A+",
     title: "Плохие парни 2",
     original: "Bad Boys II",
     kinopoisk: "https://www.kinopoisk.ru/film/2928/",
@@ -10556,7 +10825,7 @@ const films = [
     release: new Date("1995-04-07"),
     publication: new Date("2020-01-22"),
     format: "фильм",
-    grade: "A+",
+    grade: "A",
     title: "Плохие парни",
     original: "Bad Boys",
     kinopoisk: "https://www.kinopoisk.ru/film/3908/",
@@ -10714,6 +10983,71 @@ const films = [
     screenshots: 18,
     posters: 1,
   }, // подстава
+  {
+    release: new Date("2023-09-23"),
+    publication: new Date("2023-11-19"),
+    format: "сериал",
+    season: "1",
+    grade: "B",
+    title: "Поколение «Ви»",
+    original: "Gen V",
+    kinopoisk: "https://www.kinopoisk.ru/series/1431133/",
+    director: [
+      {
+        name: "Эрик Крипке",
+      },
+      {
+        name: "Эван Голдберг",
+      },
+      {
+        name: "Крэйг Розенберг",
+      },
+      {
+        name: "Сет Роген",
+      },
+    ],
+    cast: [
+      {
+        name: "Джаз Синклер",
+      },
+      {
+        name: "Лиззи Бродвей",
+      },
+      {
+        name: "Мэдди Филлипс",
+      },
+      {
+        name: "Лондон Тор",
+      },
+      {
+        name: "Дерек Лу",
+      },
+      {
+        name: "Аса Германн",
+      },
+      {
+        name: "Чэнс Пердомо",
+      },
+      {
+        name: "Патрик Шварценеггер",
+      },
+    ],
+    description: "Супергерои обучаются в колледже компании «Vought».",
+    genres: [
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "фантастика",
+      },
+      { genre: "супергероика" },
+    ],
+    screenshots: 26,
+    posters: 1,
+  }, // поколение «ви» 1
   {
     release: new Date("2012-10-26"),
     publication: new Date("2019-06-03"),
@@ -14503,6 +14837,45 @@ const films = [
     posters: 1,
   }, // счастливое число слевина
   {
+    release: new Date("1996-02-16"),
+    publication: new Date("2021-08-22"),
+    format: "фильм",
+    grade: "C",
+    title: "Счастливчик Гилмор",
+    original: "Happy Gilmore",
+    kinopoisk: "https://www.kinopoisk.ru/film/3690/",
+    director: [
+      {
+        name: "Деннис Дуган",
+      },
+    ],
+    cast: [
+      {
+        name: "Адам Сэндлер",
+      },
+      {
+        name: "Кристофер Макдональд",
+      },
+      {
+        name: "Джули Боуэн",
+      },
+      {
+        name: "Карл Уэзерс",
+      },
+    ],
+    description: "Хоккеист переходит в гольф, чтобы вернуть дом бабушки.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "спорт",
+      },
+    ],
+    screenshots: 11,
+    posters: 1,
+  }, // счастливчик гилмор
+  {
     release: new Date("2021-11-24"),
     publication: new Date("2022-03-08"),
     format: "фильм",
@@ -14745,6 +15118,59 @@ const films = [
     screenshots: 35,
     posters: 1,
   }, // темная материя
+  {
+    release: new Date("2023-01-27"),
+    publication: new Date("2023-04-05"),
+    format: "сериал",
+    season: "1",
+    grade: "B",
+    title: "Терапия",
+    original: "Shrinking",
+    kinopoisk: "https://www.kinopoisk.ru/series/4675392/",
+    director: [
+      {
+        name: "Джейсон Сигел",
+      },
+      {
+        name: "Билл Лоуренс",
+      },
+      {
+        name: "Бретт Голдстин",
+      },
+    ],
+    cast: [
+      {
+        name: "Джейсон Сигел",
+      },
+      {
+        name: "Джессика Уильямс",
+      },
+      {
+        name: "Харрисон Форд",
+      },
+      {
+        name: "Криста Миллер",
+      },
+      {
+        name: "Люк Тенни",
+      },
+      {
+        name: "Лукита Максвелл",
+      },
+    ],
+    description:
+      "Убитый горем психотерапевт начинает говорить своим клиентам то, что думает.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 19,
+    posters: 1,
+  }, // терапия 1
   {
     release: new Date("2017-11-03"),
     publication: new Date("2021-07-24"),
@@ -15324,6 +15750,59 @@ const films = [
     screenshots: 21,
     posters: 1,
   }, // убийца
+  {
+    release: new Date("2019-05-17"),
+    publication: new Date("2019-05-28"),
+    format: "сериал",
+    season: "мини–сериал",
+    grade: "A",
+    title: "Уловка-22",
+    original: "Catch-22",
+    kinopoisk: "https://www.kinopoisk.ru/series/1134613/",
+    director: [
+      {
+        name: "Люк Дейвис",
+      },
+      {
+        name: "Дэвид Мишо",
+      },
+      {
+        name: "Джордж Клуни",
+      },
+    ],
+    cast: [
+      {
+        name: "Кристофер Эбботт",
+      },
+      {
+        name: "Кайл Чендлер",
+      },
+      {
+        name: "Рафи Гаврон",
+      },
+      {
+        name: "Остин Стоуэлл",
+      },
+      {
+        name: "Льюис Пуллман",
+      },
+    ],
+    description:
+      "Военный лётчик думает избавиться от службы, сославшись на невменяемость.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "военный",
+      },
+    ],
+    screenshots: 12,
+    posters: 2,
+  }, // уловка-22
   {
     release: new Date("2023-10-13"),
     publication: new Date("2023-11-27"),
@@ -15920,6 +16399,56 @@ const films = [
     posters: 3,
   }, // французский вестник
   {
+    release: new Date("2019-08-25"),
+    publication: new Date("2019-10-27"),
+    format: "сериал",
+    season: "5",
+    grade: "A+",
+    title: "Футболисты",
+    original: "Ballers / Игроки",
+    kinopoisk: "https://www.kinopoisk.ru/series/762087/",
+    director: [
+      {
+        name: "Стивен Левинсон",
+      },
+      {
+        name: "Марк Уолберг",
+      },
+    ],
+    cast: [
+      {
+        name: "Дуэйн Джонсон",
+      },
+      {
+        name: "Джон Дэвид Вашингтон",
+      },
+      {
+        name: "Донован В. Картер",
+      },
+      {
+        name: "Роб Кордри",
+      },
+      {
+        name: "Омар Бенсон Миллер",
+      },
+    ],
+    description:
+      "Бывший футболист Спенсер Страсмор помогает спортсменам в финансовых вопросах после завершения карьеры.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "спорт",
+      },
+    ],
+    screenshots: 11,
+    posters: 1,
+  }, // футболисты 5
+  {
     release: new Date("2023-07-24"),
     publication: new Date("2023-10-15"),
     format: "сериал",
@@ -16073,6 +16602,59 @@ const films = [
     screenshots: 15,
     posters: 1,
   }, // хотел бы я быть здесь
+  {
+    release: new Date("1999-09-25"),
+    publication: new Date("2021-03-19"),
+    format: "сериал",
+    season: "1",
+    grade: "B",
+    title: "Хулиганы и ботаны",
+    original: "Freaks and Geeks",
+    kinopoisk: "https://www.kinopoisk.ru/series/401639/",
+    director: [
+      {
+        name: "Пол Фиг",
+      },
+    ],
+    cast: [
+      {
+        name: "Линда Карделлини",
+      },
+      {
+        name: "Джон Фрэнсис Дейли",
+      },
+      {
+        name: "Джеймс Франко",
+      },
+      {
+        name: "Сэмм Левин",
+      },
+      {
+        name: "Джейсон Сигел",
+      },
+      {
+        name: "Сет Роген",
+      },
+      {
+        name: "Мартин Старр",
+      },
+      {
+        name: "Бизи Филиппс",
+      },
+    ],
+    description:
+      "Жизнь обычной школы в Мичигане образца 1980 года и её ученики разных возрастов.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 24,
+    posters: 1,
+  }, // хулиганы и ботаны 1
   {
     release: new Date("2001-05-13"),
     publication: new Date("2024-08-11"),
