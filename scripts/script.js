@@ -189,6 +189,12 @@ const films = [
     kinopoisk: "https://www.kinopoisk.ru/series/1394131/",
     director: [
       {
+        name: "Джонатан Нолан",
+      },
+      {
+        name: "Лиза Джой",
+      },
+      {
         name: "Грэм Вагнер",
       },
       {
@@ -875,6 +881,40 @@ const films = [
     posters: 1,
   }, // атланта 1
   {
+    release: new Date("2001-06-15"),
+    publication: new Date("2023-10-31"),
+    format: "фильм",
+    grade: "B",
+    title: "Атлантида: Затерянный мир",
+    original: "Atlantis: The Lost Empire",
+    kinopoisk: "https://www.kinopoisk.ru/film/597/",
+    director: [
+      {
+        name: "Гари Труздейл",
+      },
+      {
+        name: "Кирк Уайз",
+      },
+    ],
+    cast: [
+      {
+        name: "Майкл Дж. Фокс",
+      },
+      {
+        name: "Кри Саммер",
+      },
+    ],
+    description:
+      "Молодой лингвист Майло Тэтч присоединяется к отважным исследователям в поисках таинственного континента Атлантида.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 18,
+    posters: 2,
+  }, // атлантида: затерянный мир
+  {
     release: new Date("2022-06-17"),
     publication: new Date("2022-07-21"),
     format: "фильм",
@@ -1501,6 +1541,98 @@ const films = [
     screenshots: 43,
     posters: 2,
   }, // большой злой лис и другие сказки
+  {
+    release: new Date("2000-08-23"),
+    publication: new Date("2020-02-19"),
+    format: "фильм",
+    grade: "love",
+    title: "Большой куш",
+    original: "Snatch / Спиздили",
+    kinopoisk: "https://www.kinopoisk.ru/film/526/",
+    director: [
+      {
+        name: "Гай Ричи",
+      },
+    ],
+    cast: [
+      {
+        name: "Джейсон Стэйтем",
+      },
+      {
+        name: "Стивен Грэм",
+      },
+      {
+        name: "Брэд Питт",
+      },
+      {
+        name: "Робби Ги",
+      },
+      {
+        name: "Ленни Джеймс",
+      },
+      {
+        name: "Деннис Фарина",
+      },
+      {
+        name: "Винни Джонс",
+      },
+      {
+        name: "Бенисио Дель Торо",
+      },
+    ],
+    description:
+      "За бесценным бриллиантом охотятся боксёрские промоутеры, букмекеры, русский гангстер, грабители и ювелиры.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 33,
+    posters: 1,
+  }, // большой куш
+  {
+    release: new Date("1999-09-17"),
+    publication: new Date("2019-06-02"),
+    format: "фильм",
+    grade: "A+",
+    title: "Бриллиантовый полицейский",
+    original: "Blue Streak",
+    kinopoisk: "https://www.kinopoisk.ru/film/7415/",
+    director: [
+      {
+        name: "Лес Мэйфилд",
+      },
+    ],
+    cast: [
+      {
+        name: "Мартин Лоуренс",
+      },
+      {
+        name: "Люк Уилсон",
+      },
+      {
+        name: "Питер Грин",
+      },
+      {
+        name: "Дэйв Шаппелл",
+      },
+    ],
+    description:
+      "Бывший заключенный выдает себя за полицейского, чтобы вернуть бриллиант, который он украл много лет назад.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 12,
+    posters: 1,
+  }, // бриллиантовый полицейский
   {
     release: new Date("2021-08-12"),
     publication: new Date("2022-04-25"),
@@ -3910,13 +4042,56 @@ const films = [
         genre: "приключения",
       },
       { genre: "драма" },
-      {
-        genre: "детектив",
-      },
     ],
     screenshots: 18,
     posters: 3,
   }, // к звёздам
+  {
+    release: new Date("1999-12-22"),
+    publication: new Date("2021-02-09"),
+    format: "фильм",
+    grade: "A",
+    title: "Каждое воскресенье",
+    original: "Any Given Sunday",
+    kinopoisk: "https://www.kinopoisk.ru/film/1541/",
+    director: [
+      {
+        name: "Оливер Стоун",
+      },
+    ],
+    cast: [
+      {
+        name: "Аль Пачино",
+      },
+      {
+        name: "Джейми Фокс",
+      },
+      {
+        name: "Деннис Куэйд",
+      },
+      {
+        name: "Кэмерон Диас",
+      },
+      {
+        name: "Джеймс Вудс",
+      },
+      {
+        name: "ЭлЭл Кул Джей",
+      },
+    ],
+    description:
+      "«Акулы Майами» терпят неудачи, а новый владелец – дочь прежнего, Кристина – конфликтует с тренером, жёстко управляя клубом.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "спорт",
+      },
+    ],
+    screenshots: 17,
+    posters: 2,
+  }, // каждое воскресенье
   {
     release: new Date("2006-11-17"),
     publication: new Date("2022-09-20"),
@@ -4100,6 +4275,49 @@ const films = [
     screenshots: 12,
     posters: 1,
   }, // капитан марвел 2
+  {
+    release: new Date("1998-03-05"),
+    publication: new Date("2020-02-22"),
+    format: "фильм",
+    grade: "A+",
+    title: "Карты, деньги, два ствола",
+    original: "Lock, Stock and Two Smoking Barrels",
+    kinopoisk: "https://www.kinopoisk.ru/film/522/",
+    director: [
+      {
+        name: "Гай Ричи",
+      },
+    ],
+    cast: [
+      {
+        name: "Ник Моран",
+      },
+      {
+        name: "Джейсон Стэйтем",
+      },
+      {
+        name: "Джейсон Флеминг",
+      },
+      {
+        name: "Декстер Флетчер",
+      },
+      {
+        name: "Винни Джонс",
+      },
+    ],
+    description:
+      "Четыре мелких преступника проиграли крупную сумму в покере криминальному авторитету и получили неделю на выплату долга.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 19,
+    posters: 3,
+  }, // карты, деньги, два ствола
   {
     release: new Date("1942-11-26"),
     publication: new Date("2024-08-10"),
@@ -4976,6 +5194,9 @@ const films = [
         name: "Даг Эллин",
       },
       {
+        name: "Стивен Левинсон",
+      },
+      {
         name: "Марк Уолберг",
       },
     ],
@@ -5023,6 +5244,9 @@ const films = [
         name: "Даг Эллин",
       },
       {
+        name: "Стивен Левинсон",
+      },
+      {
         name: "Марк Уолберг",
       },
     ],
@@ -5068,6 +5292,9 @@ const films = [
     director: [
       {
         name: "Даг Эллин",
+      },
+      {
+        name: "Стивен Левинсон",
       },
       {
         name: "Марк Уолберг",
@@ -5118,6 +5345,9 @@ const films = [
         name: "Даг Эллин",
       },
       {
+        name: "Стивен Левинсон",
+      },
+      {
         name: "Марк Уолберг",
       },
     ],
@@ -5163,6 +5393,9 @@ const films = [
     director: [
       {
         name: "Даг Эллин",
+      },
+      {
+        name: "Стивен Левинсон",
       },
       {
         name: "Марк Уолберг",
@@ -5212,6 +5445,9 @@ const films = [
         name: "Даг Эллин",
       },
       {
+        name: "Стивен Левинсон",
+      },
+      {
         name: "Марк Уолберг",
       },
     ],
@@ -5257,6 +5493,9 @@ const films = [
     director: [
       {
         name: "Даг Эллин",
+      },
+      {
+        name: "Стивен Левинсон",
       },
       {
         name: "Марк Уолберг",
@@ -8461,6 +8700,43 @@ const films = [
     screenshots: 12,
     posters: 1,
   }, // на счёт три
+  {
+    release: new Date("2000-12-19"),
+    publication: new Date("2021-02-25"),
+    format: "фильм",
+    grade: "B",
+    title: "Найти Форрестера",
+    original: "Finding Forrester",
+    kinopoisk: "https://www.kinopoisk.ru/film/671/",
+    director: [
+      {
+        name: "Гас Ван Сент",
+      },
+    ],
+    cast: [
+      {
+        name: "Шон Коннери",
+      },
+      {
+        name: "Роб Браун",
+      },
+      {
+        name: "Ф. Мюррэй Абрахам",
+      },
+      {
+        name: "Анна Пэкуин",
+      },
+    ],
+    description:
+      "Известный писатель Форрестер решает помочь 16-летнему Джамалу раскрыть писательский талант, взяв его под своё крыло и устроив в элитную школу.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 11,
+    posters: 2,
+  }, // найти форрестера
   {
     release: new Date("2020-02-13"),
     publication: new Date("2020-02-28"),
@@ -12183,7 +12459,7 @@ const films = [
         genre: "мультфильм",
       },
     ],
-    screenshots: 15,
+    screenshots: 18,
     posters: 3,
   }, // разочарование 1-2
   {
@@ -14913,6 +15189,55 @@ const films = [
     posters: 2,
   }, // сядь за руль моей машины
   {
+    release: new Date("1999-12-25"),
+    publication: new Date("2024-05-13"),
+    format: "фильм",
+    grade: "C",
+    title: "Талантливый мистер Рипли",
+    original: "The Talented Mr. Ripley",
+    kinopoisk: "https://www.kinopoisk.ru/film/5558/",
+    director: [
+      {
+        name: "Энтони Мингелла",
+      },
+    ],
+    cast: [
+      {
+        name: "Мэтт Дэймон",
+      },
+      {
+        name: "Джуд Лоу",
+      },
+      {
+        name: "Гвинет Пэлтроу",
+      },
+      {
+        name: "Филип Сеймур Хоффман",
+      },
+      {
+        name: "Кейт Бланшетт",
+      },
+      {
+        name: "Джек Девенпорт",
+      },
+    ],
+    description:
+      "Богатый американец поручает Тому съездить в Италию и вернуть его транжирящего деньги сына в США. Когда миссия проваливается, Рипли идёт на крайние меры.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 50,
+    posters: 1,
+  }, // талантливый мистер рипли
+  {
     release: new Date("2023-03-15"),
     publication: new Date("2023-06-11"),
     format: "сериал",
@@ -15428,6 +15753,55 @@ const films = [
     posters: 1,
   }, // треугольник печали
   {
+    release: new Date("1999-10-01"),
+    publication: new Date("2020-04-13"),
+    format: "фильм",
+    grade: "B",
+    title: "Три короля",
+    original: "Three Kings",
+    kinopoisk: "https://www.kinopoisk.ru/film/4987/",
+    director: [
+      {
+        name: "Дэвид О. Расселл",
+      },
+    ],
+    cast: [
+      {
+        name: "Джордж Клуни",
+      },
+      {
+        name: "Марк Уолберг",
+      },
+      {
+        name: "Айс Кьюб",
+      },
+      {
+        name: "Спайк Джонс",
+      },
+      {
+        name: "Клифф Кёртис",
+      },
+    ],
+    description:
+      "После войны в Персидском заливе четверо солдат ищут похищенное кувейтское золото.",
+    genres: [
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "военный",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 12,
+    posters: 2,
+  }, // три короля
+  {
     release: new Date("1996-10-18"),
     publication: new Date("2021-02-16"),
     format: "фильм",
@@ -15803,6 +16177,45 @@ const films = [
     screenshots: 12,
     posters: 2,
   }, // уловка-22
+  {
+    release: new Date("1999-09-17"),
+    publication: new Date("2021-02-25"),
+    format: "фильм",
+    grade: "B",
+    title: "Ураган",
+    original: "The Hurricane",
+    kinopoisk: "https://www.kinopoisk.ru/film/4914/",
+    director: [
+      {
+        name: "Норман Джуисон",
+      },
+    ],
+    cast: [
+      {
+        name: "Дензел Вашингтон",
+      },
+      {
+        name: "Виселос Реон Шеннон",
+      },
+      {
+        name: "Дебора Кара Ангер",
+      },
+    ],
+    description: "Темнокожий боксер ложно обвинен в убийстве.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "биография",
+      },
+      {
+        genre: "спорт",
+      },
+    ],
+    screenshots: 15,
+    posters: 2,
+  }, // ураган
   {
     release: new Date("2023-10-13"),
     publication: new Date("2023-11-27"),
@@ -17175,6 +17588,48 @@ const films = [
     screenshots: 21,
     posters: 1,
   }, // чудесная история генри шугара
+  {
+    release: new Date("1997-03-28"),
+    publication: new Date("2022-03-21"),
+    format: "фильм",
+    grade: "C",
+    title: "Шестой игрок",
+    original: "The Sixth Man",
+    kinopoisk: "https://www.kinopoisk.ru/film/13085/",
+    director: [
+      {
+        name: "Рэндолл Миллер",
+      },
+    ],
+    cast: [
+      {
+        name: "Марлон Уайанс",
+      },
+      {
+        name: "Кадим Хардисон",
+      },
+      {
+        name: "Дэвид Пэймер",
+      },
+      {
+        name: "Майкл Мишель",
+      },
+    ],
+    description: "Призрак помогает брату добиться успеха в баскетболе.",
+    genres: [
+      {
+        genre: "спорт",
+      },
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "фэнтези",
+      },
+    ],
+    screenshots: 16,
+    posters: 1,
+  }, // шестой игрок
   {
     release: new Date("2022-02-18"),
     publication: new Date("2022-12-19"),
