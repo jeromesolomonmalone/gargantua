@@ -541,6 +541,46 @@ const films = [
     posters: 2,
   }, // американское чтиво
   {
+    release: new Date("2005-12-21"),
+    publication: new Date("2021-02-10"),
+    format: "фильм",
+    grade: "A",
+    title: "Ангел-А",
+    original: "Angel-A",
+    kinopoisk: "https://www.kinopoisk.ru/film/160929/",
+    director: [
+      {
+        name: "Люк Бессон",
+      },
+    ],
+    cast: [
+      {
+        name: "Жамель Деббуз",
+      },
+      {
+        name: "Рье Расмуссен",
+      },
+    ],
+    description:
+      "Высокая блондинка спускается с небес, чтобы помочь Андре вернуть долги.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "чёрно-белое",
+      },
+    ],
+    screenshots: 17,
+    posters: 2,
+  }, // ангел-а
+  {
     release: new Date("2022-04-01"),
     publication: new Date("2022-06-23"),
     format: "фильм",
@@ -1719,6 +1759,43 @@ const films = [
     posters: 1,
   }, // брюс всемогущий
   {
+    release: new Date("1996-02-21"),
+    publication: new Date("2021-03-06"),
+    format: "фильм",
+    grade: "C",
+    title: "Бутылочная ракета",
+    original: "Bottle Rocket",
+    kinopoisk: "https://www.kinopoisk.ru/film/7231/",
+    director: [
+      {
+        name: "Уэс Андерсон",
+      },
+    ],
+    cast: [
+      {
+        name: "Люк Уилсон",
+      },
+      {
+        name: "Оуэн Уилсон",
+      },
+      {
+        name: "Роберт Мусгрейв",
+      },
+    ],
+    description:
+      "Трое друзей планируют совершить простое ограбление и пуститься в бега.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 15,
+    posters: 2,
+  }, // бутылочная ракета
+  {
     release: new Date("2022-08-05"),
     publication: new Date("2022-10-02"),
     format: "фильм",
@@ -2234,6 +2311,54 @@ const films = [
     posters: 6,
   }, // во все тяжкие 1-5
   {
+    release: new Date("2004-12-25"),
+    publication: new Date("2020-06-08"),
+    format: "фильм",
+    grade: "C",
+    title: "Водная жизнь",
+    original: "The Life Aquatic with Steve Zissou / Водная жизнь Стива Зиссу",
+    kinopoisk: "https://www.kinopoisk.ru/film/18543/",
+    director: [
+      {
+        name: "Уэс Андерсон",
+      },
+    ],
+    cast: [
+      {
+        name: "Билл Мюррей",
+      },
+      {
+        name: "Оуэн Уилсон",
+      },
+      {
+        name: "Кейт Бланшетт",
+      },
+      {
+        name: "Анжелика Хьюстон",
+      },
+      {
+        name: "Уиллем Дефо",
+      },
+      {
+        name: "Джефф Голдблюм",
+      },
+      {
+        name: "Майкл Гэмбон",
+      },
+    ],
+    description: "Океанограф Стив Зиссу мстит акуле, убившей его напарника.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 14,
+    posters: 1,
+  }, // водная жизнь
+  {
     release: new Date("2013-12-25"),
     publication: new Date("2022-02-25"),
     format: "фильм",
@@ -2353,6 +2478,43 @@ const films = [
     screenshots: 27,
     posters: 2,
   }, // впритык
+  {
+    release: new Date("2006-09-15"),
+    publication: new Date("2020-01-23"),
+    format: "фильм",
+    grade: "A+",
+    title: "Второй шанс",
+    original: "Gridiron Gang",
+    kinopoisk: "https://www.kinopoisk.ru/film/84034/",
+    director: [
+      {
+        name: "Фил Джоану",
+      },
+    ],
+    cast: [
+      {
+        name: "Дуэйн Джонсон",
+      },
+      {
+        name: "Иксзибит",
+      },
+    ],
+    description:
+      "Под руководством своего наставника подростки в центре содержания несовершеннолетних обретают уверенность в себе через игру в футбол.",
+    genres: [
+      {
+        genre: "спорт",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "биография",
+      },
+    ],
+    screenshots: 11,
+    posters: 1,
+  }, // второй шанс
   {
     release: new Date("2023-11-03"),
     publication: new Date("2023-12-09"),
@@ -4093,6 +4255,43 @@ const films = [
     posters: 2,
   }, // каждое воскресенье
   {
+    release: new Date("1995-11-22"),
+    publication: new Date("2019-09-11"),
+    format: "фильм",
+    grade: "A",
+    title: "Казино",
+    original: "Casino",
+    kinopoisk: "https://www.kinopoisk.ru/film/2494/",
+    director: [
+      {
+        name: "Мартин Скорсезе",
+      },
+    ],
+    cast: [
+      {
+        name: "Роберт Де Ниро",
+      },
+      {
+        name: "Шэрон Стоун",
+      },
+      {
+        name: "Джо Пеши",
+      },
+    ],
+    description:
+      "Мафия отправила Сэма Ротстина управлять казино в Лас-Вегасе, а для защиты приставила его друга детства Никки Санторо — опасного бандита.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 13,
+    posters: 1,
+  }, // казино
+  {
     release: new Date("2006-11-17"),
     publication: new Date("2022-09-20"),
     format: "фильм",
@@ -4755,6 +4954,46 @@ const films = [
     screenshots: 13,
     posters: 1,
   }, // кокаиновый медведь
+  {
+    release: new Date("2002-03-29"),
+    publication: new Date("2019-07-17"),
+    format: "фильм",
+    grade: "A+",
+    title: "Комната страха",
+    original: "Panic Room",
+    kinopoisk: "https://www.kinopoisk.ru/film/780/",
+    director: [
+      {
+        name: "Дэвид Финчер",
+      },
+    ],
+    cast: [
+      {
+        name: "Джоди Фостер",
+      },
+      {
+        name: "Кристен Стюарт",
+      },
+      {
+        name: "Джаред Лето",
+      },
+      {
+        name: "Форест Уитакер",
+      },
+      {
+        name: "Дуайт Йоакам",
+      },
+    ],
+    description:
+      "Женщина с дочерью прячутся в убежище дома от трёх грабителей.",
+    genres: [
+      {
+        genre: "триллер",
+      },
+    ],
+    screenshots: 16,
+    posters: 1,
+  }, // комната страха
   {
     release: new Date("2019-10-25"),
     publication: new Date("2020-11-13"),
@@ -11015,6 +11254,52 @@ const films = [
     posters: 2,
   }, // пингвин
   {
+    release: new Date("2007-01-05"),
+    publication: new Date("2022-05-17"),
+    format: "фильм",
+    grade: "A+",
+    title: "Писатели свободы",
+    original: "Freedom Writers",
+    kinopoisk: "https://www.kinopoisk.ru/film/195226/",
+    director: [
+      {
+        name: "Ричард ЛаГравенес",
+      },
+    ],
+    cast: [
+      {
+        name: "Хилари Суэнк",
+      },
+      {
+        name: "Патрик Демпси",
+      },
+      {
+        name: "Скотт Гленн",
+      },
+      {
+        name: "Имелда Стонтон",
+      },
+      {
+        name: "Эйприл Л. Эрнандез",
+      },
+      {
+        name: "Марио",
+      },
+    ],
+    description:
+      "Эрин Груэлл помогла проблемным ученикам из расово разделенной школы Лос-Анджелеса поверить в образование.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "биография",
+      },
+    ],
+    screenshots: 14,
+    posters: 3,
+  }, // писатели свободы
+  {
     release: new Date("2022-04-22"),
     publication: new Date("2022-05-17"),
     format: "фильм",
@@ -11467,6 +11752,49 @@ const films = [
     screenshots: 29,
     posters: 1,
   }, // полиция токио 1
+  {
+    release: new Date("2006-11-18"),
+    publication: new Date("2021-02-08"),
+    format: "фильм",
+    grade: "B",
+    title: "Полный облом",
+    original: "Big Nothing",
+    kinopoisk: "https://www.kinopoisk.ru/film/220497/",
+    director: [
+      {
+        name: "Жан-Батист Андреа",
+      },
+    ],
+    cast: [
+      {
+        name: "Дэвид Швиммер",
+      },
+      {
+        name: "Саймон Пегг",
+      },
+      {
+        name: "Элис Ив",
+      },
+      {
+        name: "Наташа Макэлхоун",
+      },
+    ],
+    description:
+      "Школьный учитель теряет работу и ввязывается в опасную аферу.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "триллер",
+      },
+    ],
+    screenshots: 14,
+    posters: 1,
+  }, // полный облом
   {
     release: new Date("2020-04-19"),
     publication: new Date("2020-05-20"),
@@ -13417,6 +13745,61 @@ const films = [
     posters: 1,
   }, // сексуальное просвещение 4
   {
+    release: new Date("2001-12-14"),
+    publication: new Date("2020-02-26"),
+    format: "фильм",
+    grade: "C",
+    title: "Семейка Тененбаум",
+    original: "The Royal Tenenbaums",
+    kinopoisk: "https://www.kinopoisk.ru/film/809/",
+    director: [
+      {
+        name: "Уэс Андерсон",
+      },
+    ],
+    cast: [
+      {
+        name: "Джин Хэкмен",
+      },
+      {
+        name: "Люк Уилсон",
+      },
+      {
+        name: "Гвинет Пэлтроу",
+      },
+      {
+        name: "Анжелика Хьюстон",
+      },
+      {
+        name: "Бен Стиллер",
+      },
+      {
+        name: "Билл Мюррей",
+      },
+      {
+        name: "Оуэн Уилсон",
+      },
+      {
+        name: "Дэнни Гловер",
+      },
+      {
+        name: "Кумар Паллана",
+      },
+    ],
+    description:
+      "Члены неблагополучной семьи с неохотой собираются под одной крышей.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 17,
+    posters: 2,
+  }, // семейка тененбаум
+  {
     release: new Date("1995-09-22"),
     publication: new Date("2019-06-14"),
     format: "фильм",
@@ -14084,6 +14467,49 @@ const films = [
     screenshots: 27,
     posters: 2,
   }, // соколиный глаз
+  {
+    release: new Date("2003-09-26"),
+    publication: new Date("2021-02-14"),
+    format: "фильм",
+    grade: "C",
+    title: "Сокровище Амазонки",
+    original: "The Rundown",
+    kinopoisk: "https://www.kinopoisk.ru/film/5412/",
+    director: [
+      {
+        name: "Питер Берг",
+      },
+    ],
+    cast: [
+      {
+        name: "Дуэйн Джонсон",
+      },
+      {
+        name: "Шонн Уильям Скотт",
+      },
+      {
+        name: "Розарио Доусон",
+      },
+      {
+        name: "Кристофер Уокен",
+      },
+    ],
+    description:
+      "Солдат получает задание найти сына заказчика, скрывающегося в джунглях Амазонки.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "боевик",
+      },
+    ],
+    screenshots: 16,
+    posters: 2,
+  }, // сокровище амазонки
   {
     release: new Date("2015-03-17"),
     publication: new Date("2023-12-03"),
@@ -16125,6 +16551,45 @@ const films = [
     posters: 1,
   }, // убийца
   {
+    release: new Date("2005-03-25"),
+    publication: new Date("2020-04-15"),
+    format: "фильм",
+    grade: "B",
+    title: "Угадай, кто?",
+    original: "Guess Who",
+    kinopoisk: "https://www.kinopoisk.ru/film/47257/",
+    director: [
+      {
+        name: "Кевин Родни Салливан",
+      },
+    ],
+    cast: [
+      {
+        name: "Берни Мак",
+      },
+      {
+        name: "Эштон Кутчер",
+      },
+      {
+        name: "Зои Салдана",
+      },
+      {
+        name: "Джудит Скотт",
+      },
+    ],
+    description: "Тереза знакомит родителей с белым женихом Саймоном.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "мелодрама",
+      },
+    ],
+    screenshots: 13,
+    posters: 2,
+  }, // угадай, кто?
+  {
     release: new Date("2019-05-17"),
     publication: new Date("2019-05-28"),
     format: "сериал",
@@ -17158,6 +17623,47 @@ const films = [
     posters: 1,
   }, // человек, который изменил всё
   {
+    release: new Date("2004-06-30"),
+    publication: new Date("2020-06-18"),
+    format: "фильм",
+    grade: "A+",
+    title: "Человек-паук 2",
+    original: "Spider-Man 2",
+    kinopoisk: "https://www.kinopoisk.ru/film/2898/",
+    director: [
+      {
+        name: "Сэм Рэйми",
+      },
+    ],
+    cast: [
+      {
+        name: "Тоби Магуайр",
+      },
+      {
+        name: "Кирстен Данст",
+      },
+      {
+        name: "Джеймс Франко",
+      },
+      {
+        name: "Альфред Молина",
+      },
+    ],
+    description:
+      "Питера Паркера преследуют неудачи в личной жизни, пока он сражается с бывшим ученым Отто Октавиусом.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "приключения",
+      },
+      { genre: "супергероика" },
+    ],
+    screenshots: 14,
+    posters: 1,
+  }, // человек-паук 2
+  {
     release: new Date("2021-12-17"),
     publication: new Date("2023-07-24"),
     format: "фильм",
@@ -17983,6 +18489,52 @@ const films = [
     screenshots: 42,
     posters: 2,
   }, // я не киллер
+  {
+    release: new Date("2004-07-15"),
+    publication: new Date("2020-08-02"),
+    format: "фильм",
+    grade: "A+",
+    title: "Я, робот",
+    original: "I, Robot",
+    kinopoisk: "https://www.kinopoisk.ru/film/4886/",
+    director: [
+      {
+        name: "Алекс Пройас",
+      },
+    ],
+    cast: [
+      {
+        name: "Уилл Смит",
+      },
+      {
+        name: "Бриджет Мойнэхэн",
+      },
+      {
+        name: "Алан Тьюдик",
+      },
+      {
+        name: "Джеймс Кромуэлл",
+      },
+      {
+        name: "Брюс Гринвуд",
+      },
+    ],
+    description:
+      "В 2035 году полицейский расследует преступление робота, угрожающее человечеству.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "детектив",
+      },
+    ],
+    screenshots: 22,
+    posters: 1,
+  }, // я, робот
 ];
 
 // Сортировка films по дате публикации
