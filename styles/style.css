@@ -284,6 +284,7 @@ body {
   visibility: hidden;
   display: none;
   opacity: 0;
+  overflow-x: hidden;
   overflow-y: auto;
   background: var(--background);
   transition: visibility 0.6s, opacity 0.6s;
@@ -1584,6 +1585,7 @@ body {
 
   .film__header__text {
     display: grid;
+    column-gap: 10px;
     margin: 40px 0 0;
     inline-size: calc(100% - 40px);
   }
@@ -1591,7 +1593,6 @@ body {
   .film__header__grade__wrapper {
     grid-row-start: 2;
     justify-self: end;
-    margin-inline-end: 10px;
   }
 
   .film__header__title {
@@ -1607,6 +1608,7 @@ body {
     grid-row-start: 2;
     justify-self: start;
     margin: 0;
+    inline-size: max-content;
   }
 
   .film__text {

@@ -2479,42 +2479,45 @@ const films = [
     posters: 2,
   }, // впритык
   {
-    release: new Date("2006-09-15"),
-    publication: new Date("2020-01-23"),
+    release: new Date("2024-05-24"),
+    publication: new Date("2024-07-13"),
     format: "фильм",
-    grade: "A+",
-    title: "Второй шанс",
-    original: "Gridiron Gang",
-    kinopoisk: "https://www.kinopoisk.ru/film/84034/",
+    grade: "C",
+    title: "Гарфилд",
+    original: "The Garfield Movie",
+    kinopoisk: "https://www.kinopoisk.ru/film/1044220/",
     director: [
       {
-        name: "Фил Джоану",
+        name: "Марк Диндал",
       },
     ],
     cast: [
       {
-        name: "Дуэйн Джонсон",
+        name: "Крис Пратт",
       },
       {
-        name: "Иксзибит",
+        name: "Сэмюэл Л. Джексон",
+      },
+      {
+        name: "Ханна Уоддингэм",
+      },
+      {
+        name: "Винг Реймз",
+      },
+      {
+        name: "Николас Холт",
       },
     ],
     description:
-      "Под руководством своего наставника подростки в центре содержания несовершеннолетних обретают уверенность в себе через игру в футбол.",
+      "Гарфилд встречает своего пропавшего отца, бродягу Вика, и вынужден оставить сытую жизнь ради опасного ограбления.",
     genres: [
       {
-        genre: "спорт",
-      },
-      {
-        genre: "драма",
-      },
-      {
-        genre: "биография",
+        genre: "мультфильм",
       },
     ],
-    screenshots: 11,
-    posters: 1,
-  }, // второй шанс
+    screenshots: 27,
+    posters: 2,
+  }, // гарфилд
   {
     release: new Date("2023-11-03"),
     publication: new Date("2023-12-09"),
@@ -3671,6 +3674,40 @@ const films = [
     posters: 2,
   }, // дюнкерк
   {
+    release: new Date("2024-09-20"),
+    publication: new Date("2024-12-15"),
+    format: "фильм",
+    grade: "B",
+    title: "Его три дочери",
+    original: "His Three Daughters",
+    kinopoisk: "https://www.kinopoisk.ru/film/5368757/",
+    director: [
+      {
+        name: "Азазель Джейкобс",
+      },
+    ],
+    cast: [
+      {
+        name: "Кэрри Кун",
+      },
+      {
+        name: "Наташа Лионн",
+      },
+      {
+        name: "Элизабет Олсен",
+      },
+    ],
+    description:
+      "Три сестры возвращаются в родительскую квартиру в Нью-Йорке, чтобы быть рядом с больным отцом.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 39,
+    posters: 1,
+  }, // его три дочери
+  {
     release: new Date("2022-12-23"),
     publication: new Date("2023-04-30"),
     format: "фильм",
@@ -4002,6 +4039,34 @@ const films = [
     screenshots: 14,
     posters: 3,
   }, // знакомьтесь, джо блэк
+  {
+    release: new Date("2023-11-10"),
+    publication: new Date("2024-12-15"),
+    format: "фильм",
+    grade: "A",
+    title: "Идеальные дни",
+    original: "Perfect Days",
+    kinopoisk: "https://www.kinopoisk.ru/film/5283168/",
+    director: [
+      {
+        name: "Вим Вендерс",
+      },
+    ],
+    cast: [
+      {
+        name: "Кодзи Якусё",
+      },
+    ],
+    description:
+      "Хираяма — уборщик общественных туалетов в Токио, живущий простой и спокойной жизнью. Случайные встречи заставляют его задуматься о себе.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 59,
+    posters: 2,
+  }, // идеальные дни
   {
     release: new Date("2007-12-07"),
     publication: new Date("2019-09-10"),
@@ -4344,7 +4409,7 @@ const films = [
     publication: new Date("2019-11-11"),
     format: "сериал",
     season: "1-2",
-    grade: "B",
+    grade: "A",
     title: "Как это делается в Америке",
     original: "How to Make It in America / Как преуспеть в Америке",
     kinopoisk: "https://www.kinopoisk.ru/series/427452/",
@@ -4514,7 +4579,7 @@ const films = [
         genre: "криминал",
       },
     ],
-    screenshots: 19,
+    screenshots: 18,
     posters: 3,
   }, // карты, деньги, два ствола
   {
@@ -7912,6 +7977,33 @@ const films = [
     posters: 2,
   }, // место под соснами
   {
+    release: new Date("2023-11-22"),
+    publication: new Date("2024-03-23"),
+    format: "фильм",
+    grade: "C",
+    title: "Мечты робота",
+    original: "Robot Dreams",
+    kinopoisk: "https://www.kinopoisk.ru/film/5321227/",
+    director: [
+      {
+        name: "Пабло Берхер",
+      },
+    ],
+    cast: [
+      {
+        name: "",
+      },
+    ],
+    description: "У одинокого пса из Нью-Йорка появляется лучший друг-робот.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 29,
+    posters: 1,
+  }, // мечты робота
+  {
     release: new Date("2023-12-22"),
     publication: new Date("2024-02-25"),
     format: "фильм",
@@ -9020,6 +9112,37 @@ const films = [
     screenshots: 14,
     posters: 1,
   }, // нарко: мексика 2
+  {
+    release: new Date("2024-11-15"),
+    publication: new Date("2025-01-04"),
+    format: "фильм",
+    grade: "C",
+    title: "Настоящая боль",
+    original: "A Real Pain",
+    kinopoisk: "https://www.kinopoisk.ru/film/5105866/",
+    director: [
+      {
+        name: "Джесси Айзенберг",
+      },
+    ],
+    cast: [
+      {
+        name: "Киран Калкин",
+      },
+      {
+        name: "Джесси Айзенберг",
+      },
+    ],
+    description:
+      "Двоюродные братья едут в Польшу почтить память бабушки, где всплывают старые конфликты.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 21,
+    posters: 3,
+  }, // настоящая боль
   {
     release: new Date("2024-02-07"),
     publication: new Date("2024-09-01"),
@@ -11545,6 +11668,49 @@ const films = [
     posters: 1,
   }, // подстава
   {
+    release: new Date("2024-07-12"),
+    publication: new Date("2024-08-18"),
+    format: "фильм",
+    grade: "C",
+    title: "Покажи мне Луну",
+    original: "Fly Me to the Moon",
+    kinopoisk: "https://www.kinopoisk.ru/film/591469/",
+    director: [
+      {
+        name: "Грег Берланти",
+      },
+    ],
+    cast: [
+      {
+        name: "Скарлетт Йоханссон",
+      },
+      {
+        name: "Ченнинг Татум",
+      },
+      {
+        name: "Вуди Харрельсон",
+      },
+      {
+        name: "Рэй Романо",
+      },
+      {
+        name: "Джим Рэш",
+      },
+    ],
+    description:
+      "Белый дом поручает Келли Джонс организовать фальшивую высадку на Луну как запасной план.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "мелодрама",
+      },
+    ],
+    screenshots: 18,
+    posters: 3,
+  }, // покажи мне луну
+  {
     release: new Date("2023-09-23"),
     publication: new Date("2023-11-19"),
     format: "сериал",
@@ -13214,6 +13380,49 @@ const films = [
     posters: 1,
   }, // рик и морти 5
   {
+    release: new Date("2024-03-07"),
+    publication: new Date("2024-08-11"),
+    format: "фильм",
+    grade: "D",
+    title: "Рики Стэники",
+    original: "Ricky Stanicky",
+    kinopoisk: "https://www.kinopoisk.ru/film/523111/",
+    director: [
+      {
+        name: "Питер Фаррелли",
+      },
+    ],
+    cast: [
+      {
+        name: "Зак Эфрон",
+      },
+      {
+        name: "Джон Сина",
+      },
+      {
+        name: "Эндрю Сантино",
+      },
+      {
+        name: "Жермен Фаулер",
+      },
+      {
+        name: "Лекс Скотт Дэвис",
+      },
+      {
+        name: "Уильям Х. Мэйси",
+      },
+    ],
+    description:
+      "Три друга создали фиктивного Рикки Стэнники после неудачной шалости и до сих пор прикрываются им, оправдывая своё ребячество.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 25,
+    posters: 1,
+  }, // рики стэники
+  {
     release: new Date("2024-04-04"),
     publication: new Date("2024-05-05"),
     format: "сериал",
@@ -14507,7 +14716,7 @@ const films = [
         genre: "боевик",
       },
     ],
-    screenshots: 16,
+    screenshots: 13,
     posters: 2,
   }, // сокровище амазонки
   {
@@ -15535,7 +15744,7 @@ const films = [
         genre: "криминал",
       },
     ],
-    screenshots: 22,
+    screenshots: 23,
     posters: 1,
   }, // счастливое число слевина
   {
@@ -15922,6 +16131,49 @@ const films = [
     screenshots: 19,
     posters: 1,
   }, // терапия 1
+  {
+    release: new Date("2024-06-28"),
+    publication: new Date("2024-08-10"),
+    format: "фильм",
+    grade: "B",
+    title: "Тихое место: День первый",
+    original: "A Quiet Place: Day One",
+    kinopoisk: "https://www.kinopoisk.ru/film/1451347/",
+    director: [
+      {
+        name: "Майкл Сарноски",
+      },
+    ],
+    cast: [
+      {
+        name: "Лупита Нионго",
+      },
+      {
+        name: "Джозеф Куинн",
+      },
+      {
+        name: "Алекс Вулф",
+      },
+      {
+        name: "Джимон Хонсу",
+      },
+    ],
+    description:
+      "На Землю напали хищные монстры со сверхчувствительным слухом.",
+    genres: [
+      {
+        genre: "ужасы",
+      },
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 15,
+    posters: 1,
+  }, // тихое место: день первый
   {
     release: new Date("2017-11-03"),
     publication: new Date("2021-07-24"),
@@ -18760,6 +19012,14 @@ function addCloseOverlayListener(element) {
   element.addEventListener("click", function (e) {
     if (e.target === e.currentTarget) {
       closePopup(e.currentTarget);
+    }
+  });
+}
+
+function addCloseOverlayListenerByScreenshot(element) {
+  element.addEventListener("click", function (e) {
+    if (e.target === e.currentTarget) {
+      closePopupScreenshot(e.currentTarget);
       REMOVE(popupScreenshot.querySelectorAll(".popup__screenshot__block"));
     }
   });
@@ -19914,7 +20174,7 @@ function showFilmCard(item) {
         closePopupScreenshot(popupScreenshot);
         REMOVE(popupScreenshot.querySelectorAll(".popup__screenshot__block"));
       });
-      addCloseOverlayListener(popupScreenshot);
+      addCloseOverlayListenerByScreenshot(popupScreenshot);
 
       const popupScreen = popupScreenshot.querySelectorAll(
         ".popup__screenshot__block"
@@ -20157,7 +20417,7 @@ function find_the_right_word() {
   }
 }
 
-// const serial_number_of_the_film = 134
+// const serial_number_of_the_film = 97
 // find_the_right_word()
 
 function total_number_of_films_and_serials() {
