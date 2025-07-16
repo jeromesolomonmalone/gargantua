@@ -955,6 +955,49 @@ const films = [
     posters: 2,
   }, // атлантида: затерянный мир
   {
+    release: new Date("2023-02-10"),
+    publication: new Date("2023-02-21"),
+    format: "фильм",
+    grade: "B",
+    title: "Аферисты",
+    original: "Sharper",
+    kinopoisk: "https://www.kinopoisk.ru/film/4383102/",
+    director: [
+      {
+        name: "Бенджамин Карон",
+      },
+    ],
+    cast: [
+      {
+        name: "Себастиан Стэн",
+      },
+      {
+        name: "Джулианна Мур",
+      },
+      {
+        name: "Джон Литгоу",
+      },
+      {
+        name: "Бриана Миддлтон",
+      },
+      {
+        name: "Джастис Смит",
+      },
+    ],
+    description:
+      "Манхэттенская мошенница встречает авантюриста, специалиста по хитрым аферам.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 44,
+    posters: 1,
+  }, // аферисты
+  {
     release: new Date("2022-06-17"),
     publication: new Date("2022-07-21"),
     format: "фильм",
@@ -2022,6 +2065,43 @@ const films = [
     posters: 1,
   }, // в погоне за счастьем
   {
+    release: new Date("2022-06-17"),
+    publication: new Date("2022-08-01"),
+    format: "фильм",
+    grade: "C",
+    title: "В ритме ча-ча-ча",
+    original: "Cha Cha Real Smooth",
+    kinopoisk: "https://www.kinopoisk.ru/film/4414982/",
+    director: [
+      {
+        name: "Купер Рэфф",
+      },
+    ],
+    cast: [
+      {
+        name: "Купер Рэфф",
+      },
+      {
+        name: "Дакота Джонсон",
+      },
+      {
+        name: "Лесли Манн",
+      },
+    ],
+    description:
+      "Ведущий вечеринок на бар-мицве подружился с матерью и её дочерью с аутизмом.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 17,
+    posters: 2,
+  }, // в ритме ча-ча-ча
+  {
     release: new Date("2022-12-23"),
     publication: new Date("2023-02-05"),
     format: "фильм",
@@ -2213,6 +2293,40 @@ const films = [
     screenshots: 11,
     posters: 1,
   }, // взрослеть на полную
+  {
+    release: new Date("2023-08-18"),
+    publication: new Date("2023-09-18"),
+    format: "фильм",
+    grade: "B",
+    title: "Взрослые",
+    original: "The Adults",
+    kinopoisk: "https://www.kinopoisk.ru/film/5256888/",
+    director: [
+      {
+        name: "Дастин Гай Дефа",
+      },
+    ],
+    cast: [
+      {
+        name: "Майкл Сера",
+      },
+      {
+        name: "Ханна Гросс",
+      },
+      {
+        name: "София Лиллис",
+      },
+    ],
+    description:
+      "Попытка Эрика быстро навестить семью срывается: семейные разборки и покер держат его в городе.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 22,
+    posters: 1,
+  }, // взрослые
   {
     release: new Date("2007-10-26"),
     publication: new Date("2020-04-06"),
@@ -2478,6 +2592,46 @@ const films = [
     screenshots: 27,
     posters: 2,
   }, // впритык
+  {
+    release: new Date("2022-11-04"),
+    publication: new Date("2023-09-11"),
+    format: "фильм",
+    grade: "D",
+    title: "Время Армагеддона",
+    original: "Armageddon Time",
+    kinopoisk: "https://www.kinopoisk.ru/film/1388894/",
+    director: [
+      {
+        name: "Джеймс Грэй",
+      },
+    ],
+    cast: [
+      {
+        name: "Энн Хэтэуэй",
+      },
+      {
+        name: "Джереми Стронг",
+      },
+      {
+        name: "Майкл Бэнкс Репета",
+      },
+      {
+        name: "Джейлин Уэбб",
+      },
+      {
+        name: "Энтони Хопкинс",
+      },
+    ],
+    description:
+      "Пол Графф из любящей семьи мечтает стать артистом, но родители переводят его в престижную школу против его воли.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 24,
+    posters: 1,
+  }, // время армагеддона
   {
     release: new Date("2024-05-24"),
     publication: new Date("2024-07-13"),
@@ -3121,6 +3275,52 @@ const films = [
     screenshots: 25,
     posters: 1,
   }, // дикий робот
+  {
+    release: new Date("2022-08-12"),
+    publication: new Date("2022-08-12"),
+    format: "фильм",
+    grade: "C",
+    title: "Дневная смена",
+    original: "Day Shift",
+    kinopoisk: "https://www.kinopoisk.ru/film/1438923/",
+    director: [
+      {
+        name: "Дж.Дж. Перри",
+      },
+    ],
+    cast: [
+      {
+        name: "Джейми Фокс",
+      },
+      {
+        name: "Дэйв Франко",
+      },
+      {
+        name: "Миган Гуд",
+      },
+      {
+        name: "Карла Соуса",
+      },
+      {
+        name: "Снуп Догг",
+      },
+    ],
+    description:
+      "У охотника на вампиров остался последний шанс заработать на будущее семьи.",
+    genres: [
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "ужасы",
+      },
+    ],
+    screenshots: 15,
+    posters: 1,
+  }, // дневная смена
   {
     release: new Date("2019-10-10"),
     publication: new Date("2020-02-23"),
@@ -4067,6 +4267,46 @@ const films = [
     screenshots: 59,
     posters: 2,
   }, // идеальные дни
+  {
+    release: new Date("2022-12-09"),
+    publication: new Date("2023-03-02"),
+    format: "фильм",
+    grade: "D",
+    title: "Империя света",
+    original: "Empire of Light",
+    kinopoisk: "https://www.kinopoisk.ru/film/4477121/",
+    director: [
+      {
+        name: "Сэм Мендес",
+      },
+    ],
+    cast: [
+      {
+        name: "Оливия Колман",
+      },
+      {
+        name: "Майкл Уорд",
+      },
+      {
+        name: "Колин Фёрт",
+      },
+      {
+        name: "Тоби Джонс",
+      },
+    ],
+    description:
+      "В 1980 году работница кинотеатра заводит роман с чернокожим сотрудником.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "мелодрама",
+      },
+    ],
+    screenshots: 21,
+    posters: 2,
+  }, // империя света
   {
     release: new Date("2007-12-07"),
     publication: new Date("2019-09-10"),
@@ -8038,6 +8278,40 @@ const films = [
     posters: 2,
   }, // миграция
   {
+    release: new Date("2022-09-21"),
+    publication: new Date("2023-02-29"),
+    format: "фильм",
+    grade: "C",
+    title: "Милая встреча",
+    original: "Meet Cute",
+    kinopoisk: "https://www.kinopoisk.ru/film/4542022/",
+    director: [
+      {
+        name: "Александр Леманн",
+      },
+    ],
+    cast: [
+      {
+        name: "Кейли Куоко",
+      },
+      {
+        name: "Пит Дэвидсон",
+      },
+    ],
+    description:
+      "Шейла использует машину времени для повторных свиданий с Гэри.",
+    genres: [
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "фантастика",
+      },
+    ],
+    screenshots: 20,
+    posters: 1,
+  }, // милая встреча
+  {
     release: new Date("2012-09-01"),
     publication: new Date("2022-03-13"),
     format: "фильм",
@@ -10278,6 +10552,9 @@ const films = [
       {
         name: "Брэд Питт",
       },
+      {
+        name: "Остин Абрамс",
+      },
     ],
     description:
       "Пути двух чистильщиков пересекаются, когда обоих вызывают решить проблему нью-йоркского прокурора.",
@@ -10752,6 +11029,49 @@ const films = [
     screenshots: 18,
     posters: 3,
   }, // отмена 1-2
+  {
+    release: new Date("2022-09-16"),
+    publication: new Date("2022-10-08"),
+    format: "фильм",
+    grade: "C",
+    title: "Отомсти за меня",
+    original: "Do Revenge",
+    kinopoisk: "https://www.kinopoisk.ru/film/4323986/",
+    director: [
+      {
+        name: "Дженн Робинсон",
+      },
+    ],
+    cast: [
+      {
+        name: "Камила Мендес",
+      },
+      {
+        name: "Майя Хоук",
+      },
+      {
+        name: "Остин Абрамс",
+      },
+      {
+        name: "Риш Шах",
+      },
+      {
+        name: "Алиша Боэ",
+      },
+      {
+        name: "Джонатан Дэвисс",
+      },
+    ],
+    description:
+      "Дреа и Элеонор договариваются разобраться с обидчиками друг друга.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 21,
+    posters: 1,
+  }, // отомсти за меня
   {
     release: new Date("2016-06-24"),
     publication: new Date("2021-02-06"),
@@ -14009,6 +14329,49 @@ const films = [
     posters: 2,
   }, // семейка тененбаум
   {
+    release: new Date("2023-12-15"),
+    publication: new Date("2023-12-21"),
+    format: "фильм",
+    grade: "D",
+    title: "Семейный план",
+    original: "The Family Plan",
+    kinopoisk: "https://www.kinopoisk.ru/film/5107088/",
+    director: [
+      {
+        name: "Саймон Селлан Джонс",
+      },
+    ],
+    cast: [
+      {
+        name: "Марк Уолберг",
+      },
+      {
+        name: "Мишель Монахэн",
+      },
+      {
+        name: "Киран Хайндс",
+      },
+      {
+        name: "Мэгги Кью",
+      },
+      {
+        name: "Зои Маргарет Коллетти",
+      },
+    ],
+    description:
+      "Бывший киллер, скрывающийся под маской отца в пригороде, вынужден бежать с семьей, когда прошлое его настигает.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "боевик",
+      },
+    ],
+    screenshots: 14,
+    posters: 1,
+  }, // семейный план
+  {
     release: new Date("1995-09-22"),
     publication: new Date("2019-06-14"),
     format: "фильм",
@@ -14568,6 +14931,104 @@ const films = [
     posters: 1,
   }, // смерч 2
   {
+    release: new Date("2023-09-29"),
+    publication: new Date("2023-11-15"),
+    format: "фильм",
+    grade: "D",
+    title: "Создатель",
+    original: "The Creator",
+    kinopoisk: "https://www.kinopoisk.ru/film/4499408/",
+    director: [
+      {
+        name: "Гарет Эдвардс",
+      },
+    ],
+    cast: [
+      {
+        name: "Джон Дэвид Вашингтон",
+      },
+      {
+        name: "Мэделин Юна Войлс",
+      },
+      {
+        name: "Джемма Чан",
+      },
+      {
+        name: "Эллисон Дженни",
+      },
+      {
+        name: "Кэн Ватанабэ",
+      },
+    ],
+    description:
+      "Бывший солдат находит секретное оружие — робота-ребёнка во время войны людей с ИИ.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 21,
+    posters: 1,
+  }, // создатель
+  {
+    release: new Date("2022-09-16"),
+    publication: new Date("2022-11-11"),
+    format: "фильм",
+    grade: "C",
+    title: "Сознавайтесь, Флетч",
+    original: "Confess, Fletch",
+    kinopoisk: "https://www.kinopoisk.ru/film/1394147/",
+    director: [
+      {
+        name: "Грег Моттола",
+      },
+    ],
+    cast: [
+      {
+        name: "Джон Хэмм",
+      },
+      {
+        name: "Лоренца Иззо",
+      },
+      {
+        name: "Эйден Майери",
+      },
+      {
+        name: "Рой Вуд мл.",
+      },
+      {
+        name: "Кайл Маклоклен",
+      },
+      {
+        name: "Джон Слэттери",
+      },
+    ],
+    description:
+      "Флетч — подозреваемый в убийстве — охотится за правдой и украденным искусством.",
+    genres: [
+      {
+        genre: "детектив",
+      },
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 22,
+    posters: 1,
+  }, // сознавайтесь, флетч
+  {
     release: new Date("2021-03-19"),
     publication: new Date("2021-04-24"),
     format: "сериал",
@@ -14719,6 +15180,36 @@ const films = [
     screenshots: 13,
     posters: 2,
   }, // сокровище амазонки
+  {
+    release: new Date("2022-10-21"),
+    publication: new Date("2023-04-28"),
+    format: "фильм",
+    grade: "C",
+    title: "Солнце моё",
+    original: "Aftersun",
+    kinopoisk: "https://www.kinopoisk.ru/film/4948281/",
+    director: [
+      {
+        name: "Шарлотта Уэллс",
+      },
+    ],
+    cast: [
+      {
+        name: "Пол Мескал",
+      },
+      {
+        name: "Фрэнки Корио",
+      },
+    ],
+    description: "Софи вспоминает летний отдых со своим отцом.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 20,
+    posters: 1,
+  }, // солнце моё
   {
     release: new Date("2015-03-17"),
     publication: new Date("2023-12-03"),
@@ -15502,6 +15993,46 @@ const films = [
     posters: 1,
   }, // социальная сеть
   {
+    release: new Date("2022-06-17"),
+    publication: new Date("2022-06-18"),
+    format: "фильм",
+    grade: "D",
+    title: "Спайдерхед",
+    original: "Spiderhead",
+    kinopoisk: "https://www.kinopoisk.ru/film/1450799/",
+    director: [
+      {
+        name: "Джозеф Косински",
+      },
+    ],
+    cast: [
+      {
+        name: "Крис Хемсворт",
+      },
+      {
+        name: "Майлз Теллер",
+      },
+      {
+        name: "Джерни Смоллетт",
+      },
+    ],
+    description:
+      "Заключенные соглашаются на участие в сомнительном медицинском эксперименте.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "триллер",
+      },
+    ],
+    screenshots: 37,
+    posters: 1,
+  }, // спайдерхед
+  {
     release: new Date("2007-11-21"),
     publication: new Date("2023-05-30"),
     format: "фильм",
@@ -16032,6 +16563,55 @@ const films = [
     posters: 1,
   }, // тед лассо 1
   {
+    release: new Date("2022-08-12"),
+    publication: new Date("2022-10-03"),
+    format: "фильм",
+    grade: "D",
+    title: "Тела, тела, тела",
+    original: "Bodies Bodies Bodies",
+    kinopoisk: "https://www.kinopoisk.ru/film/4496039/",
+    director: [
+      {
+        name: "Халина Рейн",
+      },
+    ],
+    cast: [
+      {
+        name: "Амандла Стенберг",
+      },
+      {
+        name: "Мария Бакалова",
+      },
+      {
+        name: "Майхала Херролд",
+      },
+      {
+        name: "Рэйчел Сеннотт",
+      },
+      {
+        name: "Чейз Суи Уондерс",
+      },
+      {
+        name: "Пит Дэвидсон",
+      },
+      {
+        name: "Ли Пейс",
+      },
+    ],
+    description:
+      "Во время урагана компания модной молодёжи устраивает смертельную игру в загородном особняке.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "триллер",
+      },
+    ],
+    screenshots: 21,
+    posters: 1,
+  }, // тела, тела, тела
+  {
     release: new Date("2024-05-07"),
     publication: new Date("2024-08-07"),
     format: "сериал",
@@ -16323,6 +16903,61 @@ const films = [
     screenshots: 54,
     posters: 2,
   }, // трагедия макбета
+  {
+    release: new Date("2023-06-09"),
+    publication: new Date("2023-07-17"),
+    format: "фильм",
+    grade: "B",
+    title: "Трансформеры: Восхождение Звероботов",
+    original: "Transformers: Rise of the Beasts",
+    kinopoisk: "https://www.kinopoisk.ru/film/937438/",
+    director: [
+      {
+        name: "Стивен Кейпл мл.",
+      },
+    ],
+    cast: [
+      {
+        name: "Энтони Рамос",
+      },
+      {
+        name: "Доминик Фишбэк",
+      },
+      {
+        name: "Питер Каллен",
+      },
+      {
+        name: "Рон Перлман",
+      },
+      {
+        name: "Питер Динклэйдж",
+      },
+      {
+        name: "Мишель Йео",
+      },
+      {
+        name: "Пит Дэвидсон",
+      },
+      {
+        name: "Джон Ди Маджио",
+      },
+    ],
+    description:
+      "В 90-х новая фракция Трансформеров — Максималы — присоединяется к Автоботам в битве за Землю.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 22,
+    posters: 1,
+  }, // трансформеры: восхождение звероботов
   {
     release: new Date("2024-01-11"),
     publication: new Date("2024-03-28"),
@@ -17008,6 +17643,49 @@ const films = [
     screenshots: 11,
     posters: 3,
   }, // успеть за 30 минут
+  {
+    release: new Date("2022-11-23"),
+    publication: new Date("2023-02-19"),
+    format: "фильм",
+    grade: "D",
+    title: "Фабельманы",
+    original: "The Fabelmans",
+    kinopoisk: "https://www.kinopoisk.ru/film/4472502/",
+    director: [
+      {
+        name: "Стивен Спилберг",
+      },
+    ],
+    cast: [
+      {
+        name: "Гэбриел ЛаБелль",
+      },
+      {
+        name: "Мишель Уильямс",
+      },
+      {
+        name: "Пол Дано",
+      },
+      {
+        name: "Сет Роген",
+      },
+      {
+        name: "Джулия Баттерз",
+      },
+    ],
+    description:
+      "Подросток из Аризоны, Сэмми Фабельман, мечтает стать кинорежиссером.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "биография",
+      },
+    ],
+    screenshots: 26,
+    posters: 1,
+  }, // фабельманы
   {
     release: new Date("2000-03-31"),
     publication: new Date("2020-04-07"),
@@ -17786,6 +18464,49 @@ const films = [
     posters: 1,
   }, // хулиганы и ботаны 1
   {
+    release: new Date("2022-11-23"),
+    publication: new Date("2022-12-25"),
+    format: "фильм",
+    grade: "D",
+    title: "Целиком и полностью",
+    original: "Bones and All",
+    kinopoisk: "https://www.kinopoisk.ru/film/4422719/",
+    director: [
+      {
+        name: "Лука Гуаданьино",
+      },
+    ],
+    cast: [
+      {
+        name: "Тейлор Расселл",
+      },
+      {
+        name: "Тимоти Шаламе",
+      },
+      {
+        name: "Марк Райлэнс",
+      },
+      {
+        name: "Андре Холланд",
+      },
+    ],
+    description:
+      "Мэрен - каннибал, она отправляется в путешествие по Америке 1980-х годов в сопровождении Ли, единомышленника, также испытывающего подобные наклонности.",
+    genres: [
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "ужасы",
+      },
+    ],
+    screenshots: 34,
+    posters: 1,
+  }, // целиком и полностью
+  {
     release: new Date("2001-05-13"),
     publication: new Date("2024-08-11"),
     format: "фильм",
@@ -18214,6 +18935,43 @@ const films = [
     screenshots: 30,
     posters: 2,
   }, // черепашки-ниндзя: погром мутантов
+  {
+    release: new Date("2022-05-20"),
+    publication: new Date("2022-06-08"),
+    format: "фильм",
+    grade: "B",
+    title: "Чрезвычайная ситуация",
+    original: "Emergency",
+    kinopoisk: "https://www.kinopoisk.ru/film/4483903/",
+    director: [
+      {
+        name: "Кэри Уильямс",
+      },
+    ],
+    cast: [
+      {
+        name: "АрДжей Сайлер",
+      },
+      {
+        name: "Дональд Уоткинс",
+      },
+      {
+        name: "Себастьян Чакон",
+      },
+      {
+        name: "Сабрина Карпентер",
+      },
+    ],
+    description:
+      "Два студента находят в общежитии девушку без сознания и, опасаясь полиции, решают помочь ей сами.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 16,
+    posters: 1,
+  }, // чрезвычайная ситуация
   {
     release: new Date("2023-01-20"),
     publication: new Date("2023-01-28"),
@@ -18966,14 +19724,14 @@ Grades();
 // функция ОТКРЫТИЯ ПОПАПА
 function openPopup(popupElement) {
   popupElement.classList.add("popup_is-opened");
-  document.body.style.overflowY = "hidden";
+  document.body.classList.add("scroll-lock");
   document.addEventListener("keydown", closePopupByEsc);
 }
 
 // функция ЗАКРЫТИЯ ПОПАПА
 function closePopup(popupElement) {
   popupElement.classList.remove("popup_is-opened");
-  document.body.style.overflowY = "auto";
+  document.body.classList.remove("scroll-lock");
   document.removeEventListener("keydown", closePopupByEsc);
 }
 
