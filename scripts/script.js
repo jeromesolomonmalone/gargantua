@@ -87,6 +87,40 @@ const films = [
     posters: 1,
   }, // 007: спектр
   {
+    release: new Date("2019-12-04"),
+    publication: new Date("2020-03-25"),
+    format: "фильм",
+    grade: "A+",
+    title: "1917",
+    original: "1917",
+    kinopoisk: "https://www.kinopoisk.ru/film/1171976/",
+    director: [
+      {
+        name: "Сэм Мендес",
+      },
+    ],
+    cast: [
+      {
+        name: "Джордж Маккэй",
+      },
+      {
+        name: "Дин-Чарльз Чепмен",
+      },
+    ],
+    description:
+      "Два солдата мчатся наперегонки со временем, чтобы спасти батальон от смертельной ловушки.",
+    genres: [
+      {
+        genre: "военный",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 18,
+    posters: 1,
+  }, // 1917
+  {
     release: new Date("2023-04-05"),
     publication: new Date("2023-05-13"),
     format: "фильм",
@@ -1337,6 +1371,48 @@ const films = [
     posters: 1,
   }, // белые люди не умеют прыгать
   {
+    release: new Date("2022-11-25"),
+    publication: new Date("2023-01-15"),
+    format: "фильм",
+    grade: "D",
+    title: "Белый шум",
+    original: "White Noise",
+    kinopoisk: "https://www.kinopoisk.ru/film/4412896/",
+    director: [
+      {
+        name: "Ноа Баумбак",
+      },
+    ],
+    cast: [
+      {
+        name: "Адам Драйвер",
+      },
+      {
+        name: "Грета Гервиг",
+      },
+      {
+        name: "Рэффи Кэссиди",
+      },
+      {
+        name: "Дон Чидл",
+      },
+      {
+        name: "Сэм Нивола",
+      },
+    ],
+    description: "Обычная семья справляется с рутиной в рушащемся мире.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 12,
+    posters: 1,
+  }, // белый шум
+  {
     release: new Date("2009-11-25"),
     publication: new Date("2023-05-01"),
     format: "фильм",
@@ -2328,6 +2404,45 @@ const films = [
     posters: 1,
   }, // взрослые
   {
+    release: new Date("2021-12-01"),
+    publication: new Date("2022-03-27"),
+    format: "фильм",
+    grade: "B",
+    title: "Власть пса",
+    original: "The Power of the Dog",
+    kinopoisk: "https://www.kinopoisk.ru/film/1262931/",
+    director: [
+      {
+        name: "Джейн Кэмпион",
+      },
+    ],
+    cast: [
+      {
+        name: "Бенедикт Камбербэтч",
+      },
+      {
+        name: "Кирстен Данст",
+      },
+      {
+        name: "Джесси Племонс",
+      },
+      {
+        name: "Коди Смит-Макфи",
+      },
+    ],
+    description: "Опасный фермер противостоит новой семье брата.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "вестерн",
+      },
+    ],
+    screenshots: 20,
+    posters: 2,
+  }, // власть пса
+  {
     release: new Date("2007-10-26"),
     publication: new Date("2020-04-06"),
     format: "фильм",
@@ -2632,6 +2747,58 @@ const films = [
     screenshots: 24,
     posters: 1,
   }, // время армагеддона
+  {
+    release: new Date("2022-04-08"),
+    publication: new Date("2022-10-24"),
+    format: "фильм",
+    grade: "A+",
+    title: "Всё везде и сразу",
+    original: "Everything Everywhere All at Once",
+    kinopoisk: "https://www.kinopoisk.ru/film/1322324/",
+    director: [
+      {
+        name: "Дэн Кван",
+      },
+      {
+        name: "Дэниэл Шайнерт",
+      },
+    ],
+    cast: [
+      {
+        name: "Мишель Йео",
+      },
+      {
+        name: "Джейми Ли Кёртис",
+      },
+      {
+        name: "Ке Хюи Куан",
+      },
+      {
+        name: "Стефани Сюй",
+      },
+      {
+        name: "Джеймс Хун",
+      },
+    ],
+    description:
+      "Китайская иммигрантка спасает вселенную, путешествуя по параллельным мирам.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 30,
+    posters: 2,
+  }, // всё везде и сразу
   {
     release: new Date("2024-05-24"),
     publication: new Date("2024-07-13"),
@@ -3939,6 +4106,40 @@ const films = [
     posters: 2,
   }, // жить
   {
+    release: new Date("2022-09-30"),
+    publication: new Date("2022-10-02"),
+    format: "фильм",
+    grade: "B",
+    title: "За пивом!",
+    original: "The Greatest Beer Run Ever",
+    kinopoisk: "https://www.kinopoisk.ru/film/1389553/",
+    director: [
+      {
+        name: "Питер Фаррелли",
+      },
+    ],
+    cast: [
+      {
+        name: "Зак Эфрон",
+      },
+      {
+        name: "Рассел Кроу",
+      },
+    ],
+    description:
+      "Чики решил поддержать друзей-солдат во Вьетнаме, организовав доставку американского пива для них.",
+    genres: [
+      {
+        genre: "военный",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 35,
+    posters: 1,
+  }, // за пивом!
+  {
     release: new Date("2011-01-09"),
     publication: new Date("2020-06-05"),
     format: "сериал",
@@ -4780,6 +4981,40 @@ const films = [
     posters: 1,
   }, // капитан марвел 2
   {
+    release: new Date("2021-02-12"),
+    publication: new Date("2021-09-02"),
+    format: "фильм",
+    grade: "B",
+    title: "Карта совершенных мгновений",
+    original: "The Map of Tiny Perfect Things",
+    kinopoisk: "https://www.kinopoisk.ru/film/1346672/",
+    director: [
+      {
+        name: "Йен Сэмюэлс",
+      },
+    ],
+    cast: [
+      {
+        name: "Кайл Аллен",
+      },
+      {
+        name: "Кэтрин Ньютон",
+      },
+    ],
+    description: "Временная петля помогает подросткам составить карту событий.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "мелодрама",
+      },
+      { genre: "комедия" },
+    ],
+    screenshots: 16,
+    posters: 1,
+  }, // карта совершенных мгновений
+  {
     release: new Date("1998-03-05"),
     publication: new Date("2020-02-22"),
     format: "фильм",
@@ -5185,6 +5420,40 @@ const films = [
     screenshots: 19,
     posters: 1,
   }, // когда они нас увидят
+  {
+    release: new Date("2022-01-20"),
+    publication: new Date("2023-02-10"),
+    format: "фильм",
+    grade: "D",
+    title: "Когда ты закончишь спасать мир",
+    original: "When You Finish Saving the World",
+    kinopoisk: "https://www.kinopoisk.ru/film/1400133/",
+    director: [
+      {
+        name: "Джесси Айзенберг",
+      },
+    ],
+    cast: [
+      {
+        name: "Джулианна Мур",
+      },
+      {
+        name: "Финн Вулфхард",
+      },
+      {
+        name: "Алиша Боэ",
+      },
+    ],
+    description:
+      "Эвелин руководит приютом для жертв домашнего насилия и отдаляется от сына Зигги.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 20,
+    posters: 1,
+  }, // когда ты закончишь спасать мир
   {
     release: new Date("2018-04-20"),
     publication: new Date("2020-10-14"),
@@ -6141,6 +6410,45 @@ const films = [
     screenshots: 17,
     posters: 1,
   }, // красная ракета
+  {
+    release: new Date("2021-11-05"),
+    publication: new Date("2021-11-15"),
+    format: "фильм",
+    grade: "D",
+    title: "Красное уведомление",
+    original: "Red Notice",
+    kinopoisk: "https://www.kinopoisk.ru/film/1115099/",
+    director: [
+      {
+        name: "Роусон Маршалл Тёрбер",
+      },
+    ],
+    cast: [
+      {
+        name: "Дуэйн Джонсон",
+      },
+      {
+        name: "Райан Рейнольдс",
+      },
+      {
+        name: "Галь Гадот",
+      },
+    ],
+    description: "Агент ФБР и вор охотятся на аферистку.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 15,
+    posters: 1,
+  }, // красное уведомление
   {
     release: new Date("1990-12-25"),
     publication: new Date("2022-06-29"),
@@ -7266,6 +7574,9 @@ const films = [
       {
         genre: "анимация",
       },
+      {
+        genre: "короткометражка",
+      },
     ],
     screenshots: 20,
     posters: 2,
@@ -7291,6 +7602,9 @@ const films = [
       {
         genre: "анимация",
       },
+      {
+        genre: "короткометражка",
+      },
     ],
     screenshots: 18,
     posters: 1,
@@ -7315,6 +7629,9 @@ const films = [
     genres: [
       {
         genre: "анимация",
+      },
+      {
+        genre: "короткометражка",
       },
     ],
     screenshots: 24,
@@ -8952,6 +9269,63 @@ const films = [
     posters: 1,
   }, // митчеллы против машин
   {
+    release: new Date("2021-10-01"),
+    publication: new Date("2021-10-05"),
+    format: "фильм",
+    grade: "D",
+    title: "Множественные святые Ньюарка",
+    original: "The Many Saints of Newark",
+    kinopoisk: "https://www.kinopoisk.ru/film/1114968/",
+    director: [
+      {
+        name: "Алан Тейлор",
+      },
+    ],
+    cast: [
+      {
+        name: "Алессандро Нивола",
+      },
+      {
+        name: "Майкл Гандольфини",
+      },
+      {
+        name: "Лесли Одом мл.",
+      },
+      {
+        name: "Вера Фармига",
+      },
+      {
+        name: "Джон Бернтал",
+      },
+      {
+        name: "Кори Столл",
+      },
+      {
+        name: "Рэй Лиотта",
+      },
+      {
+        name: "Микела Де Росси",
+      },
+      {
+        name: "Билли Магнуссен",
+      },
+      {
+        name: "Джон Магаро",
+      },
+    ],
+    description: "Путь Тони Сопрано к вершинам мафии.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 12,
+    posters: 2,
+  }, // множественные святые ньюарка
+  {
     release: new Date("2024-12-05"),
     publication: new Date("2025-01-12"),
     format: "сериал",
@@ -9195,6 +9569,9 @@ const films = [
     genres: [
       {
         genre: "мультфильм",
+      },
+      {
+        genre: "короткометражка",
       },
     ],
     screenshots: 18,
@@ -9901,6 +10278,46 @@ const films = [
     posters: 1,
   }, // невыносимая жестокость
   {
+    release: new Date("2021-12-22"),
+    publication: new Date("2022-01-20"),
+    format: "фильм",
+    grade: "D",
+    title: "Нежный бар",
+    original: "The Tender Bar",
+    kinopoisk: "https://www.kinopoisk.ru/film/786944/",
+    director: [
+      {
+        name: "Джордж Клуни",
+      },
+    ],
+    cast: [
+      {
+        name: "Бен Аффлек",
+      },
+      {
+        name: "Тай Шеридан",
+      },
+      {
+        name: "Лили Рэйб",
+      },
+      {
+        name: "Кристофер Ллойд",
+      },
+      {
+        name: "Бриана Миддлтон",
+      },
+    ],
+    description:
+      "Юноша, выросший с мамой, ищет замену отцу среди посетителей бара, где работает его дядя Чарли.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 14,
+    posters: 2,
+  }, // нежный бар
+  {
     release: new Date("2019-12-25"),
     publication: new Date("2020-02-10"),
     format: "фильм",
@@ -10309,6 +10726,45 @@ const films = [
     screenshots: 45,
     posters: 1,
   }, // ничегошеньки
+  {
+    release: new Date("2022-10-07"),
+    publication: new Date("2022-12-16"),
+    format: "фильм",
+    grade: "A",
+    title: "Ночной оборотень",
+    original: "Werewolf by Night",
+    kinopoisk: "https://www.kinopoisk.ru/film/4554192/",
+    director: [
+      {
+        name: "Майкл Джаккино",
+      },
+    ],
+    cast: [
+      {
+        name: "Гаэль Гарсиа Берналь",
+      },
+      {
+        name: "Лаура Доннелли",
+      },
+    ],
+    description: "Охотники на монстров сражаются за могущественный артефакт.",
+    genres: [
+      {
+        genre: "ужасы",
+      },
+      {
+        genre: "супергероика",
+      },
+      {
+        genre: "фэнтези",
+      },
+      {
+        genre: "чёрно-белое",
+      },
+    ],
+    screenshots: 14,
+    posters: 1,
+  }, // ночной оборотень
   {
     release: new Date("2007-04-04"),
     publication: new Date("2023-12-24"),
@@ -14466,6 +14922,54 @@ const films = [
     posters: 1,
   }, // середина 90-х
   {
+    release: new Date("2022-07-15"),
+    publication: new Date("2022-07-24"),
+    format: "фильм",
+    grade: "D",
+    title: "Серый человек",
+    original: "The Gray Man",
+    kinopoisk: "https://www.kinopoisk.ru/film/558393/",
+    director: [
+      {
+        name: "Джо Руссо",
+      },
+      {
+        name: "Энтони Руссо",
+      },
+    ],
+    cast: [
+      {
+        name: "Райан Гослинг",
+      },
+      {
+        name: "Крис Эванс",
+      },
+      {
+        name: "Ана де Армас",
+      },
+      {
+        name: "Билли Боб Торнтон",
+      },
+      {
+        name: "Джессика Хенвик",
+      },
+      {
+        name: "Реге-Жан Пейдж",
+      },
+      {
+        name: "Джулия Баттерз",
+      },
+    ],
+    description: "Спецагент сам становится мишенью ЦРУ.",
+    genres: [
+      {
+        genre: "боевик",
+      },
+    ],
+    screenshots: 18,
+    posters: 3,
+  }, // серый человек
+  {
     release: new Date("2023-10-01"),
     publication: new Date("2024-08-23"),
     format: "сериал",
@@ -16404,6 +16908,49 @@ const films = [
     posters: 1,
   }, // талантливый мистер рипли
   {
+    release: new Date("2022-07-15"),
+    publication: new Date("2022-10-07"),
+    format: "фильм",
+    grade: "C",
+    title: "Там, где раки поют",
+    original: "Where the Crawdads Sing",
+    kinopoisk: "https://www.kinopoisk.ru/film/1396525/",
+    director: [
+      {
+        name: "Оливия Ньюман",
+      },
+    ],
+    cast: [
+      {
+        name: "Дейзи Эдгар-Джонс",
+      },
+      {
+        name: "Тейлор Джон Смит",
+      },
+      {
+        name: "Харрис Дикинсон",
+      },
+      {
+        name: "Дэвид Стрэтэйрн",
+      },
+    ],
+    description:
+      "Жительницу болот Глубокого Юга подозревают в убийстве бывшего любовника.",
+    genres: [
+      {
+        genre: "детектив",
+      },
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 22,
+    posters: 2,
+  }, // там, где раки поют
+  {
     release: new Date("2023-03-15"),
     publication: new Date("2023-06-11"),
     format: "сериал",
@@ -17643,6 +18190,43 @@ const films = [
     screenshots: 11,
     posters: 3,
   }, // успеть за 30 минут
+  {
+    release: new Date("2022-10-21"),
+    publication: new Date("2022-11-02"),
+    format: "фильм",
+    grade: "C",
+    title: "Уэнделл и Уайлд",
+    original: "Wendell and Wild",
+    kinopoisk: "https://www.kinopoisk.ru/film/1115174/",
+    director: [
+      {
+        name: "Генри Селик",
+      },
+    ],
+    cast: [
+      {
+        name: "Лирик Росс",
+      },
+      {
+        name: "Кигэн-Майкл Ки",
+      },
+      {
+        name: "Джордан Пил",
+      },
+      {
+        name: "Анджела Бассетт",
+      },
+    ],
+    description:
+      "Два хитрых демона просят 13-летнюю Кэт вызвать их в мир живых.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 11,
+    posters: 2,
+  }, // уэнделл и уайлд
   {
     release: new Date("2022-11-23"),
     publication: new Date("2023-02-19"),
