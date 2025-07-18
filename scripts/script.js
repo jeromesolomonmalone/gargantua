@@ -1063,6 +1063,46 @@ const films = [
     posters: 2,
   }, // базз лайтер
   {
+    release: new Date("2020-03-06"),
+    publication: new Date("2020-04-14"),
+    format: "фильм",
+    grade: "B",
+    title: "Банкир",
+    original: "The Banker",
+    kinopoisk: "https://www.kinopoisk.ru/film/1199655/",
+    director: [
+      {
+        name: "Джордж Нолфи",
+      },
+    ],
+    cast: [
+      {
+        name: "Энтони Маки",
+      },
+      {
+        name: "Сэмюэл Л. Джексон",
+      },
+      {
+        name: "Николас Холт",
+      },
+      {
+        name: "Ниа Лонг",
+      },
+    ],
+    description:
+      "Темнокожие бизнесмены пытаются обойти расовые ограничения в Америке 1950-х.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "биография",
+      },
+    ],
+    screenshots: 21,
+    posters: 1,
+  }, // банкир
+  {
     release: new Date("2022-11-04"),
     publication: new Date("2022-12-16"),
     format: "фильм",
@@ -3369,6 +3409,55 @@ const films = [
     posters: 3,
   }, // дело храбрых
   {
+    release: new Date("2019-12-03"),
+    publication: new Date("2020-04-07"),
+    format: "фильм",
+    grade: "A+",
+    title: "Джентльмены",
+    original: "The Gentlemen",
+    kinopoisk: "https://www.kinopoisk.ru/film/1143242/",
+    director: [
+      {
+        name: "Гай Ричи",
+      },
+    ],
+    cast: [
+      {
+        name: "Мэттью Макконахи",
+      },
+      {
+        name: "Чарли Ханнэм",
+      },
+      {
+        name: "Хью Грант",
+      },
+      {
+        name: "Генри Голдинг",
+      },
+      {
+        name: "Мишель Докери",
+      },
+      {
+        name: "Джереми Стронг",
+      },
+      {
+        name: "Колин Фаррелл",
+      },
+    ],
+    description:
+      "Бизнес наркобарона рвут на части китайцы, евреи, ушлые журналисты и танцующие гопники.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 39,
+    posters: 1,
+  }, // джентльмены
+  {
     release: new Date("1996-12-11"),
     publication: new Date("2022-01-27"),
     format: "фильм",
@@ -3870,6 +3959,61 @@ const films = [
     posters: 1,
   }, // дублеры
   {
+    release: new Date("2020-09-16"),
+    publication: new Date("2021-02-27"),
+    format: "фильм",
+    grade: "B",
+    title: "Дьявол всегда здесь",
+    original: "The Devil All the Time",
+    kinopoisk: "https://www.kinopoisk.ru/film/1072788/",
+    director: [
+      {
+        name: "Антонио Кампос",
+      },
+    ],
+    cast: [
+      {
+        name: "Том Холланд",
+      },
+      {
+        name: "Билл Скарсгард",
+      },
+      {
+        name: "Райли Кио",
+      },
+      {
+        name: "Джейсон Кларк",
+      },
+      {
+        name: "Себастиан Стэн",
+      },
+      {
+        name: "Хейли Беннетт",
+      },
+      {
+        name: "Миа Васиковска",
+      },
+      {
+        name: "Роберт Паттинсон",
+      },
+    ],
+    description:
+      "Религия, смерть и любовь тесно переплетают судьбы незнакомцев.",
+    genres: [
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 14,
+    posters: 1,
+  }, // дьявол всегда здесь
+  {
     release: new Date("2024-03-01"),
     publication: new Date("2024-05-11"),
     format: "фильм",
@@ -4074,6 +4218,49 @@ const films = [
     screenshots: 39,
     posters: 1,
   }, // его три дочери
+  {
+    release: new Date("2020-12-01"),
+    publication: new Date("2022-06-23"),
+    format: "фильм",
+    grade: "C",
+    title: "Жизнь за год",
+    original: "Life in a Year",
+    kinopoisk: "https://www.kinopoisk.ru/film/1044785/",
+    director: [
+      {
+        name: "Митя Окорн",
+      },
+    ],
+    cast: [
+      {
+        name: "Джейден Смит",
+      },
+      {
+        name: "Кара Делевинь",
+      },
+      {
+        name: "Кьюба Гудинг мл.",
+      },
+      {
+        name: "RZA",
+      },
+      {
+        name: "Ниа Лонг",
+      },
+    ],
+    description:
+      "История 17-летнего Дэрина, пытающегося подарить умирающей девушке целую жизнь за год.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "мелодрама",
+      },
+    ],
+    screenshots: 21,
+    posters: 1,
+  }, // жизнь за год
   {
     release: new Date("2022-12-23"),
     publication: new Date("2023-04-30"),
@@ -6627,6 +6814,52 @@ const films = [
     posters: 1,
   }, // криминальное чтиво
   {
+    release: new Date("2019-11-08"),
+    publication: new Date("2020-02-05"),
+    format: "фильм",
+    grade: "A+",
+    title: "Кролик Джоджо",
+    original: "Jojo Rabbit",
+    kinopoisk: "https://www.kinopoisk.ru/film/726838/",
+    director: [
+      {
+        name: "Тайка Вайтити",
+      },
+    ],
+    cast: [
+      {
+        name: "Роман Гриффин Дэвис",
+      },
+      {
+        name: "Томасин Маккензи",
+      },
+      {
+        name: "Скарлетт Йоханссон",
+      },
+      {
+        name: "Тайка Вайтити",
+      },
+      {
+        name: "Сэм Рокуэлл",
+      },
+    ],
+    description:
+      "История о мальчике из Гитлерюгенда и еврейской девушке в его доме.",
+    genres: [
+      {
+        genre: "военный",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 15,
+    posters: 1,
+  }, // кролик джоджо
+  {
     release: new Date("2016-01-29"),
     publication: new Date("2023-12-26"),
     format: "фильм",
@@ -7638,6 +7871,53 @@ const films = [
     posters: 1,
   }, // любовь, смерть и роботы 2
   {
+    release: new Date("2019-06-14"),
+    publication: new Date("2021-07-27"),
+    format: "фильм",
+    grade: "C",
+    title: "Люди в чёрном: Интернэшнл",
+    original: "Men in Black International",
+    kinopoisk: "https://www.kinopoisk.ru/film/693730/",
+    director: [
+      {
+        name: "Ф. Гэри Грей",
+      },
+    ],
+    cast: [
+      {
+        name: "Крис Хемсворт",
+      },
+      {
+        name: "Тесса Томпсон",
+      },
+      {
+        name: "Лиам Нисон",
+      },
+      {
+        name: "Кумэйл Нанджиани",
+      },
+      {
+        name: "Ребекка Фергюсон",
+      },
+      {
+        name: "Эмма Томпсон",
+      },
+    ],
+    description:
+      "Агенты организации «Люди в чёрном» раскрывают «крота» в своей команде.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "приключения",
+      },
+      { genre: "комедия" },
+    ],
+    screenshots: 19,
+    posters: 3,
+  }, // люди в чёрном: интернэшнл
+  {
     release: new Date("2006-05-26"),
     publication: new Date("2023-09-15"),
     format: "фильм",
@@ -8186,6 +8466,55 @@ const films = [
     screenshots: 12,
     posters: 1,
   }, // мандалорец 1
+  {
+    release: new Date("2020-11-13"),
+    publication: new Date("2021-02-04"),
+    format: "фильм",
+    grade: "D",
+    title: "Манк",
+    original: "Mank",
+    kinopoisk: "https://www.kinopoisk.ru/film/1283862/",
+    director: [
+      {
+        name: "Дэвид Финчер",
+      },
+    ],
+    cast: [
+      {
+        name: "Гари Олдман",
+      },
+      {
+        name: "Аманда Сайфред",
+      },
+      {
+        name: "Лили Коллинз",
+      },
+      {
+        name: "Том Пелфри",
+      },
+      {
+        name: "Том Бёрк",
+      },
+      {
+        name: "Чарльз Дэнс",
+      },
+    ],
+    description:
+      "В процессе работы над сценарием «Гражданин Кейн» Манкевич переосмысливает Голливуд 1930-х.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "биография",
+      },
+      {
+        genre: "чёрно-белое",
+      },
+    ],
+    screenshots: 12,
+    posters: 1,
+  }, // манк
   {
     release: new Date("2016-12-16"),
     publication: new Date("2019-03-04"),
@@ -9409,6 +9738,78 @@ const films = [
     screenshots: 26,
     posters: 2,
   }, // мост через озеро
+  {
+    release: new Date("2019-04-26"),
+    publication: new Date("2025-03-01"),
+    format: "фильм",
+    grade: "A+",
+    title: "Мстители: Финал",
+    original: "Avengers: Endgame",
+    kinopoisk: "https://www.kinopoisk.ru/film/843650/",
+    director: [
+      {
+        name: "Джо Руссо",
+      },
+      {
+        name: "Энтони Руссо",
+      },
+    ],
+    cast: [
+      {
+        name: "Роберт Дауни мл.",
+      },
+      {
+        name: "Крис Эванс",
+      },
+      {
+        name: "Марк Руффало",
+      },
+      {
+        name: "Крис Хемсворт",
+      },
+      {
+        name: "Скарлетт Йоханссон",
+      },
+      {
+        name: "Джереми Реннер",
+      },
+      {
+        name: "Дон Чидл",
+      },
+      {
+        name: "Пол Радд",
+      },
+      {
+        name: "Бри Ларсон",
+      },
+      {
+        name: "Карен Гиллан",
+      },
+      {
+        name: "Зои Салдана",
+      },
+      {
+        name: "Брэдли Купер",
+      },
+      {
+        name: "Джош Бролин",
+      },
+    ],
+    description: "Оставшиеся герои ищут способ победить Таноса.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        name: "приключения",
+      },
+      {
+        name: "супергероика",
+      },
+    ],
+    screenshots: 69,
+    posters: 2,
+  }, // мстители: Финал
   {
     release: new Date("2013-01-25"),
     publication: new Date("2022-03-11"),
@@ -12318,6 +12719,49 @@ const films = [
     screenshots: 16,
     posters: 2,
   }, // плохие парни
+  {
+    release: new Date("2021-02-26"),
+    publication: new Date("2021-12-05"),
+    format: "фильм",
+    grade: "C",
+    title: "По наклонной",
+    original: "Cherry",
+    kinopoisk: "https://www.kinopoisk.ru/film/1245501/",
+    director: [
+      {
+        name: "Джо Руссо",
+      },
+      {
+        name: "Энтони Руссо",
+      },
+    ],
+    cast: [
+      {
+        name: "Том Холланд",
+      },
+      {
+        name: "Сиэра Браво",
+      },
+      {
+        name: "Джек Рейнор",
+      },
+      {
+        name: "Майкл Гандольфини",
+      },
+    ],
+    description:
+      "После Ирака медик Нико Уокер подсаживается на наркотики и грабит банки.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 17,
+    posters: 1,
+  }, // по наклонной
   {
     release: new Date("2016-12-09"),
     publication: new Date("2022-03-16"),
@@ -16859,6 +17303,52 @@ const films = [
     posters: 2,
   }, // сядь за руль моей машины
   {
+    release: new Date("2019-05-03"),
+    publication: new Date("2020-04-17"),
+    format: "фильм",
+    grade: "B",
+    title: "Та ещё парочка",
+    original: "Long Shoty",
+    kinopoisk: "https://www.kinopoisk.ru/film/684983/",
+    director: [
+      {
+        name: "Джонатан Левин",
+      },
+    ],
+    cast: [
+      {
+        name: "Шарлиз Терон",
+      },
+      {
+        name: "Сет Роген",
+      },
+      {
+        name: "О’Ши Джексон мл.",
+      },
+      {
+        name: "Александр Скарсгард",
+      },
+      {
+        name: "Боб Оденкёрк",
+      },
+      {
+        name: "Рэндалл Пак",
+      },
+    ],
+    description:
+      "Журналист-неудачник влюбляется в свою бывшую няню, которая собирается стать президентом.",
+    genres: [
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 16,
+    posters: 3,
+  }, // та ещё парочка
+  {
     release: new Date("1999-12-25"),
     publication: new Date("2024-05-13"),
     format: "фильм",
@@ -18920,6 +19410,46 @@ const films = [
     screenshots: 22,
     posters: 4,
   }, // харли квинн 1-4
+  {
+    release: new Date("2019-08-16"),
+    publication: new Date("2020-03-30"),
+    format: "фильм",
+    grade: "A",
+    title: "Хорошие мальчики",
+    original: "Good Boys / Хорошие ребята",
+    kinopoisk: "https://www.kinopoisk.ru/film/1128984/",
+    director: [
+      {
+        name: "Джин Ступницки",
+      },
+    ],
+    cast: [
+      {
+        name: "Джейкоб Тремблей",
+      },
+      {
+        name: "Кит Л. Уильямс",
+      },
+      {
+        name: "Брэйди Нун",
+      },
+      {
+        name: "Молли Гордон",
+      },
+      {
+        name: "Мидори Френсис",
+      },
+    ],
+    description:
+      "Шестиклассники сбегают из школы и попадают в переделку с наркотиками.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 12,
+    posters: 2,
+  }, // хорошие мальчики
   {
     release: new Date("2023-03-24"),
     publication: new Date("2023-06-02"),
