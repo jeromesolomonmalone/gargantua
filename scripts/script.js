@@ -17308,7 +17308,7 @@ const films = [
     format: "фильм",
     grade: "B",
     title: "Та ещё парочка",
-    original: "Long Shoty",
+    original: "Long Shot",
     kinopoisk: "https://www.kinopoisk.ru/film/684983/",
     director: [
       {
