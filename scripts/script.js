@@ -8925,7 +8925,7 @@ const films = [
   }, // миграция
   {
     release: new Date("2022-09-21"),
-    publication: new Date("2023-02-29"),
+    publication: new Date("2023-02-28"),
     format: "фильм",
     grade: "C",
     title: "Милая встреча",
