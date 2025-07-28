@@ -1025,6 +1025,7 @@ body {
   background: var(--background-image);
   transition: all 0.5s;
   inline-size: 50%;
+  block-size:100%;
 }
 
 .film__poster {
