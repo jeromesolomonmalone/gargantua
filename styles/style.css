@@ -1028,9 +1028,14 @@ body {
 }
 
 .film__poster {
+  -webkit-object-fit: cover;
   object-fit: cover;
+  -webkit-object-position: center;
+  object-position: center;
   opacity: 0;
   transition: opacity var(--images-opacity) ease-in-out;
+  -webkit-inline-size: 100%;
+  -webkit-block-size: 100%;
   inline-size: 100%;
   block-size: 100%;
 }

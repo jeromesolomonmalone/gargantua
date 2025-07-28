@@ -350,53 +350,6 @@ const films = [
     posters: 1,
   }, // vince staples show
   {
-    release: new Date("2019-09-04"),
-    publication: new Date("2021-05-15"),
-    format: "сериал",
-    season: "1",
-    grade: "C",
-    title: "Wu-Tang: Американская сага",
-    original: "Wu-Tang: An American Saga",
-    kinopoisk: "https://www.kinopoisk.ru/series/1200696/",
-    director: [
-      {
-        name: "Алекс Цэ",
-      },
-      {
-        name: "RZA",
-      },
-    ],
-    cast: [
-      {
-        name: "Эштон Сандерс",
-      },
-      {
-        name: "Шамеик Мур",
-      },
-      {
-        name: "Сиддик Сондерсон",
-      },
-      {
-        name: "Джулиан Элайджа Мартинес",
-      },
-    ],
-    description:
-      "В 90-х Бобби Диггс собирает группу Wu-Tang Clan из молодых рэперов Нью-Йорка.",
-    genres: [
-      {
-        genre: "музыка",
-      },
-      {
-        genre: "драма",
-      },
-      {
-        genre: "биография",
-      },
-    ],
-    screenshots: 15,
-    posters: 1,
-  }, // wu-tang: американская сага 1
-  {
     release: new Date("2006-09-01"),
     publication: new Date("2021-06-07"),
     format: "фильм",
@@ -1410,48 +1363,6 @@ const films = [
     screenshots: 13,
     posters: 1,
   }, // белые люди не умеют прыгать
-  {
-    release: new Date("2022-11-25"),
-    publication: new Date("2023-01-15"),
-    format: "фильм",
-    grade: "D",
-    title: "Белый шум",
-    original: "White Noise",
-    kinopoisk: "https://www.kinopoisk.ru/film/4412896/",
-    director: [
-      {
-        name: "Ноа Баумбак",
-      },
-    ],
-    cast: [
-      {
-        name: "Адам Драйвер",
-      },
-      {
-        name: "Грета Гервиг",
-      },
-      {
-        name: "Рэффи Кэссиди",
-      },
-      {
-        name: "Дон Чидл",
-      },
-      {
-        name: "Сэм Нивола",
-      },
-    ],
-    description: "Обычная семья справляется с рутиной в рушащемся мире.",
-    genres: [
-      {
-        genre: "драма",
-      },
-      {
-        genre: "комедия",
-      },
-    ],
-    screenshots: 12,
-    posters: 1,
-  }, // белый шум
   {
     release: new Date("2009-11-25"),
     publication: new Date("2023-05-01"),
@@ -3278,55 +3189,6 @@ const films = [
     posters: 3,
   }, // двенадцать друзей оушена
   {
-    release: new Date("2011-12-20"),
-    publication: new Date("2019-07-15"),
-    format: "фильм",
-    grade: "A+",
-    title: "Девушка с татуировкой дракона",
-    original: "The Girl with the Dragon Tattoo",
-    kinopoisk: "https://www.kinopoisk.ru/film/491724/",
-    director: [
-      {
-        name: "Дэвид Финчер",
-      },
-    ],
-    cast: [
-      {
-        name: "Дэниэл Крэйг",
-      },
-      {
-        name: "Руни Мара",
-      },
-      {
-        name: "Кристофер Пламмер",
-      },
-      {
-        name: "Стеллан Скарсгард",
-      },
-      {
-        name: "Робин Райт",
-      },
-    ],
-    description:
-      "Журналист и молодая хакерша занимаются расследованием убийства, которое произошло сорок лет назад.",
-    genres: [
-      {
-        genre: "криминал",
-      },
-      {
-        genre: "детектив",
-      },
-      {
-        genre: "триллер",
-      },
-      {
-        genre: "драма",
-      },
-    ],
-    screenshots: 12,
-    posters: 2,
-  }, // девушка с татуировкой дракона
-  {
     release: new Date("2019-04-18"),
     publication: new Date("2024-03-04"),
     format: "фильм",
@@ -4014,6 +3876,70 @@ const films = [
     posters: 1,
   }, // дьявол всегда здесь
   {
+    release: new Date("2018-05-18"),
+    publication: new Date("2021-02-07"),
+    format: "фильм",
+    grade: "A+",
+    title: "Дэдпул 2",
+    original: "Deadpool 2",
+    kinopoisk: "https://www.kinopoisk.ru/film/961715/",
+    director: [
+      {
+        name: "Дэвид Литч",
+      },
+    ],
+    cast: [
+      {
+        name: "Райан Рейнольдс",
+      },
+      {
+        name: "Джош Бролин",
+      },
+      {
+        name: "Морена Баккарин",
+      },
+      {
+        name: "Джулиан Деннисон",
+      },
+      {
+        name: "Зази Битц",
+      },
+      {
+        name: "ТиДжей Миллер",
+      },
+      {
+        name: "Каран Сони",
+      },
+      {
+        name: "Брианна Хилдебранд",
+      },
+      {
+        name: "Стефан Капичич",
+      },
+    ],
+    description:
+      "Мутант-наёмник Дэдпул собирает команду, чтобы спасти мальчика от киборга Кейбла.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "супергероика",
+      },
+    ],
+    screenshots: 24,
+    posters: 2,
+  }, // дэдпул 2
+  {
     release: new Date("2024-03-01"),
     publication: new Date("2024-05-11"),
     format: "фильм",
@@ -4554,6 +4480,43 @@ const films = [
     posters: 2,
   }, // звук металла
   {
+    release: new Date("2018-11-21"),
+    publication: new Date("2019-03-22"),
+    format: "фильм",
+    grade: "A+",
+    title: "Зеленая книга",
+    original: "Green Book",
+    kinopoisk: "https://www.kinopoisk.ru/film/1108577/",
+    director: [
+      {
+        name: "Питер Фаррелли",
+      },
+    ],
+    cast: [
+      {
+        name: "Вигго Мортенсен",
+      },
+      {
+        name: "Махершала Али",
+      },
+      {
+        name: "Линда Карделлини",
+      },
+    ],
+    description:
+      "Белый водитель сопровождает чернокожего музыканта в южном туре 1960-х.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 18,
+    posters: 1,
+  }, // зеленая книга
+  {
     release: new Date("2020-09-11"),
     publication: new Date("2021-12-01"),
     format: "фильм",
@@ -4785,6 +4748,52 @@ const films = [
     posters: 2,
   }, // истории семьи майровиц
   {
+    release: new Date("2019-06-21"),
+    publication: new Date("2020-03-06"),
+    format: "фильм",
+    grade: "A",
+    title: "История игрушек 4",
+    original: "Toy Story 4",
+    kinopoisk: "https://www.kinopoisk.ru/film/846824/",
+    director: [
+      {
+        name: "Джош Кули",
+      },
+    ],
+    cast: [
+      {
+        name: "Том Хэнкс",
+      },
+      {
+        name: "Тим Аллен",
+      },
+      {
+        name: "Энни Поттс",
+      },
+      {
+        name: "Тони Хейл",
+      },
+      {
+        name: "Кигэн-Майкл Ки",
+      },
+      {
+        name: "Джордан Пил",
+      },
+      {
+        name: "Кристина Хендрикс",
+      },
+    ],
+    description:
+      "Бонни создала игрушку Вилкинса, и начались приключения со старыми и новыми друзьями.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 15,
+    posters: 3,
+  }, // история игрушек 4
+  {
     release: new Date("2019-11-06"),
     publication: new Date("2020-02-25"),
     format: "фильм",
@@ -4948,43 +4957,6 @@ const films = [
     posters: 2,
   }, // каждое воскресенье
   {
-    release: new Date("1995-11-22"),
-    publication: new Date("2019-09-11"),
-    format: "фильм",
-    grade: "A",
-    title: "Казино",
-    original: "Casino",
-    kinopoisk: "https://www.kinopoisk.ru/film/2494/",
-    director: [
-      {
-        name: "Мартин Скорсезе",
-      },
-    ],
-    cast: [
-      {
-        name: "Роберт Де Ниро",
-      },
-      {
-        name: "Шэрон Стоун",
-      },
-      {
-        name: "Джо Пеши",
-      },
-    ],
-    description:
-      "Мафия отправила Сэма Ротстина управлять казино в Лас-Вегасе, а для защиты приставила его друга детства Никки Санторо — опасного бандита.",
-    genres: [
-      {
-        genre: "криминал",
-      },
-      {
-        genre: "драма",
-      },
-    ],
-    screenshots: 13,
-    posters: 1,
-  }, // казино
-  {
     release: new Date("2006-11-17"),
     publication: new Date("2022-09-20"),
     format: "фильм",
@@ -5031,50 +5003,6 @@ const films = [
     screenshots: 52,
     posters: 1,
   }, // казино рояль
-  {
-    release: new Date("2010-02-14"),
-    continuation: new Date("2011-10-02"),
-    publication: new Date("2019-11-11"),
-    format: "сериал",
-    season: "1-2",
-    grade: "A",
-    title: "Как это делается в Америке",
-    original: "How to Make It in America / Как преуспеть в Америке",
-    kinopoisk: "https://www.kinopoisk.ru/series/427452/",
-    director: [
-      {
-        name: "Йен Эдельман",
-      },
-    ],
-    cast: [
-      {
-        name: "Брайан Гринберг",
-      },
-      {
-        name: "Виктор Расук",
-      },
-      {
-        name: "Лейк Белл",
-      },
-      {
-        name: "Эдди Кэй Томас",
-      },
-      {
-        name: "Кид Кади",
-      },
-      {
-        name: "Луис Гусман",
-      },
-    ],
-    description: "Двое друзей строят фешен-бизнес в Нью-Йорке.",
-    genres: [
-      {
-        genre: "комедия",
-      },
-    ],
-    screenshots: 15,
-    posters: 2,
-  }, // как это делается в америке 1-2
   {
     release: new Date("2005-09-19"),
     continuation: new Date("2013-09-23"),
@@ -5716,46 +5644,6 @@ const films = [
     posters: 1,
   }, // кокаиновый медведь
   {
-    release: new Date("2002-03-29"),
-    publication: new Date("2019-07-17"),
-    format: "фильм",
-    grade: "A+",
-    title: "Комната страха",
-    original: "Panic Room",
-    kinopoisk: "https://www.kinopoisk.ru/film/780/",
-    director: [
-      {
-        name: "Дэвид Финчер",
-      },
-    ],
-    cast: [
-      {
-        name: "Джоди Фостер",
-      },
-      {
-        name: "Кристен Стюарт",
-      },
-      {
-        name: "Джаред Лето",
-      },
-      {
-        name: "Форест Уитакер",
-      },
-      {
-        name: "Дуайт Йоакам",
-      },
-    ],
-    description:
-      "Женщина с дочерью прячутся в убежище дома от трёх грабителей.",
-    genres: [
-      {
-        genre: "триллер",
-      },
-    ],
-    screenshots: 16,
-    posters: 1,
-  }, // комната страха
-  {
     release: new Date("2019-10-25"),
     publication: new Date("2020-11-13"),
     format: "сериал",
@@ -6180,6 +6068,61 @@ const films = [
     screenshots: 18,
     posters: 2,
   }, // корпорация «заговор» 1-2
+  {
+    release: new Date("2022-12-21"),
+    publication: new Date("2023-01-13"),
+    format: "фильм",
+    grade: "A+",
+    title: "Кот в сапогах 2: Последнее желание",
+    original: "Puss in Boots: The Last Wish",
+    kinopoisk: "https://www.kinopoisk.ru/film/840821/",
+    director: [
+      {
+        name: "Джоэль Кроуфорд",
+      },
+      {
+        name: "Хануэль Меркадо",
+      },
+    ],
+    cast: [
+      {
+        name: "Антонио Бандерас",
+      },
+      {
+        name: "Сальма Хайек",
+      },
+      {
+        name: "Харви Гильен",
+      },
+      {
+        name: "Флоренс Пью",
+      },
+      {
+        name: "Джон Малейни",
+      },
+      {
+        name: "Вагнер Моура",
+      },
+      {
+        name: "Кристина Хендрикс",
+      },
+      {
+        name: "Рэй Уинстон",
+      },
+      {
+        name: "Оливия Колман",
+      },
+    ],
+    description:
+      "Кот в сапогах ищет Последнее желание, чтобы вернуть свои 9 жизней.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 30,
+    posters: 1,
+  }, // кот в сапогах 2: последнее желание
   {
     release: new Date("2011-07-24"),
     publication: new Date("2021-01-30"),
@@ -6761,6 +6704,49 @@ const films = [
     screenshots: 29,
     posters: 1,
   }, // крестный отец
+  {
+    release: new Date("2018-11-21"),
+    publication: new Date("2019-04-12"),
+    format: "фильм",
+    grade: "love",
+    title: "Крид 2",
+    original: "Creed II",
+    kinopoisk: "https://www.kinopoisk.ru/film/1043955/",
+    director: [
+      {
+        name: "Стивен Кейпл мл.",
+      },
+    ],
+    cast: [
+      {
+        name: "Майкл Б. Джордан",
+      },
+      {
+        name: "Сильвестр Сталлоне",
+      },
+      {
+        name: "Тесса Томпсон",
+      },
+      {
+        name: "Дольф Лундгрен",
+      },
+      {
+        name: "Флориан Мунтяну",
+      },
+    ],
+    description:
+      "Чемпион Адонис Крид под руководством Рокки Бальбоа сражается с Виктором Драго.",
+    genres: [
+      {
+        genre: "спорт",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 12,
+    posters: 2,
+  }, // крид 2
   {
     release: new Date("1994-10-14"),
     publication: new Date("2020-08-02"),
@@ -9739,6 +9725,100 @@ const films = [
     posters: 2,
   }, // мост через озеро
   {
+    release: new Date("2018-04-27"),
+    publication: new Date("2025-02-28"),
+    format: "фильм",
+    grade: "A+",
+    title: "Мстители: Война бесконечности",
+    original: "Avengers: Infinity War",
+    kinopoisk: "https://www.kinopoisk.ru/film/843649/",
+    director: [
+      {
+        name: "Джо Руссо",
+      },
+      {
+        name: "Энтони Руссо",
+      },
+    ],
+    cast: [
+      {
+        name: "Роберт Дауни мл.",
+      },
+      {
+        name: "Крис Хемсворт",
+      },
+      {
+        name: "Марк Руффало",
+      },
+      {
+        name: "Крис Эванс",
+      },
+      {
+        name: "Скарлетт Йоханссон",
+      },
+      {
+        name: "Дон Чидл",
+      },
+      {
+        name: "Бенедикт Камбербэтч",
+      },
+      {
+        name: "Том Холланд",
+      },
+      {
+        name: "Чедвик Боузман",
+      },
+      {
+        name: "Зои Салдана",
+      },
+      {
+        name: "Карен Гиллан",
+      },
+      {
+        name: "Пол Беттани",
+      },
+      {
+        name: "Элизабет Олсен",
+      },
+      {
+        name: "Себастиан Стэн",
+      },
+      {
+        name: "Бенедикт Вонг",
+      },
+      {
+        name: "Пом Клементьефф",
+      },
+      {
+        name: "Дэйв Батиста",
+      },
+      {
+        name: "Брэдли Купер",
+      },
+      {
+        name: "Крис Пратт",
+      },
+      {
+        name: "Джош Бролин",
+      },
+    ],
+    description:
+      "Мстители противостоят Таносу, охотящемуся за Камнями Бесконечности — артефактами, способными менять реальность.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        name: "приключения",
+      },
+      {
+        name: "супергероика",
+      },
+    ],
+    screenshots: 89,
+    posters: 1,
+  }, // мстители: война бесконечности
+  {
     release: new Date("2019-04-26"),
     publication: new Date("2025-03-01"),
     format: "фильм",
@@ -9809,7 +9889,7 @@ const films = [
     ],
     screenshots: 69,
     posters: 2,
-  }, // мстители: Финал
+  }, // мстители: финал
   {
     release: new Date("2013-01-25"),
     publication: new Date("2022-03-11"),
@@ -11081,6 +11161,61 @@ const films = [
     posters: 1,
   }, // неудачницы
   {
+    release: new Date("2018-10-12"),
+    publication: new Date("2022-03-16"),
+    format: "фильм",
+    grade: "A",
+    title: "Ничего хорошего в отеле «Эль Рояль»",
+    original: "Bad Times at the El Royale",
+    kinopoisk: "https://www.kinopoisk.ru/film/1047143/",
+    director: [
+      {
+        name: "Дрю Годдард",
+      },
+    ],
+    cast: [
+      {
+        name: "Джефф Бриджес",
+      },
+      {
+        name: "Синтия Эриво",
+      },
+      {
+        name: "Дакота Джонсон",
+      },
+      {
+        name: "Джон Хэмм",
+      },
+      {
+        name: "Кейли Спейни",
+      },
+      {
+        name: "Льюис Пуллман",
+      },
+      {
+        name: "Крис Хемсворт",
+      },
+    ],
+    description:
+      "В безлюдный отель «Эль Руаяль» заселяются четверо незнакомцев — у некоторых из них нечистая совесть.",
+    genres: [
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "детектив",
+      },
+    ],
+    screenshots: 33,
+    posters: 1,
+  }, // ничего хорошего в отеле «эль рояль»
+  {
     release: new Date("2023-05-04"),
     publication: new Date("2023-08-24"),
     format: "сериал",
@@ -11127,45 +11262,6 @@ const films = [
     screenshots: 45,
     posters: 1,
   }, // ничегошеньки
-  {
-    release: new Date("2022-10-07"),
-    publication: new Date("2022-12-16"),
-    format: "фильм",
-    grade: "A",
-    title: "Ночной оборотень",
-    original: "Werewolf by Night",
-    kinopoisk: "https://www.kinopoisk.ru/film/4554192/",
-    director: [
-      {
-        name: "Майкл Джаккино",
-      },
-    ],
-    cast: [
-      {
-        name: "Гаэль Гарсиа Берналь",
-      },
-      {
-        name: "Лаура Доннелли",
-      },
-    ],
-    description: "Охотники на монстров сражаются за могущественный артефакт.",
-    genres: [
-      {
-        genre: "ужасы",
-      },
-      {
-        genre: "супергероика",
-      },
-      {
-        genre: "фэнтези",
-      },
-      {
-        genre: "чёрно-белое",
-      },
-    ],
-    screenshots: 14,
-    posters: 1,
-  }, // ночной оборотень
   {
     release: new Date("2007-04-04"),
     publication: new Date("2023-12-24"),
@@ -13142,7 +13238,7 @@ const films = [
     release: new Date("2006-11-18"),
     publication: new Date("2021-02-08"),
     format: "фильм",
-    grade: "B",
+    grade: "C",
     title: "Полный облом",
     original: "Big Nothing",
     kinopoisk: "https://www.kinopoisk.ru/film/220497/",
@@ -17349,6 +17445,52 @@ const films = [
     posters: 3,
   }, // та ещё парочка
   {
+    release: new Date("2019-06-07"),
+    publication: new Date("2020-03-22"),
+    format: "фильм",
+    grade: "A",
+    title: "Тайная жизнь домашних животных 2",
+    original: "The Secret Life of Pets 2",
+    kinopoisk: "https://www.kinopoisk.ru/film/995974/",
+    director: [
+      {
+        name: "Крис Рено",
+      },
+      {
+        name: "Джонатан дель Валь",
+      },
+    ],
+    cast: [
+      {
+        name: "Пэттон Освальт",
+      },
+      {
+        name: "Эрик Стоунстрит",
+      },
+      {
+        name: "Кевин Харт",
+      },
+      {
+        name: "Дженни Слейт",
+      },
+      {
+        name: "Харрисон Форд",
+      },
+      {
+        name: "Тиффани Хэддиш",
+      },
+    ],
+    description:
+      "Хозяева Макса уезжают за город в гости на ранчо и берут его с собой.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 45,
+    posters: 2,
+  }, // тайная жизнь домашних животных 2
+  {
     release: new Date("1999-12-25"),
     publication: new Date("2024-05-13"),
     format: "фильм",
@@ -18151,6 +18293,51 @@ const films = [
     screenshots: 12,
     posters: 2,
   }, // три короля
+  {
+    release: new Date("2019-03-06"),
+    publication: new Date("2019-04-06"),
+    format: "фильм",
+    grade: "C",
+    title: "Тройная граница",
+    original: "Triple Frontier",
+    kinopoisk: "https://www.kinopoisk.ru/film/470464/",
+    director: [
+      {
+        name: "Джей Си Чендор",
+      },
+    ],
+    cast: [
+      {
+        name: "Оскар Айзек",
+      },
+      {
+        name: "Чарли Ханнэм",
+      },
+      {
+        name: "Бен Аффлек",
+      },
+      {
+        name: "Гаррет Хедлунд",
+      },
+      {
+        name: "Педро Паскаль",
+      },
+      {
+        name: "Адриа Архона",
+      },
+    ],
+    description: "Пятеро бывших спецагентов решаются ограбить наркобарона.",
+    genres: [
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "триллер",
+      },
+    ],
+    screenshots: 12,
+    posters: 1,
+  }, // тройная граница
   {
     release: new Date("1996-10-18"),
     publication: new Date("2021-02-16"),
@@ -20049,6 +20236,73 @@ const films = [
     screenshots: 30,
     posters: 2,
   }, // черепашки-ниндзя: погром мутантов
+  {
+    release: new Date("2018-02-16"),
+    publication: new Date("2019-03-31"),
+    format: "фильм",
+    grade: "A+",
+    title: "Чёрная Пантера",
+    original: "Black Panther",
+    kinopoisk: "https://www.kinopoisk.ru/film/623250/",
+    director: [
+      {
+        name: "Райан Куглер",
+      },
+    ],
+    cast: [
+      {
+        name: "Чедвик Боузман",
+      },
+      {
+        name: "Майкл Б. Джордан",
+      },
+      {
+        name: "Лупита Нионго",
+      },
+      {
+        name: "Данай Гурира",
+      },
+      {
+        name: "Мартин Фриман",
+      },
+      {
+        name: "Дэниэл Калуя",
+      },
+      {
+        name: "Уинстон Дьюк",
+      },
+      {
+        name: "Анджела Бассетт",
+      },
+      {
+        name: "Летиша Райт",
+      },
+      {
+        name: "Форест Уитакер",
+      },
+      {
+        name: "Энди Серкис",
+      },
+    ],
+    description:
+      "Т’Чалла, наследник королевства Ваканда, должен возглавить свой народ и сразиться с противником из прошлого.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "супергероика",
+      },
+    ],
+    screenshots: 14,
+    posters: 3,
+  }, // чёрная пантера
   {
     release: new Date("2022-05-20"),
     publication: new Date("2022-06-08"),
