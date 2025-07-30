@@ -2599,7 +2599,7 @@ const films = [
         genre: "приключения",
       },
     ],
-    screenshots: 14,
+    screenshots: 13,
     posters: 1,
   }, // водная жизнь
   {
@@ -4599,7 +4599,7 @@ const films = [
         genre: "приключения",
       },
     ],
-    screenshots: 14,
+    screenshots: 17,
     posters: 2,
   }, // затерянный город z
   {
@@ -6311,7 +6311,7 @@ const films = [
         genre: "комедия",
       },
     ],
-    screenshots: 13,
+    screenshots: 12,
     posters: 1,
   }, // король стейтен-айленда
   {
@@ -18139,7 +18139,7 @@ const films = [
         genre: "комедия",
       },
     ],
-    screenshots: 16,
+    screenshots: 15,
     posters: 3,
   }, // та ещё парочка
   {
@@ -18690,7 +18690,7 @@ const films = [
         genre: "marvel",
       },
     ],
-    screenshots: 30,
+    screenshots: 29,
     posters: 1,
   }, // тор рагнарёк
   {
