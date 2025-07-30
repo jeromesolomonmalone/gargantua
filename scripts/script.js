@@ -393,6 +393,61 @@ const films = [
     posters: 1,
   }, // адреналин
   {
+    release: new Date("2016-09-23"),
+    publication: new Date("2019-02-14"),
+    format: "фильм",
+    grade: "A",
+    title: "Аисты",
+    original: "Storks",
+    kinopoisk: "https://www.kinopoisk.ru/film/894045/",
+    director: [
+      {
+        name: "Николас Столлер",
+      },
+      {
+        name: "Даг Свитлэнд",
+      },
+    ],
+    cast: [
+      {
+        name: "Энди Сэмберг",
+      },
+      {
+        name: "Кэти Краун",
+      },
+      {
+        name: "Келси Грэммер",
+      },
+      {
+        name: "Дженнифер Энистон",
+      },
+      {
+        name: "Тай Бурелл",
+      },
+      {
+        name: "Антон Старкман",
+      },
+      {
+        name: "Кигэн-Майкл Ки",
+      },
+      {
+        name: "Джордан Пил",
+      },
+      {
+        name: "Дэнни Трехо",
+      },
+    ],
+    description:
+      "Опытный аист-курьер должен исправить ошибку и доставить ребёнка, хотя его компания теперь занимается только посылками.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 15,
+    posters: 2,
+  }, // аисты
+  {
     release: new Date("2007-01-12"),
     publication: new Date("2022-01-24"),
     format: "фильм",
@@ -3168,6 +3223,57 @@ const films = [
     posters: 1,
   }, // грызня 1
   {
+    release: new Date("2016-02-05"),
+    publication: new Date("2021-02-17"),
+    format: "фильм",
+    grade: "A",
+    title: "Да здравствует Цезарь!",
+    original: "Hail, Caesar!",
+    kinopoisk: "https://www.kinopoisk.ru/film/841335/",
+    director: [
+      {
+        name: "Итан Коэн",
+      },
+      {
+        name: "Джоэл Коэн",
+      },
+    ],
+    cast: [
+      {
+        name: "Джош Бролин",
+      },
+      {
+        name: "Джордж Клуни",
+      },
+      {
+        name: "Олден Эренрайк",
+      },
+      {
+        name: "Рэйф Файнс",
+      },
+      {
+        name: "Скарлетт Йоханссон",
+      },
+      {
+        name: "Тильда Суинтон",
+      },
+      {
+        name: "Ченнинг Татум",
+      },
+      {
+        name: "Джона Хилл",
+      },
+    ],
+    description: "Голливудский решала держит в узде звёзд студии.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 18,
+    posters: 1,
+  }, // да здравствует цезарь!
+  {
     release: new Date("2004-12-10"),
     publication: new Date("2020-01-08"),
     format: "фильм",
@@ -4454,6 +4560,49 @@ const films = [
     posters: 1,
   }, // закусочная боба 1
   {
+    release: new Date("2016-10-15"),
+    publication: new Date("2021-02-28"),
+    format: "фильм",
+    grade: "C",
+    title: "Затерянный город Z",
+    original: "The Lost City of Z",
+    kinopoisk: "https://www.kinopoisk.ru/film/432794/",
+    director: [
+      {
+        name: "Джеймс Грэй",
+      },
+    ],
+    cast: [
+      {
+        name: "Чарли Ханнэм",
+      },
+      {
+        name: "Роберт Паттинсон",
+      },
+      {
+        name: "Сиенна Миллер",
+      },
+      {
+        name: "Том Холланд",
+      },
+    ],
+    description:
+      "Британский топограф ищет следы древней цивилизации в Южной Америке.",
+    genres: [
+      {
+        genre: "биография",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 14,
+    posters: 2,
+  }, // затерянный город z
+  {
     release: new Date("2024-08-09"),
     publication: new Date("2024-08-11"),
     format: "фильм",
@@ -4472,6 +4621,30 @@ const films = [
       },
       {
         name: "Кейси Аффлек",
+      },
+      {
+        name: "Хонг Чау",
+      },
+      {
+        name: "Майкл Стулбарг",
+      },
+      {
+        name: "Пол Уолтер Хаузер",
+      },
+      {
+        name: "Винг Реймз",
+      },
+      {
+        name: "Альфред Молина",
+      },
+      {
+        name: "Рон Перлман",
+      },
+      {
+        name: "Джек Харлоу",
+      },
+      {
+        name: "Тоби Джонс",
       },
     ],
     description:
@@ -13480,6 +13653,52 @@ const films = [
     posters: 1,
   }, // полный облом
   {
+    release: new Date("2017-11-03"),
+    publication: new Date("2022-08-03"),
+    format: "фильм",
+    grade: "B",
+    title: "Последний взмах флага",
+    original: "Last Flag Flying",
+    kinopoisk: "https://www.kinopoisk.ru/film/1002592/",
+    director: [
+      {
+        name: "Ричард Линклейтер",
+      },
+    ],
+    cast: [
+      {
+        name: "Стив Карелл",
+      },
+      {
+        name: "Брайан Крэнстон",
+      },
+      {
+        name: "Лоренс Фишбёрн",
+      },
+      {
+        name: "Дж. Куинтон Джонсон",
+      },
+      {
+        name: "Юл Васкес",
+      },
+    ],
+    description:
+      "Ларри Шеперд с бывшими сослуживцами хоронит погибшего в Ираке сына.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "военный",
+      },
+    ],
+    screenshots: 36,
+    posters: 1,
+  }, // последний взмах флага
+  {
     release: new Date("2020-04-19"),
     publication: new Date("2020-05-20"),
     format: "сериал",
@@ -13632,6 +13851,51 @@ const films = [
     posters: 1,
   }, // поцелуй навылет
   {
+    release: new Date("2016-11-18"),
+    publication: new Date("2020-10-16"),
+    format: "фильм",
+    grade: "B",
+    title: "Почти семнадцать",
+    original: "The Edge of Seventeen",
+    kinopoisk: "https://www.kinopoisk.ru/film/624161/",
+    director: [
+      {
+        name: "Келли Фрэмон",
+      },
+    ],
+    cast: [
+      {
+        name: "Хейли Стайнфелд",
+      },
+      {
+        name: "Хейли Лу Ричардсон",
+      },
+      {
+        name: "Блейк Дженнер",
+      },
+      {
+        name: "Кира Седжвик",
+      },
+      {
+        name: "Вуди Харрельсон",
+      },
+      {
+        name: "Хейден Сзето",
+      },
+    ],
+    description: "Жизнь Надин усложнилась из-за романа подруги с её братом.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 11,
+    posters: 1,
+  }, // почти семнадцать
+  {
     release: new Date("2022-04-28"),
     publication: new Date("2022-06-25"),
     format: "сериал",
@@ -13708,6 +13972,43 @@ const films = [
     screenshots: 67,
     posters: 1,
   }, // претенденты
+  {
+    release: new Date("2016-11-11"),
+    publication: new Date("2021-07-29"),
+    format: "фильм",
+    grade: "A",
+    title: "Прибытие",
+    original: "Arrival",
+    kinopoisk: "https://www.kinopoisk.ru/film/718811/",
+    director: [
+      {
+        name: "Дени Вильнёв",
+      },
+    ],
+    cast: [
+      {
+        name: "Эми Адамс",
+      },
+      {
+        name: "Джереми Реннер",
+      },
+      {
+        name: "Форест Уитакер",
+      },
+    ],
+    description:
+      "Приземлились корабли пришельцев — лингвист Бэнкс ищет способ общения.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "фантастика",
+      },
+    ],
+    screenshots: 18,
+    posters: 2,
+  }, // прибытие
   {
     release: new Date("2020-03-05"),
     publication: new Date("2024-04-30"),
@@ -15024,6 +15325,48 @@ const films = [
     screenshots: 35,
     posters: 2,
   }, // рука бога
+  {
+    release: new Date("2016-07-29"),
+    publication: new Date("2019-09-26"),
+    format: "фильм",
+    grade: "B",
+    title: "Светская жизнь",
+    original: "Cafe Society / Café Society",
+    kinopoisk: "https://www.kinopoisk.ru/film/893362/",
+    director: [
+      {
+        name: "Вуди Аллен",
+      },
+    ],
+    cast: [
+      {
+        name: "Джесси Айзенберг",
+      },
+      {
+        name: "Кристен Стюарт",
+      },
+      {
+        name: "Стив Карелл",
+      },
+      {
+        name: "Блейк Лайвли",
+      },
+      {
+        name: "Кори Столл",
+      },
+    ],
+    description: "Простой парень попадает в мир богемы Голливуда 1930-х.",
+    genres: [
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 12,
+    posters: 1,
+  }, // светская жизнь
   {
     release: new Date("2021-07-15"),
     publication: new Date("2022-01-31"),
@@ -17710,6 +18053,49 @@ const films = [
     screenshots: 26,
     posters: 2,
   }, // сядь за руль моей машины
+  {
+    release: new Date("2017-03-17"),
+    publication: new Date("2021-03-21"),
+    format: "фильм",
+    grade: "C",
+    title: "Т2 Трейнспоттинг",
+    original: "T2 Trainspotting / На игле 2",
+    kinopoisk: "https://www.kinopoisk.ru/film/744776/",
+    director: [
+      {
+        name: "Дэнни Бойл",
+      },
+    ],
+    cast: [
+      {
+        name: "Юэн Макгрегор",
+      },
+      {
+        name: "Юэн Бремнер",
+      },
+      {
+        name: "Джонни Ли Миллер",
+      },
+      {
+        name: "Роберт Карлайл",
+      },
+      {
+        name: "Келли Макдоналд",
+      },
+    ],
+    description:
+      "Марк Рентон спустя 20 лет воссоединяется с Сик Боем, Спудом и Бегби.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 15,
+    posters: 2,
+  }, // т2 трейнспоттинг
   {
     release: new Date("2019-05-03"),
     publication: new Date("2020-04-17"),
