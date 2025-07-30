@@ -1031,6 +1031,7 @@ body {
   grid-row-start: 1;
   background: var(--background-image);
   transition: all 0.5s;
+  block-size: 100%;
 }
 
 .film__posters_is-row-reverse {
