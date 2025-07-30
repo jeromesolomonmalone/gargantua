@@ -4599,7 +4599,7 @@ const films = [
         genre: "приключения",
       },
     ],
-    screenshots: 17,
+    screenshots: 15,
     posters: 2,
   }, // затерянный город z
   {
