@@ -1011,6 +1011,9 @@ const films = [
       {
         genre: "мультфильм",
       },
+      {
+        genre: "pixar",
+      },
     ],
     screenshots: 29,
     posters: 2,
@@ -1394,7 +1397,7 @@ const films = [
       "Разъяренные фермеры, уставшие от постоянных нападок хитрого лиса на их курятники, готовятся уничтожить своего врага и его «хитрое» семейство.",
     genres: [
       {
-        genre: "мультфильм",
+        genre: "анимация",
       },
     ],
     screenshots: 24,
@@ -2007,6 +2010,9 @@ const films = [
         genre: "боевик",
       },
       { genre: "супергероика" },
+      {
+        genre: "dc",
+      },
     ],
     screenshots: 23,
     posters: 2,
@@ -2204,6 +2210,9 @@ const films = [
       },
       {
         genre: "фэнтези",
+      },
+      {
+        genre: "marvel",
       },
     ],
     screenshots: 21,
@@ -2624,6 +2633,49 @@ const films = [
     screenshots: 25,
     posters: 1,
   }, // волны
+  {
+    release: new Date("2020-03-06"),
+    publication: new Date("2020-04-25"),
+    format: "фильм",
+    grade: "A+",
+    title: "Вперёд",
+    original: "Onward",
+    kinopoisk: "https://www.kinopoisk.ru/film/1080513/",
+    director: [
+      {
+        name: "Дэн Скэнлон",
+      },
+    ],
+    cast: [
+      {
+        name: "Том Холланд",
+      },
+      {
+        name: "Крис Пратт",
+      },
+      {
+        name: "Джулия Луи-Дрейфус",
+      },
+      {
+        name: "Октавия Спенсер",
+      },
+      {
+        name: "Мэл Родригес",
+      },
+    ],
+    description:
+      "Эльфы-подростки Иэн и Барли отправляются в магическое путешествие, чтобы увидеться с покойным отцом.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+      {
+        genre: "pixar",
+      },
+    ],
+    screenshots: 15,
+    posters: 3,
+  }, // вперёд
   {
     release: new Date("2010-11-05"),
     publication: new Date("2022-01-16"),
@@ -3360,6 +3412,40 @@ const films = [
     posters: 1,
   }, // джерри магуайер
   {
+    release: new Date("2018-10-19"),
+    publication: new Date("2019-10-02"),
+    format: "фильм",
+    grade: "D",
+    title: "Дикая жизнь",
+    original: "Wildlife",
+    kinopoisk: "https://www.kinopoisk.ru/film/1005852/",
+    director: [
+      {
+        name: "Пол Дано",
+      },
+    ],
+    cast: [
+      {
+        name: "Эд Оксенбульд",
+      },
+      {
+        name: "Джейк Джилленхол",
+      },
+      {
+        name: "Кэри Маллиган",
+      },
+    ],
+    description:
+      "Распад семьи глазами подростка: родители ищут выход каждый по-своему.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 14,
+    posters: 1,
+  }, // дикая жизнь
+  {
     release: new Date("2024-09-27"),
     publication: new Date("2024-10-27"),
     format: "фильм",
@@ -3528,6 +3614,9 @@ const films = [
         genre: "приключения",
       },
       { genre: "супергероика" },
+      {
+        genre: "marvel",
+      },
     ],
     screenshots: 15,
     posters: 2,
@@ -3935,6 +4024,9 @@ const films = [
       {
         genre: "супергероика",
       },
+      {
+        genre: "marvel",
+      },
     ],
     screenshots: 24,
     posters: 2,
@@ -4144,6 +4236,71 @@ const films = [
     screenshots: 39,
     posters: 1,
   }, // его три дочери
+  {
+    release: new Date("2022-08-18"),
+    publication: new Date("2022-10-15"),
+    format: "сериал",
+    season: "мини–сериал",
+    grade: "C",
+    title: "Женщина-Халк: Адвокат",
+    original: "She-Hulk: Attorney at Law",
+    kinopoisk: "https://www.kinopoisk.ru/series/1301509/",
+    director: [
+      {
+        name: "Джессика Гао",
+      },
+    ],
+    cast: [
+      {
+        name: "Татьяна Маслани",
+      },
+      {
+        name: "Марк Руффало",
+      },
+      {
+        name: "Джинджер Гонзага",
+      },
+      {
+        name: "Джамила Джамил",
+      },
+      {
+        name: "Рене Голдсберри",
+      },
+      {
+        name: "Джош Сегарра",
+      },
+      {
+        name: "Тим Рот",
+      },
+      {
+        name: "Бенедикт Вонг",
+      },
+      {
+        name: "Чарли Кокс",
+      },
+    ],
+    description:
+      "Кузина Халка получает его сверхспособность и становится адвокатом супергероев.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "супергероика",
+      },
+      {
+        genre: "marvel",
+      },
+    ],
+    screenshots: 25,
+    posters: 1,
+  }, // женщина-халк: адвокат
   {
     release: new Date("2020-12-01"),
     publication: new Date("2022-06-23"),
@@ -4681,12 +4838,6 @@ const films = [
       {
         name: "Сирша Ронан",
       },
-      {
-        name: "Бенедикт Камбербэтч",
-      },
-      {
-        name: "Джуно Темпл",
-      },
     ],
     description:
       "13-летняя писательница Брайони Таллис рушит судьбы, ложно обвинив любовника сестры в преступлении.",
@@ -4788,6 +4939,9 @@ const films = [
     genres: [
       {
         genre: "мультфильм",
+      },
+      {
+        genre: "pixar",
       },
     ],
     screenshots: 15,
@@ -5091,6 +5245,9 @@ const films = [
         genre: "приключения",
       },
       { genre: "супергероика" },
+      {
+        genre: "marvel",
+      },
     ],
     screenshots: 12,
     posters: 1,
@@ -6705,49 +6862,6 @@ const films = [
     posters: 1,
   }, // крестный отец
   {
-    release: new Date("2018-11-21"),
-    publication: new Date("2019-04-12"),
-    format: "фильм",
-    grade: "love",
-    title: "Крид 2",
-    original: "Creed II",
-    kinopoisk: "https://www.kinopoisk.ru/film/1043955/",
-    director: [
-      {
-        name: "Стивен Кейпл мл.",
-      },
-    ],
-    cast: [
-      {
-        name: "Майкл Б. Джордан",
-      },
-      {
-        name: "Сильвестр Сталлоне",
-      },
-      {
-        name: "Тесса Томпсон",
-      },
-      {
-        name: "Дольф Лундгрен",
-      },
-      {
-        name: "Флориан Мунтяну",
-      },
-    ],
-    description:
-      "Чемпион Адонис Крид под руководством Рокки Бальбоа сражается с Виктором Драго.",
-    genres: [
-      {
-        genre: "спорт",
-      },
-      {
-        genre: "драма",
-      },
-    ],
-    screenshots: 12,
-    posters: 2,
-  }, // крид 2
-  {
     release: new Date("1994-10-14"),
     publication: new Date("2020-08-02"),
     format: "фильм",
@@ -7129,6 +7243,9 @@ const films = [
       {
         genre: "супергероика",
       },
+      {
+        genre: "marvel",
+      },
     ],
     screenshots: 25,
     posters: 1,
@@ -7297,6 +7414,9 @@ const films = [
       {
         genre: "чёрно-белое",
       },
+      {
+        genre: "marvel",
+      },
     ],
     screenshots: 90,
     posters: 2,
@@ -7339,6 +7459,9 @@ const films = [
         genre: "фэнтези",
       },
       { genre: "супергероика" },
+      {
+        genre: "marvel",
+      },
     ],
     screenshots: 35,
     posters: 1,
@@ -7387,6 +7510,9 @@ const films = [
         genre: "триллер",
       },
       { genre: "супергероика" },
+      {
+        genre: "marvel",
+      },
     ],
     screenshots: 62,
     posters: 2,
@@ -7943,6 +8069,9 @@ const films = [
         genre: "приключения",
       },
       { genre: "супергероика" },
+      {
+        genre: "marvel",
+      },
     ],
     screenshots: 31,
     posters: 2,
@@ -7990,6 +8119,9 @@ const films = [
         genre: "приключения",
       },
       { genre: "супергероика" },
+      {
+        genre: "marvel",
+      },
     ],
     screenshots: 14,
     posters: 2,
@@ -8037,6 +8169,9 @@ const films = [
         genre: "приключения",
       },
       { genre: "супергероика" },
+      {
+        genre: "marvel",
+      },
     ],
     screenshots: 16,
     posters: 1,
@@ -8079,6 +8214,9 @@ const films = [
         genre: "мультфильм",
       },
       { genre: "супергероика" },
+      {
+        genre: "marvel",
+      },
     ],
     screenshots: 43,
     posters: 3,
@@ -9269,6 +9407,9 @@ const films = [
         genre: "приключения",
       },
       { genre: "супергероика" },
+      {
+        genre: "dc",
+      },
     ],
     screenshots: 21,
     posters: 2,
@@ -9809,10 +9950,13 @@ const films = [
         genre: "фантастика",
       },
       {
-        name: "приключения",
+        genre: "приключения",
       },
       {
-        name: "супергероика",
+        genre: "супергероика",
+      },
+      {
+        genre: "marvel",
       },
     ],
     screenshots: 89,
@@ -9881,10 +10025,13 @@ const films = [
         genre: "фантастика",
       },
       {
-        name: "приключения",
+        genre: "приключения",
       },
       {
-        name: "супергероика",
+        genre: "супергероика",
+      },
+      {
+        genre: "marvel",
       },
     ],
     screenshots: 69,
@@ -10053,6 +10200,9 @@ const films = [
       },
       {
         genre: "короткометражка",
+      },
+      {
+        genre: "pixar",
       },
     ],
     screenshots: 18,
@@ -11932,6 +12082,55 @@ const films = [
     posters: 1,
   }, // оставь мир позади
   {
+    release: new Date("2018-04-06"),
+    publication: new Date("2020-02-28"),
+    format: "фильм",
+    grade: "A+",
+    title: "Остров собак",
+    original: "Isle of Dogs",
+    kinopoisk: "https://www.kinopoisk.ru/film/939785/",
+    director: [
+      {
+        name: "Уэс Андерсон",
+      },
+    ],
+    cast: [
+      {
+        name: "Кою Ранкин",
+      },
+      {
+        name: "Брайан Крэнстон",
+      },
+      {
+        name: "Эдвард Нортон",
+      },
+      {
+        name: "Боб Балабан",
+      },
+      {
+        name: "Джефф Голдблюм",
+      },
+      {
+        name: "Билл Мюррей",
+      },
+      {
+        name: "Скарлетт Йоханссон",
+      },
+      {
+        name: "Грета Гервиг",
+      },
+    ],
+    description:
+      "В Японии из-за опасного «собачьего вируса» всех псов отправляют на карантинный остров.",
+    genres: [
+      {
+        genre: "анимация",
+      },
+    ],
+    screenshots: 23,
+    posters: 2,
+  }, // остров собак
+  {
     release: new Date("2019-09-13"),
     continuation: new Date("2022-04-29"),
     publication: new Date("2022-07-05"),
@@ -12644,6 +12843,9 @@ const films = [
       },
       {
         genre: "драма",
+      },
+      {
+        genre: "dc",
       },
     ],
     screenshots: 33,
@@ -14568,6 +14770,9 @@ const films = [
       {
         genre: "мультфильм",
       },
+      {
+        genre: "pixar",
+      },
     ],
     screenshots: 41,
     posters: 2,
@@ -15648,6 +15853,9 @@ const films = [
         genre: "приключения",
       },
       { genre: "супергероика" },
+      {
+        genre: "dc",
+      },
     ],
     screenshots: 16,
     posters: 1,
@@ -15698,6 +15906,49 @@ const films = [
     screenshots: 12,
     posters: 2,
   }, // сити-айленд
+  {
+    release: new Date("2018-08-10"),
+    publication: new Date("2021-05-19"),
+    format: "фильм",
+    grade: "B",
+    title: "Скейт-кухня",
+    original: "Skate Kitchen",
+    kinopoisk: "https://www.kinopoisk.ru/film/1098919/",
+    director: [
+      {
+        name: "Кристал Мозелл",
+      },
+    ],
+    cast: [
+      {
+        name: "Рейчел Винберг",
+      },
+      {
+        name: "Деде Лавлэйс",
+      },
+      {
+        name: "Кабрина Адамс",
+      },
+      {
+        name: "Нина Моран",
+      },
+      {
+        name: "Аджани Расселл",
+      },
+      {
+        name: "Джейден Смит",
+      },
+    ],
+    description:
+      "17-летняя Камилла тайком катается на скейте вопреки запрету матери.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 12,
+    posters: 1,
+  }, // скейт-кухня
   {
     release: new Date("2023-07-27"),
     publication: new Date("2023-11-07"),
@@ -16118,6 +16369,9 @@ const films = [
       {
         genre: "супергероика",
       },
+      {
+        genre: "marvel",
+      },
     ],
     screenshots: 17,
     posters: 2,
@@ -16176,6 +16430,9 @@ const films = [
       },
       {
         genre: "новогодний",
+      },
+      {
+        genre: "marvel",
       },
     ],
     screenshots: 27,
@@ -16907,6 +17164,9 @@ const films = [
         genre: "криминал",
       },
       { genre: "супергероика" },
+      {
+        genre: "marvel",
+      },
     ],
     screenshots: 46,
     posters: 1,
@@ -16952,6 +17212,9 @@ const films = [
         genre: "криминал",
       },
       { genre: "супергероика" },
+      {
+        genre: "marvel",
+      },
     ],
     screenshots: 29,
     posters: 1,
@@ -17171,6 +17434,9 @@ const films = [
         genre: "драма",
       },
       { genre: "супергероика" },
+      {
+        genre: "marvel",
+      },
     ],
     screenshots: 35,
     posters: 1,
@@ -17248,6 +17514,52 @@ const films = [
     screenshots: 17,
     posters: 1,
   }, // стук в хижине
+  {
+    release: new Date("2018-06-15"),
+    publication: new Date("2025-03-30"),
+    format: "фильм",
+    grade: "A+",
+    title: "Суперсемейка 2",
+    original: "Incredibles 2",
+    kinopoisk: "https://www.kinopoisk.ru/film/839650/",
+    director: [
+      {
+        name: "Брэд Бёрд",
+      },
+    ],
+    cast: [
+      {
+        name: "Крэйг Т. Нельсон",
+      },
+      {
+        name: "Холли Хантер",
+      },
+      {
+        name: "Кэтрин Кинер",
+      },
+      {
+        name: "Боб Оденкёрк",
+      },
+      {
+        name: "Сэмюэл Л. Джексон",
+      },
+    ],
+    description:
+      "В семье супергероев роли меняются: мистер Исключительный сидит дома, пока Эластика спасает мир.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+      {
+        genre: "супергероика",
+      },
+      {
+        genre: "pixar",
+      },
+    ],
+    screenshots: 87,
+    posters: 1,
+  }, // суперсемейка 2
   {
     release: new Date("2021-09-12"),
     publication: new Date("2021-10-20"),
@@ -17988,6 +18300,9 @@ const films = [
         genre: "комедия",
       },
       { genre: "супергероика" },
+      {
+        genre: "marvel",
+      },
     ],
     screenshots: 30,
     posters: 1,
@@ -18032,6 +18347,9 @@ const films = [
         genre: "комедия",
       },
       { genre: "супергероика" },
+      {
+        genre: "marvel",
+      },
     ],
     screenshots: 15,
     posters: 2,
@@ -19808,6 +20126,43 @@ const films = [
     posters: 1,
   }, // целиком и полностью
   {
+    release: new Date("2018-10-05"),
+    publication: new Date("2020-02-25"),
+    format: "фильм",
+    grade: "B",
+    title: "Частная жизнь",
+    original: "Private Life",
+    kinopoisk: "https://www.kinopoisk.ru/film/1028104/",
+    director: [
+      {
+        name: "Тамара Дженкинс",
+      },
+    ],
+    cast: [
+      {
+        name: "Кэтрин Хан",
+      },
+      {
+        name: "Пол Джаматти",
+      },
+      {
+        name: "Кэйли Картер",
+      },
+    ],
+    description:
+      "Ричард и Рэйчел — супружеская пара из Нью-Йорка, которая стремится завести ребёнка.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 17,
+    posters: 1,
+  }, // частная жизнь
+  {
     release: new Date("2001-05-13"),
     publication: new Date("2024-08-11"),
     format: "фильм",
@@ -19933,6 +20288,9 @@ const films = [
         genre: "приключения",
       },
       { genre: "супергероика" },
+      {
+        genre: "marvel",
+      },
     ],
     screenshots: 14,
     posters: 1,
@@ -19986,6 +20344,9 @@ const films = [
         genre: "приключения",
       },
       { genre: "супергероика" },
+      {
+        genre: "marvel",
+      },
     ],
     screenshots: 22,
     posters: 2,
@@ -20033,6 +20394,9 @@ const films = [
         genre: "приключения",
       },
       { genre: "супергероика" },
+      {
+        genre: "marvel",
+      },
     ],
     screenshots: 26,
     posters: 2,
@@ -20077,6 +20441,9 @@ const films = [
         genre: "приключения",
       },
       { genre: "супергероика" },
+      {
+        genre: "marvel",
+      },
     ],
     screenshots: 27,
     posters: 2,
@@ -20124,6 +20491,9 @@ const films = [
         genre: "мультфильм",
       },
       { genre: "супергероика" },
+      {
+        genre: "marvel",
+      },
     ],
     screenshots: 66,
     posters: 2,
@@ -20174,6 +20544,9 @@ const films = [
         genre: "мультфильм",
       },
       { genre: "супергероика" },
+      {
+        genre: "marvel",
+      },
     ],
     screenshots: 69,
     posters: 3,
@@ -20298,6 +20671,9 @@ const films = [
       },
       {
         genre: "супергероика",
+      },
+      {
+        genre: "marvel",
       },
     ],
     screenshots: 14,
@@ -20796,6 +21172,9 @@ const films = [
       {
         genre: "комедия",
       },
+      {
+        genre: "marvel",
+      },
     ],
     screenshots: 21,
     posters: 2,
@@ -20825,6 +21204,9 @@ const films = [
     genres: [
       {
         genre: "мультфильм",
+      },
+      {
+        genre: "pixar",
       },
     ],
     screenshots: 14,
@@ -20963,6 +21345,11 @@ const filmsGenresMany = Array.from(films, ({ genres }) => genres);
 const filmsGenresAll = filmsGenresMany.flat();
 const filmsGenres = Array.from(filmsGenresAll, ({ genre }) => genre);
 const filmsGenresSet = new Set(filmsGenres.sort());
+const ruCollator = new Intl.Collator("ru-RU");
+const filmsGenresSortRu = [...filmsGenresSet].sort((a, b) =>
+  ruCollator.compare(a, b)
+);
+
 const navigationGenresTemplate = document.querySelector(
   "#navigation__genres-template"
 ).content;
@@ -21003,9 +21390,18 @@ addAnything(
 addAnything(
   navigationGenresTemplate,
   "navigation__genres__item",
-  filmsGenresSet,
+  filmsGenresSortRu,
   navigationGenres
 );
+
+document
+  .querySelectorAll(".navigation__genres__item")
+  .forEach(function (element) {
+    if (element.textContent.toLowerCase() == "dc") {
+      // element.style.textTransform = "uppercase";
+      element.style.display = "none";
+    }
+  });
 
 addAnything(
   navigationReleasesTemplate,
@@ -21031,6 +21427,13 @@ const GradeA = "https://img.icons8.com/fluency-systems-filled/96/a.png";
 const GradeB = "https://img.icons8.com/fluency-systems-filled/96/b.png";
 const GradeC = "https://img.icons8.com/fluency-systems-filled/96/c.png";
 const GradeD = "https://img.icons8.com/fluency-systems-filled/96/d.png";
+
+const MarvelLogo =
+  "https://upload.wikimedia.org/wikipedia/ru/thumb/9/95/Marve_Entertainmentl_Logo.png/250px-Marve_Entertainmentl_Logo.png";
+const PixarLogo =
+  "https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/1613495438818-408JDVSTB7NWSHVC20M7/logo.png?format=1500w";
+const DCLogo =
+  "https://upload.wikimedia.org/wikipedia/commons/7/71/DC_Comics_2024.svg";
 
 function defineGradeBlack(item, element) {
   if (item === "love") {
@@ -21533,6 +21936,8 @@ function addCard(item) {
     descriptionNames.classList.remove("main__description_is-opened");
     descriptionGrade.title = undefined;
     descriptionTitle.textContent = undefined;
+    descriptionTitle.classList.remove("main__description__title_is-studio");
+    descriptionTitle.style.backgroundImage = "url()";
   }
 
   function openCard() {
@@ -21608,6 +22013,28 @@ function addCard(item) {
   });
 
   const genreButtons = document.querySelectorAll(".navigation__genres__item");
+  function studio_or_not(item) {
+    if (
+      item.toLowerCase() == "pixar" ||
+      item.toLowerCase() == "marvel" ||
+      item.toLowerCase() == "dc"
+    ) {
+      descriptionTitle.classList.add("main__description__title_is-studio");
+      if (item.toLowerCase() == "pixar") {
+        descriptionTitle.classList.add("main__description__title_is-pixar");
+        descriptionTitle.style.backgroundImage = "url(" + PixarLogo + ")";
+      } else if (item.toLowerCase() == "marvel") {
+        descriptionTitle.classList.remove("main__description__title_is-pixar");
+        descriptionTitle.style.backgroundImage = "url(" + MarvelLogo + ")";
+      } else if (item.toLowerCase() == "dc") {
+        descriptionTitle.classList.remove("main__description__title_is-pixar");
+        descriptionTitle.style.backgroundImage = "url(" + DCLogo + ")";
+      }
+    } else {
+      descriptionTitle.classList.remove("main__description__title_is-studio");
+      descriptionTitle.style.backgroundImage = "url()";
+    }
+  }
   genreButtons.forEach(function (element) {
     element.addEventListener("click", function () {
       for (let i = 0; i < item.genres.length; i++) {
@@ -21624,7 +22051,10 @@ function addCard(item) {
             descriptionTitle.classList.add(
               "main__description__element_is-opened"
             );
+
             descriptionTitle.textContent = element.textContent;
+            studio_or_not(element.textContent);
+
             descriptionGrade.classList.remove(
               "main__description__element_is-opened"
             );
@@ -21641,7 +22071,10 @@ function addCard(item) {
             descriptionTitle.classList.add(
               "main__description__element_is-opened"
             );
+
             descriptionTitle.textContent = element.textContent;
+            studio_or_not(element.textContent);
+
             descriptionGrade.classList.remove(
               "main__description__element_is-opened"
             );
@@ -21680,6 +22113,10 @@ function addCard(item) {
             "main__description__element_is-opened"
           );
           descriptionTitle.textContent = element.textContent;
+          descriptionTitle.classList.remove(
+            "main__description__title_is-studio"
+          );
+          descriptionTitle.style.backgroundImage = "url()";
           descriptionGrade.classList.remove(
             "main__description__element_is-opened"
           );
@@ -21696,9 +22133,10 @@ function addCard(item) {
             "main__description__element_is-opened"
           );
           descriptionTitle.textContent = element.textContent;
-          descriptionGrade.classList.remove(
-            "main__description__element_is-opened"
+          descriptionTitle.classList.remove(
+            "main__description__title_is-studio"
           );
+          descriptionTitle.style.backgroundImage = "url()";
           descriptionGrade.title = undefined;
 
           openCard();
@@ -22007,14 +22445,15 @@ function deleteSortTitle() {
 
 // функция ПОКАЗА попапа фильма
 function showFilmCard(item) {
-  const filmHeader = popupFilm.querySelector(".film__header");
+  const filmPosters = popupFilm.querySelector(".film__posters");
+  const filmHeaderText = popupFilm.querySelector(".film__header__text");
 
-  filmHeader.classList.toggle("film__header_is-row-reverse");
-  filmHeader.classList.toggle("film__header_is-reverse");
+  filmPosters.classList.toggle("film__posters_is-row-reverse");
+  filmHeaderText.classList.toggle("film__header__text_is-row-reverse");
 
   const popupFilmCloseImg = document.querySelector(".popup__film__close__img");
 
-  if (filmHeader.classList.contains("film__header_is-reverse")) {
+  if (filmPosters.classList.contains("film__posters_is-row-reverse")) {
     popupFilmCloseImg.classList.remove("popup__film__close__img_is-reverse");
   } else {
     popupFilmCloseImg.classList.add("popup__film__close__img_is-reverse");
@@ -22035,7 +22474,6 @@ function showFilmCard(item) {
   const number__poster = item.posters;
 
   // ПОСТЕРЫ в попап
-  const filmPosters = document.querySelector(".film__posters");
   const filmPostersTemplate = document.querySelector(
     "#film__poster-template"
   ).content;

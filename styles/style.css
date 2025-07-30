@@ -30,6 +30,7 @@
   --circle: url(https://img.icons8.com/ios/100/circled.png);
   --filled-circle: url(https://img.icons8.com/ios-filled/100/FFFFFF/360-degrees.png);
   --grade-background: var(--circle);
+  --logo-pixar-invert: 0%;
 }
 
 body.dark-theme {
@@ -57,6 +58,7 @@ body.dark-theme {
   --popup-screenshot: rgba(0, 0, 0, 0.85);
   --background-image: #ccc;
   --grade-background: var(--filled-circle);
+  --logo-pixar-invert: 100%;
 }
 
 *,
@@ -860,6 +862,16 @@ body {
   display: none;
 }
 
+.main__description__title_is-studio {
+  color: transparent;
+  background: url() no-repeat left / contain;
+  inline-size: 300px;
+}
+
+.main__description__title_is-pixar {
+  filter: invert(var(--logo-pixar-invert));
+}
+
 .main__description__subtitle {
   position: absolute;
   top: 0;
@@ -1006,37 +1018,30 @@ body {
 
 .film__header {
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   overflow: hidden;
-}
-
-.film__header_is-row {
-  flex-direction: row;
-}
-
-.film__header_is-row-reverse {
-  flex-direction: row-reverse;
 }
 
 .film__posters {
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-column-start: 1;
+  grid-row-start: 1;
   background: var(--background-image);
   transition: all 0.5s;
-  inline-size: 50%;
-  block-size:100%;
+}
+
+.film__posters_is-row-reverse {
+  grid-column-start: 2;
 }
 
 .film__poster {
-  -webkit-object-fit: cover;
   object-fit: cover;
-  -webkit-object-position: center;
   object-position: center;
   opacity: 0;
   transition: opacity var(--images-opacity) ease-in-out;
-  -webkit-inline-size: 100%;
-  -webkit-block-size: 100%;
   inline-size: 100%;
   block-size: 100%;
 }
@@ -1048,6 +1053,8 @@ body {
 .film__header__text {
   display: flex;
   flex-direction: column;
+  grid-column-start: 2;
+  grid-row-start: 1;
   justify-content: center;
   align-items: center;
   margin: 55px auto;
@@ -1055,7 +1062,11 @@ body {
   font-family: var(--font-Imperial-Cheltenham);
   text-align: center;
   max-inline-size: 600px;
-  inline-size: calc(50% - 40px);
+  inline-size: calc(100% - 40px);
+}
+
+.film__header__text_is-row-reverse {
+  grid-column-start: 1;
 }
 
 .film__header__grade__wrapper,
@@ -1579,6 +1590,7 @@ body {
   }
 
   .film__header {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
