@@ -2274,6 +2274,46 @@ const films = [
     posters: 2,
   }, // ванда вижн
   {
+    release: new Date("2009-05-29"),
+    publication: new Date("2020-07-19"),
+    format: "фильм",
+    grade: "A+",
+    title: "Вверх",
+    original: "Up",
+    kinopoisk: "https://www.kinopoisk.ru/film/325381/",
+    director: [
+      {
+        name: "Пит Доктер",
+      },
+      {
+        name: "Боб Питерсон",
+      },
+    ],
+    cast: [
+      {
+        name: "Эдвард Эснер",
+      },
+      {
+        name: "Кристофер Пламмер",
+      },
+      {
+        name: "Джордан Нагаи",
+      },
+    ],
+    description:
+      "Ворчун Карл Фредриксен отправляется в волшебное путешествие в собственном доме.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+      {
+        genre: "pixar",
+      },
+    ],
+    screenshots: 15,
+    posters: 2,
+  }, // вверх
+  {
     release: new Date("2023-09-04"),
     publication: new Date("2024-08-19"),
     format: "фильм",
@@ -3346,6 +3386,55 @@ const films = [
     screenshots: 16,
     posters: 3,
   }, // двенадцать друзей оушена
+  {
+    release: new Date("2011-12-20"),
+    publication: new Date("2019-07-15"),
+    format: "фильм",
+    grade: "A+",
+    title: "Девушка с татуировкой дракона",
+    original: "The Girl with the Dragon Tattoo",
+    kinopoisk: "https://www.kinopoisk.ru/film/491724/",
+    director: [
+      {
+        name: "Дэвид Финчер",
+      },
+    ],
+    cast: [
+      {
+        name: "Дэниэл Крэйг",
+      },
+      {
+        name: "Руни Мара",
+      },
+      {
+        name: "Кристофер Пламмер",
+      },
+      {
+        name: "Стеллан Скарсгард",
+      },
+      {
+        name: "Робин Райт",
+      },
+    ],
+    description:
+      "Журналист и молодая хакерша занимаются расследованием убийства, которое произошло сорок лет назад.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "детектив",
+      },
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 14,
+    posters: 2,
+  }, // девушка с татуировкой дракона
   {
     release: new Date("2019-04-18"),
     publication: new Date("2024-03-04"),
@@ -4451,6 +4540,46 @@ const films = [
     posters: 1,
   }, // жизнь за год
   {
+    release: new Date("2012-11-21"),
+    publication: new Date("2019-01-20"),
+    format: "фильм",
+    grade: "A+",
+    title: "Жизнь Пи",
+    original: "Life of Pi",
+    kinopoisk: "https://www.kinopoisk.ru/film/158786/",
+    director: [
+      {
+        name: "Энг Ли",
+      },
+    ],
+    cast: [
+      {
+        name: "Сурадж Шарма",
+      },
+      {
+        name: "Ирфан Кхан",
+      },
+      {
+        name: "Табу",
+      },
+      {
+        name: "Рейф Сполл",
+      },
+    ],
+    description:
+      "Юноша после кораблекрушения путешествует с опасным бенгальским тигром.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 21,
+    posters: 3,
+  }, // жизнь пи
+  {
     release: new Date("2022-12-23"),
     publication: new Date("2023-04-30"),
     format: "фильм",
@@ -4773,6 +4902,52 @@ const films = [
     screenshots: 16,
     posters: 1,
   }, // зверопой 2
+  {
+    release: new Date("2016-03-04"),
+    publication: new Date("2020-03-08"),
+    format: "фильм",
+    grade: "love",
+    title: "Зверополис",
+    original: "Zootopia",
+    kinopoisk: "https://www.kinopoisk.ru/film/775276/",
+    director: [
+      {
+        name: "Байрон Ховард",
+      },
+      {
+        name: "Рич Мур",
+      },
+      {
+        name: "Джаред Буш",
+      },
+    ],
+    cast: [
+      {
+        name: "Джиннифер Гудвин",
+      },
+      {
+        name: "Джейсон Бейтман",
+      },
+      {
+        name: "Идрис Эльба",
+      },
+      {
+        name: "Дженни Слейт",
+      },
+      {
+        name: "Дж.К. Симмонс",
+      },
+    ],
+    description:
+      "В зверином мегаполисе маленькая зайка мечтает стать детективом.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 27,
+    posters: 2,
+  }, // зверополис
   {
     release: new Date("2020-11-20"),
     publication: new Date("2021-02-04"),
@@ -5425,6 +5600,43 @@ const films = [
     screenshots: 12,
     posters: 1,
   }, // капитан марвел 2
+  {
+    release: new Date("2010-06-11"),
+    publication: new Date("2020-03-28"),
+    format: "фильм",
+    grade: "B",
+    title: "Каратэ-пацан",
+    original: "The Karate Kid",
+    kinopoisk: "https://www.kinopoisk.ru/film/412162/",
+    director: [
+      {
+        name: "Харольд Цварт",
+      },
+    ],
+    cast: [
+      {
+        name: "Джеки Чан",
+      },
+      {
+        name: "Джейден Смит",
+      },
+      {
+        name: "Тараджи П. Хенсон",
+      },
+    ],
+    description:
+      "Мать-одиночка переезжает в Китай из-за работы, и её сын учится кунг-фу у местного мастера.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "спорт",
+      },
+    ],
+    screenshots: 21,
+    posters: 2,
+  }, // каратэ-пацан
   {
     release: new Date("2021-02-12"),
     publication: new Date("2021-09-02"),
@@ -10039,6 +10251,70 @@ const films = [
     posters: 2,
   }, // мост через озеро
   {
+    release: new Date("2012-05-04"),
+    publication: new Date("2021-03-21"),
+    format: "фильм",
+    grade: "A+",
+    title: "Мстители",
+    original: "The Avengers",
+    kinopoisk: "https://www.kinopoisk.ru/film/263531/",
+    director: [
+      {
+        name: "Джосс Уидон",
+      },
+    ],
+    cast: [
+      {
+        name: "Роберт Дауни мл.",
+      },
+      {
+        name: "Крис Эванс",
+      },
+      {
+        name: "Марк Руффало",
+      },
+      {
+        name: "Крис Хемсворт",
+      },
+      {
+        name: "Скарлетт Йоханссон",
+      },
+      {
+        name: "Джереми Реннер",
+      },
+      {
+        name: "Том Хиддлстон",
+      },
+      {
+        name: "Сэмюэл Л. Джексон",
+      },
+      {
+        name: "Коби Смолдерс",
+      },
+      {
+        name: "Стеллан Скарсгард",
+      },
+    ],
+    description:
+      "Герои Земли должны объединиться, чтобы остановить Локи и его армию.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "супергероика",
+      },
+      {
+        genre: "marvel",
+      },
+    ],
+    screenshots: 27,
+    posters: 2,
+  }, // мстители
+  {
     release: new Date("2018-04-27"),
     publication: new Date("2025-02-28"),
     format: "фильм",
@@ -10452,6 +10728,58 @@ const films = [
     screenshots: 11,
     posters: 1,
   }, // на грани
+  {
+    release: new Date("2008-09-26"),
+    publication: new Date("2020-08-03"),
+    format: "фильм",
+    grade: "A+",
+    title: "На крючке",
+    original: "Eagle Eye",
+    kinopoisk: "https://www.kinopoisk.ru/film/387477/",
+    director: [
+      {
+        name: "Ди Джей Карузо",
+      },
+    ],
+    cast: [
+      {
+        name: "Шайа ЛаБаф",
+      },
+      {
+        name: "Мишель Монахэн",
+      },
+      {
+        name: "Билли Боб Торнтон",
+      },
+      {
+        name: "Розарио Доусон",
+      },
+      {
+        name: "Кэмерон Бойс",
+      },
+      {
+        name: "Майкл Чиклис",
+      },
+      {
+        name: "Энтони Маки",
+      },
+    ],
+    description:
+      "Незнакомцы Джерри и Рэйчел становятся заложниками голоса из телефона.",
+    genres: [
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "детектив",
+      },
+      {
+        genre: "триллер",
+      },
+    ],
+    screenshots: 21,
+    posters: 2,
+  }, // на крючке
   {
     release: new Date("2022-05-13"),
     publication: new Date("2022-05-24"),
@@ -11121,6 +11449,46 @@ const films = [
     screenshots: 14,
     posters: 2,
   }, // нежный бар
+  {
+    release: new Date("2012-04-27"),
+    publication: new Date("2021-03-27"),
+    format: "фильм",
+    grade: "C",
+    title: "Немножко женаты",
+    original: "The Five-Year Engagement",
+    kinopoisk: "https://www.kinopoisk.ru/film/462508/",
+    director: [
+      {
+        name: "Николас Столлер",
+      },
+    ],
+    cast: [
+      {
+        name: "Джейсон Сигел",
+      },
+      {
+        name: "Эмили Блант",
+      },
+      {
+        name: "Крис Пратт",
+      },
+      {
+        name: "Элисон Бри",
+      },
+    ],
+    description:
+      "Том делает предложение Вайолет через год, но неожиданные события мешают их свадьбе.",
+    genres: [
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 12,
+    posters: 2,
+  }, // немножко женаты
   {
     release: new Date("2019-12-25"),
     publication: new Date("2020-02-10"),
@@ -14935,6 +15303,52 @@ const films = [
     posters: 2,
   }, // рами 1-2
   {
+    release: new Date("2011-03-04"),
+    publication: new Date("2019-05-31"),
+    format: "фильм",
+    grade: "A+",
+    title: "Ранго",
+    original: "Rango",
+    kinopoisk: "https://www.kinopoisk.ru/film/426053/",
+    director: [
+      {
+        name: "Гор Вербински",
+      },
+    ],
+    cast: [
+      {
+        name: "Джонни Депп",
+      },
+      {
+        name: "Айла Фишер",
+      },
+      {
+        name: "Эбигейл Бреслин",
+      },
+      {
+        name: "Альфред Молина",
+      },
+      {
+        name: "Билл Найи",
+      },
+      {
+        name: "Стивен Рут",
+      },
+    ],
+    description:
+      "Ранго — хамелеон, случайно попавший в городок Грязь на Диком Западе.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+      {
+        genre: "вестерн",
+      },
+    ],
+    screenshots: 12,
+    posters: 1,
+  }, // ранго
+  {
     release: new Date("2023-08-06"),
     publication: new Date("2024-01-17"),
     format: "сериал",
@@ -15285,6 +15699,64 @@ const films = [
     screenshots: 310,
     posters: 1,
   }, // рипли
+  {
+    release: new Date("2008-10-31"),
+    publication: new Date("2020-02-15"),
+    format: "фильм",
+    grade: "A+",
+    title: "Рок-н-рольщик",
+    original: "RocknRolla",
+    kinopoisk: "https://www.kinopoisk.ru/film/378140/",
+    director: [
+      {
+        name: "Гай Ричи",
+      },
+    ],
+    cast: [
+      {
+        name: "Джерард Батлер",
+      },
+      {
+        name: "Том Уилкинсон",
+      },
+      {
+        name: "Тандиве Ньютон",
+      },
+      {
+        name: "Марк Стронг",
+      },
+      {
+        name: "Идрис Эльба",
+      },
+      {
+        name: "Том Харди",
+      },
+      {
+        name: "Тоби Кеббелл",
+      },
+      {
+        name: "Джереми Пивен",
+      },
+      {
+        name: "Лудакрис",
+      },
+    ],
+    description:
+      "Мафиози проводит сделку с землёй, вызывая борьбу за ресурсы и миллионы долларов между лондонскими преступниками.",
+    genres: [
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 27,
+    posters: 1,
+  }, // рок-н-рольщик
   {
     release: new Date("2021-12-03"),
     publication: new Date("2022-03-28"),
@@ -15961,6 +16433,52 @@ const films = [
     screenshots: 25,
     posters: 2,
   }, // семь
+  {
+    release: new Date("2012-10-12"),
+    publication: new Date("2019-07-16"),
+    format: "фильм",
+    grade: "A+",
+    title: "Семь психопатов",
+    original: "Seven Psychopaths",
+    kinopoisk: "https://www.kinopoisk.ru/film/586584/",
+    director: [
+      {
+        name: "Мартин Макдона",
+      },
+    ],
+    cast: [
+      {
+        name: "Колин Фаррелл",
+      },
+      {
+        name: "Сэм Рокуэлл",
+      },
+      {
+        name: "Кристофер Уокен",
+      },
+      {
+        name: "Вуди Харрельсон",
+      },
+      {
+        name: "Эбби Корниш",
+      },
+      {
+        name: "Ольга Куриленко",
+      },
+    ],
+    description:
+      "Мошенники похищают пса опасного бандита, который готов на все, чтобы вернуть питомца.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 15,
+    posters: 1,
+  }, // семь психопатов
   {
     release: new Date("2018-10-26"),
     publication: new Date("2019-05-26"),
@@ -16824,6 +17342,64 @@ const films = [
     screenshots: 13,
     posters: 2,
   }, // сокровище амазонки
+  {
+    release: new Date("2008-08-13"),
+    publication: new Date("2020-04-16"),
+    format: "фильм",
+    grade: "A",
+    title: "Солдаты неудачи",
+    original: "Tropic Thunder",
+    kinopoisk: "https://www.kinopoisk.ru/film/278208/",
+    director: [
+      {
+        name: "Бен Стиллер",
+      },
+    ],
+    cast: [
+      {
+        name: "Бен Стиллер",
+      },
+      {
+        name: "Роберт Дауни мл.",
+      },
+      {
+        name: "Джек Блэк",
+      },
+      {
+        name: "Джей Барушель",
+      },
+      {
+        name: "Брэндон Т. Джексон",
+      },
+      {
+        name: "Том Круз",
+      },
+      {
+        name: "Дэнни Макбрайд",
+      },
+      {
+        name: "Ник Нолти",
+      },
+      {
+        name: "Мэттью Макконахи",
+      },
+    ],
+    description:
+      "Из-за недоразумений актёры военной ленты вынуждены стать реальными солдатами вместо съёмок.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "военный",
+      },
+      {
+        genre: "боевик",
+      },
+    ],
+    screenshots: 11,
+    posters: 2,
+  }, // солдаты неудачи
   {
     release: new Date("2022-10-21"),
     publication: new Date("2023-04-28"),
@@ -17726,6 +18302,70 @@ const films = [
     posters: 1,
   }, // старикам тут не место
   {
+    release: new Date("2005-05-06"),
+    publication: new Date("2020-04-14"),
+    format: "фильм",
+    grade: "B",
+    title: "Столкновение",
+    original: "Crash",
+    kinopoisk: "https://www.kinopoisk.ru/film/61297/",
+    director: [
+      {
+        name: "Пол Хаггис",
+      },
+    ],
+    cast: [
+      {
+        name: "Дон Чидл",
+      },
+      {
+        name: "Мэтт Диллон",
+      },
+      {
+        name: "Райан Филипп",
+      },
+      {
+        name: "Терренс Ховард",
+      },
+      {
+        name: "Сандра Буллок",
+      },
+      {
+        name: "Тандиве Ньютон",
+      },
+      {
+        name: "Брендан Фрейзер",
+      },
+      {
+        name: "Майкл Пенья",
+      },
+      {
+        name: "Лудакрис",
+      },
+      {
+        name: "Дженнифер Эспозито",
+      },
+      {
+        name: "Лоренц Тейт",
+      },
+    ],
+    description:
+      "Сборник взаимосвязанных историй о расовых конфликтах в Лос-Анджелесе.",
+    genres: [
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 14,
+    posters: 3,
+  }, // столкновение
+  {
     release: new Date("2023-05-05"),
     publication: new Date("2023-07-09"),
     format: "фильм",
@@ -18535,6 +19175,58 @@ const films = [
     screenshots: 35,
     posters: 1,
   }, // темная материя
+  {
+    release: new Date("2008-07-18"),
+    publication: new Date("2019-10-05"),
+    format: "фильм",
+    grade: "A",
+    title: "Темный рыцарь",
+    original: "The Dark Knight / Тёмный рыцарь",
+    kinopoisk: "https://www.kinopoisk.ru/film/111543/",
+    director: [
+      {
+        name: "Кристофер Нолан",
+      },
+    ],
+    cast: [
+      {
+        name: "Кристиан Бэйл",
+      },
+      {
+        name: "Хит Леджер",
+      },
+      {
+        name: "Аарон Экхарт",
+      },
+      {
+        name: "Мэгги Джилленхол",
+      },
+      {
+        name: "Гари Олдман",
+      },
+      {
+        name: "Майкл Кейн",
+      },
+      {
+        name: "Морган Фриман",
+      },
+    ],
+    description:
+      "Джокер терроризирует Готэм, пытаясь вынудить Бэтмена раскрыть свою личность.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 12,
+    posters: 1,
+  }, // темный рыцарь
   {
     release: new Date("2023-01-27"),
     publication: new Date("2023-04-05"),
@@ -20469,6 +21161,55 @@ const films = [
     posters: 1,
   }, // хулиганы и ботаны 1
   {
+    release: new Date("2008-07-02"),
+    publication: new Date("2020-03-15"),
+    format: "фильм",
+    grade: "A+",
+    title: "Хэнкок",
+    original: "Hancock",
+    kinopoisk: "https://www.kinopoisk.ru/film/102151/",
+    director: [
+      {
+        name: "Питер Берг",
+      },
+    ],
+    cast: [
+      {
+        name: "Уилл Смит",
+      },
+      {
+        name: "Джейсон Бейтман",
+      },
+      {
+        name: "Шарлиз Терон",
+      },
+      {
+        name: "Эдди Марсан",
+      },
+    ],
+    description:
+      "Хэнкок — герой с суперспособностями, не осознающий ответственности. Спасает людей, но вызывает разрушения.",
+    genres: [
+      {
+        genre: "фэнтези",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "супергероика",
+      },
+      {
+        genre: "боевик",
+      },
+    ],
+    screenshots: 15,
+    posters: 1,
+  }, // хэнкок
+  {
     release: new Date("2022-11-23"),
     publication: new Date("2022-12-25"),
     format: "фильм",
@@ -20681,6 +21422,56 @@ const films = [
     screenshots: 14,
     posters: 1,
   }, // человек-паук 2
+  {
+    release: new Date("2007-05-04"),
+    publication: new Date("2020-06-19"),
+    format: "фильм",
+    grade: "A+",
+    title: "Человек-паук 3: Враг в отражении",
+    original: "Spider-Man 3",
+    kinopoisk: "https://www.kinopoisk.ru/film/82441/",
+    director: [
+      {
+        name: "Сэм Рэйми",
+      },
+    ],
+    cast: [
+      {
+        name: "Тоби Магуайр",
+      },
+      {
+        name: "Кирстен Данст",
+      },
+      {
+        name: "Джеймс Франко",
+      },
+      {
+        name: "Томас Хейден Чёрч",
+      },
+      {
+        name: "Тофер Грейс",
+      },
+      {
+        name: "Брайс Даллас Ховард",
+      },
+    ],
+    description:
+      "Чёрное существо из другого мира вызывает в Питере Паркер внутреннюю борьбу. Он сражается с злодеями и соблазнами.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "приключения",
+      },
+      { genre: "супергероика" },
+      {
+        genre: "marvel",
+      },
+    ],
+    screenshots: 13,
+    posters: 2,
+  }, // человек-паук 3: враг в отражении
   {
     release: new Date("2021-12-17"),
     publication: new Date("2023-07-24"),
@@ -21512,6 +22303,58 @@ const films = [
     screenshots: 17,
     posters: 2,
   }, // эрнест и селестина
+  {
+    release: new Date("2011-07-29"),
+    publication: new Date("2022-08-02"),
+    format: "фильм",
+    grade: "B",
+    title: "Эта дурацкая любовь",
+    original: "Crazy, Stupid, Love.",
+    kinopoisk: "https://www.kinopoisk.ru/film/493992/",
+    director: [
+      {
+        name: "Гленн Фикарра",
+      },
+      {
+        name: "Джон Рекуа",
+      },
+    ],
+    cast: [
+      {
+        name: "Стив Карелл",
+      },
+      {
+        name: "Райан Гослинг",
+      },
+      {
+        name: "Джулианна Мур",
+      },
+      {
+        name: "Эмма Стоун",
+      },
+      {
+        name: "Лио Типтон",
+      },
+      {
+        name: "Кевин Бейкон",
+      },
+      {
+        name: "Мариса Томей",
+      },
+    ],
+    description:
+      "Развод меняет жизнь мужчины. Он восстанавливает мужественность, завоевывая женщин в барах.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "мелодрама",
+      },
+    ],
+    screenshots: 44,
+    posters: 3,
+  }, // эта дурацкая любовь
   {
     release: new Date("2024-09-18"),
     publication: new Date("2024-11-03"),
