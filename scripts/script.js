@@ -22545,6 +22545,60 @@ function name_for_link(element) {
   return names;
 }
 
+function translit(word) {
+  var converter = {
+    а: "a",
+    б: "b",
+    в: "v",
+    г: "g",
+    д: "d",
+    е: "e",
+    ё: "e",
+    ж: "zh",
+    з: "z",
+    и: "i",
+    й: "y",
+    к: "k",
+    л: "l",
+    м: "m",
+    н: "n",
+    о: "o",
+    п: "p",
+    р: "r",
+    с: "s",
+    т: "t",
+    у: "u",
+    ф: "f",
+    х: "h",
+    ц: "c",
+    ч: "ch",
+    ш: "sh",
+    щ: "sch",
+    ь: "",
+    ы: "y",
+    ъ: "",
+    э: "e",
+    ю: "yu",
+    я: "ya",
+  };
+
+  word = word.toLowerCase();
+
+  var answer = "";
+  for (var i = 0; i < word.length; ++i) {
+    if (converter[word[i]] == undefined) {
+      answer += word[i];
+    } else {
+      answer += converter[word[i]];
+    }
+  }
+
+  answer = answer.replace(/[^-0-9a-z]/g, "-");
+  answer = answer.replace(/[-]+/g, "_");
+  answer = answer.replace(/^\-|-$/g, "");
+  return answer;
+}
+
 // константа ПОПАПА ФИЛЬМА
 const popupFilm = document.querySelector(".popup__film");
 const popupScreenshot = document.querySelector(".popup__screenshot");
@@ -22578,7 +22632,6 @@ const ruCollator = new Intl.Collator("ru-RU");
 const filmsGenresSortRu = [...filmsGenresSet].sort((a, b) =>
   ruCollator.compare(a, b)
 );
-
 const navigationGenresTemplate = document.querySelector(
   "#navigation__genres-template"
 ).content;
@@ -22608,6 +22661,32 @@ const filmsCastArray = Array.from(filmsCastAll, ({ name }) => name);
 const filmsCastSet = new Set(filmsCastArray.sort());
 const filmCastTemplate = document.querySelector("#film__cast-template").content;
 const filmCast = document.querySelector(".film__cast");
+// ТОЛЬКО имена режиссеров из ФИЛЬМОВ
+let onlyFilms = films.filter((elem) => {
+  return elem.format == "фильм";
+});
+const onlyFilmsDirector = Array.from(onlyFilms, ({ director }) => director);
+const onlyFilmsDirectorAll = onlyFilmsDirector.flat();
+const onlyFilmsDirectorArray = Array.from(
+  onlyFilmsDirectorAll,
+  ({ name }) => name
+);
+const onlyFilmsDirectorSort = Array.from(
+  new Set(onlyFilmsDirectorArray.sort())
+);
+// ТОЛЬКО имена режиссеров из СЕРИАЛОВ
+let onlySerials = films.filter((elem) => {
+  return elem.format == "сериал";
+});
+const onlySerialsDirector = Array.from(onlySerials, ({ director }) => director);
+const onlySerialsDirectorAll = onlySerialsDirector.flat();
+const onlySerialsDirectorArray = Array.from(
+  onlySerialsDirectorAll,
+  ({ name }) => name
+);
+const onlySerialsDirectorSort = Array.from(
+  new Set(onlySerialsDirectorArray.sort())
+);
 
 addAnything(
   navigationFormatTemplate,
@@ -23156,13 +23235,16 @@ function addCard(item) {
   const descriptionGrade = document.querySelector(".main__description__grade");
   const descriptionNames = document.querySelector(".main__description__names");
   const descriptionJob = document.querySelector(".main__description__job");
+  const descriptionPhoto = document.querySelector(
+    ".main__description__photo_img"
+  );
   const descriptionName = document.querySelector(".main__description__name");
 
   function removeNavigationTitle() {
     descriptionBlock.classList.remove("main__description_is-opened");
     descriptionElements.classList.remove("main__description_is-opened");
     descriptionFormat.classList.remove("main__description__element_is-opened");
-    descriptionNames.classList.remove("main__description_is-opened");
+    descriptionNames.classList.remove("main__description__names_is-opened");
     descriptionGrade.title = undefined;
     descriptionTitle.textContent = undefined;
     descriptionTitle.classList.remove("main__description__title_is-studio");
@@ -23189,7 +23271,9 @@ function addCard(item) {
         if (
           descriptionElements.classList.contains("main__description_is-opened")
         ) {
-          descriptionNames.classList.remove("main__description_is-opened");
+          descriptionNames.classList.remove(
+            "main__description__names_is-opened"
+          );
           descriptionBlock.classList.add("main__description_is-opened");
           descriptionFormat.classList.add(
             "main__description__element_is-opened"
@@ -23222,7 +23306,9 @@ function addCard(item) {
             }
           }
         } else {
-          descriptionNames.classList.remove("main__description_is-opened");
+          descriptionNames.classList.remove(
+            "main__description__names_is-opened"
+          );
           descriptionBlock.classList.add("main__description_is-opened");
           descriptionFormat.classList.add(
             "main__description__element_is-opened"
@@ -23273,7 +23359,9 @@ function addCard(item) {
               "main__description__element_is-opened"
             )
           ) {
-            descriptionNames.classList.remove("main__description_is-opened");
+            descriptionNames.classList.remove(
+              "main__description__names_is-opened"
+            );
             descriptionBlock.classList.add("main__description_is-opened");
             descriptionElements.classList.add("main__description_is-opened");
             descriptionFormat.classList.add("main__description__subtitle");
@@ -23294,7 +23382,9 @@ function addCard(item) {
               break;
             }
           } else {
-            descriptionNames.classList.remove("main__description_is-opened");
+            descriptionNames.classList.remove(
+              "main__description__names_is-opened"
+            );
             descriptionBlock.classList.add("main__description_is-opened");
             descriptionElements.classList.add("main__description_is-opened");
             descriptionTitle.classList.add(
@@ -23334,7 +23424,9 @@ function addCard(item) {
             "main__description__element_is-opened"
           )
         ) {
-          descriptionNames.classList.remove("main__description_is-opened");
+          descriptionNames.classList.remove(
+            "main__description__names_is-opened"
+          );
           descriptionBlock.classList.add("main__description_is-opened");
           descriptionElements.classList.add("main__description_is-opened");
           descriptionFormat.classList.add("main__description__subtitle");
@@ -23355,7 +23447,9 @@ function addCard(item) {
             openCard();
           }
         } else {
-          descriptionNames.classList.remove("main__description_is-opened");
+          descriptionNames.classList.remove(
+            "main__description__names_is-opened"
+          );
           descriptionBlock.classList.add("main__description_is-opened");
           descriptionElements.classList.add("main__description_is-opened");
           descriptionTitle.classList.add(
@@ -23386,7 +23480,9 @@ function addCard(item) {
             "main__description__element_is-opened"
           )
         ) {
-          descriptionNames.classList.remove("main__description_is-opened");
+          descriptionNames.classList.remove(
+            "main__description__names_is-opened"
+          );
           descriptionBlock.classList.add("main__description_is-opened");
           descriptionElements.classList.add("main__description_is-opened");
           descriptionFormat.classList.add("main__description__subtitle");
@@ -23411,7 +23507,9 @@ function addCard(item) {
             openCard();
           }
         } else {
-          descriptionNames.classList.remove("main__description_is-opened");
+          descriptionNames.classList.remove(
+            "main__description__names_is-opened"
+          );
           descriptionBlock.classList.add("main__description_is-opened");
           descriptionElements.classList.add("main__description_is-opened");
           descriptionTitle.classList.remove(
@@ -23447,7 +23545,7 @@ function addCard(item) {
   });
 
   function sorting_by_year(element) {
-    descriptionNames.classList.remove("main__description_is-opened");
+    descriptionNames.classList.remove("main__description__names_is-opened");
     descriptionBlock.classList.add("main__description_is-opened");
     descriptionElements.classList.add("main__description_is-opened");
     descriptionFormat.classList.remove("main__description__element_is-opened");
@@ -23507,7 +23605,7 @@ function addCard(item) {
       ".film__header__grade"
     );
     if (garde_in_film_page.title == item.grade) {
-      descriptionNames.classList.remove("main__description_is-opened");
+      descriptionNames.classList.remove("main__description__names_is-opened");
       descriptionBlock.classList.add("main__description_is-opened");
       descriptionElements.classList.add("main__description_is-opened");
       descriptionFormat.classList.remove(
@@ -23544,8 +23642,24 @@ function addCard(item) {
             "main__description__element_is-opened"
           );
           descriptionGrade.title = undefined;
-          descriptionNames.classList.add("main__description_is-opened");
+          descriptionNames.classList.add("main__description__names_is-opened");
           descriptionJob.textContent = "В главных ролях";
+          descriptionPhoto.src =
+            location_of_the_images +
+            "persons/" +
+            translit(element.textContent) +
+            ".png";
+          descriptionPhoto.alt = element.textContent;
+
+          descriptionPhoto.addEventListener("load", function () {
+            descriptionPhoto.style.opacity = "1";
+          });
+          descriptionPhoto.onerror = function () {
+            descriptionPhoto.closest(
+              ".main__description__photo"
+            ).style.display = "none";
+          };
+
           descriptionName.textContent = element.textContent;
 
           openCard();
@@ -23571,12 +23685,33 @@ function addCard(item) {
             "main__description__element_is-opened"
           );
           descriptionGrade.title = undefined;
-          descriptionNames.classList.add("main__description_is-opened");
-          if (item.format == "фильм") {
+          descriptionNames.classList.add("main__description__names_is-opened");
+          if (
+            onlyFilmsDirectorSort.includes(element.textContent) &&
+            onlySerialsDirectorSort.includes(element.textContent)
+          ) {
+            descriptionJob.textContent = "Режиссер/Создатель";
+          } else if (onlyFilmsDirectorSort.includes(element.textContent)) {
             descriptionJob.textContent = "Режиссер";
-          } else {
+          } else if (onlySerialsDirectorSort.includes(element.textContent)) {
             descriptionJob.textContent = "Создатель";
           }
+          descriptionPhoto.src =
+            location_of_the_images +
+            "persons/" +
+            translit(element.textContent) +
+            ".png";
+          descriptionPhoto.alt = element.textContent;
+
+          descriptionPhoto.addEventListener("load", function () {
+            descriptionPhoto.style.opacity = "1";
+          });
+          descriptionPhoto.onerror = function () {
+            descriptionPhoto.closest(
+              ".main__description__photo"
+            ).style.display = "none";
+          };
+
           descriptionName.textContent = element.textContent;
 
           openCard();
@@ -23674,6 +23809,8 @@ function deleteSortTitle() {
 
 // функция ПОКАЗА попапа фильма
 function showFilmCard(item) {
+  document.querySelector(".main__description__photo").style.display = "block";
+
   const filmPosters = popupFilm.querySelector(".film__posters");
   const filmHeaderText = popupFilm.querySelector(".film__header__text");
 
@@ -24238,3 +24375,15 @@ function total_number_of_films_and_serials() {
 }
 
 // total_number_of_films_and_serials();
+
+function get_a_persons_name(element) {
+  const persons_Old = Array.from(filmsDirectorSet).concat(
+    Array.from(filmsCastSet)
+  );
+  for (let i = 0; i < 1; i++) {
+    console.log(persons_Old[element], translit(persons_Old[element]));
+  }
+}
+
+// const nameNumber = 9
+// get_a_persons_name(nameNumber)

@@ -905,10 +905,18 @@ body {
 
 .main__description__names {
   display: none;
+  grid-template-columns: auto 1fr;
+  padding: 0 0 34px;
+  font-family: var(--font-Imperial-Cheltenham);
+  text-transform: none;
 }
 
 .main__description_is-opened {
   display: flex;
+}
+
+.main__description__names_is-opened {
+  display: grid;
 }
 
 .main__description__element_is-opened {
@@ -917,6 +925,43 @@ body {
 
 .main__description__format_is-marked::after {
   content: "ы";
+}
+
+.main__description__job {
+  grid-column-start: 2;
+  border: 1px solid tomato;
+  color: var(--main-text);
+  font-weight: 200;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.main__description__photo {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  align-self: end;
+  margin-inline-end: 26px;
+  border: 1px solid tomato;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #e2e0e1;
+  inline-size: 100px;
+  aspect-ratio: 1/1;
+}
+
+.main__description__photo_img {
+  opacity: 0;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.main__description__name {
+  grid-column-start: 2;
+  margin: 20px 0;
+  border: 1px solid tomato;
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 2.75rem;
 }
 
 .main__list {
@@ -1363,6 +1408,12 @@ body {
   opacity: 0;
 }
 
+@media screen and (max-width: 1149px) {
+  .main__description__photo {
+    inline-size: 85px;
+  }
+}
+
 @media screen and (max-width: 1023px) {
   .header {
     padding: 8px 15px 3px;
@@ -1710,6 +1761,34 @@ body {
 
   .main__description__grade_is-loved {
     padding: 0;
+  }
+
+  .main__description__names {
+    flex-direction: column;
+    padding: 0 0 34px;
+  }
+
+  .main__description__names_is-opened {
+    display: flex;
+  }
+
+  .main__description__job {
+    margin-block-end: 28px;
+    font-size: 1.4375rem;
+    line-height: 1.875rem;
+  }
+
+  .main__description__photo {
+    align-self: center;
+    margin: 0 0 20px;
+    inline-size: 100px;
+  }
+
+  .main__description__name {
+    margin: 0;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    text-align: center;
   }
 
   .main__sort {
