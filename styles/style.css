@@ -906,7 +906,7 @@ body {
 .main__description__names {
   display: none;
   grid-template-columns: auto 1fr;
-  padding: 0 0 34px;
+  padding: 0 0 30px;
   font-family: var(--font-Imperial-Cheltenham);
   text-transform: none;
 }
@@ -1762,7 +1762,7 @@ body {
 
   .main__description__names {
     flex-direction: column;
-    padding: 0 0 34px;
+    padding: 0 0 28px;
   }
 
   .main__description__names_is-opened {
@@ -1770,7 +1770,7 @@ body {
   }
 
   .main__description__job {
-    margin-block-end: 28px;
+    margin-block-end: 20px;
     font-size: 1.4375rem;
     line-height: 1.875rem;
   }
