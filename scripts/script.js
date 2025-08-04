@@ -4366,9 +4366,6 @@ const films = [
         name: "Гарри Стайлс",
       },
       {
-        name: "Анайрин Барнард",
-      },
-      {
         name: "Барри Кеоган",
       },
       {
@@ -7692,9 +7689,6 @@ const films = [
       },
       {
         name: "Нив Кэмпбелл",
-      },
-      {
-        name: "Беки Ньютон",
       },
       {
         name: "Энгус Сэмпсон",
@@ -23631,6 +23625,31 @@ function addCard(item) {
     }
   });
 
+  function personsPhoto(element) {
+    descriptionPhoto.src =
+      location_of_the_images +
+      "persons/" +
+      translit(element.textContent) +
+      ".png";
+
+    if (descriptionPhoto.src.includes("_dead")) {
+      descriptionPhoto.style.filter = "grayscale(100%)";
+    } else {
+      descriptionPhoto.style.filter = "grayscale(0%)";
+    }
+
+    descriptionPhoto.alt = element.textContent;
+
+    descriptionPhoto.addEventListener("load", function () {
+      descriptionPhoto.style.opacity = "1";
+    });
+
+    descriptionPhoto.onerror = function () {
+      descriptionPhoto.closest(".main__description__photo").style.display =
+        "none";
+    };
+  }
+
   const castButtons = document.querySelectorAll(".film__cast__name");
   castButtons.forEach(function (element) {
     element.addEventListener("click", function () {
@@ -23644,21 +23663,8 @@ function addCard(item) {
           descriptionGrade.title = undefined;
           descriptionNames.classList.add("main__description__names_is-opened");
           descriptionJob.textContent = "В главных ролях";
-          descriptionPhoto.src =
-            location_of_the_images +
-            "persons/" +
-            translit(element.textContent) +
-            ".png";
-          descriptionPhoto.alt = element.textContent;
 
-          descriptionPhoto.addEventListener("load", function () {
-            descriptionPhoto.style.opacity = "1";
-          });
-          descriptionPhoto.onerror = function () {
-            descriptionPhoto.closest(
-              ".main__description__photo"
-            ).style.display = "none";
-          };
+          personsPhoto(element);
 
           descriptionName.textContent = element.textContent;
 
@@ -23696,21 +23702,8 @@ function addCard(item) {
           } else if (onlySerialsDirectorSort.includes(element.textContent)) {
             descriptionJob.textContent = "Создатель";
           }
-          descriptionPhoto.src =
-            location_of_the_images +
-            "persons/" +
-            translit(element.textContent) +
-            ".png";
-          descriptionPhoto.alt = element.textContent;
 
-          descriptionPhoto.addEventListener("load", function () {
-            descriptionPhoto.style.opacity = "1";
-          });
-          descriptionPhoto.onerror = function () {
-            descriptionPhoto.closest(
-              ".main__description__photo"
-            ).style.display = "none";
-          };
+          personsPhoto(element);
 
           descriptionName.textContent = element.textContent;
 
@@ -24377,14 +24370,14 @@ function total_number_of_films_and_serials() {
 
 // total_number_of_films_and_serials();
 
-function get_a_persons_name(element) {
+function get_a_persons_name() {
   const persons_Old = Array.from(filmsDirectorSet).concat(
     Array.from(filmsCastSet)
   );
-  for (let i = 0; i < 1; i++) {
-    console.log(persons_Old[element], translit(persons_Old[element]));
+  const persons_OldSort = persons_Old.sort().slice(50, 100);
+  for (let i = 0; i < persons_OldSort.length; i++) {
+    console.log(persons_OldSort[i], translit(persons_OldSort[i]));
   }
 }
 
-// const nameNumber = 9
-// get_a_persons_name(nameNumber)
+// get_a_persons_name()
