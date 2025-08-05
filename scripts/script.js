@@ -24035,7 +24035,6 @@ function deleteSortTitle() {
 // функция ПОКАЗА попапа фильма
 function showFilmCard(item) {
   document.querySelector(".main__description__photo").style.display = "block";
-  document.querySelector(".main__description__photo_img").style.opacity = "0";
 
   const filmPosters = popupFilm.querySelector(".film__posters");
   const filmHeaderText = popupFilm.querySelector(".film__header__text");
