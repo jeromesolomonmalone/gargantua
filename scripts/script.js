@@ -245,6 +245,9 @@ const films = [
       {
         name: "Уолтон Гоггинс",
       },
+      {
+        name: "Мойзес Ариас",
+      },
     ],
     description:
       "В 2296 году, более 200 лет спустя после ядерной войны, потомки привилегированных и богатых живут в автономных благоустроенных бункерах, а остальное человечество выживает в жёстких условиях.",
@@ -4871,9 +4874,6 @@ const films = [
         name: "Тори Келли",
       },
       {
-        name: "Боно",
-      },
-      {
         name: "Холзи",
       },
       {
@@ -6478,6 +6478,52 @@ const films = [
     posters: 1,
   }, // королевство полной луны
   {
+    release: new Date("2013-05-31"),
+    publication: new Date("2020-01-28"),
+    format: "фильм",
+    grade: "B",
+    title: "Короли лета",
+    original: "The Kings of Summer",
+    kinopoisk: "https://www.kinopoisk.ru/film/684618/",
+    director: [
+      {
+        name: "Джордан Вот-Робертс",
+      },
+    ],
+    cast: [
+      {
+        name: "Ник Робинсон",
+      },
+      {
+        name: "Гэбриел Бассо",
+      },
+      {
+        name: "Мойзес Ариас",
+      },
+      {
+        name: "Ник Офферман",
+      },
+      {
+        name: "Эрин Мориарти",
+      },
+    ],
+    description:
+      "Трое подростков сбегают в лес от родителей, чтобы ощутить свободу.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 14,
+    posters: 1,
+  }, // короли лета
+  {
     release: new Date("2020-05-28"),
     publication: new Date("2020-10-13"),
     format: "фильм",
@@ -6508,6 +6554,9 @@ const films = [
       },
       {
         name: "Стив Бушеми",
+      },
+      {
+        name: "Мойзес Ариас",
       },
     ],
     description:
@@ -7689,6 +7738,9 @@ const films = [
       },
       {
         name: "Нив Кэмпбелл",
+      },
+      {
+        name: "Беки Ньютон",
       },
       {
         name: "Энгус Сэмпсон",
@@ -13596,6 +13648,51 @@ const films = [
     posters: 1,
   }, // по наклонной
   {
+    release: new Date("2014-05-09"),
+    publication: new Date("2022-09-29"),
+    format: "фильм",
+    grade: "B",
+    title: "Повар на колесах",
+    original: "Chef",
+    kinopoisk: "https://www.kinopoisk.ru/film/760763/",
+    director: [
+      {
+        name: "Джон Фавро",
+      },
+    ],
+    cast: [
+      {
+        name: "Джон Фавро",
+      },
+      {
+        name: "Бобби Каннавале",
+      },
+      {
+        name: "Эмджей Энтони",
+      },
+      {
+        name: "Джон Легуизамо",
+      },
+      {
+        name: "Скарлетт Йоханссон",
+      },
+      {
+        name: "Бобби Каннавале",
+      },
+    ],
+    description: "Шеф-повар теряет работу и открывает передвижную закусочную.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 21,
+    posters: 2,
+  }, // повар на колесах
+  {
     release: new Date("2016-12-09"),
     publication: new Date("2022-03-16"),
     format: "фильм",
@@ -14297,6 +14394,37 @@ const films = [
     screenshots: 35,
     posters: 1,
   }, // предложение
+  {
+    release: new Date("2015-09-04"),
+    publication: new Date("2020-04-16"),
+    format: "фильм",
+    grade: "B",
+    title: "Прежде чем мы расстанемся",
+    original: "Before We Go",
+    kinopoisk: "https://www.kinopoisk.ru/film/784389/",
+    director: [
+      {
+        name: "Крис Эванс",
+      },
+    ],
+    cast: [
+      {
+        name: "Крис Эванс",
+      },
+      {
+        name: "Элис Ив",
+      },
+    ],
+    description:
+      "Два незнакомца, застрявшие в Манхэттене на ночь, становятся близки друг другу.",
+    genres: [
+      {
+        genre: "мелодрама",
+      },
+    ],
+    screenshots: 12,
+    posters: 1,
+  }, // прежде чем мы расстанемся
   {
     release: new Date("2024-04-26"),
     publication: new Date("2024-06-15"),
@@ -20987,6 +21115,116 @@ const films = [
     screenshots: 22,
     posters: 4,
   }, // харли квинн 1-4
+  {
+    release: new Date("2013-12-13"),
+    publication: new Date("2024-12-26"),
+    format: "фильм",
+    grade: "A",
+    title: "Хоббит: Пустошь Смауга",
+    original: "The Hobbit: The Desolation of Smaug",
+    kinopoisk: "https://www.kinopoisk.ru/film/408876/",
+    director: [
+      {
+        name: "Питер Джексон",
+      },
+    ],
+    cast: [
+      {
+        name: "Мартин Фриман",
+      },
+      {
+        name: "Иэн Маккеллен",
+      },
+      {
+        name: "Ричард Армитедж",
+      },
+      {
+        name: "Грэм Мактавиш",
+      },
+      {
+        name: "Эйдан Тёрнер",
+      },
+      {
+        name: "Эванджелин Лилли",
+      },
+      {
+        name: "Орландо Блум",
+      },
+      {
+        name: "Люк Эванс",
+      },
+      {
+        name: "Бенедикт Камбербэтч",
+      },
+      {
+        name: "Ли Пейс",
+      },
+    ],
+    description:
+      "Бильбо Бэггинс, Гэндальф и гномы продолжают путешествие к Одинокой горе — логову дракона Смауга.",
+    genres: [
+      {
+        genre: "фэнтези",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 22,
+    posters: 2,
+  }, // хоббит: пустошь смауга (2)
+  {
+    release: new Date("2012-12-14"),
+    publication: new Date("2024-12-23"),
+    format: "фильм",
+    grade: "A",
+    title: "Хоббит: Нежданное путешествие",
+    original: "The Hobbit: An Unexpected Journey",
+    kinopoisk: "https://www.kinopoisk.ru/film/278522/",
+    director: [
+      {
+        name: "Питер Джексон",
+      },
+    ],
+    cast: [
+      {
+        name: "Мартин Фриман",
+      },
+      {
+        name: "Иэн Маккеллен",
+      },
+      {
+        name: "Ричард Армитедж",
+      },
+      {
+        name: "Грэм Мактавиш",
+      },
+      {
+        name: "Эйдан Тёрнер",
+      },
+      {
+        name: "Энди Серкис",
+      },
+      {
+        name: "Кейт Бланшетт",
+      },
+      {
+        name: "Хьюго Уивинг",
+      },
+    ],
+    description:
+      "Бильбо Бэггинс сопровождает гномов в поход за золотом к Одинокой горе, захваченной драконом Смаугом.",
+    genres: [
+      {
+        genre: "фэнтези",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 40,
+    posters: 1,
+  }, // хоббит: нежданное путешествие (1)
   {
     release: new Date("2019-08-16"),
     publication: new Date("2020-03-30"),
