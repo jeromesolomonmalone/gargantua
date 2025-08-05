@@ -23632,12 +23632,6 @@ function addCard(item) {
       translit(element.textContent) +
       ".png";
 
-    if (descriptionPhoto.src.includes("_dead")) {
-      descriptionPhoto.style.filter = "grayscale(100%)";
-    } else {
-      descriptionPhoto.style.filter = "grayscale(0%)";
-    }
-
     descriptionPhoto.alt = element.textContent;
 
     descriptionPhoto.addEventListener("load", function () {

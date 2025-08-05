@@ -1762,7 +1762,7 @@ body {
 
   .main__description__names {
     flex-direction: column;
-    padding: 0 0 28px;
+    padding: 0 0 15px;
   }
 
   .main__description__names_is-opened {
