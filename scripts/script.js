@@ -23885,6 +23885,7 @@ function addCard(item) {
   const castButtons = document.querySelectorAll(".film__cast__name");
   castButtons.forEach(function (element) {
     element.addEventListener("click", function () {
+      descriptionPhoto.style.opacity = "0";
       for (let i = 0; i < item.cast.length; i++) {
         if (item.cast[i].name == element.textContent) {
           descriptionBlock.classList.remove("main__description_is-opened");
@@ -23915,6 +23916,7 @@ function addCard(item) {
   const directorButtons = document.querySelectorAll(".film__director__name");
   directorButtons.forEach(function (element) {
     element.addEventListener("click", function () {
+      descriptionPhoto.style.opacity = "0";
       for (let i = 0; i < item.director.length; i++) {
         if (item.director[i].name == element.textContent) {
           descriptionBlock.classList.remove("main__description_is-opened");
