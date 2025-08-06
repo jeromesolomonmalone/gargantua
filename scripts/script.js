@@ -626,6 +626,58 @@ const films = [
     posters: 2,
   }, // ангел-а
   {
+    release: new Date("2015-06-03"),
+    publication: new Date("2021-01-31"),
+    format: "фильм",
+    grade: "B",
+    title: "Антураж",
+    original: "Entourage / Красавцы",
+    kinopoisk: "https://www.kinopoisk.ru/film/535317/",
+    director: [
+      {
+        name: "Даг Эллин",
+      },
+    ],
+    cast: [
+      {
+        name: "Эдриан Гренье",
+      },
+      {
+        name: "Кевин Коннолли",
+      },
+      {
+        name: "Джереми Пивен",
+      },
+      {
+        name: "Кевин Диллон",
+      },
+      {
+        name: "Джерри Феррара",
+      },
+      {
+        name: "Эммануэль Шрики",
+      },
+      {
+        name: "Ронда Раузи",
+      },
+      {
+        name: "Билли Боб Торнтон",
+      },
+      {
+        name: "Эмили Ратаковски",
+      },
+    ],
+    description:
+      "Винсент Чейз с друзьями снимает свой первый фильм под руководством Ари Голда.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 12,
+    posters: 1,
+  }, // антураж
+  {
     release: new Date("2022-04-01"),
     publication: new Date("2022-06-23"),
     format: "фильм",
@@ -1424,6 +1476,42 @@ const films = [
     screenshots: 13,
     posters: 1,
   }, // белые люди не умеют прыгать
+  {
+    release: new Date("2014-01-18"),
+    publication: new Date("2022-08-04"),
+    format: "фильм",
+    grade: "C",
+    title: "Бесконечно белый медведь",
+    original: "Infinitely Polar Bear",
+    kinopoisk: "https://www.kinopoisk.ru/film/596215/",
+    director: [
+      {
+        name: "Майя Форбс",
+      },
+    ],
+    cast: [
+      {
+        name: "Марк Руффало",
+      },
+      {
+        name: "Зои Салдана",
+      },
+      {
+        name: "Имоджин Володарски",
+      },
+      {
+        name: "Эшли Ауфдерхайд",
+      },
+    ],
+    description: "Отец с биполярным расстройством пытается вернуть семью.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 23,
+    posters: 2,
+  }, // бесконечно белый медведь
   {
     release: new Date("2009-11-25"),
     publication: new Date("2023-05-01"),
@@ -5160,6 +5248,58 @@ const films = [
     screenshots: 21,
     posters: 2,
   }, // империя света
+  {
+    release: new Date("2014-11-07"),
+    publication: new Date("2019-01-20"),
+    format: "фильм",
+    grade: "A+",
+    title: "Интерстеллар",
+    original: "Interstellar",
+    kinopoisk: "https://www.kinopoisk.ru/film/258687/",
+    director: [
+      {
+        name: "Кристофер Нолан",
+      },
+    ],
+    cast: [
+      {
+        name: "Мэттью Макконахи",
+      },
+      {
+        name: "Энн Хэтэуэй",
+      },
+      {
+        name: "Джессика Честейн",
+      },
+      {
+        name: "Маккензи Фой",
+      },
+      {
+        name: "Майкл Кейн",
+      },
+      {
+        name: "Кейси Аффлек",
+      },
+      {
+        name: "Мэтт Дэймон",
+      },
+    ],
+    description:
+      "Бывший пилот НАСА Джозеф Купер возглавляет экспедицию по поиску нового дома для человечества.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 18,
+    posters: 2,
+  }, // интерстеллар
   {
     release: new Date("2007-12-07"),
     publication: new Date("2019-09-10"),
@@ -9628,6 +9768,52 @@ const films = [
     posters: 1,
   }, // минари
   {
+    release: new Date("2015-07-10"),
+    publication: new Date("2022-07-10"),
+    format: "фильм",
+    grade: "B",
+    title: "Миньоны",
+    original: "Minions",
+    kinopoisk: "https://www.kinopoisk.ru/film/694051/",
+    director: [
+      {
+        name: "Кайл Балда",
+      },
+      {
+        name: "Пьер Коффан",
+      },
+    ],
+    cast: [
+      {
+        name: "Сандра Буллок",
+      },
+      {
+        name: "Джон Хэмм",
+      },
+      {
+        name: "Майкл Китон",
+      },
+      {
+        name: "Эллисон Дженни",
+      },
+      {
+        name: "Стив Куган",
+      },
+      {
+        name: "Джеффри Раш",
+      },
+    ],
+    description:
+      "Скарлет Оверкилл с мужем-изобретателем вербует миньонов для захвата мира.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 20,
+    posters: 2,
+  }, // миньоны
+  {
     release: new Date("2022-07-01"),
     publication: new Date("2022-08-17"),
     format: "фильм",
@@ -9658,6 +9844,9 @@ const films = [
       },
       {
         name: "Мишель Йео",
+      },
+      {
+        name: "RZA",
       },
     ],
     description:
@@ -9788,6 +9977,55 @@ const films = [
     screenshots: 15,
     posters: 1,
   }, // мир дикого запада 3
+  {
+    release: new Date("2015-06-12"),
+    publication: new Date("2020-05-06"),
+    format: "фильм",
+    grade: "B",
+    title: "Мир Юрского периода",
+    original: "Jurassic World",
+    kinopoisk: "https://www.kinopoisk.ru/film/594554/",
+    director: [
+      {
+        name: "Колин Треворроу",
+      },
+    ],
+    cast: [
+      {
+        name: "Крис Пратт",
+      },
+      {
+        name: "Брайс Даллас Ховард",
+      },
+      {
+        name: "Ник Робинсон",
+      },
+      {
+        name: "Тай Симпкинс",
+      },
+      {
+        name: "Винсент Д’Онофрио",
+      },
+      {
+        name: "Ирфан Кхан",
+      },
+      {
+        name: "Омар Си",
+      },
+    ],
+    description:
+      "В новом парке Юрского периода сбегает опасный генетический гибрид.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 17,
+    posters: 1,
+  }, // мир юрского периода
   {
     release: new Date("2022-01-13"),
     publication: new Date("2022-04-17"),
@@ -12000,6 +12238,102 @@ const films = [
     posters: 1,
   }, // ничегошеньки
   {
+    release: new Date("2014-05-02"),
+    publication: new Date("2022-01-22"),
+    format: "фильм",
+    grade: "A",
+    title: "Новый Человек-паук: Высокое напряжение",
+    original: "The Amazing Spider-Man 2",
+    kinopoisk: "https://www.kinopoisk.ru/film/602409/",
+    director: [
+      {
+        name: "Марк Уэбб",
+      },
+    ],
+    cast: [
+      {
+        name: "Эндрю Гарфилд",
+      },
+      {
+        name: "Эмма Стоун",
+      },
+      {
+        name: "Джейми Фокс",
+      },
+      {
+        name: "Дэйн ДеХаан",
+      },
+      {
+        name: "Салли Филд",
+      },
+    ],
+    description: "Человек-паук защищает Нью-Йорк от компании Oscorp.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "приключения",
+      },
+      { genre: "супергероика" },
+      {
+        genre: "marvel",
+      },
+    ],
+    screenshots: 14,
+    posters: 2,
+  }, // новый человек-паук: высокое напряжение
+  {
+    release: new Date("2012-07-03"),
+    publication: new Date("2022-01-21"),
+    format: "фильм",
+    grade: "A",
+    title: "Новый Человек-паук",
+    original: "The Amazing Spider-Man",
+    kinopoisk: "https://www.kinopoisk.ru/film/278217/",
+    director: [
+      {
+        name: "Марк Уэбб",
+      },
+    ],
+    cast: [
+      {
+        name: "Эндрю Гарфилд",
+      },
+      {
+        name: "Эмма Стоун",
+      },
+      {
+        name: "Рис Иванс",
+      },
+      {
+        name: "Дэнис Лири",
+      },
+      {
+        name: "Мартин Шин",
+      },
+      {
+        name: "Салли Филд",
+      },
+    ],
+    description:
+      "После укуса паука Питер Паркер обретает суперспособности и противостоит злодею-рептилии.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "приключения",
+      },
+      { genre: "супергероика" },
+      {
+        genre: "marvel",
+      },
+    ],
+    screenshots: 17,
+    posters: 2,
+  }, // новый человек-паук
+  {
     release: new Date("2007-04-04"),
     publication: new Date("2023-12-24"),
     format: "фильм",
@@ -12440,14 +12774,65 @@ const films = [
     posters: 1,
   }, // озарк 3
   {
+    release: new Date("2015-12-30"),
+    publication: new Date("2025-05-17"),
+    format: "фильм",
+    grade: "A+",
+    title: "Омерзительная восьмерка",
+    original: "The Hateful Eight",
+    kinopoisk: "https://www.kinopoisk.ru/film/819101/",
+    director: [
+      {
+        name: "Квентин Тарантино",
+      },
+    ],
+    cast: [
+      {
+        name: "Сэмюэл Л. Джексон",
+      },
+      {
+        name: "Курт Рассел",
+      },
+      {
+        name: "Дженнифер Джейсон Ли",
+      },
+      {
+        name: "Уолтон Гоггинс",
+      },
+      {
+        name: "Тим Рот",
+      },
+      {
+        name: "Майкл Мэдсен",
+      },
+      {
+        name: "Демиан Бичир",
+      },
+      {
+        name: "Брюс Дерн",
+      },
+      {
+        name: "Ченнинг Татум",
+      },
+    ],
+    description:
+      "В зимнюю стужу Вайоминга охотник с пленницей укрываются в хижине с подозрительными обитателями.",
+    genres: [
+      {
+        genre: "вестерн",
+      },
+    ],
+    screenshots: 77,
+    posters: 2,
+  }, // омерзительная восьмерка
+  {
     release: new Date("2023-07-14"),
     publication: new Date("2023-07-28"),
     format: "фильм",
     grade: "C",
     title: "Они клонировали Тайрона",
     original: "They Cloned Tyrone",
-    kinopoisk:
-      "https://www.kinopoisk.ru/film/1405266/?utm_referrer=www.kinopoisk.ru",
+    kinopoisk: "https://www.kinopoisk.ru/film/1405266/",
     director: [
       {
         name: "Джуэл Тейлор",
@@ -13360,6 +13745,79 @@ const films = [
     screenshots: 50,
     posters: 1,
   }, // первобытный 1
+  {
+    release: new Date("2016-05-06"),
+    publication: new Date("2021-07-25"),
+    format: "фильм",
+    grade: "A",
+    title: "Первый мститель: Противостояние",
+    original: "Captain America: Civil War",
+    kinopoisk: "https://www.kinopoisk.ru/film/822708/",
+    director: [
+      {
+        name: "Джо Руссо",
+      },
+      {
+        name: "Энтони Руссо",
+      },
+    ],
+    cast: [
+      {
+        name: "Крис Эванс",
+      },
+      {
+        name: "Роберт Дауни мл.",
+      },
+      {
+        name: "Скарлетт Йоханссон",
+      },
+      {
+        name: "Себастиан Стэн",
+      },
+      {
+        name: "Энтони Маки",
+      },
+      {
+        name: "Дон Чидл",
+      },
+      {
+        name: "Джереми Реннер",
+      },
+      {
+        name: "Чедвик Боузман",
+      },
+      {
+        name: "Пол Беттани",
+      },
+      {
+        name: "Элизабет Олсен",
+      },
+      {
+        name: "Пол Радд",
+      },
+      {
+        name: "Том Холланд",
+      },
+      {
+        name: "Даниэль Брюль",
+      },
+    ],
+    description:
+      "Политическое вмешательство в дела Мстителей приводит к расколу между Капитаном Америкой и Железным человеком.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "marvel",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 12,
+    posters: 2,
+  }, // первый мститель: противостояние
   {
     release: new Date("2004-10-22"),
     publication: new Date("2023-12-30"),
@@ -15615,6 +16073,45 @@ const films = [
     posters: 2,
   }, // рататуй
   {
+    release: new Date("2014-01-19"),
+    publication: new Date("2020-03-28"),
+    format: "фильм",
+    grade: "B",
+    title: "Реальные упыри",
+    original: "What We Do in the Shadows",
+    kinopoisk: "https://www.kinopoisk.ru/film/818981/",
+    director: [
+      {
+        name: "Тайка Вайтити",
+      },
+      {
+        name: "Джемейн Клемент",
+      },
+    ],
+    cast: [
+      {
+        name: "Тайка Вайтити",
+      },
+      {
+        name: "Джемейн Клемент",
+      },
+      {
+        name: "Джонатан Бруг",
+      },
+    ],
+    description: "Вампиры пытаются приспособиться к современной жизни.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "мокьюментари",
+      },
+    ],
+    screenshots: 15,
+    posters: 3,
+  }, // реальные упыри
+  {
     release: new Date("2023-10-15"),
     publication: new Date("2023-12-28"),
     format: "сериал",
@@ -15961,6 +16458,49 @@ const films = [
     screenshots: 12,
     posters: 1,
   }, // светская жизнь
+  {
+    release: new Date("2014-10-24"),
+    publication: new Date("2021-02-23"),
+    format: "фильм",
+    grade: "B",
+    title: "Святой Винсент",
+    original: "St. Vincent",
+    kinopoisk: "https://www.kinopoisk.ru/film/694646/",
+    director: [
+      {
+        name: "Тед Мелфи",
+      },
+    ],
+    cast: [
+      {
+        name: "Билл Мюррей",
+      },
+      {
+        name: "Джейден Мартелл",
+      },
+      {
+        name: "Мелисса Маккарти",
+      },
+      {
+        name: "Наоми Уоттс",
+      },
+      {
+        name: "Крис О’Дауд",
+      },
+    ],
+    description:
+      "После развода родителей мальчик заводит дружбу с пожилым соседом.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 17,
+    posters: 1,
+  }, // святой винсент
   {
     release: new Date("2021-07-15"),
     publication: new Date("2022-01-31"),
@@ -18547,6 +19087,65 @@ const films = [
     posters: 1,
   }, // стражи галактики 3
   {
+    release: new Date("2014-08-01"),
+    publication: new Date("2023-04-06"),
+    format: "фильм",
+    grade: "love",
+    title: "Стражи Галактики",
+    original: "Guardians of the Galaxy",
+    kinopoisk: "https://www.kinopoisk.ru/film/689066/",
+    director: [
+      {
+        name: "Джеймс Ганн",
+      },
+    ],
+    cast: [
+      {
+        name: "Крис Пратт",
+      },
+      {
+        name: "Зои Салдана",
+      },
+      {
+        name: "Брэдли Купер",
+      },
+      {
+        name: "Дэйв Батиста",
+      },
+      {
+        name: "Карен Гиллан",
+      },
+      {
+        name: "Ли Пейс",
+      },
+      {
+        name: "Майкл Рукер",
+      },
+      {
+        name: "Джимон Хонсу",
+      },
+    ],
+    description:
+      "Межгалактические преступники объединяются против фанатичного воина, задумавшего уничтожить вселенную.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "приключения",
+      },
+      { genre: "супергероика" },
+      {
+        genre: "marvel",
+      },
+    ],
+    screenshots: 34,
+    posters: 1,
+  }, // стражи галактики
+  {
     release: new Date("2020-11-06"),
     publication: new Date("2021-06-05"),
     format: "фильм",
@@ -18619,6 +19218,64 @@ const films = [
     screenshots: 17,
     posters: 1,
   }, // стук в хижине
+  {
+    release: new Date("2022-07-29"),
+    publication: new Date("2022-10-09"),
+    format: "фильм",
+    grade: "B",
+    title: "Суперпитомцы",
+    original: "DC League of Super-Pets",
+    kinopoisk: "https://www.kinopoisk.ru/film/1189960/",
+    director: [
+      {
+        name: "Джаред Штерн",
+      },
+      {
+        name: "Сэм Ливайн",
+      },
+    ],
+    cast: [
+      {
+        name: "Дуэйн Джонсон",
+      },
+      {
+        name: "Кевин Харт",
+      },
+      {
+        name: "Кейт Маккиннон",
+      },
+      {
+        name: "Джон Красински",
+      },
+      {
+        name: "Киану Ривз",
+      },
+      {
+        name: "Наташа Лионн",
+      },
+      {
+        name: "Диего Луна",
+      },
+      {
+        name: "Оливия Уайлд",
+      },
+      {
+        name: "Джамила Джамил",
+      },
+    ],
+    description:
+      "Пёс Крипто собирает команду животных-супергероев из приюта, чтобы спасти Лигу Справедливости от Лекса Лютора.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+      {
+        genre: "супергероика",
+      },
+    ],
+    screenshots: 33,
+    posters: 3,
+  }, // суперпитомцы
   {
     release: new Date("2018-06-15"),
     publication: new Date("2025-03-30"),
@@ -21116,6 +21773,70 @@ const films = [
     posters: 4,
   }, // харли квинн 1-4
   {
+    release: new Date("2014-12-17"),
+    publication: new Date("2024-12-27"),
+    format: "фильм",
+    grade: "A",
+    title: "Хоббит: Битва пяти воинств",
+    original: "The Hobbit: The Battle of the Five Armies",
+    kinopoisk: "https://www.kinopoisk.ru/film/694633/",
+    director: [
+      {
+        name: "Питер Джексон",
+      },
+    ],
+    cast: [
+      {
+        name: "Мартин Фриман",
+      },
+      {
+        name: "Иэн Маккеллен",
+      },
+      {
+        name: "Ричард Армитедж",
+      },
+      {
+        name: "Грэм Мактавиш",
+      },
+      {
+        name: "Эйдан Тёрнер",
+      },
+      {
+        name: "Эванджелин Лилли",
+      },
+      {
+        name: "Орландо Блум",
+      },
+      {
+        name: "Люк Эванс",
+      },
+      {
+        name: "Бенедикт Камбербэтч",
+      },
+      {
+        name: "Ли Пейс",
+      },
+      {
+        name: "Кейт Бланшетт",
+      },
+      {
+        name: "Хьюго Уивинг",
+      },
+    ],
+    description:
+      "Бильбо Бэггинс, гномы и их товарищи защищают Одинокую гору от тёмных сил.",
+    genres: [
+      {
+        genre: "фэнтези",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 15,
+    posters: 2,
+  }, // хоббит: битва пяти воинств (3)
+  {
     release: new Date("2013-12-13"),
     publication: new Date("2024-12-26"),
     format: "фильм",
@@ -21265,6 +21986,40 @@ const films = [
     screenshots: 12,
     posters: 2,
   }, // хорошие мальчики
+  {
+    release: new Date("2015-11-25"),
+    publication: new Date("2019-09-09"),
+    format: "фильм",
+    grade: "A+",
+    title: "Хороший динозавр",
+    original: "The Good Dinosaur",
+    kinopoisk: "https://www.kinopoisk.ru/film/596451/",
+    director: [
+      {
+        name: "Питер Сон",
+      },
+    ],
+    cast: [
+      {
+        name: "Джеффри Райт",
+      },
+      {
+        name: "Фрэнсис Макдорманд",
+      },
+    ],
+    description:
+      "История дружбы пугливого динозавра и неразумного первобытного мальчика.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+      {
+        genre: "pixar",
+      },
+    ],
+    screenshots: 20,
+    posters: 2,
+  }, // хороший динозавр
   {
     release: new Date("2023-03-24"),
     publication: new Date("2023-06-02"),
