@@ -1510,7 +1510,7 @@ const films = [
       },
     ],
     screenshots: 23,
-    posters: 2,
+    posters: 1,
   }, // бесконечно белый медведь
   {
     release: new Date("2009-11-25"),
@@ -2819,6 +2819,52 @@ const films = [
     screenshots: 25,
     posters: 1,
   }, // волны
+  {
+    release: new Date("2024-05-17"),
+    publication: new Date("2024-07-13"),
+    format: "фильм",
+    grade: "D",
+    title: "Воображаемые друзья",
+    original: "IF",
+    kinopoisk: "https://www.kinopoisk.ru/film/4847638/",
+    director: [
+      {
+        name: "Джон Красински",
+      },
+    ],
+    cast: [
+      {
+        name: "Кэйли Флеминг",
+      },
+      {
+        name: "Райан Рейнольдс",
+      },
+      {
+        name: "Джон Красински",
+      },
+      {
+        name: "Фиона Шоу",
+      },
+      {
+        name: "Стив Карелл",
+      },
+      {
+        name: "Фиби Уоллер-Бридж",
+      },
+    ],
+    description:
+      "Юная Беа спасает забытых воображаемых друзей, подыскивая им новых хозяев.",
+    genres: [
+      {
+        genre: "фэнтези",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 15,
+    posters: 2,
+  }, // воображаемые друзья
   {
     release: new Date("2020-03-06"),
     publication: new Date("2020-04-25"),
@@ -5209,6 +5255,51 @@ const films = [
     posters: 2,
   }, // идеальные дни
   {
+    release: new Date("2000-06-30"),
+    publication: new Date("2025-01-24"),
+    format: "фильм",
+    grade: "C",
+    title: "Идеальный шторм",
+    original: "The Perfect Storm",
+    kinopoisk: "https://www.kinopoisk.ru/film/783/",
+    director: [
+      {
+        name: "Вольфганг Петерсен",
+      },
+    ],
+    cast: [
+      {
+        name: "Джордж Клуни",
+      },
+      {
+        name: "Марк Уолберг",
+      },
+      {
+        name: "Джон Си Райли",
+      },
+      {
+        name: "Дайан Лэйн",
+      },
+      {
+        name: "Уильям Фихтнер",
+      },
+      {
+        name: "Джон Хоукс",
+      },
+      {
+        name: "Аллен Пэйн",
+      },
+    ],
+    description: "Мощный шторм поставил рыбаков под угрозу гибели.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 12,
+    posters: 2,
+  }, // идеальный шторм
+  {
     release: new Date("2022-12-09"),
     publication: new Date("2023-03-02"),
     format: "фильм",
@@ -6322,6 +6413,46 @@ const films = [
     screenshots: 13,
     posters: 1,
   }, // кокаиновый медведь
+  {
+    release: new Date("2002-03-29"),
+    publication: new Date("2019-07-17"),
+    format: "фильм",
+    grade: "A+",
+    title: "Комната страха",
+    original: "Panic Room",
+    kinopoisk: "https://www.kinopoisk.ru/film/780/",
+    director: [
+      {
+        name: "Дэвид Финчер",
+      },
+    ],
+    cast: [
+      {
+        name: "Джоди Фостер",
+      },
+      {
+        name: "Кристен Стюарт",
+      },
+      {
+        name: "Джаред Лето",
+      },
+      {
+        name: "Форест Уитакер",
+      },
+      {
+        name: "Дуайт Йоакам",
+      },
+    ],
+    description:
+      "Женщина с дочерью прячутся в убежище дома от трёх грабителей.",
+    genres: [
+      {
+        genre: "триллер",
+      },
+    ],
+    screenshots: 12,
+    posters: 1,
+  }, // комната страха
   {
     release: new Date("2019-10-25"),
     publication: new Date("2020-11-13"),
@@ -10393,6 +10524,61 @@ const films = [
     screenshots: 45,
     posters: 1,
   }, // митчеллы против машин
+  {
+    release: new Date("2009-12-23"),
+    publication: new Date("2021-08-28"),
+    format: "фильм",
+    grade: "B",
+    title: "Мне бы в небо",
+    original: "Up in the Air",
+    kinopoisk: "https://www.kinopoisk.ru/film/464130/",
+    director: [
+      {
+        name: "Джейсон Райтман",
+      },
+    ],
+    cast: [
+      {
+        name: "Джордж Клуни",
+      },
+      {
+        name: "Вера Фармига",
+      },
+      {
+        name: "Анна Кендрик",
+      },
+      {
+        name: "Джейсон Бейтман",
+      },
+      {
+        name: "Мелани Лински",
+      },
+      {
+        name: "Дж.К. Симмонс",
+      },
+      {
+        name: "Дэнни Макбрайд",
+      },
+      {
+        name: "Зак Галифианакис",
+      },
+    ],
+    description:
+      "Райан живёт на чемоданах и не знает слов любви, пока не встречает прекрасную Алекс.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "мелодрама",
+      },
+    ],
+    screenshots: 15,
+    posters: 3,
+  }, // мне бы в небо
   {
     release: new Date("2021-10-01"),
     publication: new Date("2021-10-05"),
@@ -18005,6 +18191,97 @@ const films = [
     posters: 2,
   }, // сокровище амазонки
   {
+    release: new Date("2004-11-19"),
+    publication: new Date("2025-01-25"),
+    format: "фильм",
+    grade: "B",
+    title: "Сокровище нации",
+    original: "National Treasure",
+    kinopoisk: "https://www.kinopoisk.ru/film/61333/",
+    director: [
+      {
+        name: "Джон Тёртлтауб",
+      },
+    ],
+    cast: [
+      {
+        name: "Николас Кейдж",
+      },
+      {
+        name: "Дайан Крюгер",
+      },
+      {
+        name: "Джастин Барта",
+      },
+      {
+        name: "Шон Бин",
+      },
+      {
+        name: "Джон Войт",
+      },
+      {
+        name: "Харви Кейтель",
+      },
+    ],
+    description: "Историк со своими товарищами ищет сокровище тамплиеров.",
+    genres: [
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 14,
+    posters: 2,
+  }, // сокровище нации
+  {
+    release: new Date("2007-12-21"),
+    publication: new Date("2025-01-26"),
+    format: "фильм",
+    grade: "B",
+    title: "Сокровище нации: Книга Тайн",
+    original: "National Treasure: Book of Secrets",
+    kinopoisk: "https://www.kinopoisk.ru/film/195408/",
+    director: [
+      {
+        name: "Джон Тёртлтауб",
+      },
+    ],
+    cast: [
+      {
+        name: "Николас Кейдж",
+      },
+      {
+        name: "Дайан Крюгер",
+      },
+      {
+        name: "Джастин Барта",
+      },
+      {
+        name: "Эд Харрис",
+      },
+      {
+        name: "Джон Войт",
+      },
+      {
+        name: "Хелен Миррен",
+      },
+      {
+        name: "Харви Кейтель",
+      },
+      {
+        name: "Брюс Гринвуд",
+      },
+    ],
+    description:
+      "Охотник за сокровищами пытается доказать невиновность своего предка в убийстве Линкольна.",
+    genres: [
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 23,
+    posters: 1,
+  }, // сокровище нации: книга тайн
+  {
     release: new Date("2008-08-13"),
     publication: new Date("2020-04-16"),
     format: "фильм",
@@ -18731,6 +19008,9 @@ const films = [
       {
         name: "Элоди Юнг",
       },
+      {
+        name: "Скотт Гленн",
+      },
     ],
     description:
       "Днем он — успешный адвокат, а ночью — мститель в маске по прозвищу Сорвиголова.",
@@ -18778,6 +19058,12 @@ const films = [
       },
       {
         name: "Винсент Д’Онофрио",
+      },
+      {
+        name: "Скотт Гленн",
+      },
+      {
+        name: "Розарио Доусон",
       },
     ],
     description:
@@ -20313,6 +20599,52 @@ const films = [
     posters: 1,
   }, // трансформеры: восхождение звероботов
   {
+    release: new Date("2001-10-05"),
+    publication: new Date("2025-01-25"),
+    format: "фильм",
+    grade: "A+",
+    title: "Тренировочный день",
+    original: "Training Day",
+    kinopoisk: "https://www.kinopoisk.ru/film/863/",
+    director: [
+      {
+        name: "Антуан Фукуа",
+      },
+    ],
+    cast: [
+      {
+        name: "Дензел Вашингтон",
+      },
+      {
+        name: "Итан Хоук",
+      },
+      {
+        name: "Скотт Гленн",
+      },
+      {
+        name: "Клифф Кёртис",
+      },
+      {
+        name: "Ева Мендес",
+      },
+    ],
+    description:
+      "Новичок полиции Лос-Анджелеса встречает загадочного детектива в первый день работы.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 44,
+    posters: 3,
+  }, // тренировочный день
+  {
     release: new Date("2024-01-11"),
     publication: new Date("2024-03-28"),
     format: "сериал",
@@ -20875,6 +21207,45 @@ const films = [
     screenshots: 13,
     posters: 2,
   }, // угадай, кто?
+  {
+    release: new Date("2022-08-05"),
+    publication: new Date("2022-08-13"),
+    format: "фильм",
+    grade: "C",
+    title: "Удача",
+    original: "Luck",
+    kinopoisk: "https://www.kinopoisk.ru/film/1087904/",
+    director: [
+      {
+        name: "Пегги Холмс",
+      },
+      {
+        name: "Хавьер Абад",
+      },
+    ],
+    cast: [
+      {
+        name: "Эва Ноблесада",
+      },
+      {
+        name: "Саймон Пегг",
+      },
+      {
+        name: "Джейн Фонда",
+      },
+      {
+        name: "Вупи Голдберг",
+      },
+    ],
+    description: "Самая неудачливая девочка обретает удачу в волшебной стране.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 12,
+    posters: 2,
+  }, // удача
   {
     release: new Date("2019-05-17"),
     publication: new Date("2019-05-28"),
@@ -23211,6 +23582,40 @@ const films = [
     posters: 1,
   }, // эйфория 1
   {
+    release: new Date("2023-06-16"),
+    publication: new Date("2023-08-17"),
+    format: "фильм",
+    grade: "D",
+    title: "Элементарно",
+    original: "Elemental",
+    kinopoisk: "https://www.kinopoisk.ru/film/4889667/",
+    director: [
+      {
+        name: "Питер Сон",
+      },
+    ],
+    cast: [
+      {
+        name: "Леа Льюис",
+      },
+      {
+        name: "Мамуду Ати",
+      },
+    ],
+    description:
+      "Огненная Эмбер заводит дружбу с водным инспектором Уэйдом в городе четырёх стихий.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+      {
+        genre: "pixar",
+      },
+    ],
+    screenshots: 24,
+    posters: 3,
+  }, // элементарно
+  {
     release: new Date("2022-09-30"),
     publication: new Date("2022-10-08"),
     format: "фильм",
@@ -23244,7 +23649,7 @@ const films = [
       "Молодой артист Джабари пытается найти любовь в современном Нью-Йорке.",
     genres: [
       {
-        genre: "анимация",
+        genre: "мультфильм",
       },
       {
         genre: "музыка",
@@ -23532,58 +23937,16 @@ function name_for_link(element) {
   return names;
 }
 
-function translit(word) {
-  var converter = {
-    а: "a",
-    б: "b",
-    в: "v",
-    г: "g",
-    д: "d",
-    е: "e",
-    ё: "e",
-    ж: "zh",
-    з: "z",
-    и: "i",
-    й: "y",
-    к: "k",
-    л: "l",
-    м: "m",
-    н: "n",
-    о: "o",
-    п: "p",
-    р: "r",
-    с: "s",
-    т: "t",
-    у: "u",
-    ф: "f",
-    х: "h",
-    ц: "c",
-    ч: "ch",
-    ш: "sh",
-    щ: "sch",
-    ь: "",
-    ы: "y",
-    ъ: "",
-    э: "e",
-    ю: "yu",
-    я: "ya",
-  };
-
-  word = word.toLowerCase();
-
-  var answer = "";
-  for (var i = 0; i < word.length; ++i) {
-    if (converter[word[i]] == undefined) {
-      answer += word[i];
-    } else {
-      answer += converter[word[i]];
-    }
-  }
-
-  answer = answer.replace(/[^-0-9a-z]/g, "-");
-  answer = answer.replace(/[-]+/g, "_");
-  answer = answer.replace(/^\-|-$/g, "");
-  return answer;
+function name_for_person(element) {
+  const names = element
+    .toLowerCase()
+    .split(" /")[0]
+    .trim()
+    .replace(/[^a-zа-яё0-9\-\s]/g, "")
+    .replace(/[-\s]/g, "_")
+    .replace(/__+/g, "_")
+    .substring(0, 250);
+  return names;
 }
 
 // константа ПОПАПА ФИЛЬМА
@@ -24622,7 +24985,7 @@ function addCard(item) {
     descriptionPhoto.src =
       location_of_the_images +
       "persons/" +
-      translit(element.textContent) +
+      name_for_person(element.textContent) +
       ".png";
 
     descriptionPhoto.alt = element.textContent;
@@ -24641,6 +25004,7 @@ function addCard(item) {
   castButtons.forEach(function (element) {
     element.addEventListener("click", function () {
       descriptionPhoto.style.opacity = "0";
+
       for (let i = 0; i < item.cast.length; i++) {
         if (item.cast[i].name == element.textContent) {
           descriptionBlock.classList.remove("main__description_is-opened");
@@ -25362,9 +25726,9 @@ function get_a_persons_name() {
   const persons_Old = Array.from(filmsDirectorSet).concat(
     Array.from(filmsCastSet)
   );
-  const persons_OldSort = persons_Old.sort().slice(50, 100);
+  const persons_OldSort = persons_Old.sort().slice(200, 250);
   for (let i = 0; i < persons_OldSort.length; i++) {
-    console.log(persons_OldSort[i], translit(persons_OldSort[i]));
+    console.log(persons_OldSort[i], name_for_person(persons_OldSort[i]));
   }
 }
 
