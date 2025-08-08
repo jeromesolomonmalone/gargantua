@@ -19558,6 +19558,9 @@ const films = [
       {
         genre: "супергероика",
       },
+      {
+        genre: "dc",
+      },
     ],
     screenshots: 33,
     posters: 3,
@@ -23920,33 +23923,30 @@ const films = [
 
 // Сортировка films по дате публикации
 films.sort((dateA, dateB) => dateA.publication - dateB.publication).reverse();
-// films.sort((dateA, dateB) => dateA.screenshots - dateB.screenshots);
 
+// Главная ссылка
 const location_of_the_images =
   "https://jeromesolomonmalone.github.io/gargantua/images/";
 
+// Функция, которая приводит название в соотвествующий вид
 function name_for_link(element) {
-  const names = element
+  return element
     .toLowerCase()
     .split(" /")[0]
     .trim()
     .replace(/[^a-z0-9\-\s]/g, "")
-    .replace(/[-\s]/g, "_")
-    .replace(/__+/g, "_")
-    .substring(0, 250);
-  return names;
+    .replace(/[_\s-]+/g, "_")
+    .slice(0, 250);
 }
 
+// Функция, которая приводит имена в соотвествующий вид
 function name_for_person(element) {
-  const names = element
+  return element
     .toLowerCase()
-    .split(" /")[0]
     .trim()
-    .replace(/[^a-zа-яё0-9\-\s]/g, "")
-    .replace(/[-\s]/g, "_")
-    .replace(/__+/g, "_")
-    .substring(0, 250);
-  return names;
+    .replace("$", "s")
+    .replace(/[^a-zа-яё0-9\-\.\s]/g, "")
+    .replace(/[_\-\.\s]+/g, "_");
 }
 
 // константа ПОПАПА ФИЛЬМА
@@ -23955,103 +23955,113 @@ const popupScreenshot = document.querySelector(".popup__screenshot");
 const popupNavigation = document.querySelector(".popup__navigation");
 
 // функция ДОБАВЛЕНИЯ чего-угодно из темплейта
-function addAnything(template, className, outside, inside) {
-  function add(item) {
-    const element = template.querySelector("." + className).cloneNode(true);
-    element.textContent = item;
-    return element;
-  }
-  outside.forEach(function (element) {
-    inside.append(add(element));
+function addItemsFromTemplate({ template, className, data, container }) {
+  const itemTemplate = template.querySelector(`.${className}`);
+
+  data.forEach((element) => {
+    const clonedElement = itemTemplate.cloneNode(true);
+    clonedElement.textContent = element;
+    container.append(clonedElement);
   });
 }
 
 // ФОРМАТ в навигацию
-const filmsFormat = Array.from(films, ({ format }) => format);
-const filmsFormatSet = new Set(filmsFormat.sort().reverse());
+const filmsFormats = [...new Set(films.map(({ format }) => format))]
+  .sort()
+  .reverse();
 const navigationFormatTemplate = document.querySelector(
   "#navigation__format-template"
 ).content;
 const navigationFormat = document.querySelector(".navigation__format");
 // ЖАНРЫ в навигацию
-const filmsGenresMany = Array.from(films, ({ genres }) => genres);
-const filmsGenresAll = filmsGenresMany.flat();
-const filmsGenres = Array.from(filmsGenresAll, ({ genre }) => genre);
-const filmsGenresSet = new Set(filmsGenres.sort());
 const ruCollator = new Intl.Collator("ru-RU");
-const filmsGenresSortRu = [...filmsGenresSet].sort((a, b) =>
-  ruCollator.compare(a, b)
+const getGenres = ({ genres }) => genres.map(({ genre }) => genre);
+const filmsGenresSorted = [...new Set(films.flatMap(getGenres))].sort(
+  ruCollator.compare
 );
 const navigationGenresTemplate = document.querySelector(
   "#navigation__genres-template"
 ).content;
 const navigationGenres = document.querySelector(".navigation__genres");
 // ГОДА в навигацию
-const filmsReleases = Array.from(films, ({ release }) =>
-  release.toString().slice(11, 15)
-);
-const filmsReleasesSet = new Set(filmsReleases.sort().reverse());
+const filmsReleases = [
+  ...new Set(films.map(({ release }) => release.toString().slice(11, 15))),
+].sort((a, b) => b.localeCompare(a));
 const navigationReleasesTemplate = document.querySelector(
   "#navigation__releases-template"
 ).content;
 const navigationReleases = document.querySelector(".navigation__releases");
 // РЕЖИССЕРЫ в попап
-const filmsDirectorMany = Array.from(films, ({ director }) => director);
-const filmsDirectorAll = filmsDirectorMany.flat();
-const filmsDirectorArray = Array.from(filmsDirectorAll, ({ name }) => name);
-const filmsDirectorSet = new Set(filmsDirectorArray.sort());
+const filmsDirectors = [
+  ...new Set(films.flatMap(({ director }) => director.map(({ name }) => name))),
+].sort((a, b) => a.localeCompare(b));
 const filmDirectorTemplate = document.querySelector(
   "#film__director-template"
 ).content;
 const filmDirector = document.querySelector(".film__director");
 // КАСТ в попап
-const filmsCastMany = Array.from(films, ({ cast }) => cast);
-const filmsCastAll = filmsCastMany.flat();
-const filmsCastArray = Array.from(filmsCastAll, ({ name }) => name);
-const filmsCastSet = new Set(filmsCastArray.sort());
+const filmsCast = [
+  ...new Set(films.flatMap(({ cast }) => cast.map(({ name }) => name))),
+].sort((a, b) => a.localeCompare(b));
 const filmCastTemplate = document.querySelector("#film__cast-template").content;
 const filmCast = document.querySelector(".film__cast");
 // ТОЛЬКО имена режиссеров из ФИЛЬМОВ
-let onlyFilms = films.filter((elem) => {
-  return elem.format == "фильм";
-});
-const onlyFilmsDirector = Array.from(onlyFilms, ({ director }) => director);
-const onlyFilmsDirectorAll = onlyFilmsDirector.flat();
-const onlyFilmsDirectorArray = Array.from(
-  onlyFilmsDirectorAll,
-  ({ name }) => name
-);
-const onlyFilmsDirectorSort = Array.from(
-  new Set(onlyFilmsDirectorArray.sort())
-);
+const onlyFilmsDirectors = [
+  ...new Set(
+    films
+      .filter((elem) => elem.format === "фильм")
+      .flatMap(({ director }) => director.map(({ name }) => name))
+      .sort((a, b) => a.localeCompare(b))
+  ),
+];
 // ТОЛЬКО имена режиссеров из СЕРИАЛОВ
-let onlySerials = films.filter((elem) => {
-  return elem.format == "сериал";
-});
-const onlySerialsDirector = Array.from(onlySerials, ({ director }) => director);
-const onlySerialsDirectorAll = onlySerialsDirector.flat();
-const onlySerialsDirectorArray = Array.from(
-  onlySerialsDirectorAll,
-  ({ name }) => name
-);
-const onlySerialsDirectorSort = Array.from(
-  new Set(onlySerialsDirectorArray.sort())
-);
+const onlySerialsDirectors = [
+  ...new Set(
+    films
+      .filter((elem) => elem.format === "сериал")
+      .flatMap(({ director }) => director.map(({ name }) => name))
+      .sort((a, b) => a.localeCompare(b))
+  ),
+];
 
-addAnything(
-  navigationFormatTemplate,
-  "navigation__format__item",
-  filmsFormatSet,
-  navigationFormat
-);
+// Конфигурации всех темплейтов
+const itemsConfiguration = [
+  {
+    template: navigationFormatTemplate,
+    className: "navigation__format__item",
+    data: filmsFormats,
+    container: navigationFormat,
+  },
+  {
+    template: navigationGenresTemplate,
+    className: "navigation__genres__item",
+    data: filmsGenresSorted,
+    container: navigationGenres,
+  },
+  {
+    template: navigationReleasesTemplate,
+    className: "navigation__releases__item",
+    data: filmsReleases,
+    container: navigationReleases,
+  },
+  {
+    template: filmDirectorTemplate,
+    className: "film__director__name",
+    data: filmsDirectors,
+    container: filmDirector,
+  },
+  {
+    template: filmCastTemplate,
+    className: "film__cast__name",
+    data: filmsCast,
+    container: filmCast,
+  },
+];
 
-addAnything(
-  navigationGenresTemplate,
-  "navigation__genres__item",
-  filmsGenresSortRu,
-  navigationGenres
-);
+// Применение конфигурации
+itemsConfiguration.forEach((config) => addItemsFromTemplate(config));
 
+// разбираемся с жанром "DC"
 document
   .querySelectorAll(".navigation__genres__item")
   .forEach(function (element) {
@@ -24060,22 +24070,6 @@ document
       element.style.display = "none";
     }
   });
-
-addAnything(
-  navigationReleasesTemplate,
-  "navigation__releases__item",
-  filmsReleasesSet,
-  navigationReleases
-);
-
-addAnything(
-  filmDirectorTemplate,
-  "film__director__name",
-  filmsDirectorSet,
-  filmDirector
-);
-
-addAnything(filmCastTemplate, "film__cast__name", filmsCastSet, filmCast);
 
 const GradeLove =
   "https://img.icons8.com/ios-filled/100/FF0000/filled-like.png";
@@ -24093,342 +24087,312 @@ const PixarLogo =
 const DCLogo =
   "https://upload.wikimedia.org/wikipedia/commons/7/71/DC_Comics_2024.svg";
 
+// Функция определения оценок и их свойств
+const gradeIcons = {
+  love: { src: GradeLove, alt: "Иконка Оценки Love" },
+  "A+": { src: GradeAPlus, alt: "Иконка Оценки A+" },
+  A: { src: GradeA, alt: "Иконка Оценки A" },
+  B: { src: GradeB, alt: "Иконка Оценки B" },
+  C: { src: GradeC, alt: "Иконка Оценки C" },
+  D: { src: GradeD, alt: "Иконка Оценки D" },
+};
 function defineGradeBlack(item, element) {
-  if (item === "love") {
-    element.src = GradeLove;
-    element.alt = "Иконка Оценки Love";
-    element.title = item;
-  } else if (item === "A+") {
-    element.src = GradeAPlus;
-    element.alt = "Иконка Оценки A+";
-    element.title = item;
-  } else if (item === "A") {
-    element.src = GradeA;
-    element.alt = "Иконка Оценки A";
-    element.title = item;
-  } else if (item === "B") {
-    element.src = GradeB;
-    element.alt = "Иконка Оценки B";
-    element.title = item;
-  } else if (item === "C") {
-    element.src = GradeC;
-    element.alt = "Иконка Оценки C";
-    element.title = item;
-  } else if (item === "D") {
-    element.src = GradeD;
-    element.alt = "Иконка Оценки D";
+  const grade = gradeIcons[item];
+
+  if (grade) {
+    element.src = grade.src;
+    element.alt = grade.alt;
     element.title = item;
   }
 }
 
+// Функция добавления оценок в навигацию
 function Grades() {
-  const filmsGrades = Array.from(films, ({ grade }) => grade);
-  const filmsGradesSet = Array.from(new Set(filmsGrades.sort()));
-  filmsGradesSet.splice(0, 0, filmsGradesSet.splice(5, 1)[0]);
-  filmsGradesSet.splice(1, 0, filmsGradesSet.splice(2, 1)[0]);
+  const filmsGrades = [...new Set(films.map(({ grade }) => grade))].sort(
+    (a, b) => a.localeCompare(b)
+  );
+  // Переставляем элементы в нужном порядке
+  filmsGrades.splice(0, 0, filmsGrades.splice(5, 1)[0]);
+  filmsGrades.splice(1, 0, filmsGrades.splice(2, 1)[0]);
 
-  const navigationGradesTemplate = document.querySelector(
+  const template = document.querySelector(
     "#navigation__grades-template"
   ).content;
-  const navigationGrades = document.querySelector(".navigation__grades");
+  const container = document.querySelector(".navigation__grades");
+  const itemTemplate = template.querySelector(".navigation__grades__item");
 
-  function addNavigationGrades(item) {
-    const navigationGradeElement = navigationGradesTemplate
-      .querySelector(".navigation__grades__item")
-      .cloneNode(true);
-    const navigationGradesImage = navigationGradeElement.querySelector(
-      ".navigation__grades__image"
-    );
-    defineGradeBlack(item, navigationGradesImage);
-    return navigationGradeElement;
+  function createGradeElement(grade) {
+    const element = itemTemplate.cloneNode(true);
+    const image = element.querySelector(".navigation__grades__image");
+    defineGradeBlack(grade, image);
+    return element;
   }
 
-  filmsGradesSet.forEach(function (element) {
-    navigationGrades.append(addNavigationGrades(element));
-  });
+  filmsGrades.forEach((grade) => container.append(createGradeElement(grade)));
 }
-
 Grades();
 
+// функция УДАЛЕНИЯ элементов
+function REMOVE(item) {
+  item.forEach(function (element) {
+    element.remove();
+  });
+}
 // функция ОТКРЫТИЯ ПОПАПА
 function openPopup(popupElement) {
   popupElement.classList.add("popup_is-opened");
   document.body.classList.add("scroll-lock");
   document.addEventListener("keydown", closePopupByEsc);
 }
-
 // функция ЗАКРЫТИЯ ПОПАПА
 function closePopup(popupElement) {
-  popupElement.classList.remove("popup_is-opened");
-  document.body.classList.remove("scroll-lock");
-  document.removeEventListener("keydown", closePopupByEsc);
-}
+  const commonActions = () => {
+    document.body.classList.remove("scroll-lock");
+    document.removeEventListener("keydown", closePopupByEsc);
+  };
 
-// функция ЗАКРЫТИЯ попапа СКРИШОТА
-function closePopupScreenshot(popupElement) {
-  popupElement.classList.remove("popup_is-opened");
-}
+  const remove = (popup, selectors) => {
+    selectors.forEach((selector) => REMOVE(popup.querySelectorAll(selector)));
+  };
 
-// функция ЗАКРЫТИЯ ПОПАПА по клавише ESC
-function closePopupByEsc(evt) {
-  if (
-    evt.key === "Escape" &&
-    evt.code === "Escape" &&
-    popupScreenshot.classList.contains("popup_is-opened")
-  ) {
-    closePopupScreenshot(popupScreenshot);
-    REMOVE(popupScreenshot.querySelectorAll(".popup__screenshot__block"));
-  } else if (
-    evt.key === "Escape" &&
-    evt.code === "Escape" &&
-    popupFilm.classList.contains("popup_is-opened")
-  ) {
-    closePopup(popupFilm);
-    REMOVE(popupFilm.querySelectorAll(".film__screenshot"));
-  } else if (
-    evt.key === "Escape" &&
-    evt.code === "Escape" &&
-    popupNavigation.classList.contains("popup_is-opened")
-  ) {
-    closePopup(popupNavigation);
+  if (popupElement == popupScreenshot) {
+    simpleClose(popupElement);
+    remove(popupScreenshot, [".popup__screenshot__block"]);
+  } else if (popupElement == popupFilm) {
+    simpleClose(popupElement);
+    commonActions();
+    remove(popupFilm, [".film__poster", ".film__screenshot"]);
+  } else if (popupElement == popupNavigation) {
+    simpleClose(popupElement);
+    commonActions();
   }
 }
+// функция ЗАКРЫТИЯ попапа СКРИШОТА
+function simpleClose(popupElement) {
+  popupElement.classList.remove("popup_is-opened");
+}
+// функция ЗАКРЫТИЯ ПОПАПА по клавише ESC
+function closePopupByEsc(evt) {
+  if (evt.key !== "Escape" || evt.code !== "Escape") return;
 
+  const handleEscape = (popup, closeFn, selectors) => {
+    closeFn(popup);
+    selectors.forEach((selector) => REMOVE(popup.querySelectorAll(selector)));
+  };
+
+  if (popupScreenshot.classList.contains("popup_is-opened")) {
+    handleEscape(popupScreenshot, simpleClose, [".popup__screenshot__block"]);
+  } else if (popupFilm.classList.contains("popup_is-opened")) {
+    handleEscape(popupFilm, closePopup, [".film__poster", ".film__screenshot"]);
+  } else if (popupNavigation.classList.contains("popup_is-opened")) {
+    handleEscape(popupNavigation, closePopup, []);
+  }
+}
 // функция ЗАКРЫТИЯ ПОПАПА по клику ВНЕ оверлея
-function addCloseOverlayListener(element) {
+function addCloseOverlayListener(element, closeFn, selector = null) {
   element.addEventListener("click", function (e) {
     if (e.target === e.currentTarget) {
-      closePopup(e.currentTarget);
+      closeFn(e.currentTarget);
+      if (selector) {
+        REMOVE(element.querySelectorAll(selector));
+      }
     }
   });
 }
-
-function addCloseOverlayListenerByScreenshot(element) {
-  element.addEventListener("click", function (e) {
-    if (e.target === e.currentTarget) {
-      closePopupScreenshot(e.currentTarget);
-      REMOVE(popupScreenshot.querySelectorAll(".popup__screenshot__block"));
-    }
-  });
-}
-
 // использование закрытия и открытия попапа с НАВИГАЦИЕЙ
-document
-  .querySelector(".header__navigation_button")
-  .addEventListener("click", function () {
-    openPopup(popupNavigation);
-  });
-document
-  .querySelector(".popup__navigation__close")
-  .addEventListener("click", function () {
-    closePopup(popupNavigation);
-  });
-addCloseOverlayListener(popupNavigation);
+const openNavigation = document.querySelector(".header__navigation_button");
+const closeNavigation = document.querySelector(".popup__navigation__close");
+openNavigation.addEventListener("click", () => openPopup(popupNavigation));
+closeNavigation.addEventListener("click", () => closePopup(popupNavigation));
+addCloseOverlayListener(popupNavigation, closePopup);
 
-// константы ПОИСКА
-const headerSearchSubmit = document.querySelector(".header__search__submit");
-const headerClearButton = document.querySelector(".header__clear__button");
-const headerSearchButton = document.querySelector(".header__search__button");
+// Константы для элементов поиска
 const headerSearch = document.forms["header-search"];
 const searchInput = headerSearch.elements.search;
+const headerSearchButton = document.querySelector(".header__search__button");
+const headerSearchSubmit = document.querySelector(".header__search__submit");
+const headerClearButton = document.querySelector(".header__clear__button");
 const mainSearch = document.querySelector(".main__search");
-// НЕАКТИВНЫЙ поиск
+// Инициализация состояния
 headerSearchSubmit.disabled = true;
-// функция НЕАКТИВНОГО поиска
-function searchDisabled() {
-  headerSearchSubmit.disabled = true;
-  headerSearchSubmit.classList.remove("header__search__submit_is-active");
-  headerClearButton.classList.remove("header__clear__button_is-opened");
+// Управление активностью поиска
+function toggleSearchState(isActive) {
+  headerSearchSubmit.disabled = !isActive;
+  headerSearchSubmit.classList.toggle(
+    "header__search__submit_is-active",
+    isActive
+  );
+  headerClearButton.classList.toggle(
+    "header__clear__button_is-opened",
+    isActive
+  );
 }
-// функция НАЖАТИЯ на ЛУПУ
+// Основная логика поиска
 function Search() {
-  headerSearchButton.addEventListener("click", function () {
+  // Открытие поиска по клику на кнопку
+  headerSearchButton.addEventListener("click", () => {
     headerSearch.classList.toggle("header__search_is-opened");
+    searchInput.focus();
   });
-  // значение поиска влияет на КНОПКИ поиска
-  searchInput.addEventListener("input", function (evt) {
-    if (this.value.length > 0) {
-      headerSearchSubmit.disabled = false;
-      headerSearchSubmit.classList.add("header__search__submit_is-active");
-      headerClearButton.classList.add("header__clear__button_is-opened");
-    } else {
-      searchDisabled();
-    }
+
+  // Обработка ввода в поле поиска
+  searchInput.addEventListener("input", () => {
+    toggleSearchState(searchInput.value.length > 0);
   });
-  // ОЧИСТКА поиска
-  headerClearButton.addEventListener("mousedown", function (evt) {
+
+  // Очистка поиска
+  headerClearButton.addEventListener("mousedown", (evt) => {
     evt.preventDefault();
     searchInput.value = "";
-    searchDisabled();
+    toggleSearchState(false);
   });
 }
 // функция ЗАКРЫТИЯ поиска
 function clearSearch() {
   headerSearch.reset();
   headerSearch.classList.remove("header__search_is-opened");
-  searchDisabled();
+  toggleSearchState(false);
   mainSearch.classList.remove("main__search_is-opened");
 }
-// ПОИСК
+// Инициализация поиска
 Search();
 
-// функция изменения НАВИГАЦИИ и передвижения ПОИСКА из-за сужжения экрана
+// Константы, переменные и функция перемещения формы поиска при изменении ширины экрана
 const navigationItems = document.querySelectorAll(".navigation__item");
-function MovingSearch_and_ChangingNavigation() {
-  navigationItems.forEach(function (item) {
-    item.classList.add("navigation__item_is-hover");
-  });
-  function moveDetails() {
-    let target = document.querySelector(".popup__navigation__content"),
-      origin = document.querySelector(".search"),
-      breakPoint = 1023,
-      viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-    if (viewportWidth < breakPoint) {
-      target.appendChild(headerSearch);
-      navigationItems.forEach(function (item) {
-        item.classList.remove("navigation__item_is-hover");
-      });
-    }
-    window.addEventListener("resize", () => {
-      let viewportWidth =
-        window.innerWidth || document.documentElement.clientWidth;
-      if (viewportWidth < breakPoint) {
-        target.appendChild(headerSearch);
-        navigationItems.forEach(function (item) {
-          item.classList.remove("navigation__item_is-hover");
-        });
-      } else {
-        origin.appendChild(headerSearch);
-        navigationItems.forEach(function (item) {
-          item.classList.add("navigation__item_is-hover");
-        });
-      }
+const navigationContent = document.querySelector(".popup__navigation__content");
+const searchContainer = document.querySelector(".search");
+const breakPoint = 1023;
+function moveNavigation() {
+  // Управление классами элементов навигации
+  function toggleNavigationClasses(add = true) {
+    navigationItems.forEach((item) => {
+      item.classList.toggle("navigation__item_is-hover", add);
     });
   }
-  moveDetails();
-  navigationItems.forEach(function (item) {
-    item.addEventListener("click", function () {
-      item.classList.toggle("navigation__item_is-rotate");
-      item
-        .querySelector(".navigation__hidden")
-        .classList.toggle("navigation__hidden_is-opened");
-    });
-  });
-}
-MovingSearch_and_ChangingNavigation();
 
+  // Перемещение поисковой формы
+  function moveSearchForm(toTarget = true) {
+    const target = toTarget ? navigationContent : searchContainer;
+    target.appendChild(headerSearch);
+    toggleNavigationClasses(!toTarget);
+  }
+
+  // Обработка клика по элементу навигации
+  function handleNavigationClick(event) {
+    const target = event.currentTarget;
+    target.classList.toggle("navigation__item_is-rotate");
+    target
+      .querySelector(".navigation__hidden")
+      .classList.toggle("navigation__hidden_is-opened");
+  }
+
+  // Проверка ширины окна
+  function checkViewportWidth() {
+    const viewportWidth =
+      window.innerWidth || document.documentElement.clientWidth;
+    moveSearchForm(viewportWidth < breakPoint);
+  }
+
+  // Инициализация классов
+  toggleNavigationClasses();
+
+  // Добавление обработчиков
+  navigationItems.forEach((item) => {
+    item.addEventListener("click", handleNavigationClick);
+  });
+
+  // Инициализация положения поиска
+  checkViewportWidth();
+
+  // Обработка изменения размера окна
+  window.addEventListener("resize", checkViewportWidth);
+}
+// Запуск инициализации
+moveNavigation();
+
+// Клонирование основного массива
 const clonedArray = structuredClone(films);
+// функция СОЗДАНИЯ в шапке сайта КАРТИНКИ с сеткой
 clonedArray.forEach(function (item) {
   item.screenshots = Array.from(
     { length: item.screenshots },
     (element, index) => {
       var plus = index + 1;
+      const basePath = location_of_the_images;
+      const imageExtension = ".jpg";
+      const linkName = name_for_link(item.original);
+
+      let folder = "";
 
       if (item.format == "фильм") {
-        element =
-          location_of_the_images +
-          "films/" +
-          item.release.getFullYear() +
-          "/" +
-          name_for_link(item.original) +
-          "/" +
-          plus +
-          ".jpg";
+        folder = `films/${item.release.getFullYear()}/${linkName}`;
       } else if (item.season == "мини–сериал") {
-        element =
-          location_of_the_images +
-          "serials/" +
-          name_for_link(item.original) +
-          "/" +
-          plus +
-          ".jpg";
+        folder = `serials/${linkName}`;
       } else {
-        element =
-          location_of_the_images +
-          "serials/" +
-          name_for_link(item.original) +
-          "/" +
-          "season__" +
-          item.season +
-          "/" +
-          plus +
-          ".jpg";
+        folder = `serials/${linkName}/season__${item.season}`;
       }
+
+      element = `${basePath}${folder}/${plus}${imageExtension}`;
 
       return element;
     }
   );
 
   const random = Math.floor(Math.random() * item.screenshots.length);
-  const qwerty = item.screenshots[random];
+  const screenshotsRandom = item.screenshots[random];
 
   item.screenshots = Array.from({ length: 1 }, (element, index) => {
-    return (element = qwerty);
+    return (element = screenshotsRandom);
   });
 });
-
-// функция СОЗДАНИЯ в шапке сайта КАРТИНКИ с сеткой
 function BigImage() {
-  function efficientRandomElements(arr, count) {
-    let result = new Array(count),
-      len = arr.length,
-      taken = new Array(len);
-    if (count > len)
+  // Функция для получения случайных уникальных элементов из массива
+  const getRandomUniqueElements = (arr, count) => {
+    if (count > arr.length) {
       throw new RangeError(
-        "efficientRandomElements: количество запрашиваемых элементов превышает их количество в массиве"
+        "Количество запрашиваемых элементов превышает размер массива"
       );
-    while (count--) {
-      let x = Math.floor(Math.random() * len);
-      result[count] = arr[x in taken ? taken[x] : x];
-      taken[x] = --len in taken ? taken[len] : len;
     }
-    return result;
-  }
-  // !!! если что, менять количество изображений в картинке ЗДЕСЬ !!!
-  const Number = 25;
-  // !!!
-  const Screenshots = efficientRandomElements(clonedArray, Number);
-  const ScreenshotsN = Array.from(
-    Screenshots,
+
+    const shuffled = [...arr].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+  };
+
+  // Количество отображаемых изображений
+  const IMAGE_COUNT = 25;
+
+  // Получаем случайные скриншоты
+  const selectedScreenshots = getRandomUniqueElements(clonedArray, IMAGE_COUNT);
+  const screenshotUrls = selectedScreenshots.map(
     ({ screenshots }) => screenshots
   );
 
-  function films_titles_in_running_picture() {
-    const titles_only = Array.from(Screenshots, ({ title }) => title);
-    const titles = Array.from(new Set(titles_only));
-    console.log(
-      "В бегущей строке используются кадры из следующих фильмов: " + titles
-    );
-  }
-
-  // films_titles_in_running_picture()
-
+  // Функция для отображения изображений
+  const template = document.querySelector("#top__images-template").content;
+  const imageContainer = document.querySelectorAll(".top__images");
   function imagesHeader() {
-    const topImagesTemplate = document.querySelector(
-      "#top__images-template"
-    ).content;
-
-    const topImages = document.querySelectorAll(".top__images");
-
-    function addTopImages(item) {
-      const topImagesElement = topImagesTemplate
+    const template = document.querySelector("#top__images-template").content;
+    const imagesContainer = document.querySelectorAll(".top__images");
+    const createImageElement = (url) => {
+      const imageBlock = template
         .querySelector(".top__images_block")
         .cloneNode(true);
+      const image = imageBlock.querySelector(".top__images_image");
 
-      const topImage = topImagesElement.querySelector(".top__images_image");
-
-      topImage.src = item;
-      topImage.alt = "Скриншот";
-      topImage.addEventListener("load", function () {
-        topImage.style.opacity = "1";
+      Object.assign(image, {
+        src: url,
+        alt: "Скриншот",
       });
 
-      return topImagesElement;
-    }
+      image.addEventListener("load", () => {
+        image.style.opacity = "1";
+      });
 
-    topImages.forEach((item) => {
-      ScreenshotsN.forEach(function (element) {
-        item.append(addTopImages(element));
+      return imageBlock;
+    };
+    imagesContainer.forEach((container) => {
+      screenshotUrls.forEach((url) => {
+        container.append(createImageElement(url));
       });
     });
   }
@@ -24437,24 +24401,31 @@ function BigImage() {
 BigImage();
 
 // переключение ТЕМ
-const buttonThemeLight = document.querySelector(".theme__light");
-const buttonThemeDark = document.querySelector(".theme__dark");
-buttonThemeLight.addEventListener("click", function () {
-  document.body.classList.remove("dark-theme");
-  buttonThemeLight.classList.toggle("theme__button_is-active");
-  buttonThemeDark.classList.toggle("theme__button_is-active");
-  buttonThemeLight.disabled = true;
-  buttonThemeDark.disabled = false;
+const themeButtons = {
+  light: document.querySelector(".theme__light"),
+  dark: document.querySelector(".theme__dark"),
+};
+const toggleTheme = (theme) => {
+  document.body.classList.toggle("dark-theme", theme === "dark");
+
+  // Обновляем состояние кнопок
+  themeButtons.light.classList.toggle(
+    "theme__button_is-active",
+    theme === "light"
+  );
+  themeButtons.dark.classList.toggle(
+    "theme__button_is-active",
+    theme === "dark"
+  );
+
+  // Блокируем/разблокируем кнопки
+  themeButtons.light.disabled = theme === "light";
+  themeButtons.dark.disabled = theme === "dark";
+
   closePopup(popupNavigation);
-});
-buttonThemeDark.addEventListener("click", function () {
-  document.body.classList.add("dark-theme");
-  buttonThemeLight.classList.toggle("theme__button_is-active");
-  buttonThemeDark.classList.toggle("theme__button_is-active");
-  buttonThemeLight.disabled = false;
-  buttonThemeDark.disabled = true;
-  closePopup(popupNavigation);
-});
+};
+themeButtons.light.addEventListener("click", () => toggleTheme("light"));
+themeButtons.dark.addEventListener("click", () => toggleTheme("dark"));
 
 // константа главного листа
 const mainList = document.querySelector(".main__list");
@@ -24468,101 +24439,58 @@ function addCard(item) {
     .querySelector(".main__list__item")
     .cloneNode(true);
 
-  const originalName = mainListElement.querySelector(".card__title__original");
-  originalName.textContent = item.original;
-
-  const year_for_link = item.release.getFullYear();
-
-  const elementPoster = mainListElement.querySelector(".card__poster");
-
-  function conditions_for_posters() {
-    if (item.format == "фильм" || item.season == "мини–сериал") {
-      elementPoster.src =
-        location_of_the_images +
-        "miniposters/" +
-        name_for_link(originalName.textContent) +
-        ".jpg";
-    } else {
-      elementPoster.src =
-        location_of_the_images +
-        "miniposters/" +
-        name_for_link(originalName.textContent) +
-        "_" +
-        item.season +
-        ".jpg";
-    }
-  }
-
-  if (item.posters == 1) {
-    conditions_for_posters();
-  } else {
-    const random_poster_number = Math.floor(Math.random() * item.posters) + 1;
-    item.posters = Array.from({ length: 1 }, (element, index) => {
-      return (element = random_poster_number);
-    });
-
-    if (item.posters == 1) {
-      conditions_for_posters();
-    } else {
-      if (item.format == "фильм" || item.season == "мини–сериал") {
-        elementPoster.src =
-          location_of_the_images +
-          "miniposters/" +
-          name_for_link(originalName.textContent) +
-          "(" +
-          item.posters +
-          ")" +
-          ".jpg";
-      } else {
-        elementPoster.src =
-          location_of_the_images +
-          "miniposters/" +
-          name_for_link(originalName.textContent) +
-          "_" +
-          item.season +
-          "(" +
-          item.posters +
-          ")" +
-          ".jpg";
-      }
-    }
-  }
-
-  elementPoster.alt = "Постер из «" + item.title + "»";
-  elementPoster.addEventListener("load", function () {
-    elementPoster.style.opacity = "1";
-  });
-
+  // скрытая информация
   mainListElement.querySelector(".card__grade").textContent = item.grade;
   mainListElement.querySelector(".card__title").textContent = item.title;
-
   mainListElement.querySelector(".card__year__original").textContent =
     item.release.getTime();
   mainListElement.querySelector(".card__publication__original").textContent =
     item.publication.getTime();
 
+  // постер
+  const originalName = mainListElement.querySelector(".card__title__original");
+  originalName.textContent = item.original;
+  const elementPoster = mainListElement.querySelector(".card__poster");
+  const basePath = location_of_the_images + "miniposters/";
+  const baseName = name_for_link(originalName.textContent);
+  function setPoster() {
+    const randomPoster =
+      item.posters > 1 ? Math.floor(Math.random() * item.posters) + 1 : 1;
+    item.posters = [randomPoster];
+    const isSingle = item.format === "фильм" || item.season === "мини–сериал";
+    const seasonSuffix = isSingle ? "" : `_${item.season}`;
+    const posterSuffix = randomPoster > 1 ? `(${randomPoster})` : "";
+    elementPoster.src = `${basePath}${baseName}${seasonSuffix}${posterSuffix}.jpg`;
+  }
+  setPoster();
+  elementPoster.alt = `Постер из «${item.title}»`;
+  elementPoster.addEventListener("load", () => {
+    elementPoster.style.opacity = "1";
+  });
+
   mainListElement.classList.add("main__list__item_is-opened");
 
-  const headerSearch = document.forms["header-search"];
-  const searchInput = headerSearch.elements.search;
+  const year_for_link = item.release.getFullYear();
 
-  function searchFilms(evt) {
-    evt.preventDefault();
+  // Функция поиска
+  function handleSearchSubmit() {
     removeNavigationTitle();
     document.querySelector(".main__search__result").textContent =
       searchInput.value;
     mainSearch.classList.add("main__search_is-opened");
 
-    if (
-      item.title.toLowerCase().includes(searchInput.value.toLowerCase()) ||
-      item.original.toLowerCase().includes(searchInput.value.toLowerCase())
-    ) {
+    const title = item.title.toLowerCase();
+    const original = item.original.toLowerCase();
+    const searchValue = searchInput.value.toLowerCase();
+
+    if (title.includes(searchValue) || original.includes(searchValue)) {
       mainListElement.classList.add("main__list__item_is-opened");
       document.querySelector(".main__base").scrollIntoView();
-      setTimeout(function () {
+      setTimeout(() => {
         headerSearch.reset();
         headerSearch.classList.remove("header__search_is-opened");
-        searchDisabled();
+        toggleSearchState(false);
+        closePopup(popupNavigation);
       }, 0);
     } else {
       mainListElement.classList.remove("main__list__item_is-opened");
@@ -24570,105 +24498,67 @@ function addCard(item) {
 
     closePopup(popupNavigation);
   }
+  // Обработка отправки формы
+  headerSearch.addEventListener("submit", (evt) => {
+    evt.preventDefault();
+    handleSearchSubmit();
+  });
 
-  headerSearch.addEventListener("submit", searchFilms);
-
-  const description = document.querySelector(".main__description");
-  const descriptionBlock = document.querySelector(".main__description__block");
-  const descriptionFormat = document.querySelector(
-    ".main__description__format"
-  );
-  const descriptionElements = document.querySelector(
-    ".main__description__elements"
-  );
-  const descriptionTitle = document.querySelector(".main__description__title");
-  const descriptionGrade = document.querySelector(".main__description__grade");
-  const descriptionNames = document.querySelector(".main__description__names");
-  const descriptionJob = document.querySelector(".main__description__job");
-  const descriptionPhoto = document.querySelector(
-    ".main__description__photo_img"
-  );
-  const descriptionName = document.querySelector(".main__description__name");
-
+  // ВСЕ константы шапки
+  const descriptionElements = {
+    container: document.querySelector(".main__description"),
+    block: document.querySelector(".main__description__block"),
+    format: document.querySelector(".main__description__format"),
+    elements: document.querySelector(".main__description__elements"),
+    title: document.querySelector(".main__description__title"),
+    grade: document.querySelector(".main__description__grade"),
+    names: document.querySelector(".main__description__names"),
+    job: document.querySelector(".main__description__job"),
+    photo: document.querySelector(".main__description__photo_img"),
+    name: document.querySelector(".main__description__name"),
+  };
+  // Функция очистки шапки
   function removeNavigationTitle() {
-    descriptionBlock.classList.remove("main__description_is-opened");
-    descriptionElements.classList.remove("main__description_is-opened");
-    descriptionFormat.classList.remove("main__description__element_is-opened");
-    descriptionNames.classList.remove("main__description__names_is-opened");
-    descriptionGrade.title = undefined;
-    descriptionTitle.textContent = undefined;
-    descriptionTitle.classList.remove("main__description__title_is-studio");
-    descriptionTitle.style.backgroundImage = "url()";
+    descriptionElements.block.classList.remove("main__description_is-opened");
+    descriptionElements.elements.classList.remove(
+      "main__description_is-opened"
+    );
+    descriptionElements.format.classList.remove(
+      "main__description__element_is-opened"
+    );
+    descriptionElements.names.classList.remove(
+      "main__description__names_is-opened"
+    );
+    descriptionElements.grade.title = "";
+    descriptionElements.title.textContent = "";
+    descriptionElements.title.classList.remove(
+      "main__description__title_is-studio"
+    );
+    descriptionElements.title.style.backgroundImage = "url()";
   }
-
+  // Успешные действия при нажатии на кнопку в навигации
   function openCard() {
     document.querySelector(".main__base").scrollIntoView();
     clearSearch();
     closePopup(popupNavigation);
     mainListElement.classList.add("main__list__item_is-opened");
   }
-
+  // Провальные действия при нажатии на кнопку в навигации
   function mistake() {
     mainListElement.classList.remove("main__list__item_is-opened");
     closePopup(popupNavigation);
     document.querySelector(".main__base").scrollIntoView();
   }
 
+  // Нажатия на кнопку ФОРМАТОВ
   const formatButtons = document.querySelectorAll(".navigation__format__item");
-  formatButtons.forEach(function (element) {
-    element.addEventListener("click", function () {
-      if (element.textContent.toLowerCase() == item.format) {
-        if (
-          descriptionElements.classList.contains("main__description_is-opened")
-        ) {
-          descriptionNames.classList.remove(
-            "main__description__names_is-opened"
-          );
-          descriptionBlock.classList.add("main__description_is-opened");
-          descriptionFormat.classList.add(
-            "main__description__element_is-opened"
-          );
-          descriptionFormat.classList.add(
-            "main__description__format_is-marked"
-          );
-          descriptionFormat.classList.add("main__description__subtitle");
-          descriptionFormat.textContent = element.textContent;
-
-          for (let i = 0; i < item.genres.length; i++) {
-            if (
-              item.genres[i].genre ==
-                descriptionTitle.textContent.toLowerCase() &&
-              element.textContent.toLowerCase() == item.format
-            ) {
-              openCard();
-              break;
-            } else if (
-              descriptionTitle.textContent ==
-                item.release.toString().slice(11, 15) &&
-              element.textContent.toLowerCase() == item.format
-            ) {
-              openCard();
-            } else if (
-              descriptionGrade.title == item.grade &&
-              element.textContent.toLowerCase() == item.format
-            ) {
-              openCard();
-            }
-          }
-        } else {
-          descriptionNames.classList.remove(
-            "main__description__names_is-opened"
-          );
-          descriptionBlock.classList.add("main__description_is-opened");
-          descriptionFormat.classList.add(
-            "main__description__element_is-opened"
-          );
-          descriptionFormat.classList.add(
-            "main__description__format_is-marked"
-          );
-          descriptionFormat.classList.remove("main__description__subtitle");
-          descriptionFormat.textContent = element.textContent;
-
+  formatButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const format = button.textContent.toLowerCase();
+      if (format === item.format) {
+        toggleDescriptionClasses();
+        updateFormatDisplay(format);
+        if (checkConditions()) {
           openCard();
         }
       } else {
@@ -24676,28 +24566,66 @@ function addCard(item) {
       }
     });
   });
+  function toggleDescriptionClasses() {
+    descriptionElements.names.classList.remove(
+      "main__description__names_is-opened"
+    );
+    descriptionElements.block.classList.add("main__description_is-opened");
+    descriptionElements.format.classList.add(
+      "main__description__element_is-opened",
+      "main__description__format_is-marked"
+    );
+  }
+  function updateFormatDisplay(format) {
+    const isOpened = descriptionElements.block.classList.contains(
+      "main__description_is-opened"
+    );
+
+    descriptionElements.format.classList.toggle(
+      "main__description__subtitle",
+      isOpened
+    );
+    descriptionElements.format.textContent = format;
+  }
+  function checkConditions() {
+    const title = descriptionElements.title.textContent.toLowerCase();
+    const year = descriptionElements.title.textContent.slice(11, 15);
+
+    return (
+      item.genres.some((genre) => genre.genre === title) ||
+      year === descriptionElements.title.textContent ||
+      descriptionElements.grade.title === item.grade
+    );
+  }
 
   const genreButtons = document.querySelectorAll(".navigation__genres__item");
   function studio_or_not(item) {
-    if (
-      item.toLowerCase() == "pixar" ||
-      item.toLowerCase() == "marvel" ||
-      item.toLowerCase() == "dc"
-    ) {
-      descriptionTitle.classList.add("main__description__title_is-studio");
-      if (item.toLowerCase() == "pixar") {
-        descriptionTitle.classList.add("main__description__title_is-pixar");
-        descriptionTitle.style.backgroundImage = "url(" + PixarLogo + ")";
-      } else if (item.toLowerCase() == "marvel") {
-        descriptionTitle.classList.remove("main__description__title_is-pixar");
-        descriptionTitle.style.backgroundImage = "url(" + MarvelLogo + ")";
-      } else if (item.toLowerCase() == "dc") {
-        descriptionTitle.classList.remove("main__description__title_is-pixar");
-        descriptionTitle.style.backgroundImage = "url(" + DCLogo + ")";
-      }
+    const studios = {
+      pixar: {
+        class: "main__description__title_is-pixar",
+        logo: PixarLogo,
+      },
+      marvel: {
+        logo: MarvelLogo,
+      },
+      dc: {
+        logo: DCLogo,
+      },
+    };
+    const lowerItem = item.toLowerCase();
+    const isStudio = studios[lowerItem];
+    descriptionElements.title.classList.toggle(
+      "main__description__title_is-studio",
+      !!isStudio
+    );
+    if (isStudio) {
+      descriptionElements.title.classList.toggle(
+        "main__description__title_is-pixar",
+        lowerItem === "pixar"
+      );
+      descriptionElements.title.style.backgroundImage = `url(${isStudio.logo})`;
     } else {
-      descriptionTitle.classList.remove("main__description__title_is-studio");
-      descriptionTitle.style.backgroundImage = "url()";
+      descriptionElements.title.style.backgroundImage = "";
     }
   }
   genreButtons.forEach(function (element) {
@@ -24705,49 +24633,62 @@ function addCard(item) {
       for (let i = 0; i < item.genres.length; i++) {
         if (item.genres[i].genre == element.textContent.toLowerCase()) {
           if (
-            descriptionFormat.classList.contains(
+            descriptionElements.format.classList.contains(
               "main__description__element_is-opened"
             )
           ) {
-            descriptionNames.classList.remove(
+            descriptionElements.names.classList.remove(
               "main__description__names_is-opened"
             );
-            descriptionBlock.classList.add("main__description_is-opened");
-            descriptionElements.classList.add("main__description_is-opened");
-            descriptionFormat.classList.add("main__description__subtitle");
-            descriptionTitle.classList.add(
+            descriptionElements.block.classList.add(
+              "main__description_is-opened"
+            );
+            descriptionElements.elements.classList.add(
+              "main__description_is-opened"
+            );
+            descriptionElements.format.classList.add(
+              "main__description__subtitle"
+            );
+            descriptionElements.title.classList.add(
               "main__description__element_is-opened"
             );
 
-            descriptionTitle.textContent = element.textContent;
+            descriptionElements.title.textContent = element.textContent;
             studio_or_not(element.textContent);
 
-            descriptionGrade.classList.remove(
+            descriptionElements.grade.classList.remove(
               "main__description__element_is-opened"
             );
-            descriptionGrade.title = undefined;
+            descriptionElements.grade.title = "";
 
-            if (descriptionFormat.textContent.toLowerCase() == item.format) {
+            if (
+              descriptionElements.format.textContent.toLowerCase() ==
+              item.format
+            ) {
               openCard();
               break;
             }
           } else {
-            descriptionNames.classList.remove(
+            descriptionElements.names.classList.remove(
               "main__description__names_is-opened"
             );
-            descriptionBlock.classList.add("main__description_is-opened");
-            descriptionElements.classList.add("main__description_is-opened");
-            descriptionTitle.classList.add(
+            descriptionElements.block.classList.add(
+              "main__description_is-opened"
+            );
+            descriptionElements.elements.classList.add(
+              "main__description_is-opened"
+            );
+            descriptionElements.title.classList.add(
               "main__description__element_is-opened"
             );
 
-            descriptionTitle.textContent = element.textContent;
+            descriptionElements.title.textContent = element.textContent;
             studio_or_not(element.textContent);
 
-            descriptionGrade.classList.remove(
+            descriptionElements.grade.classList.remove(
               "main__description__element_is-opened"
             );
-            descriptionGrade.title = undefined;
+            descriptionElements.grade.title = "";
 
             openCard();
             break;
@@ -24770,47 +24711,62 @@ function addCard(item) {
         if_there_is_a_continuation_and_it_matches == true
       ) {
         if (
-          descriptionFormat.classList.contains(
+          descriptionElements.format.classList.contains(
             "main__description__element_is-opened"
           )
         ) {
-          descriptionNames.classList.remove(
+          descriptionElements.names.classList.remove(
             "main__description__names_is-opened"
           );
-          descriptionBlock.classList.add("main__description_is-opened");
-          descriptionElements.classList.add("main__description_is-opened");
-          descriptionFormat.classList.add("main__description__subtitle");
-          descriptionTitle.classList.add(
+          descriptionElements.block.classList.add(
+            "main__description_is-opened"
+          );
+          descriptionElements.elements.classList.add(
+            "main__description_is-opened"
+          );
+          descriptionElements.format.classList.add(
+            "main__description__subtitle"
+          );
+          descriptionElements.title.classList.add(
             "main__description__element_is-opened"
           );
-          descriptionTitle.textContent = element.textContent;
-          descriptionTitle.classList.remove(
+          descriptionElements.title.textContent = element.textContent;
+          descriptionElements.title.classList.remove(
             "main__description__title_is-studio"
           );
-          descriptionTitle.style.backgroundImage = "url()";
-          descriptionGrade.classList.remove(
+          descriptionElements.title.style.backgroundImage = "url()";
+          descriptionElements.grade.classList.remove(
             "main__description__element_is-opened"
           );
-          descriptionGrade.title = undefined;
+          descriptionElements.grade.title = "";
 
-          if (descriptionFormat.textContent.toLowerCase() == item.format) {
+          if (
+            descriptionElements.format.textContent.toLowerCase() == item.format
+          ) {
             openCard();
           }
         } else {
-          descriptionNames.classList.remove(
+          descriptionElements.names.classList.remove(
             "main__description__names_is-opened"
           );
-          descriptionBlock.classList.add("main__description_is-opened");
-          descriptionElements.classList.add("main__description_is-opened");
-          descriptionTitle.classList.add(
+          descriptionElements.block.classList.add(
+            "main__description_is-opened"
+          );
+          descriptionElements.elements.classList.add(
+            "main__description_is-opened"
+          );
+          descriptionElements.title.classList.add(
             "main__description__element_is-opened"
           );
-          descriptionTitle.textContent = element.textContent;
-          descriptionTitle.classList.remove(
+          descriptionElements.title.textContent = element.textContent;
+          descriptionElements.title.classList.remove(
             "main__description__title_is-studio"
           );
-          descriptionTitle.style.backgroundImage = "url()";
-          descriptionGrade.title = undefined;
+          descriptionElements.title.style.backgroundImage = "url()";
+          descriptionElements.grade.classList.remove(
+            "main__description__element_is-opened"
+          );
+          descriptionElements.grade.title = "";
 
           openCard();
         }
@@ -24826,55 +24782,71 @@ function addCard(item) {
       const elementImg = element.querySelector(".navigation__grades__image");
       if (elementImg.title == item.grade) {
         if (
-          descriptionFormat.classList.contains(
+          descriptionElements.format.classList.contains(
             "main__description__element_is-opened"
           )
         ) {
-          descriptionNames.classList.remove(
+          descriptionElements.names.classList.remove(
             "main__description__names_is-opened"
           );
-          descriptionBlock.classList.add("main__description_is-opened");
-          descriptionElements.classList.add("main__description_is-opened");
-          descriptionFormat.classList.add("main__description__subtitle");
-          descriptionTitle.classList.remove(
+          descriptionElements.block.classList.add(
+            "main__description_is-opened"
+          );
+          descriptionElements.elements.classList.add(
+            "main__description_is-opened"
+          );
+          descriptionElements.format.classList.add(
+            "main__description__subtitle"
+          );
+          descriptionElements.title.classList.remove(
             "main__description__element_is-opened"
           );
-          descriptionTitle.textContent = undefined;
-          descriptionGrade.classList.add(
+          descriptionElements.title.textContent = "";
+          descriptionElements.grade.classList.add(
             "main__description__element_is-opened"
           );
 
-          defineGradeBlack(item.grade, descriptionGrade);
+          defineGradeBlack(item.grade, descriptionElements.grade);
           if (item.grade == "love") {
-            descriptionGrade.classList.add("main__description__grade_is-loved");
+            descriptionElements.grade.classList.add(
+              "main__description__grade_is-loved"
+            );
           } else {
-            descriptionGrade.classList.remove(
+            descriptionElements.grade.classList.remove(
               "main__description__grade_is-loved"
             );
           }
 
-          if (descriptionFormat.textContent.toLowerCase() == item.format) {
+          if (
+            descriptionElements.format.textContent.toLowerCase() == item.format
+          ) {
             openCard();
           }
         } else {
-          descriptionNames.classList.remove(
+          descriptionElements.names.classList.remove(
             "main__description__names_is-opened"
           );
-          descriptionBlock.classList.add("main__description_is-opened");
-          descriptionElements.classList.add("main__description_is-opened");
-          descriptionTitle.classList.remove(
+          descriptionElements.block.classList.add(
+            "main__description_is-opened"
+          );
+          descriptionElements.elements.classList.add(
+            "main__description_is-opened"
+          );
+          descriptionElements.title.classList.remove(
             "main__description__element_is-opened"
           );
-          descriptionTitle.textContent = undefined;
-          descriptionGrade.classList.add(
+          descriptionElements.title.textContent = "";
+          descriptionElements.grade.classList.add(
             "main__description__element_is-opened"
           );
 
-          defineGradeBlack(item.grade, descriptionGrade);
+          defineGradeBlack(item.grade, descriptionElements.grade);
           if (item.grade == "love") {
-            descriptionGrade.classList.add("main__description__grade_is-loved");
+            descriptionElements.grade.classList.add(
+              "main__description__grade_is-loved"
+            );
           } else {
-            descriptionGrade.classList.remove(
+            descriptionElements.grade.classList.remove(
               "main__description__grade_is-loved"
             );
           }
@@ -24895,14 +24867,22 @@ function addCard(item) {
   });
 
   function sorting_by_year(element) {
-    descriptionNames.classList.remove("main__description__names_is-opened");
-    descriptionBlock.classList.add("main__description_is-opened");
-    descriptionElements.classList.add("main__description_is-opened");
-    descriptionFormat.classList.remove("main__description__element_is-opened");
-    descriptionTitle.classList.add("main__description__element_is-opened");
-    descriptionTitle.textContent = element.textContent;
-    descriptionGrade.classList.remove("main__description__element_is-opened");
-    descriptionGrade.title = undefined;
+    descriptionElements.names.classList.remove(
+      "main__description__names_is-opened"
+    );
+    descriptionElements.block.classList.add("main__description_is-opened");
+    descriptionElements.elements.classList.add("main__description_is-opened");
+    descriptionElements.format.classList.remove(
+      "main__description__element_is-opened"
+    );
+    descriptionElements.title.classList.add(
+      "main__description__element_is-opened"
+    );
+    descriptionElements.title.textContent = element.textContent;
+    descriptionElements.grade.classList.remove(
+      "main__description__element_is-opened"
+    );
+    descriptionElements.grade.title = "";
 
     openCard();
     closePopup(popupFilm);
@@ -24955,21 +24935,31 @@ function addCard(item) {
       ".film__header__grade"
     );
     if (garde_in_film_page.title == item.grade) {
-      descriptionNames.classList.remove("main__description__names_is-opened");
-      descriptionBlock.classList.add("main__description_is-opened");
-      descriptionElements.classList.add("main__description_is-opened");
-      descriptionFormat.classList.remove(
+      descriptionElements.names.classList.remove(
+        "main__description__names_is-opened"
+      );
+      descriptionElements.block.classList.add("main__description_is-opened");
+      descriptionElements.elements.classList.add("main__description_is-opened");
+      descriptionElements.format.classList.remove(
         "main__description__element_is-opened"
       );
-      descriptionTitle.classList.remove("main__description__element_is-opened");
-      descriptionTitle.textContent = undefined;
-      descriptionGrade.classList.add("main__description__element_is-opened");
+      descriptionElements.title.classList.remove(
+        "main__description__element_is-opened"
+      );
+      descriptionElements.title.textContent = "";
+      descriptionElements.grade.classList.add(
+        "main__description__element_is-opened"
+      );
 
-      defineGradeBlack(item.grade, descriptionGrade);
+      defineGradeBlack(item.grade, descriptionElements.grade);
       if (item.grade == "love") {
-        descriptionGrade.classList.add("main__description__grade_is-loved");
+        descriptionElements.grade.classList.add(
+          "main__description__grade_is-loved"
+        );
       } else {
-        descriptionGrade.classList.remove("main__description__grade_is-loved");
+        descriptionElements.grade.classList.remove(
+          "main__description__grade_is-loved"
+        );
       }
 
       openCard();
@@ -24982,43 +24972,50 @@ function addCard(item) {
   });
 
   function personsPhoto(element) {
-    descriptionPhoto.src =
+    descriptionElements.photo.src =
       location_of_the_images +
       "persons/" +
       name_for_person(element.textContent) +
       ".png";
 
-    descriptionPhoto.alt = element.textContent;
+    descriptionElements.photo.alt = element.textContent;
 
-    descriptionPhoto.addEventListener("load", function () {
+    descriptionElements.photo.addEventListener("load", function () {
       descriptionPhoto.style.opacity = "1";
     });
 
-    descriptionPhoto.onerror = function () {
-      descriptionPhoto.closest(".main__description__photo").style.display =
-        "none";
+    descriptionElements.photo.onerror = function () {
+      descriptionElements.photo.closest(
+        ".main__description__photo"
+      ).style.display = "none";
     };
   }
 
   const castButtons = document.querySelectorAll(".film__cast__name");
   castButtons.forEach(function (element) {
     element.addEventListener("click", function () {
-      descriptionPhoto.style.opacity = "0";
+      descriptionElements.photo.style.opacity = "0";
 
       for (let i = 0; i < item.cast.length; i++) {
         if (item.cast[i].name == element.textContent) {
-          descriptionBlock.classList.remove("main__description_is-opened");
-          descriptionElements.classList.remove("main__description_is-opened");
-          descriptionFormat.classList.remove(
+          descriptionElements.block.classList.remove(
+            "main__description_is-opened"
+          );
+          descriptionElements.elements.classList.remove(
+            "main__description_is-opened"
+          );
+          descriptionElements.format.classList.remove(
             "main__description__element_is-opened"
           );
-          descriptionGrade.title = undefined;
-          descriptionNames.classList.add("main__description__names_is-opened");
-          descriptionJob.textContent = "В ролях";
+          descriptionElements.grade.title = "";
+          descriptionElements.names.classList.add(
+            "main__description__names_is-opened"
+          );
+          descriptionElements.job.textContent = "В ролях";
 
           personsPhoto(element);
 
-          descriptionName.textContent = element.textContent;
+          descriptionElements.name.textContent = element.textContent;
 
           openCard();
           closePopup(popupFilm);
@@ -25035,30 +25032,36 @@ function addCard(item) {
   const directorButtons = document.querySelectorAll(".film__director__name");
   directorButtons.forEach(function (element) {
     element.addEventListener("click", function () {
-      descriptionPhoto.style.opacity = "0";
+      descriptionElements.photo.style.opacity = "0";
       for (let i = 0; i < item.director.length; i++) {
         if (item.director[i].name == element.textContent) {
-          descriptionBlock.classList.remove("main__description_is-opened");
-          descriptionElements.classList.remove("main__description_is-opened");
-          descriptionFormat.classList.remove(
+          descriptionElements.block.classList.remove(
+            "main__description_is-opened"
+          );
+          descriptionElements.elements.classList.remove(
+            "main__description_is-opened"
+          );
+          descriptionElements.format.classList.remove(
             "main__description__element_is-opened"
           );
-          descriptionGrade.title = undefined;
-          descriptionNames.classList.add("main__description__names_is-opened");
+          descriptionElements.grade.title = "";
+          descriptionElements.names.classList.add(
+            "main__description__names_is-opened"
+          );
           if (
-            onlyFilmsDirectorSort.includes(element.textContent) &&
-            onlySerialsDirectorSort.includes(element.textContent)
+            onlyFilmsDirectors.includes(element.textContent) &&
+            onlySerialsDirectors.includes(element.textContent)
           ) {
-            descriptionJob.textContent = "Режиссер/Создатель";
-          } else if (onlyFilmsDirectorSort.includes(element.textContent)) {
-            descriptionJob.textContent = "Режиссер";
-          } else if (onlySerialsDirectorSort.includes(element.textContent)) {
-            descriptionJob.textContent = "Создатель";
+            descriptionElements.job.textContent = "Режиссер/Создатель";
+          } else if (onlyFilmsDirectors.includes(element.textContent)) {
+            descriptionElements.job.textContent = "Режиссер";
+          } else if (onlySerialsDirectors.includes(element.textContent)) {
+            descriptionElements.job.textContent = "Создатель";
           }
 
           personsPhoto(element);
 
-          descriptionName.textContent = element.textContent;
+          descriptionElements.name.textContent = element.textContent;
 
           openCard();
           closePopup(popupFilm);
@@ -25305,8 +25308,7 @@ function showFilmCard(item) {
 
   if (item.cast.length > 1) {
     popupFilm.querySelector(".film__cast").style.display = "inline-block";
-    popupFilm.querySelector(".film__cast__title").textContent =
-      "В ролях: ";
+    popupFilm.querySelector(".film__cast__title").textContent = "В ролях: ";
   } else if (item.cast.length == 1) {
     popupFilm.querySelector(".film__cast__title").textContent =
       "В главной роли: ";
@@ -25447,10 +25449,13 @@ function showFilmCard(item) {
       openPopup(popupScreenshot);
       const close = document.querySelector(".popup__screenshot__close");
       close.addEventListener("click", function () {
-        closePopupScreenshot(popupScreenshot);
-        REMOVE(popupScreenshot.querySelectorAll(".popup__screenshot__block"));
+        closePopup(popupScreenshot);
       });
-      addCloseOverlayListenerByScreenshot(popupScreenshot);
+      addCloseOverlayListener(
+        popupScreenshot,
+        simpleClose,
+        ".popup__screenshot__block"
+      );
 
       const popupScreen = popupScreenshot.querySelectorAll(
         ".popup__screenshot__block"
@@ -25529,18 +25534,9 @@ function showFilmCard(item) {
     .querySelector(".popup__film__close")
     .addEventListener("click", function () {
       closePopup(popupFilm);
-      REMOVE(filmPoster);
-      REMOVE(filmScreenshot);
-      REMOVE(popupScreenshot.querySelectorAll(".popup__screenshot__block"));
     });
 
   openPopup(popupFilm);
-}
-
-function REMOVE(item) {
-  item.forEach(function (element) {
-    element.remove();
-  });
 }
 
 // константы СОРТИРОВОК в навигации
@@ -25678,44 +25674,36 @@ mainSortTitle.addEventListener("click", function () {
 });
 
 function find_the_right_word() {
-  clonedArray.sort((a, b) => {
-    if (a.title.toLowerCase() < b.title.toLowerCase()) {
-      return -1;
-    }
-    if (a.title.toLowerCase() > b.title.toLowerCase()) {
-      return 1;
-    }
-    return 0;
-  });
+  clonedArray.sort((a, b) =>
+    a.title.toLowerCase().localeCompare(b.title.toLowerCase())
+  );
 
-  for (let i = 0; i < 1; i++) {
-    console.log(name_for_link(clonedArray[serial_number_of_the_film].original));
-  }
+  console.log(name_for_link(clonedArray[serial_number_of_the_film].original));
 }
 
 // const serial_number_of_the_film = 97
 // find_the_right_word()
 
 function total_number_of_films_and_serials() {
-  let films_only = clonedArray.filter((elem) => {
-    return elem.format == "фильм";
-  });
-  const films_titles = Array.from(films_only, ({ title }) => title);
-  const number_of_films = Array.from(films_titles);
-
-  let serials_only = clonedArray.filter((elem) => {
-    return elem.format == "сериал";
-  });
-  const serials_titles = Array.from(serials_only, ({ title }) => title);
-  const number_of_serials = Array.from(new Set(serials_titles.sort()));
+  const films = clonedArray
+    .filter((elem) => elem.format === "фильм")
+    .map((elem) => elem.title);
+  const serials = [
+    ...new Set(
+      clonedArray
+        .filter((elem) => elem.format === "сериал")
+        .map((elem) => elem.title)
+        .sort()
+    ),
+  ];
 
   console.log(
     "Публикаций всего: " +
       clonedArray.length +
       ", из которых: фильмов — " +
-      number_of_films.length +
+      films.length +
       ", сериалов — " +
-      number_of_serials.length +
+      serials.length +
       "."
   );
 }
@@ -25723,13 +25711,15 @@ function total_number_of_films_and_serials() {
 // total_number_of_films_and_serials();
 
 function get_a_persons_name() {
-  const persons_Old = Array.from(filmsDirectorSet).concat(
-    Array.from(filmsCastSet)
-  );
-  const persons_OldSort = persons_Old.sort().slice(200, 250);
-  for (let i = 0; i < persons_OldSort.length; i++) {
-    console.log(persons_OldSort[i], name_for_person(persons_OldSort[i]));
-  }
+  const persons = [...filmsDirectors, ...filmsCast]
+    .filter((person, index, arr) => arr.indexOf(person) === index)
+    .sort();
+
+  const selectedPersons = persons.slice(50, 100);
+
+  selectedPersons.forEach((person) => {
+    console.log(person, name_for_person(person));
+  });
 }
 
 // get_a_persons_name()
