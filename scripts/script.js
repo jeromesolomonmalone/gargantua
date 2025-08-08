@@ -1510,7 +1510,7 @@ const films = [
       },
     ],
     screenshots: 23,
-    posters: 1,
+    posters: 2,
   }, // бесконечно белый медведь
   {
     release: new Date("2009-11-25"),
@@ -18234,7 +18234,7 @@ const films = [
   }, // сокровище нации
   {
     release: new Date("2007-12-21"),
-    publication: new Date("2025-01-26"),
+    publication: new Date("2025-01-25"),
     format: "фильм",
     grade: "B",
     title: "Сокровище нации: Книга Тайн",
@@ -25014,7 +25014,7 @@ function addCard(item) {
           );
           descriptionGrade.title = undefined;
           descriptionNames.classList.add("main__description__names_is-opened");
-          descriptionJob.textContent = "В главных ролях";
+          descriptionJob.textContent = "В ролях";
 
           personsPhoto(element);
 
@@ -25306,7 +25306,7 @@ function showFilmCard(item) {
   if (item.cast.length > 1) {
     popupFilm.querySelector(".film__cast").style.display = "inline-block";
     popupFilm.querySelector(".film__cast__title").textContent =
-      "В главных ролях: ";
+      "В ролях: ";
   } else if (item.cast.length == 1) {
     popupFilm.querySelector(".film__cast__title").textContent =
       "В главной роли: ";
