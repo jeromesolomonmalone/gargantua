@@ -24552,13 +24552,70 @@ function addCard(item) {
 
   // Нажатия на кнопку ФОРМАТОВ
   const formatButtons = document.querySelectorAll(".navigation__format__item");
-  formatButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const format = button.textContent.toLowerCase();
-      if (format === item.format) {
-        toggleDescriptionClasses();
-        updateFormatDisplay(format);
-        if (checkConditions()) {
+  formatButtons.forEach(function (element) {
+    element.addEventListener("click", function () {
+      if (element.textContent.toLowerCase() == item.format) {
+        if (
+          descriptionElements.elements.classList.contains(
+            "main__description_is-opened"
+          )
+        ) {
+          descriptionElements.names.classList.remove(
+            "main__description__names_is-opened"
+          );
+          descriptionElements.block.classList.add(
+            "main__description_is-opened"
+          );
+          descriptionElements.format.classList.add(
+            "main__description__element_is-opened"
+          );
+          descriptionElements.format.classList.add(
+            "main__description__format_is-marked"
+          );
+          descriptionElements.format.classList.add(
+            "main__description__subtitle"
+          );
+          descriptionElements.format.textContent = element.textContent;
+
+          for (let i = 0; i < item.genres.length; i++) {
+            if (
+              item.genres[i].genre ==
+                descriptionElements.title.textContent.toLowerCase() &&
+              element.textContent.toLowerCase() == item.format
+            ) {
+              openCard();
+              break;
+            } else if (
+              descriptionElements.title.textContent ==
+                item.release.toString().slice(11, 15) &&
+              element.textContent.toLowerCase() == item.format
+            ) {
+              openCard();
+            } else if (
+              descriptionElements.grade.title == item.grade &&
+              element.textContent.toLowerCase() == item.format
+            ) {
+              openCard();
+            }
+          }
+        } else {
+          descriptionElements.names.classList.remove(
+            "main__description__names_is-opened"
+          );
+          descriptionElements.block.classList.add(
+            "main__description_is-opened"
+          );
+          descriptionElements.format.classList.add(
+            "main__description__element_is-opened"
+          );
+          descriptionElements.format.classList.add(
+            "main__description__format_is-marked"
+          );
+          descriptionElements.format.classList.remove(
+            "main__description__subtitle"
+          );
+          descriptionElements.format.textContent = element.textContent;
+
           openCard();
         }
       } else {
@@ -24566,37 +24623,6 @@ function addCard(item) {
       }
     });
   });
-  function toggleDescriptionClasses() {
-    descriptionElements.names.classList.remove(
-      "main__description__names_is-opened"
-    );
-    descriptionElements.block.classList.add("main__description_is-opened");
-    descriptionElements.format.classList.add(
-      "main__description__element_is-opened",
-      "main__description__format_is-marked"
-    );
-  }
-  function updateFormatDisplay(format) {
-    const isOpened = descriptionElements.block.classList.contains(
-      "main__description_is-opened"
-    );
-
-    descriptionElements.format.classList.toggle(
-      "main__description__subtitle",
-      isOpened
-    );
-    descriptionElements.format.textContent = format;
-  }
-  function checkConditions() {
-    const title = descriptionElements.title.textContent.toLowerCase();
-    const year = descriptionElements.title.textContent.slice(11, 15);
-
-    return (
-      item.genres.some((genre) => genre.genre === title) ||
-      year === descriptionElements.title.textContent ||
-      descriptionElements.grade.title === item.grade
-    );
-  }
 
   const genreButtons = document.querySelectorAll(".navigation__genres__item");
   function studio_or_not(item) {
