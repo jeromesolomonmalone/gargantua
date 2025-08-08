@@ -25007,7 +25007,7 @@ function addCard(item) {
     descriptionElements.photo.alt = element.textContent;
 
     descriptionElements.photo.addEventListener("load", function () {
-      descriptionPhoto.style.opacity = "1";
+      descriptionElements.photo.style.opacity = "1";
     });
 
     descriptionElements.photo.onerror = function () {
@@ -25112,18 +25112,17 @@ function addCard(item) {
   }
 
   // использование функции ПЕРЕЗАГРУЗКИ при нажатии на ГЛАВНУЮ КНОПКУ
-  document
-    .querySelector(".navigation__main__item")
-    .addEventListener("click", function () {
-      Reset();
-      document.querySelector(".main__base").scrollIntoView();
-    });
-  document
-    .querySelector(".header__main__button")
-    .addEventListener("click", function () {
-      Reset();
-      window.scrollTo(0, 0);
-    });
+  const scrollToBase = () => {
+    Reset();
+    document.querySelector(".main__base").scrollIntoView(0, 0);
+  };
+  const handleBaseNavigation = [
+    ".navigation__main__item",
+    ".header__main__button",
+  ];
+  handleBaseNavigation.forEach((selector) => {
+    document.querySelector(selector).addEventListener("click", scrollToBase);
+  });
 
   return mainListElement;
 }
