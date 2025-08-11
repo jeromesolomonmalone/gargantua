@@ -24071,30 +24071,32 @@ document
     }
   });
 
-const GradeLove =
-  "https://img.icons8.com/ios-filled/100/FF0000/filled-like.png";
-const GradeAPlus =
-  "https://img.icons8.com/fluency-systems-filled/96/increase-font.png";
-const GradeA = "https://img.icons8.com/fluency-systems-filled/96/a.png";
-const GradeB = "https://img.icons8.com/fluency-systems-filled/96/b.png";
-const GradeC = "https://img.icons8.com/fluency-systems-filled/96/c.png";
-const GradeD = "https://img.icons8.com/fluency-systems-filled/96/d.png";
-
-const MarvelLogo =
-  "https://upload.wikimedia.org/wikipedia/ru/thumb/9/95/Marve_Entertainmentl_Logo.png/250px-Marve_Entertainmentl_Logo.png";
-const PixarLogo =
-  "https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/1613495438818-408JDVSTB7NWSHVC20M7/logo.png?format=1500w";
-const DCLogo =
-  "https://upload.wikimedia.org/wikipedia/commons/7/71/DC_Comics_2024.svg";
+// Группа оценок
+const ratingIcons = {
+  love: "https://img.icons8.com/ios-filled/100/FF0000/filled-like.png",
+  aPlus: "https://img.icons8.com/fluency-systems-filled/96/increase-font.png",
+  a: "https://img.icons8.com/fluency-systems-filled/96/a.png",
+  b: "https://img.icons8.com/fluency-systems-filled/96/b.png",
+  c: "https://img.icons8.com/fluency-systems-filled/96/c.png",
+  d: "https://img.icons8.com/fluency-systems-filled/96/d.png",
+};
+// Группа логотипов студий
+const studioLogos = {
+  marvel:
+    "https://upload.wikimedia.org/wikipedia/ru/thumb/9/95/Marve_Entertainmentl_Logo.png/250px-Marve_Entertainmentl_Logo.png",
+  pixar:
+    "https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/1613495438818-408JDVSTB7NWSHVC20M7/logo.png?format=1500w",
+  dc: "https://upload.wikimedia.org/wikipedia/commons/7/71/DC_Comics_2024.svg",
+};
 
 // Функция определения оценок и их свойств
 const gradeIcons = {
-  love: { src: GradeLove, alt: "Иконка Оценки Love" },
-  "A+": { src: GradeAPlus, alt: "Иконка Оценки A+" },
-  A: { src: GradeA, alt: "Иконка Оценки A" },
-  B: { src: GradeB, alt: "Иконка Оценки B" },
-  C: { src: GradeC, alt: "Иконка Оценки C" },
-  D: { src: GradeD, alt: "Иконка Оценки D" },
+  love: { src: ratingIcons.love, alt: "Иконка Оценки Love" },
+  "A+": { src: ratingIcons.aPlus, alt: "Иконка Оценки A+" },
+  A: { src: ratingIcons.a, alt: "Иконка Оценки A" },
+  B: { src: ratingIcons.b, alt: "Иконка Оценки B" },
+  C: { src: ratingIcons.c, alt: "Иконка Оценки C" },
+  D: { src: ratingIcons.d, alt: "Иконка Оценки D" },
 };
 function defineGradeBlack(item, element) {
   const grade = gradeIcons[item];
@@ -24470,8 +24472,6 @@ function addCard(item) {
 
   mainListElement.classList.add("main__list__item_is-opened");
 
-  const year_for_link = item.release.getFullYear();
-
   // Функция поиска
   function handleSearchSubmit() {
     removeNavigationTitle();
@@ -24514,6 +24514,7 @@ function addCard(item) {
     grade: document.querySelector(".main__description__grade"),
     names: document.querySelector(".main__description__names"),
     job: document.querySelector(".main__description__job"),
+    photobox: document.querySelector(".main__description__photo"),
     photo: document.querySelector(".main__description__photo_img"),
     name: document.querySelector(".main__description__name"),
   };
@@ -24550,72 +24551,81 @@ function addCard(item) {
     document.querySelector(".main__base").scrollIntoView();
   }
 
-  // Нажатия на кнопку ФОРМАТОВ
+  // Открыт ли формат
+  function isFormatOpen() {
+    return descriptionElements.format.classList.contains(
+      "main__description__element_is-opened"
+    );
+  }
+  // Соответсвует ли формат
+  function isFormatMatch() {
+    return descriptionElements.format.textContent.toLowerCase() == item.format;
+  }
+  // Смена шапки персон на шапку фильтров
+  function updatePersonsHeaderToFilter() {
+    ["block", "elements"].forEach((key) =>
+      descriptionElements[key].classList.add("main__description_is-opened")
+    );
+    descriptionElements.format.classList.add("main__description__subtitle");
+    descriptionElements.names.classList.remove(
+      "main__description__names_is-opened"
+    );
+  }
+
+  // ФОРМАТ в навигации
   const formatButtons = document.querySelectorAll(".navigation__format__item");
+  function headerFormat(element) {
+    descriptionElements.names.classList.remove(
+      "main__description__names_is-opened"
+    );
+    descriptionElements.block.classList.add("main__description_is-opened");
+    descriptionElements.format.classList.add(
+      "main__description__element_is-opened",
+      "main__description__format_is-marked",
+      "main__description__subtitle"
+    );
+    descriptionElements.format.textContent = element.textContent;
+  }
   formatButtons.forEach(function (element) {
     element.addEventListener("click", function () {
-      if (element.textContent.toLowerCase() == item.format) {
+      const format = element.textContent.toLowerCase();
+      function isFormatValid() {
+        return format == item.format;
+      }
+      if (isFormatValid()) {
         if (
           descriptionElements.elements.classList.contains(
             "main__description_is-opened"
           )
         ) {
-          descriptionElements.names.classList.remove(
-            "main__description__names_is-opened"
-          );
-          descriptionElements.block.classList.add(
-            "main__description_is-opened"
-          );
-          descriptionElements.format.classList.add(
-            "main__description__element_is-opened"
-          );
-          descriptionElements.format.classList.add(
-            "main__description__format_is-marked"
-          );
-          descriptionElements.format.classList.add(
-            "main__description__subtitle"
-          );
-          descriptionElements.format.textContent = element.textContent;
+          headerFormat(element);
 
           for (let i = 0; i < item.genres.length; i++) {
             if (
-              item.genres[i].genre ==
-                descriptionElements.title.textContent.toLowerCase() &&
-              element.textContent.toLowerCase() == item.format
+              descriptionElements.title.textContent.toLowerCase() ==
+                item.genres[i].genre &&
+              isFormatValid()
             ) {
               openCard();
               break;
             } else if (
               descriptionElements.title.textContent ==
                 item.release.toString().slice(11, 15) &&
-              element.textContent.toLowerCase() == item.format
+              isFormatValid()
             ) {
               openCard();
             } else if (
               descriptionElements.grade.title == item.grade &&
-              element.textContent.toLowerCase() == item.format
+              isFormatValid()
             ) {
               openCard();
             }
           }
         } else {
-          descriptionElements.names.classList.remove(
-            "main__description__names_is-opened"
-          );
-          descriptionElements.block.classList.add(
-            "main__description_is-opened"
-          );
-          descriptionElements.format.classList.add(
-            "main__description__element_is-opened"
-          );
-          descriptionElements.format.classList.add(
-            "main__description__format_is-marked"
-          );
+          headerFormat(element);
           descriptionElements.format.classList.remove(
             "main__description__subtitle"
           );
-          descriptionElements.format.textContent = element.textContent;
-
           openCard();
         }
       } else {
@@ -24624,18 +24634,20 @@ function addCard(item) {
     });
   });
 
+  // ЖАНРЫ в навигации
   const genreButtons = document.querySelectorAll(".navigation__genres__item");
-  function studio_or_not(item) {
+  // Функция проверки студия ли жанр
+  function studioOrNot(item) {
     const studios = {
       pixar: {
         class: "main__description__title_is-pixar",
-        logo: PixarLogo,
+        logo: studioLogos.pixar,
       },
       marvel: {
-        logo: MarvelLogo,
+        logo: studioLogos.marvel,
       },
       dc: {
-        logo: DCLogo,
+        logo: studioLogos.dc,
       },
     };
     const lowerItem = item.toLowerCase();
@@ -24654,68 +24666,32 @@ function addCard(item) {
       descriptionElements.title.style.backgroundImage = "";
     }
   }
+  function headerGenre(element) {
+    updatePersonsHeaderToFilter();
+    descriptionElements.title.classList.add(
+      "main__description__element_is-opened"
+    );
+
+    descriptionElements.title.textContent = element.textContent;
+    studioOrNot(element.textContent);
+
+    descriptionElements.grade.classList.remove(
+      "main__description__element_is-opened"
+    );
+    descriptionElements.grade.title = "";
+  }
   genreButtons.forEach(function (element) {
     element.addEventListener("click", function () {
       for (let i = 0; i < item.genres.length; i++) {
         if (item.genres[i].genre == element.textContent.toLowerCase()) {
-          if (
-            descriptionElements.format.classList.contains(
-              "main__description__element_is-opened"
-            )
-          ) {
-            descriptionElements.names.classList.remove(
-              "main__description__names_is-opened"
-            );
-            descriptionElements.block.classList.add(
-              "main__description_is-opened"
-            );
-            descriptionElements.elements.classList.add(
-              "main__description_is-opened"
-            );
-            descriptionElements.format.classList.add(
-              "main__description__subtitle"
-            );
-            descriptionElements.title.classList.add(
-              "main__description__element_is-opened"
-            );
-
-            descriptionElements.title.textContent = element.textContent;
-            studio_or_not(element.textContent);
-
-            descriptionElements.grade.classList.remove(
-              "main__description__element_is-opened"
-            );
-            descriptionElements.grade.title = "";
-
-            if (
-              descriptionElements.format.textContent.toLowerCase() ==
-              item.format
-            ) {
+          if (isFormatOpen()) {
+            headerGenre(element);
+            if (isFormatMatch()) {
               openCard();
               break;
             }
           } else {
-            descriptionElements.names.classList.remove(
-              "main__description__names_is-opened"
-            );
-            descriptionElements.block.classList.add(
-              "main__description_is-opened"
-            );
-            descriptionElements.elements.classList.add(
-              "main__description_is-opened"
-            );
-            descriptionElements.title.classList.add(
-              "main__description__element_is-opened"
-            );
-
-            descriptionElements.title.textContent = element.textContent;
-            studio_or_not(element.textContent);
-
-            descriptionElements.grade.classList.remove(
-              "main__description__element_is-opened"
-            );
-            descriptionElements.grade.title = "";
-
+            headerGenre(element);
             openCard();
             break;
           }
@@ -24726,74 +24702,44 @@ function addCard(item) {
     });
   });
 
+  // Функция проверки соотвествия года
+  function validateYearData(yearElement, itemData) {
+    const yearText = yearElement.textContent;
+    const releaseYear = itemData.release.toString().slice(11, 15);
+    const continuationYear = itemData.continuation?.toString().slice(11, 15);
+
+    return (
+      yearText === releaseYear ||
+      (continuationYear && yearText === continuationYear)
+    );
+  }
+  // ГОДА в навигации
   const yearButtons = document.querySelectorAll(".navigation__releases__item");
+  function headerYear(element) {
+    updatePersonsHeaderToFilter();
+    descriptionElements.title.classList.add(
+      "main__description__element_is-opened"
+    );
+    descriptionElements.title.textContent = element.textContent;
+    descriptionElements.title.classList.remove(
+      "main__description__title_is-studio"
+    );
+    descriptionElements.title.style.backgroundImage = "url()";
+    descriptionElements.grade.classList.remove(
+      "main__description__element_is-opened"
+    );
+    descriptionElements.grade.title = "";
+  }
   yearButtons.forEach(function (element) {
     element.addEventListener("click", function () {
-      const if_there_is_a_continuation_and_it_matches =
-        item.continuation != null &&
-        element.textContent == item.continuation.toString().slice(11, 15);
-      if (
-        element.textContent == item.release.toString().slice(11, 15) ||
-        if_there_is_a_continuation_and_it_matches == true
-      ) {
-        if (
-          descriptionElements.format.classList.contains(
-            "main__description__element_is-opened"
-          )
-        ) {
-          descriptionElements.names.classList.remove(
-            "main__description__names_is-opened"
-          );
-          descriptionElements.block.classList.add(
-            "main__description_is-opened"
-          );
-          descriptionElements.elements.classList.add(
-            "main__description_is-opened"
-          );
-          descriptionElements.format.classList.add(
-            "main__description__subtitle"
-          );
-          descriptionElements.title.classList.add(
-            "main__description__element_is-opened"
-          );
-          descriptionElements.title.textContent = element.textContent;
-          descriptionElements.title.classList.remove(
-            "main__description__title_is-studio"
-          );
-          descriptionElements.title.style.backgroundImage = "url()";
-          descriptionElements.grade.classList.remove(
-            "main__description__element_is-opened"
-          );
-          descriptionElements.grade.title = "";
-
-          if (
-            descriptionElements.format.textContent.toLowerCase() == item.format
-          ) {
+      if (validateYearData(element, item)) {
+        if (isFormatOpen()) {
+          headerYear(element);
+          if (isFormatMatch()) {
             openCard();
           }
         } else {
-          descriptionElements.names.classList.remove(
-            "main__description__names_is-opened"
-          );
-          descriptionElements.block.classList.add(
-            "main__description_is-opened"
-          );
-          descriptionElements.elements.classList.add(
-            "main__description_is-opened"
-          );
-          descriptionElements.title.classList.add(
-            "main__description__element_is-opened"
-          );
-          descriptionElements.title.textContent = element.textContent;
-          descriptionElements.title.classList.remove(
-            "main__description__title_is-studio"
-          );
-          descriptionElements.title.style.backgroundImage = "url()";
-          descriptionElements.grade.classList.remove(
-            "main__description__element_is-opened"
-          );
-          descriptionElements.grade.title = "";
-
+          headerYear(element);
           openCard();
         }
       } else {
@@ -24802,81 +24748,35 @@ function addCard(item) {
     });
   });
 
+  // ОЦЕНКИ в навигации
   const gradeButtons = document.querySelectorAll(".navigation__grades__item");
+  function headerGrade() {
+    updatePersonsHeaderToFilter();
+    descriptionElements.title.classList.remove(
+      "main__description__element_is-opened"
+    );
+    descriptionElements.title.textContent = "";
+    descriptionElements.grade.classList.add(
+      "main__description__element_is-opened"
+    );
+
+    defineGradeBlack(item.grade, descriptionElements.grade);
+    descriptionElements.grade.classList.toggle(
+      "main__description__grade_is-loved",
+      item.grade === "love"
+    );
+  }
   gradeButtons.forEach(function (element) {
     element.addEventListener("click", function () {
       const elementImg = element.querySelector(".navigation__grades__image");
       if (elementImg.title == item.grade) {
-        if (
-          descriptionElements.format.classList.contains(
-            "main__description__element_is-opened"
-          )
-        ) {
-          descriptionElements.names.classList.remove(
-            "main__description__names_is-opened"
-          );
-          descriptionElements.block.classList.add(
-            "main__description_is-opened"
-          );
-          descriptionElements.elements.classList.add(
-            "main__description_is-opened"
-          );
-          descriptionElements.format.classList.add(
-            "main__description__subtitle"
-          );
-          descriptionElements.title.classList.remove(
-            "main__description__element_is-opened"
-          );
-          descriptionElements.title.textContent = "";
-          descriptionElements.grade.classList.add(
-            "main__description__element_is-opened"
-          );
-
-          defineGradeBlack(item.grade, descriptionElements.grade);
-          if (item.grade == "love") {
-            descriptionElements.grade.classList.add(
-              "main__description__grade_is-loved"
-            );
-          } else {
-            descriptionElements.grade.classList.remove(
-              "main__description__grade_is-loved"
-            );
-          }
-
-          if (
-            descriptionElements.format.textContent.toLowerCase() == item.format
-          ) {
+        if (isFormatOpen()) {
+          headerGrade();
+          if (isFormatMatch()) {
             openCard();
           }
         } else {
-          descriptionElements.names.classList.remove(
-            "main__description__names_is-opened"
-          );
-          descriptionElements.block.classList.add(
-            "main__description_is-opened"
-          );
-          descriptionElements.elements.classList.add(
-            "main__description_is-opened"
-          );
-          descriptionElements.title.classList.remove(
-            "main__description__element_is-opened"
-          );
-          descriptionElements.title.textContent = "";
-          descriptionElements.grade.classList.add(
-            "main__description__element_is-opened"
-          );
-
-          defineGradeBlack(item.grade, descriptionElements.grade);
-          if (item.grade == "love") {
-            descriptionElements.grade.classList.add(
-              "main__description__grade_is-loved"
-            );
-          } else {
-            descriptionElements.grade.classList.remove(
-              "main__description__grade_is-loved"
-            );
-          }
-
+          headerGrade();
           openCard();
         }
       } else {
@@ -24892,151 +24792,128 @@ function addCard(item) {
     showFilmCard(item);
   });
 
-  function sorting_by_year(element) {
+  // Функция обновления шапки по году
+  function updateByYear(element) {
+    ["block", "elements"].forEach((key) =>
+      descriptionElements[key].classList.add("main__description_is-opened")
+    );
+    ["format", "grade"].forEach((key) =>
+      descriptionElements[key].classList.remove(
+        "main__description__element_is-opened"
+      )
+    );
     descriptionElements.names.classList.remove(
       "main__description__names_is-opened"
-    );
-    descriptionElements.block.classList.add("main__description_is-opened");
-    descriptionElements.elements.classList.add("main__description_is-opened");
-    descriptionElements.format.classList.remove(
-      "main__description__element_is-opened"
     );
     descriptionElements.title.classList.add(
       "main__description__element_is-opened"
     );
     descriptionElements.title.textContent = element.textContent;
-    descriptionElements.grade.classList.remove(
-      "main__description__element_is-opened"
-    );
     descriptionElements.grade.title = "";
 
     openCard();
     closePopup(popupFilm);
-    REMOVE(popupFilm.querySelectorAll(".film__screenshot"));
-    REMOVE(popupFilm.querySelectorAll(".film__poster"));
+    popupFilm
+      .querySelectorAll(".film__screenshot, .film__poster")
+      .forEach((element) => element.remove());
   }
-
-  const year_in_film_page = popupFilm.querySelector(".film__header__year");
-  year_in_film_page.addEventListener("click", function () {
-    const if_there_is_a_continuation_and_it_matches =
-      item.continuation != null &&
-      year_in_film_page.textContent ==
-        item.continuation.toString().slice(11, 15);
-
-    if (
-      year_in_film_page.textContent == item.release.toString().slice(11, 15) ||
-      if_there_is_a_continuation_and_it_matches == true
-    ) {
-      sorting_by_year(year_in_film_page);
+  // Нажатие на года в попапе фильма
+  const yearElement = popupFilm.querySelector(".film__header__year");
+  yearElement.addEventListener("click", () => {
+    if (validateYearData(yearElement, item)) {
+      updateByYear(yearElement);
     } else {
       mainListElement.classList.remove("main__list__item_is-opened");
     }
   });
-
-  const continuation_year_in_film_page = popupFilm.querySelector(
+  const continuationYearElement = popupFilm.querySelector(
     ".film__header__continuation_year"
   );
-  continuation_year_in_film_page.addEventListener("click", function () {
-    const if_there_is_a_continuation_and_it_matches =
-      item.continuation != null &&
-      continuation_year_in_film_page.textContent ==
-        item.continuation.toString().slice(11, 15);
-
-    if (
-      continuation_year_in_film_page.textContent ==
-        item.release.toString().slice(11, 15) ||
-      if_there_is_a_continuation_and_it_matches == true
-    ) {
-      sorting_by_year(continuation_year_in_film_page);
+  continuationYearElement.addEventListener("click", () => {
+    if (validateYearData(continuationYearElement, item)) {
+      updateByYear(continuationYearElement);
     } else {
       mainListElement.classList.remove("main__list__item_is-opened");
     }
   });
 
-  const garde_wrapper_in_film_page = popupFilm.querySelector(
-    ".film__header__grade__wrapper"
-  );
-  garde_wrapper_in_film_page.addEventListener("click", function () {
-    const garde_in_film_page = garde_wrapper_in_film_page.querySelector(
-      ".film__header__grade"
-    );
-    if (garde_in_film_page.title == item.grade) {
+  // Нажатие на оценку в попапе фильма
+  const gradeWrapper = popupFilm.querySelector(".film__header__grade__wrapper");
+  const gradeElement = popupFilm.querySelector(".film__header__grade");
+  gradeWrapper.addEventListener("click", () => {
+    // Проверяем условие
+    if (gradeElement.title === item.grade) {
+      ["block", "elements"].forEach((key) =>
+        descriptionElements[key].classList.add("main__description_is-opened")
+      );
       descriptionElements.names.classList.remove(
         "main__description__names_is-opened"
       );
-      descriptionElements.block.classList.add("main__description_is-opened");
-      descriptionElements.elements.classList.add("main__description_is-opened");
-      descriptionElements.format.classList.remove(
-        "main__description__element_is-opened"
+      ["format", "title"].forEach((key) =>
+        descriptionElements[key].classList.remove(
+          "main__description__element_is-opened"
+        )
       );
-      descriptionElements.title.classList.remove(
-        "main__description__element_is-opened"
-      );
+
       descriptionElements.title.textContent = "";
       descriptionElements.grade.classList.add(
         "main__description__element_is-opened"
       );
+      descriptionElements.grade.classList.toggle(
+        "main__description__grade_is-loved",
+        item.grade === "love"
+      );
 
       defineGradeBlack(item.grade, descriptionElements.grade);
-      if (item.grade == "love") {
-        descriptionElements.grade.classList.add(
-          "main__description__grade_is-loved"
-        );
-      } else {
-        descriptionElements.grade.classList.remove(
-          "main__description__grade_is-loved"
-        );
-      }
-
       openCard();
       closePopup(popupFilm);
-      REMOVE(popupFilm.querySelectorAll(".film__screenshot"));
-      REMOVE(popupFilm.querySelectorAll(".film__poster"));
+      popupFilm
+        .querySelectorAll(".film__screenshot, .film__poster")
+        .forEach((element) => element.remove());
     } else {
       mainListElement.classList.remove("main__list__item_is-opened");
     }
   });
 
+  // Смена шапки фильтров на шапку персон
+  function updateFilterHeaderToPersons() {
+    ["block", "elements"].forEach((key) =>
+      descriptionElements[key].classList.remove("main__description_is-opened")
+    );
+    descriptionElements.format.classList.remove(
+      "main__description__element_is-opened"
+    );
+    descriptionElements.grade.title = "";
+    descriptionElements.names.classList.add(
+      "main__description__names_is-opened"
+    );
+  }
+  // Функция определения фотографии актеров/режиссеров
   function personsPhoto(element) {
-    descriptionElements.photo.src =
-      location_of_the_images +
-      "persons/" +
-      name_for_person(element.textContent) +
-      ".png";
-
-    descriptionElements.photo.alt = element.textContent;
-
-    descriptionElements.photo.addEventListener("load", function () {
-      descriptionElements.photo.style.opacity = "1";
+    const photo = descriptionElements.photo;
+    const container = descriptionElements.photobox;
+    container.style.display = "none";
+    photo.src = `${location_of_the_images}persons/${name_for_person(
+      element.textContent
+    )}.png`;
+    photo.alt = element.textContent;
+    photo.addEventListener("load", () => {
+      container.style.display = "block";
+      photo.style.opacity = "1";
     });
-
-    descriptionElements.photo.onerror = function () {
-      descriptionElements.photo.closest(
-        ".main__description__photo"
-      ).style.display = "none";
+    photo.onerror = () => {
+      container.style.display = "none";
     };
   }
-
+  // Нажатие на актеров
   const castButtons = document.querySelectorAll(".film__cast__name");
   castButtons.forEach(function (element) {
     element.addEventListener("click", function () {
       descriptionElements.photo.style.opacity = "0";
-
       for (let i = 0; i < item.cast.length; i++) {
         if (item.cast[i].name == element.textContent) {
-          descriptionElements.block.classList.remove(
-            "main__description_is-opened"
-          );
-          descriptionElements.elements.classList.remove(
-            "main__description_is-opened"
-          );
-          descriptionElements.format.classList.remove(
-            "main__description__element_is-opened"
-          );
-          descriptionElements.grade.title = "";
-          descriptionElements.names.classList.add(
-            "main__description__names_is-opened"
-          );
+          updateFilterHeaderToPersons();
+
           descriptionElements.job.textContent = "В ролях";
 
           personsPhoto(element);
@@ -25045,8 +24922,9 @@ function addCard(item) {
 
           openCard();
           closePopup(popupFilm);
-          REMOVE(popupFilm.querySelectorAll(".film__screenshot"));
-          REMOVE(popupFilm.querySelectorAll(".film__poster"));
+          popupFilm
+            .querySelectorAll(".film__screenshot, .film__poster")
+            .forEach(REMOVE);
           break;
         } else {
           mainListElement.classList.remove("main__list__item_is-opened");
@@ -25054,45 +24932,42 @@ function addCard(item) {
       }
     });
   });
-
+  // Нажатие на режиссеров
   const directorButtons = document.querySelectorAll(".film__director__name");
   directorButtons.forEach(function (element) {
     element.addEventListener("click", function () {
       descriptionElements.photo.style.opacity = "0";
       for (let i = 0; i < item.director.length; i++) {
         if (item.director[i].name == element.textContent) {
-          descriptionElements.block.classList.remove(
-            "main__description_is-opened"
+          updateFilterHeaderToPersons();
+
+          const isFilmDirector = onlyFilmsDirectors.includes(
+            element.textContent
           );
-          descriptionElements.elements.classList.remove(
-            "main__description_is-opened"
+          const isSerialDirector = onlySerialsDirectors.includes(
+            element.textContent
           );
-          descriptionElements.format.classList.remove(
-            "main__description__element_is-opened"
-          );
-          descriptionElements.grade.title = "";
-          descriptionElements.names.classList.add(
-            "main__description__names_is-opened"
-          );
-          if (
-            onlyFilmsDirectors.includes(element.textContent) &&
-            onlySerialsDirectors.includes(element.textContent)
-          ) {
-            descriptionElements.job.textContent = "Режиссер/Создатель";
-          } else if (onlyFilmsDirectors.includes(element.textContent)) {
-            descriptionElements.job.textContent = "Режиссер";
-          } else if (onlySerialsDirectors.includes(element.textContent)) {
-            descriptionElements.job.textContent = "Создатель";
+          const jobTitle =
+            isFilmDirector && isSerialDirector
+              ? "Режиссер/Создатель"
+              : isFilmDirector
+              ? "Режиссер"
+              : isSerialDirector
+              ? "Создатель"
+              : null;
+
+          if (jobTitle) {
+            descriptionElements.job.textContent = jobTitle;
           }
 
           personsPhoto(element);
-
           descriptionElements.name.textContent = element.textContent;
 
           openCard();
           closePopup(popupFilm);
-          REMOVE(popupFilm.querySelectorAll(".film__screenshot"));
-          REMOVE(popupFilm.querySelectorAll(".film__poster"));
+          popupFilm
+            .querySelectorAll(".film__screenshot, .film__poster")
+            .forEach(REMOVE);
           break;
         } else {
           mainListElement.classList.remove("main__list__item_is-opened");
@@ -25101,77 +24976,407 @@ function addCard(item) {
     });
   });
 
+  // Утилита для удаления элементов
+  function removeElements(elements) {
+    elements.forEach((element) => element.remove());
+  }
+
   // функция ПЕРЕЗАГРУЗКИ всей страницы
   function Reset() {
-    clearSearch();
     mainListElement.classList.add("main__list__item_is-opened");
-    sortZA("card__publication__original");
+    sortItems("card__publication__original", "desc");
+    clearSearch();
     closePopup(popupNavigation);
     deleteSortTitle();
     removeNavigationTitle();
   }
 
   // использование функции ПЕРЕЗАГРУЗКИ при нажатии на ГЛАВНУЮ КНОПКУ
-  document
-    .querySelector(".navigation__main__item")
-    .addEventListener("click", function () {
-      Reset();
+  const handleScrollToMain = () => {
+    Reset();
+    setTimeout(() => {
       document.querySelector(".main__base").scrollIntoView();
-    });
-  document
-    .querySelector(".header__main__button")
-    .addEventListener("click", function () {
-      Reset();
-      window.scrollTo(0, 0);
-    });
+    }, 0);
+  };
+  const scrollTriggerSelectors = [
+    ".navigation__main__item",
+    ".header__main__button",
+  ];
+  scrollTriggerSelectors.forEach((selector) => {
+    const element = document.querySelector(selector);
+    if (element) {
+      element.addEventListener("click", handleScrollToMain);
+    }
+  });
 
   return mainListElement;
 }
 
-// ОБЪЯВЛЕНИЕ функции использования добавления карт
-function addingCards() {
-  films.forEach(function (element) {
-    mainList.append(addCard(element));
-  });
-}
+// Добавление карт
+films.forEach(function (element) {
+  mainList.append(addCard(element));
+});
 
-// ИСПОЛЬЗОВАНИЕ функции добавления карт
-addingCards();
-
-function countingSearchResults() {
-  end_of_words = (number, words_arr) => {
-    number = Math.abs(number);
-    if (Number.isInteger(number)) {
-      let options = [2, 0, 1, 1, 1, 2];
-      return words_arr[
-        number % 100 > 4 && number % 100 < 20
-          ? 2
-          : options[number % 10 < 5 ? number % 10 : 5]
-      ];
-    }
-    return words_arr[1];
-  };
-  number_of_anything = mainList.getElementsByClassName(
-    "main__list__item_is-opened"
+// Функция для определения правильного падежа слова в результате поиска в зависимости от числа
+function updateSearchResultsCount() {
+  const resultsCount = document.querySelectorAll(
+    ".main__list__item_is-opened"
   ).length;
-  if (number_of_anything == 1) {
-    start_of_word = "Показан";
-  } else {
-    start_of_word = "Показано";
-  }
-  end_of_word = end_of_words(number_of_anything, [
-    "результат",
-    "результата",
-    "результатов",
-  ]);
+  const endings = ["результат", "результата", "результатов"];
+  const startWord = resultsCount === 1 ? "Показан" : "Показано";
 
-  document.querySelector(".main__search__number").textContent =
-    start_of_word + " " + number_of_anything + " " + end_of_word;
+  // Функция определения окончания слова
+  const getEnding = (num) => {
+    num = Math.abs(num);
+    if (!Number.isInteger(num)) return endings[1];
+
+    const options = [2, 0, 1, 1, 1, 2];
+    return endings[
+      num % 100 > 4 && num % 100 < 20 ? 2 : options[num % 10 < 5 ? num % 10 : 5]
+    ];
+  };
+
+  document.querySelector(
+    ".main__search__number"
+  ).textContent = `${startWord} ${resultsCount} ${getEnding(resultsCount)}`;
 }
-headerSearch.addEventListener("submit", countingSearchResults);
+headerSearch.addEventListener("submit", updateSearchResultsCount);
+
+// функция ПОКАЗА попапа фильма
+function showFilmCard(item) {
+  // Создаем элемент для блокировки свайпа
+  const blockSwipe = document.createElement("block_swipe");
+  blockSwipe.classList.add("no-swipe");
+  // Добавляем обработчики событий
+  blockSwipe.addEventListener("touchstart", (e) => {
+    e.preventDefault();
+  });
+  blockSwipe.addEventListener("touchmove", (e) => {
+    e.preventDefault();
+  });
+  // Добавляем элемент в DOM
+  document.body.appendChild(blockSwipe);
+
+  // Реализация смены сторон шапки попапа
+  const popupFilmCloseImg = document.querySelector(".popup__film__close__img");
+  const filmPosters = popupFilm.querySelector(".film__posters");
+  const filmHeaderText = popupFilm.querySelector(".film__header__text");
+  const toggleReverse = () => {
+    const isReverse = filmPosters.classList.toggle(
+      "film__posters_is-row-reverse"
+    );
+    filmHeaderText.classList.toggle(
+      "film__header__text_is-row-reverse",
+      isReverse
+    );
+    popupFilmCloseImg.classList.toggle(
+      "popup__film__close__img_is-reverse",
+      !isReverse
+    );
+  };
+  toggleReverse();
+
+  // Уменьшение шрифта названия фильма, если символов больше 20
+  const filmHeaderTitle = popupFilm.querySelector(".film__header__title");
+  filmHeaderTitle.textContent = item.title;
+  filmHeaderTitle.classList.toggle(
+    "film__header__title_is-small",
+    filmHeaderTitle.textContent.length > 20
+  );
+
+  // Константы информации из главной базы
+  const filmData = {
+    format: item.format,
+    name: name_for_link(item.original),
+    year: item.release.getFullYear(),
+    season: item.season,
+    posterCount: item.posters,
+  };
+
+  // ПОСТЕРЫ в попап
+  function addPosters() {
+    const template = document
+      .querySelector("#film__poster-template")
+      .content.querySelector(".film__poster");
+    const isMovie =
+      filmData.format === "фильм" || filmData.season === "мини–сериал";
+    const baseUrl = `${location_of_the_images}posters/${filmData.name}`;
+
+    for (let i = 0; i < 12; i++) {
+      const poster = template.cloneNode(true);
+      const suffix =
+        filmData.posterCount > 1 ? `(${filmData.posterCount})` : "";
+      const seasonPart = isMovie ? "" : `_${filmData.season}`;
+
+      poster.src = `${baseUrl}${seasonPart}${suffix}.jpg`;
+      poster.alt = `Постер из «${filmHeaderTitle.textContent}»`;
+      poster.addEventListener("load", () => (poster.style.opacity = "1"));
+      filmPosters.append(poster);
+    }
+  }
+  addPosters();
+  const filmPoster = popupFilm.querySelectorAll(".film__poster");
+
+  // Добавление оценки в попап
+  const filmGrade = popupFilm.querySelector(".film__header__grade");
+  defineGradeBlack(item.grade, filmGrade);
+  filmGrade.classList.toggle(
+    "film__header__grade_is-loved",
+    item.grade === "love"
+  );
+
+  // Константы текстовых данных шапки попапа
+  const headerElements = {
+    year: popupFilm.querySelector(".film__header__year"),
+    season: popupFilm.querySelector(".film__header__season"),
+    dash: popupFilm.querySelector(".film__header__subtitle__dash"),
+    continuationYear: popupFilm.querySelector(
+      ".film__header__continuation_year"
+    ),
+  };
+  headerElements.year.textContent = item.release.getFullYear();
+  headerElements.dash.style.display = "none";
+  headerElements.continuationYear.style.display = "none";
+  headerElements.season.textContent = "";
+  if (item.season) {
+    const seasonText =
+      item.season === "мини–сериал"
+        ? `${item.season}, `
+        : item.season.length === 3
+        ? `Сезоны ${item.season}, `
+        : `Сезон ${item.season}, `;
+    headerElements.season.textContent = seasonText;
+    if (item.continuation) {
+      headerElements.continuationYear.textContent =
+        item.continuation.getFullYear();
+      headerElements.dash.style.display = "inline-block";
+      headerElements.continuationYear.style.display = "inline-block";
+    }
+  }
+
+  // Константы для персон в шапке попапа
+  const filmPersons = {
+    director: {
+      title: popupFilm.querySelector(".film__director__title"),
+      names: popupFilm.querySelectorAll(".film__director__name"),
+    },
+    cast: {
+      title: popupFilm.querySelector(".film__cast__title"),
+      container: popupFilm.querySelector(".film__cast"),
+      names: popupFilm.querySelectorAll(".film__cast__name"),
+    },
+  };
+  // Функция для установки заголовка с учетом формата и количества персон
+  function setTitle(titleElement, format, count) {
+    const base = format === "фильм" ? "Режиссер" : "Создатель";
+    titleElement.textContent = `${base}${count > 1 ? "ы" : ""}: `;
+  }
+  // Функция для обработки списка имен
+  function updateNames(elements, data) {
+    elements.forEach((el, i) => {
+      if (i < data.length) {
+        el.textContent = data[i].name;
+        el.classList.value = "film__director__name film__name_comma";
+        if (i === data.length - 1) el.classList.remove("film__name_comma");
+      } else {
+        el.classList.add("film__name_is-closed");
+      }
+    });
+  }
+  // Основная логика
+  setTitle(filmPersons.director.title, item.format, item.director.length);
+  updateNames(filmPersons.director.names, item.director);
+  if (item.cast.length) {
+    filmPersons.cast.container.style.display = "inline-block";
+    filmPersons.cast.title.textContent =
+      item.cast.length > 1 ? "В ролях: " : "В главной роли: ";
+    updateNames(filmPersons.cast.names, item.cast.flat());
+  } else {
+    filmPersons.cast.container.style.display = "none";
+  }
+  const castNames = item.cast.flat().map(({ name }) => name);
+  if (castNames.join("") === "") {
+    filmPersons.cast.container.style.display = "none";
+  }
+
+  // Определение описания и ссылки в попапе
+  popupFilm.querySelector(".film__description").textContent = item.description;
+  popupFilm.querySelector(".film__link").href = item.kinopoisk;
+  popupFilm.querySelector(".film__link__name").textContent = item.format;
+
+  // Константы для скриншотов
+  const filmScreenshots = document.querySelector(".film__screenshots");
+  const filmTemplate = document.querySelector(
+    "#film__screenshots-template"
+  ).content;
+  const screenshotElement = filmTemplate.querySelector(".film__screenshot");
+  // Функция для формирования пути к изображению
+  function getImagePath(item) {
+    const basePath = location_of_the_images;
+
+    switch (true) {
+      case filmData.format === "фильм":
+        return `${basePath}films/${filmData.year}/${filmData.name}/${item}.jpg`;
+      case filmData.season === "мини–сериал":
+        return `${basePath}serials/${filmData.name}/${item}.jpg`;
+      default:
+        return `${basePath}serials/${filmData.name}/season__${filmData.season}/${item}.jpg`;
+    }
+  }
+  // Функция создания скриншота
+  function createScreenshot(item) {
+    const element = screenshotElement.cloneNode(true);
+    const img = element.querySelector(".film__screenshot__img");
+
+    img.src = getImagePath(item);
+    img.alt = `Скриншот из «${filmHeaderTitle.textContent}»`;
+    img.addEventListener("load", () => {
+      img.style.opacity = "1";
+    });
+
+    return element;
+  }
+  // Создание массива скриншотов
+  const screenshots = Array.from(
+    { length: item.screenshots },
+    (_, index) => index + 1
+  );
+  // Добавление скриншотов на страницу
+  screenshots.forEach((item) => {
+    filmScreenshots.append(createScreenshot(item));
+  });
+
+  // Смена расположения скриншотов
+  const isEven = filmScreenshots.classList.contains(
+    "film__screenshots_is-even"
+  );
+  filmScreenshots.classList.toggle("film__screenshots_is-even", !isEven);
+  filmScreenshots.classList.toggle("film__screenshots_is-odd", isEven);
+
+  const popupScreenshots = document.querySelector(".popup__screenshots");
+  const popupScreenshotsTemplate = document.querySelector(
+    "#popup__screenshot-template"
+  ).content;
+  const filmScreenshot = popupFilm.querySelectorAll(".film__screenshot");
+  for (let i = 0; i < filmScreenshot.length; i++) {
+    filmScreenshot[i].addEventListener("click", function () {
+      // Функция для добавления скриншота
+      function addScreenshot(item) {
+        const element = popupScreenshotsTemplate
+          .querySelector(".popup__screenshot__block")
+          .cloneNode(true);
+
+        const img = element.querySelector(".popup__screenshot__img");
+        const sourceImg = item.querySelector(".film__screenshot__img");
+
+        img.src = sourceImg.src;
+        img.alt = sourceImg.alt;
+        img.addEventListener("load", () => {
+          img.style.opacity = "1";
+        });
+
+        return element;
+      }
+
+      // Добавляем все скриншоты в popup
+      filmScreenshot.forEach((element) => {
+        popupScreenshots.append(addScreenshot(element));
+      });
+
+      // Открытие/закрытие попапа
+      function managePopup(popup) {
+        openPopup(popup);
+
+        function blockKeys(e) {
+          // Проверяем, открыт ли попап
+          if (popup.classList.contains("popup_is-opened")) {
+            // Блокируем клавиши: стрелка вверх (38), стрелка вниз (40), пробел (32)
+            if ([38, 40, 32].includes(e.keyCode)) {
+              e.preventDefault(); // предотвращаем стандартное действие
+              return false;
+            }
+          }
+        }
+        document.addEventListener("keydown", blockKeys);
+
+        // Получаем кнопку закрытия и добавляем обработчики
+        const closeButton = popup.querySelector(".popup__screenshot__close");
+
+        closeButton.addEventListener("click", () => closePopup(popup));
+        addCloseOverlayListener(
+          popup,
+          simpleClose,
+          ".popup__screenshot__block"
+        );
+      }
+      managePopup(popupScreenshot);
+
+      // Получаем необходимые элементы
+      const popupScreens = popupScreenshots.querySelectorAll(
+        ".popup__screenshot__block"
+      );
+      const prevButton = document.querySelector(".popup__screenshot__left");
+      const nextButton = document.querySelector(".popup__screenshot__right");
+
+      // Константы и переменные
+      const INACTIVE_ATTR = "aria-disabled";
+      let currentSlide = i;
+      const slideCount = popupScreens.length;
+
+      // Функция обновления состояния слайдера
+      function updateSlider() {
+        popupScreens.forEach((slide, index) => {
+          slide.style.display = index === currentSlide ? "block" : "none";
+        });
+
+        // Обновляем состояние кнопок в зависимости от позиции
+        prevButton.setAttribute(INACTIVE_ATTR, currentSlide === 0);
+        nextButton.setAttribute(INACTIVE_ATTR, currentSlide === slideCount - 1);
+      }
+
+      // Функция обработки смены слайда
+      const handleSlideChange = (direction) => {
+        if (direction === "prev" && currentSlide > 0) {
+          currentSlide--;
+        } else if (direction === "next" && currentSlide < slideCount - 1) {
+          currentSlide++;
+        }
+        updateSlider();
+      };
+
+      prevButton.addEventListener("click", () => handleSlideChange("prev"));
+      nextButton.addEventListener("click", () => handleSlideChange("next"));
+
+      // Обработка клавиш клавиатуры
+      document.addEventListener("keydown", (event) => {
+        if (!popupScreenshot.classList.contains("popup_is-opened")) return;
+
+        const isArrowKey =
+          event.key === "ArrowLeft" || event.key === "ArrowRight";
+
+        if (isArrowKey) {
+          const direction = event.key === "ArrowLeft" ? "prev" : "next";
+          handleSlideChange(direction);
+        }
+      });
+
+      // Инициализация
+      updateSlider();
+    });
+  }
+
+  // закрытие попапа при НАЖАТИИ на кнопку закрытия попапа фильма
+  const closeButton = popupFilm.querySelector(".popup__film__close");
+  closeButton.addEventListener(
+    "click",
+    () => closePopup(popupFilm),
+    blockSwipe.remove()
+  );
+
+  openPopup(popupFilm);
+}
 
 const mainSortTitle = document.querySelector(".main__sort");
-
 // функция ДОБАЛЕНИЯ результатов СОРТИРОВКИ
 function addSortTitle(element) {
   mainSortTitle.classList.add("main__sort_is-opened");
@@ -25182,519 +25387,162 @@ function deleteSortTitle() {
   mainSortTitle.classList.remove("main__sort_is-opened");
 }
 
-// функция ПОКАЗА попапа фильма
-function showFilmCard(item) {
-  document.querySelector(".main__description__photo").style.display = "block";
-
-  const filmPosters = popupFilm.querySelector(".film__posters");
-  const filmHeaderText = popupFilm.querySelector(".film__header__text");
-
-  filmPosters.classList.toggle("film__posters_is-row-reverse");
-  filmHeaderText.classList.toggle("film__header__text_is-row-reverse");
-
-  const popupFilmCloseImg = document.querySelector(".popup__film__close__img");
-
-  if (filmPosters.classList.contains("film__posters_is-row-reverse")) {
-    popupFilmCloseImg.classList.remove("popup__film__close__img_is-reverse");
-  } else {
-    popupFilmCloseImg.classList.add("popup__film__close__img_is-reverse");
-  }
-
-  const filmHeaderTitle = popupFilm.querySelector(".film__header__title");
-  filmHeaderTitle.textContent = item.title;
-  if (filmHeaderTitle.textContent.length > 20) {
-    filmHeaderTitle.classList.add("film__header__title_is-small");
-  } else {
-    filmHeaderTitle.classList.remove("film__header__title_is-small");
-  }
-
-  const format_for_link = item.format;
-  const name = name_for_link(item.original);
-  const year_for_link = item.release.getFullYear();
-  const season_for_link = item.season;
-  const number__poster = item.posters;
-
-  // ПОСТЕРЫ в попап
-  const filmPostersTemplate = document.querySelector(
-    "#film__poster-template"
-  ).content;
-
-  let Posters = Array(12).fill();
-
-  function addPosters(item) {
-    const element = filmPostersTemplate
-      .querySelector(".film__poster")
-      .cloneNode(true);
-
-    function conditions_for_posters() {
-      if (format_for_link == "фильм" || season_for_link == "мини–сериал") {
-        element.src = location_of_the_images + "posters/" + name + ".jpg";
-      } else {
-        element.src =
-          location_of_the_images +
-          "posters/" +
-          name +
-          "_" +
-          season_for_link +
-          ".jpg";
-      }
-    }
-
-    if (number__poster == 1) {
-      conditions_for_posters();
-    } else {
-      if (format_for_link == "фильм" || season_for_link == "мини–сериал") {
-        element.src =
-          location_of_the_images +
-          "posters/" +
-          name +
-          "(" +
-          number__poster +
-          ")" +
-          ".jpg";
-      } else {
-        element.src =
-          location_of_the_images +
-          "posters/" +
-          name +
-          "_" +
-          season_for_link +
-          "(" +
-          number__poster +
-          ")" +
-          ".jpg";
-      }
-    }
-
-    element.alt = "Постер из «" + filmHeaderTitle.textContent + "»";
-    element.addEventListener("load", function () {
-      element.style.opacity = "1";
-    });
-
-    return element;
-  }
-
-  Posters.forEach(function (element) {
-    filmPosters.append(addPosters(element));
-  });
-
-  const filmPoster = popupFilm.querySelectorAll(".film__poster");
-
-  const filmGrade = popupFilm.querySelector(".film__header__grade");
-  defineGradeBlack(item.grade, filmGrade);
-  if (item.grade == "love") {
-    filmGrade.classList.add("film__header__grade_is-loved");
-  } else {
-    filmGrade.classList.remove("film__header__grade_is-loved");
-  }
-
-  popupFilm.querySelector(".film__header__year").textContent =
-    item.release.getFullYear();
-  popupFilm.querySelector(".film__header__subtitle__dash").style.display =
-    "none";
-  popupFilm.querySelector(".film__header__continuation_year").style.display =
-    "none";
-
-  if (item.season != null) {
-    if (item.season == "мини–сериал") {
-      popupFilm.querySelector(".film__header__season").textContent =
-        item.season + ", ";
-    } else if (item.season.length == 3) {
-      popupFilm.querySelector(".film__header__season").textContent =
-        "Сезоны " + item.season + ",";
-      if (item.continuation != null) {
-        popupFilm.querySelector(".film__header__subtitle__dash").style.display =
-          "inline-block";
-        popupFilm.querySelector(
-          ".film__header__continuation_year"
-        ).style.display = "inline-block";
-        popupFilm.querySelector(
-          ".film__header__continuation_year"
-        ).textContent = item.continuation.getFullYear();
-      }
-    } else {
-      popupFilm.querySelector(".film__header__season").textContent =
-        "Сезон " + item.season + ",";
-    }
-  } else {
-    popupFilm.querySelector(".film__header__season").textContent = "";
-  }
-
-  const filmDirectorTitle = popupFilm.querySelector(".film__director__title");
-
-  if (item.format == "фильм" && item.director.length > 1) {
-    filmDirectorTitle.textContent = "Режиссеры: ";
-  } else if (item.format == "фильм" && item.director.length == 1) {
-    filmDirectorTitle.textContent = "Режиссер: ";
-  } else if (item.format == "сериал" && item.director.length > 1) {
-    filmDirectorTitle.textContent = "Создатели: ";
-  } else {
-    filmDirectorTitle.textContent = "Создатель: ";
-  }
-
-  if (item.cast.length > 1) {
-    popupFilm.querySelector(".film__cast").style.display = "inline-block";
-    popupFilm.querySelector(".film__cast__title").textContent = "В ролях: ";
-  } else if (item.cast.length == 1) {
-    popupFilm.querySelector(".film__cast__title").textContent =
-      "В главной роли: ";
-    const arrayCast = item.cast.flat();
-    const castTextContent = Array.from(arrayCast, ({ name }) => name);
-    if (castTextContent == "") {
-      popupFilm.querySelector(".film__cast").style.display = "none";
-    } else {
-      popupFilm.querySelector(".film__cast").style.display = "inline-block";
-    }
-  }
-
-  function addImages(template, className1, className2, outside, inside) {
-    function add(item) {
-      const element = template.querySelector("." + className1).cloneNode(true);
-
-      if (format_for_link == "фильм") {
-        element.querySelector("." + className2).src =
-          location_of_the_images +
-          "films/" +
-          year_for_link +
-          "/" +
-          name +
-          "/" +
-          item +
-          ".jpg";
-      } else if (season_for_link == "мини–сериал") {
-        element.querySelector("." + className2).src =
-          location_of_the_images + "serials/" + name + "/" + item + ".jpg";
-      } else {
-        element.querySelector("." + className2).src =
-          location_of_the_images +
-          "serials/" +
-          name +
-          "/" +
-          "season__" +
-          season_for_link +
-          "/" +
-          item +
-          ".jpg";
-      }
-
-      element.querySelector("." + className2).alt =
-        "Скриншот из «" + filmHeaderTitle.textContent + "»";
-      element
-        .querySelector("." + className2)
-        .addEventListener("load", function () {
-          element.querySelector("." + className2).style.opacity = "1";
-        });
-
-      return element;
-    }
-    outside.forEach(function (element) {
-      inside.append(add(element));
-    });
-  }
-
-  const filmScreenshots = document.querySelector(".film__screenshots");
-  const popupScreenshots = document.querySelector(".popup__screenshots");
-  const filmScreenshotsTemplate = document.querySelector(
-    "#film__screenshots-template"
-  ).content;
-  const popupScreenshotsTemplate = document.querySelector(
-    "#popup__screenshot-template"
-  ).content;
-  const Screenshots = Array.from(
-    { length: item.screenshots },
-    (element, index) => {
-      return index + 1;
-    }
-  );
-
-  addImages(
-    filmScreenshotsTemplate,
-    "film__screenshot",
-    "film__screenshot__img",
-    Screenshots,
-    filmScreenshots
-  );
-
-  const filmDirectorName = popupFilm.querySelectorAll(".film__director__name");
-  const filmCastName = popupFilm.querySelectorAll(".film__cast__name");
-  const filmScreenshot = popupFilm.querySelectorAll(".film__screenshot");
-  const filmScreenshotIMG = popupFilm.querySelectorAll(
-    ".film__screenshot__img"
-  );
-
-  function nameVerification(outside, inside) {
-    for (let i = 0; i < outside.length; i++) {
-      if ((outside[i] = inside[i])) {
-        outside[i].textContent = inside[i].name;
-        outside[i].classList.add("film__name_comma");
-        outside[i].classList.remove("film__name_is-closed");
-        if (i + 1 == inside.length) {
-          outside[i].classList.remove("film__name_comma");
-        }
-      } else {
-        outside[i].classList.add("film__name_is-closed");
-      }
-    }
-  }
-
-  nameVerification(filmDirectorName, item.director);
-  nameVerification(filmCastName, item.cast);
-
-  popupFilm.querySelector(".film__description").textContent = item.description;
-  popupFilm.querySelector(".film__link").href = item.kinopoisk;
-  popupFilm.querySelector(".film__link__name").textContent = item.format;
-
-  filmScreenshots.classList.toggle("film__screenshots_is-even");
-  filmScreenshots.classList.toggle("film__screenshots_is-odd");
-
-  for (let i = 0; i < filmScreenshot.length; i++) {
-    filmScreenshot[i].addEventListener("click", function () {
-      function add(item) {
-        const element = popupScreenshotsTemplate
-          .querySelector(".popup__screenshot__block")
-          .cloneNode(true);
-
-        element.querySelector(".popup__screenshot__img").src =
-          item.querySelector(".film__screenshot__img").src;
-        element.querySelector(".popup__screenshot__img").alt =
-          item.querySelector(".film__screenshot__img").alt;
-        element
-          .querySelector(".popup__screenshot__img")
-          .addEventListener("load", function () {
-            element.querySelector(".popup__screenshot__img").style.opacity =
-              "1";
-          });
-
-        return element;
-      }
-      popupFilm
-        .querySelectorAll(".film__screenshot")
-        .forEach(function (element) {
-          popupScreenshots.append(add(element));
-        });
-      openPopup(popupScreenshot);
-      const close = document.querySelector(".popup__screenshot__close");
-      close.addEventListener("click", function () {
-        closePopup(popupScreenshot);
-      });
-      addCloseOverlayListener(
-        popupScreenshot,
-        simpleClose,
-        ".popup__screenshot__block"
-      );
-
-      const popupScreen = popupScreenshot.querySelectorAll(
-        ".popup__screenshot__block"
-      );
-      const popupScreenIMG = popupScreenshot.querySelectorAll(
-        ".popup__screenshot__img"
-      );
-
-      let slideCount = popupScreen.length;
-      const prevButton = document.querySelector(".popup__screenshot__left");
-      const nextButton = document.querySelector(".popup__screenshot__right");
-      const inactiveButton = "aria-disabled";
-      let currentSlide = i;
-
-      function updateSlider() {
-        popupScreen.forEach((slide, index) => {
-          if (index === currentSlide) {
-            slide.style.display = "block";
-          } else {
-            slide.style.display = "none";
-          }
-        });
-
-        prevButton.setAttribute(inactiveButton, currentSlide === 0);
-        nextButton.setAttribute(
-          inactiveButton,
-          currentSlide === slideCount - 1
-        );
-      }
-
-      prevButton.addEventListener("click", () => {
-        if (currentSlide > 0) {
-          currentSlide--;
-          updateSlider();
-        }
-      });
-
-      nextButton.addEventListener("click", () => {
-        if (currentSlide < slideCount - 1) {
-          currentSlide++;
-          updateSlider();
-        }
-      });
-
-      document.addEventListener("keydown", function (event) {
-        if (
-          event.key === "ArrowLeft" &&
-          event.code === "ArrowLeft" &&
-          currentSlide > 0 &&
-          document
-            .querySelector(".popup__screenshot")
-            .classList.contains("popup_is-opened")
-        ) {
-          currentSlide--;
-          updateSlider();
-        }
-        if (
-          event.key === "ArrowRight" &&
-          event.code === "ArrowRight" &&
-          currentSlide < slideCount - 1 &&
-          document
-            .querySelector(".popup__screenshot")
-            .classList.contains("popup_is-opened")
-        ) {
-          currentSlide++;
-          updateSlider();
-        }
-      });
-
-      updateSlider();
-    });
-  }
-
-  // закрытие попапа при НАЖАТИИ на кнопку закрытия попапа фильма
-  popupFilm
-    .querySelector(".popup__film__close")
-    .addEventListener("click", function () {
-      closePopup(popupFilm);
-    });
-
-  openPopup(popupFilm);
-}
-
 // константы СОРТИРОВОК в навигации
-const sortNameAZ = document.querySelector(".sort__name__AZ");
-const sortNameZA = document.querySelector(".sort__name__ZA");
-const sortOriginalNameAZ = document.querySelector(".sort__original_name__AZ");
-const sortOriginalNameZA = document.querySelector(".sort__original_name__ZA");
-const sortYearAZ = document.querySelector(".sort__year__AZ");
-const sortYearZA = document.querySelector(".sort__year__ZA");
-const sortPublicationAZ = document.querySelector(".sort__publication__AZ");
-const sortPublicationZA = document.querySelector(".sort__publication__ZA");
+const sortElements = {
+  nameAZ: document.querySelector(".sort__name__AZ"),
+  nameZA: document.querySelector(".sort__name__ZA"),
+  originalNameAZ: document.querySelector(".sort__original_name__AZ"),
+  originalNameZA: document.querySelector(".sort__original_name__ZA"),
+  yearAZ: document.querySelector(".sort__year__AZ"),
+  yearZA: document.querySelector(".sort__year__ZA"),
+  publicationAZ: document.querySelector(".sort__publication__AZ"),
+  publicationZA: document.querySelector(".sort__publication__ZA"),
+};
 
-// функция СОРТИРОВКИ
-
-function sortAZ(className) {
-  var items = document.querySelectorAll(".main__list__item");
-  Array.from(items)
-    .sort(function (a, b) {
-      a = Number(a.querySelector("." + className).innerText);
-      b = Number(b.querySelector("." + className).innerText);
-      return (a > b) - (a < b);
-    })
-    .forEach(function (n, i) {
-      n.style.order = i;
-    });
+// Основная функция сортировки
+function sortItems(className, direction = "asc", isNumeric = true) {
+  const items = document.querySelectorAll(".main__list__item");
+  const arr = Array.from(items);
+  const compare = (a, b) => {
+    const valA = isNumeric
+      ? Number(a.querySelector(`.${className}`).innerText)
+      : a.querySelector(`.${className}`).innerText;
+    const valB = isNumeric
+      ? Number(b.querySelector(`.${className}`).innerText)
+      : b.querySelector(`.${className}`).innerText;
+    return direction === "asc"
+      ? (valA > valB) - (valA < valB)
+      : (valA < valB) - (valA > valB);
+  };
+  arr.sort(compare).forEach((item, index) => (item.style.order = index));
   closePopup(popupNavigation);
 }
-
-function sortZA(className) {
-  var items = document.querySelectorAll(".main__list__item");
-  Array.from(items)
-    .sort(function (a, b) {
-      a = Number(a.querySelector("." + className).innerText);
-      b = Number(b.querySelector("." + className).innerText);
-      return (a < b) - (a > b);
-    })
-    .forEach(function (n, i) {
-      n.style.order = i;
-    });
-  closePopup(popupNavigation);
+// Функция для обработки сортировки
+function handleSort(selector, direction, isNumeric = false, useDelete = false) {
+  return function () {
+    sortItems(selector, direction, isNumeric);
+    if (useDelete) {
+      deleteSortTitle();
+    } else {
+      addSortTitle(this);
+    }
+    document.querySelector(".main__base").scrollIntoView();
+  };
 }
-
-function sortNamingAZ(className) {
-  var items = document.querySelectorAll(".main__list__item");
-  Array.from(items)
-    .sort(function (a, b) {
-      a = a.querySelector("." + className).innerText;
-      b = b.querySelector("." + className).innerText;
-      return (a > b) - (a < b);
-    })
-    .forEach(function (n, i) {
-      n.style.order = i;
-    });
-  closePopup(popupNavigation);
-}
-
-function sortNamingZA(className) {
-  var items = document.querySelectorAll(".main__list__item");
-  Array.from(items)
-    .sort(function (a, b) {
-      a = a.querySelector("." + className).innerText;
-      b = b.querySelector("." + className).innerText;
-      return (a < b) - (a > b);
-    })
-    .forEach(function (n, i) {
-      n.style.order = i;
-    });
-  closePopup(popupNavigation);
-}
-
-sortNameAZ.addEventListener("click", function () {
-  sortNamingAZ("card__title");
-  addSortTitle(sortNameAZ);
-  document.querySelector(".main__base").scrollIntoView();
-});
-sortNameZA.addEventListener("click", function () {
-  sortNamingZA("card__title");
-  addSortTitle(sortNameZA);
-  document.querySelector(".main__base").scrollIntoView();
-});
-sortOriginalNameAZ.addEventListener("click", function () {
-  sortNamingAZ("card__title__original");
-  addSortTitle(sortOriginalNameAZ);
-  document.querySelector(".main__base").scrollIntoView();
-});
-sortOriginalNameZA.addEventListener("click", function () {
-  sortNamingZA("card__title");
-  addSortTitle(sortOriginalNameZA);
-  document.querySelector(".main__base").scrollIntoView();
-});
-sortYearAZ.addEventListener("click", function () {
-  sortZA("card__year__original");
-  addSortTitle(sortYearAZ);
-  document.querySelector(".main__base").scrollIntoView();
-});
-sortYearZA.addEventListener("click", function () {
-  sortAZ("card__year__original");
-  addSortTitle(sortYearZA);
-  document.querySelector(".main__base").scrollIntoView();
-});
-sortPublicationAZ.addEventListener("click", function () {
-  sortZA("card__publication__original");
-  deleteSortTitle();
-  document.querySelector(".main__base").scrollIntoView();
-});
-sortPublicationZA.addEventListener("click", function () {
-  sortAZ("card__publication__original");
-  addSortTitle(sortPublicationZA);
-  document.querySelector(".main__base").scrollIntoView();
+// Привязка событий через цикл
+const sortConfig = [
+  {
+    key: "nameAZ",
+    selector: "card__title",
+    direction: "asc",
+    isNumeric: false,
+  },
+  {
+    key: "nameZA",
+    selector: "card__title",
+    direction: "desc",
+    isNumeric: false,
+  },
+  {
+    key: "originalNameAZ",
+    selector: "card__title__original",
+    direction: "asc",
+    isNumeric: false,
+  },
+  {
+    key: "originalNameZA",
+    selector: "card__title__original",
+    direction: "desc",
+    isNumeric: false,
+  },
+  {
+    key: "yearAZ",
+    selector: "card__year__original",
+    direction: "desc",
+    isNumeric: true,
+  },
+  {
+    key: "yearZA",
+    selector: "card__year__original",
+    direction: "asc",
+    isNumeric: true,
+  },
+  {
+    key: "publicationAZ",
+    selector: "card__publication__original",
+    direction: "desc",
+    isNumeric: true,
+    useDelete: true,
+  },
+  {
+    key: "publicationZA",
+    selector: "card__publication__original",
+    direction: "asc",
+    isNumeric: true,
+  },
+];
+// Обработчик на кнопки сортировки
+sortConfig.forEach((config) => {
+  sortElements[config.key].addEventListener(
+    "click",
+    handleSort(
+      config.selector,
+      config.direction,
+      config.isNumeric,
+      config.useDelete || false
+    )
+  );
 });
 
-mainSortTitle.addEventListener("click", function () {
-  if (mainSortTitle.textContent == sortYearAZ.textContent) {
-    sortAZ("card__year__original");
-    mainSortTitle.textContent = sortYearZA.textContent;
-  } else if (mainSortTitle.textContent == sortYearZA.textContent) {
-    sortZA("card__year__original");
-    mainSortTitle.textContent = sortYearAZ.textContent;
-  } else if (mainSortTitle.textContent == sortNameZA.textContent) {
-    sortNamingAZ("card__title");
-    mainSortTitle.textContent = sortNameAZ.textContent;
-  } else if (mainSortTitle.textContent == sortNameAZ.textContent) {
-    sortNamingZA("card__title");
-    mainSortTitle.textContent = sortNameZA.textContent;
-  } else if (mainSortTitle.textContent == sortOriginalNameZA.textContent) {
-    sortNamingAZ("card__title__original");
-    mainSortTitle.textContent = sortOriginalNameAZ.textContent;
-  } else if (mainSortTitle.textContent == sortOriginalNameAZ.textContent) {
-    sortNamingZA("card__title__original");
-    mainSortTitle.textContent = sortOriginalNameZA.textContent;
+// Карта состояний сортировки
+const sortMap = new Map([
+  [
+    sortElements.yearAZ.textContent,
+    { selector: "card__year__original", reverse: false },
+  ],
+  [
+    sortElements.yearZA.textContent,
+    { selector: "card__year__original", reverse: true },
+  ],
+  [
+    sortElements.nameAZ.textContent,
+    { selector: "card__title", reverse: true, thirdParam: false },
+  ],
+  [
+    sortElements.nameZA.textContent,
+    { selector: "card__title", reverse: false, thirdParam: false },
+  ],
+  [
+    sortElements.originalNameAZ.textContent,
+    { selector: "card__title__original", reverse: true, thirdParam: false },
+  ],
+  [
+    sortElements.originalNameZA.textContent,
+    { selector: "card__title__original", reverse: false, thirdParam: false },
+  ],
+]);
+// Обработчик на кнопку заголовка сортировки
+mainSortTitle.addEventListener("click", () => {
+  const currentText = mainSortTitle.textContent;
+  const currentState = sortMap.get(currentText);
+
+  if (currentState) {
+    const oppositeText = [...sortMap.keys()].find(
+      (key) =>
+        sortMap.get(key).selector === currentState.selector &&
+        sortMap.get(key).reverse !== currentState.reverse
+    );
+    const params = [
+      currentState.selector,
+      currentState.reverse ? "desc" : "asc",
+    ];
+    if ("thirdParam" in currentState) {
+      params.push(currentState.thirdParam);
+    }
+    sortItems(...params);
+    mainSortTitle.textContent = oppositeText;
   } else {
-    sortZA("card__publication__original");
+    sortItems("card__publication__original", "desc");
     deleteSortTitle();
   }
 });
