@@ -24892,13 +24892,12 @@ function addCard(item) {
   function personsPhoto(element) {
     const photo = descriptionElements.photo;
     const container = descriptionElements.photobox;
-    container.style.display = "none";
+    container.style.display = "block";
     photo.src = `${location_of_the_images}persons/${name_for_person(
       element.textContent
     )}.png`;
     photo.alt = element.textContent;
     photo.addEventListener("load", () => {
-      container.style.display = "block";
       photo.style.opacity = "1";
     });
     photo.onerror = () => {
@@ -25044,19 +25043,6 @@ headerSearch.addEventListener("submit", updateSearchResultsCount);
 
 // функция ПОКАЗА попапа фильма
 function showFilmCard(item) {
-  // Создаем элемент для блокировки свайпа
-  const blockSwipe = document.createElement("block_swipe");
-  blockSwipe.classList.add("no-swipe");
-  // Добавляем обработчики событий
-  blockSwipe.addEventListener("touchstart", (e) => {
-    e.preventDefault();
-  });
-  blockSwipe.addEventListener("touchmove", (e) => {
-    e.preventDefault();
-  });
-  // Добавляем элемент в DOM
-  document.body.appendChild(blockSwipe);
-
   // Реализация смены сторон шапки попапа
   const popupFilmCloseImg = document.querySelector(".popup__film__close__img");
   const filmPosters = popupFilm.querySelector(".film__posters");
@@ -25367,11 +25353,7 @@ function showFilmCard(item) {
 
   // закрытие попапа при НАЖАТИИ на кнопку закрытия попапа фильма
   const closeButton = popupFilm.querySelector(".popup__film__close");
-  closeButton.addEventListener(
-    "click",
-    () => closePopup(popupFilm),
-    blockSwipe.remove()
-  );
+  closeButton.addEventListener("click", () => closePopup(popupFilm));
 
   openPopup(popupFilm);
 }

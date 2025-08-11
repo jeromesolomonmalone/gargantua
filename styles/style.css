@@ -126,15 +126,6 @@ body {
   -moz-overflow: hidden;
   -ms-overflow: hidden;
   overflow: hidden;
-} 
-
-.no-swipe {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 60px; /* Высота зоны, которую нужно заблокировать */
-  touch-action: none;
 }
 
 .header {
@@ -1209,7 +1200,7 @@ body {
 
 .film__director__name,
 .film__cast__name {
-  border-bottom: 2px solid var(--name-line);
+  border-bottom: 1px solid var(--name-line);
   color: var(--name);
   font-weight: normal;
   font-size: 0.9375rem;
@@ -1219,7 +1210,7 @@ body {
 
 .film__director__name:hover,
 .film__cast__name:hover {
-  border-bottom: 2px solid var(--name-line-hover);
+  border-bottom: 1px solid var(--name-line-hover);
   color: var(--name-hover);
 }
 
@@ -1230,7 +1221,7 @@ body {
 .film__name_comma::after {
   content: ", ";
   display: inline;
-  border-bottom: 2px solid var(--background);
+  border-bottom: 1px solid var(--background);
 }
 
 .film__name_comma:last-child::after {
