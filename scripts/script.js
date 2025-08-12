@@ -24169,7 +24169,7 @@ function openPopup(popupElement) {
 function closePopup(popupElement) {
   const commonActions = () => {
     document.body.classList.remove("scroll-lock");
-    document.addEventListener(
+    document.removeEventListener(
       "touchmove",
       function (event) {
         event.preventDefault();
