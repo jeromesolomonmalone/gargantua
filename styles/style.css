@@ -126,7 +126,6 @@ body {
   -moz-overflow: hidden;
   -ms-overflow: hidden;
   overflow: hidden;
-  overscroll-behavior: none
 }
 
 .header {

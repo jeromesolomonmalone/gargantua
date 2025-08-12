@@ -23921,15 +23921,6 @@ const films = [
   }, // я, робот
 ];
 
-// Отключение Quick Scroll to Top через EventListener
-// document.addEventListener(
-//   "touchmove",
-//   function (event) {
-//     event.preventDefault();
-//   },
-//   { passive: false }
-// );
-
 // Сортировка films по дате публикации
 films.sort((dateA, dateB) => dateA.publication - dateB.publication).reverse();
 
@@ -24164,12 +24155,27 @@ function REMOVE(item) {
 function openPopup(popupElement) {
   popupElement.classList.add("popup_is-opened");
   document.body.classList.add("scroll-lock");
+  // Отключение Quick Scroll to Top через EventListener
+  document.addEventListener(
+    "touchmove",
+    function (event) {
+      event.preventDefault();
+    },
+    { passive: false }
+  );
   document.addEventListener("keydown", closePopupByEsc);
 }
 // функция ЗАКРЫТИЯ ПОПАПА
 function closePopup(popupElement) {
   const commonActions = () => {
     document.body.classList.remove("scroll-lock");
+    document.addEventListener(
+      "touchmove",
+      function (event) {
+        event.preventDefault();
+      },
+      { passive: true }
+    );
     document.removeEventListener("keydown", closePopupByEsc);
   };
 
