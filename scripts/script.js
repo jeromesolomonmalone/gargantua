@@ -23921,6 +23921,16 @@ const films = [
   }, // я, робот
 ];
 
+// Отключение Quick Scroll to Top через EventListener
+document.addEventListener(
+  "touchmove",
+  function (event) {
+    event.preventDefault();
+  },
+  { passive: false }
+);
+document.body.style.overscrollBehavior = "none";
+
 // Сортировка films по дате публикации
 films.sort((dateA, dateB) => dateA.publication - dateB.publication).reverse();
 
@@ -23955,12 +23965,18 @@ const popupScreenshot = document.querySelector(".popup__screenshot");
 const popupNavigation = document.querySelector(".popup__navigation");
 
 // функция ДОБАВЛЕНИЯ чего-угодно из темплейта
-function addItemsFromTemplate({ template, className, data, container }) {
+function addItems({ template, className, data, container, innerClassName }) {
   const itemTemplate = template.querySelector(`.${className}`);
 
   data.forEach((element) => {
     const clonedElement = itemTemplate.cloneNode(true);
-    clonedElement.textContent = element;
+
+    if (innerClassName) {
+      clonedElement.querySelector(`.${innerClassName}`).textContent = element;
+    } else {
+      clonedElement.textContent = element;
+    }
+
     container.append(clonedElement);
   });
 }
@@ -23992,17 +24008,12 @@ const navigationReleasesTemplate = document.querySelector(
 ).content;
 const navigationReleases = document.querySelector(".navigation__releases");
 // РЕЖИССЕРЫ в попап
-const filmsDirectors = [
-  ...new Set(films.flatMap(({ director }) => director.map(({ name }) => name))),
-].sort((a, b) => a.localeCompare(b));
+const emptyStrings = new Array(50).fill("");
 const filmDirectorTemplate = document.querySelector(
   "#film__director-template"
 ).content;
 const filmDirector = document.querySelector(".film__director");
 // КАСТ в попап
-const filmsCast = [
-  ...new Set(films.flatMap(({ cast }) => cast.map(({ name }) => name))),
-].sort((a, b) => a.localeCompare(b));
 const filmCastTemplate = document.querySelector("#film__cast-template").content;
 const filmCast = document.querySelector(".film__cast");
 // ТОЛЬКО имена режиссеров из ФИЛЬМОВ
@@ -24024,42 +24035,52 @@ const onlySerialsDirectors = [
   ),
 ];
 
-// Конфигурации всех темплейтов
+// Конфигурация всех элементов
 const itemsConfiguration = [
+  // Навигация
   {
+    type: "navigation",
     template: navigationFormatTemplate,
     className: "navigation__format__item",
     data: filmsFormats,
     container: navigationFormat,
   },
   {
+    type: "navigation",
     template: navigationGenresTemplate,
     className: "navigation__genres__item",
     data: filmsGenresSorted,
     container: navigationGenres,
   },
   {
+    type: "navigation",
     template: navigationReleasesTemplate,
     className: "navigation__releases__item",
     data: filmsReleases,
     container: navigationReleases,
   },
+
+  // Персоны
   {
+    type: "persons",
     template: filmDirectorTemplate,
-    className: "film__director__name",
-    data: filmsDirectors,
+    className: "film__director__case",
+    innerClassName: "film__director__name",
+    data: emptyStrings,
     container: filmDirector,
   },
   {
+    type: "persons",
     template: filmCastTemplate,
-    className: "film__cast__name",
-    data: filmsCast,
+    className: "film__cast__case",
+    innerClassName: "film__cast__name",
+    data: emptyStrings,
     container: filmCast,
   },
 ];
 
 // Применение конфигурации
-itemsConfiguration.forEach((config) => addItemsFromTemplate(config));
+itemsConfiguration.forEach((config) => addItems(config));
 
 // разбираемся с жанром "DC"
 document
@@ -24892,17 +24913,24 @@ function addCard(item) {
   function personsPhoto(element) {
     const photo = descriptionElements.photo;
     const container = descriptionElements.photobox;
-    container.style.display = "block";
-    photo.src = `${location_of_the_images}persons/${name_for_person(
+    container.style.display = "none";
+    const imagePath = `${location_of_the_images}persons/${name_for_person(
       element.textContent
     )}.png`;
-    photo.alt = element.textContent;
-    photo.addEventListener("load", () => {
+    const image = new Image();
+    // Обработчик успешного загрузки изображения
+    image.onload = () => {
+      container.style.display = "block";
+      photo.src = image.src;
+      photo.alt = element.textContent;
       photo.style.opacity = "1";
-    });
-    photo.onerror = () => {
+    };
+    // Обработчик ошибки при загрузке
+    image.onerror = () => {
       container.style.display = "none";
     };
+    // Начинаем загрузку изображения
+    image.src = imagePath;
   }
   // Нажатие на актеров
   const castButtons = document.querySelectorAll(".film__cast__name");
@@ -25144,46 +25172,72 @@ function showFilmCard(item) {
   const filmPersons = {
     director: {
       title: popupFilm.querySelector(".film__director__title"),
+      case: popupFilm.querySelectorAll(".film__director__case"),
       names: popupFilm.querySelectorAll(".film__director__name"),
     },
     cast: {
       title: popupFilm.querySelector(".film__cast__title"),
       container: popupFilm.querySelector(".film__cast"),
+      case: popupFilm.querySelectorAll(".film__cast__case"),
       names: popupFilm.querySelectorAll(".film__cast__name"),
     },
   };
   // Функция для установки заголовка с учетом формата и количества персон
   function setTitle(titleElement, format, count) {
-    const base = format === "фильм" ? "Режиссер" : "Создатель";
-    titleElement.textContent = `${base}${count > 1 ? "ы" : ""}: `;
+    if (format === "фильм") {
+      titleElement.textContent = `Режиссер${count > 1 ? "ы" : ""}: `;
+    } else {
+      titleElement.textContent = `Создател${count > 1 ? "и" : "ь"}: `;
+    }
   }
-  // Функция для обработки списка имен
-  function updateNames(elements, data) {
-    elements.forEach((el, i) => {
-      if (i < data.length) {
-        el.textContent = data[i].name;
-        el.classList.value = "film__director__name film__name_comma";
-        if (i === data.length - 1) el.classList.remove("film__name_comma");
+  // Функция обработки имен
+  function nameVerification(container, name, inside) {
+    for (let i = 0; i < container.length; i++) {
+      if (i < inside.length) {
+        if (!container[i].textContent.includes(",")) {
+          container[i].insertAdjacentText("beforeend", ", ");
+        }
+        container[i].classList.remove("film__name_is-closed");
+        name[i].textContent = inside[i].name;
       } else {
-        el.classList.add("film__name_is-closed");
+        container[i].classList.add("film__name_is-closed");
       }
-    });
+
+      const element = name[inside.length - 1];
+
+      if (element) {
+        let next = element.nextSibling;
+        while (next) {
+          const nextElement = next.nextSibling;
+          element.parentNode.removeChild(next);
+          next = nextElement;
+        }
+      }
+    }
   }
+
   // Основная логика
   setTitle(filmPersons.director.title, item.format, item.director.length);
-  updateNames(filmPersons.director.names, item.director);
-  if (item.cast.length) {
-    filmPersons.cast.container.style.display = "inline-block";
-    filmPersons.cast.title.textContent =
-      item.cast.length > 1 ? "В ролях: " : "В главной роли: ";
-    updateNames(filmPersons.cast.names, item.cast.flat());
-  } else {
-    filmPersons.cast.container.style.display = "none";
-  }
+  nameVerification(
+    filmPersons.director.case,
+    filmPersons.director.names,
+    item.director
+  );
+
   const castNames = item.cast.flat().map(({ name }) => name);
   if (castNames.join("") === "") {
     filmPersons.cast.container.style.display = "none";
+  } else {
+    filmPersons.cast.container.style.display = "inline-block";
   }
+
+  filmPersons.cast.title.textContent =
+    item.cast.length > 1 ? "В ролях: " : "В главной роли: ";
+  nameVerification(
+    filmPersons.cast.case,
+    filmPersons.cast.names,
+    item.cast.flat()
+  );
 
   // Определение описания и ссылки в попапе
   popupFilm.querySelector(".film__description").textContent = item.description;
@@ -25529,53 +25583,57 @@ mainSortTitle.addEventListener("click", () => {
   }
 });
 
-function find_the_right_word() {
+//
+//
+//
+// Название фильма для ссылки
+function generateLinkTitle() {
   clonedArray.sort((a, b) =>
     a.title.toLowerCase().localeCompare(b.title.toLowerCase())
   );
 
-  console.log(name_for_link(clonedArray[serial_number_of_the_film].original));
+  console.log(name_for_link(clonedArray[MOVIE_INDEX].original));
 }
+// const MOVIE_INDEX = 97
+// generateLinkTitle()
 
-// const serial_number_of_the_film = 97
-// find_the_right_word()
+// Количество публикаций
+function getMediaStatsSummary() {
+  // Создаем объект для хранения результатов
+  const stats = {
+    total: clonedArray.length,
+    films: 0,
+    serials: new Set(),
+  };
 
-function total_number_of_films_and_serials() {
-  const films = clonedArray
-    .filter((elem) => elem.format === "фильм")
-    .map((elem) => elem.title);
-  const serials = [
-    ...new Set(
-      clonedArray
-        .filter((elem) => elem.format === "сериал")
-        .map((elem) => elem.title)
-        .sort()
-    ),
-  ];
+  // Проходим по массиву один раз
+  clonedArray.forEach((item) => {
+    if (item.format === "фильм") {
+      stats.films++;
+    } else if (item.format === "сериал") {
+      stats.serials.add(item.title);
+    }
+  });
 
-  console.log(
-    "Публикаций всего: " +
-      clonedArray.length +
-      ", из которых: фильмов — " +
-      films.length +
-      ", сериалов — " +
-      serials.length +
-      "."
-  );
+  // Форматируем вывод
+  const result = `Публикаций всего: ${stats.total}, из которых: фильмов — ${stats.films}, сериалов — ${stats.serials.size}.`;
+
+  console.log(result.trim());
 }
+// getMediaStatsSummary();
 
-// total_number_of_films_and_serials();
-
-function get_a_persons_name() {
-  const persons = [...filmsDirectors, ...filmsCast]
-    .filter((person, index, arr) => arr.indexOf(person) === index)
-    .sort();
-
-  const selectedPersons = persons.slice(50, 100);
-
-  selectedPersons.forEach((person) => {
-    console.log(person, name_for_person(person));
+// Имена актеров/режиссеров для ссылок
+function displayUniquePersonsList() {
+  const namesSet = new Set();
+  films.forEach((film) => {
+    [...film.director, ...film.cast].forEach((person) =>
+      namesSet.add(person.name)
+    );
+  });
+  const uniqueSortedNames = Array.from(namesSet).sort();
+  const selectedPersons = uniqueSortedNames.slice(200, 250);
+  selectedPersons.forEach((name) => {
+    console.log(`${name}: ${name_for_person(name)}`);
   });
 }
-
-// get_a_persons_name()
+// displayUniquePersonsList()

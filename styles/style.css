@@ -580,7 +580,7 @@ body {
   min-inline-size: 186.6vw;
 }
 
-@keyframes scroll {
+/* @keyframes scroll {
   from {
     transform: translateX(0);
   }
@@ -588,7 +588,7 @@ body {
   to {
     transform: translateX(-100%);
   }
-}
+} */
 
 .top__images_block {
   position: relative;
@@ -1198,33 +1198,34 @@ body {
   font-weight: 750;
 }
 
-.film__director__name,
-.film__cast__name {
-  border-bottom: 1px solid var(--name-line);
+.film__director__case,
+.film__cast__case {
   color: var(--name);
   font-weight: normal;
   font-size: 0.9375rem;
   line-height: 1.25rem;
+}
+
+.film__director__name,
+.film__cast__name {
+  text-decoration: underline;
+  -webkit-text-decoration-color: var(--name-line);
+  -moz-text-decoration-color: var(--name-line);
+  text-decoration-color: var(--name-line);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
   cursor: pointer;
 }
 
 .film__director__name:hover,
 .film__cast__name:hover {
-  border-bottom: 1px solid var(--name-line-hover);
   color: var(--name-hover);
+  -webkit-text-decoration-color: var(--name-line-hover);
+  -moz-text-decoration-color: var(--name-line-hover);
+  text-decoration-color: var(--name-line-hover);
 }
 
 .film__name_is-closed {
-  display: none;
-}
-
-.film__name_comma::after {
-  content: ", ";
-  display: inline;
-  border-bottom: 1px solid var(--background);
-}
-
-.film__name_comma:last-child::after {
   display: none;
 }
 
