@@ -24155,27 +24155,12 @@ function REMOVE(item) {
 function openPopup(popupElement) {
   popupElement.classList.add("popup_is-opened");
   document.body.classList.add("scroll-lock");
-  // Отключение Quick Scroll to Top через EventListener
-  document.addEventListener(
-    "touchmove",
-    function (event) {
-      event.preventDefault();
-    },
-    { passive: false }
-  );
   document.addEventListener("keydown", closePopupByEsc);
 }
 // функция ЗАКРЫТИЯ ПОПАПА
 function closePopup(popupElement) {
   const commonActions = () => {
     document.body.classList.remove("scroll-lock");
-    document.removeEventListener(
-      "touchmove",
-      function (event) {
-        event.preventDefault();
-      },
-      { passive: true }
-    );
     document.removeEventListener("keydown", closePopupByEsc);
   };
 
@@ -25074,8 +25059,24 @@ function updateSearchResultsCount() {
 }
 headerSearch.addEventListener("submit", updateSearchResultsCount);
 
+// Функция для обработки жеста прокрутки вверх
+function handleScrollToTop(event) {
+  // Проверяем, является ли событие жестом прокрутки вверх
+  if (
+    event.touches &&
+    event.touches.length === 1 &&
+    event.touches[0].clientY < 50
+  ) {
+    // Предотвращаем стандартное поведение
+    event.preventDefault();
+    // Прокручиваем попап вверх
+    document.querySelector(".popup__film__content").scrollTop = 0;
+  }
+}
+
 // функция ПОКАЗА попапа фильма
 function showFilmCard(item) {
+  popupFilm.addEventListener("touchstart", handleScrollToTop);
   // Реализация смены сторон шапки попапа
   const popupFilmCloseImg = document.querySelector(".popup__film__close__img");
   const filmPosters = popupFilm.querySelector(".film__posters");

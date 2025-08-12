@@ -281,7 +281,7 @@ body {
 .popup__navigation {
   position: fixed;
   inset: 0px;
-  z-index: 2;
+  z-index: 9999;
   visibility: hidden;
   display: none;
   opacity: 0;
@@ -294,7 +294,7 @@ body {
 .popup__film {
   position: fixed;
   inset: 0px;
-  z-index: 2;
+  z-index: 9999;
   visibility: hidden;
   display: none;
   opacity: 0;
@@ -588,7 +588,7 @@ body {
   to {
     transform: translateX(-100%);
   }
-} 
+}
 
 .top__images_block {
   position: relative;
@@ -1025,6 +1025,7 @@ body {
 .popup__film__content {
   position: absolute;
   top: 0px;
+  -webkit-overflow-scrolling: touch;
   color: var(--main-text);
   block-size: 100%;
   inline-size: 100%;
