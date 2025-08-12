@@ -1025,7 +1025,6 @@ body {
 .popup__film__content {
   position: absolute;
   top: 0px;
-  -webkit-overflow-scrolling: touch;
   color: var(--main-text);
   block-size: 100%;
   inline-size: 100%;
