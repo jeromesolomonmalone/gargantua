@@ -23922,13 +23922,13 @@ const films = [
 ];
 
 // Отключение Quick Scroll to Top через EventListener
-document.addEventListener(
-  "touchmove",
-  function (event) {
-    event.preventDefault();
-  },
-  { passive: false }
-);
+// document.addEventListener(
+//   "touchmove",
+//   function (event) {
+//     event.preventDefault();
+//   },
+//   { passive: false }
+// );
 
 // Сортировка films по дате публикации
 films.sort((dateA, dateB) => dateA.publication - dateB.publication).reverse();
