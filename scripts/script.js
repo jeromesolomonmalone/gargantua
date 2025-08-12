@@ -23929,7 +23929,6 @@ document.addEventListener(
   },
   { passive: false }
 );
-document.body.style.overscrollBehavior = "none";
 
 // Сортировка films по дате публикации
 films.sort((dateA, dateB) => dateA.publication - dateB.publication).reverse();
