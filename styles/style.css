@@ -580,7 +580,7 @@ body {
   min-inline-size: 186.6vw;
 }
 
-/* @keyframes scroll {
+@keyframes scroll {
   from {
     transform: translateX(0);
   }
@@ -588,7 +588,7 @@ body {
   to {
     transform: translateX(-100%);
   }
-} */
+} 
 
 .top__images_block {
   position: relative;
