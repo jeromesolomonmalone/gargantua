@@ -24187,14 +24187,12 @@ function REMOVE(item) {
 function openPopup(popupElement) {
   popupElement.classList.add("popup_is-opened");
   document.body.classList.add("scroll-lock");
-  document.querySelector(".main").classList.add("no-scroll");
   document.addEventListener("keydown", closePopupByEsc);
 }
 // функция ЗАКРЫТИЯ ПОПАПА
 function closePopup(popupElement) {
   const commonActions = () => {
     document.body.classList.remove("scroll-lock");
-    document.querySelector(".main").classList.remove("no-scroll");
     document.removeEventListener("keydown", closePopupByEsc);
   };
 
