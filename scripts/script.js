@@ -25063,37 +25063,37 @@ headerSearch.addEventListener("submit", updateSearchResultsCount);
 const popupFilmContent = document.querySelector(".popup__film__content");
 let isScrolling = false;
 function preventBodyScroll(e) {
-    if (e.touches.length === 1 && e.touches[0].clientY < 50) {
-        e.preventDefault();
-        popupFilmContent.scrollTop = 0;
-    }
+  if (e.touches.length === 1 && e.touches[0].clientY < 20) {
+    e.preventDefault();
+    popupFilmContent.scrollTop = 0;
+  }
 }
 function handleTouchStart(e) {
-    if (e.touches.length === 1) {
-        isScrolling = false;
-        initialY = e.touches[0].clientY;
-    }
+  if (e.touches.length === 1) {
+    isScrolling = false;
+    initialY = e.touches[0].clientY;
+  }
 }
 function handleTouchMove(e) {
-    if (e.touches.length === 1 && !isScrolling) {
-        const currentY = e.touches[0].clientY;
-        const diff = initialY - currentY;
-        
-        if (Math.abs(diff) > 5) {
-            isScrolling = true;
-        }
-        
-        if (currentY < 50) {
-            e.preventDefault();
-            popupFilmContent.scrollTop = 0;
-        }
+  if (e.touches.length === 1 && !isScrolling) {
+    const currentY = e.touches[0].clientY;
+    const diff = initialY - currentY;
+
+    if (Math.abs(diff) > 5) {
+      isScrolling = true;
     }
+
+    if (currentY < 20) {
+      e.preventDefault();
+      popupFilmContent.scrollTop = 0;
+    }
+  }
 }
 
 // функция ПОКАЗА попапа фильма
 function showFilmCard(item) {
-  popupFilm.addEventListener('touchstart', handleTouchStart);
-popupFilm.addEventListener('touchmove', handleTouchMove);
+  popupFilm.addEventListener("touchstart", handleTouchStart);
+  popupFilm.addEventListener("touchmove", handleTouchMove);
   // Реализация смены сторон шапки попапа
   const popupFilmCloseImg = document.querySelector(".popup__film__close__img");
   const filmPosters = popupFilm.querySelector(".film__posters");
