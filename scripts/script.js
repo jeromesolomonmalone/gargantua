@@ -25065,7 +25065,7 @@ function handleScrollToTop(event) {
   if (
     event.touches &&
     event.touches.length === 1 &&
-    event.touches[0].clientY < 50
+    event.touches[0].clientY < 20
   ) {
     // Предотвращаем стандартное поведение
     event.preventDefault();
