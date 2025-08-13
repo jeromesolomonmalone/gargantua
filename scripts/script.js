@@ -12603,14 +12603,46 @@ const films = [
     posters: 1,
   }, // о где же ты брат
   {
+    release: new Date("2000-07-24"),
+    publication: new Date("2025-08-13"),
+    format: "фильм",
+    grade: "A",
+    title: "О птичках",
+    original: "For the Birds",
+    kinopoisk: "https://www.kinopoisk.ru/film/672/",
+    director: [
+      {
+        name: "Ральф Эгглстон",
+      },
+    ],
+    cast: [
+      {
+        name: "",
+      },
+    ],
+    description: "Пташки на проводе встречают большую птицу",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+      {
+        genre: "короткометражка",
+      },
+      {
+        genre: "pixar",
+      },
+    ],
+    screenshots: 15,
+    posters: 1,
+  }, // о птичках
+  {
     release: new Date("2009-09-18"),
     publication: new Date("2023-07-14"),
     format: "фильм",
     grade: "B",
     title: "Облачно, возможны осадки в виде фрикаделек",
     original: "Cloudy with a Chance of Meatballs",
-    kinopoisk:
-      "https://www.kinopoisk.ru/film/276363/?utm_referrer=www.google.com",
+    kinopoisk: "https://www.kinopoisk.ru/film/276363/",
     director: [
       {
         name: "Фил Лорд",
@@ -24155,12 +24187,14 @@ function REMOVE(item) {
 function openPopup(popupElement) {
   popupElement.classList.add("popup_is-opened");
   document.body.classList.add("scroll-lock");
+  document.querySelector(".main").classList.add("no-scroll");
   document.addEventListener("keydown", closePopupByEsc);
 }
 // функция ЗАКРЫТИЯ ПОПАПА
 function closePopup(popupElement) {
   const commonActions = () => {
     document.body.classList.remove("scroll-lock");
+    document.querySelector(".main").classList.remove("no-scroll");
     document.removeEventListener("keydown", closePopupByEsc);
   };
 
@@ -25059,41 +25093,8 @@ function updateSearchResultsCount() {
 }
 headerSearch.addEventListener("submit", updateSearchResultsCount);
 
-// Функция для обработки жеста прокрутки вверх
-const popupFilmContent = document.querySelector(".popup__film__content");
-let isScrolling = false;
-function preventBodyScroll(e) {
-  if (e.touches.length === 1 && e.touches[0].clientY < 20) {
-    e.preventDefault();
-    popupFilmContent.scrollTop = 0;
-  }
-}
-function handleTouchStart(e) {
-  if (e.touches.length === 1) {
-    isScrolling = false;
-    initialY = e.touches[0].clientY;
-  }
-}
-function handleTouchMove(e) {
-  if (e.touches.length === 1 && !isScrolling) {
-    const currentY = e.touches[0].clientY;
-    const diff = initialY - currentY;
-
-    if (Math.abs(diff) > 5) {
-      isScrolling = true;
-    }
-
-    if (currentY < 20) {
-      e.preventDefault();
-      popupFilmContent.scrollTop = 0;
-    }
-  }
-}
-
 // функция ПОКАЗА попапа фильма
 function showFilmCard(item) {
-  popupFilm.addEventListener("touchstart", handleTouchStart);
-  popupFilm.addEventListener("touchmove", handleTouchMove);
   // Реализация смены сторон шапки попапа
   const popupFilmCloseImg = document.querySelector(".popup__film__close__img");
   const filmPosters = popupFilm.querySelector(".film__posters");
@@ -25654,7 +25655,7 @@ function displayUniquePersonsList() {
     );
   });
   const uniqueSortedNames = Array.from(namesSet).sort();
-  const selectedPersons = uniqueSortedNames.slice(200, 250);
+  const selectedPersons = uniqueSortedNames.slice(300, 350);
   selectedPersons.forEach((name) => {
     console.log(`${name}: ${name_for_person(name)}`);
   });

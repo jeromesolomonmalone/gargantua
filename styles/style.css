@@ -122,14 +122,10 @@ body {
 }
 
 .scroll-lock {
-  position: fixed;
-  width: 100%;
-  height: 100%;
   -webkit-overflow: hidden;
   -moz-overflow: hidden;
   -ms-overflow: hidden;
   overflow: hidden;
-  pointer-events: none;
 }
 
 .header {
@@ -557,6 +553,10 @@ body {
   display: flex;
   flex-direction: column;
   margin: 80px 0;
+}
+
+.no-scroll {
+  overscroll-behavior: none;
 }
 
 .main__logo {
@@ -1029,9 +1029,7 @@ body {
 .popup__film__content {
   position: absolute;
   top: 0px;
-  -webkit-overflow-scrolling: touch;
   color: var(--main-text);
-  pointer-events: auto;
   block-size: 100%;
   inline-size: 100%;
 }
