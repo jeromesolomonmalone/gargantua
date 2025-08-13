@@ -25073,10 +25073,10 @@ function handleScrollToTop(event) {
     document.querySelector(".popup__film__content").scrollTop = 0;
   }
 }
+popupFilm.addEventListener("touchstart", handleScrollToTop);
 
 // функция ПОКАЗА попапа фильма
 function showFilmCard(item) {
-  popupFilm.addEventListener("touchstart", handleScrollToTop);
   // Реализация смены сторон шапки попапа
   const popupFilmCloseImg = document.querySelector(".popup__film__close__img");
   const filmPosters = popupFilm.querySelector(".film__posters");
