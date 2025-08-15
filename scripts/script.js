@@ -24225,13 +24225,17 @@ function REMOVE(item) {
 }
 // функция ОТКРЫТИЯ ПОПАПА
 function openPopup(popupElement) {
-  const body = document.body;
-  const scrollPosition = window.scrollY;
-  body.dataset.scrollPosition = scrollPosition;
-  body.style.top = `-${scrollPosition}px`;
-  body.classList.add("scroll-lock");
-  popupElement.classList.add("popup_is-opened");
-  document.addEventListener("keydown", closePopupByEsc);
+  if (popupElement == popupScreenshot) {
+    popupElement.classList.add("popup_is-opened");
+  } else {
+    const body = document.body;
+    const scrollPosition = window.scrollY;
+    body.dataset.scrollPosition = scrollPosition;
+    body.style.top = `-${scrollPosition}px`;
+    body.classList.add("scroll-lock");
+    popupElement.classList.add("popup_is-opened");
+    document.addEventListener("keydown", closePopupByEsc);
+  }
 }
 // функция ЗАКРЫТИЯ ПОПАПА
 function closePopup(popupElement) {
@@ -24630,10 +24634,12 @@ function addCard(item) {
   }
   // Успешные действия при нажатии на кнопку в навигации
   function openCard() {
-    document.querySelector(".main__base").scrollIntoView();
     clearSearch();
     closePopup(popupNavigation);
     mainListElement.classList.add("main__list__item_is-opened");
+    setTimeout(() => {
+      document.querySelector(".main__base").scrollIntoView();
+    }, 0);
   }
   // Провальные действия при нажатии на кнопку в навигации
   function mistake() {
