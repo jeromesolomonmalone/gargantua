@@ -15176,6 +15176,46 @@ const films = [
     posters: 2,
   }, // прибытие
   {
+    release: new Date("2011-12-21"),
+    publication: new Date("2025-08-06"),
+    format: "фильм",
+    grade: "A+",
+    title: "Приключения Тинтина: Тайна единорога",
+    original: "The Adventures of Tintin",
+    kinopoisk: "https://www.kinopoisk.ru/film/406186/",
+    director: [
+      {
+        name: "Стивен Спилберг",
+      },
+    ],
+    cast: [
+      {
+        name: "Джейми Белл",
+      },
+      {
+        name: "Энди Серкис",
+      },
+      {
+        name: "Дэниэл Крэйг",
+      },
+    ],
+    description:
+      "Репортёр Тинтин и капитан Хэддок отправляются на поиски сокровищ затонувшего корабля.",
+    genres: [
+      {
+        genre: "анимация",
+      },
+      {
+        genre: "детектив",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 44,
+    posters: 3,
+  }, // приключения тинтина
+  {
     release: new Date("2020-03-05"),
     publication: new Date("2024-04-30"),
     format: "сериал",
@@ -24185,14 +24225,22 @@ function REMOVE(item) {
 }
 // функция ОТКРЫТИЯ ПОПАПА
 function openPopup(popupElement) {
+  const body = document.body;
+  const scrollPosition = window.scrollY;
+  body.dataset.scrollPosition = scrollPosition;
+  body.style.top = `-${scrollPosition}px`;
+  body.classList.add("scroll-lock");
   popupElement.classList.add("popup_is-opened");
-  document.body.classList.add("scroll-lock");
   document.addEventListener("keydown", closePopupByEsc);
 }
 // функция ЗАКРЫТИЯ ПОПАПА
 function closePopup(popupElement) {
   const commonActions = () => {
-    document.body.classList.remove("scroll-lock");
+    const body = document.body;
+    const scrollPosition = body.dataset.scrollPosition;
+    body.style.top = "";
+    body.classList.remove("scroll-lock");
+    window.scrollTo(0, scrollPosition);
     document.removeEventListener("keydown", closePopupByEsc);
   };
 
@@ -25645,17 +25693,36 @@ function getMediaStatsSummary() {
 // getMediaStatsSummary();
 
 // Имена актеров/режиссеров для ссылок
-function displayUniquePersonsList() {
+function displayUniquePersonsList({ mode = "names", start, end } = {}) {
   const namesSet = new Set();
+
   films.forEach((film) => {
     [...film.director, ...film.cast].forEach((person) =>
       namesSet.add(person.name)
     );
   });
+
   const uniqueSortedNames = Array.from(namesSet).sort();
-  const selectedPersons = uniqueSortedNames.slice(300, 350);
-  selectedPersons.forEach((name) => {
-    console.log(`${name}: ${name_for_person(name)}`);
-  });
+
+  switch (mode) {
+    case "names":
+      const selectedPersons = uniqueSortedNames.slice(start, end);
+      selectedPersons.forEach((name) => {
+        console.log(`${name}: ${name_for_person(name)}`);
+      });
+      break;
+
+    case "count":
+      console.log(uniqueSortedNames.length);
+      break;
+
+    default:
+      console.log("Неверный режим вывода");
+  }
 }
-// displayUniquePersonsList()
+
+// displayUniquePersonsList({
+//   mode: 'names',
+//   start: 350,
+//   end: 400
+// });
