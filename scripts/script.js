@@ -24225,15 +24225,15 @@ function REMOVE(item) {
 }
 // функция ОТКРЫТИЯ ПОПАПА
 function openPopup(popupElement) {
-  if (popupElement == popupScreenshot) {
-    popupElement.classList.add("popup_is-opened");
-  } else {
+  const isScreenshotPopup = popupElement === popupScreenshot;
+  popupElement.classList.add("popup_is-opened");
+  if (!isScreenshotPopup) {
     const body = document.body;
     const scrollPosition = window.scrollY;
     body.dataset.scrollPosition = scrollPosition;
     body.style.top = `-${scrollPosition}px`;
     body.classList.add("scroll-lock");
-    popupElement.classList.add("popup_is-opened");
+    document.querySelector(".header").style.position = "fixed";
     document.addEventListener("keydown", closePopupByEsc);
   }
 }
@@ -24244,6 +24244,7 @@ function closePopup(popupElement) {
     const scrollPosition = body.dataset.scrollPosition;
     body.style.top = "";
     body.classList.remove("scroll-lock");
+    document.querySelector(".header").style.position = "sticky";
     window.scrollTo(0, scrollPosition);
     document.removeEventListener("keydown", closePopupByEsc);
   };
@@ -24259,6 +24260,8 @@ function closePopup(popupElement) {
     simpleClose(popupElement);
     commonActions();
     remove(popupFilm, [".film__poster", ".film__screenshot"]);
+    // Убираем обработчик события
+    popupFilm.removeEventListener("touchstart", handleScrollToTop);
   } else if (popupElement == popupNavigation) {
     simpleClose(popupElement);
     commonActions();
@@ -24570,23 +24573,29 @@ function addCard(item) {
   // Функция поиска
   function handleSearchSubmit() {
     removeNavigationTitle();
-    document.querySelector(".main__search__result").textContent =
-      searchInput.value;
+    const searchValue = searchInput.value;
+    document.querySelector(".main__search__result").textContent = searchValue;
     mainSearch.classList.add("main__search_is-opened");
 
-    const title = item.title.toLowerCase();
-    const original = item.original.toLowerCase();
-    const searchValue = searchInput.value.toLowerCase();
+    const lowerCase = (str) => str.toLowerCase();
+    const searchTerms = {
+      title: lowerCase(item.title),
+      original: lowerCase(item.original),
+      value: lowerCase(searchValue),
+    };
 
-    if (title.includes(searchValue) || original.includes(searchValue)) {
+    if (
+      searchTerms.title.includes(searchTerms.value) ||
+      searchTerms.original.includes(searchTerms.value)
+    ) {
       mainListElement.classList.add("main__list__item_is-opened");
-      document.querySelector(".main__base").scrollIntoView();
-      setTimeout(() => {
+      requestAnimationFrame(() => {
         headerSearch.reset();
         headerSearch.classList.remove("header__search_is-opened");
         toggleSearchState(false);
         closePopup(popupNavigation);
-      }, 0);
+        document.querySelector(".main__base").scrollIntoView();
+      });
     } else {
       mainListElement.classList.remove("main__list__item_is-opened");
     }
@@ -24637,9 +24646,9 @@ function addCard(item) {
     clearSearch();
     closePopup(popupNavigation);
     mainListElement.classList.add("main__list__item_is-opened");
-    setTimeout(() => {
-      document.querySelector(".main__base").scrollIntoView();
-    }, 0);
+    Promise.resolve().then(() =>
+      document.querySelector(".main__base").scrollIntoView()
+    );
   }
   // Провальные действия при нажатии на кнопку в навигации
   function mistake() {
@@ -24883,9 +24892,7 @@ function addCard(item) {
   });
 
   mainListElement.addEventListener("click", function () {
-    window.setTimeout(() => {
-      popupFilm.scrollTo(0, 0);
-    }, 0);
+    Promise.resolve().then(() => popupFilm.scrollTo(0, 0));
     showFilmCard(item);
   });
 
@@ -25097,9 +25104,9 @@ function addCard(item) {
   // использование функции ПЕРЕЗАГРУЗКИ при нажатии на ГЛАВНУЮ КНОПКУ
   const handleScrollToMain = () => {
     Reset();
-    setTimeout(() => {
-      document.querySelector(".main__base").scrollIntoView();
-    }, 0);
+    Promise.resolve().then(() =>
+      document.querySelector(".main__base").scrollIntoView()
+    );
   };
   const scrollTriggerSelectors = [
     ".navigation__main__item",
@@ -25145,8 +25152,25 @@ function updateSearchResultsCount() {
 }
 headerSearch.addEventListener("submit", updateSearchResultsCount);
 
+// Функция для обработки жеста прокрутки вверх
+function handleScrollToTop(event) {
+  // Проверяем, является ли событие жестом прокрутки вверх
+  if (
+    event.touches &&
+    event.touches.length === 1 &&
+    event.touches[0].clientY < 20
+  ) {
+    // Предотвращаем стандартное поведение
+    event.preventDefault();
+    // Прокручиваем попап вверх
+    popupFilm.querySelector(".popup__film__content").scrollTop = 0;
+  }
+}
+
 // функция ПОКАЗА попапа фильма
 function showFilmCard(item) {
+  // Добавляем обработчик события
+  popupFilm.addEventListener("touchstart", handleScrollToTop);
   // Реализация смены сторон шапки попапа
   const popupFilmCloseImg = document.querySelector(".popup__film__close__img");
   const filmPosters = popupFilm.querySelector(".film__posters");
@@ -25729,6 +25753,6 @@ function displayUniquePersonsList({ mode = "names", start, end } = {}) {
 
 // displayUniquePersonsList({
 //   mode: 'names',
-//   start: 350,
-//   end: 400
+//   start: 450,
+//   end: 500
 // });
