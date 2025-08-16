@@ -24260,8 +24260,6 @@ function closePopup(popupElement) {
     simpleClose(popupElement);
     commonActions();
     remove(popupFilm, [".film__poster", ".film__screenshot"]);
-    // Убираем обработчик события
-    popupFilm.removeEventListener("touchstart", handleScrollToTop);
   } else if (popupElement == popupNavigation) {
     simpleClose(popupElement);
     commonActions();
@@ -25152,44 +25150,19 @@ function updateSearchResultsCount() {
 }
 headerSearch.addEventListener("submit", updateSearchResultsCount);
 
-// Функция для обработки жеста прокрутки вверх
-let isScrolling = false;
-
-function preventBodyScroll(e) {
-  if (e.touches.length === 1 && e.touches[0].clientY < 20) {
-    e.preventDefault();
-    popupFilm.querySelector(".popup__film__content").scrollTop = 0;
-  }
-}
-
-function handleTouchStart(e) {
-  if (e.touches.length === 1) {
-    isScrolling = false;
-    initialY = e.touches[0].clientY;
-  }
-}
-
-function handleTouchMove(e) {
-  if (e.touches.length === 1 && !isScrolling) {
-    const currentY = e.touches[0].clientY;
-    const diff = initialY - currentY;
-
-    if (Math.abs(diff) > 5) {
-      isScrolling = true;
-    }
-
-    if (currentY < 20) {
-      e.preventDefault();
-      popupFilm.querySelector(".popup__film__content").scrollTop = 0;
-    }
-  }
-}
-
 // функция ПОКАЗА попапа фильма
 function showFilmCard(item) {
-  // Добавляем обработчик события
-  popupFilm.addEventListener("touchstart", handleTouchStart);
-  popupFilm.addEventListener("touchmove", handleTouchMove);
+  popupFilm.addEventListener("touchstart", function (event) {
+    if (window.scrollY > 0 && popupFilm.classList.contains("popup_is-opened")) {
+      window.scrollTo({
+        top: popupFilm.offsetTop,
+        behavior: "smooth",
+      });
+      window.scrollTo(0, popupFilm.offsetTop);
+      popupFilm.scrollIntoView();
+    }
+  });
+
   // Реализация смены сторон шапки попапа
   const popupFilmCloseImg = document.querySelector(".popup__film__close__img");
   const filmPosters = popupFilm.querySelector(".film__posters");
