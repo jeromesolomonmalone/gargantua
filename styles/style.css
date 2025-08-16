@@ -1066,6 +1066,15 @@ body {
   fill: white;
 }
 
+.popup__film__scroll {
+  position: fixed;
+  top: 0;
+  z-index: 100000;
+  background: transparent;
+  inline-size: 100%;
+  block-size: 20px;
+}
+
 .film__header {
   position: relative;
   display: grid;
