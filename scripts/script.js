@@ -25152,14 +25152,16 @@ headerSearch.addEventListener("submit", updateSearchResultsCount);
 
 // функция ПОКАЗА попапа фильма
 function showFilmCard(item) {
+
+  const popupFilmContent = document.querySelector(".popup__film__content");
   popupFilm.addEventListener("touchstart", function (event) {
     if (window.scrollY > 0 && popupFilm.classList.contains("popup_is-opened")) {
       window.scrollTo({
-        top: popupFilm.offsetTop,
+        top: popupFilmContent.offsetTop,
         behavior: "smooth",
       });
-      window.scrollTo(0, popupFilm.offsetTop);
-      popupFilm.scrollIntoView();
+      window.scrollTo(0, popupFilmContent.offsetTop);
+      popupFilmContent.scrollIntoView();
     }
   });
 
