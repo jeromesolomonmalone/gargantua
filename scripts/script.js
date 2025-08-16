@@ -25153,24 +25153,43 @@ function updateSearchResultsCount() {
 headerSearch.addEventListener("submit", updateSearchResultsCount);
 
 // Функция для обработки жеста прокрутки вверх
-function handleScrollToTop(event) {
-  // Проверяем, является ли событие жестом прокрутки вверх
-  if (
-    event.touches &&
-    event.touches.length === 1 &&
-    event.touches[0].clientY < 20
-  ) {
-    // Предотвращаем стандартное поведение
-    event.preventDefault();
-    // Прокручиваем попап вверх
+let isScrolling = false;
+
+function preventBodyScroll(e) {
+  if (e.touches.length === 1 && e.touches[0].clientY < 20) {
+    e.preventDefault();
     popupFilm.querySelector(".popup__film__content").scrollTop = 0;
+  }
+}
+
+function handleTouchStart(e) {
+  if (e.touches.length === 1) {
+    isScrolling = false;
+    initialY = e.touches[0].clientY;
+  }
+}
+
+function handleTouchMove(e) {
+  if (e.touches.length === 1 && !isScrolling) {
+    const currentY = e.touches[0].clientY;
+    const diff = initialY - currentY;
+
+    if (Math.abs(diff) > 5) {
+      isScrolling = true;
+    }
+
+    if (currentY < 20) {
+      e.preventDefault();
+      popupFilm.querySelector(".popup__film__content").scrollTop = 0;
+    }
   }
 }
 
 // функция ПОКАЗА попапа фильма
 function showFilmCard(item) {
   // Добавляем обработчик события
-  popupFilm.addEventListener("touchstart", handleScrollToTop);
+  popupFilm.addEventListener("touchstart", handleTouchStart);
+  popupFilm.addEventListener("touchmove", handleTouchMove);
   // Реализация смены сторон шапки попапа
   const popupFilmCloseImg = document.querySelector(".popup__film__close__img");
   const filmPosters = popupFilm.querySelector(".film__posters");

@@ -308,8 +308,9 @@ body {
   overflow-y: auto;
   background: var(--background);
   transition: visibility 0.6s, opacity 0.6s;
-  pointer-events: none;
+  /* pointer-events: none; */
   user-select: none;
+  pointer-events: auto;
 }
 
 .popup__screenshot {
@@ -1034,6 +1035,7 @@ body {
   color: var(--main-text);
   block-size: 100%;
   inline-size: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 
 .popup__film__close {
