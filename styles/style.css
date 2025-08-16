@@ -1070,6 +1070,7 @@ body {
   position: fixed;
   top: 0;
   z-index: 100000;
+  border: none;
   background: transparent;
   inline-size: 100%;
   block-size: 20px;
