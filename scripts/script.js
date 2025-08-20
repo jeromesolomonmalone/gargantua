@@ -1440,6 +1440,52 @@ const films = [
     posters: 1,
   }, // без чувств
   {
+    release: new Date("2021-11-12"),
+    publication: new Date("2025-03-02"),
+    format: "фильм",
+    grade: "B",
+    title: "Белфаст",
+    original: "Belfast",
+    kinopoisk: "https://www.kinopoisk.ru/film/1397888/",
+    director: [
+      {
+        name: "Кеннет Брана",
+      },
+    ],
+    cast: [
+      {
+        name: "Джуд Хилл",
+      },
+      {
+        name: "Катрина Балф",
+      },
+      {
+        name: "Джейми Дорнан",
+      },
+      {
+        name: "Киран Хайндс",
+      },
+      {
+        name: "Джуди Денч",
+      },
+    ],
+    description:
+      "Жизнь и беспорядки ирландского городка глазами девятилетнего мальчугана.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "биография",
+      },
+      {
+        genre: "чёрно-белое",
+      },
+    ],
+    screenshots: 69,
+    posters: 2,
+  }, // белфаст
+  {
     release: new Date("1992-03-27"),
     publication: new Date("2023-01-29"),
     format: "фильм",
@@ -2330,6 +2376,52 @@ const films = [
     posters: 2,
   }, // в ритме ча-ча-ча
   {
+    release: new Date("2006-11-10"),
+    publication: new Date("2025-03-02"),
+    format: "фильм",
+    grade: "C",
+    title: "Вавилон",
+    original: "Babel",
+    kinopoisk: "https://www.kinopoisk.ru/film/102125/",
+    director: [
+      {
+        name: "Алехандро Гонсалес Иньярриту",
+      },
+    ],
+    cast: [
+      {
+        name: "Брэд Питт",
+      },
+      {
+        name: "Кейт Бланшетт",
+      },
+      {
+        name: "Гаэль Гарсиа Берналь",
+      },
+      {
+        name: "Кодзи Якусё",
+      },
+      {
+        name: "Ринко Кикути",
+      },
+      {
+        name: "Адриана Барраса",
+      },
+      {
+        name: "Эль Фаннинг",
+      },
+    ],
+    description:
+      "Трагедия в марокканской пустыне связывает судьбы четырёх семей.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 27,
+    posters: 2,
+  }, // вавилон (2006)
+  {
     release: new Date("2022-12-23"),
     publication: new Date("2023-02-05"),
     format: "фильм",
@@ -2362,7 +2454,7 @@ const films = [
     ],
     screenshots: 40,
     posters: 2,
-  }, // вавилон
+  }, // вавилон (2022)
   {
     release: new Date("2021-01-15"),
     publication: new Date("2021-03-11"),
@@ -3026,6 +3118,43 @@ const films = [
     posters: 2,
   }, // впритык
   {
+    release: new Date("2013-09-08"),
+    publication: new Date("2025-03-13"),
+    format: "фильм",
+    grade: "B",
+    title: "Враг",
+    original: "Enemy",
+    kinopoisk: "https://www.kinopoisk.ru/film/673910/",
+    director: [
+      {
+        name: "Дени Вильнёв",
+      },
+    ],
+    cast: [
+      {
+        name: "Джейк Джилленхол",
+      },
+      {
+        name: "Сара Гадон",
+      },
+      {
+        name: "Мелани Лоран",
+      },
+    ],
+    description:
+      "Преподаватель истории Адам Белл находит в фильме своего двойника и одержимо ищет его.",
+    genres: [
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 48,
+    posters: 2,
+  }, // враг
+  {
     release: new Date("2022-11-04"),
     publication: new Date("2023-09-11"),
     format: "фильм",
@@ -3237,6 +3366,55 @@ const films = [
     screenshots: 39,
     posters: 1,
   }, // город астероидов
+  {
+    release: new Date("2010-09-17"),
+    publication: new Date("2025-03-20"),
+    format: "фильм",
+    grade: "A",
+    title: "Город воров",
+    original: "The Town",
+    kinopoisk: "https://www.kinopoisk.ru/film/462732/",
+    director: [
+      {
+        name: "Бен Аффлек",
+      },
+    ],
+    cast: [
+      {
+        name: "Бен Аффлек",
+      },
+      {
+        name: "Ребекка Холл",
+      },
+      {
+        name: "Джон Хэмм",
+      },
+      {
+        name: "Джереми Реннер",
+      },
+      {
+        name: "Блейк Лайвли",
+      },
+      {
+        name: "Титус Уэлливер",
+      },
+    ],
+    description:
+      "Лидер банды грабителей Даг МакРэй во время очередного налёта влюбляется в заложницу — банковского менеджера.",
+    genres: [
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 47,
+    posters: 3,
+  }, // город воров
   {
     release: new Date("2023-08-25"),
     publication: new Date("2023-09-30"),
@@ -4651,6 +4829,57 @@ const films = [
     screenshots: 39,
     posters: 1,
   }, // его три дочери
+  {
+    release: new Date("2013-07-26"),
+    publication: new Date("2025-03-18"),
+    format: "фильм",
+    grade: "C",
+    title: "Жасмин",
+    original: "Blue Jasmine",
+    kinopoisk: "https://www.kinopoisk.ru/film/675565/",
+    director: [
+      {
+        name: "Вуди Аллен",
+      },
+    ],
+    cast: [
+      {
+        name: "Кейт Бланшетт",
+      },
+      {
+        name: "Салли Хокинс",
+      },
+      {
+        name: "Алек Болдуин",
+      },
+      {
+        name: "Луи С.К.",
+      },
+      {
+        name: "Питер Сарсгаард",
+      },
+      {
+        name: "Бобби Каннавале",
+      },
+      {
+        name: "Эндрю Дайс Клэй",
+      },
+    ],
+    description: "Из-за аферы мужа светская львица теряет деньги и статус.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 14,
+    posters: 2,
+  }, // жасмин
   {
     release: new Date("2022-08-18"),
     publication: new Date("2022-10-15"),
@@ -6388,7 +6617,7 @@ const films = [
         genre: "биография",
       },
     ],
-    screenshots: 19,
+    screenshots: 18,
     posters: 1,
   }, // когда они нас увидят
   {
@@ -11042,6 +11271,85 @@ const films = [
     screenshots: 69,
     posters: 2,
   }, // мстители: финал
+  {
+    release: new Date("2015-05-01"),
+    publication: new Date("2025-03-08"),
+    format: "фильм",
+    grade: "A",
+    title: "Мстители: Эра Альтрона",
+    original: "Avengers: Age of Ultron",
+    kinopoisk: "https://www.kinopoisk.ru/film/679830/",
+    director: [
+      {
+        name: "Джосс Уидон",
+      },
+    ],
+    cast: [
+      {
+        name: "Роберт Дауни мл.",
+      },
+      {
+        name: "Крис Эванс",
+      },
+      {
+        name: "Крис Хемсворт",
+      },
+      {
+        name: "Скарлетт Йоханссон",
+      },
+      {
+        name: "Марк Руффало",
+      },
+      {
+        name: "Джереми Реннер",
+      },
+      {
+        name: "Аарон Тейлор-Джонсон",
+      },
+      {
+        name: "Элизабет Олсен",
+      },
+      {
+        name: "Джеймс Спэйдер",
+      },
+      {
+        name: "Сэмюэл Л. Джексон",
+      },
+      {
+        name: "Коби Смолдерс",
+      },
+      {
+        name: "Пол Беттани",
+      },
+      {
+        name: "Дон Чидл",
+      },
+      {
+        name: "Энтони Маки",
+      },
+      {
+        name: "Линда Карделлини",
+      },
+    ],
+    description:
+      "Мстители противостоят вышедшему из-под контроля искусственному интеллекту Тони Старка.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "супергероика",
+      },
+      {
+        genre: "marvel",
+      },
+    ],
+    screenshots: 48,
+    posters: 1,
+  }, // мстители: эра альтрона
   {
     release: new Date("2013-01-25"),
     publication: new Date("2022-03-11"),
@@ -20667,6 +20975,67 @@ const films = [
     posters: 1,
   }, // тихое место: день первый
   {
+    release: new Date("2022-05-27"),
+    publication: new Date("2025-03-02"),
+    format: "фильм",
+    grade: "A+",
+    title: "Топ Ган: Мэверик",
+    original: "Top Gun: Maverick",
+    kinopoisk: "https://www.kinopoisk.ru/film/572032/",
+    director: [
+      {
+        name: "Джозеф Косински",
+      },
+    ],
+    cast: [
+      {
+        name: "Том Круз",
+      },
+      {
+        name: "Майлз Теллер",
+      },
+      {
+        name: "Дженнифер Коннелли",
+      },
+      {
+        name: "Джон Хэмм",
+      },
+      {
+        name: "Глен Пауэлл",
+      },
+      {
+        name: "Моника Барбаро",
+      },
+      {
+        name: "Льюис Пуллман",
+      },
+      {
+        name: "Чарльз Парнелл",
+      },
+      {
+        name: "Дэнни Рамирес",
+      },
+      {
+        name: "Грег Тарзан Дэвис",
+      },
+      {
+        name: "Вэл Килмер",
+      },
+    ],
+    description:
+      "Мэверик тренирует выпускников Top Gun для опасной миссии и сталкивается с прошлым.",
+    genres: [
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 96,
+    posters: 1,
+  }, // топ ган: мэверик
+  {
     release: new Date("2017-11-03"),
     publication: new Date("2021-07-24"),
     format: "фильм",
@@ -24304,10 +24673,11 @@ function name_for_link(element) {
 function name_for_person(element) {
   return element
     .toLowerCase()
-    .trim()
     .replace("$", "s")
     .replace(/[^a-zа-яё0-9\-\.\s]/g, "")
-    .replace(/[_\-\.\s]+/g, "_");
+    .replace(/[_\-\.\s]+/g, "_")
+    .replace(/_+$/, "")
+    .trim();
 }
 
 // константа ПОПАПА ФИЛЬМА
@@ -24996,14 +25366,14 @@ function addCard(item) {
           for (let i = 0; i < item.genres.length; i++) {
             if (
               descriptionElements.title.textContent.toLowerCase() ==
-                item.genres[i].genre &&
+              item.genres[i].genre &&
               isFormatValid()
             ) {
               openCard();
               break;
             } else if (
               descriptionElements.title.textContent ==
-                item.release.toString().slice(11, 15) &&
+              item.release.toString().slice(11, 15) &&
               isFormatValid()
             ) {
               openCard();
@@ -25348,10 +25718,10 @@ function addCard(item) {
             isFilmDirector && isSerialDirector
               ? "Режиссер/Создатель"
               : isFilmDirector
-              ? "Режиссер"
-              : isSerialDirector
-              ? "Создатель"
-              : null;
+                ? "Режиссер"
+                : isSerialDirector
+                  ? "Создатель"
+                  : null;
 
           if (jobTitle) {
             descriptionElements.job.textContent = jobTitle;
@@ -25544,8 +25914,8 @@ function showFilmCard(item) {
       item.season === "мини–сериал"
         ? `${item.season}, `
         : item.season.length === 3
-        ? `Сезоны ${item.season}, `
-        : `Сезон ${item.season}, `;
+          ? `Сезоны ${item.season}, `
+          : `Сезон ${item.season}, `;
     headerElements.season.textContent = seasonText;
     if (item.continuation) {
       headerElements.continuationYear.textContent =
@@ -26045,6 +26415,6 @@ function displayUniquePersonsList({ mode = "names", start, end } = {}) {
 
 // displayUniquePersonsList({
 //   mode: 'names',
-//   start: 600,
-//   end: 650
+//   start: 1150,
+//   end: 1200
 // });
