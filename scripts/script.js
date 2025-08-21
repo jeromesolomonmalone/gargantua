@@ -1357,6 +1357,61 @@ const films = [
     posters: 1,
   }, // барри 1
   {
+    release: new Date("2017-10-06"),
+    publication: new Date("2025-03-17"),
+    format: "фильм",
+    grade: "B",
+    title: "Бегущий по лезвию 2049",
+    original: "Blade Runner 2049",
+    kinopoisk: "https://www.kinopoisk.ru/film/589290/",
+    director: [
+      {
+        name: "Дени Вильнёв",
+      },
+    ],
+    cast: [
+      {
+        name: "Райан Гослинг",
+      },
+      {
+        name: "Харрисон Форд",
+      },
+      {
+        name: "Ана де Армас",
+      },
+      {
+        name: "Сильвия Хукс",
+      },
+      {
+        name: "Робин Райт",
+      },
+      {
+        name: "Маккензи Дэвис",
+      },
+      {
+        name: "Джаред Лето",
+      },
+      {
+        name: "Дэйв Батиста",
+      },
+    ],
+    description:
+      "В мире будущего офицер полиции Кей, контролирующий репликантов, обнаруживает опасную тайну, угрожающую человечеству.",
+    genres: [
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "фантастика",
+      },
+    ],
+    screenshots: 81,
+    posters: 2,
+  }, // бегущий по лезвию 2049
+  {
     release: new Date("2023-12-08"),
     publication: new Date("2024-03-03"),
     format: "фильм",
@@ -4726,6 +4781,9 @@ const films = [
       {
         name: "Дэйв Батиста",
       },
+      {
+        name: "Джош Бролин",
+      },
     ],
     description:
       "Пустынная планета Арракис – это единственный источник вещества, необходимого для полетов в космос. Два Великих Дома межгалактической империи вступают в борьбу за Арракис.",
@@ -6501,6 +6559,58 @@ const films = [
     screenshots: 16,
     posters: 1,
   }, // клаус
+  {
+    release: new Date("2016-04-15"),
+    publication: new Date("2025-03-21"),
+    format: "фильм",
+    grade: "A+",
+    title: "Книга джунглей",
+    original: "The Jungle Book",
+    kinopoisk: "https://www.kinopoisk.ru/film/779024/",
+    director: [
+      {
+        name: "Джон Фавро",
+      },
+    ],
+    cast: [
+      {
+        name: "Нил Сетхи",
+      },
+      {
+        name: "Билл Мюррей",
+      },
+      {
+        name: "Бен Кингсли",
+      },
+      {
+        name: "Идрис Эльба",
+      },
+      {
+        name: "Лупита Нионго",
+      },
+      {
+        name: "Скарлетт Йоханссон",
+      },
+      {
+        name: "Джанкарло Эспозито",
+      },
+      {
+        name: "Кристофер Уокен",
+      },
+    ],
+    description:
+      "Маугли покидает джунгли из-за угрозы Шер Хана и отправляется в путешествие с Багирой и Балу.",
+    genres: [
+      {
+        genre: "фэнтези",
+      },
+      {
+        genre: "приключения",
+      },
+    ],
+    screenshots: 36,
+    posters: 1,
+  }, // книга джунглей
   {
     release: new Date("2018-05-02"),
     continuation: new Date("2021-01-01"),
@@ -13854,6 +13964,73 @@ const films = [
     posters: 1,
   }, // отомсти за меня
   {
+    release: new Date("2021-08-06"),
+    publication: new Date("2025-03-21"),
+    format: "фильм",
+    grade: "A+",
+    title: "Отряд самоубийц: Миссия навылет",
+    original: "The Suicide Squad",
+    kinopoisk: "https://www.kinopoisk.ru/film/1008477/",
+    director: [
+      {
+        name: "Джеймс Ганн",
+      },
+    ],
+    cast: [
+      {
+        name: "Идрис Эльба",
+      },
+      {
+        name: "Марго Робби",
+      },
+      {
+        name: "Джон Сина",
+      },
+      {
+        name: "Юэль Киннаман",
+      },
+      {
+        name: "Даниэла Мелшиор",
+      },
+      {
+        name: "Давид Дастмалчян",
+      },
+      {
+        name: "Питер Капальди",
+      },
+      {
+        name: "Виола Дэвис",
+      },
+      {
+        name: "Сильвестр Сталлоне",
+      },
+    ],
+    description:
+      "«Отряд самоубийц» получает задание уничтожить нацистскую тюрьму-лабораторию Йотунхайм.",
+    genres: [
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "супергероика",
+      },
+      {
+        genre: "dc",
+      },
+    ],
+    screenshots: 57,
+    posters: 2,
+  }, // отряд самоубийц: миссия навылет
+  {
     release: new Date("2016-06-24"),
     publication: new Date("2021-02-06"),
     format: "фильм",
@@ -15693,6 +15870,45 @@ const films = [
     screenshots: 44,
     posters: 3,
   }, // приключения тинтина
+  {
+    release: new Date("2024-01-19"),
+    publication: new Date("2025-03-20"),
+    format: "фильм",
+    grade: "B",
+    title: "Присутствие",
+    original: "Presence",
+    kinopoisk: "https://www.kinopoisk.ru/film/5445463/",
+    director: [
+      {
+        name: "Стивен Содерберг",
+      },
+    ],
+    cast: [
+      {
+        name: "Каллина Лян",
+      },
+      {
+        name: "Люси Лью",
+      },
+      {
+        name: "Крис Салливан",
+      },
+      {
+        name: "Эдди Мэдэй",
+      },
+    ],
+    description: "Семья въезжает в новый дом, где обитает призрак.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "триллер",
+      },
+    ],
+    screenshots: 21,
+    posters: 1,
+  }, // присутствие
   {
     release: new Date("2020-03-05"),
     publication: new Date("2024-04-30"),
@@ -18111,6 +18327,40 @@ const films = [
     screenshots: 23,
     posters: 1,
   }, // симпсоны 33
+  {
+    release: new Date("2024-07-17"),
+    publication: new Date("2025-03-21"),
+    format: "фильм",
+    grade: "B",
+    title: "Синг-Синг",
+    original: "Sing Sing",
+    kinopoisk: "https://www.kinopoisk.ru/film/5378058/",
+    director: [
+      {
+        name: "Грег Куидар",
+      },
+    ],
+    cast: [
+      {
+        name: "Колман Доминго",
+      },
+      {
+        name: "Кларенс Маклин",
+      },
+      {
+        name: "Пол Рейси",
+      },
+    ],
+    description:
+      "Джон Уитфилд создаёт театральную труппу в тюрьме Синг-Синг, помогая заключённым через искусство.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 54,
+    posters: 2,
+  }, // синг-синг
   {
     release: new Date("2023-08-18"),
     publication: new Date("2023-09-29"),
