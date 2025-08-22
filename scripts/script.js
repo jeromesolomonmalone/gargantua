@@ -1495,6 +1495,64 @@ const films = [
     posters: 1,
   }, // без чувств
   {
+    release: new Date("2016-12-01"),
+    publication: new Date("2025-03-25"),
+    format: "фильм",
+    grade: "love",
+    title: "Безумный Макс: Дорога ярости. Чёрно-белое издание",
+    original: "Mad Max Fury Road Black And Chrome Edition",
+    kinopoisk: "https://www.kinopoisk.ru/film/453406/",
+    director: [
+      {
+        name: "Джордж Миллер",
+      },
+    ],
+    cast: [
+      {
+        name: "Том Харди",
+      },
+      {
+        name: "Шарлиз Терон",
+      },
+      {
+        name: "Николас Холт",
+      },
+      {
+        name: "Хью Кияс-Бёрн",
+      },
+      {
+        name: "Зои Кравиц",
+      },
+      {
+        name: "Роузи Хантингтон-Уайтли",
+      },
+      {
+        name: "Райли Кио",
+      },
+      {
+        name: "Энгус Сэмпсон",
+      },
+    ],
+    description:
+      "Выживание бунтаря-одиночки в постапокалиптическом мире. Чёрно-белое издание.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "чёрно-белое",
+      },
+    ],
+    screenshots: 54,
+    posters: 1,
+  }, // безумный макс. чёрно-белое издание
+  {
     release: new Date("2021-11-12"),
     publication: new Date("2025-03-02"),
     format: "фильм",
@@ -8041,6 +8099,55 @@ const films = [
     posters: 1,
   }, // криминальное чтиво
   {
+    release: new Date("2013-04-26"),
+    publication: new Date("2025-03-29"),
+    format: "фильм",
+    grade: "A",
+    title: "Кровью и потом: Анаболики",
+    original: "Pain & Gain",
+    kinopoisk: "https://www.kinopoisk.ru/film/596227/",
+    director: [
+      {
+        name: "Майкл Бэй",
+      },
+    ],
+    cast: [
+      {
+        name: "Марк Уолберг",
+      },
+      {
+        name: "Дуэйн Джонсон",
+      },
+      {
+        name: "Энтони Маки",
+      },
+      {
+        name: "Тони Шэлуб",
+      },
+      {
+        name: "Бар Пали",
+      },
+      {
+        name: "Эд Харрис",
+      },
+      {
+        name: "Роб Кордри",
+      },
+    ],
+    description:
+      "Три недалеких качка из Майами решают похитить местного богача.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 69,
+    posters: 3,
+  }, // кровью и потом: анаболики
+  {
     release: new Date("2019-11-08"),
     publication: new Date("2020-02-05"),
     format: "фильм",
@@ -8414,6 +8521,73 @@ const films = [
     screenshots: 13,
     posters: 1,
   }, // лео
+  {
+    release: new Date("2021-03-18"),
+    publication: new Date("2025-03-26"),
+    format: "фильм",
+    grade: "B",
+    title: "Лига справедливости Зака Снайдера",
+    original: "Zack Snyder's Justice League",
+    kinopoisk: "https://www.kinopoisk.ru/film/1387021/",
+    director: [
+      {
+        name: "Зак Снайдер",
+      },
+    ],
+    cast: [
+      {
+        name: "Бен Аффлек",
+      },
+      {
+        name: "Галь Гадот",
+      },
+      {
+        name: "Генри Кавилл",
+      },
+      {
+        name: "Джейсон Момоа",
+      },
+      {
+        name: "Эзра Миллер",
+      },
+      {
+        name: "Рэй Фишер",
+      },
+      {
+        name: "Эми Адамс",
+      },
+      {
+        name: "Джереми Айронс",
+      },
+      {
+        name: "Конни Нильсен",
+      },
+      {
+        name: "Киран Хайндс",
+      },
+      {
+        name: "Эмбер Хёрд",
+      },
+    ],
+    description:
+      "Брюс Уэйн собирает команду сверхлюдей, чтобы защитить мир от надвигающейся угрозы.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "чёрно-белое",
+      },
+    ],
+    screenshots: 126,
+    posters: 2,
+  }, // лига справедливости зака снайдера
   {
     release: new Date("2022-05-13"),
     publication: new Date("2022-06-18"),
@@ -9844,6 +10018,46 @@ const films = [
     screenshots: 51,
     posters: 1,
   }, // мастер не на все руки 3
+  {
+    release: new Date("2019-10-25"),
+    publication: new Date("2025-03-26"),
+    format: "фильм",
+    grade: "B",
+    title: "Маяк",
+    original: "The Lighthouse",
+    kinopoisk: "https://www.kinopoisk.ru/film/1114927/",
+    director: [
+      {
+        name: "Роберт Эггерс",
+      },
+    ],
+    cast: [
+      {
+        name: "Роберт Паттинсон",
+      },
+      {
+        name: "Уиллем Дефо",
+      },
+    ],
+    description:
+      "Два смотрителя маяка пытаются сохранить рассудок на уединённом острове Новой Англии в 1890-х годах.",
+    genres: [
+      {
+        genre: "фэнтези",
+      },
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "чёрно-белое",
+      },
+    ],
+    screenshots: 81,
+    posters: 2,
+  }, // маяк
   {
     release: new Date("2024-06-26"),
     publication: new Date("2024-08-28"),
@@ -12193,6 +12407,9 @@ const films = [
       },
       {
         name: "Чиветель Эджиофор",
+      },
+      {
+        name: "Уиллем Дефо",
       },
     ],
     description:
@@ -15959,6 +16176,40 @@ const films = [
     screenshots: 44,
     posters: 1,
   }, // программисты
+  {
+    release: new Date("2017-10-06"),
+    publication: new Date("2025-03-28"),
+    format: "фильм",
+    grade: "B",
+    title: "Проект Флорида",
+    original: "The Florida Project",
+    kinopoisk: "https://www.kinopoisk.ru/film/998317/",
+    director: [
+      {
+        name: "Шон Бэйкер",
+      },
+    ],
+    cast: [
+      {
+        name: "Бруклин Принс",
+      },
+      {
+        name: "Брия Винайте",
+      },
+      {
+        name: "Уиллем Дефо",
+      },
+    ],
+    description:
+      "Мать-одиночка и администратор придорожного мотеля заботятся о шестилетней девочке",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 48,
+    posters: 2,
+  }, // проект флорида
   {
     release: new Date("2012-03-02"),
     publication: new Date("2019-08-13"),
@@ -23658,6 +23909,9 @@ const films = [
       },
       {
         name: "Скарлетт Йоханссон",
+      },
+      {
+        name: "Тони Шэлуб",
       },
     ],
     description:
