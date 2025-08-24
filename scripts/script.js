@@ -1498,7 +1498,7 @@ const films = [
     release: new Date("2016-12-01"),
     publication: new Date("2025-03-25"),
     format: "фильм",
-    grade: "love",
+    grade: "A+",
     title: "Безумный Макс: Дорога ярости. Чёрно-белое издание",
     original: "Mad Max Fury Road Black And Chrome Edition",
     kinopoisk: "https://www.kinopoisk.ru/film/453406/",
@@ -16119,6 +16119,9 @@ const films = [
       {
         name: "Эдди Мэдэй",
       },
+      {
+        name: "Уэст Малхолланд"
+      }
     ],
     description: "Семья въезжает в новый дом, где обитает призрак.",
     genres: [
