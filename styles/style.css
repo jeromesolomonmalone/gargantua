@@ -445,7 +445,7 @@ body {
 .navigation__hidden__list {
   display: grid;
   grid-template-columns: repeat(auto-fill, 20%);
-  grid-template-rows: repeat(8, auto);
+  grid-template-rows: repeat(9, auto);
   grid-auto-flow: column;
 }
 
@@ -1560,7 +1560,7 @@ body {
 
   .navigation__hidden__list {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(10, auto);
+    grid-template-rows: repeat(11, auto);
     column-gap: calc(1px + 2rem);
   }
 

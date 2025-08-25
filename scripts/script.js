@@ -2619,6 +2619,43 @@ const films = [
     posters: 2,
   }, // ванда вижн
   {
+    release: new Date("2022-09-09"),
+    publication: new Date("2025-04-06"),
+    format: "фильм",
+    grade: "A",
+    title: "Варвар",
+    original: "Barbarian",
+    kinopoisk: "https://www.kinopoisk.ru/film/4749790/",
+    director: [
+      {
+        name: "Зак Креггер",
+      },
+    ],
+    cast: [
+      {
+        name: "Джорджина Кэмпбелл",
+      },
+      {
+        name: "Билл Скарсгард",
+      },
+      {
+        name: "Джастин Лонг",
+      },
+    ],
+    description:
+      "Девушка приезжает в съемный дом и обнаруживает, что там уже живет другой человек.",
+    genres: [
+      {
+        genre: "ужасы",
+      },
+      {
+        genre: "триллер",
+      },
+    ],
+    screenshots: 50,
+    posters: 1,
+  }, // варвар
+  {
     release: new Date("2009-05-29"),
     publication: new Date("2020-07-19"),
     format: "фильм",
@@ -3430,6 +3467,46 @@ const films = [
     screenshots: 40,
     posters: 2,
   }, // голубоглазый самурай 1
+  {
+    release: new Date("1988-12-02"),
+    publication: new Date("2025-04-05"),
+    format: "фильм",
+    grade: "B",
+    title: "Голый пистолет",
+    original: "The Naked Gun: From the Files of Police Squad!",
+    kinopoisk: "https://www.kinopoisk.ru/film/4067/",
+    director: [
+      {
+        name: "Дэвид Цукер",
+      },
+    ],
+    cast: [
+      {
+        name: "Лесли Нильсен",
+      },
+      {
+        name: "Присцилла Пресли",
+      },
+      {
+        name: "Рикардо Монтальбан",
+      },
+      {
+        name: "О. Джей Симпсон",
+      },
+      {
+        name: "Нэнси Марчанд",
+      },
+    ],
+    description:
+      "Детектив Фрэнк Дребин должен предотвратить покушение на королеву Великобритании Елизавету II.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 23,
+    posters: 2,
+  }, // голый пистолет (1988)
   {
     release: new Date("2023-06-23"),
     publication: new Date("2023-07-14"),
@@ -4945,6 +5022,55 @@ const films = [
     screenshots: 39,
     posters: 1,
   }, // его три дочери
+  {
+    release: new Date("2017-03-13"),
+    publication: new Date("2025-03-29"),
+    format: "фильм",
+    grade: "B",
+    title: "Жаркие летние ночи",
+    original: "Hot Summer Nights",
+    kinopoisk: "https://www.kinopoisk.ru/film/928993/",
+    director: [
+      {
+        name: "Элайджа Байнум",
+      },
+    ],
+    cast: [
+      {
+        name: "Тимоти Шаламе",
+      },
+      {
+        name: "Майка Монро",
+      },
+      {
+        name: "Алекс Роу",
+      },
+      {
+        name: "Эмори Коэн",
+      },
+      {
+        name: "Майя Митчелл",
+      },
+      {
+        name: "Томас Джейн",
+      },
+    ],
+    description:
+      "Подросток влюбляется и ввязывается в наркоторговлю после знакомства с бунтарем на Кейп-Код.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 42,
+    posters: 1,
+  }, // жаркие летние ночи
   {
     release: new Date("2013-07-26"),
     publication: new Date("2025-03-18"),
@@ -10064,6 +10190,49 @@ const films = [
     screenshots: 81,
     posters: 2,
   }, // маяк
+  {
+    release: new Date("2010-11-05"),
+    publication: new Date("2025-03-29"),
+    format: "фильм",
+    grade: "A",
+    title: "Мегамозг",
+    original: "Megamind",
+    kinopoisk: "https://www.kinopoisk.ru/film/405608/",
+    director: [
+      {
+        name: "Том МакГрат",
+      },
+    ],
+    cast: [
+      {
+        name: "Уилл Феррелл",
+      },
+      {
+        name: "Тина Фей",
+      },
+      {
+        name: "Брэд Питт",
+      },
+      {
+        name: "Джона Хилл",
+      },
+      {
+        name: "Дэвид Кросс",
+      },
+    ],
+    description:
+      "Мегамозг, злой гений Метро-Сити, побеждает своего заклятого врага, героя Метро-Мэна, но теряет цель в жизни.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+      {
+        genre: "супергероика",
+      },
+    ],
+    screenshots: 30,
+    posters: 2,
+  }, // мегамозг
   {
     release: new Date("2024-06-26"),
     publication: new Date("2024-08-28"),
@@ -15293,6 +15462,64 @@ const films = [
     posters: 1,
   }, // подай знак
   {
+    release: new Date("2023-03-31"),
+    publication: new Date("2025-04-06"),
+    format: "фильм",
+    grade: "A",
+    title: "Подземелья и драконы: Честь среди воров",
+    original: "Dungeons & Dragons: Honor Among Thieves",
+    kinopoisk: "https://www.kinopoisk.ru/film/762646/",
+    director: [
+      {
+        name: "Джон Фрэнсис Дейли",
+      },
+      {
+        name: "Джонатан М. Голдштейн",
+      },
+    ],
+    cast: [
+      {
+        name: "Крис Пайн",
+      },
+      {
+        name: "Мишель Родригес",
+      },
+      {
+        name: "Джастис Смит",
+      },
+      {
+        name: "София Лиллис",
+      },
+      {
+        name: "Хью Грант",
+      },
+      {
+        name: "Реге-Жан Пейдж",
+      },
+      {
+        name: "Хлоя Коулмэн",
+      },
+      {
+        name: "Дэйзи Хэд",
+      },
+    ],
+    description:
+      "Вор и его неожиданные спутники ищут утерянную реликвию, но попадают в неприятности.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "фэнтези",
+      },
+    ],
+    screenshots: 18,
+    posters: 3,
+  }, // подземелья и драконы: честь среди воров
+  {
     release: new Date("2018-06-12"),
     publication: new Date("2024-08-10"),
     format: "фильм",
@@ -16120,8 +16347,8 @@ const films = [
         name: "Эдди Мэдэй",
       },
       {
-        name: "Уэст Малхолланд"
-      }
+        name: "Уэст Малхолланд",
+      },
     ],
     description: "Семья въезжает в новый дом, где обитает призрак.",
     genres: [
@@ -20008,6 +20235,9 @@ const films = [
       {
         name: "Тони Сирико",
       },
+      {
+        name: "Нэнси Марчанд",
+      },
     ],
     description:
       "Тони Сопрано, глава мафии из Нью-Джерси, страдает от проблем в семье и бизнесе, из-за чего начинает посещать психиатра.",
@@ -20058,6 +20288,9 @@ const films = [
       },
       {
         name: "Тони Сирико",
+      },
+      {
+        name: "Нэнси Марчанд",
       },
     ],
     description:
@@ -20704,6 +20937,49 @@ const films = [
     screenshots: 87,
     posters: 1,
   }, // суперсемейка 2
+  {
+    release: new Date("2004-11-05"),
+    publication: new Date("2025-03-29"),
+    format: "фильм",
+    grade: "A+",
+    title: "Суперсемейка",
+    original: "The Incredibles",
+    kinopoisk: "https://www.kinopoisk.ru/film/38903/",
+    director: [
+      {
+        name: "Брэд Бёрд",
+      },
+    ],
+    cast: [
+      {
+        name: "Крэйг Т. Нельсон",
+      },
+      {
+        name: "Холли Хантер",
+      },
+      {
+        name: "Сэмюэл Л. Джексон",
+      },
+      {
+        name: "Джейсон Ли",
+      },
+    ],
+    description:
+      "Скрывающие суперспособности герои возвращаются на защиту мира.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+      {
+        genre: "супергероика",
+      },
+      {
+        genre: "pixar",
+      },
+    ],
+    screenshots: 27,
+    posters: 4,
+  }, // суперсемейка
   {
     release: new Date("2021-09-12"),
     publication: new Date("2021-10-20"),
@@ -25879,14 +26155,14 @@ function addCard(item) {
           for (let i = 0; i < item.genres.length; i++) {
             if (
               descriptionElements.title.textContent.toLowerCase() ==
-              item.genres[i].genre &&
+                item.genres[i].genre &&
               isFormatValid()
             ) {
               openCard();
               break;
             } else if (
               descriptionElements.title.textContent ==
-              item.release.toString().slice(11, 15) &&
+                item.release.toString().slice(11, 15) &&
               isFormatValid()
             ) {
               openCard();
@@ -26231,10 +26507,10 @@ function addCard(item) {
             isFilmDirector && isSerialDirector
               ? "Режиссер/Создатель"
               : isFilmDirector
-                ? "Режиссер"
-                : isSerialDirector
-                  ? "Создатель"
-                  : null;
+              ? "Режиссер"
+              : isSerialDirector
+              ? "Создатель"
+              : null;
 
           if (jobTitle) {
             descriptionElements.job.textContent = jobTitle;
@@ -26427,8 +26703,8 @@ function showFilmCard(item) {
       item.season === "мини–сериал"
         ? `${item.season}, `
         : item.season.length === 3
-          ? `Сезоны ${item.season}, `
-          : `Сезон ${item.season}, `;
+        ? `Сезоны ${item.season}, `
+        : `Сезон ${item.season}, `;
     headerElements.season.textContent = seasonText;
     if (item.continuation) {
       headerElements.continuationYear.textContent =
