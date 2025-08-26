@@ -5023,6 +5023,37 @@ const films = [
     posters: 1,
   }, // его три дочери
   {
+    release: new Date("2023-01-20"),
+    publication: new Date("2025-04-28"),
+    format: "фильм",
+    grade: "C",
+    title: "Жажда славы",
+    original: "Magazine Dreams",
+    kinopoisk: "https://www.kinopoisk.ru/film/4704816/",
+    director: [
+      {
+        name: "Элайджа Байнум",
+      },
+    ],
+    cast: [
+      {
+        name: "Джонатан Мейджорс",
+      },
+    ],
+    description:
+      "Любитель-бодибилдер борется с физическими и душевными демонами ради всеобщего признания.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "спорт",
+      },
+    ],
+    screenshots: 60,
+    posters: 3,
+  }, // жажда славы
+  {
     release: new Date("2017-03-13"),
     publication: new Date("2025-03-29"),
     format: "фильм",
@@ -6338,6 +6369,59 @@ const films = [
     screenshots: 107,
     posters: 12,
   }, // как я встретил вашу маму 1-9
+  {
+    release: new Date("2025-02-14"),
+    publication: new Date("2025-04-19"),
+    format: "фильм",
+    grade: "D",
+    title: "Капитан Америка: Новый мир",
+    original: "Captain America: Brave New World",
+    kinopoisk: "https://www.kinopoisk.ru/film/4443920/",
+    director: [
+      {
+        name: "Джулиус Она",
+      },
+    ],
+    cast: [
+      {
+        name: "Энтони Маки",
+      },
+      {
+        name: "Харрисон Форд",
+      },
+      {
+        name: "Дэнни Рамирес",
+      },
+      {
+        name: "Шира Хаас",
+      },
+      {
+        name: "Карл Ламбли",
+      },
+      {
+        name: "Тим Блейк Нельсон",
+      },
+      {
+        name: "Джанкарло Эспозито",
+      },
+    ],
+    description:
+      "Новый Капитан Америка Сэм Уилсон оказывается в центре международного инцидента и расследует зловещий мировой заговор.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "боевик",
+      },
+      { genre: "супергероика" },
+      {
+        genre: "marvel",
+      },
+    ],
+    screenshots: 21,
+    posters: 2,
+  }, // капитан америка: новый мир
   {
     release: new Date("2023-11-10"),
     publication: new Date("2024-01-29"),
@@ -9416,6 +9500,48 @@ const films = [
     posters: 1,
   }, // любовь, смерть и роботы 2
   {
+    release: new Date("2016-08-19"),
+    publication: new Date("2025-04-06"),
+    format: "фильм",
+    grade: "A",
+    title: "Любой ценой",
+    original: "Hell or High Water",
+    kinopoisk: "https://www.kinopoisk.ru/film/726794/",
+    director: [
+      {
+        name: "Дэвид Маккензи",
+      },
+    ],
+    cast: [
+      {
+        name: "Крис Пайн",
+      },
+      {
+        name: "Бен Фостер",
+      },
+      {
+        name: "Джефф Бриджес",
+      },
+      {
+        name: "Гил Бирмингем",
+      },
+    ],
+    description: "Чтобы погасить кредит в одном банке, братья грабят другие.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "вестерн",
+      },
+    ],
+    screenshots: 33,
+    posters: 1,
+  }, // любой ценой
+  {
     release: new Date("2019-06-14"),
     publication: new Date("2021-07-27"),
     format: "фильм",
@@ -10563,6 +10689,52 @@ const films = [
     screenshots: 22,
     posters: 2,
   }, // миграция
+  {
+    release: new Date("2025-03-07"),
+    publication: new Date("2025-04-06"),
+    format: "фильм",
+    grade: "C",
+    title: "Микки 17",
+    original: "Mickey 17",
+    kinopoisk: "https://www.kinopoisk.ru/film/1320476/",
+    director: [
+      {
+        name: "Пон Джун-хо",
+      },
+    ],
+    cast: [
+      {
+        name: "Роберт Паттинсон",
+      },
+      {
+        name: "Наоми Аки",
+      },
+      {
+        name: "Стивен Ян",
+      },
+      {
+        name: "Марк Руффало",
+      },
+      {
+        name: "Тони Коллетт",
+      },
+      {
+        name: "Анамария Вартоломеи",
+      },
+    ],
+    description:
+      "«Одноразовый» Микки колонизирует ледяной мир, возрождаясь после каждой смерти в новом теле.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "фантастика",
+      },
+    ],
+    screenshots: 66,
+    posters: 2,
+  }, // микки 17
   {
     release: new Date("2022-09-21"),
     publication: new Date("2023-02-28"),
@@ -23533,6 +23705,39 @@ const films = [
     posters: 3,
   }, // французский вестник
   {
+    release: new Date("2023-08-25"),
+    publication: new Date("2025-04-13"),
+    format: "фильм",
+    grade: "B",
+    title: "Фримонт. Американская мечта",
+    original: "Fremont",
+    kinopoisk: "https://www.kinopoisk.ru/film/5108082/",
+    director: [
+      {
+        name: "Бабак Джалали",
+      },
+    ],
+    cast: [
+      {
+        name: "Анаита Вали Жада",
+      },
+      {
+        name: "Джереми Аллен Уайт",
+      },
+    ],
+    description: "Девушка из Афганистана ищет себя в Америке.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "чёрно-белое",
+      },
+    ],
+    screenshots: 60,
+    posters: 1,
+  }, // фримонт
+  {
     release: new Date("2019-08-25"),
     publication: new Date("2019-10-27"),
     format: "сериал",
@@ -24166,6 +24371,50 @@ const films = [
     screenshots: 17,
     posters: 1,
   }, // частная жизнь
+  {
+    release: new Date("2025-02-02"),
+    publication: new Date("2025-04-05"),
+    format: "сериал",
+    season: "1",
+    grade: "B",
+    title: "Частые побочные явления",
+    original: "Common Side Effects",
+    kinopoisk: "https://www.kinopoisk.ru/series/6990425/",
+    director: [
+      {
+        name: "Джозеф Беннетт",
+      },
+      {
+        name: "Стив Хели",
+      },
+    ],
+    cast: [
+      {
+        name: "Дэвид Кинг",
+      },
+      {
+        name: "Эмили Пендергаст",
+      },
+      {
+        name: "Майк Джадж",
+      },
+      {
+        name: "Марта Келли",
+      },
+      {
+        name: "Джозеф Андерсон",
+      },
+    ],
+    description:
+      "Два бывших одноклассника расследуют заговор фармкомпаний и властей, скрывающих информацию о чудо-грибе — потенциальном лекарстве от всех болезней.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 36,
+    posters: 1,
+  }, // частые побочные явления 1
   {
     release: new Date("2001-05-13"),
     publication: new Date("2024-08-11"),
