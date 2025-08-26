@@ -26587,8 +26587,10 @@ function addCard(item) {
   });
 
   mainListElement.addEventListener("click", function () {
-    Promise.resolve().then(() => popupFilm.scrollTo(0, 0));
     showFilmCard(item);
+    setTimeout(() => {
+      popupFilm.scrollTo(0, 0);
+    }, 0);
   });
 
   // Функция обновления шапки по году
