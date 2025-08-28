@@ -26789,8 +26789,8 @@ function addCard(item) {
         headerSearch.reset();
         toggleSearchState(false);
         hideLoader();
-      }, 0);
-    }, 0);
+      }, 100);
+    }, 100);
   });
 
   // ВСЕ константы шапки
