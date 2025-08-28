@@ -31,6 +31,40 @@
   --filled-circle: url(https://img.icons8.com/ios-filled/100/FFFFFF/360-degrees.png);
   --grade-background: var(--circle);
   --logo-pixar-invert: 0%;
+  --loader-stroke: #dfdfdf;
+  --loader-fill: #959595;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #121212;
+    --header-border-bottom: #121212;
+    --button-header-hover: #121212;
+    --dark-light: white;
+    --light-dark: black;
+    --search-submit: black;
+    --title: white;
+    --search-background: black;
+    --search-title: #a3a3a3;
+    --subtitle: white;
+    --title-grade: 0%;
+    --main-line: rgba(255, 255, 255, 0.2);
+    --main-text: #f8f8f8;
+    --popup-line: #ffffff33;
+    --name-title: #ffffffbf;
+    --name: #a3a3a3;
+    --name-hover: white;
+    --name-line: #ffffff59;
+    --name-line-hover: white;
+    --link-border: #424242;
+    --link-hover: #363636;
+    --popup-screenshot: rgba(0, 0, 0, 0.85);
+    --background-image: #ccc;
+    --grade-background: var(--filled-circle);
+    --logo-pixar-invert: 100%;
+    --loader-stroke: #464646;
+    --loader-fill: #ababab;
+  }
 }
 
 body.dark-theme {
@@ -59,6 +93,8 @@ body.dark-theme {
   --background-image: #ccc;
   --grade-background: var(--filled-circle);
   --logo-pixar-invert: 100%;
+  --loader-stroke: #464646;
+  --loader-fill: #ababab;
 }
 
 *,
@@ -563,6 +599,14 @@ body {
   padding: 0 20px;
   fill: var(--title);
   inline-size: 100%;
+}
+
+.main__logo_at-the-start {
+  position: absolute;
+  margin-inline: auto;
+  transform: translateY(-50%);
+  inset-inline: 0;
+  inset-block-start: 50%;
 }
 
 .main__image {
@@ -1417,6 +1461,39 @@ body {
   opacity: 0;
 }
 
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background);
+}
+
+.loader-content {
+  animation: spin 1s linear infinite;
+}
+
+.loader-content circle {
+  stroke: var(--loader-stroke);
+}
+
+.loader-content path {
+  fill: var(--loader-fill);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media screen and (max-width: 1149px) {
   .main__description__photo {
     inline-size: 85px;
@@ -1915,6 +1992,10 @@ body {
 
   .popup__screenshot__button svg {
     display: none;
+  }
+
+  .loader-content {
+    animation: spin 1.4s ease-in-out infinite;
   }
 }
 

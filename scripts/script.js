@@ -1229,6 +1229,18 @@ const films = [
       {
         name: "Билл Хейдер",
       },
+      {
+        name: "Стивен Рут",
+      },
+      {
+        name: "Сара Голдберг",
+      },
+      {
+        name: "Энтони Кэрриган",
+      },
+      {
+        name: "Генри Уинклер",
+      },
     ],
     description: "Киллер влюбляется в театр и решает начать новую жизнь.",
     genres: [
@@ -1265,6 +1277,18 @@ const films = [
     cast: [
       {
         name: "Билл Хейдер",
+      },
+      {
+        name: "Стивен Рут",
+      },
+      {
+        name: "Сара Голдберг",
+      },
+      {
+        name: "Энтони Кэрриган",
+      },
+      {
+        name: "Генри Уинклер",
       },
     ],
     description: "Киллер влюбляется в театр и решает начать новую жизнь.",
@@ -1303,6 +1327,18 @@ const films = [
       {
         name: "Билл Хейдер",
       },
+      {
+        name: "Стивен Рут",
+      },
+      {
+        name: "Сара Голдберг",
+      },
+      {
+        name: "Энтони Кэрриган",
+      },
+      {
+        name: "Генри Уинклер",
+      },
     ],
     description: "Киллер влюбляется в театр и решает начать новую жизнь.",
     genres: [
@@ -1339,6 +1375,18 @@ const films = [
     cast: [
       {
         name: "Билл Хейдер",
+      },
+      {
+        name: "Стивен Рут",
+      },
+      {
+        name: "Сара Голдберг",
+      },
+      {
+        name: "Энтони Кэрриган",
+      },
+      {
+        name: "Генри Уинклер",
       },
     ],
     description: "Киллер влюбляется в театр и решает начать новую жизнь.",
@@ -2263,6 +2311,9 @@ const films = [
       {
         name: "Майкл Шеннон",
       },
+      {
+        name: "Логан Лерман",
+      },
     ],
     description:
       "Киллер-пацифист должен вынести чемодан из поезда, набитого наемными убийцами.",
@@ -2277,6 +2328,46 @@ const films = [
     screenshots: 29,
     posters: 2,
   }, // быстрее пули
+  {
+    release: new Date("1995-02-10"),
+    publication: new Date("2025-05-23"),
+    format: "фильм",
+    grade: "B",
+    title: "Быстрый и мертвый",
+    original: "The Quick and the Dead",
+    kinopoisk: "https://www.kinopoisk.ru/film/2273/",
+    director: [
+      {
+        name: "Сэм Рэйми",
+      },
+    ],
+    cast: [
+      {
+        name: "Шэрон Стоун",
+      },
+      {
+        name: "Рассел Кроу",
+      },
+      {
+        name: "Джин Хэкмен",
+      },
+      {
+        name: "Леонардо ДиКаприо",
+      },
+      {
+        name: "Кит Дэвид",
+      },
+    ],
+    description:
+      "Женщина-стрелок приезжает на дуэльный турнир, чтобы отомстить за смерть своего отца.",
+    genres: [
+      {
+        genre: "вестерн",
+      },
+    ],
+    screenshots: 24,
+    posters: 3,
+  }, // быстрый и мертвый
   {
     release: new Date("2023-04-07"),
     publication: new Date("2023-11-26"),
@@ -4650,6 +4741,40 @@ const films = [
     posters: 1,
   }, // достать ножи: стеклянная луковица (2)
   {
+    release: new Date("2019-09-06"),
+    publication: new Date("2025-05-06"),
+    format: "фильм",
+    grade: "A+",
+    title: "Друзья навсегда",
+    original: "Our Friend",
+    kinopoisk: "https://www.kinopoisk.ru/film/1231105/",
+    director: [
+      {
+        name: "Габриэла Каупертуэйт",
+      },
+    ],
+    cast: [
+      {
+        name: "Джейсон Сигел",
+      },
+      {
+        name: "Кейси Аффлек",
+      },
+      {
+        name: "Дакота Джонсон",
+      },
+    ],
+    description:
+      "Когда жене поставили смертельный диагноз, друг семьи переехал к ним.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 48,
+    posters: 1,
+  }, // друзья навсегда
+  {
     release: new Date("2000-08-11"),
     publication: new Date("2023-02-10"),
     format: "фильм",
@@ -5153,6 +5278,58 @@ const films = [
     screenshots: 14,
     posters: 2,
   }, // жасмин
+  {
+    release: new Date("2010-12-22"),
+    publication: new Date("2025-05-04"),
+    format: "фильм",
+    grade: "A+",
+    title: "Железная хватка",
+    original: "True Grit",
+    kinopoisk: "https://www.kinopoisk.ru/film/462553/",
+    director: [
+      {
+        name: "Джоэл Коэн",
+      },
+      {
+        name: "Итан Коэн",
+      },
+    ],
+    cast: [
+      {
+        name: "Джефф Бриджес",
+      },
+      {
+        name: "Хейли Стайнфелд",
+      },
+      {
+        name: "Мэтт Дэймон",
+      },
+      {
+        name: "Джош Бролин",
+      },
+      {
+        name: "Барри Пеппер",
+      },
+    ],
+    description:
+      "Юная мстительница вместе с охотником за головами и рейнджером преследует убийцу отца.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "вестерн",
+      },
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 41,
+    posters: 3,
+  }, // железная хватка
   {
     release: new Date("2022-08-18"),
     publication: new Date("2022-10-15"),
@@ -12431,6 +12608,53 @@ const films = [
     posters: 1,
   }, // нарко: мексика 2
   {
+    release: new Date("2025-03-14"),
+    publication: new Date("2025-05-04"),
+    format: "сериал",
+    season: "1",
+    grade: "D",
+    title: "Нарковоры",
+    original: "Dope Thief",
+    kinopoisk: "https://www.kinopoisk.ru/series/5138508/",
+    director: [
+      {
+        name: "Питер Крэйг",
+      },
+    ],
+    cast: [
+      {
+        name: "Брайан Тайри Генри",
+      },
+      {
+        name: "Вагнер Моура",
+      },
+      {
+        name: "Марин Айрленд",
+      },
+      {
+        name: "Неста Купер",
+      },
+      {
+        name: "Винг Реймз",
+      },
+      {
+        name: "Лиз Карибель",
+      },
+    ],
+    description:
+      "Двое аферистов грабят мелких наркодилеров, прикинувшись копами.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 42,
+    posters: 1,
+  }, // нарковоры 1
+  {
     release: new Date("2024-11-15"),
     publication: new Date("2025-01-04"),
     format: "фильм",
@@ -14752,6 +14976,55 @@ const films = [
     posters: 2,
   }, // очень странные дела 4
   {
+    release: new Date("2024-04-12"),
+    publication: new Date("2025-05-09"),
+    format: "фильм",
+    grade: "A",
+    title: "Падение империи",
+    original: "Civil War",
+    kinopoisk: "https://www.kinopoisk.ru/film/4968810/",
+    director: [
+      {
+        name: "Алекс Гарленд",
+      },
+    ],
+    cast: [
+      {
+        name: "Кирстен Данст",
+      },
+      {
+        name: "Вагнер Моура",
+      },
+      {
+        name: "Кейли Спейни",
+      },
+      {
+        name: "Стивен Маккинли Хендерсон",
+      },
+      {
+        name: "Ник Офферман",
+      },
+      {
+        name: "Джесси Племонс",
+      },
+    ],
+    description:
+      "Журналисты пробиваются в Белый дом в разгар гражданской войны.",
+    genres: [
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "военный",
+      },
+    ],
+    screenshots: 24,
+    posters: 2,
+  }, // падение империи
+  {
     release: new Date("2016-11-18"),
     publication: new Date("2020-03-26"),
     format: "фильм",
@@ -16563,6 +16836,9 @@ const films = [
       },
       {
         name: "Элисон Пилл",
+      },
+      {
+        name: "Стивен Маккинли Хендерсон",
       },
     ],
     description:
@@ -19891,6 +20167,12 @@ const films = [
       {
         name: "Кен Жонг",
       },
+      {
+        name: "Кит Дэвид",
+      },
+      {
+        name: "Пэйджет Брюстер",
+      },
     ],
     description:
       "Сериал рассказывает о студенческом сообществе, которое состоит из школьных лузеров, старающихся сохранить трезвый ум.",
@@ -20704,6 +20986,61 @@ const films = [
     screenshots: 37,
     posters: 1,
   }, // спайдерхед
+  {
+    release: new Date("2023-12-22"),
+    publication: new Date("2025-05-03"),
+    format: "фильм",
+    grade: "A+",
+    title: "Стальная хватка",
+    original: "The Iron Claw",
+    kinopoisk: "https://www.kinopoisk.ru/film/5005446/",
+    director: [
+      {
+        name: "Шон Дуркин",
+      },
+    ],
+    cast: [
+      {
+        name: "Зак Эфрон",
+      },
+      {
+        name: "Джереми Аллен Уайт",
+      },
+      {
+        name: "Харрис Дикинсон",
+      },
+      {
+        name: "Мора Тирни",
+      },
+      {
+        name: "Лили Джеймс",
+      },
+      {
+        name: "Холт Маккэллани",
+      },
+      {
+        name: "Стэнли Саймонс",
+      },
+    ],
+    description:
+      "Жёсткий отец делает из сыновей суперзвёзд рестлинга. Настоящая история братьев фон Эрих.",
+    genres: [
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "биография",
+      },
+      {
+        genre: "спорт",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 63,
+    posters: 3,
+  }, // стальная хватка
   {
     release: new Date("2007-11-21"),
     publication: new Date("2023-05-30"),
@@ -22102,6 +22439,43 @@ const films = [
     screenshots: 15,
     posters: 2,
   }, // тор любовь и гром
+  {
+    release: new Date("2025-01-17"),
+    publication: new Date("2025-04-29"),
+    format: "фильм",
+    grade: "D",
+    title: "Тот самый день",
+    original: "One of Them Days / Один из этих дней",
+    kinopoisk: "https://www.kinopoisk.ru/film/7002807/",
+    director: [
+      {
+        name: "Лоуренс Ламонт",
+      },
+    ],
+    cast: [
+      {
+        name: "Кеке Палмер",
+      },
+      {
+        name: "SZA",
+      },
+      {
+        name: "Мод Апатоу",
+      },
+      {
+        name: "Дуэйн Перкинс",
+      },
+    ],
+    description:
+      "Подруги Дрю и Алисса спасаются от выселения после того, как парень Алиссы просадил их арендную плату.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 15,
+    posters: 3,
+  }, // тот самый день
   {
     release: new Date("2021-12-25"),
     publication: new Date("2022-01-16"),
@@ -24986,6 +25360,58 @@ const films = [
     posters: 3,
   }, // чёрная пантера
   {
+    release: new Date("2025-03-14"),
+    publication: new Date("2025-04-18"),
+    format: "фильм",
+    grade: "A",
+    title: "Чёрный чемодан – двойная игра",
+    original: "Black Bag",
+    kinopoisk: "https://www.kinopoisk.ru/film/5449060/",
+    director: [
+      {
+        name: "Стивен Содерберг",
+      },
+    ],
+    cast: [
+      {
+        name: "Майкл Фассбендер",
+      },
+      {
+        name: "Кейт Бланшетт",
+      },
+      {
+        name: "Том Бёрк",
+      },
+      {
+        name: "Реге-Жан Пейдж",
+      },
+      {
+        name: "Мариса Абела",
+      },
+      {
+        name: "Наоми Харрис",
+      },
+      {
+        name: "Пирс Броснан",
+      },
+    ],
+    description:
+      "В разгар шпионского скандала агент должен решить: долг перед страной или любовь к жене.",
+    genres: [
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "детектив",
+      },
+      {
+        genre: "шпионаж",
+      },
+    ],
+    screenshots: 48,
+    posters: 1,
+  }, // чёрный чемодан – двойная игра
+  {
     release: new Date("2022-05-20"),
     publication: new Date("2022-06-08"),
     format: "фильм",
@@ -25914,6 +26340,10 @@ function Grades() {
 }
 Grades();
 
+// Функция сброса прокрутки попапа с данными о фильме при открытии
+function resetScroll() {
+  popupFilm.scrollTop = 0;
+}
 // функция УДАЛЕНИЯ элементов
 function REMOVE(item) {
   item.forEach(function (element) {
@@ -25932,6 +26362,7 @@ function openPopup(popupElement) {
     body.classList.add("scroll-lock");
     document.querySelector(".header").style.position = "fixed";
     document.addEventListener("keydown", closePopupByEsc);
+    resetScroll();
   }
 }
 // функция ЗАКРЫТИЯ ПОПАПА
@@ -25956,6 +26387,7 @@ function closePopup(popupElement) {
   } else if (popupElement == popupFilm) {
     simpleClose(popupElement);
     commonActions();
+    resetScroll();
     remove(popupFilm, [".film__poster", ".film__screenshot"]);
   } else if (popupElement == popupNavigation) {
     simpleClose(popupElement);
@@ -26192,6 +26624,12 @@ function BigImage() {
     });
   }
   imagesHeader();
+
+  Promise.resolve().then(() => {
+    document
+      .querySelector(".main__logo")
+      .classList.remove("main__logo_at-the-start");
+  });
 }
 BigImage();
 
@@ -26200,9 +26638,16 @@ const themeButtons = {
   light: document.querySelector(".theme__light"),
   dark: document.querySelector(".theme__dark"),
 };
+// Функция для определения текущей темы
+const getCurrentTheme = () => {
+  return window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
+};
 const toggleTheme = (theme) => {
   document.body.classList.toggle("dark-theme", theme === "dark");
-
+  // Сохраняем выбранную тему в localStorage
+  localStorage.setItem("theme", theme);
   // Обновляем состояние кнопок
   themeButtons.light.classList.toggle(
     "theme__button_is-active",
@@ -26219,11 +26664,34 @@ const toggleTheme = (theme) => {
 
   closePopup(popupNavigation);
 };
+// Обработчики событий
 themeButtons.light.addEventListener("click", () => toggleTheme("light"));
 themeButtons.dark.addEventListener("click", () => toggleTheme("dark"));
+// Функция для инициализации темы при загрузке страницы
+const initTheme = () => {
+  const savedTheme = localStorage.getItem("theme");
+  const systemTheme = getCurrentTheme();
+
+  // Если тема не сохранена, используем светлую тему по умолчанию
+  const theme = savedTheme || "light";
+
+  toggleTheme(theme);
+};
+// Инициализируем тему при загрузке
+window.addEventListener("load", initTheme);
 
 // константа главного листа
 const mainList = document.querySelector(".main__list");
+
+// ПРЕЛОАДЕР
+const loader = document.querySelector(".loader");
+function showLoader() {
+  loader.style.display = "flex";
+}
+function hideLoader() {
+  document.querySelector(".main__base").scrollIntoView();
+  loader.style.display = "none";
+}
 
 // функция ДОБАВЛЕНИЯ КАРТ
 function addCard(item) {
@@ -26265,42 +26733,64 @@ function addCard(item) {
 
   mainListElement.classList.add("main__list__item_is-opened");
 
-  // Функция поиска
-  function handleSearchSubmit() {
+  // Ффункция для определения падежа
+  const getCaseEnding = (num) => {
+    const endings = ["результат", "результата", "результатов"];
+    num = Math.abs(num);
+
+    if (!Number.isInteger(num)) return endings[1];
+
+    const options = [2, 0, 1, 1, 1, 2];
+    const index =
+      num % 100 > 4 && num % 100 < 20
+        ? 2
+        : options[num % 10 < 5 ? num % 10 : 5];
+
+    return endings[index];
+  };
+  // Обновляем счетчик результатов
+  const updateResultsCount = () => {
+    const count = document.querySelectorAll(
+      ".main__list__item_is-opened"
+    ).length;
+    const startWord = count === 1 ? "Показан" : "Показано";
+
+    document.querySelector(
+      ".main__search__number"
+    ).textContent = `${startWord} ${count} ${getCaseEnding(count)}`;
+  };
+  // Обработка поиска
+  const handleSearch = (searchValue) => {
     removeNavigationTitle();
-    const searchValue = searchInput.value;
     document.querySelector(".main__search__result").textContent = searchValue;
     mainSearch.classList.add("main__search_is-opened");
 
-    const lowerCase = (str) => str.toLowerCase();
-    const searchTerms = {
-      title: lowerCase(item.title),
-      original: lowerCase(item.original),
-      value: lowerCase(searchValue),
-    };
+    const lower = (str) => str.toLowerCase();
+    const valueLower = lower(searchValue);
 
-    if (
-      searchTerms.title.includes(searchTerms.value) ||
-      searchTerms.original.includes(searchTerms.value)
-    ) {
-      mainListElement.classList.add("main__list__item_is-opened");
-      requestAnimationFrame(() => {
-        headerSearch.reset();
-        headerSearch.classList.remove("header__search_is-opened");
-        toggleSearchState(false);
-        closePopup(popupNavigation);
-        document.querySelector(".main__base").scrollIntoView();
-      });
-    } else {
-      mainListElement.classList.remove("main__list__item_is-opened");
-    }
-
-    closePopup(popupNavigation);
-  }
-  // Обработка отправки формы
+    mainListElement.classList.toggle(
+      "main__list__item_is-opened",
+      lower(item.title).includes(valueLower) ||
+        lower(item.original).includes(valueLower)
+    );
+  };
+  // Обработчик формы
   headerSearch.addEventListener("submit", (evt) => {
     evt.preventDefault();
-    handleSearchSubmit();
+
+    closePopup(popupNavigation);
+    headerSearch.classList.remove("header__search_is-opened");
+    showLoader();
+
+    setTimeout(() => {
+      handleSearch(searchInput.value);
+      setTimeout(() => {
+        updateResultsCount();
+        headerSearch.reset();
+        toggleSearchState(false);
+        hideLoader();
+      }, 0);
+    }, 0);
   });
 
   // ВСЕ константы шапки
@@ -26338,18 +26828,17 @@ function addCard(item) {
   }
   // Успешные действия при нажатии на кнопку в навигации
   function openCard() {
-    clearSearch();
-    closePopup(popupNavigation);
+    mainSearch.classList.contains("main__search_is-opened")
+      ? clearSearch()
+      : popupNavigation.classList.contains("popup_is-opened")
+      ? closePopup(popupNavigation)
+      : null;
     mainListElement.classList.add("main__list__item_is-opened");
-    Promise.resolve().then(() =>
-      document.querySelector(".main__base").scrollIntoView()
-    );
   }
   // Провальные действия при нажатии на кнопку в навигации
   function mistake() {
     mainListElement.classList.remove("main__list__item_is-opened");
     closePopup(popupNavigation);
-    document.querySelector(".main__base").scrollIntoView();
   }
 
   // Открыт ли формат
@@ -26373,6 +26862,37 @@ function addCard(item) {
     );
   }
 
+  // ОБЩАЯ функция для обработки кликов
+  function handleClick(element, handler, passElement = true) {
+    if (element instanceof NodeList) {
+      element.forEach((el) => {
+        el.addEventListener("click", function () {
+          showLoader();
+          setTimeout(() => {
+            if (passElement) {
+              handler(el);
+            } else {
+              handler();
+            }
+            setTimeout(hideLoader, 0);
+          }, 0);
+        });
+      });
+    } else {
+      element.addEventListener("click", function () {
+        showLoader();
+        setTimeout(() => {
+          if (passElement) {
+            handler(element);
+          } else {
+            handler();
+          }
+          setTimeout(hideLoader, 0);
+        }, 0);
+      });
+    }
+  }
+
   // ФОРМАТ в навигации
   const formatButtons = document.querySelectorAll(".navigation__format__item");
   function headerFormat(element) {
@@ -26387,53 +26907,52 @@ function addCard(item) {
     );
     descriptionElements.format.textContent = element.textContent;
   }
-  formatButtons.forEach(function (element) {
-    element.addEventListener("click", function () {
-      const format = element.textContent.toLowerCase();
-      function isFormatValid() {
-        return format == item.format;
-      }
-      if (isFormatValid()) {
-        if (
-          descriptionElements.elements.classList.contains(
-            "main__description_is-opened"
-          )
-        ) {
-          headerFormat(element);
+  function filteringFormat(element) {
+    const format = element.textContent.toLowerCase();
+    function isFormatValid() {
+      return format == item.format;
+    }
+    if (isFormatValid()) {
+      if (
+        descriptionElements.elements.classList.contains(
+          "main__description_is-opened"
+        )
+      ) {
+        headerFormat(element);
 
-          for (let i = 0; i < item.genres.length; i++) {
-            if (
-              descriptionElements.title.textContent.toLowerCase() ==
-                item.genres[i].genre &&
-              isFormatValid()
-            ) {
-              openCard();
-              break;
-            } else if (
-              descriptionElements.title.textContent ==
-                item.release.toString().slice(11, 15) &&
-              isFormatValid()
-            ) {
-              openCard();
-            } else if (
-              descriptionElements.grade.title == item.grade &&
-              isFormatValid()
-            ) {
-              openCard();
-            }
+        for (let i = 0; i < item.genres.length; i++) {
+          if (
+            descriptionElements.title.textContent.toLowerCase() ==
+              item.genres[i].genre &&
+            isFormatValid()
+          ) {
+            openCard();
+            break;
+          } else if (
+            descriptionElements.title.textContent ==
+              item.release.toString().slice(11, 15) &&
+            isFormatValid()
+          ) {
+            openCard();
+          } else if (
+            descriptionElements.grade.title == item.grade &&
+            isFormatValid()
+          ) {
+            openCard();
           }
-        } else {
-          headerFormat(element);
-          descriptionElements.format.classList.remove(
-            "main__description__subtitle"
-          );
-          openCard();
         }
       } else {
-        mistake();
+        headerFormat(element);
+        descriptionElements.format.classList.remove(
+          "main__description__subtitle"
+        );
+        openCard();
       }
-    });
-  });
+    } else {
+      mistake();
+    }
+  }
+  handleClick(formatButtons, filteringFormat);
 
   // ЖАНРЫ в навигации
   const genreButtons = document.querySelectorAll(".navigation__genres__item");
@@ -26481,27 +27000,26 @@ function addCard(item) {
     );
     descriptionElements.grade.title = "";
   }
-  genreButtons.forEach(function (element) {
-    element.addEventListener("click", function () {
-      for (let i = 0; i < item.genres.length; i++) {
-        if (item.genres[i].genre == element.textContent.toLowerCase()) {
-          if (isFormatOpen()) {
-            headerGenre(element);
-            if (isFormatMatch()) {
-              openCard();
-              break;
-            }
-          } else {
-            headerGenre(element);
+  function filteringGenre(element) {
+    for (let i = 0; i < item.genres.length; i++) {
+      if (item.genres[i].genre == element.textContent.toLowerCase()) {
+        if (isFormatOpen()) {
+          headerGenre(element);
+          if (isFormatMatch()) {
             openCard();
             break;
           }
         } else {
-          mistake();
+          headerGenre(element);
+          openCard();
+          break;
         }
+      } else {
+        mistake();
       }
-    });
-  });
+    }
+  }
+  handleClick(genreButtons, filteringGenre);
 
   // Функция проверки соотвествия года
   function validateYearData(yearElement, itemData) {
@@ -26531,23 +27049,22 @@ function addCard(item) {
     );
     descriptionElements.grade.title = "";
   }
-  yearButtons.forEach(function (element) {
-    element.addEventListener("click", function () {
-      if (validateYearData(element, item)) {
-        if (isFormatOpen()) {
-          headerYear(element);
-          if (isFormatMatch()) {
-            openCard();
-          }
-        } else {
-          headerYear(element);
+  function filteringYear(element) {
+    if (validateYearData(element, item)) {
+      if (isFormatOpen()) {
+        headerYear(element);
+        if (isFormatMatch()) {
           openCard();
         }
       } else {
-        mistake();
+        headerYear(element);
+        openCard();
       }
-    });
-  });
+    } else {
+      mistake();
+    }
+  }
+  handleClick(yearButtons, filteringYear);
 
   // ОЦЕНКИ в навигации
   const gradeButtons = document.querySelectorAll(".navigation__grades__item");
@@ -26567,24 +27084,23 @@ function addCard(item) {
       item.grade === "love"
     );
   }
-  gradeButtons.forEach(function (element) {
-    element.addEventListener("click", function () {
-      const elementImg = element.querySelector(".navigation__grades__image");
-      if (elementImg.title == item.grade) {
-        if (isFormatOpen()) {
-          headerGrade();
-          if (isFormatMatch()) {
-            openCard();
-          }
-        } else {
-          headerGrade();
+  function filteringGrade(element) {
+    const elementImg = element.querySelector(".navigation__grades__image");
+    if (elementImg.title == item.grade) {
+      if (isFormatOpen()) {
+        headerGrade();
+        if (isFormatMatch()) {
           openCard();
         }
       } else {
-        mistake();
+        headerGrade();
+        openCard();
       }
-    });
-  });
+    } else {
+      mistake();
+    }
+  }
+  handleClick(gradeButtons, filteringGrade);
 
   mainListElement.addEventListener("click", function () {
     showFilmCard(item);
@@ -26592,6 +27108,13 @@ function addCard(item) {
       popupFilm.scrollTo(0, 0);
     }, 0);
   });
+
+  // Утилита для удаления элементов
+  function removeElementsPopup() {
+    popupFilm
+      .querySelectorAll(".film__screenshot, .film__poster")
+      .forEach(REMOVE);
+  }
 
   // Функция обновления шапки по году
   function updateByYear(element) {
@@ -26614,35 +27137,29 @@ function addCard(item) {
 
     openCard();
     closePopup(popupFilm);
-    popupFilm
-      .querySelectorAll(".film__screenshot, .film__poster")
-      .forEach((element) => element.remove());
+    removeElementsPopup();
   }
-  // Нажатие на года в попапе фильма
+  // Константы годов попапе фильма
   const yearElement = popupFilm.querySelector(".film__header__year");
-  yearElement.addEventListener("click", () => {
-    if (validateYearData(yearElement, item)) {
-      updateByYear(yearElement);
-    } else {
-      mainListElement.classList.remove("main__list__item_is-opened");
-    }
-  });
   const continuationYearElement = popupFilm.querySelector(
     ".film__header__continuation_year"
   );
-  continuationYearElement.addEventListener("click", () => {
-    if (validateYearData(continuationYearElement, item)) {
-      updateByYear(continuationYearElement);
+  // Общая функция обработки для обоих годов
+  const handleYearClick = (element) => {
+    if (validateYearData(element, item)) {
+      updateByYear(element);
     } else {
       mainListElement.classList.remove("main__list__item_is-opened");
     }
-  });
+  };
+  // Нажатие на года в попапе фильма
+  handleClick(yearElement, handleYearClick);
+  handleClick(continuationYearElement, handleYearClick);
 
   // Нажатие на оценку в попапе фильма
   const gradeWrapper = popupFilm.querySelector(".film__header__grade__wrapper");
   const gradeElement = popupFilm.querySelector(".film__header__grade");
-  gradeWrapper.addEventListener("click", () => {
-    // Проверяем условие
+  function filteringGradePopup() {
     if (gradeElement.title === item.grade) {
       ["block", "elements"].forEach((key) =>
         descriptionElements[key].classList.add("main__description_is-opened")
@@ -26668,13 +27185,12 @@ function addCard(item) {
       defineGradeBlack(item.grade, descriptionElements.grade);
       openCard();
       closePopup(popupFilm);
-      popupFilm
-        .querySelectorAll(".film__screenshot, .film__poster")
-        .forEach((element) => element.remove());
+      removeElementsPopup();
     } else {
       mainListElement.classList.remove("main__list__item_is-opened");
     }
-  });
+  }
+  handleClick(gradeWrapper, filteringGradePopup, false);
 
   // Смена шапки фильтров на шапку персон
   function updateFilterHeaderToPersons() {
@@ -26712,98 +27228,84 @@ function addCard(item) {
     // Начинаем загрузку изображения
     image.src = imagePath;
   }
-  // Нажатие на актеров
-  const castButtons = document.querySelectorAll(".film__cast__name");
-  castButtons.forEach(function (element) {
-    element.addEventListener("click", function () {
-      descriptionElements.photo.style.opacity = "0";
-      for (let i = 0; i < item.cast.length; i++) {
-        if (item.cast[i].name == element.textContent) {
-          updateFilterHeaderToPersons();
+  function filteringPersonsPopup(element, name, isDirector) {
+    descriptionElements.photo.style.opacity = "0";
+    for (let i = 0; i < name.length; i++) {
+      if (name[i].name == element.textContent) {
+        updateFilterHeaderToPersons();
+        personsPhoto(element);
+        descriptionElements.name.textContent = element.textContent;
+        openCard();
+        closePopup(popupFilm);
+        removeElementsPopup();
 
-          descriptionElements.job.textContent = "В ролях";
-
-          personsPhoto(element);
-
-          descriptionElements.name.textContent = element.textContent;
-
-          openCard();
-          closePopup(popupFilm);
-          popupFilm
-            .querySelectorAll(".film__screenshot, .film__poster")
-            .forEach(REMOVE);
-          break;
-        } else {
-          mainListElement.classList.remove("main__list__item_is-opened");
-        }
-      }
-    });
-  });
-  // Нажатие на режиссеров
-  const directorButtons = document.querySelectorAll(".film__director__name");
-  directorButtons.forEach(function (element) {
-    element.addEventListener("click", function () {
-      descriptionElements.photo.style.opacity = "0";
-      for (let i = 0; i < item.director.length; i++) {
-        if (item.director[i].name == element.textContent) {
-          updateFilterHeaderToPersons();
-
+        if (isDirector) {
           const isFilmDirector = onlyFilmsDirectors.includes(
             element.textContent
           );
           const isSerialDirector = onlySerialsDirectors.includes(
             element.textContent
           );
-          const jobTitle =
+
+          descriptionElements.job.textContent =
             isFilmDirector && isSerialDirector
               ? "Режиссер/Создатель"
               : isFilmDirector
               ? "Режиссер"
               : isSerialDirector
               ? "Создатель"
-              : null;
-
-          if (jobTitle) {
-            descriptionElements.job.textContent = jobTitle;
-          }
-
-          personsPhoto(element);
-          descriptionElements.name.textContent = element.textContent;
-
-          openCard();
-          closePopup(popupFilm);
-          popupFilm
-            .querySelectorAll(".film__screenshot, .film__poster")
-            .forEach(REMOVE);
-          break;
+              : "В ролях";
         } else {
-          mainListElement.classList.remove("main__list__item_is-opened");
+          descriptionElements.job.textContent = "В ролях";
         }
-      }
-    });
-  });
 
-  // Утилита для удаления элементов
-  function removeElements(elements) {
-    elements.forEach((element) => element.remove());
+        break;
+      } else {
+        mainListElement.classList.remove("main__list__item_is-opened");
+      }
+    }
   }
+  // Нажатие на актеров
+  const castButtons = document.querySelectorAll(".film__cast__name");
+  handleClick(castButtons, (el) => filteringPersonsPopup(el, item.cast, false));
+  // Нажатие на режиссеров
+  const directorButtons = document.querySelectorAll(".film__director__name");
+  handleClick(directorButtons, (el) =>
+    filteringPersonsPopup(el, item.director, true)
+  );
 
   // функция ПЕРЕЗАГРУЗКИ всей страницы
   function Reset() {
+    if (
+      descriptionElements.block.classList.contains(
+        "main__description_is-opened"
+      ) ||
+      descriptionElements.names.classList.contains(
+        "main__description__names_is-opened"
+      )
+    ) {
+      removeNavigationTitle();
+    } else if (mainSortTitle.classList.contains("main__sort_is-opened")) {
+      deleteSortTitle();
+    } else if (mainSearch.classList.contains("main__search_is-opened")) {
+      clearSearch();
+    } else if (popupNavigation.classList.contains("popup_is-opened")) {
+      closePopup(popupNavigation);
+    }
+
     mainListElement.classList.add("main__list__item_is-opened");
     sortItems("card__publication__original", "desc");
-    clearSearch();
-    closePopup(popupNavigation);
-    deleteSortTitle();
-    removeNavigationTitle();
   }
 
   // использование функции ПЕРЕЗАГРУЗКИ при нажатии на ГЛАВНУЮ КНОПКУ
   const handleScrollToMain = () => {
-    Reset();
-    Promise.resolve().then(() =>
-      document.querySelector(".main__base").scrollIntoView()
-    );
+    showLoader();
+    setTimeout(() => {
+      Reset();
+      setTimeout(() => {
+        hideLoader();
+      }, 0);
+    }, 0);
   };
   const scrollTriggerSelectors = [
     ".navigation__main__item",
@@ -26823,31 +27325,6 @@ function addCard(item) {
 films.forEach(function (element) {
   mainList.append(addCard(element));
 });
-
-// Функция для определения правильного падежа слова в результате поиска в зависимости от числа
-function updateSearchResultsCount() {
-  const resultsCount = document.querySelectorAll(
-    ".main__list__item_is-opened"
-  ).length;
-  const endings = ["результат", "результата", "результатов"];
-  const startWord = resultsCount === 1 ? "Показан" : "Показано";
-
-  // Функция определения окончания слова
-  const getEnding = (num) => {
-    num = Math.abs(num);
-    if (!Number.isInteger(num)) return endings[1];
-
-    const options = [2, 0, 1, 1, 1, 2];
-    return endings[
-      num % 100 > 4 && num % 100 < 20 ? 2 : options[num % 10 < 5 ? num % 10 : 5]
-    ];
-  };
-
-  document.querySelector(
-    ".main__search__number"
-  ).textContent = `${startWord} ${resultsCount} ${getEnding(resultsCount)}`;
-}
-headerSearch.addEventListener("submit", updateSearchResultsCount);
 
 const popupFilmContent = popupFilm.querySelector(".popup__film__content");
 const scrollButton = popupFilm.querySelector(".popup__film__scroll");
@@ -27396,7 +27873,7 @@ function generateLinkTitle() {
 
   console.log(name_for_link(clonedArray[MOVIE_INDEX].original));
 }
-// const MOVIE_INDEX = 97
+// const MOVIE_INDEX = 78
 // generateLinkTitle()
 
 // Количество публикаций
