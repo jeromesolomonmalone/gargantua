@@ -6499,6 +6499,55 @@ const films = [
     posters: 1,
   }, // казино рояль
   {
+    release: new Date("2007-09-21"),
+    publication: new Date("2025-05-25"),
+    format: "фильм",
+    grade: "C",
+    title: "Как трусливый Роберт Форд убил Джесси Джеймса",
+    original: "The Assassination of Jesse James by the Coward Robert Ford",
+    kinopoisk: "https://www.kinopoisk.ru/film/102127/",
+    director: [
+      {
+        name: "Эндрю Доминик",
+      },
+    ],
+    cast: [
+      {
+        name: "Брэд Питт",
+      },
+      {
+        name: "Кейси Аффлек",
+      },
+      {
+        name: "Сэм Рокуэлл",
+      },
+      {
+        name: "Пол Шнайдер",
+      },
+      {
+        name: "Джереми Реннер",
+      },
+    ],
+    description:
+      "Роберт Форд, боготворивший Джесси Джеймса с детства, пытается присоединиться к банде преступника.",
+    genres: [
+      {
+        genre: "вестерн",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "биография",
+      },
+    ],
+    screenshots: 30,
+    posters: 2,
+  }, // как трусливый роберт форд убил джесси джеймса
+  {
     release: new Date("2005-09-19"),
     continuation: new Date("2013-09-23"),
     publication: new Date("2021-05-08"),
@@ -13172,6 +13221,58 @@ const films = [
     posters: 1,
   }, // невыносимая жестокость
   {
+    release: new Date("2017-09-02"),
+    publication: new Date("2025-05-25"),
+    format: "фильм",
+    grade: "C",
+    title: "Недруги",
+    original: "Hostiles",
+    kinopoisk: "https://www.kinopoisk.ru/film/963016/",
+    director: [
+      {
+        name: "Скотт Купер",
+      },
+    ],
+    cast: [
+      {
+        name: "Кристиан Бэйл",
+      },
+      {
+        name: "Розамунд Пайк",
+      },
+      {
+        name: "Уэс Стьюди",
+      },
+      {
+        name: "Рори Кокрейн",
+      },
+      {
+        name: "Джесси Племонс",
+      },
+      {
+        name: "Джонатан Мейджорс",
+      },
+      {
+        name: "Бен Фостер",
+      },
+      {
+        name: "К’Орианка Килчер",
+      },
+    ],
+    description:
+      "Вопреки ненависти к индейцам ветеран войны сопровождает их вождя на родину.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "вестерн",
+      },
+    ],
+    screenshots: 30,
+    posters: 2,
+  }, // недруги
+  {
     release: new Date("2021-12-22"),
     publication: new Date("2022-01-20"),
     format: "фильм",
@@ -14460,6 +14561,46 @@ const films = [
     screenshots: 36,
     posters: 1,
   }, // оппенгеймер
+  {
+    release: new Date("2025-03-14"),
+    publication: new Date("2025-06-01"),
+    format: "фильм",
+    grade: "C",
+    title: "Опус",
+    original: "Opus",
+    kinopoisk: "https://www.kinopoisk.ru/film/6718282/",
+    director: [
+      {
+        name: "Марк Энтони Грин",
+      },
+    ],
+    cast: [
+      {
+        name: "Айо Эдебири",
+      },
+      {
+        name: "Джон Малкович",
+      },
+      {
+        name: "Джульетт Льюис",
+      },
+      {
+        name: "Мюррэй Бартлетт",
+      },
+      {
+        name: "Эмбер Мидфандер",
+      },
+    ],
+    description:
+      "Журналистка приезжает в дом звёздного музыканта ради интервью и попадает в ловушку.",
+    genres: [
+      {
+        genre: "триллер",
+      },
+    ],
+    screenshots: 24,
+    posters: 2,
+  }, // опус
   {
     release: new Date("2007-03-23"),
     publication: new Date("2021-08-18"),
@@ -16004,6 +16145,61 @@ const films = [
     screenshots: 18,
     posters: 1,
   }, // подстава
+  {
+    release: new Date("2007-09-07"),
+    publication: new Date("2025-05-11"),
+    format: "фильм",
+    grade: "A",
+    title: "Поезд на Юму",
+    original: "3:10 to Yuma",
+    kinopoisk: "https://www.kinopoisk.ru/film/78240/",
+    director: [
+      {
+        name: "Джеймс Мэнголд",
+      },
+    ],
+    cast: [
+      {
+        name: "Рассел Кроу",
+      },
+      {
+        name: "Кристиан Бэйл",
+      },
+      {
+        name: "Логан Лерман",
+      },
+      {
+        name: "Даллас Робертс",
+      },
+      {
+        name: "Бен Фостер",
+      },
+      {
+        name: "Питер Фонда",
+      },
+      {
+        name: "Кевин Дюран",
+      },
+      {
+        name: "Алан Тьюдик",
+      },
+    ],
+    description:
+      "Небольшой владелец ранчо берётся доставить пойманного преступника на поезд до Юмы.",
+    genres: [
+      {
+        genre: "вестерн",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 27,
+    posters: 3,
+  }, // поезд на юму
   {
     release: new Date("2010-09-03"),
     publication: new Date("2025-03-01"),
@@ -19626,6 +19822,58 @@ const films = [
     posters: 1,
   }, // служители закона
   {
+    release: new Date("2025-03-28"),
+    publication: new Date("2025-05-31"),
+    format: "фильм",
+    grade: "C",
+    title: "Смерть единорога",
+    original: "Death of a Unicorn",
+    kinopoisk: "https://www.kinopoisk.ru/film/5445197/",
+    director: [
+      {
+        name: "Алекс Шарфман",
+      },
+    ],
+    cast: [
+      {
+        name: "Дженна Ортега",
+      },
+      {
+        name: "Пол Радд",
+      },
+      {
+        name: "Уилл Поултер",
+      },
+      {
+        name: "Ричард Э. Грант",
+      },
+      {
+        name: "Теа Леони",
+      },
+      {
+        name: "Энтони Кэрриган",
+      },
+      {
+        name: "Сунита Мани",
+      },
+    ],
+    description:
+      "Отец и дочь сбивают единорога и обнаруживают целительные свойства его крови.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "фэнтези",
+      },
+    ],
+    screenshots: 24,
+    posters: 1,
+  }, // смерть единорога
+  {
     release: new Date("2010-04-16"),
     publication: new Date("2024-01-13"),
     format: "фильм",
@@ -21182,6 +21430,9 @@ const films = [
       },
       {
         name: "Чукуди Ивуджи",
+      },
+      {
+        name: "Уилл Поултер",
       },
     ],
     description:
@@ -23268,6 +23519,58 @@ const films = [
     screenshots: 12,
     posters: 2,
   }, // удача
+  {
+    release: new Date("2004-09-17"),
+    publication: new Date("2025-06-14"),
+    format: "фильм",
+    grade: "C",
+    title: "Уимблдон",
+    original: "Wimbledon",
+    kinopoisk: "https://www.kinopoisk.ru/film/19174/",
+    director: [
+      {
+        name: "Ричард Лонкрэйн",
+      },
+    ],
+    cast: [
+      {
+        name: "Пол Беттани",
+      },
+      {
+        name: "Кирстен Данст",
+      },
+      {
+        name: "Сэм Нил",
+      },
+      {
+        name: "Джон Фавро",
+      },
+      {
+        name: "Николай Костер-Вальдау",
+      },
+      {
+        name: "Джеймс Макэвой",
+      },
+      {
+        name: "Остин Николс",
+      },
+    ],
+    description:
+      "Теннисист, потерявший форму, влюбляется в молодую спортсменку, и это помогает ему вернуться в игру и добиться успеха на Уимблдонее.",
+    genres: [
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "спорт",
+      },
+    ],
+    screenshots: 17,
+    posters: 2,
+  }, // уимблдон
   {
     release: new Date("2019-05-17"),
     publication: new Date("2019-05-28"),
@@ -26685,7 +26988,18 @@ const mainList = document.querySelector(".main__list");
 
 // ПРЕЛОАДЕР
 const loader = document.querySelector(".loader");
+let loaderTime = 0;
 function showLoader() {
+  if (mainSearch.classList.contains("main__search_is-opened")) {
+    clearSearch();
+  } else {
+    for (let popup of [popupNavigation, popupFilm]) {
+      if (popup.classList.contains("popup_is-opened")) {
+        closePopup(popup);
+        break;
+      }
+    }
+  }
   loader.style.display = "flex";
 }
 function hideLoader() {
@@ -26828,11 +27142,6 @@ function addCard(item) {
   }
   // Успешные действия при нажатии на кнопку в навигации
   function openCard() {
-    mainSearch.classList.contains("main__search_is-opened")
-      ? clearSearch()
-      : popupNavigation.classList.contains("popup_is-opened")
-      ? closePopup(popupNavigation)
-      : null;
     mainListElement.classList.add("main__list__item_is-opened");
   }
   // Провальные действия при нажатии на кнопку в навигации
@@ -26874,8 +27183,8 @@ function addCard(item) {
             } else {
               handler();
             }
-            setTimeout(hideLoader, 0);
-          }, 0);
+            setTimeout(hideLoader, loaderTime);
+          }, loaderTime);
         });
       });
     } else {
@@ -26887,8 +27196,8 @@ function addCard(item) {
           } else {
             handler();
           }
-          setTimeout(hideLoader, 0);
-        }, 0);
+          setTimeout(hideLoader, loaderTime);
+        }, loaderTime);
       });
     }
   }
@@ -27334,14 +27643,19 @@ const isMobileDevice = () =>
     navigator.userAgent
   );
 // Оптимизированная функция проверки прокрутки
-const checkScroll = () => {
+const checkScrollAndSetLoaderTime = () => {
   const scrollTop = popupFilm.scrollTop;
   scrollButton.style.display =
     isMobileDevice() && scrollTop > 50 ? "block" : "none";
+  if (isMobileDevice()) {
+    loaderTime = 100;
+  }
 };
 // Добавляем обработчики событий
-popupFilm.addEventListener("scroll", () => requestAnimationFrame(checkScroll));
-window.addEventListener("load", checkScroll);
+popupFilm.addEventListener("scroll", () =>
+  requestAnimationFrame(checkScrollAndSetLoaderTime)
+);
+window.addEventListener("load", checkScrollAndSetLoaderTime);
 
 // функция ПОКАЗА попапа фильма
 function showFilmCard(item) {
@@ -27873,7 +28187,7 @@ function generateLinkTitle() {
 
   console.log(name_for_link(clonedArray[MOVIE_INDEX].original));
 }
-// const MOVIE_INDEX = 78
+// const MOVIE_INDEX = 145
 // generateLinkTitle()
 
 // Количество публикаций
