@@ -26928,11 +26928,9 @@ function BigImage() {
   }
   imagesHeader();
 
-  Promise.resolve().then(() => {
-    document
-      .querySelector(".main__logo")
-      .classList.remove("main__logo_at-the-start");
-  });
+  document
+    .querySelector(".main__logo")
+    .classList.remove("main__logo_at-the-start");
 }
 BigImage();
 
