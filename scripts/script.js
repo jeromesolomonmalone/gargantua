@@ -9031,6 +9031,46 @@ const films = [
     posters: 2,
   }, // лига справедливости зака снайдера
   {
+    release: new Date("2002-06-21"),
+    publication: new Date("2025-06-08"),
+    format: "фильм",
+    grade: "B",
+    title: "Лило и Стич",
+    original: "Lilo & Stitch",
+    kinopoisk: "https://www.kinopoisk.ru/film/740/",
+    director: [
+      {
+        name: "Дин ДеБлуа",
+      },
+      {
+        name: "Крис Сандерс",
+      },
+    ],
+    cast: [
+      {
+        name: "Дэйви Чейз",
+      },
+      {
+        name: "Крис Сандерс",
+      },
+      {
+        name: "Тиа Каррере",
+      },
+      {
+        name: "Винг Реймз",
+      },
+    ],
+    description:
+      "Удивительная история дружбы маленькой девочки с дружелюбным пришельцем.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 42,
+    posters: 3,
+  }, // лило и стич (2002)
+  {
     release: new Date("2022-05-13"),
     publication: new Date("2022-06-18"),
     format: "сериал",
@@ -10040,6 +10080,47 @@ const films = [
     screenshots: 30,
     posters: 1,
   }, // май декабрь
+  {
+    release: new Date("2018-10-18"),
+    publication: new Date("2025-05-28"),
+    format: "сериал",
+    season: "мини–сериал",
+    grade: "B",
+    title: "Маленькая барабанщица",
+    original: "The Little Drummer Girl",
+    kinopoisk: "https://www.kinopoisk.ru/series/1100408/",
+    director: [
+      {
+        name: "Пак Чхан-ук",
+      },
+    ],
+    cast: [
+      {
+        name: "Флоренс Пью",
+      },
+      {
+        name: "Александр Скарсгард",
+      },
+      {
+        name: "Майкл Шеннон",
+      },
+    ],
+    description:
+      "Моссад вербует актрису для борьбы с палестинским террористом.",
+    genres: [
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "шпионаж",
+      },
+    ],
+    screenshots: 18,
+    posters: 2,
+  }, // маленькая барабанщица
   {
     release: new Date("2021-02-05"),
     publication: new Date("2021-06-06"),
@@ -15033,6 +15114,42 @@ const films = [
     screenshots: 50,
     posters: 2,
   }, // охотник на лис
+  {
+    release: new Date("2024-09-08"),
+    publication: new Date("2025-05-31"),
+    format: "фильм",
+    grade: "D",
+    title: "Оценка",
+    original: "The Assessment",
+    kinopoisk: "https://www.kinopoisk.ru/film/6042919/",
+    director: [
+      {
+        name: "Флёр Форчун",
+      },
+    ],
+    cast: [
+      {
+        name: "Элизабет Олсен",
+      },
+      {
+        name: "Химеш Патель",
+      },
+      {
+        name: "Алисия Викандер",
+      },
+    ],
+    description: "В будущем пара проходит проверку на право завести ребёнка.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "фантастика",
+      },
+    ],
+    screenshots: 63,
+    posters: 1,
+  }, // оценка
   {
     release: new Date("2022-05-27"),
     publication: new Date("2022-07-03"),
@@ -26988,7 +27105,10 @@ const mainList = document.querySelector(".main__list");
 const loader = document.querySelector(".loader");
 let loaderTime = 0;
 function showLoader() {
-  if (mainSearch.classList.contains("main__search_is-opened")) {
+  if (
+    headerSearch.classList.contains("header__search_is-opened") ||
+    mainSearch.classList.contains("main__search_is-opened")
+  ) {
     clearSearch();
   } else {
     for (let popup of [popupNavigation, popupFilm]) {
@@ -27045,7 +27165,7 @@ function addCard(item) {
 
   mainListElement.classList.add("main__list__item_is-opened");
 
-  // Ффункция для определения падежа
+  // Функция для определения падежа
   const getCaseEnding = (num) => {
     const endings = ["результат", "результата", "результатов"];
     num = Math.abs(num);
@@ -27077,13 +27197,19 @@ function addCard(item) {
     document.querySelector(".main__search__result").textContent = searchValue;
     mainSearch.classList.add("main__search_is-opened");
 
+    // Функция замены ё на е
+    const replaceYo = (str) => {
+      return str.replace(/ё/gi, "е");
+    };
+
     const lower = (str) => str.toLowerCase();
     const valueLower = lower(searchValue);
 
     mainListElement.classList.toggle(
       "main__list__item_is-opened",
       lower(item.title).includes(valueLower) ||
-        lower(item.original).includes(valueLower)
+        lower(item.original).includes(valueLower) ||
+        lower(replaceYo(item.title)).includes(valueLower)
     );
   };
   // Обработчик формы
@@ -27092,7 +27218,7 @@ function addCard(item) {
 
     closePopup(popupNavigation);
     headerSearch.classList.remove("header__search_is-opened");
-    showLoader();
+    loader.style.display = "flex";
 
     setTimeout(() => {
       handleSearch(searchInput.value);
@@ -27594,7 +27720,10 @@ function addCard(item) {
       removeNavigationTitle();
     } else if (mainSortTitle.classList.contains("main__sort_is-opened")) {
       deleteSortTitle();
-    } else if (mainSearch.classList.contains("main__search_is-opened")) {
+    } else if (
+      headerSearch.classList.contains("header__search_is-opened") ||
+      mainSearch.classList.contains("main__search_is-opened")
+    ) {
       clearSearch();
     } else if (popupNavigation.classList.contains("popup_is-opened")) {
       closePopup(popupNavigation);
