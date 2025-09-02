@@ -7093,7 +7093,7 @@ const films = [
         genre: "комедия",
       },
     ],
-    screenshots: 24,
+    screenshots: 23,
     posters: 2,
   }, // киностудия 1
   {
