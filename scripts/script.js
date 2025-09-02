@@ -2648,6 +2648,12 @@ const films = [
       {
         name: "Брэд Питт",
       },
+      {
+        name: "Джован Адепо",
+      },
+      {
+        name: "Ли Цзюнь Ли",
+      },
     ],
     description:
       "Голливуд, конец 1920-х. Звезды немого кино пытаются найти место в новом мире, где набирают популярность звуковые фильмы.",
@@ -3548,6 +3554,12 @@ const films = [
       {
         name: "Майя Эрскин",
       },
+      {
+        name: "Даррен Барнет",
+      },
+      {
+        name: "Кеннет Брана",
+      },
     ],
     description: "Юная воительница мстит тем, из-за кого она стала изгоем.",
     genres: [
@@ -3721,6 +3733,9 @@ const films = [
       },
       {
         name: "Джимон Хонсу",
+      },
+      {
+        name: "Даррен Барнет",
       },
     ],
     description:
@@ -4344,6 +4359,12 @@ const films = [
       },
       {
         name: "Кит Коннор",
+      },
+      {
+        name: "Кэтрин О’Хара",
+      },
+      {
+        name: "Билл Найи",
       },
     ],
     description:
@@ -7014,6 +7035,68 @@ const films = [
     posters: 2,
   }, // квин и слим
   {
+    release: new Date("2025-03-26"),
+    publication: new Date("2025-06-21"),
+    format: "сериал",
+    season: "1",
+    grade: "A+",
+    title: "Киностудия",
+    original: "The Studio",
+    kinopoisk: "https://www.kinopoisk.ru/series/6579800/",
+    director: [
+      {
+        name: "Сет Роген",
+      },
+      {
+        name: "Эван Голдберг",
+      },
+      {
+        name: "Алекс Грегори",
+      },
+      {
+        name: "Питер Хайк",
+      },
+    ],
+    cast: [
+      {
+        name: "Сет Роген",
+      },
+      {
+        name: "Айк Баринхолц",
+      },
+      {
+        name: "Чейз Суй Уондерс",
+      },
+      {
+        name: "Кэтрин Хан",
+      },
+      {
+        name: "Кэтрин О’Хара",
+      },
+      {
+        name: "Брайан Крэнстон",
+      },
+      {
+        name: "Дэйв Франко",
+      },
+      {
+        name: "Зои Кравиц",
+      },
+      {
+        name: "Дуэйн Перкинс",
+      },
+    ],
+    description:
+      "Мэтт Ремик пытается управлять проблемной киностудией Continental Studios.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 24,
+    posters: 2,
+  }, // киностудия 1
+  {
     release: new Date("2019-11-08"),
     publication: new Date("2019-12-29"),
     format: "фильм",
@@ -7206,6 +7289,9 @@ const films = [
       },
       {
         name: "Вера Фармига",
+      },
+      {
+        name: "Джован Адепо",
       },
     ],
     description:
@@ -8630,6 +8716,58 @@ const films = [
     posters: 1,
   }, // кролик джоджо
   {
+    release: new Date("2023-12-22"),
+    publication: new Date("2025-06-29"),
+    format: "фильм",
+    grade: "B",
+    title: "Кто угодно, кроме тебя",
+    original: "Anyone But You",
+    kinopoisk: "https://www.kinopoisk.ru/film/5305423/",
+    director: [
+      {
+        name: "Уилл Глак",
+      },
+    ],
+    cast: [
+      {
+        name: "Глен Пауэлл",
+      },
+      {
+        name: "Сидни Суини",
+      },
+      {
+        name: "Александра Шипп",
+      },
+      {
+        name: "ГаТа",
+      },
+      {
+        name: "Хэдли Робинсон",
+      },
+      {
+        name: "Дермот Малруни",
+      },
+      {
+        name: "Чарли Фрейзер",
+      },
+      {
+        name: "Даррен Барнет",
+      },
+    ],
+    description:
+      "После неудачного свидания Бен и Би встречаются на чужой свадьбе.",
+    genres: [
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 32,
+    posters: 2,
+  }, // кто угодно, кроме тебя
+  {
     release: new Date("2016-01-29"),
     publication: new Date("2023-12-26"),
     format: "фильм",
@@ -9227,6 +9365,9 @@ const films = [
       },
       {
         name: "Софи Ди Мартино",
+      },
+      {
+        name: "Вунми Мосаку",
       },
     ],
     description:
@@ -12533,6 +12674,46 @@ const films = [
     screenshots: 19,
     posters: 1,
   }, // мы
+  {
+    release: new Date("2025-05-31"),
+    publication: new Date("2025-06-21"),
+    format: "фильм",
+    grade: "C",
+    title: "На вершине горы",
+    original: "Mountainhead",
+    kinopoisk: "https://www.kinopoisk.ru/film/7770979/",
+    director: [
+      {
+        name: "Джесси Армстронг",
+      },
+    ],
+    cast: [
+      {
+        name: "Стив Карелл",
+      },
+      {
+        name: "Рами Юссеф",
+      },
+      {
+        name: "Кори Майкл Смит",
+      },
+      {
+        name: "Джейсон Шварцман",
+      },
+    ],
+    description:
+      "Четыре друга встречаются во время мирового экономического кризиса.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 27,
+    posters: 1,
+  }, // на вершине горы
   {
     release: new Date("1997-09-26"),
     publication: new Date("2023-01-27"),
@@ -22420,7 +22601,7 @@ const films = [
         name: "Рэйчел Сеннотт",
       },
       {
-        name: "Чейз Суи Уондерс",
+        name: "Чейз Суй Уондерс",
       },
       {
         name: "Пит Дэвидсон",
