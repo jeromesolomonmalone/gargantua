@@ -2060,6 +2060,58 @@ const films = [
     posters: 1,
   }, // большой куш
   {
+    release: new Date("2023-04-05"),
+    publication: new Date("2025-07-20"),
+    format: "фильм",
+    grade: "A",
+    title: "Братья Супер Марио в кино",
+    original: "The Super Mario Bros. Movie",
+    kinopoisk: "https://www.kinopoisk.ru/film/1111005/",
+    director: [
+      {
+        name: "Аарон Хорват",
+      },
+      {
+        name: "Михаэль Еленик",
+      },
+      {
+        name: "Пьер Ледюк",
+      },
+    ],
+    cast: [
+      {
+        name: "Крис Пратт",
+      },
+      {
+        name: "Чарли Дэй",
+      },
+      {
+        name: "Аня Тейлор-Джой",
+      },
+      {
+        name: "Джек Блэк",
+      },
+      {
+        name: "Кигэн-Майкл Ки",
+      },
+      {
+        name: "Сет Роген",
+      },
+      {
+        name: "Фред Армисен",
+      },
+    ],
+    description:
+      "Братья Марио и Луиджи через портал отправляются спасать принцессу Пич и сражаться с Боузером.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 33,
+    posters: 1,
+  }, // братья супер марио в кино
+  {
     release: new Date("1999-09-17"),
     publication: new Date("2019-06-02"),
     format: "фильм",
@@ -3918,6 +3970,61 @@ const films = [
     screenshots: 18,
     posters: 1,
   }, // гранд тур 3
+  {
+    release: new Date("2025-04-18"),
+    publication: new Date("2025-07-08"),
+    format: "фильм",
+    grade: "A",
+    title: "Грешники",
+    original: "Sinners",
+    kinopoisk: "https://www.kinopoisk.ru/film/5499518/",
+    director: [
+      {
+        name: "Райан Куглер",
+      },
+    ],
+    cast: [
+      {
+        name: "Майкл Б. Джордан",
+      },
+      {
+        name: "Хейли Стайнфелд",
+      },
+      {
+        name: "Майлз Кэйтон",
+      },
+      {
+        name: "Джек О’Коннелл",
+      },
+      {
+        name: "Вунми Мосаку",
+      },
+      {
+        name: "Джейми Лоусон",
+      },
+      {
+        name: "Омар Бенсон Миллер",
+      },
+      {
+        name: "Делрой Линдо",
+      },
+      {
+        name: "Ли Цзюнь Ли",
+      },
+    ],
+    description:
+      "Близнецы возвращаются домой, чтобы начать новую жизнь, но сталкиваются с новым злом.",
+    genres: [
+      {
+        genre: "музыка",
+      },
+      {
+        genre: "ужасы",
+      },
+    ],
+    screenshots: 51,
+    posters: 2,
+  }, // грешники
   {
     release: new Date("2023-04-06"),
     publication: new Date("2023-04-26"),
@@ -7800,6 +7907,55 @@ const films = [
     posters: 1,
   }, // короли лета
   {
+    release: new Date("2021-11-19"),
+    publication: new Date("2025-07-12"),
+    format: "фильм",
+    grade: "A",
+    title: "Король Ричард",
+    original: "King Richard",
+    kinopoisk: "https://www.kinopoisk.ru/film/1272469/",
+    director: [
+      {
+        name: "Рейнальдо Маркус Грин",
+      },
+    ],
+    cast: [
+      {
+        name: "Уилл Смит",
+      },
+      {
+        name: "Онжаню Эллис",
+      },
+      {
+        name: "Санийя Сидни",
+      },
+      {
+        name: "Деми Синглтон",
+      },
+      {
+        name: "Тони Голдуин",
+      },
+      {
+        name: "Джон Бернтал",
+      },
+    ],
+    description:
+      "История успеха сестёр Уильямс под руководством их отца-тренера Ричарда.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "биография",
+      },
+      {
+        genre: "спорт",
+      },
+    ],
+    screenshots: 26,
+    posters: 4,
+  }, // король ричард
+  {
     release: new Date("2020-05-28"),
     publication: new Date("2020-10-13"),
     format: "фильм",
@@ -10831,6 +10987,24 @@ const films = [
       {
         name: "Эбон Мосс-Бакрак",
       },
+      {
+        name: "Лайонел Бойс",
+      },
+      {
+        name: "Лиза Колон-Зайас",
+      },
+      {
+        name: "Эбби Эллиотт",
+      },
+      {
+        name: "Мэтти Мэтисон",
+      },
+      {
+        name: "Оливер Платт",
+      },
+      {
+        name: "Молли Гордон",
+      },
     ],
     description:
       "Молодой шеф-повар возвращается в Чикаго, чтобы управлять семейным рестораном.",
@@ -10866,6 +11040,24 @@ const films = [
       {
         name: "Эбон Мосс-Бакрак",
       },
+      {
+        name: "Лайонел Бойс",
+      },
+      {
+        name: "Лиза Колон-Зайас",
+      },
+      {
+        name: "Эбби Эллиотт",
+      },
+      {
+        name: "Мэтти Мэтисон",
+      },
+      {
+        name: "Оливер Платт",
+      },
+      {
+        name: "Молли Гордон",
+      },
     ],
     description:
       "Молодой шеф-повар возвращается в Чикаго, чтобы управлять семейным рестораном.",
@@ -10900,6 +11092,18 @@ const films = [
       },
       {
         name: "Эбон Мосс-Бакрак",
+      },
+      {
+        name: "Лайонел Бойс",
+      },
+      {
+        name: "Лиза Колон-Зайас",
+      },
+      {
+        name: "Эбби Эллиотт",
+      },
+      {
+        name: "Мэтти Мэтисон",
       },
     ],
     description:
@@ -15061,6 +15265,40 @@ const films = [
     posters: 2,
   }, // остров собак
   {
+    release: new Date("2007-09-03"),
+    publication: new Date("2025-07-20"),
+    format: "фильм",
+    grade: "B",
+    title: "Отель «Шевалье»",
+    original: "Hotel Chevalier",
+    kinopoisk: "https://www.kinopoisk.ru/film/394003/",
+    director: [
+      {
+        name: "Уэс Андерсон",
+      },
+    ],
+    cast: [
+      {
+        name: "Джейсон Шварцман",
+      },
+      {
+        name: "Натали Портман",
+      },
+    ],
+    description:
+      "Пролог душераздирающей истории любви рассказанной в фильме «Поезд на Дарджилинг. Отчаянные путешественники».",
+    genres: [
+      {
+        genre: "короткометражка",
+      },
+      {
+        genre: "мелодрама",
+      },
+    ],
+    screenshots: 15,
+    posters: 2,
+  }, // отель «шевалье»
+  {
     release: new Date("2019-09-13"),
     continuation: new Date("2022-04-29"),
     publication: new Date("2022-07-05"),
@@ -16443,6 +16681,55 @@ const films = [
     screenshots: 18,
     posters: 1,
   }, // подстава
+  {
+    release: new Date("2007-09-29"),
+    publication: new Date("2025-07-20"),
+    format: "фильм",
+    grade: "A+",
+    title: "Поезд на Дарджилинг. Отчаянные путешественники",
+    original: "The Darjeeling Limited",
+    kinopoisk: "https://www.kinopoisk.ru/film/278185/",
+    director: [
+      {
+        name: "Уэс Андерсон",
+      },
+    ],
+    cast: [
+      {
+        name: "Оуэн Уилсон",
+      },
+      {
+        name: "Эдриан Броуди",
+      },
+      {
+        name: "Джейсон Шварцман",
+      },
+      {
+        name: "Амара Каран",
+      },
+      {
+        name: "Ирфан Кхан",
+      },
+      {
+        name: "Анжелика Хьюстон",
+      },
+    ],
+    description:
+      "Три брата отправляются в путешествие по Индии на поезде, надеясь восстановить свои близкие отношения.",
+    genres: [
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 63,
+    posters: 1,
+  }, // поезд на дарджилинг
   {
     release: new Date("2007-09-07"),
     publication: new Date("2025-05-11"),
@@ -24206,6 +24493,53 @@ const films = [
     posters: 1,
   }, // фанатик
   {
+    release: new Date("2005-07-08"),
+    publication: new Date("2025-07-14"),
+    format: "фильм",
+    grade: "B",
+    title: "Фантастическая четверка",
+    original: "Fantastic Four",
+    kinopoisk: "https://www.kinopoisk.ru/film/23263/",
+    director: [
+      {
+        name: "Тим Стори",
+      },
+    ],
+    cast: [
+      {
+        name: "Йоан Гриффит",
+      },
+      {
+        name: "Джессика Альба",
+      },
+      {
+        name: "Крис Эванс",
+      },
+      {
+        name: "Майкл Чиклис",
+      },
+      {
+        name: "Джулиан Макмэхон",
+      },
+    ],
+    description:
+      "Четверо космонавтов получают уникальные суперсилы после облучения в космосе.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "приключения",
+      },
+      { genre: "супергероика" },
+      {
+        genre: "marvel",
+      },
+    ],
+    screenshots: 42,
+    posters: 3,
+  }, // фантастическая четверка (2005)
+  {
     release: new Date("2023-11-21"),
     publication: new Date("2024-01-28"),
     format: "сериал",
@@ -24842,6 +25176,43 @@ const films = [
     screenshots: 22,
     posters: 4,
   }, // харли квинн 1-4
+  {
+    release: new Date("2025-06-06"),
+    publication: new Date("2025-07-13"),
+    format: "фильм",
+    grade: "A+",
+    title: "Хищник: Убийца убийц",
+    original: "Predator: Killer of Killers",
+    kinopoisk: "https://www.kinopoisk.ru/film/7596122/",
+    director: [
+      {
+        name: "Дэн Трахтенберг",
+      },
+      {
+        name: "Джошуа Вассунг",
+      },
+    ],
+    cast: [
+      {
+        name: "Рик Гонсалес",
+      },
+      {
+        name: "Линдсэй ЛаВанши",
+      },
+      {
+        name: "Луис Одзава",
+      },
+    ],
+    description:
+      "Величайшие воины истории против высшего инопланетного хищника.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 51,
+    posters: 1,
+  }, // хищник: убийца убийц
   {
     release: new Date("2014-12-17"),
     publication: new Date("2024-12-27"),
@@ -26012,6 +26383,42 @@ const films = [
     screenshots: 48,
     posters: 1,
   }, // чёрный чемодан – двойная игра
+  {
+    release: new Date("2010-11-05"),
+    publication: new Date("2025-07-19"),
+    format: "фильм",
+    grade: "A",
+    title: "Четыре льва",
+    original: "Four Lions / 4 льва",
+    kinopoisk: "https://www.kinopoisk.ru/film/448665/",
+    director: [
+      {
+        name: "Кристофер Моррис",
+      },
+    ],
+    cast: [
+      {
+        name: "Риз Ахмед",
+      },
+      {
+        name: "Кайван Новак",
+      },
+      {
+        name: "Найджел Линдсэй",
+      },
+      {
+        name: "Адиль Ахтар",
+      },
+    ],
+    description: "Четверо террористов из Шеффилда готовят теракт.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 14,
+    posters: 2,
+  }, // четыре льва
   {
     release: new Date("2022-05-20"),
     publication: new Date("2022-06-08"),
