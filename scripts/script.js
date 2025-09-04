@@ -4026,6 +4026,76 @@ const films = [
     posters: 2,
   }, // грешники
   {
+    release: new Date("2025-05-02"),
+    publication: new Date("2025-07-08"),
+    format: "фильм",
+    grade: "A+",
+    title: "Громовержцы*",
+    original: "Thunderbolts* / New Avengers Новые Мстители",
+    kinopoisk: "https://www.kinopoisk.ru/film/5001443/",
+    director: [
+      {
+        name: "Джейк Шрейер",
+      },
+    ],
+    cast: [
+      {
+        name: "Флоренс Пью",
+      },
+      {
+        name: "Себастиан Стэн",
+      },
+      {
+        name: "Уайатт Рассел",
+      },
+      {
+        name: "Льюис Пуллман",
+      },
+      {
+        name: "Джулия Луи-Дрейфус",
+      },
+      {
+        name: "Джеральдин Висванатан",
+      },
+      {
+        name: "Дэвид Харбор",
+      },
+      {
+        name: "Ханна Джон-Кэймен",
+      },
+      {
+        name: "Уэнделл Пирс",
+      },
+    ],
+    description:
+      "По приказу правительства команда злодеев отправляется на задание.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "супергероика",
+      },
+      {
+        genre: "marvel",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 66,
+    posters: 5,
+  }, // громовержцы*
+  {
     release: new Date("2023-04-06"),
     publication: new Date("2023-04-26"),
     format: "сериал",
@@ -5606,6 +5676,43 @@ const films = [
     screenshots: 21,
     posters: 3,
   }, // жизнь пи
+  {
+    release: new Date("1982-01-01"),
+    publication: new Date("2025-07-30"),
+    format: "фильм",
+    grade: "B",
+    title: "Жил-был пёс",
+    original: "Once Upon a Time there Lived a Dog / Zhil-byl pyos",
+    kinopoisk: "https://www.kinopoisk.ru/film/45319/",
+    director: [
+      {
+        name: "Эдуард Назаров",
+      },
+    ],
+    cast: [
+      {
+        name: "Георгий Бурков",
+      },
+      {
+        name: "Армен Джигарханян",
+      },
+      {
+        name: "Эдуард Назаров",
+      },
+    ],
+    description:
+      "Жил-был пёс. Верно служил, но выгнали его по старости. И решил он повеситься, да повстречал в лесу такого же старого волка...",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+      {
+        genre: "короткометражка",
+      },
+    ],
+    screenshots: 26,
+    posters: 2,
+  }, // жил-был пёс
   {
     release: new Date("2022-12-23"),
     publication: new Date("2023-04-30"),
@@ -10839,6 +10946,48 @@ const films = [
     screenshots: 13,
     posters: 1,
   }, // манчестер у моря
+  {
+    release: new Date("2024-02-09"),
+    publication: new Date("2025-07-24"),
+    format: "фильм",
+    grade: "B",
+    title: "Мармелад",
+    original: "Marmalade",
+    kinopoisk: "https://www.kinopoisk.ru/film/5071324/",
+    director: [
+      {
+        name: "Кейр О’Доннелл",
+      },
+    ],
+    cast: [
+      {
+        name: "Джо Кири",
+      },
+      {
+        name: "Элдис Ходж",
+      },
+      {
+        name: "Камила Морроун",
+      },
+    ],
+    description: "Ради дерзкой красотки парень решается на ограбление.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "мелодрама",
+      },
+      {
+        genre: "детектив",
+      },
+    ],
+    screenshots: 42,
+    posters: 1,
+  }, // мармелад
   {
     release: new Date("2021-05-23"),
     publication: new Date("2022-03-12"),
@@ -16207,6 +16356,52 @@ const films = [
     posters: 1,
   }, // пережить рождество
   {
+    release: new Date("2005-03-05"),
+    publication: new Date("2025-07-23"),
+    format: "фильм",
+    grade: "C",
+    title: "Пиджак",
+    original: "The Jacket / Пиджмак",
+    kinopoisk: "https://www.kinopoisk.ru/film/47382/",
+    director: [
+      {
+        name: "Джон Мэйбери",
+      },
+    ],
+    cast: [
+      {
+        name: "Эдриан Броуди",
+      },
+      {
+        name: "Кира Найтли",
+      },
+      {
+        name: "Крис Кристофферсон",
+      },
+      {
+        name: "Дженнифер Джейсон Ли",
+      },
+      {
+        name: "Дэниэл Крэйг",
+      },
+    ],
+    description:
+      "Экспериментальное «лечение» перемещают ветерана войны в будущее, где он узнает о скорой смерти.",
+    genres: [
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 32,
+    posters: 3,
+  }, // пиджак
+  {
     release: new Date("2024-09-19"),
     publication: new Date("2024-11-15"),
     format: "сериал",
@@ -17165,6 +17360,49 @@ const films = [
     posters: 1,
   }, // последний взмах флага
   {
+    release: new Date("2003-12-05"),
+    publication: new Date("2025-07-24"),
+    format: "фильм",
+    grade: "A+",
+    title: "Последний самурай",
+    original: "The Last Samurai",
+    kinopoisk: "https://www.kinopoisk.ru/film/6764/",
+    director: [
+      {
+        name: "Эдвард Цвик",
+      },
+    ],
+    cast: [
+      {
+        name: "Том Круз",
+      },
+      {
+        name: "Кэн Ватанабэ",
+      },
+      {
+        name: "Коюки",
+      },
+      {
+        name: "Тони Голдуин",
+      },
+      {
+        name: "Хироюки Санада",
+      },
+    ],
+    description:
+      "В Японии XIX века американский капитан становится свидетелем столкновения старого и нового миров.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "военный",
+      },
+    ],
+    screenshots: 90,
+    posters: 3,
+  }, // последний самурай
+  {
     release: new Date("2020-04-19"),
     publication: new Date("2020-05-20"),
     format: "сериал",
@@ -17965,6 +18203,9 @@ const films = [
       },
       {
         name: "Соня Сон",
+      },
+      {
+        name: "Майкл Б. Джордан",
       },
     ],
     description:
@@ -20366,6 +20607,61 @@ const films = [
     posters: 1,
   }, // следующий гол победный
   {
+    release: new Date("2004-10-01"),
+    publication: new Date("2025-07-24"),
+    format: "фильм",
+    grade: "A",
+    title: "Слоеный торт",
+    original: "Layer Cake",
+    kinopoisk: "https://www.kinopoisk.ru/film/47250/",
+    director: [
+      {
+        name: "Мэттью Вон",
+      },
+    ],
+    cast: [
+      {
+        name: "Дэниэл Крэйг",
+      },
+      {
+        name: "Сиенна Миллер",
+      },
+      {
+        name: "Колм Мини",
+      },
+      {
+        name: "Майкл Гэмбон",
+      },
+      {
+        name: "Джордж Харрис",
+      },
+      {
+        name: "Том Харди",
+      },
+      {
+        name: "Бен Уишоу",
+      },
+      {
+        name: "Декстер Флетчер",
+      },
+      {
+        name: "Салли Хокинс",
+      },
+      {
+        name: "Берн Горман",
+      },
+    ],
+    description:
+      "В шаге от заветного выхода «на пенсию» опытный наркодилер получает от босса неожиданное поручение.",
+    genres: [
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 51,
+    posters: 3,
+  }, // слоеный торт
+  {
     release: new Date("1998-03-06"),
     publication: new Date("2023-02-01"),
     format: "фильм",
@@ -21739,6 +22035,55 @@ const films = [
     screenshots: 30,
     posters: 1,
   }, // соседка
+  {
+    release: new Date("2004-08-05"),
+    publication: new Date("2025-07-23"),
+    format: "фильм",
+    grade: "B",
+    title: "Соучастник",
+    original: "Collateral",
+    kinopoisk: "https://www.kinopoisk.ru/film/61325/",
+    director: [
+      {
+        name: "Майкл Манн",
+      },
+    ],
+    cast: [
+      {
+        name: "Том Круз",
+      },
+      {
+        name: "Джейми Фокс",
+      },
+      {
+        name: "Джада Пинкетт Смит",
+      },
+      {
+        name: "Марк Руффало",
+      },
+      {
+        name: "Питер Берг",
+      },
+      {
+        name: "Хавьер Бардем",
+      },
+    ],
+    description:
+      "Лос-анджелесский таксист вынужден всю ночь развозить киллера по местам заказных убийств.",
+    genres: [
+      {
+        genre: "триллер",
+      },
+      {
+        genre: "драма",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 18,
+    posters: 2,
+  }, // соучастник
   {
     release: new Date("2010-10-01"),
     publication: new Date("2022-01-26"),
