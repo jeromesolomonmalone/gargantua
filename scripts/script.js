@@ -28154,8 +28154,8 @@ document
   .querySelectorAll(".navigation__genres__item")
   .forEach(function (element) {
     if (element.textContent.toLowerCase() == "dc") {
-      // element.style.textTransform = "uppercase";
-      element.style.display = "none";
+      element.style.textTransform = "uppercase";
+      // element.style.display = "none";
     }
   });
 
