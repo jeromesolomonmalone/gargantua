@@ -3586,6 +3586,61 @@ const films = [
     posters: 2,
   }, // гарфилд
   {
+    release: new Date("2025-07-02"),
+    publication: new Date("2025-08-16"),
+    format: "фильм",
+    grade: "B",
+    title: "Главы государств",
+    original: "Heads of State",
+    kinopoisk: "https://www.kinopoisk.ru/film/5278126/",
+    director: [
+      {
+        name: "Илья Найшуллер",
+      },
+    ],
+    cast: [
+      {
+        name: "Джон Сина",
+      },
+      {
+        name: "Идрис Эльба",
+      },
+      {
+        name: "Приянка Чопра Джонас",
+      },
+      {
+        name: "Пэдди Консидайн",
+      },
+      {
+        name: "Александр Кузнецов",
+      },
+      {
+        name: "Карла Гуджино",
+      },
+      {
+        name: "Стивен Рут",
+      },
+      {
+        name: "Джек Куэйд",
+      },
+      {
+        name: "Сара Найлз",
+      },
+    ],
+    description:
+      "На президента США и премьер-министра Великобритании охотится неизвестный террорист. Теперь им придётся объединить усилия, чтобы выжить.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "боевик",
+      },
+    ],
+    screenshots: 0,
+    posters: 1,
+  }, // главы государств
+  {
     release: new Date("2023-11-03"),
     publication: new Date("2023-12-09"),
     format: "сериал",
@@ -3623,6 +3678,52 @@ const films = [
     posters: 2,
   }, // голубоглазый самурай 1
   {
+    release: new Date("2021-09-17"),
+    publication: new Date("2025-07-28"),
+    format: "фильм",
+    grade: "A+",
+    title: "Голубой байу",
+    original: "Blue Bayou / Синий залив",
+    kinopoisk: "https://www.kinopoisk.ru/film/1313196/",
+    director: [
+      {
+        name: "Джастин Чон",
+      },
+    ],
+    cast: [
+      {
+        name: "Джастин Чон",
+      },
+      {
+        name: "Алисия Викандер",
+      },
+      {
+        name: "Марк О’Брайен",
+      },
+      {
+        name: "Фам Линь Дан",
+      },
+      {
+        name: "Сидни Ковальске",
+      },
+      {
+        name: "Вонди Кёртис-Холл",
+      },
+      {
+        name: "Эмори Коэн",
+      },
+    ],
+    description:
+      "Из-за ошибки прожившего всю жизнь в Штатах Антонио хотят депортировать в Корею.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 0,
+    posters: 2,
+  }, // голубой байу
+  {
     release: new Date("1988-12-02"),
     publication: new Date("2025-04-05"),
     format: "фильм",
@@ -3644,6 +3745,9 @@ const films = [
       },
       {
         name: "Рикардо Монтальбан",
+      },
+      {
+        name: "Джордж Кеннеди",
       },
       {
         name: "О. Джей Симпсон",
@@ -4029,7 +4133,7 @@ const films = [
     release: new Date("2025-05-02"),
     publication: new Date("2025-07-08"),
     format: "фильм",
-    grade: "A+",
+    grade: "A",
     title: "Громовержцы*",
     original: "Thunderbolts* / New Avengers Новые Мстители",
     kinopoisk: "https://www.kinopoisk.ru/film/5001443/",
@@ -4480,6 +4584,67 @@ const films = [
     screenshots: 15,
     posters: 1,
   }, // джерри магуайер
+  {
+    release: new Date("2002-02-15"),
+    publication: new Date("2025-07-29"),
+    format: "фильм",
+    grade: "B",
+    title: "Джон Кью",
+    original: "John Q",
+    kinopoisk: "https://www.kinopoisk.ru/film/720/",
+    director: [
+      {
+        name: "Ник Кассаветис",
+      },
+    ],
+    cast: [
+      {
+        name: "Дензел Вашингтон",
+      },
+      {
+        name: "Кимберли Элиз",
+      },
+      {
+        name: "Дэниэл Э. Смит",
+      },
+      {
+        name: "Джеймс Вудс",
+      },
+      {
+        name: "Энн Хеч",
+      },
+      {
+        name: "Роберт Дювалл",
+      },
+      {
+        name: "Рэй Лиотта",
+      },
+      {
+        name: "Шон Хэтоси",
+      },
+      {
+        name: "Эдди Гриффин",
+      },
+      {
+        name: "Кевин Коннолли",
+      },
+      {
+        name: "Итан Сапли",
+      },
+    ],
+    description:
+      "Отец взял больницу в заложники из-за отказа страховой оплатить операцию сына.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "криминал",
+      },
+    ],
+    screenshots: 45,
+    posters: 2,
+  }, // джон кью
   {
     release: new Date("2018-10-19"),
     publication: new Date("2019-10-02"),
@@ -5677,42 +5842,60 @@ const films = [
     posters: 3,
   }, // жизнь пи
   {
-    release: new Date("1982-01-01"),
-    publication: new Date("2025-07-30"),
+    release: new Date("2025-06-13"),
+    publication: new Date("2025-08-16"),
     format: "фильм",
     grade: "B",
-    title: "Жил-был пёс",
-    original: "Once Upon a Time there Lived a Dog / Zhil-byl pyos",
-    kinopoisk: "https://www.kinopoisk.ru/film/45319/",
+    title: "Жизнь Чака",
+    original: "The Life of Chuck",
+    kinopoisk: "https://www.kinopoisk.ru/film/5406956/",
     director: [
       {
-        name: "Эдуард Назаров",
+        name: "Майк Флэнаган",
       },
     ],
     cast: [
       {
-        name: "Георгий Бурков",
+        name: "Том Хиддлстон",
       },
       {
-        name: "Армен Джигарханян",
+        name: "Бенджамин Паяк",
       },
       {
-        name: "Эдуард Назаров",
+        name: "Чиветель Эджиофор",
+      },
+      {
+        name: "Карен Гиллан",
+      },
+      {
+        name: "Карл Ламбли",
+      },
+      {
+        name: "Марк Хэмилл",
+      },
+      {
+        name: "Саманта Слойан",
+      },
+      {
+        name: "Кейт Сигел",
+      },
+      {
+        name: "Джейкоб Тремблей",
       },
     ],
     description:
-      "Жил-был пёс. Верно служил, но выгнали его по старости. И решил он повеситься, да повстречал в лесу такого же старого волка...",
+      "История о трёх этапах жизни простого человека Чарльза Кранца.",
     genres: [
       {
-        genre: "мультфильм",
+        genre: "драма",
       },
       {
-        genre: "короткометражка",
+        genre: "фантастика",
       },
     ],
-    screenshots: 26,
+    screenshots: 0,
     posters: 2,
-  }, // жил-был пёс
+  }, // жизнь чака
   {
     release: new Date("2022-12-23"),
     publication: new Date("2023-04-30"),
@@ -7620,6 +7803,9 @@ const films = [
       },
       {
         name: "Бруклин Принс",
+      },
+      {
+        name: "Рэй Лиотта",
       },
     ],
     description:
@@ -12002,13 +12188,13 @@ const films = [
     posters: 2,
   }, // миротворец 1
   {
-    release: new Date("2023-07-12"),
-    publication: new Date("2023-10-12"),
+    release: new Date("2025-05-23"),
+    publication: new Date("2025-08-21"),
     format: "фильм",
-    grade: "A+",
-    title: "Миссия невыполнима: Смертельная расплата. Часть первая",
-    original: "Mission: Impossible - Dead Reckoning Part One",
-    kinopoisk: "https://www.kinopoisk.ru/film/1229684/",
+    grade: "A",
+    title: "Миссия невыполнима: Финальная расплата",
+    original: "Mission: Impossible - The Final Reckoning",
+    kinopoisk: "https://www.kinopoisk.ru/film/1229683/",
     director: [
       {
         name: "Кристофер Маккуорри",
@@ -12033,6 +12219,89 @@ const films = [
       {
         name: "Винг Реймз",
       },
+      {
+        name: "Шей Уигэм",
+      },
+      {
+        name: "Грег Тарзан Дэвис",
+      },
+      {
+        name: "Холт Маккэллани",
+      },
+      {
+        name: "Ник Офферман",
+      },
+      {
+        name: "Ханна Уоддингэм",
+      },
+      {
+        name: "Трэмелл Тиллман",
+      },
+      {
+        name: "Анджела Бассетт",
+      },
+      {
+        name: "Чарльз Парнелл",
+      },
+    ],
+    description:
+      "Хант противостоит опасному ИИ, угрожающему изменить мир, пока за ним охотятся правительства.",
+    genres: [
+      {
+        genre: "боевик",
+      },
+      {
+        genre: "приключения",
+      },
+      { genre: "шпионаж" },
+    ],
+    screenshots: 0,
+    posters: 2,
+  }, // миссия невыполнима: финальная расплата (8)
+  {
+    release: new Date("2023-07-12"),
+    publication: new Date("2023-10-12"),
+    format: "фильм",
+    grade: "A+",
+    title: "Миссия невыполнима: Смертельная расплата",
+    original: "Mission: Impossible - Dead Reckoning Part One / Часть первая",
+    kinopoisk: "https://www.kinopoisk.ru/film/1229684/",
+    director: [
+      {
+        name: "Кристофер Маккуорри",
+      },
+    ],
+    cast: [
+      {
+        name: "Том Круз",
+      },
+      {
+        name: "Хейли Этвелл",
+      },
+      {
+        name: "Эсай Моралес",
+      },
+      {
+        name: "Пом Клементьефф",
+      },
+      {
+        name: "Ребекка Фергюсон",
+      },
+      {
+        name: "Ванесса Кирби",
+      },
+      {
+        name: "Саймон Пегг",
+      },
+      {
+        name: "Винг Реймз",
+      },
+      {
+        name: "Шей Уигэм",
+      },
+      {
+        name: "Грег Тарзан Дэвис",
+      },
     ],
     description:
       "Итан Хант и его команда должны разыскать опасное оружие до того, как оно попадет не в те руки.",
@@ -12047,7 +12316,7 @@ const films = [
     ],
     screenshots: 26,
     posters: 1,
-  }, // миссия невыполнима: смертельная расплата. часть первая (7)
+  }, // миссия невыполнима: смертельная расплата (7)
   {
     release: new Date("2018-07-27"),
     publication: new Date("2023-05-25"),
@@ -12072,10 +12341,19 @@ const films = [
         name: "Ребекка Фергюсон",
       },
       {
+        name: "Ванесса Кирби",
+      },
+      {
         name: "Саймон Пегг",
       },
       {
         name: "Винг Реймз",
+      },
+      {
+        name: "Анджела Бассетт",
+      },
+      {
+        name: "Алек Болдуин",
       },
     ],
     description: "Агенты ЦРУ должны изъять плутоний из рук террористов.",
@@ -12119,6 +12397,9 @@ const films = [
       },
       {
         name: "Винг Реймз",
+      },
+      {
+        name: "Алек Болдуин",
       },
     ],
     description:
@@ -12311,6 +12592,40 @@ const films = [
     screenshots: 45,
     posters: 1,
   }, // митчеллы против машин
+  {
+    release: new Date("2024-08-16"),
+    publication: new Date("2025-08-03"),
+    format: "фильм",
+    grade: "B",
+    title: "Младший брат",
+    original: "Didi / Dìdi / 弟弟",
+    kinopoisk: "https://www.kinopoisk.ru/film/5448457/",
+    director: [
+      {
+        name: "Шон Ван",
+      },
+    ],
+    cast: [
+      {
+        name: "Айзек Ван",
+      },
+      {
+        name: "Джоан Чэнь",
+      },
+    ],
+    description:
+      "13-летний тайваньский подросток познаёт жизнь за месяц до школы.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 0,
+    posters: 2,
+  }, // младший брат
   {
     release: new Date("2009-12-23"),
     publication: new Date("2021-08-28"),
@@ -17767,6 +18082,12 @@ const films = [
       {
         name: "Дэниэл Крэйг",
       },
+      {
+        name: "Саймон Пегг",
+      },
+      {
+        name: "Ник Фрост",
+      },
     ],
     description:
       "Репортёр Тинтин и капитан Хэддок отправляются на поиски сокровищ затонувшего корабля.",
@@ -18221,6 +18542,52 @@ const films = [
     screenshots: 90,
     posters: 1,
   }, // прослушка 1
+  {
+    release: new Date("2025-06-27"),
+    publication: new Date("2025-08-17"),
+    format: "фильм",
+    grade: "B",
+    title: "Прости, детка",
+    original: "Sorry, Baby",
+    kinopoisk: "https://www.kinopoisk.ru/film/7092649/",
+    director: [
+      {
+        name: "Ева Виктор",
+      },
+    ],
+    cast: [
+      {
+        name: "Ева Виктор",
+      },
+      {
+        name: "Наоми Аки",
+      },
+      {
+        name: "Лукас Хеджес",
+      },
+      {
+        name: "Луис Канселми",
+      },
+      {
+        name: "Келли МакКормак",
+      },
+      {
+        name: "Джон Кэрролл Линч",
+      },
+    ],
+    description:
+      "С Агнес случилось что-то плохое, но жизнь продолжается — по крайней мере, для всех вокруг неё.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 0,
+    posters: 1,
+  }, // прости, детка
   {
     release: new Date("2023-06-30"),
     publication: new Date("2023-12-17"),
@@ -20820,6 +21187,12 @@ const films = [
       {
         name: "Энтони Рамос",
       },
+      {
+        name: "Брэндон Переа",
+      },
+      {
+        name: "Дэвид Коренсвет",
+      },
     ],
     description:
       "Команда ученых исследуют смерчи. Оказавшись в эпицентре опасных штормов, им приходится бороться за свою жизнь.",
@@ -21974,6 +22347,9 @@ const films = [
       {
         name: "Розарио Доусон",
       },
+      {
+        name: "Вонди Кёртис-Холл",
+      },
     ],
     description:
       "Днем он — успешный адвокат, а ночью — мститель в маске по прозвищу Сорвиголова.",
@@ -22263,6 +22639,46 @@ const films = [
     posters: 1,
   }, // старикам тут не место
   {
+    release: new Date("2025-08-13"),
+    publication: new Date("2025-08-24"),
+    format: "фильм",
+    grade: "C",
+    title: "Стерилизован",
+    original: "Fixed",
+    kinopoisk: "https://www.kinopoisk.ru/film/4695962/",
+    director: [
+      {
+        name: "Генндий Тартаковский",
+      },
+    ],
+    cast: [
+      {
+        name: "Адам Дивайн",
+      },
+      {
+        name: "Идрис Эльба",
+      },
+      {
+        name: "Кэтрин Хан",
+      },
+      {
+        name: "Фред Армисен",
+      },
+      {
+        name: "Бобби Мойнахан",
+      },
+    ],
+    description:
+      "Пёс узнаёт о предстоящей кастрации и решает провести последние сутки с друзьями на полную катушку.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 0,
+    posters: 1,
+  }, // стерилизован
+  {
     release: new Date("2005-05-06"),
     publication: new Date("2020-04-14"),
     format: "фильм",
@@ -22520,6 +22936,70 @@ const films = [
     screenshots: 17,
     posters: 1,
   }, // стук в хижине
+  {
+    release: new Date("2025-07-11"),
+    publication: new Date("2025-09-01"),
+    format: "фильм",
+    grade: "A",
+    title: "Супермен",
+    original: "Superman",
+    kinopoisk: "https://www.kinopoisk.ru/film/997647/",
+    director: [
+      {
+        name: "Джеймс Ганн",
+      },
+    ],
+    cast: [
+      {
+        name: "Дэвид Коренсвет",
+      },
+      {
+        name: "Рэйчел Броснахэн",
+      },
+      {
+        name: "Николас Холт",
+      },
+      {
+        name: "Эди Гатеги",
+      },
+      {
+        name: "Нэйтан Филлион",
+      },
+      {
+        name: "Изабела Мерсед",
+      },
+      {
+        name: "Скайлер Гизондо",
+      },
+      {
+        name: "Мария Габриела де Фария",
+      },
+      {
+        name: "Энтони Кэрриган",
+      },
+      {
+        name: "Сара Сампайо",
+      },
+    ],
+    description:
+      "Кларк Кент ищет баланс между земной жизнью и криптонским наследием Супермена.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "супергероика",
+      },
+      {
+        genre: "dc",
+      },
+    ],
+    screenshots: 0,
+    posters: 2,
+  }, // супермен
   {
     release: new Date("2022-07-29"),
     publication: new Date("2022-10-09"),
@@ -25761,6 +26241,9 @@ const films = [
       {
         name: "Мидори Френсис",
       },
+      {
+        name: "Айзек Ван",
+      },
     ],
     description:
       "Шестиклассники сбегают из школы и попадают в переделку с наркотиками.",
@@ -26933,6 +27416,52 @@ const films = [
     screenshots: 21,
     posters: 1,
   }, // чудесная история генри шугара
+  {
+    release: new Date("2021-04-02"),
+    publication: new Date("2025-08-19"),
+    format: "фильм",
+    grade: "B",
+    title: "Шалом, папик!",
+    original: "Shiva Baby",
+    kinopoisk: "https://www.kinopoisk.ru/film/1324912/",
+    director: [
+      {
+        name: "Эмма Селигман",
+      },
+    ],
+    cast: [
+      {
+        name: "Рэйчел Сеннотт",
+      },
+      {
+        name: "Дэнни Деферрари",
+      },
+      {
+        name: "Фред Меламед",
+      },
+      {
+        name: "Полли Дрэйпер",
+      },
+      {
+        name: "Молли Гордон",
+      },
+      {
+        name: "Дианна Агрон",
+      },
+    ],
+    description:
+      "Студентка попадает в неловкую ситуацию на похоронах, встретив своего спонсора и бывшую девушку.",
+    genres: [
+      {
+        genre: "драма",
+      },
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 0,
+    posters: 1,
+  }, // шалом, папик!
   {
     release: new Date("1997-03-28"),
     publication: new Date("2022-03-21"),
