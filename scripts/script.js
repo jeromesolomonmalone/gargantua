@@ -28575,6 +28575,7 @@ function addCard(item) {
   function personsPhoto(element) {
     const photo = descriptionElements.photo;
     const container = descriptionElements.photobox;
+    photo.style.opacity = "0";
     container.style.display = "none";
     const imagePath = `${location_of_the_images}persons/${name_for_person(
       element.textContent
@@ -28582,20 +28583,20 @@ function addCard(item) {
     const image = new Image();
     // Обработчик успешного загрузки изображения
     image.onload = () => {
-      container.style.display = "block";
       photo.src = image.src;
       photo.alt = element.textContent;
       photo.style.opacity = "1";
+      container.style.display = "block";
     };
     // Обработчик ошибки при загрузке
     image.onerror = () => {
+      photo.style.opacity = "0";
       container.style.display = "none";
     };
     // Начинаем загрузку изображения
     image.src = imagePath;
   }
   function filteringPersonsPopup(element, name, isDirector) {
-    descriptionElements.photo.style.opacity = "0";
     for (let i = 0; i < name.length; i++) {
       if (name[i].name == element.textContent) {
         updateFilterHeaderToPersons();
