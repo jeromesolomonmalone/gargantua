@@ -3637,7 +3637,7 @@ const films = [
         genre: "боевик",
       },
     ],
-    screenshots: 0,
+    screenshots: 18,
     posters: 1,
   }, // главы государств
   {
@@ -3720,7 +3720,7 @@ const films = [
         genre: "драма",
       },
     ],
-    screenshots: 0,
+    screenshots: 75,
     posters: 2,
   }, // голубой байу
   {
@@ -5893,7 +5893,7 @@ const films = [
         genre: "фантастика",
       },
     ],
-    screenshots: 0,
+    screenshots: 27,
     posters: 2,
   }, // жизнь чака
   {
@@ -12255,7 +12255,7 @@ const films = [
       },
       { genre: "шпионаж" },
     ],
-    screenshots: 0,
+    screenshots: 33,
     posters: 2,
   }, // миссия невыполнима: финальная расплата (8)
   {
@@ -12623,7 +12623,7 @@ const films = [
         genre: "драма",
       },
     ],
-    screenshots: 0,
+    screenshots: 48,
     posters: 2,
   }, // младший брат
   {
@@ -18585,7 +18585,7 @@ const films = [
         genre: "комедия",
       },
     ],
-    screenshots: 0,
+    screenshots: 57,
     posters: 1,
   }, // прости, детка
   {
@@ -22675,7 +22675,7 @@ const films = [
         genre: "мультфильм",
       },
     ],
-    screenshots: 0,
+    screenshots: 20,
     posters: 1,
   }, // стерилизован
   {
@@ -22936,70 +22936,70 @@ const films = [
     screenshots: 17,
     posters: 1,
   }, // стук в хижине
-  {
-    release: new Date("2025-07-11"),
-    publication: new Date("2025-09-01"),
-    format: "фильм",
-    grade: "A",
-    title: "Супермен",
-    original: "Superman",
-    kinopoisk: "https://www.kinopoisk.ru/film/997647/",
-    director: [
-      {
-        name: "Джеймс Ганн",
-      },
-    ],
-    cast: [
-      {
-        name: "Дэвид Коренсвет",
-      },
-      {
-        name: "Рэйчел Броснахэн",
-      },
-      {
-        name: "Николас Холт",
-      },
-      {
-        name: "Эди Гатеги",
-      },
-      {
-        name: "Нэйтан Филлион",
-      },
-      {
-        name: "Изабела Мерсед",
-      },
-      {
-        name: "Скайлер Гизондо",
-      },
-      {
-        name: "Мария Габриела де Фария",
-      },
-      {
-        name: "Энтони Кэрриган",
-      },
-      {
-        name: "Сара Сампайо",
-      },
-    ],
-    description:
-      "Кларк Кент ищет баланс между земной жизнью и криптонским наследием Супермена.",
-    genres: [
-      {
-        genre: "фантастика",
-      },
-      {
-        genre: "приключения",
-      },
-      {
-        genre: "супергероика",
-      },
-      {
-        genre: "dc",
-      },
-    ],
-    screenshots: 0,
-    posters: 2,
-  }, // супермен
+  // {
+  //   release: new Date("2025-07-11"),
+  //   publication: new Date("2025-09-01"),
+  //   format: "фильм",
+  //   grade: "A",
+  //   title: "Супермен",
+  //   original: "Superman",
+  //   kinopoisk: "https://www.kinopoisk.ru/film/997647/",
+  //   director: [
+  //     {
+  //       name: "Джеймс Ганн"
+  //     }
+  //   ],
+  //   cast: [
+  //     {
+  //       name: "Дэвид Коренсвет"
+  //     },
+  //     {
+  //       name: "Рэйчел Броснахэн"
+  //     },
+  //     {
+  //       name: "Николас Холт"
+  //     },
+  //     {
+  //       name: "Эди Гатеги"
+  //     },
+  //     {
+  //       name: "Нэйтан Филлион"
+  //     },
+  //     {
+  //       name: "Изабела Мерсед"
+  //     },
+  //     {
+  //       name: "Скайлер Гизондо"
+  //     },
+  //     {
+  //       name: "Мария Габриела де Фария"
+  //     },
+  //     {
+  //       name: "Энтони Кэрриган"
+  //     },
+  //     {
+  //       name: "Сара Сампайо"
+  //     }
+  //   ],
+  //   description:
+  //     "Кларк Кент ищет баланс между земной жизнью и криптонским наследием Супермена.",
+  //   genres: [
+  //     {
+  //       genre: "фантастика"
+  //     },
+  //     {
+  //       genre: "приключения"
+  //     },
+  //     {
+  //       genre: "супергероика"
+  //     },
+  //     {
+  //       genre: "dc"
+  //     }
+  //   ],
+  //   screenshots: 0,
+  //   posters: 2
+  // }, // супермен
   {
     release: new Date("2022-07-29"),
     publication: new Date("2022-10-09"),
@@ -27459,7 +27459,7 @@ const films = [
         genre: "комедия",
       },
     ],
-    screenshots: 0,
+    screenshots: 18,
     posters: 1,
   }, // шалом, папик!
   {
@@ -28154,8 +28154,8 @@ document
   .querySelectorAll(".navigation__genres__item")
   .forEach(function (element) {
     if (element.textContent.toLowerCase() == "dc") {
-      element.style.textTransform = "uppercase";
-      // element.style.display = "none";
+      // element.style.textTransform = "uppercase";
+      element.style.display = "none";
     }
   });
 
