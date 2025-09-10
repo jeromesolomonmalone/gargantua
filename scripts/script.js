@@ -3724,6 +3724,49 @@ const films = [
     posters: 2,
   }, // голубой байу
   {
+    release: new Date("2025-08-01"),
+    publication: new Date("2025-09-06"),
+    format: "фильм",
+    grade: "B",
+    title: "Голый пистолет",
+    original: "The Naked Gun",
+    kinopoisk: "https://www.kinopoisk.ru/film/817971/",
+    director: [
+      {
+        name: "Акива Шаффер",
+      },
+    ],
+    cast: [
+      {
+        name: "Лиам Нисон",
+      },
+      {
+        name: "Памела Андерсон",
+      },
+      {
+        name: "Пол Уолтер Хаузер",
+      },
+      {
+        name: "Дэнни Хьюстон",
+      },
+      {
+        name: "Кевин Дюран",
+      },
+      {
+        name: "Лайза Коши",
+      },
+    ],
+    description:
+      "Лейтенант Фрэнк Дребин-младший — единственный, кто может спасти мир.",
+    genres: [
+      {
+        genre: "комедия",
+      },
+    ],
+    screenshots: 24,
+    posters: 1,
+  }, // голый пистолет (2025)
+  {
     release: new Date("1988-12-02"),
     publication: new Date("2025-04-05"),
     format: "фильм",
@@ -11298,6 +11341,62 @@ const films = [
     screenshots: 30,
     posters: 2,
   }, // мегамозг
+  {
+    release: new Date("2025-06-25"),
+    publication: new Date("2025-09-06"),
+    format: "сериал",
+    season: "4",
+    grade: "A",
+    title: "Медведь",
+    original: "The Bear",
+    kinopoisk: "https://www.kinopoisk.ru/series/4481731/",
+    director: [
+      {
+        name: "Кристофер Сторер",
+      },
+    ],
+    cast: [
+      {
+        name: "Джереми Аллен Уайт",
+      },
+      {
+        name: "Айо Эдебири",
+      },
+      {
+        name: "Эбон Мосс-Бакрак",
+      },
+      {
+        name: "Лайонел Бойс",
+      },
+      {
+        name: "Лиза Колон-Зайас",
+      },
+      {
+        name: "Эбби Эллиотт",
+      },
+      {
+        name: "Мэтти Мэтисон",
+      },
+      {
+        name: "Оливер Платт",
+      },
+      {
+        name: "Молли Гордон",
+      },
+      {
+        name: "Уилл Поултер",
+      },
+    ],
+    description:
+      "Молодой шеф-повар возвращается в Чикаго, чтобы управлять семейным рестораном.",
+    genres: [
+      {
+        genre: "драма",
+      },
+    ],
+    screenshots: 78,
+    posters: 1,
+  }, // медведь 4
   {
     release: new Date("2024-06-26"),
     publication: new Date("2024-08-28"),
@@ -19388,6 +19487,47 @@ const films = [
     posters: 3,
   }, // реальные упыри
   {
+    release: new Date("2025-05-25"),
+    publication: new Date("2025-08-30"),
+    format: "сериал",
+    season: "8",
+    grade: "A",
+    title: "Рик и Морти",
+    original: "Rick and Morty",
+    kinopoisk: "https://www.kinopoisk.ru/series/685246/",
+    director: [
+      {
+        name: "Дэн Хармон",
+      },
+      {
+        name: "Джастин Ройланд",
+      },
+    ],
+    cast: [
+      {
+        name: "Джастин Ройланд",
+      },
+      {
+        name: "Крис Парнелл",
+      },
+      {
+        name: "Спенсер Грэммер",
+      },
+      {
+        name: "Сара Чок",
+      },
+    ],
+    description:
+      "Приключения циничного безумного учёного Рика Санчеса и его наивного, капризного и неуверенного в себе внука Морти.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+    ],
+    screenshots: 36,
+    posters: 1,
+  }, // рик и морти 8
+  {
     release: new Date("2023-10-15"),
     publication: new Date("2023-12-28"),
     format: "сериал",
@@ -22936,70 +23076,70 @@ const films = [
     screenshots: 17,
     posters: 1,
   }, // стук в хижине
-  // {
-  //   release: new Date("2025-07-11"),
-  //   publication: new Date("2025-09-01"),
-  //   format: "фильм",
-  //   grade: "A",
-  //   title: "Супермен",
-  //   original: "Superman",
-  //   kinopoisk: "https://www.kinopoisk.ru/film/997647/",
-  //   director: [
-  //     {
-  //       name: "Джеймс Ганн"
-  //     }
-  //   ],
-  //   cast: [
-  //     {
-  //       name: "Дэвид Коренсвет"
-  //     },
-  //     {
-  //       name: "Рэйчел Броснахэн"
-  //     },
-  //     {
-  //       name: "Николас Холт"
-  //     },
-  //     {
-  //       name: "Эди Гатеги"
-  //     },
-  //     {
-  //       name: "Нэйтан Филлион"
-  //     },
-  //     {
-  //       name: "Изабела Мерсед"
-  //     },
-  //     {
-  //       name: "Скайлер Гизондо"
-  //     },
-  //     {
-  //       name: "Мария Габриела де Фария"
-  //     },
-  //     {
-  //       name: "Энтони Кэрриган"
-  //     },
-  //     {
-  //       name: "Сара Сампайо"
-  //     }
-  //   ],
-  //   description:
-  //     "Кларк Кент ищет баланс между земной жизнью и криптонским наследием Супермена.",
-  //   genres: [
-  //     {
-  //       genre: "фантастика"
-  //     },
-  //     {
-  //       genre: "приключения"
-  //     },
-  //     {
-  //       genre: "супергероика"
-  //     },
-  //     {
-  //       genre: "dc"
-  //     }
-  //   ],
-  //   screenshots: 0,
-  //   posters: 2
-  // }, // супермен
+  {
+    release: new Date("2025-07-11"),
+    publication: new Date("2025-08-26"),
+    format: "фильм",
+    grade: "A",
+    title: "Супермен",
+    original: "Superman",
+    kinopoisk: "https://www.kinopoisk.ru/film/997647/",
+    director: [
+      {
+        name: "Джеймс Ганн",
+      },
+    ],
+    cast: [
+      {
+        name: "Дэвид Коренсвет",
+      },
+      {
+        name: "Рэйчел Броснахэн",
+      },
+      {
+        name: "Николас Холт",
+      },
+      {
+        name: "Эди Гатеги",
+      },
+      {
+        name: "Нэйтан Филлион",
+      },
+      {
+        name: "Изабела Мерсед",
+      },
+      {
+        name: "Скайлер Гизондо",
+      },
+      {
+        name: "Мария Габриела де Фария",
+      },
+      {
+        name: "Энтони Кэрриган",
+      },
+      {
+        name: "Сара Сампайо",
+      },
+    ],
+    description:
+      "Кларк Кент ищет баланс между земной жизнью и криптонским наследием Супермена.",
+    genres: [
+      {
+        genre: "фантастика",
+      },
+      {
+        genre: "приключения",
+      },
+      {
+        genre: "супергероика",
+      },
+      {
+        genre: "dc",
+      },
+    ],
+    screenshots: 50,
+    posters: 2,
+  }, // супермен
   {
     release: new Date("2022-07-29"),
     publication: new Date("2022-10-09"),
@@ -27695,6 +27835,51 @@ const films = [
     posters: 3,
   }, // элементарно
   {
+    release: new Date("2025-06-20"),
+    publication: new Date("2025-08-30"),
+    format: "фильм",
+    grade: "B",
+    title: "Элио",
+    original: "Elio",
+    kinopoisk: "https://www.kinopoisk.ru/film/4893253/",
+    director: [
+      {
+        name: "Эдриан Молина",
+      },
+      {
+        name: "Мадлен Шарафьян",
+      },
+      {
+        name: "Доми Ши",
+      },
+    ],
+    cast: [
+      {
+        name: "Йонас Кибриб",
+      },
+      {
+        name: "Зои Салдана",
+      },
+      {
+        name: "Брэд Гэррет",
+      },
+      {
+        name: "Джамила Джамил",
+      },
+    ],
+    description: "11-летний Элио случайно становится послом Земли.",
+    genres: [
+      {
+        genre: "мультфильм",
+      },
+      {
+        genre: "pixar",
+      },
+    ],
+    screenshots: 54,
+    posters: 1,
+  }, // элио
+  {
     release: new Date("2022-09-30"),
     publication: new Date("2022-10-08"),
     format: "фильм",
@@ -28243,6 +28428,9 @@ function openPopup(popupElement) {
     body.style.top = `-${scrollPosition}px`;
     body.classList.add("scroll-lock");
     document.querySelector(".header").style.position = "fixed";
+
+    document.querySelector(".main").classList.add("scroll-content");
+
     document.addEventListener("keydown", closePopupByEsc);
     resetScroll();
   }
@@ -28256,6 +28444,9 @@ function closePopup(popupElement) {
     body.classList.remove("scroll-lock");
     document.querySelector(".header").style.position = "sticky";
     window.scrollTo(0, scrollPosition);
+
+    document.querySelector(".main").classList.remove("scroll-content");
+
     document.removeEventListener("keydown", closePopupByEsc);
   };
 
@@ -28580,10 +28771,12 @@ function showLoader() {
       }
     }
   }
+  document.body.classList.add("no-scrollbar");
   loader.style.display = "flex";
 }
 function hideLoader() {
   document.querySelector(".main__base").scrollIntoView();
+  document.body.classList.remove("no-scrollbar");
   loader.style.display = "none";
 }
 
@@ -29104,7 +29297,6 @@ function addCard(item) {
   function personsPhoto(element) {
     const photo = descriptionElements.photo;
     const container = descriptionElements.photobox;
-    photo.style.opacity = "0";
     container.style.display = "none";
     const imagePath = `${location_of_the_images}persons/${name_for_person(
       element.textContent
@@ -29112,20 +29304,20 @@ function addCard(item) {
     const image = new Image();
     // Обработчик успешного загрузки изображения
     image.onload = () => {
+      container.style.display = "block";
       photo.src = image.src;
       photo.alt = element.textContent;
       photo.style.opacity = "1";
-      container.style.display = "block";
     };
     // Обработчик ошибки при загрузке
     image.onerror = () => {
-      photo.style.opacity = "0";
       container.style.display = "none";
     };
     // Начинаем загрузку изображения
     image.src = imagePath;
   }
   function filteringPersonsPopup(element, name, isDirector) {
+    descriptionElements.photo.style.opacity = "0";
     for (let i = 0; i < name.length; i++) {
       if (name[i].name == element.textContent) {
         updateFilterHeaderToPersons();
@@ -29806,36 +29998,54 @@ function getMediaStatsSummary() {
 // getMediaStatsSummary();
 
 // Имена актеров/режиссеров для ссылок
-function displayUniquePersonsList({ mode = "names", start, end } = {}) {
+async function displayUniquePersonsList(startIndex = 0, endIndex = 0) {
   const namesSet = new Set();
-
   films.forEach((film) => {
-    [...film.director, ...film.cast].forEach((person) =>
-      namesSet.add(person.name)
-    );
+    [...film.director, ...film.cast].forEach((person) => {
+      namesSet.add(person.name);
+    });
+  });
+  let uniqueSortedNames = Array.from(namesSet).sort();
+  uniqueSortedNames = uniqueSortedNames.map((name) => name_for_person(name));
+  console.log("Длина изначального массива:", uniqueSortedNames.length);
+
+  async function checkImageExists(url) {
+    try {
+      const response = await fetch(url, { method: "HEAD" });
+      return response.ok;
+    } catch (error) {
+      return false;
+    }
+  }
+
+  const promises = uniqueSortedNames.map(async (name) => {
+    const url = location_of_the_images + "persons/" + name + ".png";
+    const exists = await checkImageExists(url);
+    return { name, exists };
   });
 
-  const uniqueSortedNames = Array.from(namesSet).sort();
+  const results = await Promise.all(promises);
 
-  switch (mode) {
-    case "names":
-      const selectedPersons = uniqueSortedNames.slice(start, end);
-      selectedPersons.forEach((name) => {
-        console.log(`${name}: ${name_for_person(name)}`);
-      });
-      break;
+  uniqueSortedNames = results
+    .filter((result) => !result.exists)
+    .map((result) => result.name);
 
-    case "count":
-      console.log(uniqueSortedNames.length);
-      break;
+  console.log("Длина итогового массива:", uniqueSortedNames.length);
 
-    default:
-      console.log("Неверный режим вывода");
+  if (startIndex > 0 || endIndex > 0) {
+    const slicedArray = uniqueSortedNames.slice(startIndex, endIndex + 1);
+    slicedArray.forEach((name) => {
+      console.log(name);
+    });
+  }
+
+  return uniqueSortedNames;
+}
+async function run() {
+  try {
+    await displayUniquePersonsList(50, 100);
+  } catch (error) {
+    console.error("Ошибка:", error);
   }
 }
-
-// displayUniquePersonsList({
-//   mode: 'names',
-//   start: 1150,
-//   end: 1200
-// });
+// run();
