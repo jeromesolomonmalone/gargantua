@@ -159,6 +159,10 @@ button:active {
   outline: none;
 }
 
+html{
+  scrollbar-gutter: stable both-edges;
+}
+
 body {
   margin: 0 auto;
   overflow-x: hidden;
@@ -602,25 +606,6 @@ body {
   display: flex;
   flex-direction: column;
   margin: 80px 0;
-}
-
-.scroll-content {
-  overflow-y: scroll;
-  scrollbar-color: transparent transparent;
-  scrollbar-width: auto;
-  -ms-overflow-style: none;
-}
-
-.scroll-content::-webkit-scrollbar {
-  background: transparent;
-}
-
-.scroll-content::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.scroll-content::-webkit-scrollbar-thumb {
-  background: transparent;
 }
 
 .main__logo {

@@ -28428,9 +28428,6 @@ function openPopup(popupElement) {
     body.style.top = `-${scrollPosition}px`;
     body.classList.add("scroll-lock");
     document.querySelector(".header").style.position = "fixed";
-
-    document.querySelector(".main").classList.add("scroll-content");
-
     document.addEventListener("keydown", closePopupByEsc);
     resetScroll();
   }
@@ -28444,9 +28441,6 @@ function closePopup(popupElement) {
     body.classList.remove("scroll-lock");
     document.querySelector(".header").style.position = "sticky";
     window.scrollTo(0, scrollPosition);
-
-    document.querySelector(".main").classList.remove("scroll-content");
-
     document.removeEventListener("keydown", closePopupByEsc);
   };
 
