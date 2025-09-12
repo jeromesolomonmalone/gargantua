@@ -28428,6 +28428,7 @@ function openPopup(popupElement) {
     body.style.top = `-${scrollPosition}px`;
     body.classList.add("scroll-lock");
     document.querySelector(".header").style.position = "fixed";
+    document.querySelector(".main").classList.add("scroll-content");
     document.addEventListener("keydown", closePopupByEsc);
     resetScroll();
   }
@@ -28441,6 +28442,7 @@ function closePopup(popupElement) {
     body.classList.remove("scroll-lock");
     document.querySelector(".header").style.position = "sticky";
     window.scrollTo(0, scrollPosition);
+    document.querySelector(".main").classList.remove("scroll-content");
     document.removeEventListener("keydown", closePopupByEsc);
   };
 
@@ -28857,8 +28859,8 @@ function addCard(item) {
     mainListElement.classList.toggle(
       "main__list__item_is-opened",
       lower(item.title).includes(valueLower) ||
-        lower(item.original).includes(valueLower) ||
-        lower(replaceYo(item.title)).includes(valueLower)
+      lower(item.original).includes(valueLower) ||
+      lower(replaceYo(item.title)).includes(valueLower)
     );
   };
   // Обработчик формы
@@ -29005,14 +29007,14 @@ function addCard(item) {
         for (let i = 0; i < item.genres.length; i++) {
           if (
             descriptionElements.title.textContent.toLowerCase() ==
-              item.genres[i].genre &&
+            item.genres[i].genre &&
             isFormatValid()
           ) {
             openCard();
             break;
           } else if (
             descriptionElements.title.textContent ==
-              item.release.toString().slice(11, 15) &&
+            item.release.toString().slice(11, 15) &&
             isFormatValid()
           ) {
             openCard();
@@ -29333,10 +29335,10 @@ function addCard(item) {
             isFilmDirector && isSerialDirector
               ? "Режиссер/Создатель"
               : isFilmDirector
-              ? "Режиссер"
-              : isSerialDirector
-              ? "Создатель"
-              : "В ролях";
+                ? "Режиссер"
+                : isSerialDirector
+                  ? "Создатель"
+                  : "В ролях";
         } else {
           descriptionElements.job.textContent = "В ролях";
         }
@@ -29521,8 +29523,8 @@ function showFilmCard(item) {
       item.season === "мини–сериал"
         ? `${item.season}, `
         : item.season.length === 3
-        ? `Сезоны ${item.season}, `
-        : `Сезон ${item.season}, `;
+          ? `Сезоны ${item.season}, `
+          : `Сезон ${item.season}, `;
     headerElements.season.textContent = seasonText;
     if (item.continuation) {
       headerElements.continuationYear.textContent =
