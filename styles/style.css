@@ -609,6 +609,7 @@ body {
   scrollbar-color: transparent transparent;
   scrollbar-width: auto;
   -ms-overflow-style: none;
+  overflow: overlay;
 }
 
 .scroll-content::-webkit-scrollbar {
@@ -2049,10 +2050,4 @@ body {
   .film__header__title {
     margin-block-end: 0.6rem;
   }
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
- .scroll-content {
-   overflow: -webkit-overlay; 
- }
 }
